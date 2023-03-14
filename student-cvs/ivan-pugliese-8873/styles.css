@@ -1,0 +1,28 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ececec;
+}
+
+.cv-container {
+    margin: 10rem auto;
+    width: 800px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1, h2, strong {
+    color: #00001F;
+}
+
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3B3BF0;
+}
