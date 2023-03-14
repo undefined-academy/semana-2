@@ -1,0 +1,40 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Georgia", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-color: #fff8dc;
+    color: #808080;
+}
+
+h1,
+h2,
+h3 {
+    color: #a9a9a9;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+a {
+    color: #808080;
+}
+
+a:visited {
+    color: #808080;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
