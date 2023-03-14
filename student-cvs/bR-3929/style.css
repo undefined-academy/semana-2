@@ -1,0 +1,62 @@
+body {
+    width: 100%;
+    background-color: rgb(43, 153, 243);
+    line-height: 1.4;
+    height: 100%;
+    padding: 12px 5px;
+    content: 100%;
+}
+
+
+code {
+    background-color: azure;
+}
+
+.encabe {
+    font-family: 'Rubik Iso', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+body p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body code {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
+th {
+    border: 2px solid rgb(230, 10, 10);
+}
+
+td {
+    border: 2px solid rgb(230, 10, 10);
+    text-align: center;
+}
+
+table {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+footer {
+    color: #666;
+    padding: 10px;
+    text-align: right;
+
+}
+
+section>h1 {
+    font-family: Arial, Helvetica, sans-serif
+}
