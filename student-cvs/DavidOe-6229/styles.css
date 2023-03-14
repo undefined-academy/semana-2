@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    background-position: center;
+    line-height: 1.5;
+    padding: 4em 1em;
+    background-color: #fef3b3;
+    background-image: linear-gradient(90deg, #fef3b3 0%, #fef7c0 50%, #fefcd6 100%);
+    font-family: 'Roboto', sans-serif;
+
+}
+nav {
+    text-align: right;
+    vertical-align: top;
+}
+h1 {
+    text-align: center;
+}
+
+#MainInformation img {
+    width: 400px;
+    float: right;
+}
+
+
+div main {
+    float: left;
+
+}
