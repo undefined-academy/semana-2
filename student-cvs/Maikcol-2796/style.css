@@ -54,7 +54,6 @@ nav ul {
 article {
   margin-top: 3em;
   font-size: 1.3em;
-  text-align: justify;
 }
 
 section {
@@ -65,7 +64,7 @@ section {
   justify-content: center;
 
 
-  max-width: 900px;
+  max-width: 800px;
   padding: 2em 1em 1em;
   margin: 0 auto 4em;
 }
@@ -135,7 +134,7 @@ ul {
 
   color: #e4e4e7;
   background-color: #18181b;
-  border-radius: 10px;
+  border-radius: 15px;
 
   padding: 1.5rem;
 }
@@ -161,18 +160,27 @@ ul {
   padding: 1em;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
 .project {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
  gap: 20px;
 
- padding: 1.5em 1em;
+ padding: 1.5em;
  
- background-color: #18181b;
- border-radius: 40px;
+ border: 2px solid #18181b;
+ border-width: 5px 0 ;
+ border-radius: 20px;
 
- color: #e4e4e7;
+ color: #18181b;
+ font-size: .7em;
 }
 
 .project__content {
@@ -187,6 +195,7 @@ ul {
 .project__img {
   max-width: 100%;
   min-width: 300px;
+  border-radius: 10px;
 }
 
 .project__img:hover {
@@ -207,12 +216,35 @@ ul {
 }
 
 footer {
+  height: 3em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+ 
+
   background-color: #18181b;
   padding: .5rem 2rem;
   color: #facc15;
 
-  background-image: url("img/pixel-art.png");
+  background-image: url("img/pixel-art.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
+}
+
+footer ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  gap: .7rem;
+
+  margin: 0 auto ;
+}
+
+footer a {
+  color: #e4e4e7;
+  text-decoration: none;
+  font-size: 1.5em;
+  
 }
