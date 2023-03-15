@@ -10,8 +10,40 @@ body {
   color: #555;
 }
 
+main > header * {
+  margin: 0;
+}
+
+
+h1 + p {
+  font-family: monospace;
+  font-style: italic;
+  font-size: var(--fs-caption)
+}
+
+:root {
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.5rem;
+  --fs-text: 1.125rem;
+  --fs-caption: 0.875rem;
+}
+
+.page-header h1::before,
+.page-header h1::after {
+  content: " 🖥💻 ";
+}
+
+code,
+figcaption {
+  font-size: var(--fs-caption);
+}
+
+p, li, th, td {
+  font-size: var(--fs-text);
+}
+
 h1 {
-  font-size: 1.75rem;
+  font-size: var(--fs-h1);
   background: linear-gradient(0.25turn, #c19ab7, #9c95dc);
   background-size: 100%;
   -webkit-text-fill-color: transparent;
@@ -20,13 +52,25 @@ h1 {
   -moz-background-clip: text;
 }
 
+@media (max-width: 800px) {
+  .page-header h1::after,
+  .page-header h1::before {
+    content: none;
+  }
+
+  :root {
+    --fs-text: 1.1875rem;
+    --fs-caption: 1rem;
+  }
+}
+
 header {
   text-align: center;
   background-color: transparent;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--fs-h2);
 }
 
 li {
@@ -61,7 +105,6 @@ strong {
 }
 
 code {
-  font-size: 0.875rem;
   display: inline-block;
   padding: 0.2em;
   border-bottom: 2px solid #228cdb;
@@ -72,11 +115,22 @@ ul {
   padding: 0 2ch;
 }
 
-img {
-  max-width: 10em;
-  vertical-align: middle;
+figure {
+  font-style: italic;
+  text-align: center;
+
+  width: 10em;
   float: right;
-  margin: 0 0 1em 1em;
+  margin-top: 0;
+}
+
+figure * {
+  margin-bottom: 0.5em;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 a {
