@@ -10,12 +10,12 @@ body {
   max-width: 50em;
 } 
 header {
-  background-image: url("bg-jean-pierre.jpg");
+  background-image: url("img/bg-main.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.2;
-  padding: 10vw 2em;
+  padding: 12vw 1em;
   text-align: center;
 }
 a strong {
@@ -24,11 +24,7 @@ a strong {
 img {
   height: auto;
   max-width: 100%;
-}
-h2 {
-  margin-top: 0.5em;
-  padding-top: 0.5em;
-}
+} 
 h1,
 h2,
 strong {
@@ -60,14 +56,12 @@ header h1 {
 header a {
   color: rgb(39, 72, 143);
   text-decoration: none;
-  transition: none 200ms ease-out;
-  transition-property: color, background;
-  padding: 8px 8px;
+  transition: none 10000ms ease-out; 
+  border-radius: 10px;
 }
 header a:hover {
   background: #333;
   color: #d8dee9;
-  border-radius: 10px;
 }
 code,
 pre {
@@ -85,6 +79,15 @@ a {
 nav{
   padding-top: 1em;
 }
+nav ul,
+.links{ 
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li{
+  list-style: none;
+  text-decoration: none;
+} 
 footer{
   padding: 1em;
   text-align: center;
