@@ -1,0 +1,97 @@
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+header{
+    margin-top: 8px;
+    border-radius: 10px;
+    
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}
+
+.titulo{
+    font-size: 28px;
+}
+
+.info{
+    font-size: 22px;
+    display: inline-block;
+    overflow: hidden; 
+    animation: typing 2s steps(20, end); 
+    white-space: nowrap; 
+    font-size: 24px; 
+    border-right: 2px solid black; 
+    padding-right: 10px; 
+}
+
+main{
+    animation: myAnim 3s ease 0s normal forwards;
+    margin-bottom: 30px;
+}
+
+main p, ul{
+    font-size: 22px;
+}
+
+
+
+table tr{
+height: 25px;
+text-align: center;
+font-size: 22px;
+}
+
+
+.alias{
+    margin-top: 20px;
+}
+
+.alias p{
+    font-size: 20px;
+}
+
+
+.alias code{
+    font-size: 22px;
+    color: whitesmoke;
+    background-color: #6e6e6f;
+}
+footer i{
+font-size: 60px;
+}
+
+a{
+    color: black;
+}
+
+footer i:hover{
+    cursor: pointer;
+}
+
+.redes{
+    margin-left: 50%;
+}
