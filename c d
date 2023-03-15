@@ -1,0 +1,170 @@
+[33mcommit 758cad4ae9fca06cc7babe5bff69769ba2d77ab8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sun Mar 12 21:38:25 2023 -0500
+
+    Ejercicio 02 - semana 02
+
+[33mcommit 30718e4d26fac3bfa5fc59f1c5fdd14ed9410d84[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sun Mar 12 21:10:38 2023 -0500
+
+    Ejercicio 01-Semana 02
+
+[33mcommit 44e32e546682738cb617bc9a812957cef38bc722[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sun Mar 12 13:23:55 2023 -0500
+
+    modificacion definitiva para VERCEL xd
+
+[33mcommit 6ea59d4cb3799c857769f7f545d5a9dc465b78f0[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sun Mar 12 09:42:08 2023 -0500
+
+    Modificaciones para deployar en vercel-2
+
+[33mcommit 9c417937e653f7bdadbe1564fb79a2a23352d7f0[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sun Mar 12 09:28:30 2023 -0500
+
+    Modificaciones para poder deployar en Vercel
+
+[33mcommit 49e6c372bf0fe9b66d21f54fcf0180f68b87b7d6[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sat Mar 11 15:36:06 2023 -0500
+
+    Correcciones solicitadas por los compañeros del bootcamp
+
+[33mcommit a786dfee1928b227a23ef53dc2de3b48e9f5f75d[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Fri Mar 10 19:42:08 2023 -0500
+
+    Ejercicio 4 del bootcamp de Guillermo Rodas
+
+[33mcommit 4e110cc46d9b4b5bd93d809e9e75829623415352[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Fri Mar 10 19:20:03 2023 -0500
+
+    Ejercicio 3 del bootcamp
+
+[33mcommit 36b2e6f50b758019b7df91d109cfeeeb945bdfb4[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Fri Mar 10 19:17:13 2023 -0500
+
+    Ejercicio 3 del bootcamp
+
+[33mcommit 1b13a888c2f2dd05cc99319b10c04db85ce3cc55[m
+Merge: 0e13751 fa29e9f
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Thu Mar 9 21:33:46 2023 -0500
+
+    Merge remote-tracking branch 'semana-1/main'
+
+[33mcommit 0e1375185340ccfa69998c86cebb5bf8569ae62d[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Thu Mar 9 21:11:14 2023 -0500
+
+    Ejercicio 3 Del Bootcamp de Guillermo Rodas
+
+[33mcommit d52185a861b5f0fef52aefd3bafc269b02de919f[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Thu Mar 9 20:58:09 2023 -0500
+
+    Ejercicio 3
+
+[33mcommit 987901f9aeb1bbc67ffbcdb2426b805662a73c66[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Thu Mar 9 20:40:59 2023 -0500
+
+    Ejercicio 3 del Bootcamp de Guillermo Rodas
+
+[33mcommit 6e695ec1b8b3fe776d3417dfec77a9f867e9d0fb[m
+Merge: 5ccfe47 20fe12f
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Thu Mar 9 20:27:58 2023 -0500
+
+    Merge branch 'main' of https://github.com/DevOld112/DevOld112
+
+[33mcommit 5ccfe4778dad45662f655c290fafb36e7a3ee663[m[33m ([m[1;32mmaster[m[33m)[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Wed Mar 8 18:54:48 2023 -0500
+
+    Este es el ejercicio de CSS del bootcamp de Guillermo Rodas
+
+[33mcommit fbb3e6b79f118a816710d0efbc0f91f2c4d71e82[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Tue Mar 7 21:07:57 2023 -0500
+
+    Commit de testeo
+
+[33mcommit 20fe12f1b99c341fc9fd19ce2d129ec6e42419a2[m
+Author: Wilmer Lopez <32624313+DevOld112@users.noreply.github.com>
+Date:   Tue Mar 7 19:24:45 2023 -0500
+
+    Update README.md
+
+[33mcommit 4d645c38f83ef983f5e98b9eb39104495f76cc4f[m
+Author: Wilmer Lopez <32624313+DevOld112@users.noreply.github.com>
+Date:   Mon Mar 6 22:38:16 2023 -0500
+
+    Update README.md
+
+[33mcommit fa29e9f2cb8b4bb55a2ecc93f092219472a849a5[m
+Merge: 4259a6e 4412cf2
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sun Mar 5 08:49:15 2023 -0500
+
+    Merge branch 'main' of https://github.com/DevOld112/semana-1
+
+[33mcommit 4259a6e2e5cd33323f1d19ededfde75d21768c35[m
+Author: DevOld112 <XwilmerX53@gmail.com>
+Date:   Sun Mar 5 08:48:02 2023 -0500
+
+    Nuevos archivos en la rama principal
+
+[33mcommit 4412cf237173b9971b23815868ea646d7e12c8df[m
+Author: Wilmer Lopez <32624313+DevOld112@users.noreply.github.com>
+Date:   Sun Mar 5 08:25:34 2023 -0500
+
+    Rename README.md to Wilmer-8071
+
+[33mcommit 5b524dc471cc36e4a22863ba29b2da4cd9e0a08b[m
+Author: Wilmer Lopez <32624313+DevOld112@users.noreply.github.com>
+Date:   Sun Mar 5 08:23:30 2023 -0500
+
+    Update README.md
+
+[33mcommit 2523bf69228fc07f989b38771bf654829d910e30[m
+Author: Wilmer Lopez <32624313+DevOld112@users.noreply.github.com>
+Date:   Sat Mar 4 18:17:09 2023 -0500
+
+    Update README.md
+
+[33mcommit 58ba5f0332947a05e059b191c84a4097e550a664[m
+Author: Wilmer Lopez <32624313+DevOld112@users.noreply.github.com>
+Date:   Fri Mar 3 16:59:41 2023 -0500
+
+    Update README.md
+
+[33mcommit 280fe72aa92c4a8076e524a2bf6c91560cb80549[m
+Author: Wilmer Lopez <32624313+Devolper112@users.noreply.github.com>
+Date:   Thu Mar 2 15:12:48 2023 -0500
+
+    Update README.md
+
+[33mcommit 20917283481383ece3a3e95347016f4b621178fc[m
+Author: Wilmer Lopez <32624313+Devolper112@users.noreply.github.com>
+Date:   Thu Mar 2 15:12:05 2023 -0500
+
+    Create README.md
+
+[33mcommit 4ad7c4032702cbfe28673701a687de2575525c08[m
+Author: Guillermo Rodas <me@guillermorodas.com>
+Date:   Thu Mar 2 19:48:52 2023 +0100
+
+    Add folder GitHub profiles
+
+[33mcommit a61173561cba8ec00f7b7da3d325a73dd2d92af5[m
+Author: Guillermo Rodas <glrodasz@users.noreply.github.com>
+Date:   Thu Mar 2 19:46:03 2023 +0100
+
+    Initial commit
