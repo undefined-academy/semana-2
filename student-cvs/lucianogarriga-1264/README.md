@@ -1,7 +1,15 @@
 ## Hi, I’m Luciano 👋 
 <br>
 
-### 🌊 Do you want to visit my [GitHub](https://github.com/lucianogarriga) Profile? Let's check my repositories and contributions! 💻
+### 🌊 Let's check the deploy of my [CV Website](https://profile-website-lucianogarriga.vercel.app/)! 
+<br>
+
+<p align="center"> <img src="./img/screen-profile.png" width="700" alt="Screenshoot Profile Website" /> </p>
+
+
+<br>
+
+### 🌊 Go to my [GitHub](https://github.com/lucianogarriga) Profile! 💻
 
 <br>
  <h2 align="center">Frontend Developer / Blockchain Writer </h3>
