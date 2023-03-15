@@ -2,10 +2,8 @@
 body{
     background-color: rgb(251, 253, 242);
     color :rgb(77, 76, 76);
-
     margin: 0 auto;
     max-width: 800px;
-
     font-family: "Quicksand", "Helvetica", "Arial", sans-serif;
     font-size: 22px;
 }
