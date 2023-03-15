@@ -4,7 +4,7 @@
 ### 🌊 Let's check the deploy of my [CV Website](https://profile-website-lucianogarriga.vercel.app/)! 
 <br>
 
-<p align="center"> <img src="./img/screen-profile.png" width="700" alt="Screenshoot Profile Website" /> </p>
+<p align="center"> <img src="./img/screen-profile.png" width="700" alt="Screenshot Profile Website" /> </p>
 
 
 <br>
