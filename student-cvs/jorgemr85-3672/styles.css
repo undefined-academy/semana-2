@@ -1,0 +1,32 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+}
+
+nav ul li {
+    background-color: aqua;
+    display: inline;
+    list-style-type: none;
+}
+
+.jm{
+    background-color:blueviolet;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom-right-radius: 300px;
+    
+}
+
+.jm h1, h2{
+    margin-left: 20px;
+    color: aliceblue;
+    
+}
+footer{
+    text-align: center;
+    color: black;
+    font-weight: 100;
+}
