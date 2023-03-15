@@ -1,0 +1,130 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #566b78;
+}
+
+a {
+    text-decoration: none;
+    color: #566b78;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-radius: 290486px;
+}
+
+a:hover {
+    background: #e81c4f;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    background-color: #263d36;
+    background-image: url("code.jfif");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 10vw 2em;
+}
+
+header img {
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    width: 120px;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-top: 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #e81c4f;
+}
+
+.name {
+    margin-top: -2em;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+.btn-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-float:hover {
+    background-color: #555;
+}
+
+
+footer {
+    margin-top: 10vh;
+    text-align: center;
+}
