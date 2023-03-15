@@ -33,5 +33,5 @@
 5) Clone el fork en mi carpeta local y añadi mi _index.html_ en repositorio local
 6) Al modificar la direccion del repositorio remoto para enviar mis cambios, surgieron inconvenientes para poder hacer `git push` me indicaba que habia conflictos entre la rama local y la del repositorio remoto.
 7) Solvente dicho conflicto con el comando `git merge origin/semana-02`
-8) Realice `git pull`, luego `git commit -m "Ejercicio 03 - Semana 02` y finalmente `git push`
+8) Realice `git pull`, luego `git commit -m "Ejercicio 03 - Semana 02"` y finalmente `git push`
 9) Realice mi Pull Request.
