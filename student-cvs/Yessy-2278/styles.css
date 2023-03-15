@@ -1,0 +1,55 @@
+.intro {
+  background-image: url(Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 3vw 2em;
+  border-radius:10px;
+  text-align: end;
+}
+
+a {
+  border: 1px solid lightcoral;
+  border-radius: 290486px;
+  color:gray;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+a:hover {
+  background: beige;
+  color: grey;
+}
+.foto {
+  justify-content: flex-start;
+  
+}
+
+body{
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #333;
+}
+
+body, h2, h3 {
+  color: #566b78;
+  text-align: justify;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+ul, li {
+
+  background: gainsboro;
+  padding: 2PX 4px;
+  vertical-align: text-bottom;
+}
