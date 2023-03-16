@@ -1,0 +1,18 @@
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.description{
+padding: 0px 30px;
+}
+
+.footer{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: small;
+}
