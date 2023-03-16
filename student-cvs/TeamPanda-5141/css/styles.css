@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#header {
+    border: 2px solid azure;
+    border-radius: 7px;
+    background-image: url("/semana-2/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+}
+
+.mi-nombre {
+    -webkit-text-fill-color: #00ffffeb;
+    -webkit-text-stroke: 1px #008b8b7d;
+    padding: 0 20px;
+    font-size: 33px;
+}
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 60px;
+}
+
+.mi-nombre span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+code {
+    color: cyan;
+    background-color: #212529;
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 60em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+}
+
+#hoja-de-vida {
+    background-color: rgb(53 51 51 / 51%);
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1, h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    ;
+}
+
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* aquí puede meterse una fotish */
+    background-repeat: no-repeat;
+    background-position: 509px;
+    background-size: 75px;
+}
+
+#introduccion,
+#hoja-de-vida,
+#experiencia-previa,
+#hobbies-intereses,
+#encuéntrame {
+    border: 2px solid azure;
+    margin: 0 auto;
+    padding: 13px;
+    border-radius: 7px;
+}
+
+#resaltable {
+    font-size: 18px;
+    background-image: url("/semana-2/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid azure;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#encuéntrame {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("/semana-2/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#boton-platzi {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 93px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: 25px;
+}
+
+#boton-platzi:hover {
+    background-color: rgba(153, 205, 50, 0.295);
+}
+
+#boton-freecodecamp {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 159px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: 25px;
+    align-items: center;
+}
+
+#boton-freecodecamp:hover {
+    background-color: #575353be;
+}
+
+#boton-github {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: 25px;
+}
+
+#boton-github:hover {
+    background-color: #575353be;
+}
+
+#prueba {
+    padding-left: 30wv;
+    padding-right: 30wv;
+    padding-top: 50hv;
+    padding-bottom: 50wv;
+}
+
+@media (width: 320px) {
+    #mi-nombre {
+        padding: 0px 8px;
+        font-size: 25px;
+    }
+    #resaltable {
+        padding: 0 12px;
+    }
+}
