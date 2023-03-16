@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    background-color: rgb(43, 153, 243);
+    background-color: rgb(194, 212, 226);
     line-height: 1.4;
     height: 100%;
     padding: 12px 5px;
@@ -59,4 +59,8 @@ footer {
 
 section>h1 {
     font-family: Arial, Helvetica, sans-serif
+}
+
+article h2{
+    font-size: 18px;
 }
