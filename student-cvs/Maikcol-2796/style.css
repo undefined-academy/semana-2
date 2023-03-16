@@ -7,6 +7,10 @@
   scroll-padding-top: 3%;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   margin: 0 auto;
   font-family: "Outfit", Georgia;
@@ -15,6 +19,7 @@ body {
   line-height: 1.5;
   color: #18181b;  
 }
+
 
 nav {
   padding: .5rem 2rem;
@@ -33,7 +38,6 @@ nav {
 }
 
 nav ul {
-  list-style: none;
   align-items: center;
   display: flex;
   gap: 1.5rem;
@@ -69,12 +73,12 @@ section {
   margin: 0 auto 4em;
 }
 
-section h1 {
+.section-title {
   font-size: 1.5em;
   text-decoration: underline #facc15;
 }
 
-section h2 {
+.section-subtitle {
   margin: 1em auto ;
   text-align: center;
   font-size: 1.2em;
@@ -85,18 +89,14 @@ figure {
   margin-bottom: 1em;
 }
 
-aside h1 {
+.aside-title {
   font-size: 1.17em;
   text-decoration: none;
 }
 
-aside h2 {
+.aside-subtitle {
   font-size: 1em;
   text-align: justify;
-}
-
-ul {
-  list-style: none;
 }
 
 .typewriter-effect {
@@ -234,7 +234,7 @@ footer {
 }
 
 footer ul {
-  list-style: none;
+  
   align-items: center;
   display: flex;
   gap: .7rem;
