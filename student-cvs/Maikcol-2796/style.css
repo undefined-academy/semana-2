@@ -1,35 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
+:root {
+  --color-background: #e4e4e7;
+  --color-primary: #18181b;
+  --color-secundary: #facc15 ;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 3%;
+  scroll-padding-top: 88px;
+  font-family: "Outfit", Georgia;
 }
 
 ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   margin: 0 auto;
   font-family: "Outfit", Georgia;
-  background-color: #e4e4e7;
+  background-color: var(--color-background);
 
   line-height: 1.5;
-  color: #18181b;  
+  color: var(--color-primary); 
 }
 
 
 nav {
   padding: .5rem 2rem;
-  background-color: #18181b;
+  background-color: var(--color-primary);
   
   position: fixed;
   top: 1%;
   right: 2%;
   left: 2%;
-  color: #facc15;
+  color: var(--color-secundary);
 
   display: flex;
   
@@ -55,27 +66,27 @@ nav ul {
 }
 
 
-article {
-  margin-top: 3em;
+.article {
+  margin: 3em auto;
   font-size: 1.3em;
 }
 
-section {
+.section {
   display: flex;
   flex-direction: column;
   gap: 2em;
   align-items: center;
   justify-content: center;
 
-
   max-width: 800px;
-  padding: 2em 1em 1em;
-  margin: 0 auto 4em;
+  padding: 2em 1em;
+  margin: 0 auto;
 }
 
 .section-title {
   font-size: 1.5em;
-  text-decoration: underline #facc15;
+  text-decoration: underline var(--color-secundary);
+  text-align: center;
 }
 
 .section-subtitle {
@@ -103,7 +114,7 @@ figure {
   display: block;
   font-family: monospace;
   white-space: nowrap;
-  border-right: 4px solid #facc15;
+  border-right: 4px solid var(--color-secundary);
   width: 24ch;
 
   animation: typing 2.5s steps(24), blink .5s infinite step-end alternate ;
@@ -132,8 +143,8 @@ figure {
   flex-basis: 30%;
   flex-grow: 1;
 
-  color: #e4e4e7;
-  background-color: #18181b;
+  color: var(--color-background);
+  background-color: var(--color-primary);
   border-radius: 15px;
 
   padding: 1.5rem;
@@ -148,9 +159,11 @@ figure {
 }
 
 .aside-perfil__img {
+  width: 200px;
   height: 200px;
-  border: 2px solid #facc15;
+  border: 2px solid var(--color-secundary);
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .perfil__content {
@@ -175,11 +188,11 @@ figure {
 
  padding: 1.5em;
  
- border: 2px solid #18181b;
+ border: 2px solid var(--color-primary);
  border-width: 5px 0 ;
  border-radius: 20px;
 
- color: #18181b;
+ color: var(--color-primary);
  font-size: .7em;
 }
 
@@ -207,12 +220,12 @@ figure {
 }
 
 .contact a {
-  color: #18181b;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
 .contact a:hover {
-  text-decoration: underline #facc15;
+  text-decoration: underline var(--color-secundary);
 }
 
 footer {
@@ -223,9 +236,9 @@ footer {
   gap: 2em;
  
 
-  background-color: #18181b;
+  background-color: var(--color-primary);
   padding: .5rem 2rem;
-  color: #facc15;
+  color: var(--color-secundary);
 
   background-image: url("img/pixel-art.jpg");
   background-size: contain;
@@ -243,8 +256,79 @@ footer ul {
 }
 
 footer a {
-  color: #e4e4e7;
+  color: var(--color-background);
   text-decoration: none;
   font-size: 1.5em;
   
+}
+
+.center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.contact-form {
+ padding: 2em;
+ border: 2px solid var(--color-primary);
+ border-width: 0 5px;
+ border-radius: 20px;
+
+ width: 80%;
+ max-width: 700px;
+
+}
+
+.form-row label{
+  display: block;
+  margin: .3em 0;
+
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: .4em .5em;
+  background-color: #f9f9f9ec;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+
+  font-size: .8em;
+}
+
+.form-input:focus{
+  border: none;
+  outline: 1px solid var(--color-secundary);
+}
+
+.form-text {
+  resize: vertical;
+}
+
+.button {
+  margin: 1em auto;
+  padding: .4em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+
+  background-color: var(--color-secundary);
+
+  border: 1px solid #eab308;
+  border-radius: 40px;
+  cursor: pointer;
+
+  
+  box-shadow: 1px 1px 3px #00000080;
+}
+
+.button:hover {
+  background-color: #fde047;
+}
+
+.button:active {
+  transform: scale(.99, .99 );
+  box-shadow: none;
 }
