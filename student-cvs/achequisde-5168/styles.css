@@ -1,24 +1,24 @@
 body {
-  margin: 0 auto;
-  max-width: 40em;
-
   font-family: "Helvetica", "Arial", sans-serif;
-
   line-height: 1.5;
-  padding: 1.5em;
 
   color: #555;
+  margin: 0;
+}
+
+.block-center {
+  margin: 0 auto;
+  max-width: clamp(375px, 80%, 40em);
 }
 
 main > header * {
   margin: 0;
 }
 
-
 h1 + p {
   font-family: monospace;
   font-style: italic;
-  font-size: var(--fs-caption)
+  font-size: var(--fs-caption);
 }
 
 :root {
@@ -38,7 +38,10 @@ figcaption {
   font-size: var(--fs-caption);
 }
 
-p, li, th, td {
+p,
+li,
+th,
+td {
   font-size: var(--fs-text);
 }
 
@@ -140,4 +143,74 @@ a {
 table {
   width: 100%;
   border-collapse: collapse;
+}
+
+footer {
+  padding: 1em 0;
+  margin-bottom: 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 0.83em;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: var(--fs-text);
+}
+
+footer p {
+  font-size: var(--fs-text);
+}
+
+label {
+  margin: 0.5em 0;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.5em;
+}
+
+input,
+label,
+select,
+textarea,
+button {
+  display: block;
+}
+
+button {
+  margin: 1em 0;
+  padding: 2em;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-family: monospace;
+  background-color: hsl(206, 73%, 50%);
+  color: #fff;
+
+  text-align: center;
+}
+
+button:hover {
+  background-color: hsl(206, 73%, 80%);
+  cursor: pointer;
+}
+
+.text-small {
+  font-size: var(--fs-caption);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.invisible {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
