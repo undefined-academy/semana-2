@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Contact</title>
+</head>
+<body>
+  <h1>Contact</h1>
+  <section id="socials">
+    <div class="contact-btn">
+      <a href="https://www.linkedin.com/in/grace-vivian/"><img src="./media/LI-In-Bug.png" alt="linkedIn logo" width="30"></a>
+      <a href="https://github.com/gracevivian04"><img src="./media/github-mark.png" alt="github logo" width="30"></a>
+    </div>
+  </section>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name here" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email here" required>
+    </div>
+    <div class="form-group">
+      <fieldset id="contact-reason" required>
+        <legend>I'd like to:</legend>
+        <input type="radio" name="reason" id="collab">
+        <label for="collab">Collaborate on a project</label>
+
+        <input type="radio" name="reason" id="mentor">
+        <label for="collab">Mentor</label>
+
+        <input type="radio" name="reason" id="hire">
+        <label for="hire">Get rates</label>
+
+        <input type="radio" name="reason" id="job">
+        <label for="job">Recruit</label>
+      </fieldset>
+    </div>
+    <div class="form-group">
+      <label for="connection">How do we know each other?</label>
+      <select id="select" required>
+        <option disabled selected>Choose one</option>
+        <option>Work</option>
+        <option>KeepCoding</option>
+        <option>Undefined Academy</option>
+        <option>LinkedIn</option>
+        <option>Github</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Leave me a message</label>
+      <textarea required></textarea>
+      <p>Please leave a short message of up to 500 characters and I'll get back to you!</p>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="conditions" required>
+      <label for="conditions">Please tick to confirm you're happy for the above to be sent and shared</label>
+    </div>
+    <button type="submit" id="send">Send</button>
+  </form>
+</body>
+</html>
+

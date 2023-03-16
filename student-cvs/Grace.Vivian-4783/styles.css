@@ -12,20 +12,21 @@ h1, h2, h3, h4 {
   color: #74dcdf;
 }
 
+a {
+  color:#74dcdf;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#CBE4DE;
+}
+
 section {
   padding: 10px 0px;
 }
 
 li:hover {
   color:#74dcdf;
-}
-
-img {
-  padding: 10px 30px;
-}
-
-p img {
-  background-color: #CBE4DE;
 }
 
 small {
@@ -213,4 +214,46 @@ th {
 .additional {
   border: 1px solid #74dcdf;
   padding-left: 10px;
+}
+
+.contact-btn {
+  background-color: #CBE4DE;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  justify-content:center;
+}
+
+img {
+  padding: 5px 40px;
+}
+
+.form-group {
+  border: 1px solid #74dcdf;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+
+button {
+  padding: 5px 50px;
+  border-radius: 5px;
+  margin: 10px auto;
+  background-color:#74dcdf;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color:#CBE4DE;
+  color:#2C3333;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
 }
