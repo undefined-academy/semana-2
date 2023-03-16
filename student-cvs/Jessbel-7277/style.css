@@ -33,9 +33,9 @@ main{
 }
 
 h1{
-    font-size: 2em;
+    font-size: 2rem;
     border-bottom: 1px solid var(--border-bottom);
-    padding-bottom: 0.3em;
+    padding-bottom: 10px;
     margin-bottom: 30px;
 }
 
@@ -47,7 +47,7 @@ ul{
 h2{
     margin-top: 30px;
     margin-bottom: 12px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .container-info{
@@ -61,7 +61,7 @@ h2{
 
 table {
     border-collapse: collapse;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 th, td{
@@ -74,4 +74,48 @@ table tbody tr:nth-child(odd) {
 }
 table tbody tr:nth-child(even) {
 	background: var(--secondary-background);
+}
+
+.container-form{
+    padding: 20px;
+}
+
+.container-form h2{
+    text-align: center;
+    border-top: 1px solid var(--border-bottom);
+    padding-top: 10px;
+}
+
+.form-group{
+    /* border: 1px solid tomato; */
+    margin: 20px 0;
+}
+
+label, input:not([type="checkbox"]){
+    width: 100%;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+input[type="text"], [type="email"], [type="date"], textarea {
+    padding: 8px 10px;
+}
+
+button{
+    background-color: var(--secondary-background);
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--just-white);
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
 }

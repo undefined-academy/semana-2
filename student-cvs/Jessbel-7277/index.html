@@ -116,6 +116,39 @@
                 </tbody>
             </table>
         </section>
+        <section class="container-form">
+            <h2>Contacto</h2>
+            <form action="/server" method="get">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>        
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>            
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>        
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="terms">                    
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <span> Acepto lo términos y condiciones</span>
+                    </label>
+                </div>
+                <button class="btn-enviar">Enviar mensaje</button>
+              </form>
+        </section>
       </main>
       <footer>
         <p>:)</p>
