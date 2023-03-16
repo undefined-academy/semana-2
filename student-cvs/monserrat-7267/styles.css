@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+    max-width: 70%; 
+    color: #222222; 
+    line-height: 1.4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+
+h1 strong {
+    margin: 24px;
+    padding: 16px;
+}
+
+.intro p {
+    margin: 16px;
+    padding: 8px;
+    text-align: justify;
+}
+
+.list ul {
+    margin: 48px 116px;
+    padding: 32px;
+    background-color: rgb(239, 224, 231);
+    line-height: 3;
+    font-size: 16px;
+    border-radius: 16px;
+}
+
+
+
