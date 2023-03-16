@@ -1,0 +1,62 @@
+body{
+    /* color: #555; */
+    background-color: rgba(42,28,79,255);
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, span, p, strong{
+    color: rgba(255,147,71,255);
+}
+
+code, pre{
+    background: #bb1919;
+}
+
+table{
+    background: rgb(253, 157, 78);
+}
+
+th, td{
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+    padding: 1em;
+}
+
+table, td, th {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+body{
+    color: #566b78;
+}
+
+p{
+    font-size: 18px;
+}
+
+.stats{
+    width: 40rem;
+}
+
+.logo-github{
+    width: 150px;
+}
+
+.h1{
+    display: inline-block;
+    font-size: 3rem;
+}
