@@ -18,6 +18,11 @@
         <nav>
             <div class="header-wrapper px-1 px-md-2 px-lg-2 py-2">
                 <div class="flex align-items-center jc-end">
+                    <ul class="flex flex-dr mb-0 mr-2 main-menu">
+                        <li>
+                            <a href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
                     <!-- Botón para cambiar esquema de colores -->
                     <button class="change-theme-button" id="change-theme-button" name="change-theme-button" type="button" aria-label="dark">
                         <svg class="color-theme-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
@@ -164,63 +169,6 @@
     </footer>
     
     <!-- JavaScript -->
-    <script>
-        // Script para poder cambiar el tema de oscuro a claro
-        const storageKey = 'theme-preference';
-
-        const onClick = () => {
-            theme.value = theme.value === 'light'
-                ? 'dark'
-                : 'light'
-
-            setPreference();
-        }
-
-        const getColorPreference = () => {
-            if (localStorage.getItem(storageKey)) {
-                return localStorage.getItem(storageKey);
-            } else {
-                return window.matchMedia('(prefers-color-scheme: dark)').matches
-                ? 'dark'
-                : 'light'
-            }
-        }
-
-        const setPreference = () => {
-            localStorage.setItem(storageKey, theme.value);
-            reflectPreference();
-        }
-
-        const reflectPreference = () => {
-            document.firstElementChild.setAttribute('data-color-mode', theme.value);
-
-            document.querySelector('#change-theme-button')?.setAttribute('aria-label', theme.value)
-        }
-
-        const theme = {
-            value: getColorPreference(),
-        }
-
-        reflectPreference();
-
-        window.onload = () => {
-            reflectPreference();
-
-            document.querySelector('#change-theme-button').addEventListener('click', onClick);
-        };
-
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches:isDark}) => {
-            theme.value = isDark ? 'dark' : 'light'
-            setPreference();
-        })
-
-        // Script para mostrar el año actual
-        const year = document.getElementById("year");
-        let currentYear = new Date().getUTCFullYear();
-
-        year.setAttribute("datetime", currentYear);
-        year.append(currentYear);
-
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
