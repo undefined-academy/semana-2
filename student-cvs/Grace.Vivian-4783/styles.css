@@ -1,0 +1,216 @@
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  background-color: #2C3333;
+  color: #CBE4DE;
+}
+
+h1, h2, h3, h4 {
+  color: #74dcdf;
+}
+
+section {
+  padding: 10px 0px;
+}
+
+li:hover {
+  color:#74dcdf;
+}
+
+img {
+  padding: 10px 30px;
+}
+
+p img {
+  background-color: #CBE4DE;
+}
+
+small {
+  color: #74dcdf;
+}
+
+table {
+  border: 1px solid #74dcdf;
+  border-collapse: collapse;
+}
+
+th {
+  border-right: 1px solid #74dcdf;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.skill {
+  border: 1px solid #74dcdf;
+  border-radius: 10px;
+  height: 1em;
+}
+
+.skill-level {
+  height: 1em;
+  border-radius: 10px;
+  background-color: #CBE4DE;
+}
+
+#html {
+  animation-name: htmlSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes htmlSkillLevel {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 90%;
+  }
+}
+
+#css {
+  animation-name: cssSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cssSkillLevel {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 70%;
+  }
+}
+
+#python {
+  animation-name: pythonSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pythonSkillLevel {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 35%;
+  }
+}
+
+#javascript {
+  animation-name: jsSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jsSkillLevel {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 65%;
+  }
+}
+
+#react {
+  animation-name: reactSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes reactSkillLevel {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 30%;
+  }
+}
+
+#vue {
+  animation-name: vueSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vueSkillLevel {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+#typescript {
+  animation-name: typescriptSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typescriptSkillLevel {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+#node {
+  animation-name: nodeSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nodeSkillLevel {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+#mongo {
+  animation-name: mongoSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mongoSkillLevel {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+#express {
+  animation-name: expressSkillLevel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes expressSkillLevel {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+
+.language {
+  color: #74dcdf;
+}
+
+.additional {
+  border: 1px solid #74dcdf;
+  padding-left: 10px;
+}
