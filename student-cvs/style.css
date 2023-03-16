@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   max-width: 50em;
@@ -50,4 +54,56 @@ tbody td:nth-child(2) {
 th,
 td {
   padding: 20px;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
+}
+
+input,
+textarea {
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+input {
+  height: 32px;
+}
+
+textarea {
+  height: 140px;
+}
+
+.btn-submit {
+  margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+
+.btn-submit:hover {
+  background-color: #69c;
+  transition: 0.7s;
+}
+
+.btn-submit:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #0a0a23;
+  transition: 0.7s;
+}
+
+.btn-submit:active {
+  background-color: #a7adba;
 }
