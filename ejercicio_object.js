@@ -10,7 +10,7 @@ returns: the type of the parameter passed to the function
 */
 
 function verifyType(myVar){
-    if (typeof(myVar) === 'object'){
+    if (typeof(myVar) === 'object' && myVar !== null){
         return "This variable is an object.";
     }
     return "This variable is a primitive";
@@ -28,5 +28,7 @@ console.log(verifyType(myVar));
 myVar = [1, 2];
 console.log(verifyType(myVar));
 myVar = {"myVar" : 1}
+console.log(verifyType(myVar));
+myVar = null;
 console.log(verifyType(myVar));
 
