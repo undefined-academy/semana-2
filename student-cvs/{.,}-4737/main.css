@@ -1,10 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: #f7f1e5;
+    margin: 0;
+    padding: 0;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: #e7b10a;
@@ -14,6 +25,8 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Code */
+
 code {
     font-family: monospace;
     font-size: 1em;
@@ -21,6 +34,8 @@ code {
     padding: 0.2em 0.4em;
     border-radius: 3px;
 }
+
+/* Tables */
 
 table {
     border-collapse: collapse;
@@ -37,6 +52,67 @@ td {
     border: 1px solid #dfe2e5;
 }
 
+/* Center figure elements */
+
 figure {
     display: inline-block;
+}
+
+/* Footer */
+
+footer {
+    background-color: #e7b10a;
+    margin-top: 60px;
+    padding: 20px 0 40px 0;
+}
+
+footer>h1 {
+    font-size: 17px;
+}
+
+.form-group {
+    display: inline-block;
+    max-width: 200px;
+    vertical-align: middle;
+}
+
+.form-group>label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.form-group>label,
+input {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 200px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form > button {
+    padding: 16px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: gray;
+    border: 1px solid rgb(80, 80, 80);
+    color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+button:active {
+    background-color: rgb(80, 79, 79);
+    box-shadow: none;
 }

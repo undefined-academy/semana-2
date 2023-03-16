@@ -9,10 +9,9 @@
   <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 
-<body>
+<body>  
 
   <main>
-
       <header>
         <h1>
           👋 Hello, I'm
@@ -94,7 +93,7 @@
             <td><code>gc "message"</code> Makes a git commit</td>
           </tr>
           <tr>
-            <td><code>alias lt='ls --human-reabale --size -1 -S'</code></td>
+            <td><code>alias lt='ls --human-readable --size -1 -S'</code></td>
             <td><code>lt</code> Sorts files by size</td>
           </tr>
         </tbody>
@@ -102,6 +101,29 @@
     </section>
 
   </main>
+
+  <footer>
+    <h1>Contact me</h1>
+    <form id="form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="10" required></textarea>
+      </div>
+      <button>Send</button>
+    </form>
+  </footer>
+
+  <script>
+    // Prevent default form submission behavior.
+    document.getElementById('form').addEventListener("submit", (e) => e.preventDefault())
+  </script>
+
 </body>
 
 </html>
