@@ -5,6 +5,7 @@ body {
     background-color: antiquewhite;
     line-height: 1.5;
     padding: 4em 1em;
+    color: #333;
   }
   h2 {
     margin-top: 1em;
@@ -38,3 +39,31 @@ table {
     background: #eee;
     text-align: center;
  }
+ .formulario{
+ margin-top: 50px;
+padding: 20px;
+
+}
+.form-group{
+margin-bottom: 20px;
+
+}
+#email {
+  margin-left: 23px;
+  min-width: 237px;
+}
+
+#nombre, #apellido
+{
+  margin-left: 5px;
+  min-width: 237px;
+}
+button{
+  border-radius: 5px;
+  background-color: bisque;
+  padding: 10px;
+  width: 100px;
+}
+.consulta{
+  margin-top: -100px;
+}

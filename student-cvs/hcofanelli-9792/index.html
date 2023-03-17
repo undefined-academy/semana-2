@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi perfil de Gihub</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
@@ -23,8 +23,8 @@
         <h2>📄Resumen</h2>
         <p>
           Ingeniero Electrónico dando los primeros pasos en la programación y el
-          desarrollo web. Mi objetivo es convertirme en un full stack
-          developer y trabajar en proyectos desafiantes y emocionantes.
+          desarrollo web. Mi objetivo es convertirme en un full stack developer
+          y trabajar en proyectos desafiantes y emocionantes.
         </p>
 
         <h3>🎓Educación</h3>
@@ -86,9 +86,36 @@
           </tr>
         </table>
       </section>
+      <section>
+        <form class="formulario" id="formulario" >
+          <div class="form-group">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="text" id="email" />
+          </div>
+           <div class="form-group">
+            <label  class="consulta" for="consulta">Consulta: </label>
+            <textarea
+              name="consulta"
+              id="consulta"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div> 
+          <button id="enviar">Enviar</button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>&copy; [2023] hcofanelli. All rights reserved.</p>
     </footer>
+  <script src="index.js"></script>
   </body>
 </html>
