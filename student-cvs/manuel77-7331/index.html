@@ -98,16 +98,16 @@
                 <div class="form-group">
                     <fieldset>
                         <legend>Reason for contact</legend>
-                        <label for="full">
-                        <input id="full" name="full" type="radio" name="reason" required>
+                        <label>
+                        <input type="radio" name="reason" value="full" required>
                         Full time job
                         </label>
-                        <label for="part">
-                        <input id="part" name="part" type="radio" name="reason">
+                        <label>
+                        <input type="radio" name="reason" value="part">
                         Part time job
                         </label>
-                        <label for="freelance">
-                        <input id="freelance" name="freelance" type="radio" name="reason">
+                        <label>
+                        <input type="radio" name="reason" value="freelance">
                         Freelance job
                         </label>
                     </fieldset>
@@ -125,7 +125,7 @@
                         <span>I accept terms and conditions</span>
                     </label>
                 </div>
-                <button class="btn">Send</button>
+                <button class="btn" onclick="event.preventDefault()">Send</button>
             </form>
         </section>
     </div>
