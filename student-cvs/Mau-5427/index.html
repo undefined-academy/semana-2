@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
-  <link rel="stylesheet" href="/student-cvs/Mau-5427/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar">
@@ -18,66 +18,176 @@
   </nav>
   <main class="container">
     <section class="container__welcome" id="welcome">
-      <div class="welcome__intro">
-        <h1 class="intro__title">¡Hola 👋!
-          <br>Soy Mauricio Bedoya. 
-          <br>Web Developer.
-        </h1>
-        <p class="intro__paragraph">Soy egresado de la carrera de ingeniería Industrial. Busco cada dia aprender o crear algo nuevo pensando en el futuro y su valor, con la programación encontré lo que es una nueva pasión que me ayuda a cumplir con esta búsqueda interminable.
-        <br>
-        Algunas habilidades que me ayudaran a cumplir mis metas son las que adquirí durante mi etapa en la universidad, tanto estudiando como conociendo compañeros y amigos, habilidades como el trabajo en equipo, empatía y pensamiento crítico.</p>
+      <div class="welcome__content content">
+        <header class="welcome__intro">
+          <h1 class="intro__title">¡Hola 👋!
+            <br>Soy Mauricio Bedoya. 
+            <br>Web Developer.
+          </h1>
+          <p class="intro__paragraph">Soy egresado de la carrera de ingeniería Industrial. Busco cada dia aprender o crear algo nuevo pensando en el futuro y su valor, con la programación encontré lo que es una nueva pasión que me ayuda a cumplir con esta búsqueda interminable.
+          <br>
+          Algunas habilidades que me ayudaran a cumplir mis metas son las que adquirí durante mi etapa en la universidad, tanto estudiando como conociendo compañeros y amigos, habilidades como el trabajo en equipo, empatía y pensamiento crítico.</p>
+        </header>
+        <img src="/student-cvs/Mau-5427/assets/hands-coding.png" class="welcome__img" alt="imagen de introducción">
+
       </div>
-      <img src="/student-cvs/Mau-5427/assets/hands-coding.png" class="welcome__img" alt="imagen de introducción">
     </section>
 
     <section class="container__stack" id="stack">
-      <div>
-        <h2 class="stack__title">Stack</h2>
-        <p class="stack__paragraph">Durante el proceso de aprendizaje, de manera autodidacta y en plataformas como FreeCodeCamp, OpenBootcamp y Undefined Academy, se adquirieron habilidades y conocimientos en tecnologías que son ampliamente utilizadas en proyectos de desarrollo web. Con la práctica y aplicación de estas tecnologías en proyectos, se busca trabajar con ellas de manera efectiva. La experiencia en estas plataformas permitió el desarrollo de habilidades en el diseño y desarrollo web del lado del frontend.</p>
+      <div class="stack__content content">
+        <header class="content-header">
+          <h2 class="content-header__title">Stack</h2>
+          <p class="content-header__paragraph">Durante el proceso de aprendizaje, de manera autodidacta y en plataformas como FreeCodeCamp, OpenBootcamp y Undefined Academy, se adquirieron habilidades y conocimientos en tecnologías que son ampliamente utilizadas en proyectos de desarrollo web. Con la práctica y aplicación de estas tecnologías en proyectos, se busca trabajar con ellas de manera efectiva. La experiencia en estas plataformas permitió el desarrollo de habilidades en el diseño y desarrollo web del lado del frontend.</p>
+        </header>
+  
+        <section class="stack__group" id="tools">
+          <h3 class="group__name">Herramientas</h3>
+          <div class="group__card-container">
+            <div class="card-container__card">
+              <img src="/student-cvs/Mau-5427/assets/vsc-logo.svg" alt="logo de Visual Studio Code">
+              <p>Visual Studio Code</p>
+            </div>
+            <div class="card-container__card">
+              <img src="/student-cvs/Mau-5427/assets/git-logo.svg" alt="logo de git">
+              <p>Git</p>
+            </div>
+            <div class="card-container__card">
+              <img src="/student-cvs/Mau-5427/assets/github-logo.svg" alt="logo de github">
+              <p>GitHub</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="stack__group" id="frontend">
+          <h3 class="group__name">Frontend</h3>
+          <div class="group__card-container">
+            <div class="card-container__card">
+              <img src="/student-cvs/Mau-5427/assets/javascript-logo.svg" alt="logo de javascript">
+              <p>JavaScript</p>
+            </div>
+            <div class="card-container__card">
+              <img src="/student-cvs/Mau-5427/assets/html5-logo.svg" alt="logo de html5">
+              <p>HTML</p>
+            </div>
+            <div class="card-container__card">
+              <img src="/student-cvs/Mau-5427/assets/css3-logo.svg" alt="logo de css3">
+              <p>CSS</p>
+            </div>
+            <div class="card-container__card">
+              <img src="/student-cvs/Mau-5427/assets/sass-logo.svg" alt="logo de sass">
+              <p>Sass</p>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <section class="stack__group" id="tools">
-        <h3 class="group__name">Herramientas</h3>
-        <div class="group__card-container">
-          <div class="card-container__card">
-            <img src="/student-cvs/Mau-5427/assets/vsc-logo.svg" alt="logo de Visual Studio Code">
-            <p>Visual Studio Code</p>
-          </div>
-          <div class="card-container__card">
-            <img src="/student-cvs/Mau-5427/assets/git-logo.svg" alt="logo de git">
-            <p>Git</p>
-          </div>
-          <div class="card-container__card">
-            <img src="/student-cvs/Mau-5427/assets/github-logo.svg" alt="logo de github">
-            <p>GitHub</p>
-          </div>
-        </div>
-      </section>
-      
-      <section class="stack__group" id="frontend">
-        <h3 class="group__name">Frontend</h3>
-        <div class="group__card-container">
-          <div class="card-container__card">
-            <img src="/student-cvs/Mau-5427/assets/javascript-logo.svg" alt="logo de javascript">
-            <p>JavaScript</p>
-          </div>
-          <div class="card-container__card">
-            <img src="/student-cvs/Mau-5427/assets/html5-logo.svg" alt="logo de html5">
-            <p>HTML</p>
-          </div>
-          <div class="card-container__card">
-            <img src="/student-cvs/Mau-5427/assets/css3-logo.svg" alt="logo de css3">
-            <p>CSS</p>
-          </div>
-          <div class="card-container__card">
-            <img src="/student-cvs/Mau-5427/assets/sass-logo.svg" alt="logo de sass">
-            <p>Sass</p>
-          </div>
-        </div>
-      </section>
     </section>
-    <section class="container__projects" id="projects"></section>
-    <section class="container__contact" id="contact"></section>
+
+    <section class="container__projects" id="projects">
+      <div class="projects__content content">
+        <header class="content-header">
+          <h2 class="content-header__title">Proyectos</h2>
+          <p class="content-header__paragraph">Una de las partes mas interesantes es el momento de aplicar la teoría en la práctica, por ello aquí se presentan algunos de los proyectos realizados hasta el momento.</p>
+          <div class="btn-container">
+            <a class="content-header__git-btn" href="https://github.com/MauBedoya" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </header>
+
+        <div class="content__projects-container">
+          <a class="card-project" target="_blank" href="https://maubedoya.github.io/pagina-tributo-GUNNM/GUNNM.html" rel="noopener noreferrer">
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/AlitaBlog-thumbnail.jpg" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-project__description">
+              <h3 class="description__title">Blog Tributo a GUNNM</h3>
+              <p class="description__text">Blog básico realizado para practicar la maquetación y semántica en HTML.</p>
+            </div>
+          </a>
+
+          <a class="card-project" target="_blank" href="https://maubedoya.github.io/survey-form-cytus/surveyForm.html" rel="noopener noreferrer">
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/cytusSurvey-thumbnail.jpg" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-project__description">
+              <h3 class="description__title">Encuesta a Usuarios de CYTUS</h3>
+              <p class="description__text">Maquetado de formulario aplicando conocimientos sobre selectores en CSS.</p>
+            </div>
+          </a>
+
+          <a class="card-project" target="_blank" href="https://maubedoya.github.io/documentacion-tecnica/javascript.html" rel="noopener noreferrer">
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/apuntesJS-thumbnail.jpg" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-project__description">
+              <h3 class="description__title">Pagina de Documentación Técnica</h3>
+              <p class="description__text">Blog de documentación técnica, donde se aplican conceptos aprendidos sobre maquetación y estilizado de diferentes elementos.</p>
+            </div>
+          </a>
+
+          <a class="card-project" target="_blank" href="" rel="noopener noreferrer">
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/working-thumbnail.png" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>---</li>
+                  <li>---</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-project__description">
+              <h3 class="description__title">En proceso</h3>
+              <p class="description__text">Trabajando en ello...</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    
+    <section class="container__contact" id="contact">
+      <div class="contact__content content">
+
+      </div>
+    </section>
   </main>
+  <footer>
+    <address>
+      <a href="https://github.com/MauBedoya" target="_blank" rel="noopener noreferrer">
+        <img class="footer-img" src="./assets/github-logo.svg" alt="logo de github">
+      </a>
+      <a href="https://www.linkedin.com/in/mauricio-bedoya-deheza-106a99252" target="_blank" rel="noopener noreferrer">
+        <img class="footer-img" src="./assets/linkedin-logo.svg" alt="logo de Linkedin">
+      </a>
+    </address>
+  </footer>
 </body>
 </html>
