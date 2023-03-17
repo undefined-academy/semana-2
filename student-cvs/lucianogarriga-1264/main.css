@@ -1,5 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
-
+html{
+  box-sizing: border-box;
+} 
 header,
 body {
   /* los elementos tipo bloque ocupan todo el width,
@@ -39,7 +41,7 @@ body {
   max-width: 50em;
   line-height: 1.5;
   color: #4e5a61;
-  background: linear-gradient(rgb(148, 209, 230), lightgrey);
+  background: linear-gradient(rgb(183, 217, 228), rgb(192, 188, 188));
   font-size: 18px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
@@ -104,4 +106,67 @@ nav,
 p{
   text-align: justify;
   padding: 0 0.5em;
+}
+
+/* CONTACT PAGE STYLES */
+.page{ 
+  margin: 50px auto;
+  padding: 0 40px; 
+}
+.form-group{ 
+  margin: 20px 0;
+}
+
+label, input[type="text"], input[type="email"]{
+  width: 100%; 
+}
+label, input{ 
+  vertical-align: middle;
+}
+label, legend{
+  font-weight: bold; 
+  font-size: 1.2rem;
+  color: #444;
+
+}
+input[type="text"], input[type="email"], textarea{
+  background: rgb(243, 239, 239);
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+textarea{
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+.help{
+  font-size: 13px;
+  margin: 10px 0;
+  font-size: 1rem;
+} 
+button{
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgb(61, 63, 66);
+  color: rgb(66, 68, 72);
+  background: #6c9cc8;
+  border-radius: 8px;
+  text-shadow: -0.5px -0.5px 0 rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+button:hover{
+  background: #144c81;
+  color: aliceblue;
+  transition: 0.3s;
+}
+button:active{
+  box-shadow: none;
+}
+.center-button{
+  text-align: center;  
+  padding-top: 1em;
 }
