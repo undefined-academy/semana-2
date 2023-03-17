@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Joshep Villalba</title>
+</head>
+<body>
+    <header>
+        <h1><span class="titulo">Hola, soy Joshep Villalba 👋</span></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/joshepvillalba">Github Link</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h2>Descripcion:</h2>
+            <article>
+
+                <h3>Futuro Full-stack JavaScript Developer</h3>
+                
+                <p>Me apasiona el desarrollo web, las aplicaciones de escritorio y la automatización mediante scripts. A continuación, encontrarás las tecnologías con las que tengo experiencia:</p>
+                
+                    <a href="https://www.python.org/"><img src="./images/python.png" alt="Python" height="100" ></a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML"><img src="./images/html.png" alt="HTML" height="100" ></a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS"><img src="./images/css.png" alt="CSS" height="100" ></a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="./images/javascript.png" alt="JavaScript" height="100" ></a>
+                    <a href="https://nodejs.org/en/"><img src="./images/node.png" alt="Node.js" height="100" ></a>
+                
+                <p>¡Gracias por visitar mi perfil de GitHub! Siéntete libre de echar un vistazo a mis repositorios y contribuciones.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Habilidades técnicas</h2>
+            <ul>
+                <li>HTML: Lenguaje de marcado utilizado para estructurar el contenido web.</li>
+                <li>CSS: Lenguaje utilizado para estilizar la presentación del contenido web.</li>
+                <li>Javascript: Lenguaje de programación utilizado para crear aplicaciones web interactivas y dinámicas.</li>
+                <li>Python: Lenguaje de programación utilizado para automatización de tareas, análisis de datos y desarrollo web.</li>
+                <li>MySQL: Sistema de gestión de bases de datos relacionales utilizado para almacenar y administrar grandes conjuntos de datos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <section>
+        <h2>Contacto</h2>
+        
+        <form method="post" action="./" id="contact-form">
+            <fieldset>
+                <legend>Datos</legend>
+                <div class="form">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" placeholder="Ingrese su nombre completo" type="text" required/>
+                </div>
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="Ingrese su correo" type="email" required/>
+                </div>
+                <div class="form">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" placeholder="Ingrese su número de teléfono" type="tel"/>
+                </div>
+                <div class="form">
+                    <label for="asunto">Asunto</label>
+                    <input id="asunto" placeholder="Ingrese el asunto de su mensaje" type="text" required/>
+                </div>
+                <div class="form">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" rows="5" required> </textarea>
+                    <span class="help">Mensaje sobre el tema a tratar</span>
+                </div>
+                <div class="form">
+                    <input type="checkbox" id="check" required/>
+                    <label for="check" class="check">Acepto los términos y condiciones </label>
+                </div>
+                <div class="form">
+                    <div class="g-recaptcha" data-sitekey="TU-SITIO-WEB-SITE-KEY"></div>
+                </div>
+                <button class="btnEnviar">Enviar</button>
+            </fieldset>
+        </form>
+    
+    </section>
+
+    <section>
+        <h2>📖 Comandos de la Terminal 📖</h2>
+        <table>
+        <thead>
+        <tr>
+        <th>Comando</th>
+        <th>Descripción</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>ls</td>
+        <td>lista los archivos y directorios en el directorio actual</td>
+        </tr>
+        <tr>
+        <td>cd</td>
+        <td>comando para cambiar el directorio actual</td>
+        </tr>
+        <tr>
+        <td>mkdir</td>
+        <td>Este comando se utiliza para crear un nuevo directorio</td>
+        </tr>
+        <tr>
+        <td>rm</td>
+        <td>Este comando se utiliza para eliminar archivos o directorios en el sistema.</td>
+        </tr>
+        <tr>
+        <td>grep</td>
+        <td>Este comando se utiliza para buscar texto en archivos o en la salida de otros comandos</td>
+        </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <br>
+
+    <section>
+        <div class="terminal">
+            <h2> <span> ✏️ Alias en la Terminal ✏️ </span> </h2>
+            <pre><code>
+                alias cl="clear"
+                alias rm="trash"
+            </code></pre>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById('contact-form');
+    
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            console.log('Formulario enviado con éxito.');
+        });
+    </script>
+
+</body>
+</html>
