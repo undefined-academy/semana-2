@@ -9,7 +9,7 @@ body {
     max-width: 50em;
     font-family: "Roboto", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.2;
-    padding: 4em 1em;
+    padding: 0em 1em;
     background-color: antiquewhite;
 }
 
@@ -45,6 +45,11 @@ footer{
     text-align: center;
 }
 
+footer div{
+    display: inline-block;
+    padding: 0 90px;
+}
+
 img{
     width: 40px;
     height: 40px;
@@ -52,8 +57,10 @@ img{
 
 a:hover{
     background: #ffa3ae
+
 }
 
 a:visited{
     color: brown
 }
+
