@@ -1,8 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+    box-sizing: border-box;
+}
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: inherit;
 }
 
 header {
@@ -40,6 +45,7 @@ h1, h2, strong {
 
 a {
     color: indianred;
+    padding-top: 2em;
 }
 
 header img {
@@ -71,4 +77,53 @@ header a {
 header a:hover {
     background:  #212337;
     color: white;
+}
+
+input, label {
+    width: 100%;
+}
+
+.form-group {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #c5cae9;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #555;
+}
+
+button {
+    margin-top: 8px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e8eaf6;
+    background: #3f51b5;
+    border: 1px solid #303f9f;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7986cb;
+}
+
+button:active {
+    background: #283593;
+    box-shadow: none;
 }
