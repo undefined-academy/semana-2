@@ -12,13 +12,13 @@
   --title-color: #1E0E62;
   --paragraph-color: rgba(21, 20, 57, 0.6);
 
-  --sections-title-fs: 2rem;
   --sections-title-mb: 1.5rem;
   --sections-big-fs: 1.5rem;
   --sections-medium-fs: 1.125rem;
-  --sections-content-gap: 2rem;
   
   --stack-card-width: 13.5rem;
+
+  --project-card-width: 23.125rem;
 }
 
 * {
@@ -62,7 +62,7 @@ body {
   color: black;
   font-weight: 500;
   border: 2px solid #ebeaed;
-  border-radius: 100px;
+  border-radius: 50px;
   padding: 0.25rem 1rem;
   transition: all 0.3s ease;
 }
@@ -110,7 +110,7 @@ body {
 
 .content-header__title {
   color: var(--title-color);
-  font-size: var(--sections-title-fs);
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: var(--sections-title-mb);
@@ -126,7 +126,7 @@ body {
   display: grid;
   grid-auto-rows: max-content;
   align-content: center;
-  gap: var(--sections-content-gap);
+  gap: 2rem;
 }
 .stack__group > h3 {
   margin-bottom: var(--sections-title-mb);
@@ -139,7 +139,7 @@ body {
 .group__card-container {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(calc(var(--stack-card-width) + 10px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--stack-card-width) + 0.625rem), 1fr));
   gap: 1rem;
 }
 .card-container__card {
@@ -166,7 +166,7 @@ body {
 }
 .content-header__git-btn {
   border: none;
-  border-radius: 100px;
+  border-radius: 50px;
   background-color: var(--title-color);
   padding: 0.6rem 4.5rem;
   color: white;
@@ -176,17 +176,17 @@ body {
   transition: all 0.5s ease;
 }
 .content-header__git-btn:hover {
-  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
 }
 .content__projects-container {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));  
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--project-card-width) + 0.625rem), 1fr));  
   gap: 2rem 0.5rem;
 }
 .card-project {
-  width: 370px;
-  height: 370px;
+  width: var(--project-card-width);
+  height: 23.125rem;
   border: 1px solid transparent;
   border-radius: 10px;
   box-shadow: 0 5px 5px 1px rgba(29, 14, 98, 0.2);
@@ -200,7 +200,7 @@ body {
 .card-project__thumbnail {
   position: relative;
   border-radius: 10px;
-  height: 185px;
+  height: 11.5625rem;
   overflow: hidden;
 }
 .thumbnail__image {
@@ -210,7 +210,7 @@ body {
   transition: all 0.5s ease-out;
 }
 .thumbnail__image img {
-  height: 185px;
+  height: 11.5625rem;
 }
 .card-project:hover .thumbnail__image {
   transform: scale(1.1);
@@ -237,8 +237,8 @@ body {
   gap: 0;
 }
 .card-project__description {
-  padding: 13px 13px 0;
-  height: 120px;
+  padding: 0.875rem 0.875rem 0;
+  height: 7.5rem;
 }
 .description__title {
   text-align: center;
@@ -253,7 +253,7 @@ body {
   line-height: 1.2;
 }
 .card-project__btn-container {
-  height: 65px;
+  height: 4.0625rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -263,7 +263,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   background-color: var(--bg-main-color);
   padding: 0 1rem;
   border: 1px solid transparent;
@@ -275,7 +275,7 @@ body {
   box-shadow: 0px 2px 7px 0 rgba(0, 0, 0, 0.4);
 }
 .btn-container__btn img {
-  height: 2rem;
+  height: 1.5rem;
 }
 .btn-container__btn p {
   color: var(--title-color);
