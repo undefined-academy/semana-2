@@ -1,3 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
 .Page {
     max-width: 800px;
     margin: 50px auto;
