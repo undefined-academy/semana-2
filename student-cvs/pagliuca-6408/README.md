@@ -1,6 +1,6 @@
 ***
-#### ***Visita mi [github]***
-[github]: https://github.com/Alexander-Solis-Brenes
+## Practica Semana 2, practica 1. ![Nu Html Checker](https://validator.w3.org/nu/)
+![HTML Checker](https://raw.githubusercontent.com/Alexander-Solis-Brenes/semana-2/main/student-cvs/pagliuca-6408/result_nu_html_checker.png)
 ***  
 
 # Biografía  
