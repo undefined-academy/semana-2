@@ -56,6 +56,12 @@ textarea {
     resize: vertical;
 }
 
+.info {
+    padding: 8px 0;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+
 label {
     font-weight: 600;
     font-size: medium;
