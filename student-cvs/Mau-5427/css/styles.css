@@ -69,11 +69,6 @@ body {
 .navbar__ul li a:hover {
   background-color: rgba(29, 14, 98, 0.1);
 }
-
-/*------ sections styles ------*/
-/* .container > section {
-  padding: 2rem;
-} */
 /*------ welcome section styles ------*/
 .welcome__content {
   display: grid;
