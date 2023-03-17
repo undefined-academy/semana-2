@@ -1,66 +1,66 @@
-body {
-    width: 100%;
-    background-color: rgb(194, 212, 226);
-    line-height: 1.4;
-    height: 100%;
-    padding: 12px 5px;
-    content: 100%;
+html {
+    box-sizing: border-box;
 }
 
-
-code {
-    background-color: azure;
+* {
+    box-sizing: inherit;
 }
 
-.encabe {
+body,
+html {
+    background: whitesmoke;
+    max-width: 1200px;
+    margin: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
     font-family: 'Rubik Iso', cursive;
-    font-size: 25px;
-    text-align: center;
+    font-size: 50px;
 }
-
-body p {
-    font-family: Arial, Helvetica, sans-serif;
+.aprendiz li a{
+    text-decoration: none;
+    color: blue;
 }
-
-body h2 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body ul {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body code {
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid black;
-}
-
-th {
-    border: 2px solid rgb(230, 10, 10);
-}
-
-td {
-    border: 2px solid rgb(230, 10, 10);
-    text-align: center;
+.aprendiz li{
+    margin-top: 5px;
 }
 
 table {
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+td {
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+.tabla h1{
+    font-size: 30px;
+}
+.tabla h2{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+}
+code {
+    font-size: 16px;
+    border: 2px solid black;
+    background: white;
+    border-radius: 5px;
+    padding: 2px 15px;
 }
 
 footer {
-    color: #666;
+    position: fixed;
+    bottom: 50px;
+    text-align: center;
     padding: 10px;
-    text-align: right;
-
-}
-
-section>h1 {
-    font-family: Arial, Helvetica, sans-serif
-}
-
-article h2{
-    font-size: 18px;
 }
