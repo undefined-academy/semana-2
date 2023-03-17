@@ -1,0 +1,64 @@
+body {
+    max-width: 600px;
+    /* max ancho */
+    font-size: 14px;
+    /*  tamaño letra */
+    margin: 0 auto;
+    /* Centrar - le estoy diciendo que un margen arriba y abajo 0 y a los lados los rellena automaticamente */
+    border: 1px dashed tomato;
+    /* Bordear todo */
+    background: #f3f4f6;
+    color: #333;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    /* la de moda intel - toca instalarla */
+}
+
+
+header {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+p {
+    line-height: 1.1;
+    /* espaciado en el parrafo 1.5 el recomendado */
+}
+
+h1,
+h2 {
+    line-height: 1.5;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Cambios adicionales de correccion de validator w3 */
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /* width: 100%; */
+    margin-top: 30px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+footer {
+    text-align: center;
+}
