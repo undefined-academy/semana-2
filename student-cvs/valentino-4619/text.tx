@@ -1,0 +1,118 @@
+  <main>
+
+        <header>
+
+            <h1>VALNTNO</h1>
+            <hr>
+
+        </header>
+
+        <section class="main__section"></section>
+
+        <section class="me__sction">
+
+            <section>
+
+
+                <article>
+                    <h2> Hello world !</h2>
+
+                    <p>
+                        Mi nombre es Valentino Cogo y estoy actualmente <strong>estudiando Desarrollo Web</strong> e
+                        <strong>Ingles</strong> ; Soy
+                        bastanteautodidacta y me encanta responderme a los "porqués" que me surgen al momento de
+                        aprender/solucionar
+                        algo, lo que considero que me fue lo que me
+                        hizo buen navegante en internet.
+                    </p>
+
+
+                    <p>
+                        Por otro lado, también estoy estudiando en el bootcamp FullStack de
+                        <strong> <a href=" https://undefined.academy/">Guillermo Rodas, undefined academy</a> </strong>
+                        el cual me saca todo el tiempo de la zona de
+                        confort.
+                    </p>
+                </article>
+
+                <div class="img-container">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/63ea172c-1931-4b26-829f-465efd85fd41/d7k9vrc-14fa415b-2b7d-44bd-baaf-5d2fd1700214.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYzZWExNzJjLTE5MzEtNGIyNi04MjlmLTQ2NWVmZDg1ZmQ0MVwvZDdrOXZyYy0xNGZhNDE1Yi0yYjdkLTQ0YmQtYmFhZi01ZDJmZDE3MDAyMTQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ppafvinNcT7nf3hbxYiuk4BzTObjJxpK7kgMY_-q_nY"
+                        alt="">
+                </div>
+
+                <article>
+
+                    <h2>More about me</h2>
+
+                    <p>
+                        Tengo 20 años y me rigen la constante evolución y la búsqueda de armonía en los distintos
+                        ámbitos de
+                        la
+                        vida.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Cosas me gustan:</h3>
+
+                    <ul>
+                        <li> Leer 📚</li>
+                        <li> Meditar 🧘‍♂️</li>
+                        <li> Jugar videojuegos 🎮</li>
+                    </ul>
+
+                </article>
+
+            </section>
+
+
+
+
+            <section>
+
+                <h3>Puedes contactarme by:</h3>
+                <ul>
+                    <li>Email: <a href="mailto:valentinocogo91@gmial.com">valentinocogo91@gmial.com</a></li>
+                </ul>
+
+            </section>
+
+        </section>
+
+        <section class="maluquinhos__section">
+            <h2> kkkk maluquinhos zone</h2>
+
+            <article class="maluquinha__um mlq">
+                <h3>A cara Helo</h3>
+
+                <img src="helo.jpg" alt="helosinha">
+                <h3>os problemas de issta cara</h3>
+                <ol>
+                    <li>E de Brazil 😳🤔</li>
+                    <li>Gosta muito cafa ☕💀</li>
+                    <li>E um poquinho male fifi 👵👵</li>
+                </ol>
+
+            </article>
+
+            <article class="maluquinha__dois mlq">
+
+                <h3> O cara Bethinho😍😍😍😍😍</h3>
+                <img src="helo.jpg" alt="">
+
+                <h3>os problemas de issta cara</h3>
+                <ol>
+                    <li>OOOOO😍😻😍😻😍😻 SOLO FICA ESTTE CARA😍😍😻😻🐕‍🦺 NAO TEM NINGUN PROBLEMA😻😻😻 E O CARA
+                        MAS😍😍😍 HEMOSO DO MUNDOOO AA🐕‍🦺🐕‍🦺AAA🐕‍🦺A🐕‍🦺😻😻😍😻😍😍😻😻😍</li>
+                    <li>E um makakinho muito lindo 🤍✨</li>
+                    <li>E um velinho de merda que gosta muito dormir😴😁</li>
+                </ol>
+
+            </article>
+
+
+        </section>
+
+    </main>
