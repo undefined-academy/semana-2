@@ -1,4 +1,11 @@
 /* CSS principal*/
+html { /*width + padding + border;; por lo que debera de emplearse el border-box*/
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
 
 body{
     margin: 0px;
@@ -100,11 +107,6 @@ span img{
     height: auto;
 }
 
-svg{
-    fill: red;
-    stroke: #fff;
-}
-
 #span a{
     color: #fff;
 }
@@ -144,4 +146,74 @@ svg{
 
 .navbar li {
     position: relative;
+}
+
+#contacto{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.formContacto{
+    width: 100%;
+    padding: 10px 100px;
+    align-content: center;
+    vertical-align: middle;
+    /*border: 1px solid tomato;*/
+}
+
+.formGroup{
+    /*border: 1px solid tomato;*/
+    margin: 15px 0;
+}
+
+.formGroup label, input, select{
+    width: 100%;
+}
+
+.formGroup select{
+    height: 30px;
+}
+
+.formGroup label, input{
+    width: 100%;
+    vertical-align: middle; /*Solo funciona con elementos inline*/
+}
+
+.formGroup textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+.formGroup input[type="text"], input[type="email"], input[type="tel"], select, textarea{
+    background: whitesmoke;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    padding: 8px 10px;
+    margin-top: 2px;
+}
+
+.resaltar{
+    font-weight: bold;
+}
+
+.botonEnviar{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #05b4df;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.botonEnviar:hover{
+    background: #facc15;
+}
+
+.botonEnviar:active{
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }

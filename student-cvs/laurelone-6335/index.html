@@ -107,7 +107,45 @@
     <section id="contacto" class="container">
         <h1>Contacto</h1>
         <article>
-            <p>Para cualquier duda y/o aclaración se puede realizar a través de los siguientes medios:</p>
+            <p class="resaltar">¿Que te ha parecido esta página? ¿Que mejoras se podrían aplicar?</p>
+            <p>Ayudanos con tus comentarios a mejorar el diseño de este sitio, para ello, se encuentra disponible el siguiente Formulario.<br>De antemano gracias por tu Participación y porque no, tus halagos.</p>
+
+            <form action="event.preventDefault(); return false;" method="get" class="formContacto">
+                <div class="formGroup">
+                    <label for="message">Comentarios:</label>
+                    <textarea id="message" name="message" rows="8" placeholder="Ingrese aquí sus comentarios" required></textarea>
+                </div>
+                <div class="formGroup">
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="" selected disabled>Seleccione una opción...</option>
+                        <option value="CSS">Hoja de estilos</option>
+                        <option value="HTML">Maquetado HTML</option>
+                        <option value="Halago">Halago</option>
+                        <option value="General">Comentario general</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Medios de Comunicación</legend>
+                    <div class="formGroup">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Introduzca su nombre" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="text" id="email" name="email" placeholder="Introduzca su correo electrónico" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Introduzca su número telefónico" required>
+                    </div>
+                </fieldset>
+
+                <div class="formGroup">
+                    <button type="button" class="botonEnviar">Enviar</button>
+                </div>
+            </form>
+
             <address>
                 <span><img src="assets/github.svg" alt="github"><a href="https://github.com/laurelone21" target="_blank"> laurelone</a></span>
                 <span><img src="assets/google.svg" alt="google"> <a href="mailto:julian.laurel86@gmail.com"> Gmail</a></span>
