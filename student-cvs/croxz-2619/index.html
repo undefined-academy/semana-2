@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>Profile</title>
+    <title>Joshep Villalba</title>
 </head>
 <body>
     <header>
@@ -46,6 +46,46 @@
             </ul>
         </section>
     </main>
+
+    <section>
+        <h2>Contacto</h2>
+        
+        <form method="post" action="./" id="contact-form">
+            <fieldset>
+                <legend>Datos</legend>
+                <div class="form">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" placeholder="Ingrese su nombre completo" type="text" required/>
+                </div>
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="Ingrese su correo" type="email" required/>
+                </div>
+                <div class="form">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" placeholder="Ingrese su número de teléfono" type="tel"/>
+                </div>
+                <div class="form">
+                    <label for="asunto">Asunto</label>
+                    <input id="asunto" placeholder="Ingrese el asunto de su mensaje" type="text" required/>
+                </div>
+                <div class="form">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" rows="5" required> </textarea>
+                    <span class="help">Mensaje sobre el tema a tratar</span>
+                </div>
+                <div class="form">
+                    <input type="checkbox" id="check" required/>
+                    <label for="check" class="check">Acepto los términos y condiciones </label>
+                </div>
+                <div class="form">
+                    <div class="g-recaptcha" data-sitekey="TU-SITIO-WEB-SITE-KEY"></div>
+                </div>
+                <button class="btnEnviar">Enviar</button>
+            </fieldset>
+        </form>
+    
+    </section>
 
     <section>
         <h2>📖 Comandos de la Terminal 📖</h2>
@@ -92,5 +132,15 @@
             </code></pre>
         </div>
     </section>
+
+    <script>
+        const form = document.getElementById('contact-form');
+    
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            console.log('Formulario enviado con éxito.');
+        });
+    </script>
+
 </body>
 </html>
