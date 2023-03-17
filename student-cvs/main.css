@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(109, 229, 187);
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+tr,
+th {
+    border: 1px solid black;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.informacion {
+    position: relative;
+    margin: 10px 0px 40px 20px;
+}
+
+.informacion-1 {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+}
+
+a {
+    color: black;
+}
+a:hover{
+    color: red;
+}
+.text {
+    font-weight: bold;
+    text-align: center;
+}
+
+.cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+
+}
+footer p{
+    text-align: center;
+}
