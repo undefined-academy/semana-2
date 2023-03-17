@@ -110,3 +110,32 @@ pre {
     font-weight: bold;
     margin: 0%;
 }
+/*estilos para el formulario*/
+
+.form-group {
+  margin: 20px 0;
+}
+
+.form-group label, input:not([type="radio"],[type="checkbox"]){
+  width: 100%;
+}
+.form-group input, .form-group label {
+  vertical-align: middle;
+}
+.form-group textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+.form-group input[type="text"],.form-group input[type="email"], .form-group textarea {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help{
+  font-size: 12px;
+  margin-top: 10px;
+}
