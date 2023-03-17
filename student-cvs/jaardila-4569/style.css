@@ -1,8 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
-* {
+html {
     box-sizing: border-box;
-    /*para que el calculo de todos los tamanos sean con bordes y no hallan desfaces en los bordes*/
+    /*para que el calculo de todos los tamanos sean con bordes y no hallan desfaces en los bloques*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /*para que herede la propiedad box-sizing*/
 }
 
 body {
@@ -185,7 +192,8 @@ select {
 
 .socialMedia {
     display: flex;
-    justify-content: center; /* Agrega esta línea para centrar horizontalmente */
+    justify-content: center;
+    /* Agrega esta línea para centrar horizontalmente */
     align-items: center;
     margin-top: 20px;
 }
