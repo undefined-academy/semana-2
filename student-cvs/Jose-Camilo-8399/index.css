@@ -1,3 +1,11 @@
+html {
+   box-sizing: border-box;
+}
+
+* {
+   box-sizing: inherit;
+}
+
 body {
    font-family: Arial, Helvetica, sans-serif;
    margin: 0 auto;
@@ -18,6 +26,7 @@ h3 {
    background: #e5e7eb;
    padding: 1em 7em 3em;
    margin-top: 2em;
+   margin-bottom: 2em;
    border-left: 2px solid #69c;
    border-radius: 0.2em;
 }
@@ -69,4 +78,70 @@ tbody tr {
 
 tbody tr:hover {
    background: #bfdbfe;
+}
+
+.contacto {
+   background: #e5e7eb;
+   border-left: 2px solid #69c;
+   border-radius: 0.2em;
+}
+
+.contacto>article {
+   margin: 0 auto;
+   width: 500px;
+   padding: 2em;
+
+}
+
+.form-group {
+   margin: 0 auto 1em;
+}
+
+label,
+input,
+textarea {
+   display: block;
+   width: 100%;
+   color: #7182a2;
+}
+
+label {
+   font-size: 0.9em;
+}
+
+textarea {
+   resize: vertical;
+}
+
+input,
+textarea {
+   border: 1px solid #c7c8ca;
+   border-radius: 0.4em;
+   padding: 0.7em 0.5em;
+}
+
+.btn {
+   padding: 1em 2em;
+   border: 1px solid #7388b2;
+   border-radius: 0.8em;
+   background-color: #69c;
+   cursor: pointer;
+   color: #f3f4f6;
+   font-weight: 600;
+   text-transform: uppercase;
+   box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+   background-color: rgb(56, 149, 241);
+}
+
+.btn:active {
+   background-color: #69c;
+   box-shadow: none;
+}
+
+input::placeholder {
+   color: #c0cee6;
+   font-size: 1.1em;
 }
