@@ -1,0 +1,22 @@
+
+:root{
+ --main-color:#66347F;
+ --main-font-color:whitesmoke;
+}
+
+html{
+ box-sizing: border-box;
+}
+
+*{
+ box-sizing: inherit;
+}
+
+body{
+ background-color: var(--main-color);
+ color: var(--main-font-color);
+}
+
+form{
+ border: 1px solid tomato;
+}
