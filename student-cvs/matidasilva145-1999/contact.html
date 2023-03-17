@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form>
+            <div class="form-grup">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-grup">
+                <label for="email">Correo electonico</label>
+                <input id="email" type="email" placeholder="Ingrese su correo electonico" required>
+
+            </div>
+            <div class="form-grup">
+                <fieldset>
+                    <legend>Tipo de trabajo</legend>
+                    <input id="Electricidad" name="type of work" type="radio"><label
+                        for="Electricidad">Electricidad</label>
+                    <input id="Steel framing" name="type of work" type="radio"><label for="Steel framing">Steel
+                        framing</label>
+                    <input id="albañileria" name="type of work" type="radio"><label
+                        for="albañileria">Albañileria</label>
+                    <input id="Sanitaria" name="type of work" type="radio"><label for="sanitaria">Sanitaria</label>
+                </fieldset>
+            </div>
+            <div class="form-grup">
+                <label for="type">Horario de llamada</label>
+
+                <select id="type">
+                    <option disabled selected>Seleccione una hora para que le devuelva una llamada</option>
+                    <option>10:00am</option>
+                    <option>12:00am</option>
+                    <option>14:00pm</option>
+                    <option>16:00pm</option>
+            </div>
+            <div class="form-grup">
+                <label for="description">Descripción</label>
+                <textarea  id="description" required></textarea>
+                <div>
+                    Descipcion breve de trabajo a realizar.
+                </div>
+            </div>
+            <div>
+                <button>Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>
