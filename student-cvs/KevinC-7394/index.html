@@ -165,6 +165,53 @@
                 </tr>           
             </table>
         </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <form action="/server">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="name" type="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>How would you like to be contacted? </legend>
+                        <input id="email-contact" name="contact" type="radio" value="email-contact" required><label for="email-contact">Email</label>
+                        <input id="whatsapp-contact" name="contact" value= "whatsapp-contact" type="radio" required><label for="whatsapp-contact">Whatsapp</label>
+                        <input id="phone-contact" name="contact" value="phone-contact" type="radio" required><label for="phone-contact">Phone</label><span>(please include your phone number below)</span>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number (if applicable)</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for contact</label>
+                    <select id="reason" name="reason" required>
+                        <option disabled selected>Choose one</option>
+                        <option value="job">Job</option>
+                        <option value="information">Information</option>
+                        <option value="business">Business</option>                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" cols="30" rows="10"></textarea>
+                    <div class="help">Write more details about the reason who you want to be contacted</div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>I have read and agree to the <a href="/term-and-conditions" target="_blank"></a>terms and conditions</span>
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
         
     </main>
     <footer>
