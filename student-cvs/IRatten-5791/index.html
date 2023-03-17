@@ -18,6 +18,7 @@
         <li><a href="#contact">Connect with me</a></li>
         <li><a href="#skill">My Tools</a></li>
         <li><a href="#github-stats">My Github Stats</a></li>
+        <li><a href="#contact-withme">Contact With Me</a></li>
       </ul>
     </nav>
   </header>
@@ -69,11 +70,30 @@
     </section>
 
     <section id="github-stats" class="profile-githubstats">
-      <h2 class="profile-githubstats_title">My Github Stats</h2>
+      <h3 class="profile-githubstats_title">My Github Stats</h3>
       <div class="profile-githubstats_container">
         <img src="https://github-readme-stats.vercel.app/api?username=DanRev&show_icons=true&theme=dark"
           alt="My Github Stats">
       </div>
+    </section>
+
+    <section id="contact-withme">
+      <h3>Contact with me</h3>
+      <form id="form" action="" method="post" onsubmit="return false">
+        <div class="form-group">
+          <label for="form-name"> Name </label>
+          <input type="text" name="name" id="form-name" placeholder="Type your name" required>
+        </div>
+        <div class="form-group">
+          <label for="form-mail"> Email </label>
+          <input type="email" name="email" id="form-mail" placeholder="Type your email" required>
+        </div>
+        <div class="form-group">
+          <label for="form-message">Message</label>
+          <textarea name="message" id="form-message" rows="5" placeholder="Type your message" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
   <footer>
