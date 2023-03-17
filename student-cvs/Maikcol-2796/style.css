@@ -264,12 +264,16 @@ footer a {
 
 .center {
   text-align: center;
+  margin-top: 2em;
 }
 
 .text-justify {
   text-align: justify;
 }
 
+form {
+  accent-color: var(--color-secundary);
+}
 .contact-form {
  padding: 2em;
  border: 2px solid var(--color-primary);
@@ -299,7 +303,7 @@ footer a {
   font-size: .8em;
 }
 
-.form-input:focus{
+.form-input:focus, .form-input:focus-visible{
   border: none;
   outline: 1px solid var(--color-secundary);
 }
@@ -309,8 +313,7 @@ footer a {
 }
 
 .button {
-  margin: 1em auto;
-  padding: .4em 1.2em;
+  padding: .4em 1.6em;
   font-size: 1em;
   font-weight: 600;
 
