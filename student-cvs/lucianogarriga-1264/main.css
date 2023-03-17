@@ -170,3 +170,10 @@ button:active{
   text-align: center;  
   padding-top: 1em;
 }
+form{
+  accent-color: #6c9cc8;
+}
+input:focus-visible,
+textarea:focus-visible{
+  outline: 2.5px solid #76a2cb;
+}
