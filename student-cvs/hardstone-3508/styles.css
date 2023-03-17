@@ -121,3 +121,11 @@ hr {
 pre {
     margin: 0;
 }
+.f-form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 400px;
+justify-content: end;
+align-items: end;
+}
