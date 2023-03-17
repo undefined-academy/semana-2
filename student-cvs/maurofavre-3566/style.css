@@ -78,10 +78,8 @@ div.temarios{
 
 footer{
     display: block;
-    margin-left: auto;
-    margin-left: auto;
-    width: 90%;
-    text-align: center;
+    width: 100%;
+    text-align:center;
     height: auto;
     background-color: rgb(248, 245, 241);
     padding-top: 50px;
@@ -114,4 +112,16 @@ article.tools, .find{
 }
 article p.text_term{
     margin-bottom: 0;
+}
+
+section#formularios{
+    display: block;
+    padding-top: 15px;
+}
+
+form div{
+    padding-top: 16px;
+}
+form button{
+    margin-top: 10px;
 }

@@ -93,7 +93,39 @@
 
             </div>
     </article>
-</div>
+    <section  id="formularios">
+        <h2>CONTACTO</h2>
+          <form class="form-group" action="https://formspree.io/f/xwkjkzoy" method="POST">
+             <div>
+                <label for="exampleInputEmail1" class="form-label"> Hola, quien sos? </label>
+                   <input name="Nombre usuario" placeholder=" Nombre o Usuario " type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            </div>
+            <div>  
+                   <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input name="Email" placeholder="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+             </div>
+             <div>
+                    <label for="exampleInputPassword1" class="form-label">Contame, Que necesitas?</label>
+            </div>
+            <div>      
+               <textarea
+                      class="form-control" id="exampleInputPassword1"
+                      placeholder="Ingrese sus comentarios"
+                      name="comentarios" id="" cols="25" rows="5">
+               </textarea>
+            </div>
+            <div>
+                <p>Indicame que buscas:</p>
+                <input type="radio" id="paginaWeb" name="pag">
+                <label for="paginaWeb">Pagina Web </label>
+                <input type="radio" id="software" name="sof">
+                <label for="software">Software </label>
+                <input type="radio" id="consulta" name="cons">
+                <label for="consulta">Consulta</label>
+            </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+     </section>
   <footer>
     <h2 class="finish_title">If you want want to contact whit me </h2> 
     <address>
