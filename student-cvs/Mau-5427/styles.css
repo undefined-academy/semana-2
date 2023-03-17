@@ -19,11 +19,6 @@
   --sections-content-gap: 2rem;
   
   --stack-card-width: 13.5rem;
-  --stack-card-height: 2.625rem;
-  --stack-card-padding: 0.625rem;
-
-  --project-card-height: 308px;
-  --thumb-height-percentage: 0.58;
 }
 
 * {
@@ -141,9 +136,6 @@ body {
   color: var(--title-color);
   text-align: left;
 }
-
-/* ToDo --> Simplificar las dimensiones de las cartas */
-
 .group__card-container {
   display: grid;
   place-items: center;
@@ -155,8 +147,8 @@ body {
   justify-content: center;
   gap: 10px;
   width: var(--stack-card-width);
-  height: var(--stack-card-height);
-  padding: var(--stack-card-padding);
+  height: 2.625rem;
+  padding: 0.625rem;
   border-radius: 10px;
   background-color: white;
   font-weight: 500;
@@ -189,12 +181,12 @@ body {
 .content__projects-container {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(calc(var(--project-card-height) * 1.2), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));  
   gap: 2rem 0.5rem;
 }
 .card-project {
-  height: var(--project-card-height);
-  width: calc(var(--project-card-height) * 1.2);
+  width: 370px;
+  height: 370px;
   border: 1px solid transparent;
   border-radius: 10px;
   box-shadow: 0 5px 5px 1px rgba(29, 14, 98, 0.2);
@@ -208,18 +200,17 @@ body {
 .card-project__thumbnail {
   position: relative;
   border-radius: 10px;
-  height: calc(var(--project-card-height) * var(--thumb-height-percentage));
+  height: 185px;
   overflow: hidden;
 }
 .thumbnail__image {
-  /* height: 100%; */
   display: grid;
   place-items: center;
   border-radius: 10px;
   transition: all 0.5s ease-out;
 }
 .thumbnail__image img {
-  height: calc(var(--project-card-height) * var(--thumb-height-percentage));
+  height: 185px;
 }
 .card-project:hover .thumbnail__image {
   transform: scale(1.1);
@@ -246,20 +237,49 @@ body {
   gap: 0;
 }
 .card-project__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 13px;
-  height: calc(var(--project-card-height) * (1 - var(--thumb-height-percentage)));
-  text-align: center;
+  padding: 13px 13px 0;
+  height: 120px;
 }
 .description__title {
+  text-align: center;
   color: var(--title-color);
   font-size: var(--sections-medium-fs);
   font-weight: 500;
+  margin-bottom: 0.3rem;
 }
 .description__text {
   color: var(--paragraph-color);
+  text-align: left;
+  line-height: 1.2;
+}
+.card-project__btn-container {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn-container__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--bg-main-color);
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}
+.btn-container__btn:hover {
+  box-shadow: 0px 2px 7px 0 rgba(0, 0, 0, 0.4);
+}
+.btn-container__btn img {
+  height: 2rem;
+}
+.btn-container__btn p {
+  color: var(--title-color);
+  font-weight: 500;
 }
 address {
   display: flex;
