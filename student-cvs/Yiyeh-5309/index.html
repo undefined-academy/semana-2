@@ -84,7 +84,7 @@
 
             <div class="form-container">
                 <h1>📝 Contacto</h1>
-                <form action="submit-form.php" method="POST">
+                <form action="submit-form.php" method="get" onsubmit="event.preventDefault();">
                   <div class="form-group">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
