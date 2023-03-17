@@ -1,3 +1,4 @@
 # semana-2
 
-cd
+revisar rama main
+
