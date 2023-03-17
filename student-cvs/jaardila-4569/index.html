@@ -123,7 +123,7 @@
         <fieldset>
             <legend>Contáctame para un trabajo o asesoría</legend>
 
-            <form class="form" action="/server" method="get">
+            <form class="form" action="/server" method="get" id="contactForm">
 
                 <div class="form-group">
                     <label for="name">Nombre</label>
@@ -137,7 +137,7 @@
 
                 <div class="form-group">
                     <label for="phone">Teléfono</label>
-                    <input id="phone" type="number" placeholder="Ingrese su número de teléfono" name="phone" required>
+                    <input type="tel" id="phone" name="phone" placeholder="123-45-678" required>
                 </div>
 
                 <div class="form-group">
@@ -162,7 +162,6 @@
                         <input id="terms" type="checkbox" name="terms" required>
                         <span>Acepto los términos y condiciones</span>
                     </label>
-
                 </div>
 
                 <button type="submit" class="Enviar">Enviar</button>
@@ -181,7 +180,7 @@
                 <i class="fab fa-linkedin"></i>
             </a>
         </div>
-        
+
     </section>
 
     <div>
@@ -193,9 +192,9 @@
         <p>Última actualización: 17 de marzo de 2023</p>
     </footer>
 
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f28e10f9c4.js" crossorigin="anonymous"></script>
+    <script> contactForm.addEventListener("submit", e => e.preventDefault()); </script>
 </body>
 
 </html>
