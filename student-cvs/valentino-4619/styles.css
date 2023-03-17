@@ -1,0 +1,74 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+html {
+  background-color: #ffa5b08a;
+}
+body {
+  color: #f43f5e;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+strong,
+a {
+  color: rgb(255, 94, 94);
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+}
+
+.img-container {
+  width: 300px;
+
+  margin: 10% auto;
+}
+.img-container img {
+  width: 100%;
+}
+/* .helo {
+  width: 100%;
+  text-align: center;
+} */
+
+/* ---- MAIN -----  */
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+.section {
+  margin: 20px;
+}
+.sections__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.valentino__section {
+  width: 50%;
+}
+.maluquinhos__section {
+  width: 35%;
+  border-left: 1px solid rgb(255, 94, 94);
+  border-bottom: 1px solid rgb(255, 94, 94);
+  padding: 0 0 30px 30px;
+  border-radius: 10px;
+}
+.mlq {
+  width: 100%;
+}
+/* ---- MAIN -----  */
+
+/*  */ ;
