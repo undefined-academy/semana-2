@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
+  <link rel="shortcut icon" href="./assets/web-icon.png" type="image/x-icon">
+  <title>Mauricio Bedoya | Desarrollo Web</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -190,9 +191,18 @@
     </section>
     
     <section class="container__contact" id="contact">
-      <div class="contact__content content">
-
-      </div>
+      <h2 class="content-header__title">Contacto</h2>
+      <form class="contact__form" action="#" method="get">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="ej. Mauricio Bedoya" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="ej. example@email.com" required>
+        <label for="subject">Asunto</label>
+        <input type="text" name="subject" id="subject" placeholder="ej. Nuevo proyecto" required>
+        <label for="message">Descripción</label>
+        <textarea name="message" id="message" cols="30" rows="3" placeholder="Detalles del asunto" required></textarea>
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
     </section>
   </main>
   <footer>
@@ -206,4 +216,5 @@
     </address>
   </footer>
 </body>
+<script src="main.js"></script>
 </html>
