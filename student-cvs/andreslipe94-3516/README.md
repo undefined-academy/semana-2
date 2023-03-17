@@ -1,0 +1,2 @@
+El código proporcionado es un archivo HTML que contiene mi información personal y, incluyendo nombre, información de contacto, resumen de experiencia y habilidades y conocimientos relevantes. El archivo también incluye un enlace a mi cuenta de GitHub. El propósito del archivo es proporcionar información sobre mis habilidades y experiencia a posibles empleadores o interesados en mi perfil profesional.
+
