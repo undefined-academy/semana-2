@@ -169,6 +169,80 @@ p {
     padding: 4rem 1rem;
 }
 
+.contact {
+    background: var(--clr-grey-10);
+}
+
+.contact-form,
+.contact-info {
+    margin: 1rem 0;
+}
+
+.contact-item {
+    margin-bottom: 1.75rem;
+}
+
+.contact-title {
+    color: #678e3e;
+    font-weight: 700;
+}
+
+.contact-text {
+    text-transform: uppercase;
+}
+
+.contact-form {
+    background: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s linear;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+.contact-form:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h3 {
+    padding-top: 1.25rem;
+    color: #4a8acf;
+}
+
+.form-group {
+    padding: 1rem 1.5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    background: #f1f5f8;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    resize: vertical;
+}
+
+.form-control::placeholder {
+    font-family: 'Golos Text',
+        sans-serif;
+    color: #102a42;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
 .footer {
     background: #222;
     text-align: center;

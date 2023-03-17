@@ -127,6 +127,21 @@
                         href="mailto:geralgomez1403@gmail.com" target="_blank">geralgomez1403@gmail.com</a></p>
             </div>
         </section>
+        <section class="container">
+            <article class="contact-form">
+                <h3>Formulario de contacto</h3>
+                <form>
+                    <div class="form-group">
+                        <!-- inputs -->
+                        <input type="text" placeholder="nombre" class="form-control" name="name" />
+                        <input type="email" placeholder="email" class="form-control" name="email" />
+                        <textarea name="message" placeholder="mensaje" class="form-control" rows="5"></textarea>
+                    </div>
+                    <!-- button -->
+                    <button type="submit" class="submit-btn btn">submit here</button>
+                </form>
+            </article>
+        </section>
     </main>
     <footer class="footer">
         <div class="section-center">
@@ -154,6 +169,12 @@
             </h2>
         </div>
     </footer>
+    <script>
+        const submitBtn = document.querySelector('.submit-btn')
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault()
+        })
+    </script>
 </body>
 
 </html>
