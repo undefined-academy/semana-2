@@ -174,3 +174,42 @@ tr:nth-child(even) {
 tr:hover td {
     background-color: #edd7ff;
 }
+
+.container-footer {
+    text-align: center;
+}
+
+hr:first-child {
+    border: none;
+    border-top: 1px solid black;
+    margin: 0 700px; 
+}
+
+hr:not(:first-child) {
+    border: none;
+    border-top: 1px solid black;
+    margin: 0 850px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.rrss-inline li {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+footer ul li:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+address {
+    font-style: normal;
+}
