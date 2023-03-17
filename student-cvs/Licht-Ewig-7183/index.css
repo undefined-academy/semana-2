@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(121, 23, 5);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+
+section {
+    background-color: rgb(76, 51, 219);
+}
+
+div {
+    background: rgb(228, 143, 143);
+    padding: 20px 30px;
+    margin: 20px; 
+    border: 8px solid salmon;
+    width: 500px;
+}
+
+p {
+    background-color:rgb(230, 227, 223);
+    color: rgb(0, 0, 0);
+}
+
+strong {
+    margin: 50px;
+}
+
+.abuelo {
+    border: 1px dotted black;
+}
+p + p {
+    color: tomato;
+}
+
+div.hermano > span {
+    color: rebeccapurple;
+}
+
+div span {
+    font-weight: bold;
+}
+
+div ~ div {
+    color: teal;
+}
+ 
+main {
+    width: 600px;
+}
+
+div {
+    padding: 20px;
+    border: 1px solid tomato;
+}
+
+.column {
+    display: inline-block;
+    width: calc(33.33% - 40px - 2px);
+}
