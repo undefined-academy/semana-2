@@ -38,8 +38,7 @@ html {
     padding: 2%;
     border-radius: 5px;
     background: rgb(111, 232, 204);
-    background: linear-gradient(0deg, rgba(111, 232, 204, 0.9066001400560224) 0%, rgba(184, 233, 224, 0.6376925770308124) 72%, rgba(202, 235, 233, 0.4640231092436975) 100%);
-
+    background: linear-gradient(320deg, rgba(111, 232, 204, 1) 0%, rgba(184, 233, 224, 0.8454569327731092) 60%, rgba(200, 235, 233, 0.36086309523809523) 100%);
 }
 
 .content {
@@ -48,12 +47,12 @@ html {
     padding: 2%;
     border-radius: 5px;
     background: rgb(111, 232, 204);
-    background: linear-gradient(0deg, rgba(111, 232, 204, 0.9066001400560224) 0%, rgba(184, 233, 224, 0.6376925770308124) 72%, rgba(202, 235, 233, 0.4640231092436975) 100%);
+    background: linear-gradient(45deg, rgba(111, 232, 204, 1) 0%, rgba(184, 233, 224, 0.8454569327731092) 40%, rgba(200, 235, 233, 0.36086309523809523) 100%);
 }
 
 .footer {
     grid-area: footer;
-    padding: 2%;    
+    padding: 2%;
     margin: 10px;
     grid-gap: 10px;
     border-radius: 5px;
@@ -119,7 +118,7 @@ a:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 2555px;
     color: rgba(255, 255, 255, 0.829);
-    font-size: 0.8em;    
+    font-size: 0.8em;
     padding: 0.1em 0.2em;
     text-transform: uppercase;
     text-decoration: none;
@@ -140,5 +139,5 @@ section {
 
 .menu {
     text-size-adjust: 1px;
-    
+
 }

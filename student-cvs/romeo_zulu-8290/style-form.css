@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: rgb(55, 58, 58);
+    background-color: rgba(218, 218, 218, 0.205);
+}
+
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    background-color: #ac747400;
+    border: 5px solid #d6d8db9f;
+    color: #464343;
+}
+
+.field {
+    display: block;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+label,
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: white;
+    width: 100%;
+    padding: 6px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333131;
+    box-shadow: 2px 2px 4px #ccc;
+
+}
+
+.comment {
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 1px;
+}
+
+
+.button-1 {
+    background-color: #9a9da0;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    outline: 0;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:before {
+    background-color: initial;
+    background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+    border-radius: 125px;
+    content: "";
+    height: 50%;
+    left: 4%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    transition: all .3s;
+    width: 92%;
+}
+
+.button-1:hover {
+    box-shadow: rgba(255, 255, 255, 0.233) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.1);
+}
+
+@media (min-width: 1px) {
+    .button-1 {
+        padding: 10px 20px;
+    }
+}
