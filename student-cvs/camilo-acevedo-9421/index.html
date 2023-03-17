@@ -139,6 +139,86 @@ app.listen(3000, function() {
           <p>And also other knowledge that can boost my career</p>
         </article>
       </section>
+      <section class="contact">
+        <h2>Contact me!</h2>
+        <form action="/server" method="get">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name here!"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email here!"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>Budget</legend>
+              <input
+                type="radio"
+                name="budget"
+                id="5000"
+                value="5000"
+                required
+              /><label for="5000"> $5000</label>
+              <input
+                type="radio"
+                name="budget"
+                id="10000"
+                value="10000"
+              /><label for="5000"> $10000</label>
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="type">Project Type: </label>
+            <select name="type" id="type" required>
+              <option disabled selected value="">Pick one</option>
+              <option value="api">API</option>
+              <option value="database-design">Database Design</option>
+              <option value="full-stack-project">Full Stack Project</option>
+              <option value="support">Support</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="description">Description: </label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="8"
+              required
+            ></textarea>
+            <div class="help">
+              Small description about the prooject with less than 500 words
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="termsandconditions">
+              <input
+                type="checkbox"
+                name="termsandconditions"
+                id="termsandconditions"
+                required
+              />
+              <span>Accept terms and conditions</span>
+            </label>
+          </div>
+          <button id="submit">Send</button>
+        </form>
+      </section>
     </main>
   </body>
+
+  <script src="./index.js"></script>
 </html>

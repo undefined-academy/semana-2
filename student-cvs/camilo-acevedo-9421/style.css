@@ -1,8 +1,16 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Arial", sans-serif, "Helvetica", "Roboto";
   line-height: 1.5;
   color: #555;
 }
@@ -35,7 +43,7 @@ header h1 {
 header a {
   border: 1px solid #221f20;
   border-radius: 290486px;
-  color: white;
+  color: black;
   font-size: 0.6em;
   letter-spacing: 0.2em;
   padding: 1em 2em;
@@ -98,4 +106,77 @@ a {
 .images {
   text-align: center;
   margin-bottom: 5em;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 420px;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label, input {
+  vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label, legend, select {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin: 10px;
+  color: gray;
+}
+
+button {
+  border: 1px solid #221f20;
+  border-radius: 6px;
+  color: black;
+  font-size: .8em;
+  letter-spacing: 0.2em;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+button:hover {
+  background: #221f20;
+  color: white;
 }
