@@ -37,7 +37,7 @@
       <section class="habilidades">
         <h2>🧠 Habilidades</h2>
         <div class="habilidades-listas">
-          <div>
+          <div class="box-list">
             <h3>Pack Adobe</h3>
             <ul>
               <li>Ilustrator</li>
@@ -48,7 +48,7 @@
               <li>Xd</li>
             </ul>
           </div>
-          <div>
+          <div class="box-list">
             <h3>Desarrollo web</h3>
             <ul>
               <li>HTML</li>
@@ -59,7 +59,7 @@
               <li>MySQL</li>
             </ul>
           </div>
-          <div>
+          <div class="box-list">
             <h3>Herramientas</h3>
             <ul>
               <li>Visual Studio Code</li>
@@ -68,7 +68,7 @@
               <li>Slack</li>
             </ul>
           </div>
-          <div>
+          <div class="box-list">
             <h3>Otros</h3>
             <ul>
               <li>Blender</li>
@@ -84,32 +84,22 @@
         <h2>🚀 Proyectos</h2>
         <ul>
           <li>
-            <strong><a href="https://adrian-gg.github.io">Portfolio</a></strong>: Recopilación de algunos de mis
-            proyectos
-            gráficos y de desarrollo
-            web.
+            <strong><a href="https://adrian-gg.github.io">Portfolio</a></strong>: Recopilación de algunos de mis proyectos gráficos y de desarrollo web.
           </li>
           <li>
-            <strong><a href="https://adrian-gg.github.io/prinet-web_react/">Prinet+</a></strong>: Plataforma de
-            streaming.
+            <strong><a href="https://adrian-gg.github.io/prinet-web_react/">Prinet+</a></strong>: Plataforma de streaming.
           </li>
           <li>
-            <strong><a href="https://adrian-gg.github.io/puzzle_cards">Puzzle Cards</a></strong>: Minijuego de cartas
-            con
-            puzles.
+            <strong><a href="https://adrian-gg.github.io/puzzle_cards">Puzzle Cards</a></strong>: Minijuego de cartas con puzles.
           </li>
           <li>
-            <strong><a href="https://copacasas.ladysibi.com/">Copa de las Casas</a></strong>: Contador de puntos de la
-            copa de las casas de ls streamer LadySibi.
+            <strong><a href="https://copacasas.ladysibi.com/">Copa de las Casas</a></strong>: Contador de puntos de la copa de las casas de ls streamer LadySibi.
           </li>
           <li>
-            <strong><a href="https://adrian-gg.github.io/cosmere_systems">Systems of Cosmere</a></strong>: Mapa
-            interactivo de los sistemas del Cosmere (universo de Brandon
-            Sanderson)
+            <strong><a href="https://adrian-gg.github.io/cosmere_systems">Systems of Cosmere</a></strong>: Mapa interactivo de los sistemas del Cosmere (universo de Brandon Sanderson)
           </li>
           <li>
-            <strong><a href="https://adrian-gg.github.io/ac_bingo/index.html">Animal Crossing Bingo</a></strong>: Bingo
-            basado en el juego Animal Crossing.
+            <strong><a href="https://adrian-gg.github.io/ac_bingo/index.html">Animal Crossing Bingo</a></strong>: Bingo basado en el juego Animal Crossing.
           </li>
         </ul>
       </section>
@@ -130,7 +120,26 @@
 
       <section class="contacto">
         <h2>📞 Contacto</h2>
-        <ul>
+        <form action="/server" class="form">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="mail">Email</label>
+            <input type="text" id="mail" name="mail" placeholder="Introduce tu correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="name" name="subject" placeholder="Introduce el asunto" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="10" placeholder="Introduce el mensaje" required></textarea>
+          </div>
+          <button type="submit" onclick="event.preventDefault()">Enviar</button>
+        </form>
+        <ul class="contant-links">
           <li>
             Codepen: <a href="https://codepen.io/GariCarandai">@GariCarandai</a>
           </li>
@@ -171,9 +180,7 @@
           </tr>
           <tr>
             <td><code>mv</code></td>
-            <td>
-              Mueve, crea, genera una copia de seguridad o renombra un archivo
-            </td>
+            <td>Mueve, crea, genera una copia de seguridad o renombra un archivo</td>
           </tr>
         </table>
 
@@ -191,7 +198,7 @@
           </tr>
           <tr>
             <td>findd</td>
-            <td><code>ls ~/ \| grep $1</code></td>
+            <td><code>ls ~/ | grep $1</code></td>
             <td>Filtro de busqueda</td>
           </tr>
           <tr>
@@ -201,7 +208,7 @@
           </tr>
           <tr>
             <td>cafe</td>
-            <td><code>cat /dev/urandom \| hexdump \| grep \"ca fe\"</code></td>
+            <td><code>cat /dev/urandom | hexdump | grep \"ca fe\"</code></td>
             <td>Voy a por un cafe</td>
           </tr>
         </table>
