@@ -15,7 +15,7 @@
         <a href="https://github.com/MarvinCalles44">By Elias Calles</a>
     </header>
 
-    <article>
+    <main>
 
         <section>
 
@@ -69,10 +69,35 @@
 
     </section>
 
-    </article>
+    </main>
     
-    
-
-    
+    <footer>
+        <h2>Contacto</h2>
+        <form id="formulario" action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escriba su correo electronico" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Motivo de contacto:</label>
+                <select name="type" id="type" required>
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="oferta">Oferta de trabajo</option>
+                    <option value="pasantia">Pasantia</option>
+                    <option value="proyecto">Proyecto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" rows="3" placeholder="Escriba un mensaje (opcional)"></textarea>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

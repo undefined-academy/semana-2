@@ -69,3 +69,48 @@ header a:hover {
     background: #e81c4f;
     color: white;
 }
+
+footer{
+    background-color: #263d36;
+    background-image: url("img/background.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    background-size: cover;
+    padding: 0 3% 2% 3%;
+}
+
+footer > h2 {
+    color: white;
+}
+
+form{
+    box-sizing: border-box;
+}
+
+label, input{
+    width: 95%;
+    display: block;
+    margin: 10px 0;
+}
+
+label{
+    font-weight: bold;
+    color: white;
+}
+
+input{
+    padding: 8px;
+}
+
+textarea{
+    width: 95%;
+    padding: 8px;
+}
+
+button{
+    margin-top: 15px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+}
