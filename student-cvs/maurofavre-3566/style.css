@@ -1,127 +1,125 @@
+*{
+    box-sizing: inherit;
+}
+html,
 body {
-    margin: 0 auto;
-    width: 90%;
-    background-color: #D7C8B6;
-    }
-    
-ul, h1, h2, .arreglo{
-    margin: 0;
-    }
+  margin: 0;
+  scroll-behavior: smooth; 
+}
+h2{ margin-top:0;}
+
+header,
+section,
+footer,
+main,
+article,
+section {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 nav ul{
     list-style-type: none;
-    text-align: center;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 nav ul li{
+   
     background-color: #F6E3CA;
-  border: #D7C8B6 2px solid;
-  display: inline;
-  margin-right: 10px;
+    margin-right: 10px;
+    border: #D7C8B6 2px solid;
 }
-
-header{
-    display: block;
-    margin-left: auto;
-    margin-left: auto;
-    width: 90%;
-    text-align: center;
-    height: 300px;
-    background-image: url(https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
-    background-position: center;
-    background-size: cover;
+nav ul li a:hover{
+    background-color: white;
+    color: #D7C8B6;
 }
-header .primer_title{
-    color: black;
-    padding-top: 75px;  
+header.encabezado{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+  background-image: url(https://images.unsplash.com/photo-1534029731425-0d646dd67df3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80);
+  background-position: center;
+  background-size: cover;
+  
 }
-
-div main.main_index{
-    display: block;
-    margin-left: auto;
-    margin-left: auto;
-    width: 90%;
-    text-align: center;
-    height: auto;
-    background-color:rgb(248, 245, 241);
+header img{
+    height: 150px;
+    border-radius: 100%;
+    border: 5px solid black;
 }
-main h2.second_title{
-    text-decoration: underline;
-    font-size: 30px;
+header h1{
+    color: white;
+    font-size: 55px;
 }
-
-div#study{
-    display: block;
-    margin-left: auto;
-    margin-left: auto;
-    width: 90%;
-    text-align: center;
-    height: auto;
+main.sobreMi{
+    height: 350px;
     background-color: rgb(248, 245, 241);
+    display: grid;
+    grid-template-columns: [line1] 300px [line2] 360px [line3] 300px;
+    align-items: center;
 }
-.text{
-    padding-top: 30px;
-    font-size: 20px;
-    text-decoration: underline;
-
-}
-div.temarios{
-    display: block;
-    margin-left: auto;
-    margin-left: auto;
-    width: 90%;
+main div{
+    width: auto;
     text-align: center;
+}
+main h2{
+    font-size: 55px;
+}
+main p{
+    font-size: 20px;
+}
+section.sobreCurso{
+    background-color: rgb(248, 245, 241);
+    height: 250px;
+    background-size:cover;
+    text-align: center;
+    text-decoration: underline;
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: 20% 80%;
+}
+.cards{
+    height: 175px;
+    border-radius: 100%;
+}
+article.programa{
     height: auto;
     background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
     background-position: center;
     background-size: cover;
+    text-align: center;  
 }
-
-footer{
-    display: block;
-    width: 100%;
-    text-align:center;
-    height: auto;
-    background-color: rgb(248, 245, 241);
-    padding-top: 50px;
-}
-
-.start{   
-    display: block;
-    margin-left: auto;
-    margin-left: auto;
-    width: 90%;
-    text-align: center;
-    height: auto;
-
-}
-
-div.fondo{
-    display: block;
-    margin-left: auto;
-    margin-left: auto;
-    width: 90%;
-    text-align: center;
-    height: auto;
-    background-color:rgb(250, 236, 219);
-}
-main.start{ 
-    margin-bottom: 45px;
-}
-article.tools, .find{
-    margin-bottom: 45px;
-}
-article p.text_term{
+.last{
     margin-bottom: 0;
 }
-
-section#formularios{
-    display: block;
-    padding-top: 15px;
-}
-
-form div{
+article.info{
+    text-align: center;
+    height: auto;
+    background-color: rgb(248, 245, 241); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding-top: 16px;
 }
-form button{
-    margin-top: 10px;
+article div img{
+    height: 300px;
+    width: 75%;
+}
+.sep{
+    padding-top: 10px;
+}
+/* CSS DEL FOOTER */
+footer.pie{
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    align-items: center;
+    height: auto;
+    background-color: rgb(233, 165, 76);
+}
+footer div{
+    text-align: center;
 }
