@@ -166,52 +166,7 @@ html {
   font-weight: bold;
   margin: 8px 0;
 }
-/* SECCION DE HABILIDADES */
-.skills {
-  padding: 80px 0 100px 0;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(img/skills.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  color: #fff;
-}
-.skills .content-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 10px;
-}
-.skills .content-section h3 {
-  text-transform: uppercase;
-  font-size: 30px;
-}
-.skills .content-section .row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.skills .content-section .row .col {
-  width: 47%;
-  text-align: left;
-}
-.skills .content-section .row .col .cont-bar {
-  display: flex;
-  align-items: center;
-}
-.skills .content-section .bar {
-  display: flex;
-  border: 1px solid #940253;
-  padding: 2px;
-  border-radius: 3px;
-  margin-right: 10px;
-}
-.skills .content-section .bar .e {
-  background-color: #363636;
-  width: 20px;
-  height: 30px;
-  margin-right: 2px;
-}
+
 /* SECCION RESUMEN */
 .resume {
   background-color: #e6e6e6;
@@ -272,211 +227,7 @@ html {
   border-left: 1px solid #bab9b9;
   padding-left: 20px;
 }
-/* SECCION CLASES */
-.lesson {
-  padding: 80px 0 100px 0;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(img/Development.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  color: #fff;
-}
-.lesson .content-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 10px;
-}
-.lesson .content-section h3 {
-  text-transform: uppercase;
-  font-size: 30px;
-}
-.lesson .content-section .info {
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.lesson .content-section .info .col {
-  width: 45%;
-}
-.lesson .content-section .info .col .title {
-  display: inline-block;
-  color: #940253;
-  background-color: #000;
-  font-weight: bold;
-  border: 2px solid #940253;
-  padding: 10px;
-}
-.lesson .content-section .info .col ul {
-  position: relative;
-  margin-top: 10px;
-  padding: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  backdrop-filter: blur(15px);
-}
-.lesson .content-section .info .col ul:hover {
-  background-color: #ffffff4d;
-}
-.lesson .content-section .info .col ul li:hover {
-  transform: translateX(25px);
-}
-.lesson .content-section .info .col ul li {
-  list-style: none;
-  border-top: 1px solid #940253;
-  border-bottom: 1px solid #940253;
-  margin: -1px 0;
-  transition: 0.5s;
-}
-.lesson .content-section .info .col ul li a {
-  display: block;
-  border-right: 1px solid #920251;
-  text-decoration: none;
-  color: #670039;
-}
-.lesson .content-section .info .col ul li a span {
-  position: relative;
-  display: inline-block;
-}
-.lesson .content-section .info .col ul li a span:nth-child(1) {
-  width: 30px;
-  text-align: center;
-  border-left: 1px solid #940253;
-  border-right: 1px solid #940253;
-  padding: 10px;
-  transition: 0.5s;
-  color: #940253;
-}
-.lesson .content-section .info .col ul li:hover a span:nth-child(1) {
-  background-color: #a40000;
-}
-.lesson .content-section .info .col ul li a span:nth-child(1) .fa-brands {
-  transition: 0.3s;
-}
-.lesson .content-section .info .col ul li:hover a span:nth-child(1) .fa-brands {
-  transform: rotateY(360deg);
-  color: #fff;
-}
-.lesson .content-section .info .col ul li a span:nth-child(2) {
-  padding: 10px;
-}
-.lesson .content-section .info .col ul li a span:nth-child(1) .fa-solid {
-  transition: 0.3s;
-}
-.lesson .content-section .info .col ul li:hover a span:nth-child(1) .fa-solid {
-  transform: rotateY(360deg);
-  color: #fff;
-}
-/* SECCION CLASES-2 */
-.lesson-2 {
-  background-color: #e6e6e6;
-  padding: 140px 0 100px 0;
-  text-align: center;
-}
-.lesson-2 .content-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 10px;
-}
-.lesson-2 .content-section h3 {
-  text-transform: uppercase;
-  font-size: 30px;
-  margin-top: 15px;
-}
-.lesson-2 .content-section .info {
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.lesson-2 .content-section .info .col {
-  width: 45%;
-}
-.lesson-2 .content-section .info .col .title {
-  display: inline-block;
-  color: #940253;
-  font-weight: bold;
-  border: 2px solid #940253;
-  padding: 10px;
-}
-.lesson-2 .content-section .info .col ul {
-  position: relative;
-  margin-top: 5px;
-  padding: 0;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  /* backdrop-filter: blur(15px); */
-}
-.lesson-2 .content-section .info .col .data {
-  /* width: 40%; */
-  border-bottom: 1px solid #940253;
-  margin-bottom: 10px;
-}
-/* TABLAS */
-.exercises {
-  padding: 80px 0 100px 0;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(img/excercise.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  color: #fff;
-}
-.exercises .content-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 10px;
-}
-.exercises .content-section h3 {
-  text-transform: uppercase;
-  font-size: 20px;
-}
-.exercises .content-section .info {
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.exercises .content-section .info .col {
-  width: 45%;
-}
-.exercises .content-section .info .col .title {
-  display: inline-block;
-  color: #940253;
-  background-color: #000;
-  font-weight: bold;
-  border: 2px solid #940253;
-  padding: 10px;
-}
-.exercises .content-section .info .col table {
-  margin-top: 30px;
-  border-collapse: collapse;
-}
-.exercises .content-section .info .col table thead tr .data {
-  color: white;
-  backdrop-filter: blur(15px);
-  border: 2px solid #670039;
-  padding: 14px;
-  text-align: center;
-}
-.exercises .content-section .info .col table tbody .description {
-  /* backdrop-filter: blur(5px); */
-  background-color: transparent;
-  border: 2px solid #670039;
-  padding: 5px;
-  color: #fff;
-  text-align: center;
-}
-.exercises .content-section .info .col table:hover {
-  background-color: #000;
-}
+
 /* SECCION CONTACTO */
 .contact {
   background-color: #bab9b9;
@@ -493,7 +244,6 @@ html {
   font-size: 30px;
   margin-top: 15px;
 }
-
 .contact .content-section .container .contact-box {
   max-width: 800px;
   margin: 100px auto;
@@ -506,26 +256,37 @@ html {
 }
 .contact .content-section .container .contact-box .right .field {
   width: 100%;
-  border: 1px solid #666;
   border-radius: 3px;
-  outline: none;
+  border: 1px solid #670039;
+  border: 1px solid #666;
   font-size: 1.1rem;
   margin-bottom: 1.1rem;
   transition: 0.3s;
   text-indent: 10px;
-  /* padding: 8px 10px; */
 }
 .contact .content-section .container .contact-box .right .field:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: hsla(344, 95%, 8%, 0.363);
+  color: white;
+  outline: 1px solid #670039;
+  border: 1px solid #670039;
+}
+::placeholder {
+  color: #000;
+  text-transform: uppercase;
+  font-size: medium;
+}
+.contact .content-section .container .contact-box .right .field:focus-visible {
+  border: 1px solid red;
+  outline: 1px solid #670039;
 }
 .contact .content-section .container .contact-box .right .area {
   min-height: 100px;
   resize: vertical;
 }
 .contact .content-section .container .contact-box .right .button {
-  width: 100%;
+  width: 40%;
   padding: 0.5rem;
-  margin-top: 5px;
+  margin-top: 15px;
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: bold;
@@ -562,6 +323,10 @@ input:not([type="checkbox"]) {
   font-size: 14px;
   color: #444;
 }
+form {
+  accent-color: red;
+}
+/* Javascript Form */
 #trucazo {
   opacity: 0;
   pointer-events: none;
