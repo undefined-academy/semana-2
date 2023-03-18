@@ -9,7 +9,7 @@
 
 <body>
     <main>
-        <header>
+        <header class="mainHeader">
             <h1>Andrea Alvarez👩🏽‍💻</h1>
             <p>Web Development</p>
         </header>
@@ -99,6 +99,56 @@
                         </tbody>
                     </table>
                 </section>
+                <hr>
+
+                <section>
+                    <h3>Contactame</h3>
+                    <form id="contact">
+                        <div class="formStyle">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="formStyle">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Ingrese su E-mail" required>
+                        </div>
+                        <div class="formStyle">
+                            <fieldset>
+                                <legend>Proyecto</legend>
+                                <div class="flex-container">
+                                    <div class="left">
+                                        <label for="proyect">Tipo de proyecto:</label>
+                                        <select name="proyect" id="proyect" required>
+                                            <option value="" selected disabled>Seleccione una opcion</option>
+                                            <option value="website">Website</option>
+                                            <option value="webapp">Webapp</option>
+                                        </select>
+                                    </div>
+                                    <div class="right">
+                                        <label for="price">Precio:</label>
+                                        <div>
+                                            <input type="range" name="price" id="price" min="5.000" max="20.000"
+                                                list="values">
+                                            <datalist id="values">
+                                                <option value="5.000">5.000</option>
+                                                <option value="10.000">10.000</option>
+                                                <option value="15.000">15.000</option>
+                                                <option value="20.000">20.000</option>
+                                            </datalist>
+                                            <div class="desc">Escoja un precio estimado</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="formStyle">
+                            <label for="text">Descripción:</label>
+                            <textarea name="text" id="text" rows="10" required></textarea>
+                            <div class="desc">Describa el proyecto</div>
+                        </div>
+                        <input type="submit" value="ENVIAR" class="btn">
+                    </form>
+                </section>
             </article>
         </div>
 
@@ -106,5 +156,13 @@
         </footer>
     </main>
 </body>
+
+<script>
+    const form = document.getElementById("contact");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+    })
+</script>
 
 </html>
