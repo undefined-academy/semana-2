@@ -3,38 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <title>Soy Eduardo Mendez</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/contact.css">
     </head>
     <body>
         <header>
             <div class="header-container">
                 <div class="header-container-menu">
-                    <a href="#">Inicio</a>
+                    <a href="./index.html">Inicio</a>
                 </div>
                 <div class="header-container-menu">
-                    <a href="#about-me">Acerca de mí</a>
+                    <a href="./pages/acerca-de-mi.html">Acerca de mí</a>
                 </div>
                 <div class="header-container-menu">
-                    <a href="#projects">Proyectos</a>
+                    <a href="./pages/proyectos.html">Proyectos</a>
                 </div>
                 <div class="header-container-menu">
-                    <a href="#training">Formación académica</a>
+                    <a href="./pages/contacto.html">Contacto</a>
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="main-container-title" id="about-me">
+            <section class="main-container">
                 <h1>Hola, mi nombre es Eduardo Mendez.</h1>
                 <img src="https://raw.githubusercontent.com/edmedev/edmedev/main/banner-profile.png" alt="banner-profile" width="100%">
-            </div>
+            </section>
             
-            <div class="main-container-description">
-                <h2>Soy Tecnólogo en Gestión de Mercadeo y Desarrollador Web Training.</h2>
+            <section class="main-container">
+                <h2>Biografía:</h2>
+                <p>Soy Tecnólogo en Gestión de Mercadeo y Desarrollador Web Training.</p>
                 <p>He estudiado cursos en <strong>Desarrollo Web</strong> en <strong>Platzi</strong> y actualmente estoy cursando un <strong>Bootcamp de JavaScript Full-Stack</strong> con <strong>Guillermo Rodas</strong>. En este perfil muestro los proyectos que he realizado en mi experiencia y las tecnologías que conozco.</p>
-            </div>
+            </section>
 
-            <div class="main-container-tecnologies">
+            <section class="main-container">
                 <h2>Tecnologías que manejo:</h2>
                 <ul>
                     <li>Visual Studio Code</li>
@@ -44,26 +46,59 @@
                     <li>CSS</li>
                     <li>JavaScript</li>
                 </ul>
-            </div>
+            </section>
     
-            <div class="main-container-projects" id="projects">
+            <section class="main-container">
                 <h2>Proyectos realizados:</h2>
                 <ul>
-                    <li><a href="https://edmedev.github.io/batatabit/">BatataBit</a></li>
-                    <li><a href="https://edmedev.github.io/figuras-geometricas/">Figuras Geométricas</a></li>
-                    <li><a href="https://edmedev.github.io/porcentajes-y-descuentos/">Porcentajes y Descuentos</a></li>
-                    <li><a href="https://edmedev.github.io/edme-movies/">EDME Movies</a></li>
+                    <li><a href="https://edmedev.github.io/batatabit/" target="_blank">BatataBit</a></li>
+                    <li><a href="https://edmedev.github.io/figuras-geometricas/" target="_blank">Figuras Geométricas</a></li>
+                    <li><a href="https://edmedev.github.io/porcentajes-y-descuentos/" target="_blank">Porcentajes y Descuentos</a></li>
+                    <li><a href="https://edmedev.github.io/edme-movies/" target="_blank">EDME Movies</a></li>
                 </ul>
-            </div>
+            </section>
             
-            <div class="main-container-training" id="training">
+            <section class="main-container">
                 <h2>Formación académica:</h2>
                 <ul>
                     <li><strong>Bootcamp JavaScript Full-Stack</strong> - Undefined Academy - Cursando actualmente</li>
                     <li><strong>Desarrollo Web FrontEnd</strong> - Endeavor y Platzi - 2022</li>
                     <li><strong>Tecnólogo en Gestión de Mercadeo</strong> - Politecnico Grancolombiano - 2021</li>
                 </ul>
-            </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Contactame.</h2>
+                    <p>Llena el formulario para ponerme en contacto contigo:</p>
+                </div>
+                <form action="./server/" method="get">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Mensaje</label>
+                        <textarea id="description" name="description" rows="4"></textarea>
+                        <div class="description-help">Escribe tu mensaje aquí</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="terms">
+                            <input id="terms" name="terms" type="checkbox" required>
+                            <span>Acepto los terminos y condiciones</span>
+                        </label>
+                    </div>
+
+                    <button>Enviar</button>
+                </form>
+            </section>
         </main>
         
         <footer>

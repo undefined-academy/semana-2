@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Eduardoz</title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/contact.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-container-menu">
+                    <a href="../index.html">Inicio</a>
+                </div>
+                <div class="header-container-menu">
+                    <a href="./acerca-de-mi.html">Acerca de mí</a>
+                </div>
+                <div class="header-container-menu">
+                    <a href="./proyectos.html">Proyectos</a>
+                </div>
+                <div class="header-container-menu">
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="contact-form">
+                <h1>Contactame.</h1>
+                <p>Llena el formulario para ponerme en contacto contigo:</p>
+            </div>
+            <form action="../server/" method="get">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Mensaje</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                    <div class="description-help">Escribe tu mensaje aquí</div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>Acepto los terminos y condiciones</span>
+                    </label>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </main>
+        
+        <footer>
+            <div class="footer-container">
+                <p>Eduardo Mendez 2023 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>

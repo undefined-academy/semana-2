@@ -1,10 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
 * {
+    box-sizing: inherit;
     margin: 0;
 }
 
 body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    width: 100%;
 }
 
 header {
@@ -43,54 +47,27 @@ main {
     line-height: 1.5;
     background-color: #fff;
     color: #000;
-    width: 100%;
+    width: 80%;
+    min-width: 320px;
+    max-width: 800px;
     margin: auto;
     height: auto;
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main-container {
     padding-bottom: 40px;
 }
 
-.main-container-title {
-    width: 80%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.main-container-description {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-.main-container-tecnologies {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-.main-container-projects {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-.main-container-projects a {
+.main-container a {
     text-decoration: none;
     color: blue;
 }
 
-.main-container-projects a:hover {
+.main-container a:hover {
     color: #0b50f1;
 }
-
-.main-container-training {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-
 
 footer {
     font-size: 1em;
