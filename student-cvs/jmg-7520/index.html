@@ -8,6 +8,11 @@
     <title>JMG</title>
 </head>
 <body>
+    <header>
+            <h1>CV Juan Manuel</h1>
+    </header>
+    <hr>
+    <hr>
     <nav>
         <ul>
             <li><a target="_blank" href="https://github.com/jmanwel">Github</a></li>
@@ -39,11 +44,12 @@
     
     <section>
         <article>
+            <h3>Command table</h3>
             <table>
-                <th>
+                <tr>
                     <td>Command</td>
                     <td>Description</td>
-                </th>
+                </tr>
                 <tbody>
                     <tr>
                         <td>pwd</td>
@@ -59,7 +65,7 @@
                     </tr>
                     <tr>
                         <td>cal</td>
-                        <td>Show calndar in console</td>
+                        <td>Show calendar in console</td>
                     </tr>
                     <tr>
                         <td>cd</td>
@@ -69,11 +75,12 @@
             </table>
         </article>
         <article>
+            <h3>Alias table</h3>
             <table>
-                <th>
+                <tr>
                     <td>Alias</td>
                     <td>Description</td>
-                </th>
+                </tr>
                 <tbody>
                     <tr>
                         <td>..</td>
@@ -89,7 +96,32 @@
         </article>
     </section>
     
-    <br>
+    <section>
+        <h3>Contact me</h3>
+        <form action="/server" onsubmit="event.preventDefault()" method="GET">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="mail">Mail</label>
+                <input type="email" id="mail" placeholder="Enter your mail" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Project type</label>
+                <select id="type" required>
+                    <option>Backend</option>
+                    <option>BBDD</option>
+                    <option>Networking</option>
+                    <option>Web</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="desc">Description</label>
+                <textarea id="desc" cols="30" rows="10"></textarea>
+                <div>Brief description about your project</div>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </section>
     
 </body>
 </html>
