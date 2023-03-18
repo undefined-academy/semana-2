@@ -21,12 +21,13 @@
 
         <section class="sections__container">
 
-            <section class="valentino__section">
+            <article class="valentino__section">
+
+                <h2> Hello world !</h2>
 
 
-
-                <article>
-                    <h2> Hello world !</h2>
+                <section>
+                    <h3 class="hidden">presetacion</h3>
 
                     <p>
                         Mi nombre es Valentino Cogo y estoy actualmente <strong>estudiando Desarrollo Web</strong> e
@@ -44,13 +45,18 @@
                         el cual me saca todo el tiempo de la zona de
                         confort.
                     </p>
-                </article>
 
-                <div class="img-container">
-                    <img src="borboleta.png" alt=" imagen de una mariposa">
-                </div>
+                </section>
 
-                <article>
+                <aside>
+
+                    <div class="img-container">
+                        <img src="borboleta.png" alt=" imagen de una mariposa">
+                    </div>
+
+                </aside>
+
+                <section>
 
                     <h2>More about me</h2>
 
@@ -61,11 +67,9 @@
                         vida.
                     </p>
 
-                </article>
+                </section>
 
-                <article>
-
-
+                <section>
                     <h3>Cosas me gustan:</h3>
 
                     <ul>
@@ -74,22 +78,53 @@
                         <li> Jugar videojuegos 🎮</li>
                     </ul>
 
-                </article>
+                </section>
 
 
 
 
+                <section class="form__container">
 
-                <article>
+                    <h3>Contacto</h3>
 
-                    <h3>Contacto:</h3>
-                    <ul>
-                        <li>Email: <a href="mailto:valentinocogo91@gmial.com">valentinocogo91@gmial.com</a></li>
-                    </ul>
+                    <form action="/server" method="get">
 
-                </article>
+                        <div class="form-group">
+                            <label for="name-input">Nombre:</label>
+                            <input type="text" class="name-form input" name="name" id="name-input"
+                                placeholder="Ingrese su nombre" required>
+                        </div>
 
-            </section>
+                        <div class="form-group">
+                            <label for="emial-input">Email:</label>
+                            <input type="email" class="email-form input
+                            " name="email" id="emial-input" placeholder="Ingrese su email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="textarea">Mensaje:</label>
+                            <textarea name="textarea" class="textarea  area input" id="textarea" cols="50" rows="8"
+                                placeholder="Escribe tu mensaje">
+                            </textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" class="text-form input
+                            " name="terms" id="terms">
+                            <label for="terms">Acepto terminos y condiciones</label>
+                        </div>
+
+                        <div class="btn__container">
+
+                            <button class="btn__form">ENVIAR</button>
+                        </div>
+
+
+                    </form>
+
+                </section>
+
+            </article>
 
 
 

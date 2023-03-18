@@ -1,13 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
-* {
+html {
+  background-color: #ffc8d08a;
   box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
   font-family: Roboto;
   font-weight: 400;
 }
 
-html {
-  background-color: #ffa5b08a;
-}
 body {
   color: #f43f5e;
   line-height: 1.5;
@@ -41,10 +42,14 @@ h1 {
   text-align: center;
 } */
 
+.hidden {
+  display: none;
+}
+
 /* ---- MAIN -----  */
 
 main {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 .section {
@@ -57,7 +62,7 @@ main {
 }
 
 .valentino__section {
-  width: 50%;
+  width: inherit;
 }
 .maluquinhos__section {
   width: 35%;
@@ -71,4 +76,73 @@ main {
 }
 /* ---- MAIN -----  */
 
-/*  */ ;
+/*  */
+
+/* ---- FORM-----  */
+.form__container {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #fecaca;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 110px auto;
+}
+
+input {
+  vertical-align: middle;
+}
+
+label:not([for="terms"]) {
+  display: block;
+  font-weight: bold;
+}
+.form-group {
+  margin: 10px;
+  width: 100%;
+}
+.textarea {
+  resize: none;
+}
+.input {
+  padding: 6px 6px;
+  border-radius: 5px;
+  border: 1px solid rgb(181, 181, 181);
+  color: #333;
+  background-color: #ffffff;
+  border-color: #ea5a5a;
+  width: inherit;
+  /* margin: 5px; */
+}
+
+.text-form {
+  width: unset;
+}
+
+.btn__container {
+  text-align: center;
+}
+.btn__form {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ef4444;
+  border-radius: 4px;
+  border: 1px solid #f87171;
+  background-color: #fecdd3;
+  box-shadow: -1px 2px 1px #ffacac;
+
+  cursor: pointer;
+}
+.btn__form:hover {
+  color: #dc2626;
+  background-color: #ffa7a7;
+  border-color: #ea5a5a;
+}
+.btn__form:active {
+  color: #dc2626;
+  background-color: #ffa7a7;
+  border-color: #ea5a5a;
+  box-shadow: none;
+}
+
+/* ---- FORM -----  */ ;
