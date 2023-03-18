@@ -48,6 +48,16 @@ function idArray(arr){
 }
 
 // let arr = []; - Devuelve true
-// let arr = 5; - Devuelve false
+    let arr = 5; 
 
 console.log(idArray(arr));
+
+//Ejercicio 04 - semana 02:
+//
+
+
+function prevEnvio(evento){
+    evento.preventDefault();
+}
+
+document.getElementById("form").addEventListener("submit", prevEnvio);

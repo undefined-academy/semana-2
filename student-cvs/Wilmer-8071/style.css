@@ -3,10 +3,10 @@
 :root {
     /*Paleta de colores*/
 
-    ---primario: #1d5aca;
-    ---PrimarioOscuro: rgba(14, 11, 238, 0.5);
-    ---Secundario: #033581;
-    ---SecundarioOscuro: rgb(233,287,2);
+    ---primario: #62abee;
+    ---PrimarioOscuro: rgba(167, 182, 197, 0.5);
+    ---Secundario: #86acdd;
+    ---SecundarioOscuro: #8dbfee;
     ---blanco: #fff;
     ---negro: #000;
 
@@ -187,4 +187,47 @@ footer{
     justify-content: center;
     gap: 2rem;
 
+}
+.form-group{
+    border: 1px solid lightgray;
+    margin: 2rem 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+label, input[type="text"], input[type="email"]  {
+    width: 100%;
+    display: block;
+}
+
+label{
+    font-weight: bold;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+form{
+    border: 3px solid var(---negro);
+    padding: 20px;
+}
+
+.help{
+    font-size: 12px;
+    margin-top: 1rem;
+    color: gray;
+}
+
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid;
+    color: var(---negro);
+}
+
+fieldset{
+    display: flex;
 }
