@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/a7575590ab.js" crossorigin="anonymous"></script>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
-    <script src="/example.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hershade Profile</title>
 </head>
@@ -170,10 +173,76 @@
     <br>
     <hr>
     <br>
-    <section>
+    <!-- <section>
         <h1 class="h1">My Github Profile</h1>
         <a href="https://github.com/Hershade"><img src="img/github.png" alt="logo de github" class="logo-github"></a>
-    </section>
+    </section> -->
+
+    <div class="contact-form">
+
+        <div class="contact-information">
+            <h3>Some things About me</h3>
+            <p> <i class="fa-solid fa-location-dot"></i> Guatemala </p>
+            <p> <i class="fa-regular fa-envelope"></i>germandev.gt@gmail.com</p>
+            <div class="redes-sociales">
+                <a href="https://instagram.com/german_r__?igshid=ZDdkNTZiNTM="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/german-ronaldo-perez-giron-00423025a/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Hershade"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+        <form class="formulario" method="post">
+            <h1>Contact Me</h1>
+            <div class="input-formulario">
+                <label for="name">Name</label>
+                <input type="name" id="name" name="name" placeholder="Put your name" required><br>
+            </div>
+            <div class="input-formulario">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Put your Last Name"><br>
+            </div>
+            <div class="input-formulario">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required><br>
+            </div>
+            <div class="input-formulario">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+000 123 456 789"><br>
+            </div>
+            <div class="why">
+                <fieldset>
+                    <legend> Why do you want to contact me?</legend><br>
+                    <div class="align-radiobtn">
+                        <input type="radio" id="backend" name="backend" value="backend">
+                        <label for="backend">Backend</label>
+                    </div>
+                    <div class="align-radiobtn">
+                        <input type="radio" id="frontend" name="backend" value="frontend">
+                        <label for="frontend">Frontend</label>
+                    </div>
+                    <div class="align-radiobtn">
+                        <input type="radio" id="both" value="both" name="backend">
+                        <label for="both">Both</label>
+                    </div>
+                </fieldset>
+                <div class="payment">
+                    <label for="payment">How much are you offering me?</label>
+                    <input id="payment" type="range" min="800" max="10000" step="100">
+                    <span>Bucks: $USD <output id="value"></output></span>
+                </div>
+                <div class="message">
+                    <label for="message">Some thing you need to say me?</label><br>
+                    <textarea name="message" id="message"></textarea><br>
+                </div>
+                <button class="btn-orange" type="submit" value="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/app.js"></script>
+
 </body>
 
 </html>

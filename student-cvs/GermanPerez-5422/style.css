@@ -1,9 +1,14 @@
-body{
+:root{
+    --titles: 'Arima Madurai', cursive;
+    --paragraphs: 'Mulish', sans-serif;
+}
+
+body {
     /* color: #555; */
-    background-color: rgba(42,28,79,255);
+    background-color: rgba(42, 28, 79, 255);
     margin: 0 auto;
     max-width: 50em;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: var(--paragraphs); */
     line-height: 1.5;
     padding: 4em 1em;
 }
@@ -11,52 +16,213 @@ body{
 h2 {
     margin-top: 1em;
     padding-top: 1em;
+    font-family: var(--titles);
 }
 
 h3 {
     font-size: 1.1rem;
+    font-family: var(--titles);
 }
 
-h1, h2, h3, span, p, strong{
-    color: rgba(255,147,71,255);
+#payment { 
+    border: solid 1px #82CFD0;
+    background: rgba(255, 147, 71, 255);
+    border-radius: 8px;
+    height: 7px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
 }
 
-code, pre{
+h1,
+h2,
+h3,
+span,
+p,
+strong,
+label,
+legend {
+    color: rgba(255, 147, 71, 255);
+}
+
+code,
+pre {
     background: #bb1919;
 }
 
-table{
+table {
     background: rgb(253, 157, 78);
 }
 
-th, td{
+th,
+td {
     padding: 2px 4px;
     vertical-align: text-bottom;
     padding: 1em;
 }
 
-table, td, th {
+table,
+td,
+th {
     border: 1px solid;
     border-collapse: collapse;
 }
 
-body{
+body {
     color: #566b78;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
-.stats{
+.stats {
     width: 40rem;
 }
 
-.logo-github{
+.logo-github {
     width: 150px;
 }
 
-.h1{
+.h1 {
     display: inline-block;
     font-size: 3rem;
+}
+
+.contact-form{
+    padding-top: 5rem;
+}
+
+@media(min-width:768px){
+    .contact-form{
+        display: flex;
+    }
+}
+
+.contact-information, .formulario{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.contact-information{
+    background-color: black;
+    padding: 2rem;
+}
+.redes-sociales i{
+    color: rgba(255, 147, 71, 255);
+}
+
+.contact-information h3{
+    font-size: 4rem;
+    font-family: var(--titles);
+    text-align: center;
+}
+
+.contact-information p{
+    font-size: 2rem;
+}
+.contact-information i{
+    margin-right: 1rem;
+}
+.contact-information i{
+    display: inline;
+}
+
+.contact-information p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* social media */
+.redes-sociales{
+    font-size: 3rem;
+    text-align: center;
+}
+.redes-sociales{
+    margin-top: 5rem;
+}
+/* form style */
+.formulario{
+    padding: 5rem;
+}
+
+.input-formulario label{
+    display: block;
+    font-size: 1.5rem;
+    font-family: var(--paragraphs);
+    /* margin-bottom: 1px; */
+}
+
+.input-formulario input, .input-formulario textarea{
+    padding: .5rem 2.6rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--paragraphs);
+}
+
+.message textarea{
+    height: 10rem;
+    width: 15rem;
+    resize: none;
+}
+
+.message{
+    display: block;
+    /* background-color: tomato; */
+    margin-top: 1rem;
+
+}
+
+
+.why{
+    display: block;
+    margin-top: 1rem;
+}
+
+.why input{
+    display: block;
+}
+
+.align-radiobtn label, .align-radiobtn input{
+    display: inline;
+}
+
+@media(min-width:768px){
+    .why{
+        display: inline-block;
+    }
+
+}
+
+/* button */
+.btn-orange{
+    background-color: rgba(255, 147, 71, 255);
+    padding: 16px 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid #713f12;
+	/* background: #eab308; */
+	color: #333;
+	text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.btn-orange:hover{
+    background: #ff9305;
+}
+.btn-orange:active{
+    background: #fcd072;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+h1, h2, h3{
+    font-family: var(--titles);
+}
+
+p, tr, th, td{
+    font-family: var(--paragraphs);
+}
+
+hr{
+    color: #804c08;
 }
