@@ -1,0 +1,89 @@
+<style>
+/* Estilo para el formulario */
+form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los campos de texto */
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Estilo para los botones */
+button[type="submit"] {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:hover {
+  background-color: #16a085;
+}
+
+/* Estilo para los radio buttons */
+input[type="radio"] {
+  margin: 0 10px 0 0;
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+/* Estilo para el título de la página */
+h1 {
+  color: #2c3e50;
+}
+
+/* Estilo para los mensajes de error */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Estilo para el contenedor de los campos de presupuesto */
+.budget-container {
+  margin-bottom: 10px;
+}
+
+/* Estilo para los campos de presupuesto */
+.budget-field {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Estilo para el contenedor de los checkboxes */
+.checkbox-container {
+  margin-bottom: 10px;
+}
+
+/* Estilo para los checkboxes */
+.checkbox-field {
+  margin-right: 10px;
+}
+
+/* Estilo para los enlaces */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9;
+}
+</style>
