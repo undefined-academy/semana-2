@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin:0 auto;
+}
+
+body{
+    
+    box-sizing: inherit;
+}
+header {
+    
+    border: solid aqua 3px;
+    padding: 2px;
+}
+
+img{
+    max-width: 500px;
+    
+}
