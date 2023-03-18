@@ -78,12 +78,12 @@ a:hover {
 }
 
 /* Contact me section styles */
-.contact {
+.socials {
   background-color: #4b0d49;
   padding: 5rem 0;
 }
 
-.contact__text:first-of-type {
+.socials__text:first-of-type {
   margin-bottom: 2em;
 }
 
