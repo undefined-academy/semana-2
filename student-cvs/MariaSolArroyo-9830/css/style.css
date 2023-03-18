@@ -1,6 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html{
+  box-sizing: border-box;
+}
 
+*{
+  box-sizing: inherit;
+}
 body{
     margin: 0 auto;
     max-width: 50em;
@@ -100,3 +106,77 @@ header img {
   footer{
     text-align: center;
   }
+
+  /* Formulario */
+
+  .form-group{
+    /* border: 1px solid tomato; */
+    margin: 20px 0;
+}
+
+label, input, span{
+    vertical-align: middle;
+}
+
+label, input[type="text"], input[type="email"] {
+    width: 100%;
+} 
+
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help{
+    font-size: 11px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button{
+    padding: 16px 60px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #f87171;
+    background: #fecaca;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 1px 1px rgba(0,0,0 , 0.5);
+    text-shadow: -1px -1px 0 #fee2e2;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: #fecaca;
+}
+
+button:active{
+    background: #ef4444;
+    box-shadow: none;
+}
+
+form{
+  accent-color: #fca5a5;
+}
+
+input:focus-visible, textarea:focus-visible{
+  outline: 2px solid #f87171;
+}
