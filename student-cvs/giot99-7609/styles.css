@@ -1,6 +1,26 @@
-*{
-    background: papayawhip;
+html {
+    box-sizing: border-box;
 }
+
+* {
+    background: papayawhip;
+
+    box-sizing: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fefefe;
+
+}
+
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -12,4 +32,79 @@ nav {
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
+}
+
+.article {
+    display: grid;
+    justify-content: center;
+}
+
+.mas-sobre {
+    display: grid;
+    justify-content: center;
+}
+
+.form-group {
+
+    margin: 20px 0;
+}
+
+label,
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+
+}
+
+input {
+    vertical-align: middle;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label,legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],textarea {
+background: white;
+border: 1px solid lightblue;
+border-radius: 4px;
+padding:8px 10px;
+color: #333;
+
+}
+.help{
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover{
+    background: #facc15;
+}
+button:active{
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
