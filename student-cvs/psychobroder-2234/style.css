@@ -1,6 +1,13 @@
 html {
     box-sizing: border-box;
+} 
+*,
+*:before,
+:after {
+    box-sizing: inherit;
+    /* para que herede la propiedad box-sizing */
 }
+
 .heading {
     font-size:35px;
     font-weight: bolder;
@@ -32,7 +39,6 @@ strong {
 
 #profile-photo {
     border-radius: 50%;
-    float: right;
 }
 .subheading {
     color: #c9d1d9;
@@ -53,6 +59,12 @@ strong {
     padding-left: 16px;
     padding-bottom: 8px;
     margin-bottom: 4px;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .contactinfo{
     font-size: 15px;
@@ -191,12 +203,22 @@ input {
 }
 
 button {
+    font-weight: bold;
     background-color: #2493df;
     color: #fff;
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
     width: 100%;
+}
+
+button:hover {
+    background: #4aaced;
+    transform: scale(1.01);
+}
+button:active {
+    background: #1469a1;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
 
 select {
