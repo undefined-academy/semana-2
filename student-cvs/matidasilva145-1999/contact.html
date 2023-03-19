@@ -5,54 +5,57 @@
     <meta charset="UTF-8">
 
     <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
     <main class="page">
         <h1>Contacto</h1>
         <form>
-            <div class="form-grup">
+            <div class="form-group">
                 <label for="name">Nombre</label>
-                <input id="name" type="text" placeholder="Nombre completo" required>
+                <input id="name" type="text" name="name" placeholder="Nombre completo" required>
             </div>
-            <div class="form-grup">
+            <div class="form-group">
                 <label for="email">Correo electonico</label>
-                <input id="email" type="email" placeholder="Ingrese su correo electonico" required>
-
+                <input id="email" type="email" name="email" placeholder="Ingrese su correo electonico" required>
             </div>
-            <div class="form-grup">
+            <div class="form-group">
+                <label for="phone">Telefono</label>
+                <input id="phone" type="tel" name="phone" pattern="[0-9]{9}" placeholder="Numero de telefono movil" required>
+            </div>
+            <div class="form-group">
                 <fieldset>
-                    <legend>Tipo de trabajo</legend>
-                    <input id="Electricidad" name="type of work" type="radio"><label
-                        for="Electricidad">Electricidad</label>
-                    <input id="Steel framing" name="type of work" type="radio"><label for="Steel framing">Steel
+                    <legend>Seleccione tipo de trabajo:</legend>
+                    <input id="electricidad" name="type-of-work" type="radio"><label
+                        for="electricidad">Electricidad</label>
+                    <input id="steel framing" name="type-of-work" type="radio" required><label for="steel framing">Steel
                         framing</label>
-                    <input id="albañileria" name="type of work" type="radio"><label
+                    <input id="albañileria" name="type-of-work" type="radio"><label
                         for="albañileria">Albañileria</label>
-                    <input id="Sanitaria" name="type of work" type="radio"><label for="sanitaria">Sanitaria</label>
+                    <input id="sanitaria" name="type-of-work" type="radio"><label for="sanitaria">Sanitaria</label>
                 </fieldset>
             </div>
-            <div class="form-grup">
+            <div class="form-group">
                 <label for="type">Horario de llamada</label>
-
-                <select id="type">
-                    <option disabled selected>Seleccione una hora para que le devuelva una llamada</option>
+                <select id="type" name="call-time" required>
+                    <option disabled selected value="">Seleccione una hora para que le devuelva la llamada</option>
                     <option>10:00am</option>
                     <option>12:00am</option>
                     <option>14:00pm</option>
                     <option>16:00pm</option>
+                </select>
             </div>
-            <div class="form-grup">
+            <div class="form-group">
                 <label for="description">Descripción</label>
-                <textarea  id="description" required></textarea>
-                <div>
-                    Descipcion breve de trabajo a realizar.
-                </div>
+                <textarea id="description" name="description" rows="5" required></textarea>
+                <div class="help">Descipcion breve de trabajo a realizar.</div>
             </div>
-            <div>
-                <button>Enviar</button>
+
+            <button>Enviar</button>
+
         </form>
+        <a href="/index.html">Volver</a>
     </main>
 </body>
 
