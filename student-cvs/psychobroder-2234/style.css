@@ -232,3 +232,11 @@ select {
 .terms {
     vertical-align: middle;
 }
+form {
+    accent-color: #2493df;
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: 1px solid #4aaced;
+    border: 1px solid #2493df;;
+}
