@@ -1,5 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 body {
     background-color: rgb(250, 239, 225);
     margin: 0 auto;
@@ -28,7 +36,7 @@ main {
     margin-bottom: 3em;
 }
 
-header img{
+header img {
     width: 3.5em;
     border-radius: 10px;
     margin: 1em 1em 0.7em;
@@ -53,7 +61,7 @@ li:hover {
 h1,
 h2,
 strong {
-  color: #333;
+    color: #333;
 }
 
 h1 {
@@ -63,43 +71,45 @@ h1 {
 h2 {
     margin-top: 1em;
     padding-top: 1em;
-  }
+}
 
-  a {
+a {
     color: rgba(0, 81, 255, 0.882);
-  }
+}
 
-  a:hover {
-    background:  #65464e;
+a:hover {
+    background: #65464e;
     color: white;
-  }
+}
 
 .about-section {
     background-color: rgb(227, 234, 234);
-  padding: 0.1em 2em;
-  margin-bottom: 1em;
-  border-radius: 8px;
+    padding: 0.1em 2em;
+    margin-bottom: 1em;
+    border-radius: 8px;
 }
 
 img {
-  border-radius: 10px;
-  display: inline-block;
-  vertical-align: top;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
 
 }
 
 
 ul {
-  list-style: square inside;
-  
+    list-style: square inside;
+
 }
 
-table, th, td {
-  border: 1px solid #333;
+table,
+th,
+td {
+    border: 1px solid #333;
 }
 
 table {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 footer {
@@ -112,7 +122,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     font-size: 12px;
-   
     box-shadow: 10px 10px 10px 10px rgba(31, 30, 30, 0.16);
     border-radius: 10px 10px 0px 0px;
     margin-top: 3em;
@@ -130,4 +139,101 @@ footer p {
     padding-top: 0.3em;
     width: 24em;
     text-align: right;
+}
+
+/* ------------------ Form styles -----------------------------*/
+
+.form-fieldset {
+    border-radius: 10px;
+    border: 3px solid #333;
+    text-align: center;
+    width: 90%;
+    margin: -4em auto 1em;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+legend {
+    background-color: rgb(250, 239, 225);
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    padding: 20px;
+    margin: 0px auto;
+    accent-color: rgba(0, 81, 255, 0.882);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select {
+    border-radius: 5px;
+    margin: 1px 0px 20px 0px;
+    width: 260px;
+    height: 28px;
+    border: 1px solid gray;
+    color: #333;
+    padding: 5px 7px;
+}
+
+textarea {
+    border-radius: 5px;
+    margin: 1px 0px 20px 0px;
+    width: 260px;
+    resize: vertical;
+    border: 1px solid gray;
+    color: #333;
+    padding: 5px 7px;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 1.5px solid rgba(0, 81, 255, 0.882);
+
+}
+
+.radio-fieldset {
+    border-radius: 10px;
+    margin: 0em auto 2em;
+    border: 1px solid gray;
+}
+
+button {
+    background-color: rgba(0, 81, 255, 0.882);
+    color: rgb(250, 239, 225);
+    padding: 12px;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    margin: 30px;
+    width: 15em;
+    height: 4em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(42, 110, 255, 0.882);
+}
+
+button:active {
+    box-shadow: none;
+    background-color: rgba(0, 52, 165, 0.882);
 }
