@@ -123,3 +123,49 @@ footer.pie{
 footer div{
     text-align: center;
 }
+/* CSS LAYAOUT */
+header.layout_header{
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.conocimiento{
+    color: black;
+    text-decoration: underline;
+    padding-top: 0;
+}
+div.lenguajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.front{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.back{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.layaoutCard{
+    height: 150px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 15px;
+}
+div h2{
+    font-size: 45px;
+}
