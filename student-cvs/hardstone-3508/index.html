@@ -48,17 +48,50 @@
             </div>
             <div class="div-bor">
                 <div>
-                    <h2>🦸‍♂️ Contact</h2>
+                    <h2>👉 Contact</h2>
                     <hr>
                     <form action="post" class="f-form" method="get">
-                        <div>
+                        <div class="form-group">
                             <label for="f-name">Name: </label>
-                            <input type="text" id="f-name" name="f-name" size="30" placeholder="Nombre"><br>
+                            <input type="text" id="f-name" name="f-name" size="30" placeholder="Nombre" required>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="f-mail">eMail: </label>
-                            <input type="email" id="f-mail" size="30" placeholder="correo">
+                            <input type="email" id="f-mail" size="30" placeholder="correo" name="mail">
                         </div>
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Presupuesto USD</legend>
+                                <input id=1000 type="radio" name="budget" value="1000" checked>
+                                <label for="1000">$1.000</label>
+                                <input id=5000 type="radio" name="budget" value="5000">
+                                <label for="5000">$5.000</label>
+                                <input id=10000 type="radio" name="budget" value="10000">
+                                <label for="10000">$10.000</label>
+                            </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-pro">Tipo de Proyecto: </label>
+                            <select name="tipo-pr" id="tipo-pro" required>
+                                <option disabled selected value="">Seleccione Uno</option>
+                                <option value="ecommerce">eCommerce</option>
+                                <option value="web">Website</option>
+                                <option value="App">App</option>
+                                <option value="design">Design</option>
+                                <option value="ui-ux">UI / UX</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-mensaje">Mansaje: </label>
+                            <textarea name="mensaje" id="f-mensaje" rows="10" cols="26">Tu mensaje...
+                            </textarea>
+                        </div>
+                        <div>Escribe algo...</div>
+                        <div class="form-group">
+                            <input type="checkbox" name="termi" id="terms" required>
+                            <label for="terms">Acepto los terminos.</label>
+                        </div>
+                        <button type="submit">Summit</button>
                     </form>
                 </div>
             </div>
@@ -117,57 +150,6 @@
                 <div>
                     <h2>📝 Ejercicios Semana 2</h2>
                     <hr>
-<<<<<<< HEAD
-=======
-                    <h3>Tabla de Comandos mas asperos de la terminal 🐧</h3>
-                    <table style="table-layout: fixed; width: 162px">
-                        <colgroup>
-                        <col style="width: 200px">
-                        <col style="width: 400px">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                            <th>Comando</th>
-                            <th>Descripción</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>ls -l -h</td>
-                            <td>Me muestra la lista de archivos y carpetas con su tamaño y fecha.</td>
-                            </tr>
-                            <tr>
-                            <td>pwd</td>
-                            <td>Me dice donde estoy parado osea la ruta donde estoy</td>
-                            </tr>
-                            <tr>
-                            <td>cd</td>
-                            <td>Para cambiar de carpeta.</td>
-                            </tr>
-                            <tr>
-                            <td>⬆️</td>
-                            <td>Me muetra los últimos comandos que he escrito.</td>
-                            </tr>
-                            <tr>
-                            <td>Crl+C</td>
-                            <td>Cancela un comando que se este ejecutando.</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    <hr>
-                    <h3>Terminales</h3>
-                    <p>A terminal emulator, or terminal application, is a computer program that emulates a video terminal within some other display architecture. Though typically synonymous with a shell or text terminal, the term terminal covers all remote terminals, including graphical interfaces. A terminal emulator inside a graphical user interface is often called a terminal window.</p>
-                    <hr>
-                    <h3>Check List de Conocimientos</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                    </ul>
-                    <hr>
-                    <h3>Calentamiento Intro JavaScript</h3>
->>>>>>> 35e64d0de3e450a409ca5e9139160de5375c1d12
                     <div class="code">
                         <p>
                             

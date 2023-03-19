@@ -5,6 +5,9 @@ body {
     font-family: 'Manrope', sans-serif;
     color: #026873;
 }
+* {
+    box-sizing: inherit;
+}
 header {
     width: 100%;
     display: flex;
@@ -27,10 +30,14 @@ h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;
     font-size: 2.5rem;
+    text-align: center;
 }
 h2 {
     color: #025E73;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 1rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 li {
     margin-bottom: 0.6rem;
@@ -90,7 +97,7 @@ hr {
     margin: 1rem 2rem;
     overflow: hidden;
     padding: 1.5rem;
-    color: white;   
+    color: white;
     font-size: 1.3rem;
     font-family: 'Space Mono', monospace;
     text-shadow: 0 0 5px #c8c8c8;
@@ -126,20 +133,52 @@ pre {
     flex-direction: column;
     gap: 20px;
     width: 500px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    align-items: end;
     justify-content: center;
+}
+.form-group {
+    position: relative;
+    display: flex;
     align-items: center;
 }
-input {
+label {
     font-size: 1.2rem;
-    background:#202328;
-    height: 2rem;
-    border: none;
-    outline: 2px solid #011F26;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    z-index: 2;
 }
-input:focus {
-    background: #1d3235;
-    outline: 4px solid #F2668B;
+input, textarea {
+    font-size: 1.2rem;
+    background:#101318;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    color: #CFE6F9;
+    margin-left: 1rem;
+    z-index: 3;
+    transition: all 0.3s linear;
+    line-height: 2.4rem;
+}
+fieldset {
+    display: flex;
+    align-items: center;
+    border-color: #13171D;
+}
+fieldset label:seleted {
+    color: #0080ff;
+}
+input[type=text], input[type=email], input[type=text-area], textarea {
+    outline: 1px solid #30363D;
+    height: 2.4rem;
+}
+textarea {
+    width: 284px;
+    height: 100px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=text-area]:focus, textarea:focus {
+    background: #101318;
+    outline: 2px solid #58A6E9;
+    color: #88BFEF;
+}
+input[type=radio]:focus {
+    color: #0080ff;
 }
