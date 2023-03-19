@@ -1,35 +1,35 @@
 
+  
   body {
     margin: 0 auto;
     max-width: 50em;
     font-family:  "Arial";
     line-height: 1.5;
     padding: 4em 1em;
+    color: #555;
+    font-family:  "Arial"
     }
 
-   h2 {
+    h2 {
      margin-top: 1em;
     padding-top: 1em;
-    }   
-    body {
-  color: #555;
-    } 
-    
-    h1,h2,strong {
+    }    
+  
+    h1,h2,h3,strong {
          color: #333;
      }
 
      code,
-pre {
+ pre {
   background: #eee;
-}
+} 
 
 code {
   padding: 2px 4px;
   vertical-align: text-bottom;
 }
 
-pre {
+ pre {
   padding: 1em;
 
  
@@ -39,20 +39,65 @@ pre {
 }
 body {
   color: #566b78;
-}
+} 
 
 code,
-pre {
+ pre {
   background: #f5f7f9;
   border-bottom: 1px solid #d8dee9;
   color: #a7adba;
-}
+} 
 
 pre {
   border-left: 2px solid #69c;
 }
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
-body {
-  font-family:  "Arial";
+*{box-sizing: border-box;}
+*{box-sizing: inherit;}
+
+.form-group {
+  border: 1px ;
+  margin: 20px 0px 0px;
 }
+
+label,input,textarea{
+  background: white;
+  border: 2px, black  ;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+label, input{
+  width: 50%;
+  display: block;
+}
+
+label {
+  font-weight: bold ;
+  color: #666;
+}
+
+textarea{
+  width: 50%;
+  display: block;
+  resize: vertical;
+}
+
+button{
+  margin: 10px 0;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+background-color: white;
+}
+
+
+
+
+
+
