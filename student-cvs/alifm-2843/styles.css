@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    background-color: rgb(250, 239, 225);
+    margin: 0 auto;
+    max-width: 60em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555
+}
+
+header {
+    background-color: rgb(240, 230, 216);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 3px 4px rgba(31, 30, 30, 0.16);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+header img{
+    width: 3.5em;
+    border-radius: 10px;
+    margin: 1em 1em 0.7em;
+}
+
+header ul {
+    margin: 0.2em 1.5em 0.2em;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1em;
+    padding: 1.5em 0.5em;
+    font-weight: bold;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+  a {
+    color: rgba(0, 81, 255, 0.882);
+  }
+
+  a:hover {
+    background:  #65464e;
+    color: white;
+  }
+
+.about-section {
+    background-color: rgb(227, 234, 234);
+  padding: 0.1em 2em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+
+img {
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+
+ul {
+  list-style: square inside;
+  
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+table {
+  margin-bottom: 1em;
+}
+
+footer {
+    background-color: rgb(240, 230, 216);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+   
+    box-shadow: 10px 10px 10px 10px rgba(31, 30, 30, 0.16);
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 3em;
+    color: rgba(0, 81, 255, 0.882);
+}
+
+footer img {
+    width: 2.5em;
+    border-radius: 10px;
+    margin: 1em 1em 0.7em;
+}
+
+footer p {
+    border-top: 1px solid;
+    padding-top: 0.3em;
+    width: 24em;
+    text-align: right;
+}
