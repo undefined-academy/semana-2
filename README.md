@@ -35,3 +35,8 @@
 7) Solvente dicho conflicto con el comando `git merge origin/semana-02`
 8) Realice `git pull`, luego `git commit -m "Ejercicio 03 - Semana 02"` y finalmente `git push`
 9) Realice mi Pull Request.
+
+### Ejercicio 04:
+
+1) Cree un formulario con la estructura vista en clase.
+2) Encontre en Google una function que me deshabilita el boton por default
