@@ -1,5 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
 
 body {
     margin: 0 auto;
@@ -24,7 +31,7 @@ strong {
 code {
     background: #f5f7f9;
     border-bottom: 1px solid #d8dee9;
-    color: #a7adba;
+    color: #333;
     border-left: 2px solid #69c;
     padding: 2px 4px;
     vertical-align: text-bottom;
@@ -34,10 +41,11 @@ code {
 table {
     background: #eee;
     border-bottom: 1px solid #d8dee9;
-    color: #a7adba;
+    color: #333;
     padding: 2px 4px;
     vertical-align: text-bottom;
     border-radius: 10px;
+    width: 100%;
 }
 
 tr > th {
@@ -50,5 +58,75 @@ td {
 }
 
 a {
-    color: #e81c4f;
+    color: #0f766e;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input[type="text"], input[type="email"] {
+    width: 100%;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    border: 1px solid #134e4a;
+    cursor: pointer;
+    background-color: #0d9488;
+    color: #f0fdfa;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    background-color: #0f766e;
+}
+
+button:active {
+    background-color: #134e4a;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+}
+
+form {
+    accent-color: #0d9488;
+}
+
+input:focus-visible, textarea {
+    outline: 1px solid #115e59;
+    border:  1px solid #0f766e;
 }
