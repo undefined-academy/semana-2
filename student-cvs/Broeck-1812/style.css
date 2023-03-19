@@ -51,7 +51,30 @@ img{
 section{
     margin-bottom: 50px;
 }
-.formacion>ul, .contacto>ul {
+.formacion>ul {
     font-size: 18px;
 }
-
+.form-group {
+    margin-bottom: 20px;
+}
+textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+}
+label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+footer{
+    font-size: 12px;
+}
+fieldset>label {
+    text-transform: none;
+    font-weight: normal;
+}
+label, input {
+    vertical-align: top;
+}

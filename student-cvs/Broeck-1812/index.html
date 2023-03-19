@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <title>Perfil personal (CV)</title>
@@ -8,9 +9,9 @@
 
 <body>
     <article>
-        <h1 class="name">
+        <header class="name">
             Adrián Vargas Yanguas<img src="FotoCV.jpg" width="100" height="100" alt="FotoCV">
-        </h1>
+        </header>
         <h2> <strong>Developer</strong></h2>
         <hr>
         <section class="formacion">
@@ -61,25 +62,20 @@
                 </tbody>
             </table>
         </section>
-        <section class="contacto">
+        <!--<section class="contacto">
             <h3> <strong>CONTACTO</strong></h3>
             <ul>
                 <li>Via e-mail: <strong>adri23458@gmail.com</strong></li>
             </ul>
-        </section>
+        </section> -->
         <section class="motivacion">
             <h3> <strong>MOTIVACIÓN</strong></h3>
             Pese a que siempre me ha gustado el mundo de la informática y del software, nunca había pensado en
-            dedicarme
-            a
-            ello
-            profesionalmente. Después de la pandemia y conociendo a gente del mundillo del development y la programación, estoy
-            convencido
-            que
-            este mundo está hecho para mí. Desde entonces mi motivación es tener los suficientes conocimientos y soltura para poder dar el
-            salto
-            de mi
-            actual trabajo a esta industria en constante evolución.
+            dedicarme a ello profesionalmente. Después de la pandemia y conociendo a gente del mundillo del development
+            y la programación, estoy
+            convencido que este mundo está hecho para mí. Desde entonces mi motivación es tener los suficientes
+            conocimientos y soltura para poder dar el salto de mi actual trabajo a esta industria en constante
+            evolución.
         </section>
         <section class="aficiones">
             <h3> <strong>AFICIONES</strong></h3>
@@ -90,6 +86,40 @@
                 <li>Seriéfilo y cinéfilo</li>
                 <li>Techie</li>
             </ol>
+        </section>
+        <section class="contacto">
+            <h3>CONTACTO</h3>
+            <form method="post" action="mailto:adri23458@gmail.com" enctype="text/plain"></form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Escriba aquí su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+            </div>
+            <div class="form.group">
+                <fieldset>
+                    <legend>Motivo de contacto</legend>
+                    <input id="contratacion" name="motivo" value="contratacion" type="radio"><label
+                        for="contratacion">Contratación</label>
+
+                    <input id="proyecto" name="motivo" value="proyecto" type="radio"><label
+                        for="proyecto">Proyecto</label>
+
+                    <input id="informacion" name="motivo" value="informacion" type="radio"><label
+                        for="informacion">Informacion</label>
+
+                    <input id="otro" name="motivo" value="otro" type="radio"><label for="otro">Otro</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escriba aquí su Mensaje" rows="8"
+                    required></textarea>
+                <footer>El mensaje que escriba se enviará directamente a mi correo electrónico</footer>
+            </div>
+            <button>Enviar</button>
         </section>
     </article>
 </body>
