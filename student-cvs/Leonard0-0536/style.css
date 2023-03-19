@@ -80,6 +80,10 @@ ul {
     margin: auto;
 }
 
+img {
+    width: 80px;
+}
+
 .tech {
     height: 100vh;
     display: flex;
