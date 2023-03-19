@@ -1,0 +1,320 @@
+
+
+body{
+    background-color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+main{
+    max-width: 800px;
+}
+
+div{
+ padding: 20px;
+ border: 0px solid pink;
+ text-align: center;
+
+}
+
+.column {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 1000px;
+
+}
+
+.principal{
+    width: 35%;
+    background-color: green;
+}
+
+.contacto{
+    width: 65%;
+    background-color:beige;
+}
+
+.loco{
+display: flex;
+padding: 0;
+margin: 0 auto;
+}
+
+.header{
+    padding: 0;
+    display: flex;
+    height: 230px;
+    background-color: papayawhip;
+}
+
+.header hr  {
+    border: 2px solid green;
+    margin: 10px 0 0 0;
+    margin-right: 0%;
+    margin-left: 44.5%;
+}
+
+.header h1 {
+    color: black;
+    text-align: right;
+    margin:20px 40px 0 0;
+    font-size: 40px;
+}
+
+.header h3{
+    color:black;
+    margin: 10px 0 0 60px;
+    line-height: 15px;
+}
+
+.foto{
+    border-radius: 50%;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 50px;
+    top: 80px;
+    background-image: url(perfil.jpeg);
+    background-size: cover;
+    
+}
+.perra{
+    width: 100%;
+}
+
+.descripcion{
+    max-width: 420px ;
+    display: flex;
+    float: right;
+    text-align: justify;
+    margin: 10px auto;
+
+}
+
+ hr {
+
+
+    border: 2px solid pink;
+    margin: 0 ;
+
+
+}
+
+.principal h2{
+    margin: 50px 0 0 0;
+    height: 30px;
+}
+
+.principal p {
+    color:white;
+    font-weight: bold;
+    max-width: 300px;
+ 
+    
+}
+
+.neneco {
+     width: 101%;
+     word-wrap: break-word;
+}
+
+
+.hola {
+
+width: 390px;
+margin-left:45px ;
+margin-top: 33px;
+margin-right: 0;
+}
+
+.hola1{
+    width: 285px;
+}
+
+.hola2{
+    width: 270px;
+    margin-right: 10px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.educacion {
+    color:black;
+    margin: 20px 150px 0 0;
+}
+
+.educacion1{
+    color: #000;
+    margin: 20px 100px 0 0;
+}
+
+.dot{
+    border-color: pink;
+    border-radius: 50%;
+    border-width: 4px;
+    position: absolute;
+    left: 345px;
+    top: 330px;
+}
+
+.dot1{
+    border-color: pink;
+    border-radius: 50%;
+    border-width: 4px;
+    position: absolute;
+    left: 345px;
+    top: 425px;
+}
+
+.dot2{
+    border-color: pink;
+    border-radius: 50%;
+    border-width: 4px;
+    position: absolute;
+    left: 346px;
+    top: 523px;
+}
+
+.dot3{
+    border-color: pink;
+    border-radius: 50%;
+    border-width:4px;
+    position: absolute;
+    left: 345px;
+    top: 750px;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+.dot4{
+    border-color: pink;
+    border-radius: 50%;
+    border-width:4px;
+    position: absolute;
+    left: 345px;
+    top: 850px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.dot5{
+    border-color: pink;
+    border-radius: 50%;
+    border-width:4px;
+    position: absolute;
+    left: 345px;
+    top: 964px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.dot6{
+    border-color: pink;
+    border-radius: 50%;
+    border-width:4px;
+    position: absolute;
+    left: 345px;
+    top: 1077px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.linea{
+    position: absolute;
+    transform: rotate(90deg);
+    width: 45px;
+    height: 0px;
+    left: 345px;
+    top: 400px;
+}
+
+.linea1{
+    position: absolute;
+    transform: rotate(90deg);
+    width: 48px;
+    height: 0px;
+    left: 343px;
+    top: 495px;
+
+}
+
+.linea2{
+    position: absolute;
+    transform: rotate(90deg);
+    width: 72px;
+    left: 320px;
+    top: 810px;
+}
+
+.linea3{
+    position: absolute;
+    transform: rotate(90deg);
+    width: 71px;
+    left: 321px;
+    top: 810px;
+}
+
+.linea4{
+    position: absolute;
+    transform: rotate(90deg);
+    width: 90px;
+    left: 311px;
+    top: 919px;
+}
+
+.linea5{
+    position: absolute;
+    transform: rotate(90deg);
+    width: 83px;
+    left: 315px;
+    top: 1032px;
+}
+
+.lista{
+    list-style-type: none;
+}
+
+.lista1{
+    margin: 0 auto;
+}
+
+li  {
+    text-align: left;
+}
+
+.experience{
+
+    display: inline-block;
+    margin-top: 0%;
+    text-align: left;
+    margin-bottom: 1%;
+
+
+}
+
+.experience1{
+    display: inline-block;
+    margin-left: 17%; 
+    margin-top:0%;
+    margin-bottom: 0%;
+    text-align: right;
+
+}
+
+.experience2{
+    display: inline-block;
+    margin-top: 0%;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-right: 5%;
+}
+
+.tituloexp{
+    text-align: left;
+    margin-bottom: 0%;
+    margin-left: 10%;
+    margin-top: 4%;
+}
