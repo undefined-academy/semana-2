@@ -87,6 +87,79 @@
           </tr>
         </table>
       </section>
+      <section>
+        <h3>Contacto</h3>
+        <form
+          action="/server"
+          method="get"
+          class="form"
+          onsubmit="event.preventDefault();"
+          ;
+        >
+          <div class="form-group">
+            <label for="user_name">Nombre: </label>
+            <input
+              type="text"
+              name="name"
+              id="user_name"
+              placeholder="Ingrese su nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="user_email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="Ingrese su email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="user_msg">Comentario: </label>
+            <textarea
+              name="msg"
+              id="user_msg"
+              placeholder="Ingrese su comentario"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>¿Cómo me has conocido:?</legend>
+              <input
+                type="radio"
+                id="bootcamp"
+                name="plataform"
+                value="bootcamp"
+                required
+              />
+              <label for="bootcamp">Bootcamp de Guillermo </label>
+              <input
+                type="radio"
+                id="discord"
+                name="plataform"
+                value="discord"
+                required
+              />
+              <label for="discord">Discord </label>
+              <input
+                type="radio"
+                id="github"
+                name="plataform"
+                value="github"
+                required
+              />
+              <label for="github">Github </label>
+            </fieldset>
+          </div>
+          <div>
+            <button>Enviar</button>
+          </div>
+        </form>
+      </section>
     </article>
     <hr />
     <footer>

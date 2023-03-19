@@ -1,5 +1,13 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0 auto;
   max-width: 50em;
@@ -94,4 +102,74 @@ footer {
 
 hr {
   margin-top: 3em;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+label,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+div > label,
+fieldset {
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+fieldset label {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+fieldset input {
+  margin: 0 0 0 40px;
+}
+
+input,
+fieldset,
+textarea {
+  border-radius: 4px;
+  background-color: white;
+  padding: 8px 4px;
+}
+
+button {
+  padding: 12px 32px;
+  font-weight: bold;
+  border: 1px solid orange;
+  background-color: rgb(242, 216, 168);
+  border-radius: 4px;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+button:hover {
+  border: 1px solid rgb(242, 216, 168);
+  background-color: orange;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+form {
+  accent-color: rgb(242, 216, 168);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid rgb(242, 216, 168);
+  outline: 1px solid rgb(242, 216, 168);
 }
