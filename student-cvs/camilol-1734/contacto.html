@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Formulario html</title>
+    <link rel="stylesheet" href="styles2.css">
+<body>
+    <main class="page">
+        <h1> Contacto</h1>
+        <form >
+            <div class="form-grup">
+                <label for="name"> Nombre </label>
+                <input id="name" type="text" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="from-grup">
+                <label for="email"> email </label>
+                <input id="email" type="text" placeholder="ashdnj@.com" required>
+            </div>
+            <div class="form-grup">
+                <fieldset>
+                    <legend> presupuesto</legend>
+                    <input id="10000" name="budget" type="radio">
+                    <label for="10000">$10000</label>
+
+                    <input id="15000" name="budget" type="radio">
+                    <label for="15000">$15000</label>
+
+                    <input id="12" name="budget" type="radio">
+                    <label for="12">$12</label>
+                </fieldset>
+            </div>
+            <div class="form-grup">
+                <label for="type"> tipo de proyecto</label>
+                <select name="type" id="type" required>
+                    <option disabled selected> Seleccione uno</option>
+                    <option value="website"> website</option>
+                    <option value="app"> app</option>
+                    <option value="appmovil"> appmovil</option>
+                    <option value="UwU"> UWU</option>
+
+                </select>
+            </div>
+            <div class="form-grup">
+                <label for="description"> Descripcion</label>
+                <textarea name="" id="description" cols="30" rows="10"></textarea>
+                <div class="help"> escribe la descripcion y fecha de la consulta</div>
+                
+            </div>
+            
+            <div class="form-grup">
+                <label for="terms" >
+                    <input id="terms" type="checkbox" required>
+                    <span> acepto terminos</span>
+                </label>
+            </div>
+            <button> Enviar</button>
+        </form>  
+    </main>
+    
+</body>
+</html>
