@@ -25,7 +25,7 @@
         <section>
             <article>
                 <header>
-                    <img class="logo" src="https://lh3.googleusercontent.com/a/AGNmyxaDl54WtKytx4PPBQFW5Aaed-gNROxriJDO3OVehq4=s288" alt="Logo">
+                    
                     <h1 class="header-h1">Hi, I'm Ernesto Riveiro</h1>    
                     <p class="header-quote"><i>Jack of all trades, master of none, but oftentimes better than master of one.</i></p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/r6dvBL8mq5A?controls=1&autoplay=1&mute=1" title="ernzxr - YouTube video player" frameborder="0" class="trailer"></iframe>
@@ -62,9 +62,9 @@
                     <li><strong>Soft Skills</strong></li>
                         <ul>
                             <li>Communication</li>
+                            <li>Adaptability</li>
                             <li>Teamwork</li>
                             <li>Leadership</li>
-                            <li>Adaptability</li>
                         </ul>
                 </ul>
                 <ul>
@@ -172,9 +172,38 @@
             </table>
         </article>
     </section>
-        
+    <hr class="form-div">   
     <footer class="container-footer">
-    <hr>
+
+    <div class="form-container">
+        <h1>Let's work together!</h1>
+            <form action="/server" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name='name' type="text" placeholder="Your name here!" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id='email' name="email" type="email" placeholder="Email for contact." required>
+                </div>
+                <div class="meet">
+                    <label for="meet">Meet</label>
+                    <input class= "meet" id="meet" name="name" type="datetime-local" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="Alright, what's on your mind :)" required rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>I understand that this form is for work purpose only.</span>
+                    </label>
+                </div>
+                <button>Enviar</button>
+            </form>
+    </div>
+<hr class="form-div">
             <div>
                 <p>Follow me on!</p>
                 <ul class="rrss-inline">
@@ -187,10 +216,11 @@
     <hr>
             <div >
                 <address>
-                    <p>Web in development by Ernesto Riveiro. Contact with me: <a href="mailto:ernesto.ernzxr@gmail.com">ernesto.ernzxr@gmail.com</a> ~ernzxr © 2023</p>
+                    <p>Web in development by Ernesto Riveiro. Contact me: <a href="mailto:ernesto.ernzxr@gmail.com">ernesto.ernzxr@gmail.com</a> ~ernzxr © 2023</p>
                 </address>
             </div>
     </footer>
+
 
 </body>
 

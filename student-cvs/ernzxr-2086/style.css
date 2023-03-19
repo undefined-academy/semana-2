@@ -10,16 +10,6 @@ body section {
     flex-wrap: wrap;
 }
 
-/*.bg-img {
-    background-color: #263d36;
-    background-image: url('https://media.licdn.com/dms/image/C4D16AQEICEw8f7xnow/profile-displaybackgroundimage-shrink_350_1400/0/1614815470835?e=1683763200&v=beta&t=wajMvQ96VPSHYCnKLXZKnBaLMIUe6vj2gAuAfKDqNcs');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 180px;
-    border-radius: 10px;
-}*/
-
 body {
     margin-top: 0;
 }
@@ -65,16 +55,6 @@ nav li:hover{
     background-color: #ff16d8;
 }
 
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-}
-
 .trailer {
     display: block;
     margin-left: auto;
@@ -107,7 +87,7 @@ h1 {
 .header-h1 {
     color: black;
     margin-bottom: 3px;
-    margin-top: 3px;
+    margin-top: 30px;
 }
 
 .skills-h2 {
@@ -179,16 +159,17 @@ tr:hover td {
     text-align: center;
 }
 
-hr:first-child {
+hr {
     border: none;
     border-top: 1px solid black;
-    margin: 0 700px; 
+    margin: 0 850px; 
 }
 
-hr:not(:first-child) {
+/* hr div */
+.form-div {
     border: none;
     border-top: 1px solid black;
-    margin: 0 850px;
+    margin: 20px 850px; 
 }
 
 footer a {
@@ -210,6 +191,108 @@ footer ul li:not(:last-child) {
     border-right: 1px solid black;
 }
 
+.form-container{
+    background-color: #fdfbff;
+    border-radius: 20px;
+    max-width: 420px;
+    margin: 0px auto;
+    padding: 10px 10px;
+}
+
 address {
     font-style: normal;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+label, input:not([type='checkbox']) {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.meet {
+    width: 50%;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 3px;
+}
+
+input {
+    vertical-align: middle;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 4px 5px;
+    margin-top: 3px;
+    font-family: Helvetica, Ubuntu, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+footer h1 {
+    font-weight: bold;
+    vertical-align: middle;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+label:last-child{
+    font-size: 12px;
+    text-transform: none;
+}
+
+label span {
+    vertical-align: middle;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: Helvetica, Ubuntu, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+button {
+    padding: 6px 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    background: #a94dff;
+    color:rgb(255, 255, 255);
+    cursor: poiner;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background :#b86ffc
+}
+
+button:active {
+    background: #9422ff;
+    box-shadow: none;
+    color: #dddddd;
+}
+
+.meet {
+    text-align: center;
 }
