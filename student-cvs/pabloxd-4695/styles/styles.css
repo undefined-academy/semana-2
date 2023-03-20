@@ -71,3 +71,26 @@ footer {
   text-align: center;
   margin-top: 50px;
 }
+
+.figure-contact {
+  margin-top: 50px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d24c6d;
+  border-radius: 0.25rem;
+}
+
+.figure-contact:hover {
+  background-color: #d24c6d;
+}
+
+.figure-contact:hover #contact {
+  color: whitesmoke;
+}
+
+#contact {
+  text-decoration: none;
+  color: #d24c6d;
+}
