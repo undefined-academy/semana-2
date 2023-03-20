@@ -3,7 +3,6 @@ html {
 }
 
 * {
-    background: papayawhip;
 
     box-sizing: inherit;
 }
@@ -12,6 +11,9 @@ body {
     color: #333;
     background-color: #fefefe;
 
+}
+a {
+    color: black    ;
 }
 
 .page {
@@ -107,4 +109,7 @@ button:hover{
 button:active{
     background: #ca8a04;
     box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+form{
+    accent-color: #eab308;
 }
