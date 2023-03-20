@@ -1,67 +1,86 @@
-body{
 
-font-family: Arial, Helvetica, sans-serif;
-margin: 0 auto;
-max-width: 50em;
-line-height: 1.5;
-padding: 4em 1em;
-color: #555;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  padding: 2em 1em;
+  line-height: 1.5;
 }
-h2 {
-margin-top: 1em;
-padding-top: 1em;
-}
-h1,h2,h3,strong {color: rgb(180, 103, 185);}
-p,ul {border-top: 1px solid #000000;}
-ul,p {
-    background-color: #dbf6f6;
-}
-a{
-    color: rgb(72, 0, 255);
-}
-em{color: rgb(215, 104, 197);}
-p,ul{border-left: 2px solid #000000;}
+
 header {
-    background-color: #263d36;
-    background-image: url("/img/pankaj-patel-6JVlSdgMacE-unsplash.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 1.2;
-    padding: 10vw 2em;
-    text-align: center;
-  }
-  header h1 {
-    color: white;
-    font-size: 2.5em;
-    font-weight: 300;
-  }
+  background-color: #263d36;
+  background-image: url("/img/background\ img.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 1em;
+}
+
+header h1 {
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+
+header a {
+  color: rgb(242, 255, 0);
+  text-decoration: none;
+  border: 1px solid #ccff00;
+  border-radius: 290486px;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ a:hover {
+  background: #e81c4f;
+  color: white;
+}
+
+h1,h2,h3,strong {
+  color: rgb(222, 34, 34);
+  margin-top: 1em;
+}
+
+p, ul {
+  border-top: 1px solid #000000;
+  border-left: none;
+  background-color: #e7c8c2;
+}
+
+ul,p {
+  margin: 0;
+}
+
+
+
+em{
+  color: rgb(255, 0, 0);
+}
+
+.parrafo{
   
-  header a {
-    border: 1px solid #e81c4f;
-    border-radius: 290486px;
-    color: white;
-    font-size: 0.6em;
-    letter-spacing: 0.2em;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-  }
+  background: none;
+  color: #00ffff;
   
-  header a:hover {
-    background:  #e81c4f;
-    color: white;
+}
+
+
+@media (min-width: 768px) {
+  body {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 4em 1em;
   }
-  .parrafo{
-    background: none;
-    color: #e7ecec;
+  h2 {
+    margin-top: 0;
+    padding-top: 0;
   }
-  header img {
-    display: inline-block;
-    height: 120px;
-    vertical-align: top;
-    width: 120px;
-    
+  p,ul {
+    border-left: 2px solid #000000;
   }
+}
