@@ -1,0 +1,139 @@
+body {
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    color: #3A3838;
+    justify-content: center;
+    max-height: max-content;
+    background-color:#C2AFA1;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 70em;
+    justify-content: center;
+    background-color:#C2AFA1;
+
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+h2,
+strong {
+    color: #07325C;
+    text-align: center;
+}
+
+
+
+.header h1{
+    color: papayawhip;
+    font-family: Raleway;
+    font-size: 50px;
+  
+}
+.header h3{
+    color: papayawhip;
+    font-family: Raleway;
+    font-size: 25px;
+  
+}
+
+hr {
+    border: 2.5px solid #92400e;
+    padding: 0 auto;
+    margin: 0 auto;
+    border-radius: 2px;
+
+}
+
+.header {
+    background-color: #1B5B97;
+    background-image: url("img/header-background.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.0;
+    padding: 8vw 2em;
+    text-align: center;
+    
+}
+
+.description {
+    padding-top: 2.5px;
+}
+
+ol>li::marker {
+    font-weight: bold;
+    color: #212121;
+}
+
+.experience, .table, .table2, .profile {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.link {
+    color: #3A3838;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+table {
+    border: 1px solid #07325C;
+    margin: 0 auto;
+}
+
+.profile {
+    text-align: center;
+}
+
+.contacto {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #C2AFA1;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttom {
+    width: 200px;
+    margin: 20px ;
+    text-decoration: none;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #14b8a6;
+    background-color: #0f766e;
+    color: papayawhip;
+    text-shadow: -1px -1px 0 #164e63;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 70em;
+    justify-content: center;
+    background-color: #C2AFA1;
+    padding-top: 2.5px;
+}

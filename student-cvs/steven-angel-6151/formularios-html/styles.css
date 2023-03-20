@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+    margin: 0 auto;
+    line-height: 1.5;
+    max-height: max-content;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header {
+    color: #0c4a6e;
+    font-family: Helvetica;
+    text-align: center;
+    height: 180px;
+    padding-top: 45px;
+    background-color: #cffafe;
+    border: 1px solid white;
+    
+}
+
+
+body {
+    background-color: #0c4a6e;
+    color: #d4d4d4;
+    margin: 0 auto;
+
+}
+
+.page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #e5e5e5;
+    text-align: center;
+    
+}
+legend {
+    font-size: 18px;
+    color: #d4d4d4;
+    padding: 3px 6px;
+}
+
+fieldset {
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+
+.name, .email, .company-name, textarea {
+     background-color: #cffafe;
+     border: 1px solid lightgray;
+     border-radius: 4px;
+     padding: 8px 10px;
+     color: #737373;
+}
+
+.select-country {
+    background-color: #cffafe;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #737373;
+    display: block;
+
+}
+
+.help-text {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #d4d4d4;
+}
+
+
+.accept-terms {
+    border: 1px solid tomato;
+    vertical-align: middle;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center
+
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #14b8a6;
+    background-color: #0f766e;
+    color: whitesmoke;
+    text-shadow: -1px -1px 0 #164e63;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: #0d9488;
+}
+
+button:active {
+    background: #0f766e;
+    box-shadow: none;
+}
