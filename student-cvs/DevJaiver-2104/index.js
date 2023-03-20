@@ -1,5 +1,5 @@
 const FormularioContacto = document.querySelector('#FormContacto');
 
-FormularioContacto.addEventListener('click', function(event){
+FormularioContacto.addEventListener('submit', function(event){
     event.preventDefault();
 })
