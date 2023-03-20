@@ -50,3 +50,87 @@ body {
 .joke-image {
     width: 20em;
 }
+
+.form-group {
+    margin: 1em 0em;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1em;
+    color: #f6f1d1;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+fieldset {
+    border-radius: 1em;
+}
+
+label,
+legend {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    background-color: #A89984;
+    border: 1px solid #928375;
+    border-radius: 1em;
+    padding: 8px 10px;
+}
+
+input::placeholder {
+    color: #ebdbb2;
+}
+
+textarea+span {
+    font-size: 0.8em;
+}
+
+form {
+    accent-color: #fabd2f;
+}
+
+.contact-form button {
+    cursor: pointer;
+    padding: 1em 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-shadow: -1px -1px 0 #689d6a;
+    border: 1px solid #98971A;
+    background: #fa8334;
+    border-radius: 1em;
+    color: #f6f1d1;
+    box-shadow: 1px 1px 6px #689d6a;
+}
+
+.contact-form button:hover {
+    background: #fe8019;
+}
+
+.contact-form button:active {
+    background: #fabd2f;
+    box-shadow: none;
+}
