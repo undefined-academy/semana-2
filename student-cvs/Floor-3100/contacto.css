@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 100px;
+    background-color: #CBE4DE;
+}
+
+h1 { 
+    color: #2e4f4fa6;
+    font-size: 50px;
+    font-weight: 400px;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+input{
+    background-color: #2e4f4fa6;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+select {
+    background-color: #2e4f4fa6;
+    color: #fff;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+    border: 1px solid grey;
+    max-width: 400px;
+    background-color: #2e4f4fa6;
+    color: #FFF;
+}
+
+#condiciones {
+    font-size: 12px;    
+    color: grey;
+}
+
+input[type="submit"]{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background-color: #0E8388;
+
+}
