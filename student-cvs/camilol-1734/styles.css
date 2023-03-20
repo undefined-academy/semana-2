@@ -1,48 +1,69 @@
+html, body{
+   margin: 0;
+   height: 100%;
+   
+}
+*{
+   box-sizing: inherit;
+}
 body{
-    background-color: LightSalmon;
-    font-family: 'Dancing Script' , cursive;
-
-    text-align: center;
-    
-   
-}
-h2{
-   color:blueviolet ;
-}
- h1{
-   display: inline-block;
-   position: relative;
+   background: #FFA533;
+   color:#D0CAC2;
    font-family: 'Dancing Script' , cursive;
- }
-h1::after,h1::before{
-   content:'';
-   position: absolute;
-   width: 120px;
-   height: 3px;
-   background-color: black;
-   top: 0.6em;
+   text-align: center;
+   font-size: 32px;
    
 }
-hr{
-   color: gray;
-}
-h1::before{
-   left: -140px;
-}
-h1::after{
-   right: -140px;
-}
-table,th,td{
-   border: 1px solid black;
-   margin: 0 auto;
-}
-th,td{
-   padding: 10px;
+main{
+   display: flex;
+   flex-direction: column;
+   
 }
 
-section{
-   width: 20%;
-   margin: auto;
-   
-   padding: 15;
+section,header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 300px;
 }
+
+nav{
+   display: grid;
+   place-items: center;
+}
+
+header{
+   background: #3498db;
+   text-align: center;
+}
+.content{
+   background: black;
+}
+.signup{
+   background:#FFA533;
+}
+.feature{
+   background: black;
+}
+.feature.first{
+   background: black;
+}
+.feature:last-child{
+   background: black;
+}
+@media screen and (min-width: 992px) {
+   .features{
+      display: flex;
+   }
+   .feature{
+      width: 100%;
+   }
+   .signup{
+      min-height: auto;
+      height: 200px;
+      order: 3;
+   }
+   content {
+      order: 3;
+   }
+  }
