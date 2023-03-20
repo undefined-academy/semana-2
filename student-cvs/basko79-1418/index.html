@@ -1,40 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Esto es una pagina web</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <!-- Esto es un comentario-->
-        <header><h1>Hello, I´m  <br><br><a href="about.html" class="title">Sebastian Basconcelo</a></h1></header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-        <h2>I´m a FullStack Javascript Developer from Argentina</h2>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Esto es una pagina web</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- Esto es un comentario-->
+    <header>
+        <h1>Hello, I´m <br><br><a href="about.html" class="title">Sebastian Basconcelo</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#form">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
         <article>
-        
-        <h2>Bootcamp</h2>
-        <section>
-        <h3>Semana 1</h3>
-        <h4>Configuración del ambiente de desarrollo</h4>
-        <ol>
-            <li>Instalando Ubuntu en Windows 10/11</li>
-            <li>Instalación de Git</li>
-            <li>Configuración de llaves SSH</li>
-            <li>Creando la cuenta de Github</li>
-            <li>Instalación de Node y Yarn</li>
-            <li>Primeros pasos en VsCode</li>
-        </ol>
-    </section>
-    </article>
-        <a href="achievements/projects.html" class="links">Projects</a>
-        <br>
-        <figure><img src="cat.jpg" height="200" width="120" alt="Cat"><figcaption>Gato Saltando</figcaption></figure>
-        <footer><p>&copy; 2023</p></footer>
-    </body>
+            <div class="contenido">
+                <section>
+                    <h2>Soy FullStack Javascript Developer. </h2>
+                    <p>Apasionado por la programación y la tecnología. Siempre tratando de aprender.</p>
+                    <p>Vivo en Argentina</p>
+                </section>
+
+
+
+                <section>
+                    <h2>Bootcamp</h2>
+                    <h3>Semana 1</h3>
+                    <h4>Configuración del ambiente de desarrollo</h4>
+                    <ol>
+                        <li>Instalando Ubuntu en Windows 10/11</li>
+                        <li>Instalación de Git</li>
+                        <li>Configuración de llaves SSH</li>
+                        <li>Creando la cuenta de Github</li>
+                        <li>Instalación de Node y Yarn</li>
+                        <li>Primeros pasos en VsCode</li>
+                    </ol>
+                </section>
+
+
+                <h3>Mi GitHub</h3>
+
+
+                <a href="https://github.com/basco1979">
+                    <img height="150em"
+                        src="https://github-readme-stats.vercel.app/api?username=basco1979&count_private=true&include_all_commits=true&show_icons=true&theme=dark&hide_border=false&show_owner=true%22" />
+                    <img height="150em"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=basco1979&theme=dark&hide_border=false&&layout=compact" />
+                </a>
+                <br>
+                <a href="achievements/projects.html" class="links">Projects</a>
+                <br>
+                <figure><img src="cat.jpg" height="200" width="120" alt="Cat">
+                    <figcaption>Gato Saltando</figcaption>
+                </figure>
+
+                <h2>Formulario de Contacto</h2>
+
+                <form action="/" id="form" method="get"></form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" placeholder="Ingresa tu Nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Ingresa tu Correo" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+
+            </form>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Bsk-2023</p>
+    </footer>
+</body>
+
 </html>
