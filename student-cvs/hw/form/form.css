@@ -62,14 +62,6 @@ input:focus-visible{
     outline: #FFD966;
 }
 
-button {
-    background-color: #FFD966;
-    color: #002809;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    
-}
 
 select {
     background-color: #303843;
@@ -90,8 +82,24 @@ select {
 
 }
 
+button {
+    background-color: #FFD966;
+    color: #002809;
+    border: none;
+    padding: 16px 104px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 600;
+    font-size:16px;
+    border: 1px solid #facc15;
+
+}
+
 button:hover {
-	background: #facc15;
+	background: transparent;
+    border: 1px solid #facc15;
+    color: #facc15;
 }
 
 button:active {
