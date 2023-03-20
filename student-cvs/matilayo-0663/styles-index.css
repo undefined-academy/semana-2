@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
-    
 }
 
 main {
@@ -48,7 +47,7 @@ div {
 }
 
 .tit {
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     color: tomato;
     font-size: 25px;
     
@@ -85,6 +84,7 @@ div.contact {
 
 hr {
     width: 80%;
+    margin-top: 60px;
 }
 
 p.contact {
