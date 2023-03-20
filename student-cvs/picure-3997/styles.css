@@ -1,0 +1,171 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	
+	margin: 0 auto;
+	padding: 0px;
+	
+}
+
+main{
+	width: 100%;
+	height: 800px;
+	
+
+}
+header {
+	background-color: #2b1c1c;
+	display: flex;
+	text-align: center;
+	width: 100%;
+    height: 150px;
+}
+
+.left{
+	width: 30%;
+    height: 150px;
+	background-color: #AC23B7;
+	border-color: #f2f2f2;
+	display: flex;
+	
+}
+
+.img-profile{
+	width: 35%;
+	height: 140px;
+	border-radius: 100%;
+	margin: 5px 0 5px 20px ;
+	background-image: url('/assets/img-profile.JPG');
+	background-position: center;
+	background-size: cover;
+}
+
+.name{
+	width: 65%;
+	height: 140px;
+	margin: 5px 0 5px 10px ;
+}
+
+.name h1{
+	color:  #FAF8F7;
+	text-align: center;
+	margin-top: 100px;
+}
+.rigth{
+	width: 70%;
+    height: 150px;
+	background-color: #c3c3c3;
+	background-image: url("https://www.arkasoftwares.com/blog/wp-content/uploads/2018/11/header_banner.jpg");
+	color:  #FAF8F7;
+	background-size: cover;
+}
+.rigth h1{
+	padding: 10px;
+	text-align: left;
+}
+
+
+
+.container-central{
+	width: 100%;
+	height: 700px;
+	display: flex;
+	background-color: #201E1C;
+}
+aside{
+	width: 30%;
+	height: 700px;
+	background-color: #201E1C;
+	display: flex;
+	
+}
+
+.container-info{
+	width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 350px;
+	text-align: justify;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #201E1C;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+	color:  #FAF8F7;
+}
+.container-info img{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+a{
+	color: #FAF8F7;
+	text-decoration: none;
+  }
+  
+  a:hover{
+	color: #FAF8F7;
+  }
+  
+  a:active{
+	color: #FAF8F7;
+  }
+.my-info{
+	width: 90%;
+    height: 700px;
+	margin: 15px auto;
+    background-color: #201E1C;
+    color:  #FAF8F7;
+}
+
+.my-info h3{
+	color:  #FAF8F7;
+	text-align: center;
+	margin-top: 0px;
+}
+    
+.info-cursos{
+	width: 90%;
+	height: 70px;
+    border-bottom:  5px solid #d8d8d8;
+	margin: 0 auto;
+    
+}
+
+.info-cursos h3{
+	color:  #d8d8d8;
+	text-align: left;
+	margin: 5px 0px 10px 10px;
+}
+.info-cursos p{
+	color:  #d8d8d8;
+	text-align: left;
+	margin: 5px 0px 10px 10px;
+}
+
+
+
+
+
+table {
+	border-collapse: separate;
+	width: 70%;
+	margin-bottom: 1rem;
+	color: #c2c2c2;
+}
+
+th, td {
+	text-align: left;
+	padding: 0.5rem;
+	border: 1px solid #f2f2f2;
+}
+
+th {
+	
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
+
