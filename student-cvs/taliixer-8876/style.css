@@ -51,4 +51,16 @@
   table {
     border: solid gray 2px;
   }
-  
+  header > h1{
+    text-align: center;
+  }
+  .facts, .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .facts{
+    gap: 28px;
+  }
+  .content{
+    gap: 32px;
+  }
