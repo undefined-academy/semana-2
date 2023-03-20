@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="stylecontacto.css">
+</head>
+
+<body>
+  <main class="page">
+    <h1>Contacto</h1>
+    <form action="">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input id="name" type="text" placeholder="ingrese su nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Ingrese su correo" name="E-mail" id="email" required>
+
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Motivo del contacto</legend>
+          <input type="radio" name="budgets" id="Incorporacion" required>
+          <label for="Incorporacion">Incorporación</label>
+
+          <input type="radio" name="budgets" id="Pregunta" required>
+          <label for="Pregunta">Pregunta</label>
+
+          <input type="radio" name="budgets" id="Presupuesto" required>
+          <label for="presupuesto">presupuesto</label>
+
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label for="type">Donde me conociste</label>
+        <select name="" id="type" required>
+
+          <option value="" disabled selected>selecione uno</option>
+          <option value="">Facebook</option>
+          <option value="">Linkin</option>
+          <option value="">TikTok</option>
+          <option value="">Instagram</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea placeholder="dejanos tu mensaje" name="" id="description" cols="10" rows="8" required></textarea>
+        <!--
+    </div>
+      <div class="form-group">
+        <label for="terms">
+          <input type="checkbox" id="terms" required>
+          <span>Acepto los terminos y condiciones</span>
+        </label>
+      </div>
+      -->
+
+        <button>Enviar</button>
+    </form>
+  </main>
+</body>
+
+</html>

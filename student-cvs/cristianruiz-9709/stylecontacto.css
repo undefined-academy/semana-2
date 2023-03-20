@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  color: #2e1c1c;
+  background-color: #e7e5e4;
+}
+
+.page {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 40px;
+  font-family: monospace;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+label,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: azure;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+textarea+div {
+  font-size: 10px;
+}
+
+button {
+  padding: 16px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid #cab133;
+  background-color: #f4fb6c;
+  color: #1a1a18;
+  text-shadow: -1px -1px 0 rgba(151, 152, 60, 0.587);
+  border-radius: 7px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(197, 197, 23);
+}
+
+button:active {
+  background-color: rgba(97, 104, 2, 0.717);
+  box-shadow: none;
+}
+
+form {
+  accent-color: #e8e34a;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid #d2cf3e;
+  outline: 1px solid #7f9325;
+}
