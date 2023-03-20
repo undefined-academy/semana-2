@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 body {
     max-width: 900px;
     font-size: 62.5%;
@@ -43,7 +51,8 @@ h4, li,  table {
 }
 
 table {
-    margin-left: 1rem;
+    margin: 1rem 1rem;
+
 }
 
 hr {
@@ -63,12 +72,105 @@ hr {
     background-color: #EDF1D6;
 }
 
+.form-group {
+    margin: 0.5rem;
+}
+
+input, input {
+    vertical-align: middle;
+}
+
+label, input[type="text"] [type="email"] {
+    width: 100%;
+
+}
+
+input[type="text"] [type="email"] {
+    background-color: #9DC08B;
+}
+
+.email-input {
+    background-color: #9DC08B;
+    width: 25%;
+}
+
+.name-input {
+    background-color: #9DC08B;
+    width: 25%;
+}
+
+label {
+    font-weight: bold;
+    color: #40513B;
+    display: block;
+}
+
+.budget-fill {
+    width: 25%;
+}
+
+.description {
+    color: #40513B;
+    width: 50%;
+}
+
+.contact-me {
+    display: flex;
+    background-color: #9DC08B;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    width: 50%;
+}
+
+.ov-btn-slide-bottom {
+    background: #fff; /* color de fondo */
+    color: #9DC08B; /* color de fuente */
+    border: 2px solid #9DC08B; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-slide-bottom:hover {
+    color: #fff; /* color de fuente hover */
+}
+
+.ov-btn-slide-bottom::after {
+    content: "";
+    background: #9DC08B; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.ov-btn-slide-bottom:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
 footer, a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    margin: 0 auto;
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
     background-color: #40513B;
+    border-radius: 10px;
 }

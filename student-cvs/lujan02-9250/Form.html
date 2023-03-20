@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <section>
+        <h3 class="contact-me">Contacta conmigo</h3>
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input class="name-input" id="name" type="text" placeholder="Nombre y apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="emai">Email</label>
+                <input class="email-input" type="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <fieldset class="budget-fill" >
+                <legend>Presupuesto</legend>
+                <input id="5.000" type="radio" name="budget">
+                <label for="5.000">5.000€</label>
+
+                <input id="10.000" type="radio" name="budget">
+                <label for="10.000">10.000€</label>
+
+                <input id="20.000" type="radio" name="budget">
+                <label for="20.000">20000€</label>
+
+                <input id="50.000" type="radio" name="budget">
+                <label for="50.000">50.000€</label>
+            </fieldset>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select name="" id="type">
+                    <option value="website">website</option>
+                    <option value="webapp">webapp</option>
+                    <option value="MobileApp">Mobile App</option>
+                    <option value="Diseño">Diseño</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="description" for="description" required>Descripción</label>
+                <textarea class="description" name="" id="description" cols="30" rows="10" placeholder="Describe tu proyecto en al menos 300 palabras"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms" required>
+                    <input type="checkbox" id="terms">
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <button class="ov-btn-slide-bottom">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
