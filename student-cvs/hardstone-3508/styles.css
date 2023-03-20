@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 body {
     margin: 0;
@@ -41,6 +42,10 @@ h2 {
     margin: 1rem 2rem;
     font-size: 2.5rem;
     font-weight: 300;
+}
+h4 {
+    color: #F2668B;
+    font-family: 'Space Grotesk', sans-serif;
 }
 li {
     margin-bottom: 0.6rem;
@@ -131,6 +136,36 @@ hr {
 pre {
     margin: 0;
 }
+/* galeria */
+.galery {
+    margin: 1.5rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: auto;
+    grid-gap: 2%;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    background-color: #101318;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+article h4, article p {
+    padding: 0 1rem;
+    margin: 0.6rem 0 0.3rem 0;
+}
+article button {
+    width: 50%;
+    margin: 0.5rem 1rem;
+    font-size: 1rem;
+}
+/* formulario */
 .f-form {
     display: flex;
     flex-direction: column;
