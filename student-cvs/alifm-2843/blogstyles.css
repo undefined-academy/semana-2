@@ -1,6 +1,15 @@
 body {
     font-family: Arial;
   }
+
+  a {
+    color: rgba(0, 81, 255, 0.882);
+}
+
+a:hover {
+    background: #65464e;
+    color: white;
+}
   
   div {
     display: flex;
@@ -47,3 +56,42 @@ body {
   div .big {
     grid-column: 1/4;
   }
+
+  footer {
+    font-size: 12px;
+    margin-top: 3em;
+    color: rgba(0, 81, 255, 0.882);
+    font-size: 12px;
+  }
+
+  footer p {
+    border-top: 1px solid;
+    padding-top: 0.3em;
+    width: 24em;
+    text-align: right;
+
+}
+
+/*-------- Media queries --------*/
+
+@media screen and (max-width:900px) {
+
+  nav {
+    
+   
+    display: block;
+  }
+
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 50%;
+    background: WhiteSmoke;
+  }
+
+  div {
+    grid-column: 1/4;
+  }
+
+}

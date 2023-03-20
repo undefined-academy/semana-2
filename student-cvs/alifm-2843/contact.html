@@ -25,53 +25,60 @@
 
     <main>
         <section>
-        <form id="contact-form" action="" method="get">
-            <fieldset class="form-fieldset">
-                <legend>
-                    <h2>Contact</h2>
-                </legend>
+            <form id="contact-form" action="" method="get">
+                <fieldset class="form-fieldset">
+                    <legend>
+                        <h2>Contact</h2>
+                    </legend>
 
-                <label for="name">Name</label>
-                <input required type="text" id="name" name="name" placeholder="Enter your full name"
-                    pattern="^[A-Za-z -']+$" minlength="3" maxlength="20"
-                    title="It should be at least three letters, and just letters" />
-                <label for="email">Email</label>
-                <input required type="email" id="email" name="email" placeholder="Enter your email" />
-                <label for="phone">Phone</label>
-                <input required type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
-                
-            <label for="continent">Where are you from?</label>
-            <select name="continent" id="continent" required>
-                <option value="" disabled selected>Select one</option>
-                <option value="northame">North America</option>
-                <option value="latiname">Latin America</option>
-                <option value="europe">Europe</option>
-                <option value="asia">Asia</option>
-                <option value="africa">Africa</option>
-                <option value="australia">Australia and Oceania</option>
-            </select>
-            <fieldset class="radio-fieldset">
-                <legend>Interests</legend>
-                <input type="radio" name="interests" id="webdev" required>
-            <label for="webdev">Web development</label>
-            <input type="radio" name="interests" id="data" required>
-            <label for="data">Data analysis</label>
-            <input type="radio" name="interests" id="mldl" required>
-            <label for="mldl">Machine learning</label>
-            
-        </fieldset>
-                <label for="message">Message</label>
-                <textarea required name="message" id="message" cols="30" rows="10" minlength="3" maxlength="200"
-                    placeholder="Tell me about your interest in contacting me..."></textarea>
-                <label for="terms">
-                    <input type="checkbox" id="terms" name="terms" required>
-                    <span>I accept terms and conditions</span>
-                </label>
-                <button type="submit" class="buttons">Submit</button>
+                    <label for="name">Name</label>
+                    <input required type="text" id="name" name="name" placeholder="Enter your full name"
+                        pattern="^[A-Za-z -']+$" minlength="3" maxlength="20"
+                        title="It should be at least three letters, and just letters" />
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email" placeholder="Enter your email" />
+                    <label for="phone">Phone</label>
+                    <input required type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
 
-            </fieldset>
-        </form>
-    </section>
+                    <label for="continent">Where are you from?</label>
+                    <select name="continent" id="continent" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="northame">North America</option>
+                        <option value="latiname">Latin America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="australia">Australia and Oceania</option>
+                    </select>
+                    <fieldset class="radio-fieldset">
+                        <legend>Interests</legend>
+                        <input type="radio" name="interests" id="webdev" required>
+                        <label for="webdev">Web development</label>
+                        <input type="radio" name="interests" id="data" required>
+                        <label for="data">Data analysis</label>
+                        <input type="radio" name="interests" id="mldl" required>
+                        <label for="mldl">Machine learning</label>
+
+                    </fieldset>
+                    <label for="message">Message</label>
+                    <textarea required name="message" id="message" cols="30" rows="10" minlength="3" maxlength="200"
+                        placeholder="Tell me about your interest in contacting me..."></textarea>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>I accept terms and conditions</span>
+                    </label>
+                    <button type="submit" class="buttons">Submit</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+        <section>
+            <figure>
+                <img src="./images/up-arrow.png" id="myBtn" alt="up arrow" onclick="topFunction()">
+            </figure>
+        </section>
 
     </main>
     <footer>
@@ -79,15 +86,7 @@
         <p>| Copyright &copy; Alianna |</p>
 
     </footer>
-    <script>
-        const form = document.getElementById('contact-form');
-        form.addEventListener('submit', function(e){
-            e.preventDefault();
-            document.getElementById('contact-form').reset();
-            alert("Form sent successfully!")
-        }) 
-
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
-html {
+html, body {
     box-sizing: border-box;
 }
 
@@ -93,13 +93,11 @@ img {
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
-
 }
 
 
 ul {
     list-style: square inside;
-
 }
 
 table,
@@ -201,7 +199,6 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
     outline: 1.5px solid rgba(0, 81, 255, 0.882);
-
 }
 
 .radio-fieldset {
@@ -236,4 +233,40 @@ button:hover {
 button:active {
     box-shadow: none;
     background-color: rgba(0, 52, 165, 0.882);
+}
+
+/*-------------------*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    z-index: 99;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 3.5em;
+    
+}
+
+/*-------- Media queries --------*/
+
+@media screen and (max-width:900px) {
+    main {
+        margin-top: 6em;
+       
+    }
+
+    form {
+        width: 100%;
+    }
+
+  
+
+    header li {
+        display: block;
+        padding: 1px;
+    }
 }
