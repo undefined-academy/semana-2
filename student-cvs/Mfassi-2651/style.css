@@ -112,10 +112,7 @@ textarea{
     border-radius: 12px;
 }
 
-
-
-
- input[type="button"]{
+ input[type="submit"]{
     background-color: #3D76E1;
     height: 42px;
     color: aliceblue;
@@ -124,9 +121,15 @@ textarea{
 }
 
 
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: #b5b5b5;
+}
 
 footer i{
 font-size: 60px;
+padding: 10px 0 10px 0;
 }
 
 a{

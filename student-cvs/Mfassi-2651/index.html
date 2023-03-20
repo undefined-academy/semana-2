@@ -138,23 +138,23 @@
         <i class="fa-solid fa-paper-plane"></i>
     </h1>
 
-    <form action="/server" method="get">
+    <form action="/server" method="get" onsubmit="evitarEnvio(e)">
         <label for="nombre_contacto">Nombre</label>
         <br>
-        <input type="text" id="nombre_contacto" placeholder="Ingresa tu nombre">
+        <input type="text" id="nombre_contacto" placeholder="Ingresa tu nombre" name="nombre_contacto">
 
         <br>
 
         <label for="email_contacto">Email</label>
         <br>
-        <input type="email" id="email_contacto" placeholder="correo@example.com">
+        <input type="email" id="email_contacto" placeholder="correo@example.com" name="email_contacto">
         
         <br>
-        <label for="mensaje_coontacto">Deja tu mensaje</label>
+        <label for="mensaje_contacto">Deja tu mensaje</label>
         <br>
-        <textarea id="mensaje_contacto"></textarea>
+        <textarea id="mensaje_contacto" name="mensaje_contacto"></textarea>
 
-        <input type="button" value="ENVIAR">
+        <input type="submit" id="submit-btn" value="ENVIAR">
 
 
     </form>
@@ -175,6 +175,11 @@
     </div>
 </footer>
     <script src="https://kit.fontawesome.com/e194f3e40d.js" crossorigin="anonymous"></script>
+    <script>
+        function evitarEnvio(e){
+            e.preventDefault();
+        }
+    </script>
 </body>
 
 </html>
