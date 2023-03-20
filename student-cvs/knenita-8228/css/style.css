@@ -139,8 +139,6 @@ p {
     margin-bottom: 40px;
 }
 
-
-
 .form-group {
     margin: 20px 0;
 }
@@ -167,6 +165,8 @@ legend {
     color: #444;
 }
 
+
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -176,6 +176,10 @@ textarea {
     border-radius: 4px;
     padding: 8px 10px;
     color: #333;
+}
+
+textarea{
+    resize: none;
 }
 
 textarea+div,
