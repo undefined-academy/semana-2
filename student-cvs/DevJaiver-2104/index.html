@@ -110,19 +110,77 @@
         </article>
     </section>
     <section id="contacto">
-        <article>
+        <main class="page">
             <h2>Contactame</h2>
-            <p> pueden consultar mi github pulsando <a href="https://github.com/jaiver-1">Aqui</a></p>
-           
-        </article>
+            <p>Ingresa tus datos para comunicarme o escribreme a mi correo</p>
+            <form id="FormContacto">
+
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ingre su Nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Ingrese su email" required>
+                </div>
+
+
+                <div class="form-group">
+
+                    <fieldset>
+                        <!--Mismo name por que son radiosbutton-->
+                        <legend>Presupuesto</legend>
+                        <input type="radio" name="budget" id="menos" placeholder="Ingrese Email" required><label
+                            for="menos">Menos de un Millon</label>
+                        <input type="radio" name="budget" id="1" placeholder="Ingrese Email" required><label
+                            for="1">1.000.000 Millon</label>
+                        <input type="radio" name="budget" id="10" placeholder="Ingrese Email" required><label
+                            for="10">10.000.000</label>
+                        <input type="radio" name="budget" id="100" placeholder="Ingrese Email" required><label
+                            for="100">100.000.000</label>
+                    </fieldset>
+
+
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Tipo de proyecto</label>
+                    <select name="tipo" id="tipo">
+                        <option disabled selected value="0">selecione uno</option>
+                        <option value="sitio">Website</option>
+                        <option value="Web">Webapp</option>
+                        <option value="Mobil">Mobil</option>
+                        <option value="Verificacion">Revisión Pagina</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <textarea name="description" id="description" rows="5" required></textarea>
+                    <div class="help">
+                        Escriba una descripción del proyecto que desea cotizar
+                    </div>
+                </div>
+                <div>
+                    <button id="btnEnviar">Enviar</button>
+                </div>
+            </form>
+        </main>
     </section>
-    <footer>
-        <address>
-            Por Favor Contacte a <a href="mailto:jaiver.1992.gonzales@gmail.com">jaiver.1992.gonzale@gmail.com</a>
-            para trabajos de desarrollo de software
-        </address>
-        <p><i class="fa fa-copyright" aria-hidden="true">&copy; Jaiver Stiven Gonzalez Giraldo; 2023</i></p>
+    <footer class="footer">
+        <section>
+            <address>
+                Por Favor Contacte a <a href="mailto:jaiver.1992.gonzales@gmail.com">jaiver.1992.gonzale@gmail.com</a>
+                para trabajos de desarrollo de software
+            </address>
+            <p><i class="fa fa-copyright" aria-hidden="true">&copy; Jaiver Stiven Gonzalez Giraldo; 2023</i></p>
+        </section>
     </footer>
+
+    <script src="index.js"></script>
+
+    
 </body>
 
-</html>
+</html> 

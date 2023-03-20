@@ -96,8 +96,11 @@ a {
   ;
 }
 
+.footer{
+  margin-top: 20px;
+}
 
-
+/*************************Estilos Tablas****************************/
 
 table {
     border-spacing: 0;
@@ -135,3 +138,83 @@ ol li div {
     max-width: 200px;
     padding: 0.5em;
 }
+
+/********************Estilos Formulario*************************/
+
+.form-group{
+  margin: 20px 0;
+}
+
+label, input:not([type="radio"], [type = "checkbox"]) {
+  width: 100%;
+}
+
+label,input{
+  vertical-align: middle; /*alinear verticalmente en el medio solo funciona en elementos enline*/
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  resize: vertical; 
+}
+
+label, legend{
+    
+  text-transform: uppercase;
+  font-size: 14px;
+  color:#444;
+}
+
+input [type = "text"], input[type="email"]{
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color:#333;
+
+}
+
+.help{
+
+  font-size: 12px;
+  margin-top: 10px;
+  color:#333
+}
+
+button{
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #713f12;
+  background: #eab308;
+  color:#333;
+  border-radius: 8px;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+
+}
+
+button:hover{
+  background: #fafafa;
+}
+
+button:active{
+  background: #ca8a04;
+  box-shadow: -1px -1px 0 rgb(0, 0, 0, 0.5);
+}
+
+form{
+  accent-color: #eab308; /*Para el color de los Radio butons*/
+}
+
+input:focus-visible{ /*Para el border de los input*/
+  outline: 1px solid #eab308;
+  /*o con border pero afecta tamaño border: 1px solid #eab308; */ 
+}
+textarea:focus-visible{ /*Para el border de los texarea*/
+  outline: 1px solid #eab308;
+  /*o con border pero afecta tamaño border: 1px solid #eab308; */ 
+}
+
