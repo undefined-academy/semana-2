@@ -11,26 +11,26 @@
 </head>
 
 <body>
-    <div>
+    <main>
+        <h1>MI CURRICULO</h1>
         <div>
-            <h1> Hola Soy Gustavo Gonzalez</h1>
             <article>
                 <h2>Sobre mi</h2>
-                <p>Actualmente estudio <strong>Programacion en software</strong> en la <strong>universidad de
+                <p>Hola Soy <strong>Gustavo Gonzalez</strong>, actualmente estudio <strong>Programacion en software</strong> en la <strong>universidad de
                 caldas</strong>
                 Estoy realizado un <strong>Bootcamp</strong> de <strong>programacion Full Stack</strong>, soy de
                 <strong>Colombia,
-
                 </strong>disfruto programando , es un area que me apasiona, gracias a esta oportunidad puedo
                 complementar y
                 afianzar mis conocimientos para seguir adelante en esta area y lograr mis objetivos como profesional
                 <strong>Full Stack en Programacion</strong>.
                 </p>
             </article>
-            <ul>
+            <ul class="list">
                 <!-- Pon los enlaces de tus redes sociales favoritas -->
                 <li><a href="https://github.com/Gtvo22">Github <img src="../img/arrow.png" alt="git"> </a></li>
-                <li><a href="https://www.linkedin.com/in/gustavo-gonzalez-pfs">Linkedin <img src="../img/arrow.png" alt="linkedin"></a>
+                <li><a href="https://www.linkedin.com/in/gustavo-gonzalez-pfs">Linkedin <img src="../img/arrow.png"
+                            alt="linkedin"></a>
                 </li>
                 <li><a href="">Instagram <img src="../img/arrow.png" alt="Instagram"></a></li>
                 <li><a href="">Currículo <img src="../img/arrow.png" alt="cvc"></a></li>
@@ -61,13 +61,13 @@
         <section>
             <div>
                 <h1>SKILL</h1>
-                <ul>
-                    <li>HTML5 <img src="../img/htlm.png" alt="html"></li>
-                    <li>JAVASCRIP <img src="../img/js_icon.png" alt="js"></li>
-                    <li>REACT <img src="../img/react_icon.png" alt="react"></li>
-                    <li>NODE JS <img src="../img/nodejs_icon.png" alt="njs"></li>
-                    <li>CSS <img src="../img/css_icon.png" alt="css"></li>
-                    <li>PHP <img src="../img/php_icon.png" alt="php"></li>
+                <ul class="list">
+                    <li class="list_item">HTML5 <img src="../img/htlm.png" alt="html"></li>
+                    <li class="list_item">JAVASCRIP <img src="../img/js_icon.png" alt="js"></li>
+                    <li class="list_item">REACT <img src="../img/react_icon.png" alt="react"></li>
+                    <li class="list_item">NODE JS <img src="../img/nodejs_icon.png" alt="njs"></li>
+                    <li class="list_item">CSS <img src="../img/css_icon.png" alt="css"></li>
+                    <li class="list_item">PHP <img src="../img/php_icon.png" alt="php"></li>
                 </ul>
             </div>
 
@@ -75,14 +75,56 @@
         <section>
             <div>
                 <h1>HOBBIES</h1>
-                <ul>
-                    <li>🎵 OIR MUSICA</li>
-                    <li>👨‍🍳 COSINAR</li>
-                    <li>📺 VER SERIES</li>
-                    <li>🏊 NADAR</li>
+                <ul class="list">
+                    <li class="list_item">🎵 OIR MUSICA</li>
+                    <li class="list_item">👨‍🍳 COSINAR</li>
+                    <li class="list_item">📺 VER SERIES</li>
+                    <li class="list_item">🏊 NADAR</li>
                 </ul>
             </div>
         </section>
+        <section>
+            <div class="formcontato__contacto">
+                <div>
+                    <img class="contacto__img" src="../img/Contactar.png" alt="contacto">
+                </div>
+                <div>
+                    <h2>Formulario de Contacto</h2>
+                    <h3>¿Quieres contactarme?</h3>
+                    <h3>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                    <form action="submeter-formulario.php" method="post">
+                        <div>
+                            <input  type="text" id="name" placeholder="Nombre *" required>
+                            
+                        </div>
+                        <div>
+                            <input id="mail" type="email" placeholder="E-mail *" required>
+                                                
+                        </div>
+                        <div>
+                            <input type="text" id="asunto" placeholder="Asunto *" required>
+                                                       
+                        </div>
+                        <div>
+                            <textarea rows="5" cols="40" id="message" placeholder="Mensaje *" required></textarea> 
+                                                      
+                        </div>
+                        <div>
+                            <label for="terms">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span>Acepto los terminos y condiciones</span>
+                            </label>
+                            
+                        </div>
+                        <button>Enviar mensaje</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="pie">
@@ -90,9 +132,7 @@
                 <p>2023</p>
             </div>
         </section>
-
-    </div>
-
+    </footer>
 </body>
 
 </html>
