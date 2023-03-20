@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactame</title>
+    <link rel="stylesheet" href="style/styleContacto.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    
+<!--Fomrularios HTML-->
+
+<main class="page">
+<h1>¿Como puedo ayudarte?, Escríbeme y te responderé.</h1>
+
+<form action="#" method="get">
+    <div class="form-group">
+        <label form="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
+    </div>
+
+    <div class="form-group">
+        <label form="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+    </div>
+
+    <div class="form-group">
+        <label form="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su numero fijo o movil" required>
+    </div>
+
+    <div class="form-group">
+        
+        <label>¿Que Eres?</label>
+        <fieldset>            
+            <input type="radio" name="type" id="company" for="company" value="company" required><label for="company">Empresa</label>
+            <input type="radio" name="type" id="recruiter" for="recruiter" value="recruiter" required><label for="recruiter">Reclutador</label>
+            <input type="radio" name="type" id="person" for="person" value="person" required><label for="person">Persona</label>
+        </fieldset>
+       
+    </div>
+
+    <div class="form-group">
+        <label for="type">¿Qué servicio te interesa? </label>
+        <select id="type" name ="type" required>
+            <option disabled selected value="">Seleccione uno</option>
+            <option value="Website">Arquitectura RPA.</option>
+            <option value="WebApp">Asesoria RPA sobre Agility Studio.</option>
+            <option value="Mobileapp">Reportar Bug Agility Studio.</option>
+            <option value="Disegn">Proyecto C#.</option>
+            <option value="Disegn">Proyecto Web.</option>
+
+        </select>
+    </div>  
+
+    <div class="form-group">
+        <label for="description">Descripcion</label>        
+        <textarea id="description" name="description" rows="5"></textarea>
+        <div class="help">Realiza un descripción de tu necesidad en 500 palabras.</div>
+        
+
+    </div>
+
+    <div class="form-group">
+        <label for="termns">   
+            <input type="checkbox" id="termns" name="termns" required>
+            <span >Acepto los terminos y condiciones</span>
+        </label>     
+
+    </div>
+
+
+        <button>Enviar</button>
+   
+</form>
+</main>
+</body>
+</html>
