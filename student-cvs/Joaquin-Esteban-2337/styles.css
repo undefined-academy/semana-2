@@ -40,7 +40,6 @@ header{
     position: relative;
 }
 
-
 .profile{
     margin: 0 auto;
     position: absolute;
@@ -88,6 +87,12 @@ header{
     background-size: cover;
     
 }
+
+
+
+
+
+
 
 /*MAIN*/
 main{
@@ -198,6 +203,26 @@ footer > .text > address{
     margin-left: 2rem;
 }
 
+footer > .text > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(97, 101, 103);
+    cursor: pointer;
+}
+
+footer > .text > a:hover{
+    color: aliceblue;
+}
+
+footer > .text > a:active{
+    background-color: rgb(70, 65, 65);
+}
 
 footer > .icons{
     display: inline;
@@ -244,4 +269,11 @@ footer > .icons > .icons-5{
     background-image: url('https://drive.google.com/uc?id=1ns-Zl92kzcqnfBJY5QiOJTaeow-iwjV8');
 }
 
+
+
+
+
+
+
+/* ------------------------------------------------------- */
 

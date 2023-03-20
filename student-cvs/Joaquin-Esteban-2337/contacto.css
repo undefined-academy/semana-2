@@ -1,0 +1,136 @@
+main > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(97, 101, 103);
+    cursor: pointer;   
+}
+
+
+main > a:hover{
+    color: aliceblue;
+}
+
+main > a:active{
+    background-color: rgb(70, 65, 65);
+}
+
+.formulario{
+    max-width: 700px;
+    margin: 5rem auto ;
+    box-shadow: -1px 0px 18px 1px rgba(0,0,0,0.65);
+    padding: 4rem;
+}
+
+.formulario > h2{
+    font-size: 3rem;
+}
+
+
+.formulario > .form-box > input, label{
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.formulario > .form-box > .box1{
+    float: left;
+}
+
+.formulario > .form-box > .box1 > input{
+    width: 20rem;
+    height: 3rem;
+}
+
+.formulario > .form-box > .box2{
+    float:right;
+}
+
+.formulario > .form-box > .box2 > input{
+    width: 20rem;
+    height: 3rem;
+}
+
+.formulario > .form-box > .box3{
+    margin-top: 9rem;
+}
+
+.formulario > .form-box > .box3 > input{
+  width: 43.5rem;
+  height: 3rem;
+    
+}
+
+.formulario > .form-box > .box4 > textarea{
+    width: 43.5rem;
+    
+      
+}
+
+.formulario > .form-box > .box1 > input{
+    border: none;
+    border-bottom: 0.3rem solid black;
+}
+
+.formulario > .form-box > .box2 > input{
+    border: none;
+    border-bottom: 0.3rem solid black;
+}
+
+.formulario > .form-box > .box3 > input{
+    border: none;
+    border-bottom: 0.3rem solid black;
+}
+
+.formulario > .form-box > .box4 > textarea{
+    border: none;
+    border-bottom: 0.3rem solid black;
+    resize: horizontal;
+}
+
+.box-button{
+    height: 5rem;
+}
+
+.box-button > .button{
+    float: left;
+}
+
+.box-button > .text{
+    float: right;
+}
+
+.box-button > .button > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(97, 101, 103);
+    cursor: pointer;
+}
+
+.box-button > .button> a:hover{
+    color: aliceblue;
+}
+
+.box-button > .button> a:active{
+    background-color: rgb(70, 65, 65);
+}
+
+.box-button > .text > p{
+    display: inline-block;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
