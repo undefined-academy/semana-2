@@ -7,6 +7,17 @@
 
 </head>
 <body> 
+    <div class="container">
+        <nav>
+          <ul>
+            <li><a href="./index.html"> Home.</a> </li>
+            <li><a href="./Formulario.html"> Contacto.</a> </li>
+            <li><a href="./Layouts.html"> Blog.</a> </li>
+          </ul>
+          <input type="search" placeholder="Buscar">
+        </nav>
+    
+    </div>
     <main class="page">
         <h1>Contacto</h1>
         <form action="/server" method="get" onsubmit="preventDefault(submit)">  
@@ -26,11 +37,11 @@
             <div class ="form-group">
                 <fieldset> 
                     <legend>Como desea ser contactado</legend> 
-                    <input type="radio" id ="Telefono1" name="tipocontacto" value="Telefono">
+                    <input required type="radio" id ="Telefono1" name="tipocontacto" value="Telefono">
                     <label for="Telefono1">Telefono</label>
-                    <input type="radio" id ="Correo" name="tipocontacto" value="Email">
+                    <input required type="radio" id ="Correo" name="tipocontacto" value="Email">
                     <label for="Correo">Correo</label>
-                    <input type="radio" id="Facebook" name="tipocontacto" value="Facebook">
+                    <input required type="radio" id="Facebook" name="tipocontacto" value="Facebook">
                     <label for="Facebook">Facebook</label>
                 </fieldset>
             </div> 
