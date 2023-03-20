@@ -1,3 +1,4 @@
+
 header {
   background-color: #263d36;
   background-position: center top;
@@ -9,13 +10,13 @@ header {
 }
 
 body {
-  margin: 0 auto;
-  max-width: 50em;
+  margin: 100px auto;
+  max-width: 800px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  padding-top: 4em 1em;
+  padding-top: 0 40px;
   color: #2a3136;
-  background: rgb(90, 146, 146);
+  background: rgb(119, 153, 158);
 }
 
 h1,
@@ -33,3 +34,77 @@ a {
   color: #2f29de;
 }
 
+button{
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+  
+}
+button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,red,blue,deeppink,blue,red,blue,deeppink,blue);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+button:hover{
+  background: rgb(43, 43, 43);
+}
+button:active{
+  background: black;
+  box-shadow: none;
+}
+@keyframes glowing{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+.form-group{
+  margin: 20px 0;
+  box-sizing: border-box;
+  color: #333;
+  
+}
+
+label, input:not([type="checkbox"]){
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+  display: block;
+  resize: vertical;
+}
+
+label{
+  font-weight: bold;
+  text-transform: 0ch;
+  font-size: 14px;
+  color: #444;
+}
+
+input, textarea{
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+}
