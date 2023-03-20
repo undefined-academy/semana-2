@@ -36,45 +36,49 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header>
+		<header role="banner">
 			<div>
 				<img
 					src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"
 					width="100"
-					alt="A person sitting in front of a laptop. With text 'Coding From Home'" />
-				<nav>
-					<div id="badges">
-						<ul>
-							<li>
-								<a href="https://github.com/Aeternus185"
-									><img
-										src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white"
-										alt="MyGitHub badge"
-								/></a>
-							</li>
-							<li>
-								<a href="https://twitter.com/AeternusDev"
-									><img
-										src="https://img.shields.io/badge/Twitter-1DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white"
-										alt="Twitter badge"
-								/></a>
-							</li>
-							<li>
-								<a href="mailto:andryfpo@gmail.com"
-									><img
-										src="https://img.shields.io/badge/Gmail-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white"
-										alt="Gmail badge"
-								/></a>
-							</li>
-							<li>
-								<a href="hhttps://www.linkedin.com/in/aeternus185/"
-									><img
-										src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white"
-										alt="LinkedIn badge"
-								/></a>
-							</li>
-						</ul>
-					</div>
+					alt="An animated image of a person coding from home with a text overlay saying 'Coding From Home'." />
+				<nav id="badges">
+					<ul>
+						<li>
+							<a
+								href="https://github.com/Aeternus185"
+								aria-label="Visit my GitHub profile"
+								><img
+									src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white"
+									alt="MyGitHub badge"
+							/></a>
+						</li>
+						<li>
+							<a
+								href="https://twitter.com/AeternusDev"
+								aria-label="Visit my Twitter profile"
+								><img
+									src="https://img.shields.io/badge/Twitter-1DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white"
+									alt="Twitter badge"
+							/></a>
+						</li>
+						<li>
+							<a href="mailto:andryfpo@gmail.com" aria-label="Send me an email"
+								><img
+									src="https://img.shields.io/badge/Gmail-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white"
+									alt="Gmail badge"
+							/></a>
+						</li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/aeternus185/"
+								aria-label="Visit my LinkedIn profile"
+								><img
+									src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white"
+									alt="LinkedIn badge"
+							/></a>
+						</li>
+					</ul>
 				</nav>
 				<img
 					src="https://komarev.com/ghpvc/?username=Aeternus185&style=for-the-badge&color=blue"
@@ -91,13 +95,17 @@
 		</header>
 
 		<!-- Main -->
-		<main>
+		<main id="mainContent" role="main">
 			<!-- About Me -->
-			<section id="aboutMe">
-				<h2>
+			<section
+				id="aboutMeSection"
+				aria-labelledby="aboutMeHeading"
+				role="region">
+				<h2 id="aboutMeHeading">
 					<span
 						role="img"
-						aria-hidden="true"
+						aria-hidden="false"
+						aria-label="User circle icon"
 						class="fa-solid fa-circle-user icon"></span>
 					About Me
 				</h2>
@@ -118,11 +126,12 @@
 			</section>
 
 			<!-- Skills -->
-			<section id="skills">
-				<h2>
+			<section id="skillsSection" aria-labelledby="skillsHeading" role="region">
+				<h2 id="skillsHeading">
 					<span
 						role="img"
-						aria-hidden="true"
+						aria-hidden="false"
+						aria-label="Screwdriver and wrench icon"
 						class="fa-solid fa-screwdriver-wrench icon"></span>
 					Skills
 				</h2>
@@ -197,11 +206,15 @@
 			</section>
 
 			<!-- Terminal Commands -->
-			<section id="terminalCommands">
-				<h2>
+			<section
+				id="terminalCommandsSection"
+				aria-labelledby="terminalCommandsHeading"
+				role="region">
+				<h2 id="terminalCommandsHeading">
 					<span
 						role="img"
-						aria-hidden="true"
+						aria-hidden="false"
+						aria-label="Terminal icon"
 						class="fa-solid fa-terminal icon"></span>
 					Terminal Commands
 				</h2>
@@ -238,11 +251,15 @@
 			</section>
 
 			<!-- Useful Commands Alias -->
-			<section id="usefulCommandsAlias">
-				<h2>
+			<section
+				id="usefulCommandsAliasSection"
+				aria-labelledby="usefulCommandsAliasHeading"
+				role="region">
+				<h2 id="usefulCommandsAliasHeading">
 					<span
 						role="img"
-						aria-hidden="true"
+						aria-hidden="false"
+						aria-label="Star icon"
 						class="fa-solid fa-star icon"></span>
 					Useful Commands Alias
 				</h2>
@@ -267,6 +284,96 @@
 						</tr>
 					</tbody>
 				</table>
+			</section>
+
+			<!-- Contact Me -->
+			<section
+				id="contactMeSection"
+				aria-labelledby="contactMeHeading"
+				role="region">
+				<h2 id="contactMeHeading">
+					<span
+						role="img"
+						aria-hidden="false"
+						aria-label="Envelope icon"
+						class="fa-solid fa-envelope icon"></span>
+					Contact Me
+				</h2>
+				<form action="mailto:andryfpo@gmail.com" method="get">
+					<fieldset id="personalInformation" aria-label="Personal Information">
+						<div>
+							<input
+								type="text"
+								name="firstName"
+								id="firstName"
+								placeholder="First Name"
+								aria-label="First Name"
+								required />
+							<input
+								type="text"
+								name="lastName"
+								id="lastName"
+								placeholder="Last Name"
+								aria-label="Last Name"
+								required />
+						</div>
+						<div>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email"
+								aria-label="Email"
+								required />
+							<input
+								type="tel"
+								name="telephone"
+								id="telephone"
+								placeholder="Phone Number"
+								aria-label="Phone Number" />
+						</div>
+					</fieldset>
+					<fieldset id="messageInformation" aria-label="Message Information">
+						<div>
+							<input
+								type="text"
+								name="subject"
+								id="subject"
+								placeholder="Subject"
+								aria-label="Subject"
+								required />
+						</div>
+						<div>
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Type your message here"
+								aria-label="Type your message here"
+								required></textarea>
+						</div>
+					</fieldset>
+					<fieldset id="sourceInformation" aria-label="Source Information">
+						<label for="source" id="sourceLabel"
+							>How did you hear about me?</label
+						>
+						<select
+							name="source"
+							id="source"
+							aria-labelledby="sourceLabel"
+							required>
+							<option value="" selected disabled>Select...</option>
+							<option value="google">Google</option>
+							<option value="instagram">Instagram</option>
+							<option value="twitter">Twitter</option>
+							<option value="linkedin">LinkedIn</option>
+							<option value="discord">Discord</option>
+							<option value="other">Other</option>
+						</select>
+					</fieldset>
+					<div>
+						<button type="submit" value="Send">Submit</button>
+					</div>
+				</form>
 			</section>
 		</main>
 	</body>
