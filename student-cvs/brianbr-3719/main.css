@@ -2,44 +2,30 @@
 
 body{
     font-family:'roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 auto;
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
    
     color: #566b78;
     
 }
-header {
+header {  
     background-color: #263d36;
-    width: 100%;
-    background-image: url("./images/codingg.jpg");
-    border: 1px red solid;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 1.2;
-    padding: 5rem ;
-    text-align: center;
-    box-sizing: border-box;
+    padding: 2rem;
   }
-  header img {
-    display: inline-block;
-    height: 120px;
-    vertical-align: top;
-    width: 120px;
-  }
+ 
   header h2 {
     color: white;
-    font-size: 2.5em;
+    font-size: 1.5rem;
     font-weight: 200;
   }
   
   header a{
     border: 1px solid #ff3769;
-    border-radius: 290486px;
+    border-radius: 6px;
     color: white;
-    font-size: 0.6em;
+    font-size: 0.8em;
     letter-spacing: 0.2em;
-    padding: 1em 2em;
+    padding: 0.8em 1.5em;
     text-transform: uppercase;
     text-decoration: none;
     transition: none 200ms ease-in-out;
@@ -93,4 +79,21 @@ nav{
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 4rem;
+  }
+  body{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  header a {
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+  }
 }
