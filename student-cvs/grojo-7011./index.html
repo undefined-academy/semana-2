@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="encabezado"></div>
+    <h1>Guillermo Rojo</h1>
+    <p>
+        Soy <strong>Mexicano</strong>, Ingeniero en Sistemas y actualmente desarrollo en PHP, Elixir y NodeJs, haciendo desarrollo BackEnd, uso los frameworks Yii2 y Phoenix,
+        tuve suerte de encontrar este BootCamp y mi objetivo es terminarlo y desarrollar aplicaciones modernas, el primero sera un tablero Kanban tipo Kanbanize.
+    </p>
+
+    <nav>
+        <ol>
+            <li> <a href="#lenguajes">Lenguajes que uso</a></li>
+            <li> <a href="#alias">Uso de alias en Linux</a></li>
+            <li> <a href="#comandos">Comandos de consola</a></li>
+        </ol>
+    </nav>
+    
+    <div id="lenguajes">
+        <section>
+            <header>
+                <h2>Lenguajes de programación que uso actualmente</h2>
+            </header>
+
+            <article>
+                <h3>Elixir</h3>
+                <p>Lenguaje de programación funcional, que corre sobre la maquina virtual de Erlang, es un lenguaje compilado</p>
+                <footer>La curva de aprendizaje es mas lenta, dado el cambio de paradigma</footer>
+            </article>
+
+            <article>
+                <h3>PHP</h3>
+                <p>PHP es un lenguaje de programacion interpretado, usado principalmente en desarrollo web, un lenguaje muy popular </p>
+                <footer>Es relativamente facil de aprender y existe mucha documentación de ayuda</footer>
+            </article>
+
+            <article>
+                <h3>Python</h3>
+                <p>Python al igual que PHP es un lenguaje de programación interpretado, muy legible y es ampliamente usado </p>
+                <footer>Es un lenguaje facil de aprender, ya que es muy intuitivo</footer>
+            </article>
+
+            <article>
+                <h3>JS</h3>
+                <p>Es un lenguaje de programación interpretado, basicamente esta en todo la web</p>
+                <footer>La curva de aprendizaje es baja, pero se deben tener claros sus fundamentos</footer>
+            </article>
+        </section>
+    </div>
+
+    <div id="alias">
+        <article>
+            <header>
+                <h2>Ejemplo de los alias que estoy usando actualmente</h2>
+                <p>
+                    El uso de alias es muy util, Estos alias puedes agregarlos en el archivo ~/.bash_aliases,
+                    el cual es absorbido o incluido en ~/.bashrc
+                </p>
+            </header>
+
+            <li> <code> alias gow="cd /var/www/html"</code></li>
+            <li> <code> alias init_phx="cd ~/elixir2022/app; sudo iex -S mix phx.server"</code></li>
+            <li> <code> alias godu="cd ~/dumps/"</code></li>
+            <li> <code> alias glog="git log --oneline --decorate --graph"</code></li>
+            <li> <code> alias glog="git log --oneline --decorate --graph"</code></li>
+            <li> <code> alias cafe="cat /dev/urandom | hexdump | grep --color=always 'ca fe' | more"</code></li>
+            <li> <code> alias mostused="history | awk '{print $2}' | sort | uniq -c | sort -nr | head -n 10"</code></li>
+            
+        </article>
+    </div>
+    
+    <div class="comandos">
+    
+        <section>
+            <h3>Lista de algunos comandos de linux aprendidos en Semana 1, Clase 1</h3>
+            
+            <article>
+                <h3>Ctrl + r</h3>
+                <p>
+                    Busqueda de un comando ejecutado, se realiza en consola y busca en el history de comandos
+                    ejecutados, su uso es para no volver a teclearlo, solo lo buscas y lo ejecutas con los cambios
+                    que ocupes hacerle
+                </p>
+            </article>
+
+            <article>
+                <h3>cat ruta_archivo | grep palabra</h3>
+                <p>Muestra las lineas(texto) de un determinado archivo y que estas contengan la palabra
+                    especificada por grep
+                </p>
+            </article>
+
+            <article>
+                <h3>hexdump</h3>
+                <p>Muestra el contenido de un archivo en un formato hexadecimal, octal o decimal de acuerdo al
+                    parametro que se le especifique</p>
+            </article>
+            <article>
+                <h3>ls -la --sort=time</h3>
+                <p>Lista el contenido de la ruta actual, ademas con el parametro --sort, ordena los resultados por fecha, esto
+                    ultimo debido a que le estamos indicando la opcion time
+                </p>
+            </article>
+            <article>
+                <h3>netstat --natopu | grep 80</h3>
+                <p>
+                    Busca dentro de las conexiones al host o server en el que estas en tu consola, y con el | grep 80 lo que hace
+                    es que filtra solo las conexiones que hay en ese puerto en especifico, podria buscarse por ejemplo conexiones en el 3306 que 
+                    es el que usa por defecto mysql 
+                </p>
+            </article>
+                    
+        </section>
+    </div>    
+</body>
+</html>
