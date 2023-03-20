@@ -17,3 +17,9 @@ typeof var1 === "object" && var1 != null; // comprueba si es un objeto, valida q
 typeof var1 === "object" && var1.length != null; // comprueba si es un array, valida que la propiedad length sea valida.
 
 Array.isArray(var1); // forma actual de validar un array.
+
+// Semana 2 Clase 4
+
+function stopAction(event) {
+  event.preventDefault();
+}
