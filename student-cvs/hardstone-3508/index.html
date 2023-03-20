@@ -53,15 +53,15 @@
                     <form action="post" class="f-form" method="get">
                         <div class="form-group">
                             <label for="f-name">Name: </label>
-                            <input type="text" id="f-name" name="f-name" size="30" placeholder="Nombre" required>
+                            <input type="text" id="f-name" name="f-name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
                             <label for="f-mail">eMail: </label>
-                            <input type="email" id="f-mail" size="30" placeholder="correo" name="mail">
+                            <input type="email" id="f-mail" placeholder="mail@company.com" name="mail">
                         </div>
                         <div class="form-group">
                             <fieldset>
-                                <legend>Presupuesto USD</legend>
+                                <legend>Budget USD</legend>
                                 <input id=1000 type="radio" name="budget" value="1000" checked>
                                 <label for="1000">$1.000</label>
                                 <input id=5000 type="radio" name="budget" value="5000">
@@ -71,9 +71,9 @@
                             </fieldset>
                         </div>
                         <div class="form-group">
-                            <label for="tipo-pro">Tipo de Proyecto: </label>
+                            <label for="tipo-pro">Project Type: </label>
                             <select name="tipo-pr" id="tipo-pro" required>
-                                <option disabled selected value="">Seleccione Uno</option>
+                                <option disabled selected value="">Select One</option>
                                 <option value="ecommerce">eCommerce</option>
                                 <option value="web">Website</option>
                                 <option value="App">App</option>
@@ -82,14 +82,12 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="f-mensaje">Mansaje: </label>
-                            <textarea name="mensaje" id="f-mensaje" rows="10" cols="26">Tu mensaje...
-                            </textarea>
+                            <label for="f-mensaje">Message: </label>
+                            <textarea name="mensaje" id="f-mensaje" rows="10" placeholder="Your message..."></textarea>
                         </div>
-                        <div>Escribe algo...</div>
                         <div class="form-group">
                             <input type="checkbox" name="termi" id="terms" required>
-                            <label for="terms">Acepto los terminos.</label>
+                            <label for="terms">I accept the terms and conditions.</label>
                         </div>
                         <button type="submit">Summit</button>
                     </form>
@@ -134,12 +132,47 @@
                 <div>
                     <h2>🦸‍♂️ Contact</h2>
                     <hr>
-                    <ul>
-                        <li>Amabilidad</li>
-                        <li>Buen compañero de equipo</li>
-                        <li>Entusiasta</li>
-                        <li>Humilde pero con ímpetu</li>
-                    </ul>
+                    <form action="post" class="f-form" method="get">
+                        <div class="form-group">
+                            <label for="f-name">Nombre: </label>
+                            <input type="text" id="f-name" name="f-name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-mail">eMail: </label>
+                            <input type="email" id="f-mail" placeholder="correo" name="mail">
+                        </div>
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Presupuesto USD</legend>
+                                <input id=1000 type="radio" name="budget" value="1000" checked>
+                                <label for="1000">$1.000</label>
+                                <input id=5000 type="radio" name="budget" value="5000">
+                                <label for="5000">$5.000</label>
+                                <input id=10000 type="radio" name="budget" value="10000">
+                                <label for="10000">$10.000</label>
+                            </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-pro">Tipo de Proyecto: </label>
+                            <select name="tipo-pr" id="tipo-pro" required>
+                                <option disabled selected value="">Select One</option>
+                                <option value="ecommerce">eCommerce</option>
+                                <option value="web">Website</option>
+                                <option value="App">App</option>
+                                <option value="design">Diseño</option>
+                                <option value="ui-ux">UI / UX</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-mensaje">Mensaje: </label>
+                            <textarea name="mensaje" id="f-mensaje" rows="10" placeholder="Tu mensaje..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="termi" id="terms" required>
+                            <label for="terms">Acepto los terminos y condiciones.</label>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -150,10 +183,15 @@
                 <div>
                     <h2>📝 Ejercicios Semana 2</h2>
                     <hr>
+                    <h3>Checkear input time local</h3>
+                    <p>Revisar el ejercicio en varios exploradores para indentificar las diferncias de motor.</p>
+                    <form action="/server" method="get">
+                        <div class="form-group">
+                            <input type="datetime-local" name="meeting" id="time-loc">
+                        </div>
+                    </form>
                     <div class="code">
-                        <p>
-                            
-                        </p>
+                        <p></p>
                     </div>
                 </div>
             </div>

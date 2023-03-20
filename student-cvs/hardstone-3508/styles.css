@@ -1,3 +1,6 @@
+html {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -136,6 +139,7 @@ pre {
     margin: 2rem auto;
     align-items: end;
     justify-content: center;
+    accent-color: #0080ff;
 }
 .form-group {
     position: relative;
@@ -161,17 +165,19 @@ input, textarea {
 fieldset {
     display: flex;
     align-items: center;
-    border-color: #13171D;
+    border: 1px solid #30363D;
+    border-radius: 0.6rem;
 }
 fieldset label:seleted {
     color: #0080ff;
 }
-input[type=text], input[type=email], input[type=text-area], textarea {
+input[type=text], input[type=email] {
     outline: 1px solid #30363D;
+    width: 312px;
     height: 2.4rem;
 }
 textarea {
-    width: 284px;
+    width: 312px;
     height: 100px;
 }
 input[type=text]:focus, input[type=email]:focus, input[type=text-area]:focus, textarea:focus {
@@ -181,4 +187,30 @@ input[type=text]:focus, input[type=email]:focus, input[type=text-area]:focus, te
 }
 input[type=radio]:focus {
     color: #0080ff;
+}
+select {
+    padding: 0.5rem;
+    background-color: #025E73;
+    margin-left: 1rem;
+    color:#88BFEF;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+}
+select:hover {
+    background-color: #0080ff;
+    border-radius: 0.3rem 0.3rem 0 0;
+    cursor: pointer;
+}
+button {
+    padding: 0.5rem 0.8rem;
+    background-color: #025E73;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    color: #88BFEF;
+    border: none;
+    outline: 1px solid #025E73;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #0080ff;
 }
