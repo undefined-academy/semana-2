@@ -64,8 +64,23 @@
       </section>
 
 
+
       <footer>
         <p>María Sol Arroyo &copy; 2023</p>
       </footer>
+
+      <script>
+      // Selecionamos el elemento form del html
+const formEl = document.querySelector("form");
+
+// Añadimos un manejador de eventos al elemento, de forma que el navegador permanezca "atento" a la interacción del usuario. En este caso el envío del formulario, por lo que utilizamos el evento `submit`
+
+formEl.addEventListener("submit", (event) => {
+//El argumento event es un objeto que hace referencia al evento que se está disparando
+// El método preventDefault() evita el comportamiento por defecto
+    event.preventDefault() 
+})
+
+      </script>
 </body>
 </html>
