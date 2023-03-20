@@ -54,7 +54,7 @@ section {
 	color: #00bfff;
 }
 
-#skills ul {
+#skillsSection ul {
 	list-style-type: none;
 	padding: 0;
 	display: flex;
@@ -64,7 +64,7 @@ section {
 /* Table styles */
 table {
 	border-collapse: collapse;
-	width: 100%;
+	width: auto;
 	margin-bottom: 1rem;
 	color: #f2f2f2;
 }
@@ -92,4 +92,84 @@ code {
 	padding: 0.1rem 0.25rem;
 	border-radius: 0.25rem;
 	font-family: Consolas, monospace;
+}
+
+/* Form styles */
+form {
+	width: 50%;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 8px 0;
+}
+
+input,
+textarea,
+select {
+	border-radius: 5px;
+	border: 1px solid #080808;
+	background-color: #080808;
+	color: #f2f2f2;
+	padding: 8px 12px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+	font-weight: bold;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: 1px solid #00bfff;
+}
+
+textarea {
+	display: block;
+	resize: none;
+	height: 5rem;
+}
+
+label {
+	font-weight: bold;
+}
+
+#personalInformation input {
+	display: inline-block;
+	width: calc(50% - 3px);
+}
+
+#messageInformation input,
+#messageInformation textarea {
+	width: 100%;
+}
+
+#sourceInformation select {
+	width: 100%;
+	cursor: pointer;
+}
+
+button {
+	background-color: #00bfff;
+	color: #0d0d0d;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0083e0;
+}
+
+button:active {
+	background-color: #0083e0;
+	color: #f2f2f2;
 }
