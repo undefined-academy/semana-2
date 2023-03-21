@@ -45,6 +45,7 @@
                     </div>
                 </section>
                 
+                <h2>Contact me</h2>
                 <section id="contact">
                     <h3>If you want to reach me, you can find me at:</h3>
                     <div class="div-ul">
@@ -56,6 +57,41 @@
                             </ul>
                         </address>
                     </div>
+                    <h3>or, you can leave me your message and I'll contact you:</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Best time to reach you (GTM -11)</legend>
+                                <select name="time" id="time">
+                                    <option value="default" disabled selected>Select one option...</option>
+                                    <option value="morning">08:00 - 12:00</option>
+                                    <option value="afternoon">12:00 - 16:00</option>
+                                    <option value="evening">16:00 - 20:00</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        
+                        <div class="form-group" id="textarea-div">
+                            <label for="message" id="textarea-label">Message</label>
+                            <textarea name="message" id="message" placeholder="Leave me your message!" cols="40" rows="5"></textarea>
+                        </div>
+                        <button id="button-submit" onclick="document.getElementById('contact-form').submit();">Submit</button>
+                    </form>
                 </section>
             </article>
         </section> 
