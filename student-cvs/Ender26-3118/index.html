@@ -39,7 +39,7 @@
                 </ul>
 
             </article>
-            <nav>
+            <section>
                 <h3><b> Mis redes sociales:</b> </h3>
                 <ul>
                     <li> <span> Mi perfil de github:</span>
@@ -51,32 +51,32 @@
                     <li>Mi perfil de twitter: <a target="_blank" href="https://twitter.com/Endergrimaldos">Twitter</a>
                     </li>
                 </ul>
-            </nav>
+            </section>
         </div>
     </div>
     <section class="formulario">
-        <form  action="/server" method="get" >
+        <form  action="/server" method="get" onsubmit="return false;">
             <h1>Contacto</h1>
             <div class="form-1">
                 <label for="name">Nombre:</label>
-                <input id="name" type="text" placeholder="Indicame tu nombre"  required>
+                <input id="name" type="text" placeholder="Indicame tu nombre" name="name"  required>
             </div>
             <div class="form-1">
                 <label for="email">Email:</label>
                 <input id="email" type="email" placeholder="Indicame tu correo electronico" 
-                 required>
+                name="email" required>
             </div>
             <div class="form-1">
                 <label for="Select">Selecciona tu nivel de experiencia:</label>
-                <select  id="Select" required>
+                <select  name="select" id="Select" required>
                     <option value="beginner">Begginer</option>
                     <option value="junior">Junior</option>
                     <option value="semi">Semi-junior</option>
                     <option value="senior">Senior</option>
                 </select>
-            </div>
+            </div>    
             <div class="form-2">
-                <input type="checkbox" id="accept" required>
+                <input type="checkbox" id="accept" name="checkbox" required>
                 <label for="accept">Acepto los terminos y condiciones</label>
             </div>
             <input type="submit" value="Enviar">
