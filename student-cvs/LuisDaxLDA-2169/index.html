@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de LuisLDA</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="events.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
-                
+
             </section>
             <section>
                 <h3>📖 Estudios</h3>
@@ -81,6 +82,37 @@
             </section>
 
         </article>
+    </section>
+
+
+
+    <section id="form-contact">
+
+        <fieldset>
+            <legend>
+                <h2>Formulario de contacto</h2>
+            </legend>
+            <form id="form-content">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <textarea class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
+                </div>
+                <div id="enviar">
+                    <button class="button" type="submit" onclick="javascript:enviarFormulario()">Enviar</button>
+                </div>
+            </form>
+
+        </fieldset>
     </section>
 
     <footer>
