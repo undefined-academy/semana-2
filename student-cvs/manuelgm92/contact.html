@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input id="asunto" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+
+                <div>
+                    <button>
+                        Enviar
+                    </button>
+                </div>
+        </form>
+
+        
+        <div class="social-icons">
+           
+            <div id="github">
+                <a href="https://github.com/manuelgm92"><img src="images/github.png" alt="github" width="50px"
+                        height="50px"></a> <br>
+            </div>
+
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/manuel-gonz%C3%A1lez-mart%C3%ADnez-1634034a/"><img
+                        src="images/linkedin.png" alt="linkedin" width="50px" height="50px"></a>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

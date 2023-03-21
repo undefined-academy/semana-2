@@ -1,0 +1,111 @@
+h1 {
+    /* box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 18px; */
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+
+    
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #FF8C00, #FFA500);
+    border-radius: 200px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+button:hover {
+    background: linear-gradient(to bottom, #FFA500, #FF8C00);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+
+ }
+  
+ #github, #linkedin {
+    margin: 0 10px;
+    border-radius: 50px;
+    
+
+ }
+
+ #github:hover, #linkedin:hover {
+    background: linear-gradient(to bottom, #b0d8da, #b0d8da);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+  }
+  
+ 
+
+/* label, button {
+    text-transform: uppercase;
+} */

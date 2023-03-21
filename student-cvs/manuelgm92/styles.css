@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0 auto;
     max-width: 50em;
@@ -6,12 +8,14 @@ body {
     padding: 4em 1em;
     color: #566b78;
     background-color: whitesmoke;
+   
 }
 
 h1, h2, h3 {
     margin-top: 1em;
     padding-top: 1em;
     color: #333;
+
 }
 
 
@@ -28,3 +32,28 @@ a {
 #referencia {
     font-size: 11px;
 }
+
+
+
+.social-icons {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+
+ }
+  
+ #github, #linkedin {
+    margin: 0 10px;
+    border-radius: 50px;
+    
+
+ }
+
+ #github:hover, #linkedin:hover {
+    background: linear-gradient(to bottom, #b0d8da, #b0d8da);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+  }
+
