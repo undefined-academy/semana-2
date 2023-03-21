@@ -40,63 +40,41 @@ h2 {
 h1, h2, strong {
   color: #4b1111;
 }
-code, pre {
-  background: #eee;
-}
 
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-}
-
-pre {
-  padding: 1em;
-}
 a {
     color: #979797;
   }
   
-code, pre {
-    background: #f5f7f9;
-    border-bottom: 1px solid #d8dee9;
-    color: #a7adba;
-  }
-  
-pre {
-    border-left: 2px solid rgb(216, 216, 216);
-  }
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
 body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   }
   header {
-    
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     background-image: url("header.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: auto;
     height: 350px;
     line-height: 1.2;
-    padding: 10vw 2em;
-    text-align: center;
-    max-width: 600;
+    max-width: 100%;
     
   }  
   .logo {
     
     margin-top: 15px ;
-    display: auto;
     height: 120px;
     vertical-align: top;
     width: 120px;
   }
   header h1 {
-    position: relative;
-    display: auto;
-    margin-top: -50px;
+    text-align: center;
     font-family:"Star wars", fantasy;
-    color: rgb(255, 230, 0);
+    color: rgb(236, 157, 37);
     font-size: 2.5em;
     font-weight: 300;
     
@@ -104,8 +82,6 @@ body {
   }
   
   .git {
-    position: top;
-    display: auto;
     border: 2px solid #e7a71d;
     border-radius: 290486px;
     color: rgb(226, 8, 0);
@@ -123,8 +99,11 @@ body {
     color: white;
   }
   footer {
-    
+    text-align: center;
     padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   footer p {
@@ -136,12 +115,14 @@ body {
   }
  
   footer a {
-    justify-content: center;
+    font-weight: bold;
+    height: 44px;
+    width: 200px;
     margin: 20px auto;
-    border: 4px groove #45e3ff ;
+    border: 4px groove #45e3ffe3 ;
     border-radius: 290486px;
-    color: rgb(247, 134, 6);
-    font-size: 0.6em;
+    color: rgb(87, 76, 76);
+    font-size: 14px;
     letter-spacing: 0.2em;
     padding: 1em 2em;
     text-transform: uppercase;
@@ -152,11 +133,11 @@ body {
   
   
   footer a:hover {
-    background:  #646bc4;
+    background:  #646ac4b2;
     color: white;
   }
   footer a:active {
-    background:  #3e416b;
+    background:  #30313bb7;
     color: white;
   }
 
@@ -286,4 +267,59 @@ input[type="search"] {
 
  div:last-child {
   grid-column: 1 / 4;
+}
+
+@media screen and (max-width: 730px) {
+  footer a{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  input[type="search"] {
+    width: 40%;
+  }
+  
+  header{
+    line-height: 1; 
+    
+  }
+  
+
+  .git {
+    order: 1;
+    margin-bottom: -20%;
+    
+  }
+  header h1 {
+    margin-block-end: 5%;
+    order: 3; 
+  }
+  .logo {
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    order: 2; 
+  }
+
+  .formgroup fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5%;
+  }
+  .container ul {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
