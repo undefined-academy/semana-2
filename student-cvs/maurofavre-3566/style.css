@@ -299,6 +299,7 @@ footer.layaout_footer{
     nav ul{
         flex-direction: column;
         justify-content: space-between; 
+        
     }
     nav ul li{
         margin-right:auto;
@@ -340,10 +341,8 @@ footer.layaout_footer{
     
 
     /* CSS DEL FOOTER */
-    footer.pie{
-       
+    footer.pie{ 
         grid-template-columns: 1fr;
-        
     }
   
     /* CSS LAYAOUT */
@@ -351,13 +350,18 @@ footer.layaout_footer{
     header.layout_header{
         height: 350px;
         width: 100%;
+        
     }
     .title_layout{
       text-align: center;
+      width: 100%;
+      padding: 0px;
+      
     }
     .front, .full {
         grid-template-columns: 1fr;
         padding: 0px;
+        align-items: center;
     }
     .back{
         grid-template-columns: 1fr;
@@ -365,9 +369,8 @@ footer.layaout_footer{
   
     footer.layaout_footer{
         height: auto;
-       
         flex-direction: column;
-     
+        
     }
    
 
