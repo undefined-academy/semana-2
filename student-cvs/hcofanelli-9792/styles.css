@@ -7,6 +7,10 @@ body {
     padding: 4em 1em;
     color: #333;
   }
+  header{
+    display: flex;
+    justify-content: center;
+  }
   h2 {
     margin-top: 1em;
     padding-top: 1em;
@@ -45,25 +49,40 @@ padding: 20px;
 
 }
 .form-group{
+  display: flex;
 margin-bottom: 20px;
+justify-content: space-between;
+}
+input{
+  min-width: 229px;
+}
 
-}
-#email {
-  margin-left: 23px;
-  min-width: 237px;
-}
-
-#nombre, #apellido
-{
-  margin-left: 5px;
-  min-width: 237px;
-}
 button{
   border-radius: 5px;
   background-color: bisque;
   padding: 10px;
   width: 100px;
 }
-.consulta{
-  margin-top: -100px;
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  list-style-type:none;
+  padding: 0;
+}
+
+@media screen and (min-width:480px) {
+  .form-group{
+    display: flex;
+    flex-direction: column;
+  }
+ input, textarea{
+  max-width: 300px;
+ }
+ .cont-form{
+  display: flex;
+  justify-content: center;
+ }
 }
