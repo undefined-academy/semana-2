@@ -67,77 +67,77 @@
                 </ol>
             </div>
         </section>
-        <!-- formulario -->
-        <section>
-            <div class="form__container">
-                <h2>Contacto</h2>
-                <p><em>Por favor rellene el formulario</em> </p>
-                <form action="/server" method="get" id="form" class="form__contact">
-                    <div class="form__group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
-                    </div>
-                    <div class="form__group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
-                            required>
-                    </div>
-                    <div class="form__group">
-                        <fieldset>
-                            <legend>Presupuesto</legend>
-                            <input id="10000" name="budge" type="radio" value="10000">
-                            <label for="10000">$10000</label>
-                            <input id="5000" name="budge" type="radio" value="5000">
-                            <label for="5000">$5000</label>
-                            <input id="1000" name="budge" type="radio" value="1000">
-                            <label for="1000">$1000</label>
-                        </fieldset>
-                        <div class="help">*Este presupuesto es la base no el total.</div>
-                    </div>
-                    <div class="formgroup">
-                        <label for="type">Tipo de proyecto</label>
-                        <select name="type" id="type" required>
-                            <option value="" disabled selected>Seleccion una opcion</option>
-                            <option value="website">Website</option>
-                            <option value="webapp">Webapp</option>
-                            <option value="mobileapp">Mobile app</option>
-                            <option value="design">Diseño</option>
-                        </select>
-                    </div>
-                    <div class="form__group">
-                        <label for="description">Descripción</label>
-                        <textarea name="description" id="description" cols="30" rows="10" required></textarea>
-                        <div class="help">*Haz una descripcion del proyecto en al menos 500 palabras.</div>
-                    </div>
-                    <div class="form__group">
-                        <label for="terms">
-                            <input id="terms" name="terms" type="Checkbox" required>
-                            <span>Acepto los terminos y condiciones</span>
-                        </label>
-                    </div>
-                    <div class="form__group">
-                        <button type="submit" id="enviar">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <!-- redes sociales -->
-        <section>
-            <div>
-                <h3 class="redes__sociales">Mis redes sociales </h3>
-                <nav class="buttons">
-                    <a class="button linkedin" href="https://www.linkedin.com/in/wilmer-gulcochia-sanchez/"
-                        target="_blank"><em>Visit on</em><strong>Linkedin</strong></a>
-                    <a class="button facebook" href="https://web.facebook.com/gulcochiasanchez" rel="nofollow"
-                        target="_blank"><em>Visit on</em> <strong>Facebook</strong></a>
-                    <a class="button twitter" href="https://twitter.com/misterio1989w" rel="nofollow"
-                        target="_blank"><em>Visit on</em><strong>Twitter</strong></a>
-                    <a class="button instagram" href="https://www.instagram.com/wigusa/" rel="nofollow"
-                        target="_blank"><em>Visit on</em><strong>Instagram</strong></a>
-                </nav>
-            </div>
-        </section>
     </main>
+    <!-- formulario -->
+    <section>
+        <div class="form__container">
+            <h2>Contacto</h2>
+            <p><em>Por favor rellene el formulario</em> </p>
+            <form action="/server" method="get" id="form" class="form__contact">
+                <div class="form__group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
+                </div>
+                <div class="form__group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="form__group">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <input id="10000" name="budge" type="radio" value="10000">
+                        <label for="10000">$10000</label>
+                        <input id="5000" name="budge" type="radio" value="5000">
+                        <label for="5000">$5000</label>
+                        <input id="1000" name="budge" type="radio" value="1000">
+                        <label for="1000">$1000</label>
+                    </fieldset>
+                    <div class="help">*Este presupuesto es la base no el total.</div>
+                </div>
+                <div class="form__group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select name="type" id="type" required>
+                        <option value="" disabled selected>Seleccion una opcion</option>
+                        <option value="website">Website</option>
+                        <option value="webapp">Webapp</option>
+                        <option value="mobileapp">Mobile app</option>
+                        <option value="design">Diseño</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="description">Descripción</label>
+                    <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+                    <div class="help">*Haz una descripcion del proyecto en al menos 500 palabras.</div>
+                </div>
+                <div class="form__group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="Checkbox" required>
+                        <span>Acepto los terminos y condiciones</span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <button type="submit" id="enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- redes sociales -->
+    <section>
+        <div class="redes__sociales-container">
+            <h3 class="redes__sociales">Mis redes sociales </h3>
+            <nav class="buttons">
+                <a class="button linkedin" href="https://www.linkedin.com/in/wilmer-gulcochia-sanchez/"
+                    target="_blank"><em>Visit on</em><strong>Linkedin</strong></a>
+                <a class="button facebook" href="https://web.facebook.com/gulcochiasanchez" rel="nofollow"
+                    target="_blank"><em>Visit on</em> <strong>Facebook</strong></a>
+                <a class="button twitter" href="https://twitter.com/misterio1989w" rel="nofollow"
+                    target="_blank"><em>Visit on</em><strong>Twitter</strong></a>
+                <a class="button instagram" href="https://www.instagram.com/wigusa/" rel="nofollow"
+                    target="_blank"><em>Visit on</em><strong>Instagram</strong></a>
+            </nav>
+        </div>
+    </section>
+
     <script src="./script.js"></script>
     <footer>
         <a class="button" href="https://github.com/nobody-redhawk" target="_blank">Realizado

@@ -45,7 +45,6 @@ header h1 {
 }
 
 header a {
-  /* border: 1px solid #e81c4f; */
   border: 2px solid #333;
   border-radius: 290486px;
   color: #333;
@@ -61,7 +60,6 @@ header a {
 }
 
 header a:hover { 
-  /* background:  #e81c4f; */
   Background: #333;
   color: white;
 } 
@@ -75,36 +73,14 @@ header p {
 }
 
 main {
-  padding: 2rem 1rem;
+  padding: 2rem 2rem 0 2rem;
   margin: 0 auto;
   max-width: 50rem;
 }
 
-h2 {
-    margin-top: 1em;
-    padding-top: 1em;
-  }
-
 h1, h2, strong {
   color: #333;
 }
-
-/* code,
-pre {
-  background: #f5f7f9;
-  border-bottom: 1px solid #d8dee9;
-  color: #a7adba;
-}
-
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-}
-
-pre {
-  padding: 1em;
-  border-left: 2px solid #69c;
-} */
 
 a {
     color: #e41a4a;
@@ -119,6 +95,17 @@ li > img {
   width: 20px;
 }
 
+.form__container {
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.redes__sociales-container {
+  padding: 0 2rem 2rem 2rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
 
 footer {
   align-items: center;
@@ -232,7 +219,6 @@ footer .button {
   vertical-align: middle;
 }
 
-
 /* formcontact */
 
 .form__group {
@@ -310,7 +296,7 @@ button:active {
 
 .form__contact {
   background: #f4f1f1;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2rem 1rem 2rem;
 }
 
 form {
