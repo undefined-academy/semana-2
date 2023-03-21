@@ -1,9 +1,10 @@
 
-
 let formulario = document.getElementById("form-content");
 
 function enviarFormulario(evento) {
     evento.preventDefault();
 }
 
-formulario.addEventListener("submit", enviarFormulario);
+if(formulario){
+    formulario.addEventListener("submit", enviarFormulario);
+}
