@@ -353,10 +353,10 @@ footer.layaout_footer{
         
     }
     .title_layout{
-      text-align: center;
-      width: 100%;
-      padding: 0px;
-      
+        font-size: 30px;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
     }
     .front, .full {
         grid-template-columns: 1fr;
@@ -370,7 +370,6 @@ footer.layaout_footer{
     footer.layaout_footer{
         height: auto;
         flex-direction: column;
-        
     }
    
 
