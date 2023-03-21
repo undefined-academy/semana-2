@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeronimo Cortez</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <input type="datetime-local" name="meeting">
+
+    <article>
+        <section>
+            <h1>Jeronimo Cortez</h1>
+            <h2>Un pequeño resumen sobre mi</h2>
+
+            <p>Mi nombre completo es <strong>Jeronimo Felipe Cortez</strong> actualmente vivo en la provincia de
+                Mendoza,
+                Argentina. Naci en el
+                año 2003, tengo 20 años y mi cumpleaños es el 19 de febrero.
+                Me estoy preparando como <strong>programador</strong> haciendo este bootcamp full stack javascript de
+                Guillermo Rodas y ademas
+                estudiando en egg cooperation la carrera de full stack que se centra en java.</p>
+
+        </section>
+
+        <section>
+
+
+            <h2>A continuacion voy a listar algunos comando que aprendi en la clase 1 del bootcamp</h2>
+
+            <table border="solid">
+                <thead>
+                    <tr>
+                        <th scope="col">Comando</th>
+                        <th scope="col">Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cp -r</td>
+                        <td>copia una carpeta</td>
+                    </tr>
+                    <tr>
+                        <td>rm -r</td>
+                        <td>elimina una carpeta</td>
+                    </tr>
+                    <td>mkdir</td>
+                    <td>crea una carpeta</td>
+                    </tr>
+                    <td>ls</td>
+                    <td>lista archivos de la carpeta actual</td>
+                    </tr>
+                    <td>cal</td>
+                    <td>muestra un calendario </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Dos comandos alias recomendados</h2>
+
+            <ul>
+                <li>alias cl="clear" : limpia la pantalla</li>
+                <li>alias tr="trash" : evita eliminar archivos de manera permanente</li>
+            </ul>
+        </section>
+    </article>
+
+    <section>
+        <div class="form-container">
+            <h1>Contacto</h1>
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Ingrese su nombre de usuario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="adress" id="email"  placeholder="Ingrese su email" required>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+
+                        <input type="radio" id="10000" name="budge">
+                        <label for="10000">$10000</label>
+
+                        <input type="radio" id="5000" name="budge">
+                        <label for="5000">$5000</label>
+
+                        <input type="radio" id="1000" name="budge">
+                        <label for="1000">$1000</label>
+                       
+                        <div class="help">Este presupuesto es estimado no el total</div>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select id="type" required>
+                        <option disabled selected>Seleccionar opcion</option>
+                        <option value="WebSite">Sitios webs</option>
+                        <option value="AppWeb">Aplicacion web</option>
+                        <option value="MobileApp">App movil</option>
+                        <option value="Design">Diseño</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripction">Descripcion</label>
+                    <textarea id="descripction" rows="5" required></textarea>
+                    <div class="help">Escribe una descripcion del proyecto</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" required>
+                        Acepto los terminos y condiciones</label>
+                </div>
+
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
