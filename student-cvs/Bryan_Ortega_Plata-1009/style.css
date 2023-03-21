@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -54,9 +60,47 @@ table {
 
 td,
 th {
+  padding: 10px;  
   border: black 1px solid;
 }
 
 td:first-child {
   text-align: center;
 }
+
+/* formulario */
+
+.form-goup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-goup input,.form-goup textarea{
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 15px;
+  color: #797878;
+}
+
+.form-goup{
+  margin-bottom: 15px;
+}
+
+.button-send {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 5px 18px;
+  border: 0;
+  margin-bottom: 10px;
+}
+
