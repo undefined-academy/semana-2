@@ -163,6 +163,7 @@ body {
     border: var(--table-border-color) 1px solid;
     width: 100%;
     table-layout: fixed;
+    background-color: var(--primary-color);
 }
 
 .table td,
@@ -190,4 +191,107 @@ body {
     display: inline-block;
     padding: 0.2em;
     font-weight: bold;
+}
+
+
+/* --------------------------------------------------- */
+/* C O N T A C T  F O R M                              */
+/* --------------------------------------------------- */
+
+.formato {
+    margin: 1rem 0;
+    padding: 10px;
+    border-radius: 40px;
+    background: #ecfccb;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 2px 2px var(--secondary-color);
+}
+
+.required {
+    color: rgb(229, 78, 78);
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+label,
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label,
+legend {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: var(--primary-color);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid 365314;
+    background: #84cc16;
+    color: #333;
+    color: #3b15b6;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a3e635;
+}
+
+button:active {
+    background: #65a30d;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+    accent-color: #84cc16;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid #84cc16;
+    outline: 3px solid #a3e635;
 }
