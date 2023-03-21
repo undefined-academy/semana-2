@@ -1,30 +1,77 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-body {
-    margin: 0 auto;
-    max-width: 50em;
-    color: #9c9dad;
-     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-     background-color:  #1c1d20;;
-  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
-  body {
-    line-height: 1.5;
-    padding: 4em 1em;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   
-  h2 {
-    margin-top: 1em;
-    padding-top: 1em;
-    
-  }
+  color: #9c9dad;
+  font-size: 1rem;
+  background-color: #1c1d20;
+  ;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+main {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+header {
+  background: #e2e2e2;
+  width: 100%;
+  display: table;
+  ;
+}
+
+.menu {
+  width: 900px;
+  margin: 0 auto;
+}
+
+nav {
+  float:right;
+
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 25px;
+  float:left;
+  padding: 25px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+nav ul li a::before{
+  width: 100%;
+  background: #444;
+  height: 5px;
+  top:0px;
+  position: absolute;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+
+}
 
 h1,
 h2,
 strong {
- color: #e2e2e2;
+  color: #e2e2e2;
 }
 
 
 a {
-    color: #e81c4f;
-  }
+  color: #e81c4f;
+}
