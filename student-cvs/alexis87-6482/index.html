@@ -7,9 +7,7 @@
 </head>
 <body>  
     <header>
-        <figure>
         <img src="/img-prog.jpg" alt="imagen programador">
-        </figure>
     </header>
     <article>
     <h1>Hola 🖐</h1>
@@ -35,10 +33,57 @@
              <li><strong>'unzip images.zip'</strong> (Permite extraer el contenido de un archivo .zip desde el terminal.)</li>
              </ul>
         </section>
-        </article>
-        <footer>
+        <section>
+            <h3>📞 Contacto</h3>
+            <form onsubmit="event.preventDefault()">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="ingrese su nombre comleto" required >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="ingrese su correo electronico" required >
+                </div>
+                <div class="form-group">
+                     <label for="phone">Celular</label>
+                     <input id="phone" name="phone" type="tel" placeholder="ingrese su correo electronico" required >
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <input id="5000" name="budget" type="radio" value="5000" required><label for="5000">5000</label>
+                        <input id="10000" name="budget" type="radio" value="10000"><label for="10000">10000</label>
+                        <input id="15000" name="budget" type="radio" value="15000"><label for="15000">15000</label>
+                    </fieldset>
+                </div>  
+                <div class="form-group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select id="type" name="type" required>
+                        <option disabled selected value="">Seleccione uno</option>
+                        <option value="website">Website</option>
+                        <option value="webapp">Webapp</option>
+                        <option value="mobile">Mobile app</option>
+                        <option value="diseño">Diseño</option>
+                     </select>
+                </div>
+                <div class="form-group">
+                    <label for="description" >Descripcion</label>
+                    <textarea id="description" name="description" required rows="5"></textarea>
+                    <div class="help">Escribe una descripcion del proyecto en al menos 500 caracteres.</div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>Acepto los terminos y condiciones</span>
+                    </label>
+                </div>
+                <button>Enviar</button>
+             </form>
+         </section>
+         </article>
+         <footer>
         <nav>
-        <a href="https://github.com/Alexisdc5">Mi perfil de github</a>
+        <a href="https://github.dcom/Alexisdc5">Mi perfil de github</a>
         </nav>
         </footer>
 </body>

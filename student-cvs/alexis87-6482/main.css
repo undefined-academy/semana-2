@@ -1,16 +1,21 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
 
-header img { 
+header{ 
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 800px;
-    margin-top: 20px; 
-    }
-  
+     }
+
 body {
-    margin: 0 auto;
+    margin: auto;
     max-width: 50em;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -36,12 +41,12 @@ a {
     text-decoration: none;
   }
 
-  a:hover {
+a:hover {
     background: #3e1ce8;
     color: white;
   }
 
-  code,
+code,
 pre {
   background: #eee;
     }
@@ -55,7 +60,7 @@ pre {
   padding: 1em;
     }
 
-  .alias li {
+.alias li {
     font-family: monospace;
     font-size: 15px;
     border: solid rgb(182, 239, 225);
@@ -65,3 +70,67 @@ pre {
     list-style-type: none;
     margin-bottom: 10px;
     }
+
+.form-group {
+    
+    margin: 20px 0;
+    }
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+
+}
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+label, input {
+  vertical-align: middle;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+button {
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgb(26, 17, 119);
+  background:#08aaea ;
+  color: #333;
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.5) ;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+button:hover {
+  background: #639ddb;
+}
+button:active {
+  background: #4c80c9;
+  box-shadow: none;
+}
+form {
+  accent-color: #639ddb;
+}
+input:focus-visible, textarea:focus-visible {
+  border: 1px solid #639ddb;
+  outline: 3px solid #89aed6;
+}
+
