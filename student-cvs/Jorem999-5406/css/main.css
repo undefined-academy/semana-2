@@ -4,45 +4,42 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 80em;
+  max-width: 100%;
   line-height: 1.5;
-  padding: 3em 1em;
-  background: rgb(252, 233, 233);
-  color: #1a0d0d;
+  padding: 0em;
+  background: rgb(255, 241, 241);
   font-size: 16px;
 }
 
 header {
   background-image: url("/images/IMG_header.jpg");
   background-position: center top;
-  padding: 5% 20% 5% 20%;
+  padding: 5% 25% 5% 25%;
   background-size: cover;
-  margin-bottom: 4em;
+  margin-bottom: 1.5em;
   text-align: center;
+  line-height: 0.75;
+}
+
+header img {
+  height: 20vmin;
+  margin-bottom: 3%;
 }
 
 .wrap {
   text-align: center;
-  border: 1px solid #ffffff;
-  box-shadow: 0 0 30px #000000;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 40px #000000;
   backdrop-filter: blur(5px);
 }
 
-header img {
-  display: inline-block;
-  height: 20vmin;
-  box-shadow: #b97c7c;
-  box-decoration-break: clone;
-  margin-bottom: 5%;
-}
-
 header h1 {
-  color: rgb(207, 175, 175);
+  color: rgb(255, 214, 214);
   font-size: 3em;
 }
 
 header h2 {
-  color: rgb(194, 136, 136);
+  color: rgb(255, 179, 179);
   font-size: 2em;
 }
 
@@ -57,19 +54,19 @@ header h3 {
 }
 
 a {
-  color: #8f7503;
+  color: hsl(0, 93%, 82%);
 
 }
 
 a:visited {
-  color: #ff9393;
+  color: #a393ff;
   text-align: center;
   margin-left: 10px;
 }
 
 img {
   vertical-align: baseline;
-  height: 18Px;
+  height: 16Px;
 }
 
 h1,
@@ -78,28 +75,40 @@ strong {
   color: #4e2323;
 }
 
+h1 {
+  margin-left: 5%;
+}
+
 h2 {
-  margin-left: 10px;
+  margin-left: 5%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+
 }
 
 ol,
 ul {
-  padding-left: 2.7em;
-  margin-top: 1em;
-  font-weight: normal;
-  color: #8b4040;
-}
-
-li>ol,
-li>ul {
-  margin-top: 0;
+  padding-left: 4em;
+  color: #793e3e;
 }
 
 hr {
-  background-color: #6e3434;
+  background-color: #1a0d0d;
   border: none;
-  height: 1px;
+  height: 2px;
   margin: 1em 0;
+}
+
+.box {
+  inline-size: 50%;
+  margin-inline-start: 25%;
+  background-color: #fde5e1;
+  border-color: #1a0d0d;
+  border-style: double;
+  margin-block: 15px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1.5em;
+  margin: 20px;
 }
