@@ -1,0 +1,43 @@
+html{
+  background-color:  #212429;;
+}
+
+body{
+  max-width: 1600px;
+  margin: 100px auto;
+}
+
+.main {
+  background: transparent url("https://i.ibb.co/Ld7q13v/fondo3.jpg") repeat fixed 0 0;
+}
+
+.about,
+.rrss,
+.tech,
+.buttons{
+  padding: 10px 300px;
+  text-align: justify;
+
+  color: #fff;
+}
+
+.title,
+.subtitle{
+  color: #fff;
+}
+
+footer,
+footer a{
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+
+  padding: 50px auto;
+
+  background: #212429;
+}
+
+footer a:hover{
+  color: #ffe600;
+  transition: 0.2s;
+}
