@@ -8,12 +8,7 @@ body {
 }
 h2{ margin-top:0;}
 
-header,
-section,
-footer,
-main,
-article,
-section {
+header,section,footer,main,article,section{
   width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -43,7 +38,6 @@ header.encabezado{
   background-image: url(https://images.unsplash.com/photo-1534029731425-0d646dd67df3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80);
   background-position: center;
   background-size: cover;
-  
 }
 header img{
     height: 150px;
@@ -108,7 +102,6 @@ article div img{
     height: 300px;
     width: 75%;
 }
-
 .sep{
     padding-top: 10px;
 }
@@ -287,7 +280,6 @@ footer.layaout_footer{
 
 @media all and (max-width: 599px){
    
-    
     header,
     section,
     footer,
@@ -298,19 +290,16 @@ footer.layaout_footer{
     }
     nav ul{
         flex-direction: column;
-        justify-content: space-between; 
-        
+        justify-content: space-between;  
     }
     nav ul li{
         margin-right:auto;
         margin-left: auto;
        }
- 
     header.encabezado{
       flex-direction: column;
       height: auto;
     }
-   
     main.sobreMi{
         height: auto;
         display: grid;
@@ -320,15 +309,12 @@ footer.layaout_footer{
     main div{
         width: 100%
     }
-
     section.sobreCurso{     
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-
-
 
     article.info{
         flex-direction: column;
@@ -338,19 +324,15 @@ footer.layaout_footer{
         width: 75%;
     }
     
-    
-
     /* CSS DEL FOOTER */
     footer.pie{ 
         grid-template-columns: 1fr;
     }
-  
     /* CSS LAYAOUT */
  
     header.layout_header{
         height: 350px;
-        width: 100%;
-        
+        width: 100%;  
     }
     .title_layout{
         font-size: 30px;
