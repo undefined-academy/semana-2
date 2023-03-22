@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.mjs" defer></script>
     <title>Daniela Londono</title>
   </head>
   <body>
@@ -61,8 +62,29 @@
         </li>
       </ul>
     </section>
-    <footer>
+    <section>
       <h2>Contacto</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required >
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Ingrese su correo electronico" required>
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripcion</label>
+          <textarea name="" id="descripcion" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      
+
+    </section>
+
+    <footer>
+      <h2>Social</h2>
       <a href="mailto:daniela0393h@gmail.com">daniela0393h@gmail.com</a> <br />
       <a href="https://www.linkedin.com/in/daniela0393h/"
         >https://www.linkedin.com/in/daniela0393h/</a

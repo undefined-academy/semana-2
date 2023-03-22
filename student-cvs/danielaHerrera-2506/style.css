@@ -27,3 +27,29 @@ img {
 h1, h2 {
 color: #8F43EE;
 }
+
+form {
+  width: 50%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+}
+
+input {
+  height: 25px;
+  padding: 5px;
+}
+
+button {
+  background-color: #8F43EE;
+  border:none;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+
