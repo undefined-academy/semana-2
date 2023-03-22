@@ -7,13 +7,13 @@
 }
 
 body {
-  
+
   color: #9c9dad;
   font-size: 1rem;
   background-color: #1c1d20;
   ;
   font-family: 'Poppins', sans-serif;
-  
+
 }
 
 main {
@@ -22,6 +22,7 @@ main {
   line-height: 1.5;
   padding: 4em 1em;
 }
+
 header {
   background: #e2e2e2;
   width: 100%;
@@ -35,14 +36,14 @@ header {
 }
 
 nav {
-  float:right;
+  float: right;
 
 }
 
 nav ul li {
   list-style: none;
   margin-left: 25px;
-  float:left;
+  float: left;
   padding: 25px 0;
 }
 
@@ -51,11 +52,12 @@ nav ul li a {
   color: #444;
   font-weight: bold;
 }
-nav ul li a::before{
+
+nav ul li a::before {
   width: 100%;
   background: #444;
   height: 5px;
-  top:0px;
+  top: 0px;
   position: absolute;
 }
 
