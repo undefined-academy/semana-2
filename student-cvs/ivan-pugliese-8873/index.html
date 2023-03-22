@@ -3,58 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Ivan Pugliese</title>
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <section class="cv-container">
-            <h1>Hola!👋, mi nombre es Ivan Pugliese👨🏻‍💻</h1>
+    <div class="page">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">Ivan Pugliese</a>
+                <span class="jam jam-terminal"></span>
+            </div>
+    
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+    
+            <div class="dark-ligth-mode">
+                <span>🌙</span>
+            </div>
+    
+        </header>
+    
+        <main id="home">
+            <div class="presentation">
+                <p>Hola!👋 mi nombre es</p>
+                <article class="presentation-name">
+                    <h1>Ivan Pugliese 👨🏻‍💻</h1>
+                    <h3>Estudiante Fullstack JavaScript</h3>
+                    <p>Me apasiona la programación, siempre en constante aprendizaje.</p>
+                </article>
+            </div>
+            <div class="presentation-img">
+                <img src="images/foto4x4.jpg" alt="Mi perfil">
+            </div>
+        </main>
+    
+        <section id="about" class="about">
+            <article class="about-description">
+                <h2>Sobre mi 🙋‍♂️</h2>
+                <p>Nací el 6 de Febrero de 1999 en Argentina. Apasionado por la tecnología desde muy joven y de la programación desde que me adentre en el mundo de forma autodidacta. Considero que la mejor herramienta es el conocimiento de uno mismo, mi mayor motivación es seguir aprendiendo, fortaleciendo mi desarrollo personal y profesional.</p>
+            </article>
+    
+            <article class="about-social">
+                <h3>Contacto</h3>
+                <p>Puedes contactarme a través de los siguientes medios o bien desde el formulario de <a class="p-contact" href="#contact">contacto.</a></p>
+                <div class="social-media">
+                    <a href="mailto:ivanpugliese01@gmail.com">
+                        <div class="social-media-name">
+                            <p><span class="jam jam-google"></span> Email</p>
+                            <small>@ivanpugliese</small>
+                        </div>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/ivan-pugliese-developer/">
+                        <div class="social-media-name">
+                            <p><span class="jam jam-linkedin"></span> Linkedin</p>
+                            <small>@ivan-pugliese</small>
+                        </div>
+                    </a>
+    
+                    <a href="https://github.com/ivan-pugliese">
+                        <div class="social-media-name">
+                            <p><span class="jam jam-github"></span> Github</p>
+                            <small>@ivan-pugliese</small>
+                        </div>
+                    </a>
+                    
+                    <a href="https://twitter.com/1ivanpugliese">
+                        <div class="social-media-name">
+                            <p><span class="jam jam-twitter"></span> Twitter</p>
+                            <small>@1ivanpugliese</small>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+    
+        <section id="projects" class="projects">
+            <h2>Mis proyectos ✨</h2>
+            <div class="projects-names-container">
+                <article class="projects-names">
+                    <h3>Pugliese & Asociados</h3>
+                    <p>Proyecto real sobre una PYME familiar de Seguros Generales.</p>
+                    <img src="images/pya-page.png" alt="Imagen de proyecto">
+                    <div class="tools">
+                        <small class="html">HTML</small>
+                        <small class="css">CSS</small>
+                        <small class="js">JavaScript</small>
+                    </div>
+                    <div class="demo-repo">
+                        <a href="https://pyaseguros.com/"> <span class="jam jam-share"></span> Demo</a>
+                        <a href="https://github.com/ivan-pugliese/real-project-insurance"><span class="jam jam-github"></span> Repositorio</a>
+                    </div>
+                </article>
+        
+                <article class="projects-names">
+                    <h3>IPCoffees</h3>
+                    <p>Proyecto Ficticio de simulación de carrito de compras sobre una tienda de Café y Tortas.</p>
+                    <img src="images/ipcoffees-page.png" alt="Imagen de proyecto">
+                    <div class="tools">
+                        <small class="html">HTML</small>
+                        <small class="css">CSS</small>
+                        <small class="js">JavaScript</small>
+                    </div>
+                    <div class="demo-repo">
+                        <a href="https://ivan-pugliese.github.io/project-coderhouse-js/"> <span class="jam jam-share"></span> Demo</a>
+                        <a href="https://github.com/ivan-pugliese/project-coderhouse-js"><span class="jam jam-github"></span> Repositorio</a>
+                    </div>
+                </article>
+
+                <article class="projects-names">
+                    <h3>IPCoffees</h3>
+                    <p>Proyecto Ficticio de simulación de carrito de compras sobre una tienda de Café y Tortas.</p>
+                    <img src="images/ipcoffees-page.png" alt="Imagen de proyecto">
+                    <div class="tools">
+                        <small class="html">HTML</small>
+                        <small class="css">CSS</small>
+                        <small class="js">JavaScript</small>
+                    </div>
+                    <div class="demo-repo">
+                        <a href="https://ivan-pugliese.github.io/project-coderhouse-js/"> <span class="jam jam-share"></span> Demo</a>
+                        <a href="https://github.com/ivan-pugliese/project-coderhouse-js"><span class="jam jam-github"></span> Repositorio</a>
+                    </div>
+                </article>
+            </div>
+    
+        </section>
+    
+        <section id="contact" class="contact">
+            <h2>Dejame un correo! 📩</h2>
+            <form id="form" class="form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Escribe tu mensaje</label>
+                    <textarea name="description" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
+        <footer class="footer">
+            <small>{Desarrollado por <strong>Ivan Pugliese</strong>}</small>
+        </footer>
+    </div>
+
+
+    <div class="mobile-nav">
+        <ul class="mobile-nav-ul">
+            <div class="ul-items">
+                <a href="#home">
+                    <span class="jam jam-home"></span>
+                    <li>Inicio</li>
+                </a>
+            </div>
             
-            <p>Nací el 6 de Febrero de 1999 en Argentina. Apasionado por la tecnología desde muy joven y de la programación desde que me adentre en el mundo de forma autodidacta. Considero que la <strong>mejor herramienta</strong> es el conocimiento general de uno mismo, mi mayor motivación es seguir aprendiendo, fortaleciendo mi desarrollo personal y profesional.</p>
-            
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/ivan-pugliese-developer/" target="_blank">
-                    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white&color=071A2C" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/1ivanpugliese/" target="_blank">
-                    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white&color=071A2C" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/Ivan.agustin.pugliese" target="_blank">
-                    <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?&style=flat-square&logo=facebook&logoColor=white&color=071A2C" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/1ivanpugliese" target="_blank">
-                    <img src="https://img.shields.io/badge/Twitter-%231877F2.svg?&style=flat-square&logo=twitter&logoColor=white&color=071A2C" alt="Twitter">
+            <div class="ul-items">
+                <a href="#about">
+                    <span class="jam jam-user"></span>
+                    <li>Sobre mi</li>
                 </a>
             </div>
 
-            <article>
-                <h2>Comandos de la terminal</h2>
-                <ul>
-                    <li><strong>Ctrl + A</strong> - Mover cursor al incio</li>
-                    <li><strong>Ctrl + E</strong> - Mover cursor al final</li>
-                    <li><strong>Ctrl + U</strong> - Eliminar linea</li>
-                    <li><strong>Ctrl + W</strong> - Eliminar palabra</li>
-                    <li><strong>Ctrl + R</strong> - Buscar comando</li>
-                </ul>
-            </article>
+            <div class="ul-items">
+                <a href="#projects">
+                    <span class="jam jam-star"></span>
+                    <li>Proyectos</li>
+                </a>
+            </div>
 
-            <article>
-                <h2>Alias</h2>
-                <ul>
-                    <li><strong>cl</strong> - Alias para el comando clear</li>
-                    <li><strong>findd</strong> -  alias para: **ls ~/ | grep $1** en donde se realiza una búsqueda de un token que se envía por parámetro en el directorio home</li>
-                </ul>
-            </article>
+            <div class="ul-items">
+                <a href="#contact">
+                    <span class="jam jam-google"></span>
+                    <li>Contacto</li>
+                </a>
+            </div>
+        </ul>
+    </div>
 
-            <footer>
-                <p>⭐️ From <a href="https://github.com/ivan-pugliese">Ivan Pugliese</a></p>
-            </footer>
-        </section>
-    </main>
+    <script src="main.js"></script>
 </body>
 </html>
