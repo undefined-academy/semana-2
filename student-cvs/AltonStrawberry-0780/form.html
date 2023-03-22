@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Request</title>
+  </head>
+  <body>
+    <section class="form">
+      <div class="container form__container">
+        <h2 class="formulario__titulo">
+          <strong>Form Request</strong>
+        </h2>
+        <form action="/server" method="get">
+          <div class="form-group radio">
+            <div class="radio__item">
+              <input type="radio" name="title" id="mr" required />
+              <label for="mr"> Mr </label>
+            </div>
+            <div class="radio__item">
+              <input type="radio" name="title" id="mrs" required />
+              <label for="mrs"> Mrs </label>
+            </div>
+            <div class="radio__item">
+              <input type="radio" name="title" id="miss" required />
+              <label for="miss"> Miss </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="first_name">Nombre</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Aquí va tu nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="last_name">Apellidos</label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Aquí va tu apellido"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Aquí va tu email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Aquí va tu teléfono"
+            />
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              rows="5"
+              cols="30%"
+              placeholder="Dime cual es tu cosulta"
+              required
+            >
+            </textarea>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" value="terms" required />
+              Acepto términos y condiciones
+            </label>
+            <button class="boton">Enviar consulta</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
