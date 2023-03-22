@@ -61,6 +61,51 @@
             </section>
             <section id="contact">
                 <h2>Contact</h2>
+                <form action="/server" method="get">
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" placeholder="... type your fullname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="... type your email" required>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Budget</legend>
+                            <input id="10000" value="10000" name="budget" type="radio">
+                            <label for="10000">$10000</label>
+                            <input id="5000" value="5000" name="budget" type="radio">
+                            <label for="5000">$5000</label>
+                            <input id="1000" value="1000" name="budget" type="radio">
+                            <label for="1000">$1000</label>
+                        </fieldset>
+                        <div class="help">This estimate is the base, not the total</div>
+                    </div>
+                    <div>
+                        <label for="type">Type of project
+                            <select id="type" name="type" required>
+                                <option value="" selected="true" disabled="disabled">Select one</option>
+                                <option value="Website">Website</option>
+                                <option value="Webapp">Webapp</option>
+                                <option value="Mobile">Mobile</option>
+                                <option value="Api">Api</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="5" required></textarea>
+                        <div class="help">Describe the project or proposal in a maximum of 500 words</div>
+                    </div>
+                    <div>
+                        <label for="terms">
+                            <input id="terms" type="checkbox" name="terms" required>
+                            I accept the terms and conditions
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
         </main>
         <footer>
@@ -74,5 +119,7 @@
             </a>
         </footer>
     </body>
+
+    <script type="text/JavaScript" src="index.js"></script>
 
 </html>
