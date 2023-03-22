@@ -55,9 +55,44 @@
                 alt="Reddit"></a><br>
     </section>
 
+    <section class="contacto">
+        <h2>📨 Contacto:</h2>
+        <form method="post" action="mailto:marcelo.reyran@gmail.com" enctype="text/plain" onsubmit="return false;">
+        </form>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Escriba aquí su nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ejemplo@email.com" required>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>Motivo de contacto</legend>
+                <input id="contratacion" name="motivo" value="contratacion" type="radio"><label
+                    for="contratacion">Contratación</label>
+
+                <input id="proyecto" name="motivo" value="proyecto" type="radio"><label for="proyecto">Proyecto</label>
+
+                <input id="informacion" name="motivo" value="informacion" type="radio"><label
+                    for="informacion">Informacion</label>
+
+                <input id="otro" name="motivo" value="otro" type="radio"><label for="otro">Otro</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Escriba aquí su mensaje" rows="10" required></textarea>
+            <footer>El mensaje que escriba se enviará directamente a mi correo electrónico</footer>
+        </div>
+        <button>Enviar</button>
+    </section>
+
     <footer>
         <p><strong>&copy; All rights reserved to @marceloreyran 2023.</strong></p>
     </footer>
+
 </body>
 
 </html>

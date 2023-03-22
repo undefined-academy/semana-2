@@ -6,20 +6,16 @@
 
 
 body {
-
     margin: auto;
     max-width: 50rem;
     background-color: antiquewhite;
     font-family: 'Nunito', sans-serif;
-
 }
 
 h1 {
     text-align: center;
     background-color: aquamarine;
     border-radius: 10px;
-
-
 
 }
 
@@ -28,8 +24,8 @@ h2 {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-
 }
+
 
 p {
     font-size: 20px;
@@ -58,4 +54,75 @@ a {
 
 footer {
     text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+thead {
+    font-weight: bold;
+}
+
+.fecha {
+    font-style: italic;
+}
+
+td {
+    border: solid black 1px;
+    padding: 10px;
+}
+
+thead {
+    background: #ddd;
+    font-size: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.formacion>ul {
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+}
+
+label,
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: navy;
+}
+
+fieldset>label {
+    text-transform: none;
+    font-weight: normal;
+}
+
+label,
+input {
+    vertical-align: top;
+}
+
+button{
+    font-size: 15px;
+    color: navy;
+    background-color: white;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 15px;
+    color: navy;
 }
