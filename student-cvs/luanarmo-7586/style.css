@@ -1,13 +1,22 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
 body {
     margin: 0 auto;
     max-width: 50em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     padding: 4em 1em;
-    /* color: #555; */
     color: #566b78;
+    background-color: #fafafa;
 }
 
 h2 {
@@ -21,60 +30,65 @@ strong {
     color: #333;
 }
 
-code,
-pre {
-    background: #f5f7f9;
-    border-bottom: 1px solid #d8dee9;
-    color: #a7adba;
-}
-
-code {
-    padding: 2px 4px;
-    vertical-align: text-bottom;
-}
-
-pre {
-    border-left: 2px solid #69c;
-}
-
 a {
     color: #e81c4f;
 }
 
-header {
-    background-color: #209572;
-    background-position: center top;
-    background-size: cover;
-    text-align: center;
+.form-group {
+    margin: 20px 0;
 }
 
-header img {
-    display: inline-block;
-    height: 120px;
-    vertical-align: top;
-    width: 120px;
+label, input:not([type="radio"], [type="checkbox"]), select {
+    width: 100%;
 }
 
-header h1 {
-    color: white;
-    font-size: 2.5em;
-    font-weight: 300;
+label, input {
+    vertical-align: middle;
 }
 
-header a {
-    border: 1px solid #e81c4f;
-    border-radius: 290486px;
-    color: white;
-    font-size: 0.6em;
-    letter-spacing: 0.2em;
-    padding: 1em 2em;
+textarea {
+    width: 100%;
+    display: block;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
+    font-size: 14px;
+    color: 444;
 }
 
-header a:hover {
-    background: #e81c4f;
-    color: white;
+input[type="text"], input[type="email"], textarea , select{
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius:8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+button:hover {
+    background: #facc15;
+}
+button:active {
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0,0,0,0.5);;
 }
