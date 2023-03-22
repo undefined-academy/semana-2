@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/formulario.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input type="radio" id="5000" name="budget" value="5000" required><label for="5000">$5000</label>
+                    <input type="radio" id="10000" name="budget" value="10000"><label for="10000">$10000</label>
+                    <input type="radio" id="15000" name="budget" value="15000"><label for="15000">$15000</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de Proyecto</label>
+                <select name="type" id="type" required class="select">
+                    <option value="" disabled selected>Seleccione uno</option>
+
+                    <option value="Website">Website</option>
+                    <option value="Webapp">Webapp</option>
+                    <option value="Mobile app">Mobile app</option>
+                    <option value="Diseño">Diseño</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id=descripcion rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <div class="boton">
+                <button>Enviar</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

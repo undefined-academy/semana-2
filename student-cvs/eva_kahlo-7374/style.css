@@ -57,7 +57,7 @@ div table{
 
  .banner {
     background-color: #263d36;
-    background-image: url("header.jpg");
+    background-image: url("/img/header.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,4 +111,10 @@ footer{
     text-align: center;
     color: #333;
 
+}
+
+.boton_contacto{
+  padding: 8px 16px;
+  border: 2px solid red;
+  border-radius: 10px;
 }
