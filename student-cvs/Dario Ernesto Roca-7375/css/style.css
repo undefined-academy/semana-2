@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   background-color: hsl(0, 0%, 93%);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2em;
   margin: 0;
 }
 
@@ -48,7 +51,7 @@ body {
 #connect {
   background-color: hsl(0, 0%, 93%);
   display: flex;
-  gap: 0.6em;
+  gap: 2em;
   flex-direction: row;
   justify-content: left;
   align-items: center;
@@ -67,7 +70,7 @@ body {
   background-color: hsl(0, 0%, 93%);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6em;
+  gap: 2em;
   justify-content: left;
   align-items: center;
   padding: 50px;
@@ -101,6 +104,10 @@ body {
   gap: 0.5em;
 }
 
+.profile__list__item {
+  list-style: none;
+}
+
 a {
   font-weight: bold;
   text-decoration: none;
@@ -115,4 +122,21 @@ a:visited {
     max-width: 70%;
     text-align: center;
     padding-top: 1em;
+}
+
+/* Styles for Contact */
+.page {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for footer */
+
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
 }
