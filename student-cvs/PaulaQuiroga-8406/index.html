@@ -10,50 +10,138 @@
 </head>
 
 <body>
-    <section class="contenedor">
-        <header>
-        <div class="title">
-            <h1>Hola! Soy Paula Quiroga 👋 🧘‍♀️</h1>
-        </div>
+    <section>
+        <header class="container">
+            <div class="inicio">
+                <div class="contenedor-imagen"><img  src="assets/img.png" alt="Foto de persona">
+                </div>
+                <h1 class="title">Hola!👋 Soy Paula Quiroga 🧘‍♀️</h1>
+            </div>
 
-        <div class="perfil">
-            <h2><a href="https://github.com/QuirogaPau"> <strong>📍Perfil GitHub </strong> </a></h2>
-            <p>Acceso al perfil de GitHub</p>
-        </div>
+            <div class="perfil-github">
+                <h2 class="title-proyectos"> Proyectos en GitHub </h2>
+                <nav>
+                    <p>Link de acceso al perfil de GitHub: </p>
+                    <a href="https://github.com/QuirogaPau"> <strong>📍Perfil GitHub </strong> </a>  
+                </nav>
+            </div>
         </header>
         <hr>
 
-    
-    <article>
-        <h2>🎈 Sobre mi 🎈</h2>
 
-        <p>Soy una estudiante de Desarrollo Web que recientemente se adentró en el mundo de la tecnología y estoy
-            emocionada por seguir aprendiendo y profundizando en el tema.</p>
-        <hr>
-        <div class="lista">
-            <ul>
-                <li>🎓 Actualmente estoy estudiando Desarrollo Web en <a
-                        href="https://platzi.com/home"><strong>Platzi</strong> </a> e iniciando con el Bootcamp <a
-                        href="https://undefined.sh/aprende-a-programar/"><strong>Undefined Academy</strong> </a> </li>
-                <li> 🌱 Me encanta aprender cosas nuevas y estoy interesada en explorar diferentes áreas de la
-                    tecnología. </li>
-                <li>💻 En mi tiempo libre, disfruto practicar lo que aprendo mediante la creación de proyectos
-                    personales y me encantaría empezar a realizar proyectos colaborativos en línea. </li>
-            </ul>
+        <article class="sobre-mi">
+            <h2 class="title">🎈 Sobre mi 🎈</h2>
+
+            <p>Soy una estudiante de Desarrollo Web que recientemente se adentró en el mundo de la tecnología y estoy
+                emocionada por seguir aprendiendo y profundizando en el tema.</p>
             <hr>
-        </div>
+            <div class="lista">
+                <ul>
+                    <li>🎓 Actualmente estoy estudiando Desarrollo Web en <a
+                            href="https://platzi.com/home"><strong>Platzi</strong> </a> e iniciando con el Bootcamp <a
+                            href="https://undefined.sh/aprende-a-programar/"><strong>Undefined Academy</strong> </a>
+                    </li>
+                    <li> 🌱 Me encanta aprender cosas nuevas y estoy interesada en explorar diferentes áreas de la
+                        tecnología. </li>
+                    <li>💻 En mi tiempo libre, disfruto practicar lo que aprendo mediante la creación de proyectos
+                        personales y me encantaría empezar a realizar proyectos colaborativos en línea. </li>
+                </ul>
+                <hr>
+            </div>
 
-    </article>
-    <article>
-        <h2>💻 Proyectos </h2>
-        <ul>
-            <li> Primeros pasos en Frontend <a href="https://quirogapau.github.io/proyecto-final-ticmas/"><strong>CV en
-                        proceso de construcción</strong></a>
-            </li>
-        </ul>
-    </article>
+        </article>
+        <article class="project">
+            <h2 class="title">💻 Proyectos </h2>
+            <ul>
+                <li> Primeros pasos en Frontend <a href="https://quirogapau.github.io/proyecto-final-ticmas/"><strong>CV
+                            en
+                            proceso de construcción</strong></a>
+                </li>
+            </ul>
+        </article>
+        <hr>
+    </section>
 
-</section>
+    <section class="form">
+
+        <main class="page">
+            <h2 class="title">Contactame</h2>
+            <!-- http://127.0.0.1:5500/index.html?budget=on Qué hace esto? Toma los atributos NAME: En este caso
+            http://localhost:5173/server?name=Paula&email=paulaquiroga1207%40gmail.com&budget=5000&type=2&description=dsgdgg&terms=on
+        El get pone todos los atributos de los formularios en la URL
+        El post los manda en el cuerpo de la petición -->
+            <form id="myForm" action="/server" method="get">
+                <div class="form-group">
+                    <!-- El atributo for(para) hace referencia para quien es el nombre y el atributo id le da una identificación unica. Conectar estos dos hace que se referencien el uno al otro 
+                El placeholder es como un texto de ayuda, es decir, se escribe lo que poner ingresar en el input-->
+                    <!-- Con html5 se puede hacer validación con el atributo required en el input -->
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+
+
+
+                <div class="form-group">
+                    <!-- Fieldset se refiere como a un grupo de controles -->
+                    <fieldset>
+                        <!-- legend(leyenda) es la descripción de este fieldeset -->
+                        <legend>Salario Ofrecido</legend>
+                        <input id="1000" name="budget" type="radio" value="1000" required> <label
+                            for="1000">$1.000</label>
+
+                        <input id="800" name="budget" type="radio" value="800"> <label for="800">$800</label>
+
+                        <input id="500" name="budget" type="radio" value="500"> <label for="500">$500</label>
+                    </fieldset>
+
+                    <div class="help">Este presupuesto es la base, no el total</div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select name="type" id="type" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="2">Website</option>
+                        <option value="3">Webapp</option>
+                        <option value="4">Mobile app</option>
+                        <option value="5">Diseño</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Modalidad de trabajo</label>
+                    <select name="type" id="type" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="2">Presencial</option>
+                        <option value="3">Hibrído</option>
+                        <option value="4">Remoto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripcion</label>
+                    <textarea name="description" id="description" rows="5"></textarea>
+                    <div class="help">Haz una descripción de la empresa y el proyecto en al menos 500 palabras</div>
+                </div>
+
+                <div class="form-group">
+                    <!-- Poner un input checkbox dentro de un label es un buen truco para poder usar el for e id -->
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>Acepto los términos y condiciones</span>
+                    </label>
+                </div>
+
+                <button class="boton">Enviar</button>
+
+            </form>
+        </main>
+    </section>
 
     <footer>
         <p>&copy; 2023</p>
