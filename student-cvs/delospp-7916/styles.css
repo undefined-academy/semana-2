@@ -19,5 +19,6 @@ h1, h2, strong {
 }
 
 a {
-    color: #fff;
+    color: #0f669c;
+    font-weight: 500;
 }
