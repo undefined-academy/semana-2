@@ -19,7 +19,6 @@ html {
 .sidebar {
   border: 2px dashed #B46060;
   border-radius: 8px;
-  flex-basis: 16.66%;
   background: #FFBF9B;
   display: flex;
   flex-flow: row wrap;
