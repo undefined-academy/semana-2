@@ -1,59 +1,94 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-
-body {
-    line-height: 1.5;
-    padding: 4em 1em;
-    font-size: 14px;
-    margin: 0 auto;
-    max-width: 50em;
-    border: 4px dashed orangered;
-    background: indigo;
-    color: papayawhip;
-    font-family: Roboto, Helvetica, sans-serif;
+html {
+  height: 100%;
+  box-sizing: border-box;
+  color: #4D4D4D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-div {
-    margin-left: 35px;
-    margin-right: 40px;
+* {
+  box-sizing: inherit;
 }
 
-p {
-    line-height: 1.1;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-blockquote {
-    font-style: italic;
+.sidebar {
+  border: 2px dashed #B46060;
+  border-radius: 8px;
+  flex-basis: 16.66%;
+  background: #FFBF9B;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.main-content {
+  border-radius: 8px;
+  background: #FFF4E0;
+  flex-basis: 100%;
+  
+}
+
+.main-content h2 {
+  color: #B46060;
+}
+
+.image-crop {
+  margin-top: 10px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  clip-path: circle(75px at center);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-crop img {
+  position: absolute;
+  /* adjust to show upper part of image */
+  top: -5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
-    color: rgb(156, 233, 3);
+  padding: 1em;
+  text-align: center;
+  background: #4D4D4D;
+  color: #FFF4E0;
+  border-radius: 4px;
 }
 
 h2 {
-    color: orangered;
-    margin-left: 25px;
-}
-table {
-    border: 4px dotted gold;
-    width: max-content;
+  margin: 10px 10px 10px 10px;
 }
 
-code,
-pre {
-  background: rebeccapurple;
+h3 {
+  margin-left: 10px;
 }
 
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
+.main-content p {
+  margin-left: 25px;
 }
 
-pre {
-  padding: 1em;
-  border-left: 2px solid #69c;
+.divider {
+  background: #B46060 ;
+  height: 5px;
+  width: 100%;
 }
 
-a {
-    color: papayawhip;
-    
-  }
+.section {
+  padding: 0.5em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
