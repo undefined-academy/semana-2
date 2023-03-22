@@ -51,10 +51,10 @@ padding: 20px;
 .form-group{
   display: flex;
 margin-bottom: 20px;
-justify-content: space-between;
+justify-content: center;
 }
-input{
-  min-width: 229px;
+input, textarea{
+  min-width: 350px;
 }
 
 button{
@@ -65,24 +65,32 @@ button{
 }
 .button{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 li{
   list-style-type:none;
   padding: 0;
 }
+.cont-form{
+  display: flex;
+ justify-content: center;
+ 
+ }
+ .form-group{
+  display: flex;
+  justify-content: space-between;
+  min-width: 450px;
+}
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:480px) {
+
   .form-group{
-    display: flex;
     flex-direction: column;
+    min-width: 350px;
   }
  input, textarea{
   max-width: 300px;
  }
- .cont-form{
-  display: flex;
-  justify-content: center;
- }
+
 }
