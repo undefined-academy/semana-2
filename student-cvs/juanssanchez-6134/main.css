@@ -13,6 +13,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 94%;
 }
 
 .sidebar {
@@ -23,6 +24,7 @@ html {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-items: center;
   text-transform: uppercase;
 }
 
@@ -38,7 +40,7 @@ html {
 }
 
 .image-crop {
-  margin-top: 10px;
+  margin-top: 20px;
   position: relative;
   width: 150px;
   height: 150px;
@@ -69,7 +71,7 @@ h1 {
 }
 
 h2 {
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px;
 }
 
 h3 {
@@ -78,6 +80,7 @@ h3 {
 
 .main-content p {
   margin-left: 25px;
+  margin-right: 32px;
 }
 
 .divider {
@@ -91,4 +94,24 @@ h3 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+}
+
+.footer {
+  margin-top: 10px;
+  background: #4D4D4D;
+  border-radius: 16px;
+  /* display: block; */
+  color: #FFF4E0;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px dotted #FFF4E0;
+}
+
+.footer p {
+  margin-top: 10px;
+}
+
+a {
+  color: #FFF4E0;
 }
