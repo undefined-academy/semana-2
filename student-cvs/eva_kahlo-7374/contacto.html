@@ -12,7 +12,9 @@
 <body>
     <main class="page">
         <h1>Contacto</h1>
-        <form action="/server" method="get">
+        <form action="/server" method="get" id="myform" onsubmit="return enviar();">
+            <label for="comando">Comando: </label>
+            <input type="text" id="comando" /><br />
             <div class="form-group">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" required>
@@ -56,7 +58,7 @@
 
         </form>
     </main>
-
+    <script src="/enviarForm.js"></script>
 </body>
 
 </html>
