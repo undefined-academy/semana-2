@@ -1,11 +1,16 @@
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
 }
 
 body {
   margin: 0 auto;
   background-color: #eee;
-  max-width: 56rem;
+  max-width: 60rem;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   padding: 4rem 1rem;
@@ -22,10 +27,10 @@ h1, h2, strong {
 h2, p {
   margin-top: 1rem;
   padding-top: 1rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 
-p, address {
+p, address, label {
   font-size: 2rem;
   color: #444;
 }
@@ -39,5 +44,75 @@ a {
   font-size: 2.4rem;
   margin-top: 1rem;
   text-decoration: none;
-  color: darkcyan;
+  color: #0e7490;
+  
+}
+
+footer p:first-child {
+  display: inline-block;
+}
+
+footer p:last-child {
+  margin-bottom: 4.4rem;
+}
+
+.form-group {
+  margin: 3.2rem 0;
+}
+
+label, input, textarea {
+  width: 100%;
+  vertical-align: middle;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.6rem;
+}
+
+input, textarea {
+  font-size: 2rem;
+  font-family: inherit;
+  background: #fff;
+  border: 1px solid lightgray;
+  border-radius: .4rem;
+  padding: .4rem .8rem;
+  color: #444;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid #0891b2;
+  outline: 2px solid #0891b2;
+}
+
+textarea {
+  resize: vertical;
+}
+
+form button {
+  padding: 1.6rem 6rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #155e75;
+  border-radius: .4rem;
+  background-color: #67e8f9;
+  color: #444;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+  text-shadow: -1px -1px 0 #a5f3fc;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #a5f3fc;
+  text-shadow: -1px -1px 0 #cffafe;
+}
+
+form button:active {
+  background: #06b6d4;
+  text-shadow: -1px -1px 0 #22d3ee;
+  box-shadow: none;
 }
