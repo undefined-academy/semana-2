@@ -33,7 +33,7 @@ textarea {
     resize: vertical;
 }
 
-label  {
+label input:not([type="radio"], [type="checkbox"]) {
     width: 100%;
 
 
