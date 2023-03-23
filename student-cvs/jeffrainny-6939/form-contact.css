@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dac9df;
+    
+}
+
+h1{
+    text-align: center;
+    padding: 5px;
+}
+
+.page {
+    background-color: papayawhip;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+}
+
+label, input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    display: block;
+
+}
+
+label, input{
+    vertical-align: middle;
+}
+
+textarea{
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+legend{
+    border: #444;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: black;
+}
+
+.group {
+    margin: 20px;
+}
+
+.help{
+    font-size: 10px;
+    margin-top: 5px;
+    color: gray;
+}
+
+button{
+    width: 100%;
+    margin: 12px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}

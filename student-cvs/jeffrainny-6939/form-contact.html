@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-contact.css">
+    <title>Contactame</title>
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contactame</h1>
+        <p class="help">Luego de hacer su solicitud, espere pacientemente mi respuesta.</p>
+                <div class="group">
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" required>
+                </div>
+                <div class="group">
+                    <label for="email">Correo</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="group">
+                    <label for="tel">Teléfono</label>
+                    <input id="tel" type="tel" required>
+                </div>
+                <div class="group">
+                    <legend>Presupuesto</legend>
+                    <input id="500" name="budget" type="radio">
+                    <label for="500">500 USD</label>
+
+                    <input id="1000" name="budget" type="radio">
+                    <label for="1000">1.000 USD</label>
+
+                    <input id="2000" name="budget" type="radio">
+                    <label for="2000">2.000 USD</label>
+                    </fieldset>
+                    <div class="help">Este presupuesto es la base, no el total.</div>
+                </div>
+                <div class="group">
+                    <label for="propuesta">Propuesta</label>
+            <textarea name="" id="" cols="55" rows="10"></textarea>
+            <div class="help">Escribe una descripcion del proyecto en al menos 500 palabras</div>
+                </div>
+                <button>Enviar</button>
+                <a href="index.html">Volver a la página principal</a>
+    </main>
+</body>
+
+</html>

@@ -47,10 +47,9 @@ footer{
 }
 a{
     text-decoration: none;
-    color: violet;
+    color: black;
 }
 
 a:hover{
-    color: black;
     font-size: 25px;
 }
