@@ -47,3 +47,9 @@ a {
   img:hover {
     background-color: #8a4abe;
   }
+
+  .pie{
+    font-size: 12px;
+    color: rgb(136, 136, 135);
+    text-align: center;
+  }
