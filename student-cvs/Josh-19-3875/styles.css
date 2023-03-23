@@ -1,0 +1,59 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+
+header h2 {
+    color: rgb(0, 106, 255);
+}
+
+header ul li {
+    text-decoration: underline;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+article code {
+    margin-top: 4rem;
+    /* margin-right: 1rem; */
+}
+
+section ul{
+    font-size: 1.7rem;
+}
+
+footer {
+    background-color: rgb(0, 106, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.3rem;
+}
