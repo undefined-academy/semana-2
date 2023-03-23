@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Contact</title>
- <link rel="stylesheet" href="/student-cvs/natsumychan-4117/contact.css">
-</head>
-<body>
- <h1>Contact</h1>
- <form action="/server" method="get">
-  <label for="name">Name</label>
-  <input type="text" id="name" required>
-  <label for="email">Email</label>
-  <input type="email" name="email" id="email"required>
-  <input type="datetime-local" name="meeting" id="">
-  <input type="button" value="Send">
- </form>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="/student-cvs/natsumychan-4117/contact.css" />
+	</head>
+	<body>
+		<h1>Contact</h1>
+		<form
+			action="/server"
+			method="get">
+			<label for="name">Name</label>
+			<input
+				type="text"
+				id="name"
+				required />
+			<label for="email">Email</label>
+			<input
+				type="email"
+				name="email"
+				id="email"
+				required />
+			<input
+				type="datetime-local"
+				name="meeting"
+				id="" />
+			<fieldset>
+				<legend>What is your favorite programming language?</legend>
+				<input
+					type="radio"
+					name="language"
+					id="javascript" />
+				<label for="javascript">JavaScript</label>
+				<input
+					type="radio"
+					name="language"
+					id="python" />
+				<label for="python">Python</label>
+				<input
+					type="radio"
+					name="language"
+					id="java" />
+				<label for="java">Java</label>
+				<input
+					type="radio"
+					name="language"
+					id="php" />
+				<label for="php">PHP</label>
+			</fieldset>
+   <label for="type">What type of project would you like to work next? </label> 
+			<select
+				name=""
+				id="type" required>
+				<option disabled>Choose one</option>
+				<option value="">Website</option>
+				<option value="">Webapp</option>
+				<option value="">Mobile app</option>
+				<option value="">Design</option>
+			</select>
+   <label for="description">Description</label>
+   <textarea name="" id="description" required></textarea>
+   <p>Make a brief description of the project, at least 500 words</p>
+   <label for="terms">
+    <input type="checkbox" name="" id="terms" checkbox>
+    <p>Agree terms and conditions</p>
+   </label>
+			<input
+				type="submit"
+				value="Send" />
+		</form>
+	</body>
 </html>
