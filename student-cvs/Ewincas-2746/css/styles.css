@@ -2,19 +2,18 @@
     HTML Y  *: reset de box-sizing 
 */
 
-
 html {
     box-sizing: border-box;
 }
- 
+
 * {
     box-sizing: inherit;
 }
 
 body {
     color: #EEEEEE;
-    background-color: #000;
-} 
+    background-color: #03001C;
+}
 
 .contact {
     font-size: 10px;
@@ -44,8 +43,8 @@ body {
     margin-top: 15px;
     /*display: flex;
     justify-content: center;
-    align-items: center;*/
-    
+    align-items: center;*/ 
+
 }
 
 .titles {
@@ -61,25 +60,27 @@ body {
 }
 
 .data {
-    font-size: 16px;
-    padding: 3px 3px ;
+    font-size: 20px;
+    padding:8px 22px;
     margin: 10px 10px;
     border: 4px solid rgb(246, 77, 40, 0.3);
     border-radius: 8px;
     text-decoration: none;
 }
 
-h2, h3 {
+h2,
+h3 {
     text-transform: uppercase;
 }
 
-.data a{
-    color: #205295;
+.data a {
+    font-weight: bold;
+    color: #78a2d8;
     text-decoration: none;
 }
 
 .data a:hover {
     color: #2C74B3;
-    font-size: 17px;
+    font-size: 21px;
     transition: .4s;
 }
