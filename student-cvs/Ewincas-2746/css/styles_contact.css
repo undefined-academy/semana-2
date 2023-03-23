@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/*
+    HTML Y  *: reset de box-sizing 
+*/
+
+html {
+    box-sizing: border-box;
+}
+ 
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: aliceblue;
+    background-color: #03001C;
+}
+
+.form-group {
+    margin: 15px 0px;
+}
+
+.main {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 0px 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    margin: 0px;
+}
+
+label, input:not([type='radio'],[type='checkbox']) {
+    width: 100%;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: lightgray;
+}
+
+input[type='text'], [type='email'] , textarea{
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+.descrip-textarea {
+    color: #777;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+button {
+    color: #333;
+    background: #E5E5CB;
+    font-size: 16px;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #3C2A21;
+    border-radius: 8px;
+    text-shadow: -2px -2px 0 rgb(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #D5CEA3;
+}
+
+button:active {
+    background: #b9b287;
+    box-shadow: 1px 1px rgb(0, 0, 0, 0.5);
+}
+
+label::placeholder {
+    background-color: aqua;
+}
+.back {
+    color: #777;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.back:hover {
+    color: #fff;
+    font-size: 12px;
+    transition: .5s;
+}
+
+.foother {
+    margin-top: 10px;}

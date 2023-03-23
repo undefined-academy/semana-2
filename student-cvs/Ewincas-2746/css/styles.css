@@ -1,0 +1,85 @@
+/*
+    HTML Y  *: reset de box-sizing 
+*/
+
+
+html {
+    box-sizing: border-box;
+}
+ 
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #EEEEEE;
+    background-color: #000;
+} 
+
+.contact {
+    font-size: 10px;
+    color: #777;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 8px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact:hover {
+    font-size: 12px;
+    color: #fff;
+    transition: .2s;
+
+}
+
+.header {
+    color: #fff;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*background:linear-gradient(#5e1616, #462323);*/
+    margin-top: 15px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    
+}
+
+.titles {
+    position: absolute;
+    margin: 6% 40% 0% 5%;
+}
+
+.image {
+    width: 300px;
+    position: relative;
+    left: 55%;
+    background-color: #777;
+}
+
+.data {
+    font-size: 16px;
+    padding: 3px 3px ;
+    margin: 10px 10px;
+    border: 4px solid rgb(246, 77, 40, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+}
+
+.data a{
+    color: #205295;
+    text-decoration: none;
+}
+
+.data a:hover {
+    color: #2C74B3;
+    font-size: 17px;
+    transition: .4s;
+}
