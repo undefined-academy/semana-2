@@ -21,7 +21,7 @@ strong {
 a {
   color: cyan;
 }
-.stack-section {
+#stack-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,4 +45,37 @@ a {
 }
 .stack-tech {
   display: flex;
+}
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact-section > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+#contact-section > form textarea,
+input {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+#contact-section > form > button {
+  padding: 4px;
+  color: white;
+  background-color: #000;
+  border-radius: 5px;
+}
+#contact-section > form > button:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+.contact-form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
