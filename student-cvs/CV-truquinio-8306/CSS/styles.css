@@ -1,8 +1,15 @@
-html{
-  background-color:  #212429;;
+html {
+  box-sizing: border-box;
+  background-color: #212429;
+  ;
 }
 
-body{
+* {
+  box-sizing: inherit;
+}
+
+
+body {
   max-width: 1600px;
   margin: 100px auto;
 }
@@ -14,7 +21,8 @@ body{
 .about,
 .rrss,
 .tech,
-.buttons{
+.buttons,
+.form {
   padding: 10px 300px;
   text-align: justify;
 
@@ -22,22 +30,130 @@ body{
 }
 
 .title,
-.subtitle{
+.subtitle {
   color: #fff;
+  text-align: center;
+
+  margin: 20px;
+}
+
+.tecnologias {
+  display: inline-block;
+  justify-content: center;
+}
+
+.item {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px 0;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+label,
+input:not([type="radio"],
+  [type="checkbox"]) {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: #3c3d40;
+  border: 1px solid #3c3d40;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: #ebebeb;
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  resize: vertical;
+}
+
+label,
+.presupuesto {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ebebeb;
+
+  padding: 10px 0 0 0;
+}
+
+.fieldset {
+  display: flex;
+  align-content: center;
+}
+
+.select {
+  border-radius: 5px;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #81838a;
+
+  text-align: center;
+}
+
+.boton {
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  margin: 30px auto 30px auto;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+
+  background: #e48c0d;
+  border: 1px solid #e48c0d;
+  border-radius: 8px;
+  padding: 16px 60px;
+
+  cursor: pointer;
+}
+
+.boton:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+.boton:active {
+  background: #db4932;
+  border: 1px solid #db4932;
+  transition: 1s;
+}
+
+.rrss {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.item {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 footer,
-footer a{
+footer a {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-
-  padding: 50px auto;
-
+  padding: 50px auto 0 0;
   background: #212429;
 }
 
-footer a:hover{
-  color: #ffe600;
+footer a:hover {
+  color: #e48c0d;
   transition: 0.2s;
 }
