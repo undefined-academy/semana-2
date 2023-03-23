@@ -414,6 +414,10 @@ button:hover {
         color: #2F004F;
     }
 
+    .nav-ul a:hover {
+        color: #7D5597;
+    }
+
     .mobile-nav {
         display: none;
     }
