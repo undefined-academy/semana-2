@@ -47,9 +47,6 @@ a:hover {
     color: #c7c6c6;
 }
 
-
-
-
 .principal {
     height: 100vh;
     display: flex;
@@ -61,12 +58,25 @@ a:hover {
     font-size: 20px;
 }
 
+.intro p{
+    padding-top: 20px;
+}
+
 .me {
     height: 100vh;
     font-weight: 400;
     display: flex;
-    gap: 2rem;
     flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+.img-principal {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 350px;
+    
 }
 
 .content-academy {
@@ -81,7 +91,16 @@ ul {
 }
 
 img {
-    width: 80px;
+    width: 70px;
+}
+
+.cotent-t-img-logo {
+    padding-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 .tech {
