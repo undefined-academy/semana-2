@@ -33,7 +33,7 @@
             <li><a href="#profile">¿Quien soy?</a></li>
             <li><a href="#skills">Habilidades</a></li>
             <li><a href="#training">Formación</a></li>
-            
+            <li><a href="#contact">Contáctame</a></li>
         </ul>
     </nav>
     <main>
@@ -106,9 +106,32 @@
             
         </article>
         
-
+        <article id="contact" class="contact">
+            <h2 class="title"><i class="fa-solid fa-greater-than"></i>  Contáctame</h2><hr class="sub-t">
+            <section>
+                <h2>Dejame un Mensaje 👍📧</h2>
+                <form action="#" method="get" class="form-contact">
+                    <div class="form-group" id="fg1">
+                        <label for="name_c"><i class="fa-solid fa-person"></i> Nombre</label><br>
+                        <input type="text" id="name_c" placeholder="Escriba su nombre" required>
+                    </div>
+                    <div class="form-group" id="fg2">
+                        <label for="email_c"><i class="fa-regular fa-envelope"></i> Correo</label><br>
+                        <input type="email" id="email_c"  placeholder="ejemplo@gmail.com" required>
+                    </div>
+                    <div class="form-group" id="fg3">
+                        <label for="comment_c"><i class="fa-regular fa-comment"></i> Comentario</label><br>
+                        <textarea id="comment_c" placeholder="Coloque su comentario" required></textarea>
+                    </div>
+                    <button type="submit" id="btn-enviar">Enviar comentario</button>
+                </form>
+            </section>
+        </article>
     </main>
-    
-    <script src="https://kit.fontawesome.com/f6010e987c.js" crossorigin="anonymous"></script>       
+    <footer>
+       <p>Desarrollado por Ever Montero ©</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/f6010e987c.js" crossorigin="anonymous"></script>     
+    <script src="./js/code.js"></script>  
 </body>
 </html>

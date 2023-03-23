@@ -154,17 +154,21 @@ strong, b{
     color: rgb(31, 31, 31);
 }
 
-#profile, #skills, #training {
+#profile, #skills, #training, #contact {
     padding-top: 20vh;
     height: 100vh;
     margin: auto 0;
     font-family:  var(--font-art),Arial, Helvetica, sans-serif;
-    scroll-snap-align: start;
 }
 
 main{
     margin: 0 auto;
     width: 73%;
+    scroll-snap-align: start;
+}
+
+footer{
+    scroll-snap-align: start;
 }
 
 .title{
@@ -473,18 +477,125 @@ main{
     margin-bottom: 40px;
 }
 
-@media (max-width: 1000px){
-    .profile-img{
-        display: none;
-    }
-
-    .hobbies i{
-        display: none;
-    }
+.contact section{
+    margin: 30px 20px 10px 20px;
+    padding: 20px;
+    border: #d7da56 3px solid;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: .2s;
 }
 
-@media (max-width: 1115px){
-    .hobbies{
+.contact section:hover{
+    box-shadow: 0.3em 0.7em 0.7em -0.5em #f6f893;
+    transform: translateY(-0.26em);
+    border: #f6f893  3px solid;
+    transition: .2s;
+}
+
+.contact section h2{
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.form-group *{
+    margin-bottom: 15px;
+}
+
+#fg1{
+    grid-area: fg1;
+}
+
+#fg2{
+    grid-area: fg2;
+}
+
+#fg3{
+    grid-area: fg3;
+}
+
+#btn-enviar{
+    grid-area: fg4;
+} 
+
+.contact form{
+   display: grid;
+   grid-template-areas: 
+   "fg1 fg2" 
+   "fg3 fg3"
+   "fg4 fg4";
+}
+
+.contact input{
+    padding: 10px 20px;
+    background-color: var(--color-normal);
+    color: #fff;
+    border-radius: 25px;
+    border: #f6f893 3px solid;
+    width: 90%;
+    font-family: var(--font-nerd),Arial, Helvetica, sans-serif;
+    letter-spacing: .8px;
+    font-size: medium;
+    transition: .2s;
+}
+
+.contact input::placeholder{
+    color: #ffffffc5;
+}
+
+.contact input:focus {
+    outline: none;
+    box-shadow: 0.3em 0.6em 0.6em -0.5em #eaec6d;
+}
+
+.contact textarea{
+    height: 100px;
+    width: 99%;
+    font-size: medium;
+    padding: 10px 20px;
+    font-family: var(--font-nerd),Arial, Helvetica, sans-serif;
+    letter-spacing: .8px;
+    border:#0e81c4 3px solid;
+    background-color: #0A192F;
+    border-radius: 20px;
+    color: #fff;
+    resize: none;
+    transition: .2s;
+}
+
+.contact textarea:focus{
+    outline: none;
+    box-shadow: 0.3em 0.6em 0.6em -0.5em #0e81c4;
+}
+
+.contact textarea::placeholder{
+    color: #ffffffc5;
+}
+
+#btn-enviar{
+    margin: 9px auto 9px auto;
+    padding: 10px 20px;
+    background-color: #5809be;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn-enviar:hover{
+    background-color: #c09bf1;
+    color: #000;
+    box-shadow: 0.3em 0.6em 0.6em -0.5em #c09bf1;
+}
+
+footer{
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*INTENTO DE DISEÑO RESPONSIVO JAJA*/
+
+@media (max-width: 1000px){
+    .hobbies i{
         display: none;
     }
 }
@@ -492,6 +603,94 @@ main{
 @media (max-width: 1150px){
     .skills section ul li{
         font-size: smaller;
+    }
+}
+
+@media (min-width: 1600px){
+    header{
+        zoom: 150%;
+    }
+
+    #profile, #skills, #training, #contact{
+        zoom: 130%;
+    }
+
+    .navbar{
+        zoom: 120%;
+    }
+    
+}
+
+@media (min-width: 1900px){
+    header{
+        zoom:150%;
+    }
+
+    #profile, #skills, #training, #contact{
+        zoom: 150%;
+    }
+
+    .navbar{
+        zoom: 150%;
+    }
+}
+
+@media (min-width: 3000px){
+    header{
+        zoom:250%;
+    }
+
+    #profile, #skills, #training, #contact{
+        zoom: 200%;
+    }
+
+    .navbar{
+        zoom: 170%;
+    }
+}
+
+@media (max-width: 910px){
+    header{
+        zoom:80%;
+    }
+
+    main{
+        zoom: 85%;
+    }
+    .navbar{
+        zoom: 80%;
+    }
+}
+
+@media (max-width: 750px){
+    header{
+        zoom:60%;
+    }
+
+    main{
+        zoom: 65%;
+    }
+    .navbar{
+        zoom: 60%;
+    }
+}
+
+@media (max-width: 555px){
+    header{
+        zoom:40%;
+    }
+
+    main{
+        zoom: 45%;
+    }
+    .navbar{
+        zoom: 40%;
+    }
+    .profile-img{
+        display: none;
+    }
+    .hobbies{
+        display: none;
     }
 }
 
