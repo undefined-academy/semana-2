@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Pugliese</title>
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,6 @@
             <div class="dark-ligth-mode">
                 <span>🌙</span>
             </div>
-    
         </header>
     
         <main id="home">
@@ -49,11 +48,9 @@
         </main>
     
         <section id="about" class="about">
-            <article class="about-description">
-                <h2>Sobre mi 🙋‍♂️</h2>
-                <p>Nací el 6 de Febrero de 1999 en Argentina. Apasionado por la tecnología desde muy joven y de la programación desde que me adentre en el mundo de forma autodidacta. Considero que la mejor herramienta es el conocimiento de uno mismo, mi mayor motivación es seguir aprendiendo, fortaleciendo mi desarrollo personal y profesional.</p>
-            </article>
-    
+            <h2>Sobre mi 🙋‍♂️</h2>
+            <p>Nací el 6 de Febrero de 1999 en Argentina. Apasionado por la tecnología desde muy joven y de la programación desde que me adentre en el mundo de forma autodidacta. Considero que la mejor herramienta es el conocimiento de uno mismo, mi mayor motivación es seguir aprendiendo, fortaleciendo mi desarrollo personal y profesional.</p>
+            
             <article class="about-social">
                 <h3>Contacto</h3>
                 <p>Puedes contactarme a través de los siguientes medios o bien desde el formulario de <a class="p-contact" href="#contact">contacto.</a></p>
@@ -95,7 +92,7 @@
                 <article class="projects-names">
                     <h3>Pugliese & Asociados</h3>
                     <p>Proyecto real sobre una PYME familiar de Seguros Generales.</p>
-                    <img src="images/pya-page.png" alt="Imagen de proyecto">
+                    <img src="images/pya-page.png" alt="Proyecto 1">
                     <div class="tools">
                         <small class="html">HTML</small>
                         <small class="css">CSS</small>
@@ -110,22 +107,7 @@
                 <article class="projects-names">
                     <h3>IPCoffees</h3>
                     <p>Proyecto Ficticio de simulación de carrito de compras sobre una tienda de Café y Tortas.</p>
-                    <img src="images/ipcoffees-page.png" alt="Imagen de proyecto">
-                    <div class="tools">
-                        <small class="html">HTML</small>
-                        <small class="css">CSS</small>
-                        <small class="js">JavaScript</small>
-                    </div>
-                    <div class="demo-repo">
-                        <a href="https://ivan-pugliese.github.io/project-coderhouse-js/"> <span class="jam jam-share"></span> Demo</a>
-                        <a href="https://github.com/ivan-pugliese/project-coderhouse-js"><span class="jam jam-github"></span> Repositorio</a>
-                    </div>
-                </article>
-
-                <article class="projects-names">
-                    <h3>IPCoffees</h3>
-                    <p>Proyecto Ficticio de simulación de carrito de compras sobre una tienda de Café y Tortas.</p>
-                    <img src="images/ipcoffees-page.png" alt="Imagen de proyecto">
+                    <img src="images/ipcoffees-page.png" alt="Proyecto 2">
                     <div class="tools">
                         <small class="html">HTML</small>
                         <small class="css">CSS</small>
@@ -153,7 +135,7 @@
                 </div>
                 <div class="form-group">
                     <label for="description">Escribe tu mensaje</label>
-                    <textarea name="description" id="" cols="30" rows="10" required></textarea>
+                    <textarea name="description" id="description" cols="30" rows="10" required></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
@@ -167,36 +149,36 @@
 
     <div class="mobile-nav">
         <ul class="mobile-nav-ul">
-            <div class="ul-items">
+            <li class="mobile-nav-li">
+                <span class="jam jam-home"></span>
                 <a href="#home">
-                    <span class="jam jam-home"></span>
-                    <li>Inicio</li>
+                    Inicio
                 </a>
-            </div>
+            </li>
             
-            <div class="ul-items">
+            <li class="mobile-nav-li">
+                <span class="jam jam-user"></span>
                 <a href="#about">
-                    <span class="jam jam-user"></span>
-                    <li>Sobre mi</li>
+                    Sobre mi
                 </a>
-            </div>
-
-            <div class="ul-items">
+            </li>
+               
+            <li class="mobile-nav-li">
+                <span class="jam jam-star"></span>
                 <a href="#projects">
-                    <span class="jam jam-star"></span>
-                    <li>Proyectos</li>
+                    Proyectos
                 </a>
-            </div>
-
-            <div class="ul-items">
+            </li>
+                
+            <li class="mobile-nav-li">
+                <span class="jam jam-google"></span>
                 <a href="#contact">
-                    <span class="jam jam-google"></span>
-                    <li>Contacto</li>
+                    Contacto
                 </a>
-            </div>
+            </li>  
         </ul>
     </div>
 
-    <script src="main.js"></script>
+    <script type="module" src="/main.js"></script>
 </body>
 </html>

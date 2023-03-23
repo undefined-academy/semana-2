@@ -1,7 +1,6 @@
-const form = document.getElementById("form");
-
-function deleteEvent(event) {
-    event.preventDefault();
-}
-
-form.addEventListener("submit", deleteEvent);
+function handleSubmit(event) {
+    event.preventDefault(); //
+    console.log("Hola mundo");
+   }
+   const $form = document.querySelector("form");
+   $form.addEventListener("submit",handleSubmit);

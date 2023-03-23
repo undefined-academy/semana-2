@@ -135,7 +135,7 @@ main {
     color: #2F004F;
 }
 
-.about-description, .about-social {
+.about-social {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -357,7 +357,7 @@ button:hover {
 }
 
 
-.ul-items a{
+.mobile-nav-li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -365,11 +365,15 @@ button:hover {
     gap: 0.3rem;
 }
 
-.ul-items a:hover {
+.mobile-nav-li a {
+    color: #2F004F;
+}
+
+.mobile-nav-li a:hover {
     color: #7D5597;
 }
 
-.ul-items span {
+.mobile-nav-li span {
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -404,6 +408,10 @@ button:hover {
         font-weight: bold;
         list-style-type: none;
         cursor: pointer;
+    }
+
+    .nav-ul a {
+        color: #2F004F;
     }
 
     .mobile-nav {
