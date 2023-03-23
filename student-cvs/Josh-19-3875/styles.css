@@ -2,6 +2,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(221, 221, 221, 0.858);
 }
 
 header {
