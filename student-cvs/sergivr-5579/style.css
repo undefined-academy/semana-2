@@ -7,49 +7,76 @@ html {
 }
 
 body {
-  font-family: "Helvetica", "Arial";
-  margin: 0 auto;
-  line-height: 1.5;
-  background-color: antiquewhite;
+  background-color: #ffa491;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.card-item-0 {
-  grid-area: presentacio;
-}
-.card-item-1 {
-  grid-area: hoja-vida;
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
+
+  background-color: #fec9bf;
+  padding: 2%;
+  border-style: dashed;
+  border-color: violet;
 }
 
-.card-item-2 {
-  grid-area: propositos;
+.item-1 {
+  grid-area: header;
+  text-align: center;
 }
 
-.card-item-3 {
-  grid-area: experiencia;
+.item-2 {
+  grid-area: main;
+  text-align: justify;
 }
 
-.card-item-4 {
-  grid-area: consultas;
+.item-3 {
+  grid-area: exp;
+  text-align: center;
 }
-.card-item-5 {
-    grid-area: footer;
+
+.item-4 {
+  grid-area: props;
+  text-align: center;
+
 }
+
+.item-5 {
+  grid-area: form;
+  text-align: center;
+
+}
+
+.item-6 {
+  grid-area: footer;
+  text-align: center;
+
+}
+
 .container {
-  border: 2px dashed cornflowerblue;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  ". presentacio . ."
-  "hoja-vida propositos experiencia consultas"
-  ". footer footer .";
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    ". header ."
+    "main main main"
+    "exp props form"
+    "exp props form"
+    "footer footer footer"
+  ;
+  grid-gap: 20px;
+  justify-content: space-evenly;
 }
 
-.card-item-0,
-.card-item-1,
-.card-item-2,
-.card-item-3,
-.card-item-4,
-.card-item-5 {
-  border: 2px dashed rebeccapurple;
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
 }
