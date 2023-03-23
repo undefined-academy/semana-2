@@ -126,6 +126,11 @@ main > section{
   text-align: center;
 }
 
+input:focus-visible, textarea:focus-visible {
+  outline: 1px solid #E1E018;
+  border: 1px solid #F7DA03;
+}
+
 .contact-withme{
   margin: 5em;
 }
