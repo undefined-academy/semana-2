@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan Pablo Addeo | Perfil</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <main>
@@ -14,7 +14,7 @@
         <img
           src="https://raw.githubusercontent.com/jpaddeo/jpaddeo/output/github-contribution-grid-snake.svg#gh-light-mode-only"
           alt="commits snake light"
-        >
+        />
         <p>
           <i
             >_generated with
@@ -63,7 +63,7 @@
           </li>
         </ul>
       </div>
-      <section class="stack-section">
+      <section id="stack-section">
         <h2 class="stack-title">stack</h2>
         <div class="stack-container">
           <div class="stack-tech">
@@ -72,19 +72,19 @@
               height="40"
               width="52"
               alt="javascript logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
               height="40"
               width="52"
               alt="typescript logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
               height="45"
               width="52"
               alt="php logo"
-            >
+            />
           </div>
           <div class="stack-tech">
             <img
@@ -92,32 +92,32 @@
               height="40"
               width="52"
               alt="react logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
               height="40"
               width="52"
               alt="nodejs logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
               height="40"
               width="52"
               alt="nextjs logo"
               style="background-color: #dddddd"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain-wordmark.svg"
               height="40"
               width="52"
               alt="nestjs logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
               height="40"
               width="52"
               alt="laravel logo"
-            >
+            />
           </div>
           <div class="stack-tech">
             <img
@@ -125,25 +125,25 @@
               height="45"
               width="52"
               alt="mysql logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg"
               height="40"
               width="52"
               alt="postgresql logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
               height="45"
               width="52"
               alt="mongodb logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
               height="40"
               width="52"
               alt="firebase logo"
-            >
+            />
           </div>
           <div class="stack-tech">
             <img
@@ -151,35 +151,72 @@
               height="45"
               width="52"
               alt="docker logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
               height="45"
               width="52"
               alt="apache logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
               height="45"
               width="52"
               alt="nginx logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original-wordmark.svg"
               height="40"
               width="52"
               alt="gitlab logo"
-            >
+            />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
               height="40"
               width="52"
               alt="github logo"
               style="background-color: #dddddd"
-            >
+            />
           </div>
         </div>
       </section>
+      <footer id="contact-section">
+        <h2 class="stack-title">CONTACTO</h2>
+        <form>
+          <div class="contact-form-control">
+            <label for="fullname">Nombre Completo</label>
+            <input
+              id="fullname"
+              name="fullname"
+              type="text"
+              placeholder="Juan Martin Pérez"
+              required
+            />
+          </div>
+          <div class="contact-form-control">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="lala@lala.com"
+              required
+            />
+          </div>
+          <div class="contact-form-control">
+            <label for="motivo">Motivo</label>
+            <textarea
+              id="motivo"
+              name="motivo"
+              placeholder="¡Quiero contratarte!"
+              required
+              rows="5"
+            ></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </footer>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
