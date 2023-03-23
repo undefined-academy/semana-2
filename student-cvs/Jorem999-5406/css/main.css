@@ -34,12 +34,12 @@ header img {
 }
 
 header h1 {
-  color: rgb(255, 214, 214);
+  color: rgb(218, 124, 1);
   font-size: 3em;
 }
 
 header h2 {
-  color: rgb(255, 179, 179);
+  color: rgb(255, 205, 139);
   font-size: 2em;
 }
 
@@ -50,18 +50,16 @@ header h3 {
   text-align: center;
   font-size: medium;
   line-height: 14px;
-
 }
 
 a {
-  color: hsl(0, 93%, 82%);
+  color: hsl(0, 100%, 17%);
 
 }
 
 a:visited {
-  color: #a393ff;
+  color: #fcb6b6;
   text-align: center;
-  margin-left: 10px;
 }
 
 img {
@@ -82,7 +80,16 @@ h1 {
 h2 {
   margin-left: 5%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid rgb(255, 224, 224);
+  background-color: #4e2323;
+  font-size: 12px;
+  list-style-type: none;
+  padding: 4px;
 }
 
 ol,
@@ -108,7 +115,7 @@ hr {
 }
 
 footer {
-  text-align: center;
-  padding-top: 1.5em;
-  margin: 20px;
+  text-align: right;
+  padding-top: 1.4em;
+  margin: 50px;
 }
