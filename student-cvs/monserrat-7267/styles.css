@@ -99,31 +99,3 @@ button:active {
 }
 
 
-.container {
-    margin: 16px;
-    padding: 32px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.blogpost h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 24px;
-    justify-content: center;
-}
-
-.blogpost {
-    background-color: rgb(247, 249, 251);
-    display: flex;
-    margin: 16px;
-    padding: 24px;
-    border-radius: 16px;
-}
-
- .blogpost img {
-    width: 100%;
-    height: 100%;
-    
- }
