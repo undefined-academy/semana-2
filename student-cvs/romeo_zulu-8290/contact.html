@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="/prueba/index.html">Home</a></li>
+                <li class="nav-item"><a href="/prueba/form.html">Form</a></li>
+            </ul>
+        </nav>
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h1 class="logo">Contac<span> Us</span></h1>
+                <form action="/myserver" method="get">
+                    <p>
+                        <label>FullName</label>
+                        <input type="text" name="fullname" required>
+                    </p>
+                    <p>
+                        <label>Email Adress</label>
+                        <input type="email" name="email" requiered>
+                    </p>
+                    <p class="phone">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" required>
+                    </p>
+                    <p class="block">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" required rows="6"></textarea>
+                    <div class="coment">Please write a comment.</div>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Send
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Puerto Madryn, Chubut, Argentina.</li>
+                    <li><i class="fas fa-phone"></i> (-54) 2804 333 333</li>
+                    <li><i class="fas fa-envelope-open-text"></i>contact@website.com</li>
+                </ul>
+                <p>For more information, please visit us on our website, call by phone or come personally to our
+                    shopping center</p>
+                <div class="site"><a href="https://github.com/Romeo-Zulu" target="_blank">WebSite.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

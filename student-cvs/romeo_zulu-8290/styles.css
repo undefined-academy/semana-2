@@ -1,89 +1,59 @@
 html {
     box-sizing: border-box;
+    padding: 1%;
 }
 
 * {
     box-sizing: inherit;
+
 }
 
-.top-header {
-    grid-area: header;
+body {
+    max-width: 1024px;
     background-image: url(https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    padding: 0 1.5em;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
-    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
-.full {
+.wrapper {
+    max-width: 1024px;
+    box-shadow: 10px 10px 20px 0 rgba(14, 13, 13, 0.753);
+    color: #0e0d0d;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
     display: grid;
-    grid-template-areas:
-        "header  header  header"
-        "sidebar content content"
-        "footer  footer  footer";
-    color: #181724;
-    justify-content: space-between;
+    background: #922ae700;
+    justify-content: center;
     background-image: url(https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    gap: 0.1rem;
-}
-
-.sidebar {
-    grid-area: sidebar;
-    margin: 10px;
-    padding: 2%;
-    border-radius: 5px;
-    background: rgb(111, 232, 204);
-    background: linear-gradient(320deg, rgba(111, 232, 204, 1) 0%, rgba(184, 233, 224, 0.8454569327731092) 60%, rgba(200, 235, 233, 0.36086309523809523) 100%);
-}
-
-.content {
-    grid-area: content;
-    margin: 10px;
-    padding: 2%;
-    border-radius: 5px;
-    background: rgb(111, 232, 204);
-    background: linear-gradient(45deg, rgba(111, 232, 204, 1) 0%, rgba(184, 233, 224, 0.8454569327731092) 40%, rgba(200, 235, 233, 0.36086309523809523) 100%);
-}
-
-.footer {
-    grid-area: footer;
-    padding: 2%;
-    margin: 10px;
-    grid-gap: 10px;
-    border-radius: 5px;
-    background: rgb(111, 232, 204);
-    background: linear-gradient(90deg, rgba(111, 232, 204, 0.9066001400560224) 0%, rgba(184, 233, 224, 0.6376925770308124) 72%, rgba(202, 235, 233, 0.4640231092436975) 100%);
-    line-height: 30%;
-}
-
-.circular--square {
-    border-radius: 50%;
-    border-style: groove;
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 5%;
-}
-
-.name {
-    text-align: center;
-    font-size: 202%;
+    background-position: center;
 }
 
 .title {
-    text-align: center;
-    text-decoration-line: underline;
-    margin-bottom: auto;
+    justify-self: center;
+    
+}
+
+.logo {
+    border-radius: 50%;
+    border-style: groove;
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px #706c6c62;
+
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 50px;
     text-transform: uppercase;
     font-family: 'Gambetta', serif;
     letter-spacing: -3px;
@@ -91,10 +61,9 @@ h1 {
     font-variation-settings: "wght" 311;
     margin-bottom: 0.8rem;
     color: rgb(243, 243, 241);
-    text-align: center;
     -webkit-text-stroke: 1px black;
     text-shadow: 0px 2px 5px rgb(0, 5, 32);
-    margin-top: 1%;
+
 }
 
 h1:hover {
@@ -103,41 +72,130 @@ h1:hover {
 }
 
 h2,
-nav {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h3 {
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a:link,
-a:visited,
-a:focus {
-    background: rgba(205, 243, 255, 0);
-    color: rgb(36, 34, 34);
-}
-
-a:hover {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 2555px;
-    color: rgba(255, 255, 255, 0.829);
-    font-size: 0.8em;
-    padding: 0.1em 0.2em;
-    text-transform: uppercase;
+.title {
     text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-    text-shadow: 0px 1px 2px rgb(0, 0, 0);
-    text-decoration-style: solid;
+    color: #8c09f7;
+    
 }
 
-a:active {
-    background: rgb(75, 135, 212);
-    color: rgb(241, 232, 232);
+nav {
+    background-color: #922ae7;
+    display: grid;
+    position: sticky;
+    top: 0;   
+    cursor: hand;
+    cursor: pointer;
+    justify-content: center;
+
 }
 
-section {
-    display: block;
+.nav-links {
+    list-style: none;
+    display: flex;
+
 }
 
-.menu {
-    text-size-adjust: 1px;
+.nav-item a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
+.nav-item:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.nav-item:hover a {
+    color: rgb(70, 64, 64);
+}
+
+.features {
+    display: grid;
+
+}
+
+.main {   
+    background: #222222;
+    color: #e7e1e1;
+    padding: 10px;
+
+}
+
+aside {    
+    background: #922ae7;
+    padding: 10px;
+    color: #e7e1e1;
+} 
+
+ul,
+ol, li {
+    font-size: 15px;    
+    background-repeat: no-repeat;
+}
+
+footer {
+    display: flex;    
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #dfd5d5;
+    list-style: none;
+    overflow: hidden;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+.f-links {
+    list-style: none;
+    display: flex;
+
+}
+
+.f-items a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s linear;
+    opacity: 1;
+    
+}
+
+.f-items:hover {
+    background-color: rgb(237, 232, 243);
+    border-radius: 10px;
+    border: #e7e1e1;
+}
+
+.f-items:hover a {
+    color: rgb(39, 35, 35);
+}
+
+@media screen and (min-width: 768px) {
+
+    .features {
+        display: flex;
+    }
+
+    .features {
+        height: 100%;
+
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0%;
+    }
 }

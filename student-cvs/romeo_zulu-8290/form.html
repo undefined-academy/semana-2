@@ -3,67 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="style-form.css">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
 <body>
-    <section>
-        <main class="page">
-            <h1>Excursion Form reservation</h1>
-            <article>
+
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="/prueba/index.html">Home</a></li>
+                <li class="nav-item"><a href="/prueba/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h1 class="logo">FORM</h1>
                 <form action="/myserver" method="get">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" placeholder="Your full name here" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="text" placeholder="Your email address here" required>
-                    </div>
-                    <div class="form-group">
-                        <fieldset class="field">
-                            <legend>Excursion</legend>
-                            <input id="trekking" name="budget" type="radio" value="trekking"><label
-                                for="trekking">Trekking</label>
-                            <input id="snorkeling" name="budget" type="radio" value="snorkeling"><label
-                                for="snorkeling">Snorkeling</label>
-                            <input id="whale watching" name="budget" type="radio" value="whale watching"><label
-                                for="whale watching">Whale watching</label>
-                        </fieldset>
-                    </div>
-                    <div class="form-group">
-                        <label for="type">Classes</label>
+                    <p>
+                        <label>FullName</label>
+                        <input type="text" name="fullname" required>
+                    </p>
+                    <p>
+                        <label>Email Adress</label>
+                        <input type="email" name="email" requiered>
+                    </p>
+                    <p class="phone">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" required>
+                    </p>
+                    <p class="block">
+                    <fieldset class="field">
+                        <legend>Excursion</legend>
+                        <input id="trekking" name="budget" type="radio" value="trekking"><label
+                            for="trekking">Trekking</label>
+                        <input id="snorkeling" name="budget" type="radio" value="snorkeling"><label
+                            for="snorkeling">Snorkeling</label>
+                        <input id="whale watching" name="budget" type="radio" value="whale watching"><label
+                            for="whale watching">Diving</label>
+                    </fieldset>
+                    </p>
+                    <p class="block">
                         <select id="type" name="type" required>
                             <option disabled selected value="">Choose a Classe</option>
                             <option value="basic">Basic</option>
                             <option value="premium">Premium</option>
                             <option value="platino">Platinum</option>
                         </select>
-                    </div>
-                    <div class="form-group">
+                    </p>
+                    <p class="block">
                         <label for="comment">Comment</label>
-                        <textarea id="comment" name="comment" required rows="8"></textarea>
-                        <div class="comment">Please write a comment.
-                        </div>
-                        <div class="form-group">
-                            <label for="terms">
-                                <input id="terms" name="terms" type="checkbox" required>
-                                <span>I accept the terms and conditions.</span>
-                            </label>
-                        </div>
+                        <textarea id="comment" name="comment" required rows="6"></textarea>
+                    <div class="coment">Please write a comment.</div>
+                    </p>
+                    <p class="block">
+                    <div class="checkbox-wrapper-33">
+                        <label class="checkbox">
+                            <input class="checkbox__trigger visuallyhidden" type="checkbox" requiered />
+                            <span class="checkbox__symbol">
+                                <svg aria-hidden="true" class="icon-checkbox" width="28px" height="28px"
+                                    viewBox="0 0 28 28" version="1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 14l8 7L24 7"></path>
+                                </svg>
+                            </span>
+                            <p class="checkbox__textwrapper">I accept the terms and conditions.</p>
+                        </label>
                     </div>
-                    <div class="form-group">
-                        <label for="date">reservation date:</label>
+                    </p>
+                    <p class="block">
+                        <label for="date">Reservation date:</label>
                         <input type="date" id="date" name="date" required>
-                    </div>
-                    <button class="button-1" role="button">Send</button>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Send
+                        </button>
+                    </p>
                 </form>
-            </article>
-        </main>
-    </section>
+            </div>
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Puerto Madryn, Chubut, Argentina.</li>
+                    <li><i class="fas fa-phone"></i> (-54) 2804 333 333</li>
+                    <li><i class="fas fa-envelope-open-text"></i> contact@website.com</li>
+                </ul>
+                <p>For more information, come to our store, call by phone or visit our webpage.</p>
+                <div class="site"><a href="https://github.com/Romeo-Zulu" target="_blank">WebSite.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
