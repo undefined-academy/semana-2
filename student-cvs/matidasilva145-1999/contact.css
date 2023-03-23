@@ -2,9 +2,11 @@ html {
     box-sizing: border-box;
 }
 
-* {box-sizing: inherit;
+* {
+    box-sizing: inherit;
     background-color: rgb(233, 245, 255)
 }
+
 .page {
     max-width: 650px;
     margin: 100px auto;
@@ -19,20 +21,21 @@ a {
 }
 
 .form-group {
-margin: 15px;
-
+    margin: 15px;
 }
 
-label, input {
+label,
+input {
     vertical-align: middle;
-    
-    }
-    
-label, input:not([type="radio"], [type="checkbox"]) {
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
     width: 100%;
 }
 
-label, legend {
+label,
+legend {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
@@ -41,16 +44,20 @@ label, legend {
 
 textarea {
     display: block;
-width: 100%;
-resize: vertical;
+    width: 100%;
+    resize: vertical;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea, select {
-background: rgb(255, 255, 255);
-border: 1px solid lightgray;
-border-radius: 4px;
-padding: 5px 8px;
-color: rgb(70, 70, 70);
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    background: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 5px 8px;
+    color: rgb(70, 70, 70);
 }
 
 .help {

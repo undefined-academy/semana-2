@@ -1,4 +1,3 @@
-
 body {
     background-color: rgb(233, 245, 255);
     margin: 0 auto;
@@ -20,21 +19,22 @@ h2,
 h3,
 strong {
     color: #464646;
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 p {
-margin: 5px;
+    margin: 5px;
 }
 
 a {
     color: #075f36;
 }
+
 ol {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  li {
+}
+
+li {
     flex: 50%;
-  }
+}

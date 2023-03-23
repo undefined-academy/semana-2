@@ -6,12 +6,13 @@
 
     <title>Formulario de contacto</title>
     <link rel="stylesheet" href="contact.css">
+    
 </head>
 
 <body>
     <main class="page">
         <h1>Contacto</h1>
-        <form action="/server" method="get">
+        <form id="form" action="" method="get">
             <div class="form-group">
                 <label for="name">Nombre</label>
                 <input id="name" type="text" name="name" placeholder="Nombre completo" required>
@@ -22,7 +23,8 @@
             </div>
             <div class="form-group">
                 <label for="phone">Telefono</label>
-                <input id="phone" type="tel" name="phone" pattern="[0-9]{9}" placeholder="Numero de telefono movil" required>
+                <input id="phone" type="tel" name="phone" pattern="[0-9]{9}" placeholder="Numero de telefono movil"
+                    required>
             </div>
             <div class="form-group">
                 <fieldset>
@@ -55,36 +57,10 @@
             <button>Enviar</button>
 
         </form>
+        <script src="/main.js"></script>
         <a href="/index.html">Volver</a>
     </main>
-    <script>
-// Le pregunte a chat-gpt deje los comentaros tal y como estaba por que voy a investigar mejor como funciona el codigo
-        const formulario = document.querySelector('form');
-        
-        formulario.addEventListener('submit', function(event) {
-          event.preventDefault();
-          
-          // Obtenemos los datos del formulario
-          const name = document.querySelector('#name').value;
-          const email = document.querySelector('#email').value;
-          const phone = document.querySelector('#phone').value;
-          const typeOfWork = document.querySelector('input[name="type-of-work"]:checked').value;
-          const callTime = document.querySelector('#type').value;
-          const description = document.querySelector('#description').value;
-          
-          // Guardamos los datos en localStorage
-          localStorage.setItem('name', name);
-          localStorage.setItem('email', email);
-          localStorage.setItem('phone', phone);
-          localStorage.setItem('typeOfWork', typeOfWork);
-          localStorage.setItem('callTime', callTime);
-          localStorage.setItem('description', description);
-          
-          // Redirigimos al usuario a otra página
-          window.location.href = "/index.html";
-        });
-        </script>
-        
+
 </body>
 
 </html>
