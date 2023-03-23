@@ -1,71 +1,55 @@
 html {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: "Helvetica", "Arial";
-    margin: 0 auto;
-    margin-top: 10%;
-    max-width: 40em;
-    line-height: 1.5;
-    background-color: antiquewhite;
+  font-family: "Helvetica", "Arial";
+  margin: 0 auto;
+  line-height: 1.5;
+  background-color: antiquewhite;
 }
 
-h1,
-h2,
-h3 {
-    text-align: center;
-    font-family: "Cascadia Code";
+.card-item-0 {
+  grid-area: presentacio;
+}
+.card-item-1 {
+  grid-area: hoja-vida;
 }
 
-strong {
-    color: tomato;
+.card-item-2 {
+  grid-area: propositos;
 }
 
-em {
-    color: rgb(85, 184, 85);
+.card-item-3 {
+  grid-area: experiencia;
 }
 
-p {
-    text-align: justify;
+.card-item-4 {
+  grid-area: consultas;
+}
+.card-item-5 {
+    grid-area: footer;
+}
+.container {
+  border: 2px dashed cornflowerblue;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". presentacio . ."
+  "hoja-vida propositos experiencia consultas"
+  ". footer footer .";
 }
 
-footer {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    text-align: center;
-}
-
-a {
-    color: tomato;
-}
-
-label,
-input {
-    width: 100%;
-    vertical-align: middle
-}
-
-textarea {
-    display: block;
-    width: 100%;
-    resize: vertical;
-}
-
-::placeholder {
-    color: gainsboro;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-}
-
-button {
-    padding: 8px 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    background-color:#fde68a ;
-    margin-top: 20px;
+.card-item-0,
+.card-item-1,
+.card-item-2,
+.card-item-3,
+.card-item-4,
+.card-item-5 {
+  border: 2px dashed rebeccapurple;
 }

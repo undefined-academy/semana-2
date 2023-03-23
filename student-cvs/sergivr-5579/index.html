@@ -6,79 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sergivr-5579/style.css">
-    <title>Ejercicio HTML</title>
+    <title>Hoja de Vida</title>
 </head>
-<div class="page">
-    <header>
-        <h1>✨ Hello Everyone ! ✨</h1>
-        <hr />
-    </header>
-    <article>
-        <header>
-            <h2>Presentación</h2>
-        </header>
 
-        <section>
+<body>
+    <div class="container">
+        <div class="card-item-0">
             <header>
-                <h3>Hoja de Vida</h3>
+                <h1>✨ Hello Everyone ! ✨</h1>
             </header>
-            <time datetime="2023-03-17 21:00">17 de Marzo</time>
+            <article>
+                <header>
+                    <h2>Presentación</h2>
+                </header>
+        </div>
+            <div class="card-item-1">
+                <section>
+                    <header>
+                        <h3>Hoja de Vida</h3>
+                    </header>
+                    <time datetime="2023-03-17 21:00">23 de Marzo</time>
 
-            <p>Mi nombre es <strong>Sergi Vicente</strong> y soy estudiante de programación full stack. Actualmente
-                estoy trabajando en el Hospital Clínic de Barcelona como Helpdesk de distintos niveles. Mi rol es dar
-                soporte remoto a los trabajadores de las distintas sedes del grupo Clínic en sus incidencias
-                informáticas.</p>
-        </section>
-
-        <section>
-            <header>
-                <h3>Propósitos</h3>
-            </header>
-        </section>
-        <p>Actualmente estoy asistiendo al Bootcamp de Guillermo Rodas <em>Undefined Bootcamp</em> y también estoy
-            formándome en backend con <em>Python</em> a través de <em>Udemy</em> y otras fuentes como Brais Moure. Mi
-            intención es conseguir un nivel de expertise en muchas de las disciplinas de la sección de IT centrándome
-            desde el punto de vista del desarrollador o ingeniero de software.</p>
-
-        <section>
-            <header>
-                <h3>Consultas</h3>
-            </header>
-            <form action="/server" method="get" class="form"></form>
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Indica su nombre" required>
+                    <p>Mi nombre es <strong>Sergi Vicente</strong> y soy estudiante de programación full stack. Actualmente
+                        estoy trabajando en el Hospital Clínic de Barcelona como Helpdesk de distintos niveles. Mi rol es dar
+                        soporte remoto a los trabajadores de las distintas sedes del grupo Clínic en sus incidencias
+                        informáticas.</p>
+                </section>
             </div>
-            <div class="form-group">
-                <label for="surname">Apellido</label>
-                <input type="text" name="surname" id="surname" placeholder="Indica su apellido" required>
+            <div class="card-item-2">
+                <section>
+                    <header>
+                        <h3>Propósitos</h3>
+                    </header>
+                </section>
+                <p>Actualmente estoy asistiendo al Bootcamp de Guillermo Rodas <em>Undefined Bootcamp</em> y también estoy
+                    formándome en backend con <em>Python</em> a través de <em>Udemy</em> y otras fuentes como Brais Moure. Mi
+                    intención es conseguir un nivel de expertise en muchas de las disciplinas de la sección de IT centrándome
+                    desde el punto de vista del desarrollador o ingeniero de software.</p>
+            </div> 
+            <div class="card-item-3">
+                <section>
+                    <article>
+                        <h3>Experiencia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quo est deserunt odio, quae, nostrum mollitia nemo maxime iste unde earum debitis ut enim eveniet soluta vero harum. Dolorem, architecto.</p>
+                    </article>
+                </section>
+            </div>    
+            <div class="card-item-4">
+                <section>
+                    <header>
+                        <h3>Consultas</h3>
+                    </header>
+                    <form action="/server" method="get" class="form"></form>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" placeholder="Indica su nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Apellido</label>
+                            <input type="text" name="surname" id="surname" placeholder="Indica su apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Indica su email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="questions">Consulta</label>
+                            <textarea name="consulta" id="consulta" required rows="4"
+                                placeholder="Escribe aquí su consulta..."></textarea>
+                        </div>
+                        <button>Enviar</button>
+                    </form>
+                </section>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Indica su email" required>
-            </div>
-            <div class="form-group">
-                <label for="questions">Consulta</label>
-                <textarea name="consulta" id="consulta" required rows="4"
-                    placeholder="Escribe aquí su consulta..."></textarea>
-            </div>
-            <button>Enviar</button>
-
-            </form>
-
-        </section>
-
-    </article>
-
-
-</div>
-<footer>
-    <a href="https://github.com/svroff" target="_blank">My Github Profile</a> <br>
-    <address>
-        <a href="mailto:svr.off9@gmail.com">¡Envíame un correo!</a>
-
-    </address>
-</footer>
+        </article>
+        <div class="card-item-5">
+            <footer>
+                <a href="https://github.com/svroff" target="_blank">My Github Profile</a> <br>
+                <address>
+                    <a href="mailto:svr.off9@gmail.com">¡Envíame un correo!</a>
+        
+                </address>
+            </footer>
+        </div>
+        
+    </div>
+    
 
 </body>
 
