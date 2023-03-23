@@ -1,5 +1,5 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Rammetto+One&family=Titillium+Web:wght@200;300;400;600&display=swap");
 * {
   font-family: "Titillium web";
   margin: 0;
@@ -46,13 +46,13 @@ html {
 /* **** */
 .home .content-section header .logo {
   font-weight: bold;
-  font-size: 2.5rem;
-  font-family: "Yellowtail";
+  font-size: 3.5rem;
+  font-family: "Rammetto One";
   text-shadow: 0 0 35px #fff;
 }
 .home .content-section header .logo .color {
   color: #940253;
-  font-family: "Yellowtail";
+  font-family: "Rammetto One";
 }
 .home .content-section header .nav-bar {
   position: fixed;
@@ -89,8 +89,8 @@ html {
   text-decoration: none;
   background-color: #000;
   color: #940253;
-  border: 1px solid #940253;
-  border-radius: 50%;
+  border: 2px solid #940253;
+  border-radius: 35%;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -116,7 +116,7 @@ html {
 }
 /* estilos generales */
 .title-section {
-  font-family: "Yellowtail";
+  font-family: "Alkatra", cursive;
   font-size: 1.5rem;
 }
 /* SECCION SOBRE MI */
@@ -245,7 +245,7 @@ html {
   margin-top: 15px;
 }
 .contact .content-section .container .contact-box {
-  max-width: 800px;
+  max-width: 600px;
   margin: 100px auto;
   background-color: #fff;
   box-shadow: 0px 0px 19px 5px rgba(0 0 0 0.19);
