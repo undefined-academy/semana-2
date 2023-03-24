@@ -1,0 +1,91 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+
+body {
+  display: flex;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #566b78;
+  font-size: 12px;
+  background-color: white;
+  background-image: url("https://www.proydesa.org/portal/images/codigos.jpg");
+}
+
+#hdv {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#info {
+  /* color: #f5f7f9; */
+  display: flex;
+  /* font-size: medium; */
+  display: contents;
+}
+
+#name {
+  display: flex;
+  width: auto;
+  height: 230px;
+  color: #f5f7f9;
+  font-size: xx-large;
+  background-image: url("https://assets.bedu.org/images/top-lenguajes-programacion-2021.jpg?w=1200");
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  display: flex;
+  margin-top: 1em;
+  padding-top: 1em;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+  border-left: 2px solid #69c;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: royalblue;
+}
