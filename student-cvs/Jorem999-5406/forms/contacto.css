@@ -1,0 +1,99 @@
+header {
+  background-image: url("/images/IMG_header.jpg");
+  background-position: center top;
+  padding: 5% 25%;
+  background-size: cover;
+  margin-bottom: 1em;
+  text-align: center;
+  line-height: 2;
+}
+
+.wrap {
+  text-align: center;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 40px #000000;
+  backdrop-filter: blur(5px);
+}
+
+header h1 {
+  color: rgb(250, 174, 75);
+  font-size: 3em;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  outline: #1a0d0d;
+
+}
+
+a:visited {
+  color: hsl(0, 91%, 87%);
+  text-align: center;
+  outline: #1a0d0d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid rgb(218, 124, 1);
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  color: rgb(184, 104, 0)
+}
+
+.menu {
+  display: flex;
+  justify-content: left;
+  border: 2px solid rgb(39, 0, 0);
+  background-color: #4e2323;
+  font-size: 12px;
+  list-style-type: none;
+  padding: 0.85em;
+  margin-bottom: 2em;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="checkbox"],
+input[type="option"],
+textarea,
+select {
+  padding: 7px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(167, 95, 0);
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #faf7f3;
+  color: #292626;
+}
+
+textarea {
+  height: 100px;
+  max-width: 480px;
+}
+
+::placeholder {
+  color: rgb(214, 197, 197);
+  ;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: rgb(218, 124, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(134, 76, 0);
+}

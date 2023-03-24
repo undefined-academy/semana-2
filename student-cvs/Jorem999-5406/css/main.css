@@ -14,7 +14,7 @@ body {
 header {
   background-image: url("/images/IMG_header.jpg");
   background-position: center top;
-  padding: 5% 25% 5% 25%;
+  padding: 5% 25%;
   background-size: cover;
   margin-bottom: 1.5em;
   text-align: center;
@@ -53,13 +53,15 @@ header h3 {
 }
 
 a {
-  color: hsl(0, 100%, 17%);
+  color: hsl(0, 0%, 100%);
+  outline: #1a0d0d;
 
 }
 
 a:visited {
-  color: #fcb6b6;
+  color: hsl(0, 91%, 87%);
   text-align: center;
+  outline: #1a0d0d;
 }
 
 img {
