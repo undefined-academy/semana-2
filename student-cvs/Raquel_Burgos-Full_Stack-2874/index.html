@@ -21,13 +21,14 @@
                 <li><a href="#tools">Other tools</a></li>
                 <li><a href="#softskills">Soft-Skills</a></li>
                 <li><a href="#languages">Languages</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact me or send me a proposal by filling out this form</a></li>
             </ul>
         </nav>
     </header>
 </section>
 
 <body>
+    <main class="page">
     <section>
         <section id="about">
             <div class="container">
@@ -104,17 +105,70 @@
                 <li>Français 🌐🌐🌐</li>
             </ul>
         </section>
+        <br>
+        <hr>
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>Form & Contact</h2>
+            <h3>Fill out this form if you want to send me a proposal</h3>
+            <form action="/server" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text"
+                    placeholder="personal name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input id="company" name="company" type="text"
+                    placeholder="company name" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <input id="position" name="position" type="text"
+                    placeholder="position in the company" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email"
+                    placeholder="contact email" required>
+                </div>
+                <div class="form-group">
+                    <fieldset required>
+                        <legend>Job profile required</legend>
+                        <input id="backend" name="backend" type="radio" value="backend"><label for="backend">Back-End</label>
+                        <input id="frontend" name="frontend" type="radio" value="frontend"><label for="frontend">Front-End</label>
+                        <input id="fullstack" name="fullstack" type="radio" value="fullstack"><label for="fullstack">Full-Stack</label>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="fulltime" name="fulltime" type="checkbox" required>
+                        <span>Is it a full-time proposal?</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="type">Working format: </label>
+                    <select id="type" name="type" required>
+                        <option disabled selected value="">Select one</option>
+                        <option value="presential">Presential</option>
+                        <option value="remote">Remote</option>
+                        <option value="hibrid">Hibrid</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="job">Job description</label>
+                    <textarea id="job" name="job" required rows="8"></textarea>
+                    <div class="help">Description of the proposal, required skills, conditions...</div>
+                </div>
+                <button>SEND</button>
+            </form>
+            <h3>Contact</h3>
             <ul>
                 <li>Email: <a href="mailto:rachelbq@example.com">rachelbq@example.com</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/rachelbq">linkedin.com/in/rachelbq</a></li>
-                <!-- <li>GitHub: <a href="https://github.com/rachelbq">github.com/rachelbq</a></li> -->
             </ul>
-            <!-- <div> -->
-                <h4>🔗 Link to <a href="https://github.com/rachelbq">my GitHub</a></h4>
-            <!-- </div> -->
+            <h4>🔗 Link to <a href="https://github.com/rachelbq">my GitHub</a></h4>
         </section>
     </section>
+    </main>
 </body>
 </html>
