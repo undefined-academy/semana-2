@@ -17,11 +17,9 @@ body {
 .item-4,
 .item-5,
 .item-6 {
-
   background-color: #fec9bf;
   padding: 2%;
-  border-style: dashed;
-  border-color: violet;
+  border-radius: 30px;
 }
 
 .item-1 {
@@ -36,42 +34,37 @@ body {
 
 .item-3 {
   grid-area: exp;
-  text-align: center;
+  text-align: justify;
 }
 
 .item-4 {
   grid-area: props;
-  text-align: center;
-
+  text-align: justify;
 }
 
 .item-5 {
   grid-area: form;
-  text-align: center;
-
+  text-align: left;
 }
 
 .item-6 {
   grid-area: footer;
   text-align: center;
-
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
   grid-template-areas:
     ". header ."
     "main main main"
     "exp props form"
     "exp props form"
-    "footer footer footer"
-  ;
+    "footer footer footer";
   grid-gap: 20px;
   justify-content: space-evenly;
 }
-
 
 h2 {
   text-align: center;
@@ -80,3 +73,32 @@ h2 {
 img {
   width: 100%;
 }
+
+.container-form, input, textarea, ::placeholder{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  row-gap: 10px;
+}
+
+button {
+  margin: auto;
+  width: 25%;
+}
+
+input {
+  border-radius: 30px;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+textarea {
+  border-radius: 20px;
+}
+
+::placeholder {
+  font-style: oblique;
+}
+
