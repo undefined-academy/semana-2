@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jejorm Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Hi! I'm Jeremy 🙋🏻🇪🇨</h1>
+    </header>
+
+    <main>
+        <h2>A brief description about me:</h2>
+
+        <p>I am a self-taught student who spent some time in college, passionate about technology and love for learning, especially about <strong>web development</strong>🧑🏻‍💻. I am fascinated to observe all the <em>functionality</em> and <em>aesthetics</em> of an application when I have finished it.</p>
+
+        <p><strong>JavaScript</strong> has become my go-to tool for most of my projects (although <em>Python</em> is out there watching us 👀).</p>
+
+        <p>Anyway, I'm currently learning <strong>React</strong> ⚛️, I find it a delight to use, so I'm constantly improving myself and working hard to master it as well as other dominant technologies. I want to become a competent <em>full-stack</em> developer capable of making incredible products, and I will get there 💪🏼</p>
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <address>
+            <p>You can contact me by</p>
+            <a href="https://github.com/Jejorm" target="_blank">My GitHub Profile</a>
+            <p>Or through this form:</p>
+        </address>
+
+        <h2>Contact</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="8" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </footer>
+
+    <script>
+        const button = document.querySelector('button')
+
+        const handleClick = (event) => {
+            event.preventDefault()
+        }
+
+        button.addEventListener('click', handleClick)
+    </script>
+</body>
+</html>
