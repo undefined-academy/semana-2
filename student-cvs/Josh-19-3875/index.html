@@ -44,6 +44,38 @@
         </ul>
     </section>
 
+    <section>
+        <h2 class="contacto-h2">Contact me!</h2>
+        <form action="/server" method="get">
+            
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input name="name" id="name" type="text" placeholder="Your full name"  required>
+            </div>
+
+            <div class="form-group two-columns">
+                <label class="move" for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Your email"  required>
+                <label for="type">City</label>
+                <select name="type" id="type" required>
+                    <option disabled value="" selected>Choose one</option>
+                    <option value="newyork">NewYork</option>
+                    <option value="washington">Washington</option>
+                    <option value="texas">Texas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Describe your project</label>
+                <textarea name="description" id="description" rows="5"></textarea>
+                <div class="help">You can explain with more details what you want.</div>
+            </div>
+
+            <button id="send">Enviar</button>
+
+        </form>
+    </section>
+
     <footer>
         <a href="https://josharfdev.github.io/portfolio-react/">Visit my website 🗿</a>
         <a href="https://github.com/joshArfDev">Visit my Github Profile 🥷</a>
