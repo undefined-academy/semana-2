@@ -29,7 +29,7 @@ a {
 a:visited {
   color: hsl(0, 91%, 87%);
   text-align: center;
-  outline: #1a0d0d;
+ 
 }
 
 form {
@@ -38,20 +38,20 @@ form {
   max-width: 500px;
   margin: 0 auto;
   padding: 30px;
-  border: 1px solid rgb(218, 124, 1);
+  border: 2px solid rgb(95, 48, 0);
   border-radius: 5px;
 }
 
 label {
   font-weight: bold;
-  color: rgb(184, 104, 0)
+  color: rgb(131, 74, 0)
 }
 
 .menu {
   display: flex;
   justify-content: left;
-  border: 2px solid rgb(39, 0, 0);
-  background-color: #4e2323;
+  border: 2px solid rgb(150, 67, 0);
+  background-color: rgb(73, 39, 0);
   font-size: 12px;
   list-style-type: none;
   padding: 0.85em;
@@ -67,11 +67,17 @@ textarea,
 select {
   padding: 7px;
   margin-bottom: 15px;
-  border: 1px solid rgb(167, 95, 0);
+  border: 0px solid rgb(241, 201, 147);
+  border-color: #531f00;
   border-radius: 10px;
   font-size: 14px;
   background-color: #faf7f3;
-  color: #292626;
+  color: #531f00;
+  
+}
+
+input:focus-visible{
+  outline-color: rgb(185, 156, 129);
 }
 
 textarea {
@@ -95,5 +101,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: rgb(134, 76, 0);
+  background-color: rgb(150, 75, 0);
 }
