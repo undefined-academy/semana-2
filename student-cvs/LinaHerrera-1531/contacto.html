@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./styleContacto.css" media="screen">
+    <title>My profile</title>
+</head>
+<body>
+    <header>
+        <div class="padreHeader">
+            <div>
+            <nav>
+                <ul class="navSuperior">
+                    <li class="liHeader"><a class="aNavSuperior" href="#">Home</a></li>
+                    <li class="liHeader"><a class="aNavSuperior" href="#">About</a></li>
+                    <li class="liHeader"><a class="aNavSuperior" href="#">Experience</a></li>
+                    <li class="liHeader"><a class="aNavSuperior" href="https://github.com/lherrer5">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <main class="mainCont">
+            <h3 class="contacto">CONTACT ME</h3>
+        <!-- desde aca -->
+
+                <form id="form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required="">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo" required="">
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                <legend>Presupuesto</legend>
+                <input type="radio" name="budget" id="100" value="100" required="">
+                <label for="100">100$</label>
+
+                <input type="radio" name="budget" id="500" value="500" required="">
+                <label for="500">500$</label>
+
+                <input type="radio" name="budget" id="1000" value="1000" required="">
+                <label for="1000">1.000$</label>
+                </fieldset>
+                <div class="help">
+                Este presupuesto es la base, no el total.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select id="type" name="type" required="">
+                <option value="" selected="" disabled="">Seleccione uno</option>
+                <option value="website">Sitio web</option>
+                <option value="webapp">Aplicación web</option>
+                <option value="mobile">Aplicación mobile</option>
+                <option value="design">Diseño web</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" rows="5" required=""></textarea>
+                <div class="help">
+                Escribe una descripción del proyecto en al menos 500 palabras.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required="">
+                <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <input type="submit" class="btn">
+
+            </form>
+        <!-- hasta aca -->
+    </main>
+
+    <footer>
+        <div class="divsFooter">
+            <span id="miNombreAmarilloAbajo"> Lina Herrera.</span>
+            <div class="letraBlanca">Software development Student</div>
+        </div>
+        <div class="divsFooter">
+            <span Class="TitulosAbajo"> Social Media</span>
+            <ul>
+                <li class="enBloque"><a class="aNavInferior" href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BsmC1IgNaTWeO3tIfkH%2B%2FeQ%3D%3D" target="_blank">Linkedin</a></li>
+                <li class="enBloque"><a class="aNavInferior" href="https://github.com/lherrer5" target="_blank">Github</a></li>
+                <li class="enBloque"><a class="aNavInferior" href="https://www.facebook.com/linamaria.h.o/" target="_blank">Facebook</a></li>
+            </ul>   
+        </div>
+    </footer>
+</body>
+</html> 
