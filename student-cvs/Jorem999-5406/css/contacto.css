@@ -63,26 +63,23 @@ input[type="text"],
 input[type="email"],
 input[type="checkbox"],
 input[type="option"],
-textarea,
-select {
+select, textarea {
   padding: 7px;
   margin-bottom: 15px;
-  border: 0px solid rgb(241, 201, 147);
-  border-color: #531f00;
+  border: 1px solid ;
+  border-color: #c99475;
   border-radius: 10px;
   font-size: 14px;
   background-color: #faf7f3;
-  color: #531f00;
-  
-}
-
-input:focus-visible{
+  color: #1d140e;
   outline-color: rgb(185, 156, 129);
+
 }
 
 textarea {
   height: 100px;
   max-width: 480px;
+ 
 }
 
 ::placeholder {
