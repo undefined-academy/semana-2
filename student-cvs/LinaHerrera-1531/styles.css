@@ -1,0 +1,14 @@
+body {
+    max-width: 1200px;
+    font-size: 20px;
+    margin: 0 auto;
+    border: 3px rgb(37, 57, 5);
+    background-color: aqua;
+    font-family: Calibri, sans-serif, Arial, Helvetica;
+    text-align: justify;
+}
+
+p { line-height: 1.2; }
+
+h1 {color: blue;
+text-align: center;}
