@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
-*{
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+* {
     max-width: 100rem;
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     font-family: 'Work Sans';
 }
+
 body {
     color: #566b78;
     line-height: 1.5;
 
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .contenedor-header {
@@ -75,7 +78,7 @@ header img {
     align-items: center;
 }
 
-.inicio .contenido-banner{
+.inicio .contenido-banner {
     padding: 20px;
     margin: auto;
     text-align: center;
@@ -89,13 +92,14 @@ header img {
     font-family: 'Righteous';
     font-weight: 300;
 }
-.inicio .contenido-banner h2{
+
+.inicio .contenido-banner h2 {
     font-size: 22px;
     font-weight: normal;
     align-items: center;
 }
 
-.inicio .contenido-banner .redes a{
+.inicio .contenido-banner .redes a {
     color: #fff;
     border: 1px solid #fff;
     display: inline-block;
@@ -105,11 +109,11 @@ header img {
     height: 42px;
     line-height: 42px;
     font-size: 25px;
-    
+
 }
 
-.inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;   
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
 }
 
 .sobremi {
@@ -118,19 +122,18 @@ header img {
     padding: 50px 20px;
 }
 
-.sobremi .contenido-seccion
-{
+.sobremi .contenido-seccion {
     margin: auto;
 }
 
-.sobremi .contenido-seccion h2{
+.sobremi .contenido-seccion h2 {
     font-size: 24px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
 
-.sobremi .contenido-seccion p{
+.sobremi .contenido-seccion p {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
@@ -141,28 +144,156 @@ header img {
     font-weight: bold;
 }
 
-.sobremi .contenido-seccion td{
+.sobremi .contenido-seccion td {
     border: 1px solid #000;
 
 }
 
-.sobremi .contenido-seccion  td span {
+.sobremi .contenido-seccion td span {
     color: #1CB698;
     font-weight: bold;
 
 }
-table{
+
+table {
     border: 1px solid #000;
 }
 
-th, td {
+th,
+td {
     text-align: left;
     border: 1px solid #000;
     caption-side: bottom;
- }
- caption {
+}
+
+caption {
     padding: 0.3em;
     color: #fff;
-     background: #000;
- }
+    background: #000;
+}
 
+.contacto {
+    background-color: #171a1b;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.contacto .contenido-seccion {
+    margin: auto;
+}
+
+.contacto .contenido-seccion h2 {
+    font-size: 24px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contacto .contenido-seccion .contacto-form {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 14px 40px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contacto .contenido-seccion .form-group {
+    margin: 20px 0;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+.contacto .contenido-seccion .form-group label,
+input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #1CB698;
+
+}
+fieldset{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #1CB698;
+    padding: 8px 10px;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: gray;
+    margin-top: 20px;
+
+}
+
+legend
+{
+    margin: 8px;
+
+}
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #1CB698;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #fff;
+    outline: none;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #171a1b;
+    border-bottom: 1px solid #1CB698;
+    color: #fff;
+    outline: none;
+}
+
+button {
+    border: none;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    background-color: #1CB698;
+
+}
+
+button:hover{
+    background: #20c9a7;
+}
+
+button:active{
+    background: #0b6855;
+    box-shadow: none;
+}
+
+form{
+    accent-color: #1cb698;
+}
