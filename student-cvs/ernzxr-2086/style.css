@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 125%;
+    font-size: 140%;
 }
 
 h3 {
@@ -56,6 +56,11 @@ nav a {
     text-decoration: none;
     text-align: center;
     color:#ebebeb;
+}
+
+nav a:hover:not(:first-child) {
+    background: #28cf7d;
+    color: #1b2027;
 }
 
 .active-menu {
@@ -85,14 +90,16 @@ article {
 
 .about-me header {
     text-align: center;
+    padding: 3%;
 }
 
 .quote {
     font-size: 80%;
+    padding-top: 3%;
 }
 
 .about-p {
-    padding: 1% 0 0 0;
+    padding: 1% 0 3% 0;
     font-size: 95%;
 }
 
@@ -134,6 +141,11 @@ article {
     border-radius: 5px;
 }
 
+.exp-1:hover, .exp-2:hover, .exp-3:hover, .exp-4:hover {
+    background: #28cf7d;
+    color: #1b2027;
+}
+
 .exp-4 {
     margin-bottom: 5%;
 }
@@ -164,12 +176,60 @@ article {
 
 .multimedia, .broadcast, .tools {
     display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
 }
 
 .skills-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.photo-s img, .photo-s picture, .photo-s a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-s {
+    padding: 1%;
+    width: 57px;
+}
+
+.skills h3 {
+    font-size: 120%;
+    padding: 3% 0;
+}
+
+.soft-table {
+    margin-top: 0px;
+    text-align: center;
+    width: 60%;
+    background-color: #25ac61;
+    border-radius: 10px;
+}
+
+.soft-table td {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.lang-table {
+    margin-top: 0px;
+    text-align: center;
+    width: 60%;
+    background-color: #25ac61;
+}
+
+.lang-table td {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Form */
@@ -241,7 +301,7 @@ footer div {
     padding: 0 4% 0 4%;
 }
 
-footer div:not(:last-child) {
+.rrss-container div:not(:last-child) {
     border-right: 1px solid rgb(209, 209, 209);
 }
 
@@ -258,6 +318,30 @@ footer p {
 
 /* Desktop */
 
-@media screen and (mid-width: 992px) {
+@media screen and (min-width: 992px) {
+
+    body {
+        background-color: #2f2235;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-header {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    nav {
+        width: 50%;
+    }
+
+    .about-bkg, .exp-bkg, .skills-bkg, .form-section, footer {
+        width: 50%;
+    }
+
+    .form-container {
+        width: 70%;
+    }
 
 }
