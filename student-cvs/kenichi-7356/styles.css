@@ -1,0 +1,55 @@
+body {
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: auto;
+}
+.header{
+    background-image: url(/images/background-inicio.jpg);
+    opacity: 70%;
+}
+.header, h1{
+    padding: 50px;
+    opacity: 100%;
+    color: brown;
+}
+strong {
+    color: coral;
+}
+
+.nav {
+    background-color: #9b8d14;
+    overflow: hidden;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+/* Style the links inside the navigation bar */
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #ddd;
+    color: #9b8d14;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.container{
+    background-repeat: no-repeat;
+    background-image: -moz-radial-gradient();
+}
