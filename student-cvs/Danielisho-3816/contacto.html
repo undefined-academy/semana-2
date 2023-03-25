@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: Formulario de Contacto ::: Danielisho-3816</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="https://explore.cscc.edu/images/programs/full/CSCI.GAMEDV.AAS.jpg" alt="Foto de encabezado">
+    <nav class="navegacion">
+        <div>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">EJERCICIOS DE LA SEMANA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="#">RECURSOS</a></li>
+                <li><a href="#">DESCARGAR CV</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+ <h3 class="titulos">
+    formulario de contacto
+ </h3>
+
+ <div class="container">
+    <form id="myForm" action="/server" method="get">
+        <fieldset>
+            
+            <legend>Datos personales</legend>
+            <label   for="nombres" >Nombres y Apellidos:</label>
+            <input class="nombres"  id="nombres" for="nombres" type="text" required placeholder="Registre sus Nombres y Apellidos completos">
+           
+            <!-- ---->
+
+            <label  for="identidad" >Documento de identidad</label>
+            <input class="identidad"  id="identidad" for="identidad" type="number" required placeholder="Registre su número de documento de identidad (sin letras)">
+
+            <!-- ----> 
+
+            <label   for="profesion" >Área de especialización</label>
+            <select id="profesion">
+                <option disabled selected value="" >Elija un área según experiencia</option>
+                <option value="value1">Tecnologías de Información</option>
+                <option value="value2">Desarrollador</option>
+                <option value="value3">Ciencias Médicas</option>
+                <option value="value4">Otras</option>
+            </select>
+
+            <legend>Datos de contacto</legend>
+            <label   for="mail" >Correo electrónico</label>
+            <input  id="mail" for="mail" type="email" required placeholder="Registre su Correo Electrónico ">
+
+            <label   for="celular" >Teléfono</label>
+            <input  id="celular" for="celular" type="tel" required placeholder="Indique un número de celular Ej. +59999498898898">
+
+
+            <legend>Requerimiento especial</legend>
+            <label   for="especial" >Indique su requerimiento:</label>
+            <textarea id="especial" rows="10" cols="50" required placeholder="Escriba detalladamente su requerimiento indicando con precisión la magnitud de su solicitud."></textarea>
+
+
+            <input id="condiciones" type="checkbox" required>
+            <label   for="condiciones" >Acepto las condiciones del servicio</label>
+            
+
+
+            <button type="submit">Solicitar</button>
+        </fieldset>
+     
+    </form>
+ </div>
+ <script>
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', function(event) {
+  // Detenemos la acción por defecto del navegador
+  event.preventDefault();
+
+  // Realizamos acciones personalizadas aquí
+  console.log('El formulario no se ha enviado');
+});
+ </script>
+</body>
+</html>
