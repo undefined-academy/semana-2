@@ -2,6 +2,14 @@
 
 /* Colors: #f4f1de, #e07a5f, #3d405b, #81b29a, #f2cc8f */
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
     margin: 0 auto;
     max-width: 50em;
@@ -26,36 +34,8 @@ h3 {
     color: #e07a5f;
 }
 
-a {
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #81B29A;
-    background-color: #f4f1de;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-}
-
-a:hover {
-    background-color: #81B29A;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #f4f1de;
-    transform: translateY(-7px);
-}
-
-a:active {
-    transform: translateY(-1px);
-}
-
 address div {
-    padding-top: 18px;
+    padding-top: 5px;
 }
 
 .tracking-in-expand {
@@ -99,4 +79,73 @@ address div {
       opacity: 1;
     }
   }
+
+  .page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+  }
+
+  .form-group {
+    margin: 20px 0;
+  }
+
+  label, input:not([type="checkbox"]) {
+    width: 100%;
+  }
+
+  label, input {
+    vertical-align: middle;
+  }
+
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+  }
   
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    background: #f7f5ea;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #3D405B;
+  }
+
+  button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #3D405B;
+    background: #81B29A;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #86aa99;
+  }
+  
+  button:active {
+    background: #dba697;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  form {
+    accent-color: #81B29A;
+  }
+
+  input:focus-visible, textarea:focus-visible {
+    border: 1px solid #81B29A;
+    outline: 2px solid #9dd1b8;
+  }
