@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <link rel='stylesheet' href = "/css/contacto.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel='stylesheet' href="/css/contacto.css">
 </head>
 <header>
-    <div class="wrap">
-        <h1>Contacto</h1>
-    </div>
-  </header>
-  <nav>
-    <ul class="menu">
-      <li class="menuli"><a href="/index.html">Volver</a></li>
-    </ul>
-  </nav>
+  <div class="wrap">
+    <h1>Contacto</h1>
+  </div>
+</header>
+<nav>
+  <ul class="menu">
+    <li class="menuli"><a href="/index.html">Volver</a></li>
+  </ul>
+</nav>
+
 <body>
-    <form action="/server" method="GET">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required placeholder="Ingrese su nombre">
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="Ingrese su email">
+  <form action="/server" method="GET">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required placeholder="Ingrese su nombre">
 
-        <label for="option">Tipo de desarrollo solicitado:</label>
-        <select name="option" required >
-            <option disable selected value="">Seleccione una opción</option>
-            <option value="appweb">Aplicación Web</option>
-            <option value="desktop">Aplicación de escritorio</option>
-            <option value="mobile">Aplicación móvil</option>
-            <option value="design">Diseño Web</option>
-          </select>
-      
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required placeholder="Descripción"></textarea>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Ingrese su email">
 
-        <label for="terminos">
-            <input id="terminos" name="terminos" type="checkbox" required>
-            <span>Acepto los terminos y condiciones</span>
-            
-        </label>
-      
-        <button type="submit">Enviar</button>
-      </form>
-          
+    <label for="option">Tipo de desarrollo solicitado:</label>
+    <select name="option" required>
+      <option disable selected value="">Seleccione una opción</option>
+      <option value="appweb">Aplicación Web</option>
+      <option value="desktop">Aplicación de escritorio</option>
+      <option value="mobile">Aplicación móvil</option>
+      <option value="design">Diseño Web</option>
+    </select>
+
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required placeholder="Descripción"></textarea>
+
+    <label for="terminos">
+      <input id="terminos" name="terminos" type="checkbox" required>
+      <span>Acepto los terminos y condiciones</span>
+
+    </label>
+
+    <button type="submit" id="enviar">Enviar</button>
+  </form>
+
+  <script type="text/javascript">
+    document.getElementById("enviar").addEventListener("click", function (event) {
+      event.preventDefault();
+      // Redirigir a la página inicial
+      window.location.href = "/";
+
+    });
+
+  </script>
+
 </body>
+
 </html>
