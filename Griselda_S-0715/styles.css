@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    max-width: 50em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
+    background-color: #c9f2f4;
+
+}
+
+.avatar{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 150%;
+    margin-left: 40%;
+    border: 5px solid #ababab;
+
+}
+
+h1 {
+    color:#333;
+    text-align: center;
+}
+
+a{
+    color:#e81c4f;
+}
+
+
+.list-1, .list-2 {
+    list-style-image: url("img/angulo-derecho.png");
+}
+
