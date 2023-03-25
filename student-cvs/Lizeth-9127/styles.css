@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -7,14 +8,17 @@ body {
     width: 60%;
     min-width: 400px;
     margin: 0 auto;
-    background: rgb(0, 212, 255);
     background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, #074b9e 53%, rgb(6, 112, 134) 100%);
 }
 
 ul,
-p {
+p,span {
     list-style: none;
     color: #334155;
+}
+
+.caption{
+    margin: 26px 0;
 }
 
 footer {
@@ -22,6 +26,40 @@ footer {
     color: rgba(255, 255, 255, 25%);
     width: 100%;
     margin: 0 0 0.7rem 0;
+}
+
+input,textarea{
+    border: 1px solid #cbd5e1;
+ }
+ 
+ input:focus, textarea:focus{
+     border-color: #00d4ff;
+     outline: 0;
+     box-shadow: 0 0 0 0.25rem rgba(42, 177, 240, 0.20);
+ }
+
+ textarea{
+    resize: vertical;
+ }
+ button{
+    margin-top: 20px;
+    background:#0891b2;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid #0c4a6e;
+    color: #0f172a;
+    font-size: 1rem;     
+    text-shadow:1px 1px 3px rgba(64, 64, 64,0.6);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    padding: 10px 7px 10px 7px;
+}
+button:hover{
+    background-color: #0e7490;
+}
+
+button:active{
+    background:#164e63;
+    box-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 }
 
 .container {
@@ -60,4 +98,25 @@ footer {
 
 .link:hover {
     color: #067086;
+}
+
+.input-style{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.form-container{
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 3rem auto 0 auto;
+    padding: 7rem 3rem 3rem 3rem;
+    width:50%;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+}
+.form-heading{
+    font-size: 2rem;
+   margin:-2.2rem 0 0 0;
 }
