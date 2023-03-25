@@ -72,6 +72,7 @@ h2 {
 
 img {
   width: 100%;
+  border-radius: 30px;
 }
 
 .container-form, input, textarea, ::placeholder{
@@ -102,3 +103,10 @@ textarea {
   font-style: oblique;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 15px;
+  margin-inline-end: 15px;
+  }
