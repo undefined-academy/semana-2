@@ -1,0 +1,184 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* Estilos por defecto*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: #fafafa;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    max-width: 768px;
+    margin: 0 auto;
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    /* padding: 10px; */
+    padding: 10px;
+    /* border: 1px dashed blue */
+
+}
+header{
+    /* margin: 0 5%; */
+    /* border: 1px dashed green */
+    max-width: 768px;
+    margin: 0 auto;
+}
+img {
+    display: inline-block;
+    margin:0 auto;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    box-shadow: 0 5px 35px #333;
+}
+
+.navegacion {
+    margin: 0 auto;
+        /* border: 1px solid red; */
+        text-align: center;
+}
+
+nav {
+    /* border: 1px solid red; */
+}
+.navegacion ul li {
+    display: inline;
+    list-style: none;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 13px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+.navegacion ul li a {
+    text-decoration: none;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.titulos {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form {
+    max-width: 768px;
+    margin: 0 auto;
+    height: 350px;
+    overflow-y: scroll;
+  
+}
+/*Para Chrome, SAfari y OPera */
+form::-webkit-scrollbar {
+    display:none
+}
+
+/* Para Firefox, IE y Edge */
+form {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+fieldset {
+    border: 1px  dashed #ac9b9b;
+    font-weight: 600;
+    font-size: 15px;
+    
+}
+legend {
+    color: #250101;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-decoration-color:#25010134
+}
+
+
+input, select, textarea {
+    background-color: transparent;
+    border: 1px solid #cab5b5;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align:justify;
+
+}
+
+::placeholder {
+    color: rgba(46, 46, 49, 0.459);
+    font-size: 14px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+select {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    line-height: 100;
+    font-size: 16px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    background-color: transparent;
+    
+}
+select option {
+
+    line-height: 200px;
+    height: 200px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    background-color: transparent;
+    }
+
+label#nombres {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bolder;
+    
+}
+
+input[type="checkbox"] {
+    width:  auto;
+
+    
+}
+
+
+button {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #ccc7c7;
+    color:#333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d7dfee;
+    border: 1px solid #b3c3e6;
+    box-shadow: 1px 1px 3px rgb(134, 132, 235);
+}
+
+button:active {
+    background-color: rgb(38, 35, 218);
+    color: white;
+    box-shadow: 1px 1px 6px rgb(113, 111, 240);
+    
+}
