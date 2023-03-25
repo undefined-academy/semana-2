@@ -53,3 +53,6 @@ strong {
     background-repeat: no-repeat;
     background-image: -moz-radial-gradient();
 }
+footer, ol{
+    list-style-type: none;
+}
