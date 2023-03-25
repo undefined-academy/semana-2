@@ -1,11 +1,9 @@
-html {
+html /* body */ {
     box-sizing: border-box;
+    height: 100%;
 } 
-*,
-*:before,
-:after {
+* {
     box-sizing: inherit;
-    /* para que herede la propiedad box-sizing */
 }
 
 .heading {
@@ -68,7 +66,6 @@ strong {
 }
 .contactinfo{
     font-size: 15px;
-    padding-left: 16px;
     padding-top: 6px;
     padding-bottom: 6px;
     
@@ -87,6 +84,7 @@ body{
     font-size: 16px;
     color: #c9d1d9;
     font-weight: bold;
+    padding-left: 0;
 }
 .jobinfo .jobtitle {
     font-weight: bold;
@@ -98,6 +96,7 @@ body{
 }
 .social {
     padding-left: 16px;
+    margin-bottom: 50px;
 }
 .skills ul li {
     display: flex;
@@ -118,6 +117,7 @@ body{
     height: 100%;
     background: #c9d1d9;
     padding-right: 50px;
+    margin-left: 40px;
 }
 .skill_name {
     width: 4px;
