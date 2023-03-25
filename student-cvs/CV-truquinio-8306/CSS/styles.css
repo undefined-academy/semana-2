@@ -1,17 +1,16 @@
 html {
-  box-sizing: border-box;
   background-color: #212429;
-  ;
+  height: 100%;
+  box-sizing: border-box;
 }
+
 
 * {
   box-sizing: inherit;
 }
 
-
 body {
-  max-width: 1600px;
-  margin: 100px auto;
+  margin: 0;
 }
 
 .main {
@@ -19,10 +18,10 @@ body {
 }
 
 .about,
-.rrss,
 .tech,
 .buttons,
-.form {
+.form,
+footer {
   padding: 10px 300px;
   text-align: justify;
 
@@ -44,12 +43,13 @@ body {
 
 .tecnologias {
   display: inline-block;
-  justify-content: center;
+  justify-content: space-between;
+  margin-right: 10px;
 }
 
-.item {
-  display: block;
-  margin: 0 auto;
+.tecnologias:hover{
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 label,
@@ -71,6 +71,11 @@ textarea {
   border-radius: 5px;
   padding: 8px 10px;
   color: #ebebeb;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid #e48c0d;
 }
 
 textarea {
@@ -135,16 +140,6 @@ label,
   transition: 1s;
 }
 
-.rrss {
-  display: inline-flex;
-  justify-content: center;
-}
-
-.item {
-  display: inline-block;
-  margin: 0 10px;
-}
-
 footer,
 footer a {
   color: #ffffff;
@@ -157,4 +152,20 @@ footer a {
 footer a:hover {
   color: #e48c0d;
   transition: 0.2s;
+}
+
+.rrss {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: inline-block;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.item:hover{
+  transform: scale(1.1);
+  transition: 1s;
 }
