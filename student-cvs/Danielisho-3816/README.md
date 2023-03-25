@@ -227,3 +227,35 @@ Debemos prevenir el comportamiento por defecto del envío de la información al 
 Ver archivo `contacto.html`
 </details>
 
+<details>
+<summary>
+Prevenir el comportamiento por Default del navegador al enviar un formulario
+</summary>
+
+Para prevenir el comportamiento por defecto de un formulario al hacer *submit* en JavaScript, se puede utilizar el método `preventDefault()` y aplicarlo al evento `submit`.
+Esto detendrá la acción por defecto del navegador al enviar el formulario y permitirá que se pueda realizar acciones personalizadas.
+
+**Solución:**
+
+**HTML**
+```html
+<form id="myForm">
+  <input type="text" name="username">
+  <button type="submit">Enviar</button>
+</form>
+```
+**JAVASCRIPT**
+```javascript
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', function(event) {
+  // Detenemos la acción por defecto del navegador
+  event.preventDefault();
+
+  // Realizamos acciones personalizadas aquí
+  console.log('El formulario no se ha enviado');
+});
+```
+El evento `submit` del formulario se escucha con el método `addEventListener()`. Dentro de la función de `callback`, llamamos al método `preventDefault()` del objeto **event** para detener la acción por defecto del navegador. 
+</details>
+
