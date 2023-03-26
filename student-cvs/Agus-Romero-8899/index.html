@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Agustina Romero - Nurse and Programmer</title>
   </head>
+
   <body>
     <header>
       <h1>Agustina Romero</h1>
@@ -46,7 +48,32 @@
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>If you'd like to get in touch with me, please send an email to <a href="romeroagustina.dev@email.com">romeroagustina.dev@email.com</a>.Or click<a href="https://github.com/Romero-Agustina"> here </a>to go to my github profile.</p>
+        <p>If you'd like to get in touch with me, please complete the form below and I will contact you: </p>
+
+        <form>
+
+          <div class="form-group">
+
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+          <div class="form-group">
+              <label for="comment">Comment</label>
+              <textarea id="comment" name="comment" required rows="5"> 
+              </textarea>
+              <div class="help">Leave me a message</div>
+              </div>
+              <button>
+                Send
+              </button>
+        </form>
+
+      <p>Or directly write to <a href="romeroagustina.dev@email.com">romeroagustina.dev@email.com.</a></p>  
       </section>
     </main>
 
