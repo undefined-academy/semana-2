@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+
+    <main class="page">
+        <h1>Contacto</h1>
+        <p>Por favor completar todos los campos</p>
+        <form action="">
+        <div class="form-list">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="name" placeholder="Apellido" required>
+        </div>    
+        <div class="form-list">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+        </div>
+        <div class="form-list">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" placeholder="Teléfono" required>
+        </div>
+        <div class="form-list">
+            <fieldset>
+                <legend>Interes</legend>
+                <input id="web" name="work" type="radio"><label for="web">Pagina Web</label>
+                <input id="disign" name="work" type="radio"><label for="desing">Diseño Web</label>
+                <input id="asesoria" name="work" type="radio"><label for="asesoria">Asesoría</label>
+            </fieldset>
+        </div>
+        <div class="form-list">
+            <label for="subject">Asunto del mensaje</label>
+            <select name="" id="subject" required>
+                <option value="" disabled selected value="">Selecciones uno</option>
+                <option value="">Presupuesto</option>
+                <option value="">Web</option>
+                <option value="">Otro</option>
+            </select>
+        </div>
+        <div class="form-list">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" cols="30" rows="5" placeholder="Escriba el mensaje"></textarea>
+        </div>
+        <div class="form-list">
+            <label for="terms">
+                <input type="checkbox" id="terms" required>
+                <span>Acepto Términos</span>
+            </label>
+        </div>
+        <button>Enviar</button>
+        </form>    
+        
+    </main>
+
+    
+</body>
+</html>

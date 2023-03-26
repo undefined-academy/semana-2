@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #FFFBEB;
+    color: #263159;
+}
+
+h1 {
+    font-size: 60px;
+}
+p {
+    font-size: 17px;
+    color: #263159;
+}
+
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-list {
+    margin: 25px 0;
+}
+
+label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #263159;
+}
+
+label, input[type=radio]{
+    display: inline-block;
+    
+}
+
+label, input {
+    vertical-align: middle;
+}
+textarea {
+    width: 100%;
+    resize: vertical;
+    display: block;
+}
+
+input {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 5px 15px;
+    color: #263159;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 16px 60px;
+    border: 1px solid #263159;
+    font-weight: bold;
+    background-color: #251749;
+    color: #FFFBEB;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #495579;
+    border-color: #B8621B;
+}
+

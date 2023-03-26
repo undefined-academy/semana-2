@@ -26,6 +26,9 @@ h2 {
 h1, h2, b {
     color: #333;
 }
+h2 {
+  font-size: 15px;
+}
 
 table {
     background: #eee;
@@ -85,4 +88,26 @@ header img {
     background:  #333;
     color: white;
   }
+.final {
+  background-color: antiquewhite;
+  
+}
+  footer {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    margin-bottom: 80px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #a7adba;
+    height: 100px;
 
+  }
+
+  a {
+    display: inline-block;
+    margin: 20px;
+    font-size: 15px;
+    padding: 30px;
+    text-align: center;
+  }
+  
