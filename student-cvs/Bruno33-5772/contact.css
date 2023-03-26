@@ -141,15 +141,19 @@ button {
     font-size: bold;
     border: 1px solid;
     border-radius: 8px;
-    background: #0e7490;
+    background: #0891b2;
     color: #fff;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0891b2;
+    background-color: #06b6d4;
 }
 
 button:active {
-    background-color: #155e75;
+    background-color: #0e7490;
+}
+
+form {
+    accent-color: #0891b2;
 }

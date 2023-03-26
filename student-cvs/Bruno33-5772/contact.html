@@ -38,11 +38,14 @@
                 </select>
             </div>
             <div id="work" class="work">
-                <fieldset>
+                <fieldset id="work-fs">
                     <legend>Tipo de trabajo</legend>
-                    <input id="website" name="worktype" type="radio" value="website"><label for="website">Sitio web</label>
-                    <input id="webapp" name="worktype" type="radio" value="webapp"><label for="webapp">Aplicación web</label>
-                    <input id="mobileapp" name="worktype" type="radio" value="mobileapp"><label for="mobileapp">Aplicación mobile</label>
+                    <input id="website" name="worktype" type="radio" value="website"><label for="website">Sitio
+                        web</label>
+                    <input id="webapp" name="worktype" type="radio" value="webapp"><label for="webapp">Aplicación
+                        web</label>
+                    <input id="mobileapp" name="worktype" type="radio" value="mobileapp"><label
+                        for="mobileapp">Aplicación mobile</label>
                     <input id="design" name="worktype" type="radio" value="design"><label for="design">Diseño</label>
                 </fieldset>
             </div>
@@ -62,20 +65,35 @@
     </main>
     <script>
         const opciones = document.getElementById('type');
-		const divs = document.querySelectorAll('div[id="work"]');
+        const divs = document.querySelectorAll('div[id="work"]');
 
-		opciones.addEventListener('change', () => {
-			const opcionSeleccionada = opciones.value;
+        opciones.addEventListener('change', () => {
+            const opcionSeleccionada = "work";
 
-			// Ocultar todos los divs
-			divs.forEach(div => {
-				div.style.display = 'none';
-			});
+            if (opciones.value == "work") {
+                // Mostrar el div correspondiente a la opción seleccionada
+                const divMostrar = document.getElementById(opcionSeleccionada);
+                divMostrar.style.display = 'block';
+            } else {
+                // Esconder div correspondiente
+                const divMostrar = document.getElementById(opcionSeleccionada);
+                divMostrar.style.display = 'none';
 
-			// Mostrar el div correspondiente a la opción seleccionada
-			const divMostrar = document.getElementById(opcionSeleccionada);
-			divMostrar.style.display = 'block';
-		});
+                // Obtener el fieldset
+                var myFieldset = document.getElementById("work-fs");
+
+                // Obtener la lista de opciones dentro del fieldset
+                var opciones_fs = myFieldset.getElementsByTagName("input");
+
+                // Recorrer la lista de opciones y deseleccionar la primera
+                for (var i = 0; i < opciones_fs.length; i++) {
+                    if (opciones_fs[i].type == "radio" && opciones_fs[i].checked) {
+                        opciones_fs[i].checked = false;
+                        break;
+                    }
+                }
+            }
+        });
     </script>
 </body>
 
