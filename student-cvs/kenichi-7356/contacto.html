@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Perfil profesional</title>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -20,15 +21,53 @@
         </nav>
     </header>
     <hr>
-    <section class="container">
+    <main class="container">
         <article class="contacto">
             <p><h2><strong>Contactame</strong></h2></p>
-            <form action="" method="post">
-
+            <form action="/serve" method="get">
+                <div class="form-group">
+                    <label for="mane">Nombre</label>
+                    <input id="name" value="name" type="text" placeholder="Ingrese Nombre y Apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input id="email" value="email" type="email" placeholder="ingrese su correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <input id="10000" name="budge" value="10000" type="radio"><label for="10000">$10000</label>
+                        <input id="5000" name="budge" value="5000" type="radio"><label for="5000">$5000</label>
+                        <input id="1000" name="budge" value="1000" type="radio"><label for="1000">$1000</label>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="type">Tipo de Proyecto</label>
+                    <select name="" id="type" required>
+                        <option disabled selected>Seleccione uno</option>
+                        <option value="website">Página web</option>
+                        <option value="webapp">Aplicación web</option>
+                        <option value="mobileapp">Aplicación movil</option>
+                        <option value="desing">Diseño</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripcion</label>
+                    <textarea name="description" id="" rows="5" required></textarea>
+                    <div>
+                        Escribe una explicacion corta del proyecto.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" value="TermAcept" name="terms" id=""><span>Acepto terminos y condiciones</span>
+                    </label>
+                </div>
+                <button type="submit">Enviar</button>
                 
             </form>
         </article>
-    </section>
+    </main>
     <ol>
         <li><strong><i>Redes sociales</i></strong><br></li><br>
         <li><strong><i>Github: https://github.com/AlfonsoIng.</i></strong><br></li>

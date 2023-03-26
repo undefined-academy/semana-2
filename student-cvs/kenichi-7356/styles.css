@@ -1,3 +1,9 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
 body {
     min-height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,4 +61,53 @@ strong {
 }
 footer, ol{
     list-style-type: none;
+}
+.contacto{
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+}
+.form-group{
+    margin: 20px 0;
+}
+label, input:not([type="radio"], [type="checkbox"]){
+    width: 100%;
+    /*display: block;*/
+}
+label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+    
+}
+textarea{
+    display: block;
+    resize: vertical;
+    font-size: 14px;
+
+}
+input[type="text"], input[type="email"], textarea{
+    background:white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #9b8d14;
+    background-color: coral;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 8px;
+}
+button:hover{
+    opacity: 70%;
+}
+button:active{
+background: rgb(156, 55, 18);
+box-shadow: none;
+
 }
