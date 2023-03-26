@@ -1,24 +1,80 @@
-*{
+html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+*{
+    box-sizing: inherit;
 }
 
 
 body {
-    background-color: rgb(148, 209, 190);
-    margin: 0 auto;
-    max-width: 60em;
+    background: linear-gradient(to bottom, #62bfed, #52154e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px;
 }
 
-p, h1, h2, h3, li, a{
+p, li, #top{
     font-family: sans-serif;
-    color: #333;
+    color: whitesmoke;
 }
 
-h1, h2:not(.intro), h3 {
-    background-color: whitesmoke;
+.link {
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
     padding: 15px;
+}
+
+.link:hover:not(#top, .item > .link) {
+    color:#62bfed;
+    border: 1px solid #9f0d95;
+}
+
+.item > .link {
+    color:#111;
+    border: 1px solid #0b70a3;
+    border-radius: 10px;
+}
+
+.item > .link:hover{
+    color: #0b70a3;
+    border: 1px solid #111;
+}
+
+nav{
+    padding: 15px;
+    background: #222;
+}
+
+nav > div > a {
+    margin: 15px
+}
+
+nav > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#top{
+    background: #222;
+    margin: 0px ;
+    padding: 20px 0px
+}
+
+h1:not(#top), h2, h3 {
+    background: linear-gradient(to top left, #52154e, #62bfed) ;
+    padding: 20px;
+    padding-left: 25px;
     border: 1px solid black;
     border-radius: 15px;
+    color: #222;
+    font-family: sans-serif;
 }
 
 .intro{
@@ -38,8 +94,19 @@ p, li, a{
     font-size: 20px;
 }
 
+p, ul{
+    width: 95%;
+}
+
 .item {
     margin: 10px 0;
+}
+
+#git{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 #top{
@@ -49,8 +116,8 @@ p, li, a{
 }
 
 .section{
-    margin: 15px 5px;
-    padding: 15px;
+    margin: 0px 40px;
+    padding: 25px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -60,16 +127,22 @@ p, li, a{
 #btn{
     border: 1px solid black;
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
     margin: 5px;
-    margin-bottom: 20px;
     text-decoration: none;
+    color: #111;
+    font-family: sans-serif;
+    background: #62bfed
+}
+
+#btn:hover{
+    background: radial-gradient(#62bfed, #52154e);
 }
 
 .btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
 }
 
 figure{
@@ -90,3 +163,4 @@ figure{
     justify-content: center;
     flex-direction: row;
 }
+

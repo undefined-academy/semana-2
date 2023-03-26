@@ -9,13 +9,18 @@
 </head>
 <body>
     <article>
-    <h1 id="top">¡Hola! Mi nombre es Cristian Recabarren 👋</h1>
-        <section class="section">
-            <h2 class="intro">👨‍🎓 | Estos son algunos datos acerca de mí</h2>
-            <figure class="dev_img"><img src="Assets/cristian.jpg" alt="dev" id="img"></figure>
-        </section>
-        <section class="section">
+        <h1 id="top">¡Hola! Mi nombre es Cristian Recabarren 👋</h1>
+        <nav>
+            <div>
+                <a class="link" href="#about">Acerca de mí</a>
+                <a class="link" href="#education">Mi educación</a>
+                <a class="link" href="#skills">Mis habilidades</a>
+                <a class="link" href="#contact">Contáctame</a>    
+            </div>
+        </nav>
+        <section class="section" id="about">
             <h2>👨‍🎓 | Acerca de mí </h2>
+            <figure class="dev_img"><img src="Assets/cristian.jpg" alt="dev" id="img"></figure>
             <p>Actualmente estoy residiendo en la provincia de Córdoba, Argentina. Tengo 24 años y algunas características sobre mí son las siguientes:</p>
                 <ul>
                     <li class="item">Entusiasta por la tecnología.</li>
@@ -35,8 +40,7 @@
                     <li class="item">Me llama la atención viajar a diversos lugares para conocer sus paisajes, estos son Canadá, Uruguay, Japón y probablemente Alemania.</li>
                 </ul>
         </section>
-        
-        <section class="section">
+        <section class="section" id="education">
             <h2>🎓 | Educación </h2>
             <ul>
                 <li class="item">Nivel secundario: Instituto Provincial de Educación Técnica 334 (2010-2017). Córdoba.</li>
@@ -53,11 +57,9 @@
                 <li class="item">Campus virtual de la provincia de Córdoba: Curso de capacitación enfocado en la tecnología Blockchain y criptomonedas (2022).</li>
                 <li class="item">Plataforma 5: Curso introductorio a la programación web (2022).</li>
                 <li class="item">Coursera && ComunidadIT: Certificación de Especialista en Soporte de Tecnologías de la Información de Google (2022).</li>
-                <li class="item">Coursera && ComunidadIT: Certificación de Especialista en Diseño UX de Google. (2022)</li>
-                <li class="item">Open Bootcamp: Certificación en Diseño UX/UI. (2023)</li>
             </ul>
         </section>
-        <section class="section">
+        <section class="section" id="skills">
             <h2>🧠 | Habilidades </h2>
             <ul>
                 <li class="item">HTML5</li>
@@ -76,11 +78,12 @@
                 <li class="item">Nivel de Experiencia en la industria tech: <strong>trainee</strong></li>
             </ul>
         </section>
-        <section class="section">
+        <section class="section" id="contact">
             <h2>🚀 | Perfil de GitHub </h2>
-            <ul>
-                <li class="item">Click a continuación: <a href="https://github.com/bit-rec98"> Mi perfil de GitHub</a></li>
-            </ul>
+            <p>Acá podrás ver mis repositorios en mi cuenta de GitHub.</p>
+                <ul>
+                    <li class="item" >Click a continuación: <a id="git" class="link" href="https://github.com/bit-rec98"> Mi perfil de GitHub</a></li>
+                </ul>
         </section>
         <div class="btn">
             <a href="#top" id="btn">Inicio</a>
