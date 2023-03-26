@@ -40,3 +40,7 @@ pre {
     padding: 1em;
     border-left: 2px solid #69c;
 }
+
+ul li {
+    list-style-type: circle;
+}
