@@ -8,8 +8,35 @@ body {
   color: #566b78;
 }
 
+header h2 {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 0 1rem;
+}
+
+nav ul li:not(:first-child){
+  border-left: 1px solid;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 h2 {
-  margin-top: 2em;
+  margin-top: 2rem;
   padding-left: .5rem;
   border-left: 2px solid #69c;
 }
