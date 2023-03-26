@@ -81,15 +81,56 @@
         </section>
         <br>
         <footer>
-            <p>Published: <time datetime="2023-03-19">19th March</time></p>
+            <p>Published: <time datetime="2023-03-26">26th March</time></p>
         </footer>
     </article>
     <br><br><br>
     <footer>
-        <p>Deploy test: <a href="https://deploy-html-ace.vercel.app">https://deploy-html-ace.vercel.app</a></p>
+        <p>Deploy test: <a href="https://deploy-form-ace.vercel.app">https://deploy-form-ace.vercel.app</a></p>
         <address>
             <p>For more information plase contact <a href="mailto:andresce68@gmail.com">me</a></p>
         </address>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="username">Name: </label>
+                <input id="username" name="username" type="text" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="emailadress">e-mail: </label>
+                <input id="emailadress" name="emailadress" type="email" placeholder="Your e-mail adress" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject: </label>
+                <select id="subject" name="subject" required>
+                    <option disabled selected value="">Select one</option>
+                    <option value="info">General Informmation</option>
+                    <option value="request">Request</option>
+                    <option value="videocall">Videoconference</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="msg">Message: </label>
+                <textarea id="msg" name="msg" rows="7" placeholder="Write your message here" required></textarea>
+                <div class="helptextarea">Message text</div>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Priority: </legend>
+                    <input id="normal" name="priority" type="radio" value="normal"><label for="normal">Normal</label>
+                    <input id="urgent" name="priority" type="radio" value="urgent"><label for="urgent">Urgent</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>Accept Terms and Conditions</span>
+                </label>
+            </div>
+            <div class="controlbutton">
+                <button>Send</button>
+            </div>
+        </form>
     </footer>
 </body>
 

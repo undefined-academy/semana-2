@@ -83,3 +83,50 @@ body > footer {
     background-color: rgb(187, 187, 210);
     color: black;
 }
+
+.form-group {
+    margin: 10px 25px 5px 20px;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 99.5%;
+}
+
+.form-group > textarea {
+    display: block;
+    width: 99.5%;
+    resize: vertical;
+}
+
+::placeholder {
+    text-align: left;
+    font-style: italic;
+}
+
+label {
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 4px 6px;
+    font-size: small;
+}
+
+.helptextarea {
+    font-size: small;
+    text-align: right;
+    color: rgb(106, 105, 105);
+}
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(27, 27, 196);
+}
+
+.controlbutton {
+    padding: 10px;
+    text-align: center;
+}
