@@ -15,25 +15,35 @@
 			href="/student-cvs/natsumychan-4117/contact.css" />
 	</head>
 	<body>
-		<h1>Contact</h1>
+		<div class="form-container">
+			<h1>Contact</h1>
 		<form
 			action="/server"
-			method="get">
-			<label for="name">Name</label>
-			<input
+			method="get" id="submit">
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input
 				type="text"
 				id="name"
 				required />
-			<label for="email">Email</label>
-			<input
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input
 				type="email"
 				name="email"
 				id="email"
 				required />
-			<input
+			</div>
+			<div class="form-group">
+				<label for="meeting-date">
+					What time do you want to meet in zoom?
+				</label>
+				<input
 				type="datetime-local"
 				name="meeting"
-				id="" />
+				id="meeting-date" />
+			</div>
 			<fieldset>
 				<legend>What is your favorite programming language?</legend>
 				<input
@@ -70,13 +80,17 @@
    <label for="description">Description</label>
    <textarea name="" id="description" required></textarea>
    <p>Make a brief description of the project, at least 500 words</p>
-   <label for="terms">
-    <input type="checkbox" name="" id="terms" checkbox>
-    <p>Agree terms and conditions</p>
-   </label>
+  	<div class="form-group">
+				<label for="terms">
+    	<input type="checkbox" name="terms" id="terms" checkbox>
+    	<p>Agree terms and conditions</p>
+   	</label>
+			</div>
 			<input
 				type="submit"
-				value="Send" />
+				value="Send"/>
 		</form>
+		</div>
+		<script src="/student-cvs/natsumychan-4117/contact.js"></script>
 	</body>
 </html>
