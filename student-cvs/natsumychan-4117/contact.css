@@ -78,8 +78,8 @@ p{
 
 .submit-button{
   margin-bottom: 50px;
-  height: 40px;
-  width: 100px;
+  height: 60px;
+  width: 130px;
   background-color: #03001C;
   color:var(--main-color-font);
   border-radius: 4px;
