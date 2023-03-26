@@ -1,0 +1,84 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portada {
+    background-image: url(portada.jpg);
+    background-position: center top;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 6vw 2em;
+    text-align: center;
+}
+
+.portada h1 {
+    color: rgb(247, 195, 224);
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.portada nav ul {
+    margin-right: 40px;
+}
+
+.portada nav li {
+    display: inline-block;
+    margin: 2px;
+    list-style: none;
+}
+
+.portada nav li a {
+    font-size: 1em;
+    color: rgb(244, 156, 205);
+    text-decoration: none;
+    padding: 3px 1px;
+}
+
+.portada nav li a:hover {
+    color: palevioletred;
+}
+
+main {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 60em;
+    line-height: 1.5;
+    padding: 0 1em 4em;
+    color: #555;
+}
+
+p strong {
+    color: #333;
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(195, 83, 243);
+}
+
+p a:hover {
+    color: rgb(131, 7, 188);
+}
+
+article h2 {
+    color: #555;
+}
+
+.container {
+    background-color: rgb(213, 233, 239);
+    padding: 5px;
+    margin: 2rem 0;
+    color: black;
+}
+
+.container ul li {
+    list-style-type: square;
+}
+
+footer {
+    padding: 3rem;
+    background-color: gainsboro;
+    color: #555;
+}
+
+
