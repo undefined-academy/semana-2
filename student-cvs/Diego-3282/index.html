@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/097d438f24.js" crossorigin="anonymous"></script>
+
+
     <meta charset="UTF-8">
     <title>Diego Mauricio Restrepo</title>
 
@@ -115,10 +117,54 @@
     </section>
     <br>
     <hr>
+    <section>
+        <fieldset>
+            <legend>Contáctame </legend>
+            <form action='/server' method='get' class='form' id="contactForm" name="contactForm">
+                <div class="form-group">
+                    <label for="name"> Nombre</label>
+                    <input id="name" type="text" name="name" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Celular</label>
+                    <input type="tel" id="phone" name="pho" placeholder="Ingresa tu celular" required>
+                </div>
+                <div class="form-group">
+                    <label for="job">Tipo de trajo </label>
+                    <select name="job" id="job" required>
+                        <option value="" selected disabled>Selecione uno </option>
+                        <option value="app-android">Aplicacion Android</option>
+                        <option value="trading-bot">Bot de Trading en Python</option>
+                        <option value="static-website">Sitio web estatico</option>
+                        <option value="app-web">Aplicacion web</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">describe tus requerimientos</label>
+                    <textarea name="descripcion" id="descripcion"
+                        placeholder="Ingresa aca la descripcion del proyecto a solicitar" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="term">
+                        <input id="term" type="checkbox" name="term" required>
+                        <span> Acepto los términos y condiciones</span>
+                    </label>
+                </div>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </fieldset>
+    </section>
+
     <footer>
         <h2> Este es mi perfil de Github</h2>
-        <a href="https://github.com/restre17"> Diego Mauricio Restrepo - Github </a>
+        <a href="https://github.com/restre17"> <i class="fa-brands fa-github fa-2xl"></i> Restre17 </a>
     </footer>
-</body>
 
+    <script> contactForm.addEventListener("submit", e => e.preventDefault()); </script>
+</body>
 </html>
