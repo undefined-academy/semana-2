@@ -1,7 +1,10 @@
 
-:root{
- --main-color:#66347F;
- --main-font-color:whitesmoke;
+:root {
+ --main-color: #66347F;
+ --main-font: 'Poppins',
+  sans-serif, Helvetica;
+ --main-color-font: whitesmoke;
+ --accent-focus-color:#F2921D;
 }
 
 html{
@@ -12,11 +15,83 @@ html{
  box-sizing: inherit;
 }
 
-body{
- background-color: var(--main-color);
- color: var(--main-font-color);
+body {
+ margin: 0;
+ padding: 0;
+ background-color: #F9F7FE;
+ font-size: 62.5%;
+ font-family: var(--main-font);
+ color: var(--main-color-font);
+}
+
+.form-container{
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: var(--main-color);
+  border-radius: 4px;
+}
+
+.form-container h1{
+ font-size: 2rem;
+ margin-left: 12px;
+ padding-top: 40px;
+ padding-left: 50px;
 }
 
 form{
- border: 1px solid tomato;
+  margin: 0 auto;
+  width: 80%;
+  accent-color: var(--accent-focus-color);
+}
+
+.form-group{
+  margin: 20px 0;
+}
+
+label, input, legend{
+  vertical-align: middle;
+  font-size: 1.4rem ;
+}
+
+label, input:not([type="radio"], [type="checkbox"], [type="submit"]){
+  width: 100%;
+}
+
+input:focus-visible, textarea:focus-visible{
+  border: 1px solid var(--accent-focus-color);
+  outline: 1px solid var(--accent-focus-color);
+}
+
+textarea{
+  display:block;
+  width:100%;
+  height:100px;
+  resize: vertical;
+}
+
+p{
+  color: rgb(216, 216, 216);
+}
+
+.submit-button{
+  margin-bottom: 50px;
+  height: 40px;
+  width: 100px;
+  background-color: #03001C;
+  color:var(--main-color-font);
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover{
+  background-color: teal;
+  cursor: pointer;
+}
+
+.button:active{
+  background: rgb(0, 228, 228);
+  box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
