@@ -39,3 +39,12 @@ table thead th {
 table th, table td {
 	padding: .5rem;
 }
+
+footer h3 {
+  display: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
