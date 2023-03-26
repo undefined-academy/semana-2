@@ -1,20 +1,34 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Rammetto+One&family=Titillium+Web:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web:wght@200;300;400;600&display=swap");
 * {
   font-family: "Titillium web";
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
-/* SECCION INICIO */
+/* MOBILE FIRST */
+main {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+@media screen and (min-width: 992px) {
+  section {
+    display: flex;
+  }
+}
+/* HOME SECTION */
 .home {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(img/Fondo.jpg);
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
+  background-color: #000;
+  color: #940253;
 }
 .home .content-section {
   max-width: 1000px;
@@ -25,58 +39,46 @@ html {
 .home .content-section header {
   padding: 30px;
 }
-/* menu lateral */
 .home .content-section header nav {
-  position: fixed;
-  margin-left: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  /*---*/
   background-color: #940253;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  text-align: left;
-  z-index: 99;
-  display: none;
+  margin-bottom: 20px;
 }
 .home .content-section header nav a {
-  display: block;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
   font-weight: bold;
 }
-/* **** */
 .home .content-section header .logo {
   font-weight: bold;
   font-size: 3.5rem;
-  font-family: "Rammetto One";
+  color: #fff;
+  font-family: "Russo One", sans-serif;
   text-shadow: 0 0 35px #fff;
 }
 .home .content-section header .logo .color {
-  color: #940253;
-  font-family: "Rammetto One";
-}
-.home .content-section header .nav-bar {
-  position: fixed;
-  background-color: #940253;
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 50px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.home .content-section header .nav-bar:hover {
-  box-shadow: 0 0 35px #fff;
+  color: #bb0c6c;
+  font-family: "Russo One", sans-serif;
 }
 .home .content-section .info {
   padding-bottom: 130px;
 }
 .home .content-section .info h1 {
   font-size: 3rem;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 55px #fff;
+  color: #e6e6e6;
 }
 .home .content-section .info h2 {
-  font-weight: normal;
   font-size: 20px;
   margin-top: -10px;
   letter-spacing: 2px;
@@ -114,12 +116,14 @@ html {
   top: -100px;
   transform: translateX(-50%);
 }
-/* estilos generales */
+/* GENERAL STYLES */
 .title-section {
-  font-family: "Alkatra", cursive;
+  font-family: "Russo One", sans-serif;
+  font-weight: lighter;
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
-/* SECCION SOBRE MI */
+/* ABOUT ME SECTION */
 .aboutme {
   background-color: #e6e6e6;
   padding: 140px 0 100px 0;
@@ -167,11 +171,13 @@ html {
   margin: 8px 0;
 }
 
-/* SECCION RESUMEN */
+/* RESUME SECTION */
 .resume {
   background-color: #e6e6e6;
-  padding: 140px 0 100px 0;
+  color: #000;
+  padding: 100px 0 100px 0;
   text-align: center;
+  border: 1px solid gray;
 }
 .resume .content-section {
   max-width: 1000px;
@@ -184,12 +190,10 @@ html {
 }
 .resume .content-section .info {
   text-align: left;
-  display: flex;
-  justify-content: space-between;
   margin-top: 30px;
 }
 .resume .content-section .info .col {
-  width: 45%;
+  width: auto;
 }
 .resume .content-section .info .col .title {
   display: inline-block;
@@ -197,6 +201,8 @@ html {
   font-weight: bold;
   border: 2px solid #940253;
   padding: 10px;
+  background-color: #000;
+  margin-top: 20px;
 }
 .resume .content-section .info .col table {
   margin-top: 30px;
@@ -221,6 +227,7 @@ html {
   display: block;
   color: #940253;
   margin-top: 10px;
+  font-size: 17px;
   font-weight: bold;
 }
 .resume .content-section .info .col table .description {
@@ -228,27 +235,24 @@ html {
   padding-left: 20px;
 }
 
-/* SECCION CONTACTO */
+/* CONTACT FORM SECTION */
 .contact {
-  background-color: #bab9b9;
-  color: #000;
+  background-color: #000;
+  color: #940253;
   padding: 140px 0 100px 0;
   text-align: center;
 }
 .contact .content-section {
-  max-width: 1000px;
-  margin: 100px auto;
+  width: 30em;
 }
 .contact .content-section h3 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 30px;
   margin-top: 15px;
 }
 .contact .content-section .container .contact-box {
-  max-width: 600px;
-  margin: 100px auto;
-  background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0 0 0 0.19);
+  background-color: gainsboro;
+  border: 1px solid #222;
   margin-top: 50px;
 }
 .contact .content-section .container .contact-box .right {
@@ -257,27 +261,24 @@ html {
 .contact .content-section .container .contact-box .right .field {
   width: 100%;
   border-radius: 3px;
-  border: 1px solid #670039;
-  border: 1px solid #666;
+  border: 1px solid #000;
   font-size: 1.1rem;
   margin-bottom: 1.1rem;
   transition: 0.3s;
   text-indent: 10px;
 }
 .contact .content-section .container .contact-box .right .field:hover {
-  background-color: hsla(344, 95%, 8%, 0.363);
-  color: white;
+  background-color: hsla(345, 96%, 33%, 0.363);
+  color: #000;
   outline: 1px solid #670039;
   border: 1px solid #670039;
 }
 ::placeholder {
-  color: #000;
-  text-transform: uppercase;
-  font-size: medium;
+  color: black;
+  text-transform: capitalize;
 }
 .contact .content-section .container .contact-box .right .field:focus-visible {
-  border: 1px solid red;
-  outline: 1px solid #670039;
+  border: 1px solid #670039;
 }
 .contact .content-section .container .contact-box .right .area {
   min-height: 100px;
@@ -320,8 +321,8 @@ input:not([type="checkbox"]) {
 .form-group label {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
-  color: #444;
+  font-size: 17px;
+  color: #080331;
 }
 form {
   accent-color: red;
