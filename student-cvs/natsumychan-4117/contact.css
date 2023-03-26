@@ -29,9 +29,12 @@ body {
   height: auto;
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 30px;
   padding: 20px 0;
   background-color: var(--main-color);
   border-radius: 4px;
+  border: 1px solid whitesmoke;
+  box-shadow: 7px 17px 34px -6px rgba(99, 97, 99, 1);
 }
 
 .form-container h1{
