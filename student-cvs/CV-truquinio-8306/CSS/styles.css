@@ -2,8 +2,8 @@ html {
   background-color: #212429;
   height: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-
 
 * {
   box-sizing: inherit;
@@ -11,10 +11,28 @@ html {
 
 body {
   margin: 0;
+  font-family: Arial;
 }
 
 .main {
   background: transparent url("https://i.ibb.co/Ld7q13v/fondo3.jpg") repeat fixed 0 0;
+}
+
+/* SETEO LA VELOCIDAD DE GIRO DEL LOGO */
+.logo {
+  width: 3%;
+  margin-right: 20px;
+  animation: logo-spin infinite 10s linear;
+}
+
+/* SETEO EL GIRO DEL LOGO */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .about,
@@ -47,7 +65,7 @@ footer {
   margin-right: 10px;
 }
 
-.tecnologias:hover{
+.tecnologias:hover {
   transform: scale(1.1);
   transition: 1s;
 }
@@ -137,35 +155,5 @@ label,
 .boton:active {
   background: #db4932;
   border: 1px solid #db4932;
-  transition: 1s;
-}
-
-footer,
-footer a {
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  padding: 50px auto 0 0;
-  background: #212429;
-}
-
-footer a:hover {
-  color: #e48c0d;
-  transition: 0.2s;
-}
-
-.rrss {
-  display:flex;
-  flex-wrap: wrap;
-}
-
-.item {
-  display: inline-block;
-  justify-content: space-between;
-  margin-right: 10px;
-}
-
-.item:hover{
-  transform: scale(1.1);
   transition: 1s;
 }
