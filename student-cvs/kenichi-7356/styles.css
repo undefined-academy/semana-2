@@ -109,5 +109,7 @@ button:hover{
 button:active{
 background: rgb(156, 55, 18);
 box-shadow: none;
-
+}
+form{
+    accent-color: #999;
 }
