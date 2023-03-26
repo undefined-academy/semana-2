@@ -1,24 +1,42 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 header.main {
-    background-color: #72a092;
+    background-image: url("img/header-page.jpg");
+    image-rendering: pixelated;
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-color: #868686;
     line-height: 1.2;
     padding: 3vw 0em;
     text-align: center;
-    margin: 0;
-    max-width: 100%;
 }
 
-div.main {
+main.page {
     margin: 0 auto;
     max-width: 50em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     padding: 0em 1em;
     color: #566b78;
+}
+
+body {
+    color: #333;
+    background-color: #f3f1f1de;
+    margin: 0;
 }
 
 h2 {
@@ -55,12 +73,14 @@ header h1 {
     color: rgb(0, 0, 0);
     font-size: 2.5em;
     font-weight: 600;
+    text-shadow: 2px 2px #fefefe
 }
 
 table {
     background-color: #f5f7f9;
     border: 1px solid;
     border-collapse: collapse;
+    width: 100%;
 }
 
 td,
@@ -83,7 +103,7 @@ footer {
 }
 
 nav {
-    background-color: #72a092;
+    background-color: transparent;
 }
 
 nav ul {
@@ -102,4 +122,6 @@ nav li {
 nav a {
     color: #333;
     text-decoration: none;
+    font-weight: bold;
+    font-weight: 18px;
 }
