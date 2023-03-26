@@ -1,0 +1,23 @@
+*{
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+h1,h3{
+     color: rebeccapurple
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin: 10px;
+    padding: 20px;
+   
+}
+body{
+    background-color: rgb(247, 222, 237);
+}
+footer{
+    font-size: 10px;
+}
