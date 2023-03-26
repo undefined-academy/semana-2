@@ -4,6 +4,15 @@
 table{border: 1px solid black; border-collapse: collapse;}
 td, th{border:1px solid black}
 
+a {
+    list-style-type: none;
+}
+
+.navegador li{
+display: inline;
+margin: 0 10px 0 0;
+}
+
 body {
     margin: 0 auto;
     max-width: 50em;
@@ -11,6 +20,8 @@ body {
     line-height: 1.2;
     padding: 0em 1em;
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h3 {
@@ -18,18 +29,18 @@ h1, h3 {
     padding-top: 1em;
     color: sienna;
   font-size: 2.5em;
-  font-weight: 300;
+  font-weight: 400;
     
 }
 strong {
     color: #333;
 }
 
-a {
+footer div a {
     color: #e81c4f;
     border: 1px solid #e81c4f;
     border-radius: 290486px;
-    color: white;
+    color: brown;
     font-size: 0.6em;
     letter-spacing: 0.2em;
     padding: 1em 2em;
@@ -46,6 +57,7 @@ footer{
 }
 
 footer div{
+    text-align: center;
     display: inline-block;
     padding: 0 90px;
 }
@@ -64,3 +76,27 @@ a:visited{
     color: brown
 }
 
+@media screen and (min-width: 792px) {
+    .navegador{
+        display: inline-block;
+    }
+
+    .tablas {
+        max-width: 40%;
+        display: inline-block;
+        justify-content: space-between;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .habilidades{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+}
