@@ -109,8 +109,10 @@ a {
     margin-left: 10em;
 }
 
-.tux {
+.emphatic {
     text-align: center;
+    font-weight: 700;
+    font-style: italic;
 }
 
 footer {
