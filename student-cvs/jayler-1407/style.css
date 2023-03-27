@@ -1,0 +1,78 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 1em 1em;
+    background-color: rgb(203 213 225);
+}
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+    background-color: rgb(203 213 225);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+h1{
+    text-align: center;
+}
+
+h2,
+h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1,
+h2,
+h3,
+strong {
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+th {
+    text-align: left;
+}
+
+td,
+th {
+    border: 2px solid #3a588f;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    
+}
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.socialMedia a {
+    margin-right: 30px;
+    color: #3168af;
+}
+
+.socialMedia i {
+    font-size: 34px;
+}
