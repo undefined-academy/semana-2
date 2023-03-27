@@ -7,6 +7,10 @@ footer a {
   background: #212429;
 }
 
+footer a{
+  padding: 0 1%;
+}
+
 footer a:hover {
   color: #e48c0d;
   transition: 0.2s;
