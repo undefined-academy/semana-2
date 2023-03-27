@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -16,12 +16,25 @@
 
 <body>
 
-    <header>
-        <h1>Hello, I'm Leonel Ramón Guanactolay. </h1>
-    </header>
-
+    <header>      
+          <nav class="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a href="/formulario.html" class="nav-link">CONTACTO</a>
+              </li>
+            </ul>
+          </nav>
+      </header>
+      
+      
     <main>
-
+        <h1>Hello, I'm Leonel Ramón Guanactolay. </h1>
         <section>
             <h2>Soy un estudiante de Ing. Informática y FullStack Developer en Undefined Academy.</h2>
 
@@ -30,7 +43,7 @@
                 mantenimiento de
                 equipos electrónicos. En mis tiempos libres me gusta tocar la guitarra eléctrica, practicar canto y
                 también soy un
-                consumidor de Twitch (moderador de <a href="https://www.instagram.com/celepamio/" target="_blank">Cele
+                consumidor de Twitch (moderador de <a class="linkk" href="https://www.instagram.com/celepamio/" target="_blank">Cele
                     Pamio</a>).
             </p>
             <p>
@@ -38,8 +51,7 @@
                 universitarios como a
                 través de cursos en línea, especialmente en plataformas como YouTube.
             </p>
-            <p><span>Link de <a href="https://github.com/LeoBj17" target="_blank">Mi perfil de GitHub.</a></span>
-            </p>
+            <p><span>Link de <a class="linkk" href="https://github.com/LeoBj17" target="_blank">Mi perfil de GitHub.</a></p>
         </section>
 
         <section>
@@ -56,9 +68,7 @@
         </section>
 
         <article>
-
             <h2>Tabla con algunos Comandos 💻</h2>
-
             <table>
                 <tr>
                     <th>Comandos</th>
@@ -95,6 +105,7 @@
                 </tr>
             </table>
         </article>
+
 
         <footer>
             <p>&Copyright 2023 - All rights reserved</p>

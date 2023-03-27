@@ -1,0 +1,114 @@
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    color: #333;
+    background-color: #fafafa;
+}
+
+form{
+    background-color: #faf5ff;
+    border: 1px solid #d8b4fe;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #888888;
+    accent-color: #a855f7;
+}
+
+input:focus-visible, textarea:focus-visible{
+    border: 1px solid #7e22ce;
+    outline: 1px solid #a855f7;
+}
+.page{
+    max-width: 600px;
+    margin: 50px auto ;
+    padding: 0 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group{
+    /*border: 1px solid tomato;*/
+    margin: 15px 0;
+}
+
+label, input{
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]){ /*input[type="text"], input[type="email"]*/
+    width: 100%;
+}
+
+label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444
+}
+textarea{
+    display: block;
+    width:100%;
+    resize: vertical;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help{
+    font-size: 12px;
+    margin-top: 8px;
+    color: gray;
+}
+
+
+
+select option {
+    background-color: #e0f2fe ;/*#f2f2f2*/
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+
+  button.Boton{
+    border: 0;
+    background-image: linear-gradient(
+    150deg,
+    #8b5cf6,
+    #5b21b6,
+    #a855f7
+    );
+    border-radius: 8px;
+    color: #FFF;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button.Boton span{
+    background-color: #8b5cf6;
+    padding: 16px 32px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button.Boton:hover span{
+    background: none;
+}
+
+button.Boton:active{
+    transform: scale(0.9);
+}    

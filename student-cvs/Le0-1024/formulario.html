@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <nav class="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+      
+    </header>
+
+
+    <main class="page">
+
+        <h1>Formulario de Contacto</h1>
+
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group">
+                <label for="surname">Apellido:</label>
+                <input type="text" id="surname" name="surname" placeholder="Ingrese su apellido">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Ingrese su gmail" required>
+            </div>
+            <div class="form-group">
+                <label for="numberphone">Teléfono/Celular:</label>
+                <input id="numberphone" name="numberphone" type="number"  placeholder="Ingrese número de contacto">
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="50000" type="radio" name="budget" value="50000" required>
+                    <label for="50000">$50.000</label>
+
+                    <input id="10000" type="radio" name="budget" value="10000" required>
+                    <label for="10000">$10.000</label>
+
+                    <input id="5000" type="radio" name="budget" value="5000">
+                    <label for="5000">$5.000</label>
+
+                    <input id="1000" type="radio" name="budget" value="1000">
+                    <label for="1000">$1.000</label>
+                </fieldset>
+                <div class="help">
+                    Este presupuesto es el precio base no el final.
+                </div>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Hombre</label>
+                    <br>
+                    <span class="help">Seleccione esta opción si es hombre.</span>
+                    <br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Mujer</label>
+                    <br>
+                    <span class="help">Seleccione esta opción si es mujer.</span>
+                    <br>
+                    <input type="radio" name="gender" id="otro">
+                    <label for="otro">Otro</label>
+                  </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipos de Proyectos</label>
+                <select name="type" id="type" required>
+                    <option value="" disabled selected>Seleccione uno</option>
+                    <option value="Website">Website</option>
+                    <option value="Webapp">Webapp</option>
+                    <option value="Movile">Movile</option>
+                    <option value="Diseño">Diseño</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="messege">Mensaje:</label>
+                <textarea name="messege" id="messege" rows="6" placeholder="Cuéntame más sobre tu proyecto."></textarea>
+                <div class="help">
+                    Escribe una descripción del proyecto en al menos 700 palabras
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    <span>Acepto todos los términos y condiciones</span>
+                </label>
+            </div>
+            <button class="Boton" type="submit"><span>Enviar</span></button>
+        </form>
+
+    </main>
+</body>
+
+</html>
