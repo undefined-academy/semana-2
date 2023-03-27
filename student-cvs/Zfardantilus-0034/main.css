@@ -9,14 +9,14 @@ body {
     margin: 10px auto;
 }
 
-h1, h2, h3 {
+.coolbg {
     background-image: linear-gradient(to right,gray,black);
     padding: 0.5rem;
     text-shadow: black 2px 2px;
     border-radius: 10px 0px 0px 10px;
 }
 
-h1:hover, h2:hover, h3:hover {
+.coolbg:hover {
     background-image: linear-gradient(to left,gray,gray);
     border-radius: 10px;
     text-shadow: black 3px 3px;
@@ -57,3 +57,46 @@ tr:hover {
     background-color: antiquewhite;
     color: black;
 }
+
+.formulario {
+    max-width: 1024px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.form {
+    width: 90%;
+    padding: 0;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.coolinput {
+    border-radius: 0px 0px 0px 10px;
+    padding: 0.5rem;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 25%;
+    text-align: center;
+}
+
+button, a {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.coolbg:active {
+    background-image: linear-gradient(to left,black,gray,black)
+}
+
