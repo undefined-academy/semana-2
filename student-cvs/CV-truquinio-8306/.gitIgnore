@@ -2,6 +2,7 @@
 
 # dependencies
 .vscode
+/.vscode
 /bin
 bin
 /lib
