@@ -23,7 +23,7 @@
 
     <main class="page">
 
-        <form class="form" action="/server" method="get">
+        <form class="form" action="" method="post">
             <h1>Contacto</h1>
             <form action="">
                 <div class="form-group">
@@ -84,7 +84,7 @@
                     
                 </div>
 
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </form>
     </main>
@@ -93,5 +93,10 @@
         <p><em>Los analfabetos del siglo 21 no serán aquellos que no saben leer y escribir, sino aquellos que no pueden aprender, desaprender y volver a
             aprender. - Alvin Toffler.</em></p>
       </footer>
+
+      <script>
+        const form = document.querySelector(".form")
+        form.addEventListener('submit', (event)=>event.preventDefault() )
+    </script>
 </body>
 </html>

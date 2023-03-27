@@ -188,6 +188,10 @@ button {
     
 }
 
+button:hover {
+    background-color: rgb(190, 96, 96);
+}
+
 select {
     background-color: rgb(141, 86, 86);
     color: #ffffff;
