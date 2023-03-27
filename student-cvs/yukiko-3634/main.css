@@ -34,7 +34,6 @@ em{
 .items_tabla {
   padding: 0.1em;  
   border-radius: 7px;
-
 }
 #ls{
     background-color: aquamarine;
@@ -47,6 +46,10 @@ em{
 #del{
     background-color: darkseagreen;
     color: beige;
+}
+#code{
+  background-color: rgb(63, 159, 255);
+  color: beige;
 }
 #md{
     background-color: burlywood;

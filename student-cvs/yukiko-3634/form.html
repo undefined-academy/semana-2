@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='formstyle.css' />
+    <title>Contacto</title>
+</head>
+<body>
+   
+    <form id="contact-form">
+         <h1>Formulario de Contacto</h1>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <br>
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" required>
+        <br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el comportamiento por defecto de envío al servidor
+      
+      });
+      </script>
+</body>
+</html>

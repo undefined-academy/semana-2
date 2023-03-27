@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    max-width: 52em;
+    background-color: #6d6875;
+    color: #ffcdb2;
+    line-height: 1.5;
+    padding: 3em 1em;
+    font-family: "Poppins", sans-serif;
+  }
+  form {
+    background-color: #e5989b;
+    padding: 3.7em;
+    border-radius: 15px;
+  }
