@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto Ana Pérez</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+        <a href="../anaperez-4698/index.html"> Regresar </a>
+    <main class="hoja">
+        <h1> Contacto </h1>
+        <form>
+            <div class="grupo">
+                <label for="name"> Nombre </label>
+                <input id="name" type="text" placeholder="Ingresa tu nombre completo" required>
+            </div>
+            <div class="grupo">
+                <label for="email"> Email </label>
+                <input id="email" type="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="grupo">
+                <fieldset>
+                    <legend> Presupuesto </legend>
+                    <input id="5000" name="budget"type="radio">
+                    <label for="5000">$5000 </label>
+                    <input id="10000" name="budget"type="radio">
+                    <label for="10000">$10000 </label>
+                    <input id="15000" name="budget"type="radio">
+                    <label for="15000">$15000 </label>
+                </fieldset>
+                <div class="grupo">
+                    <label for="type"> Tipo de proyecto </label>
+                    <select id="type" required>
+                        <option disabled selected> Seleccione uno</option>
+                        <option>Website</option>
+                        <option>Diseño</option>
+                        <option>Webapp</option>
+                    </select>
+                </div>
+                <div class="grupo">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion"></textarea>
+                    <div> Escribe una descripción del proyecto </div>
+                </div>
+                <div class="grupo">
+                    <label for="terms"> 
+                        <input id="terms"type="checkbox" required>
+                    <span> Acepto los términos y condiciones </span>
+                    </label>
+                </div>
+            </div>
+            <button> Enviar </button>
+        </form>
+    </main>
+
+</body>
+
+</html>

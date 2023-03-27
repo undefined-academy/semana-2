@@ -13,6 +13,7 @@ figure{
     align-items: right;
     margin: 10px;
     padding: 20px;
+    width: 300px
    
 }
 body{
@@ -20,4 +21,47 @@ body{
 }
 footer{
     font-size: 10px;
+}
+
+/* Contacto */
+a{
+    color: rebeccapurple;
+    font-weight: bold;
+    background-color: #ef167f73;
+}
+.grupo{
+    margin: 20px
+}
+label{
+    font-weight: bold;
+}
+button{
+    padding: 16px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rebeccapurple;
+    color: #333;
+    background: #ef167f73;
+    transform: scale(1.1);
+}
+button:hover{
+    transition: 2s;
+}
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+label, input:not([type="radio"],[type="checkbox"]){
+    width: 100%;
+}
+input[type="text"],input[type="email"],textarea{
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: rgb(56, 52, 52);    
+}
+fieldset{
+    background-color: whitesmoke;
 }
