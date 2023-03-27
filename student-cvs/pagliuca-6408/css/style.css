@@ -42,7 +42,8 @@ nav li a {
 }
   
   nav li a:hover {
-    background-color: #111;
+    background-color: rgb(190, 96, 96);
+    border-radius: 8px;
 }
   
 nav .active {
@@ -138,8 +139,8 @@ label, input:not([type="radio"], [type="checkbox"]) {
 
 label, legend {
     font-weight: bold;
-    color: #ffffff;
-    text-shadow: 2px 2px rgb(141, 86, 86);
+    color: rgb(87, 35, 35);
+    text-shadow: 1px 1px rgb(141, 86, 86);
 }
 
 ::placeholder {
@@ -173,7 +174,7 @@ input {
     margin-top: 6px;
 }
 
-.description, legend {
+.description {
     color: #ffffff;
     
 }
