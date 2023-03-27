@@ -1,185 +1,509 @@
-body {
-    margin: 0 auto;
-    max-width: 50em;
-    font-family: "Helvetica", "Arial", sans-serif;
-    line-height: 1.5;
-    padding: 4em 1em;
-}
-
-nav ul li {
-    background-color: aqua;
-    display: inline;
-    list-style-type: none;
-}
-
-.jm{
-    background-color:blueviolet;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-bottom-right-radius: 300px;
-    
-}
-
-.jm h1, h2{
-    margin-left: 20px;
-    color: aliceblue;
-    
-}
-footer{
-    text-align: center;
-    color: black;
-    font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-
-.for_all{
-    background-color: #9fa8a3;
-    padding: 60px 150px 60px 150px;
-}
-
-.form-group{
-    
-    margin: 15px;
-    max-width: 100%;
-    accent-color:#5B2C6F;
-    
-}
-
-.form-group h1{
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10px;
-}
-label, input[type="text"], input[type="email"], input[type="tel"], textarea {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-input{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background: transparent;
-    border-bottom:1px solid 212121;
-}
-
-input:focus{
-    outline: none;
-}
-
-
-.form-group select {
-    display: block;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    color: #444;
-    line-height: 1.3;
-    padding: .4em 1.4em .3em .8em;
-    width: 500px;
-    max-width: 100%; 
-    box-sizing: border-box;
+* {
     margin: 0;
-    border: 1px solid #aaa;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
-    border-radius: .3em;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%;
-    
-   }
-   .select-css::-ms-expand {
-    display: none;
-   }
-   .select-css:hover {
-    border-color: #888;
-   }
-   .select-css:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222; 
-    outline: none;
-   }
-   .select-css option {
-    font-weight:normal;
-   }
-
-   .form-group textarea{
-    resize: vertical;
-   }
-
-
-   .glow-on-hover {
-    width: 150px;
-    height: 40px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    margin-left: 15px;
 }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+
+@media screen and (min-width:360px) {
+
+
+    body {
+        margin: 0 auto;
+        max-width: 50em;
+    }
+
+    .jm {
+        background: #212121;
+        padding: 15px 10px 15px 10px
+    }
+
+    .jm,
+    h1 {
+        font-size: 16px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .jm,
+    h2 {
+        padding-top: 5px;
+        font-size: 13px;
+        color: #00ffd5
+    }
+
+    .art {
+        display: grid;
+        grid-template-rows: 4(60px);
+    }
+
+    .illustration {
+        width: 300%;
+        height: auto;
+
+
+    }
+
+    img {
+        width: 35%;
+        height: auto;
+    }
+
+    .about h3 {
+        background: #212121;
+        padding: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .about p {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+    }
+
+    .study h3 {
+        background: #212121;
+        padding: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .study {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        background: #212121;
+    }
+
+    .study h4 {
+        margin-top: 10ppx;
+        padding: 15px 15px 0px 15px;
+        color: white;
+        font-size: 14px;
+    }
+
+    .study p {
+        padding: 10px 15px 15px 15px;
+        color: #00ffd5;
+    }
+
+    .curs h3 {
+        background: #212121;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+        font-size: 16px;
+        color: white;
+        margin-top: 10px;
+    }
+
+
+    .curs ol {
+        counter-reset: li;
+        list-style: none;
+        *list-style: decimal;
+        font: 15px 'trebuchet MS', 'lucida sans';
+        padding: 0;
+        margin-bottom: 4em;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    }
+
+    .curs ol {
+        margin: 0 0 0 2em;
+    }
+
+    .curs li {
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        *padding: .4em;
+        margin: .5em 0;
+        background: #ddd;
+        color: #444;
+        text-decoration: none;
+        border-radius: .3em;
+        transition: all .3s ease-out;
+    }
+
+    .curs li:hover {
+        background: #212121;
+        color: white;
+    }
+
+    .curs li:hover:before {
+        transform: rotate(360deg);
+    }
+
+    .curs li:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        left: -1.3em;
+        top: 50%;
+        margin-top: -1.3em;
+        background: #00ffd5;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        border: .3em solid #fff;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 2em;
+        transition: all .3s ease-out;
+    }
+
+    /*ESTE ES EL FORMULARIO*/
+
+    .form-group {
+        padding: 10px;
+        background-color: #5a5b5c;
+        background-image: linear-gradient(160deg, #d0d6da 0%, #eaeeed65 100%);
+
+        margin: 10px;
+    }
+
+    .for_all {
+        width: 100%;
+        max-width: 100%;
+        accent-color: #5B2C6F;
+
+
+
+    }
+
+    .form-group h1 {
+        font-size: 26px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: transparent;
+        border-bottom: 1px solid 212121;
+
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+
+    .form-group select {
+        display: block;
+        font-size: 16px;
+        font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        color: #444;
+        line-height: 1.3;
+        padding: .4em 1.4em .3em .8em;
+        width: 500px;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border: 1px solid #aaa;
+        box-shadow: 0 1px 0 1px rgba(0, 0, 0, .03);
+        border-radius: .3em;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+
+    }
+
+    .select-css::-ms-expand {
+        display: none;
+    }
+
+    .select-css:hover {
+        border-color: #888;
+    }
+
+    .select-css:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
+
+    .select-css option {
+        font-weight: normal;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+
+    .glow-on-hover {
+        width: 150px;
+        height: 40px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: #000
+    }
+
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .end {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        color: black;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-top: 20px;
+    }
 }
 
-.glow-on-hover:active {
-    color: #000
-}
 
-.glow-on-hover:active:after {
-    background: transparent;
-}
+@media screen and (min-width: 1024px) {
 
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
+    footer {
+        text-align: center;
+        color: black;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-top: 20px;
+    }
 
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
+    .form-group {
+        margin: 15px;
+        max-width: 100%;
+        accent-color: #5B2C6F;
 
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
+    }
 
-.end{
-    margin-left: 10px;
-    margin-bottom: 20px;
+    .form-group h1 {
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+    }
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: transparent;
+        border-bottom: 1px solid 212121;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+
+    .form-group select {
+        display: block;
+        font-size: 16px;
+        font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        color: #444;
+        line-height: 1.3;
+        padding: .4em 1.4em .3em .8em;
+        width: 500px;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border: 1px solid #aaa;
+        box-shadow: 0 1px 0 1px rgba(0, 0, 0, .03);
+        border-radius: .3em;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+
+    }
+
+    .select-css::-ms-expand {
+        display: none;
+    }
+
+    .select-css:hover {
+        border-color: #888;
+    }
+
+    .select-css:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
+
+    .select-css option {
+        font-weight: normal;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+
+    .glow-on-hover {
+        width: 150px;
+        height: 40px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: #000
+    }
+
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .end {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
 }
