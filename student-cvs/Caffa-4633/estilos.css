@@ -1,5 +1,9 @@
 /*
-Hoja de Estilos para Ejercicio Semana 1 Clase 4
+Hoja de Estilos Perfil de GitHub
+
+Version: 2.0 - Actividad Semana 2 Clase 4
+
+Versión: 1.0 - Actividad Semana 1 Clase 4
 */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
 
@@ -102,3 +106,87 @@ footer ul li a:hover {
     text-decoration:dotted;
 }
 
+
+/* Formulario de Contacto **/
+
+.form-group {
+    /* border: tomato 1px solid; */
+    margin: 20px 0;
+}
+
+label, input {
+    vertical-align: middle;
+    max-width: 350px;
+    display: inline-block;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100;
+    /*Para que no se ajuste para todos lados*/
+    resize: vertical;
+    color: #c0bebe;
+}
+
+textarea::placeholder {
+    color: #c0bebe;
+    font-size: 14px;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #c0bebe;
+    padding-bottom: 5px
+}
+
+input[type="text"], input[type="email"], textarea {
+    background-color: rgb(88, 58, 58);
+    border: 1px solid #bd5b5b;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: #fddddd;
+    font-size: 15px;
+}
+
+textarea + div, .help, .cancel {
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(190, 190, 190);
+}
+
+.cancel {
+    margin-left: 10px;
+    cursor:pointer;
+}
+
+.cancel a {
+    color: #c0bebe;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #fa7878;;
+    background: #bd5b5b;
+    color: #d2d2d2;
+    text-shadow: -1px -1px 0 rgba(73, 41, 9, 0.6);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #930c0c;
+}
+
+button:active {
+    background-color: #ca8a04;
+    box-shadow: -1px -1px 0 rgba (0,0,0,.5);
+}
