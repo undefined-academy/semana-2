@@ -16,7 +16,7 @@
             </nav>
         </header>
         <main>
-            <form class="formulario" action="">
+            <form id="formulario">
                 <h3 class="coolbg">Formulario</h3>
                 <div class="form coolbg">
                     <label class="coolbg" for="name">Nombre:</label>
@@ -41,6 +41,11 @@
                 <div class="form coolbg">
                     <button class="coolbg" type="submit">ENVIAR</button>
                 </div>
+
+                <script>
+                    document.getElementById('formulario').addEventListener('submit', function(event) {event.preventDefault();
+                    });
+                </script>
 
             </form>
         </main>

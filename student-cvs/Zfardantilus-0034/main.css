@@ -58,7 +58,7 @@ tr:hover {
     color: black;
 }
 
-.formulario {
+#formulario {
     max-width: 1024px;
     font-size: 1.25rem;
     font-weight: bold;
@@ -99,4 +99,3 @@ button, a {
 .coolbg:active {
     background-image: linear-gradient(to left,black,gray,black)
 }
-
