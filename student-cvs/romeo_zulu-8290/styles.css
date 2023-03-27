@@ -1,3 +1,6 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
 html {
     box-sizing: border-box;
     padding: 1%;
@@ -5,7 +8,6 @@ html {
 
 * {
     box-sizing: inherit;
-
 }
 
 body {
@@ -26,6 +28,7 @@ body {
     color: #0e0d0d;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
+    display: grid;
 }
 
 header {
@@ -40,7 +43,6 @@ header {
 
 .title {
     justify-self: center;
-    
 }
 
 .logo {
@@ -49,7 +51,6 @@ header {
     width: 100px;
     height: 100px;
     box-shadow: 5px 5px #706c6c62;
-
 }
 
 h1 {
@@ -63,7 +64,6 @@ h1 {
     color: rgb(243, 243, 241);
     -webkit-text-stroke: 1px black;
     text-shadow: 0px 2px 5px rgb(0, 5, 32);
-
 }
 
 h1:hover {
@@ -81,24 +81,21 @@ a:link,
 .title {
     text-decoration: none;
     color: #8c09f7;
-    
 }
 
 nav {
     background-color: #922ae7;
     display: grid;
     position: sticky;
-    top: 0;   
+    top: 0;
     cursor: hand;
     cursor: pointer;
     justify-content: center;
-
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-
 }
 
 .nav-item a {
@@ -118,31 +115,31 @@ nav {
 
 .features {
     display: grid;
-
 }
 
-.main {   
+
+main {
     background: #222222;
     color: #e7e1e1;
     padding: 10px;
-
 }
 
-aside {    
+aside {
     background: #922ae7;
     padding: 10px;
     color: #e7e1e1;
-} 
+}
 
 ul,
-ol, li {
-    font-size: 15px;    
+ol,
+li {
+    font-size: 15px;
     background-repeat: no-repeat;
 }
 
 footer {
-    display: flex;    
-    padding: 10px;
+    display: flex;
+    margin-top: 10px;
     text-align: center;
     text-decoration: none;
     color: #dfd5d5;
@@ -154,32 +151,113 @@ footer {
     background-attachment: fixed;
     background-position: center;
     background-size: 100% 100%;
-
 }
 
-.f-links {
-    list-style: none;
-    display: flex;
-
+.btn {
+    clear: both;
+    white-space: nowrap;
+    font-size: .8em;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+    margin: 12px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden
 }
 
-.f-items a {
-    padding: 10px 20px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: all 0.3s linear;
-    opacity: 1;
-    
+.btn:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
 }
 
-.f-items:hover {
-    background-color: rgb(237, 232, 243);
-    border-radius: 10px;
-    border: #e7e1e1;
+.btn:focus {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
-.f-items:hover a {
-    color: rgb(39, 35, 35);
+.btn>span,
+.btn-icon>i {
+    float: left;
+    padding: 13.5px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    line-height: 1em
+}
+
+.btn>span {
+    padding: 14px 18px 16px;
+    white-space: nowrap;
+    color: #FFF;
+    background: #b8b8b8
+}
+
+.btn:focus>span {
+    background: #9a9a9a
+}
+
+.btn-icon>i {
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    width: 40px;
+    text-align: center;
+    font-size: 1.25em;
+    color: #fff;
+    background: #212121
+}
+
+.btn-icon>i:after {
+    content: "";
+    border: 8px solid;
+    border-color: transparent transparent transparent #222;
+    position: absolute;
+    top: 13px;
+    right: -15px
+}
+
+.btn-icon:hover>i,
+.btn-icon:focus>i {
+    color: #FFF
+}
+
+.btn-icon>span {
+    border-radius: 0 5px 5px 0
+}
+
+.btn-facebook:hover>i,
+.btn-facebook:focus>i {
+    color: #3b5998
+}
+
+.btn-facebook>span {
+    background: #3b5998
+}
+
+.btn-twitter:hover>i,
+.btn-twitter:focus>i {
+    color: #55acee
+}
+
+.btn-twitter>span {
+    background: #55acee
+}
+
+.btn-googleplus:hover>i,
+.btn-googleplus:focus>i {
+    color: #dd4b39
+}
+
+.btn-googleplus>span {
+    background: #dd4b39
+}
+
+.btn-github:hover>i,
+.btn-github:focus>i {
+    color: #cb2028
+}
+
+.btn-github>span {
+    background: #cb2028
 }
 
 @media screen and (min-width: 768px) {
@@ -190,8 +268,7 @@ footer {
 
     .features {
         height: 100%;
-
-    }    
+    }
 }
 
 @media screen and (max-width: 768px) {

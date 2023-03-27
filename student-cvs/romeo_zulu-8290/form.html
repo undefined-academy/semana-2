@@ -4,34 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Form</title>
     <link rel="stylesheet" href="form-styles.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png">
 </head>
 
 <body>
-
     <div class="container">
         <nav class="navbar">
             <ul class="nav-links">
-                <li class="nav-item"><a href="/prueba/index.html">Home</a></li>
-                <li class="nav-item"><a href="/prueba/contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="blog-index.html">Blog</a></li>
             </ul>
         </nav>
         <div class="contact-wrapper">
             <div class="contact-form">
                 <h1 class="logo">FORM</h1>
                 <form action="/myserver" method="get">
-                    <p>
+                    <p class="fullname">
                         <label>FullName</label>
                         <input type="text" name="fullname" required>
                     </p>
-                    <p>
+                    <p class="email">
                         <label>Email Adress</label>
-                        <input type="email" name="email" requiered>
+                        <input type="email" name="email" maxlength="64" required>
                     </p>
                     <p class="phone">
                         <label>Phone Number</label>
@@ -44,8 +46,7 @@
                             for="trekking">Trekking</label>
                         <input id="snorkeling" name="budget" type="radio" value="snorkeling"><label
                             for="snorkeling">Snorkeling</label>
-                        <input id="whale watching" name="budget" type="radio" value="whale watching"><label
-                            for="whale watching">Diving</label>
+                        <input id="diving" name="budget" type="radio" value="diving"><label for="diving">Diving</label>
                     </fieldset>
                     </p>
                     <p class="block">
@@ -62,9 +63,9 @@
                     <div class="coment">Please write a comment.</div>
                     </p>
                     <p class="block">
-                    <div class="checkbox-wrapper-33">
+                    <div class="checkbox-wrapper">
                         <label class="checkbox">
-                            <input class="checkbox__trigger visuallyhidden" type="checkbox" requiered />
+                            <input class="checkbox__trigger visuallyhidden" type="checkbox" required/>
                             <span class="checkbox__symbol">
                                 <svg aria-hidden="true" class="icon-checkbox" width="28px" height="28px"
                                     viewBox="0 0 28 28" version="1" xmlns="http://www.w3.org/2000/svg">
