@@ -1,0 +1,89 @@
+/* Importamos la fuente Roboto de Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
+html {
+  /*hack para q se igual en todos los navegadores*/
+  box-sizing: border-box;
+  font-size: 62.5%; /*hack 1 rem = 10px*-*/
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+  line-height: 1.5;
+  color: grey;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  color: rgb(78, 66, 66);
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+p strong {
+  color: #333;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 10rem;
+  height: 5rem;
+}
+
+header {
+  line-height: 1.5;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+header h2 {
+  font-size: 3rem;
+}
+
+main p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+footer {
+  color: rgb(78, 66, 66);
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
