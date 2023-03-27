@@ -1,16 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
 body {
     padding: 0 0 50px 0;
-    max-width: 1000px;
     margin: 0 auto;
     font-family: sans-serif;
     line-height: 1.5;
+    background-color: #fafafa;
 }
 
-.presentacion {
-    /* width: 600px; */
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding: 20px 70px;
+    background-color: #f7f4f4;
+}
+.urlContacto {
+    text-decoration: none;
+    color:silver;
+}
+
+.presentacion, .contacto {
     display: inline-block;
-    text-align: justify;
-    padding: 20px 100px 30px 100px;
+    text-align:justify;
+    padding: 20px 0 30px 200px;
+    width: 70%;
+    margin-left: 130px;
 }
 
 .presentacion > p {
@@ -20,10 +40,6 @@ body {
     text-align: center;
 }
 
-.contacto {
-    padding: 10px 100px;
-    margin: 0px 0 -15px 0;
-}
 .contacto h2 {
     text-align: center;
     align-items: center;
@@ -58,3 +74,23 @@ body {
 .alias td {
     padding-left: 5px ;
 }
+
+.urlContacto {
+    text-decoration: none;
+}
+
+/* nav {
+    display: inline-block;
+    padding: 20px 25px;
+    width: 100%;
+}
+nav a {
+    color: #111;    
+    text-decoration: none;
+    padding: 20px 25px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #999; 
+} */
