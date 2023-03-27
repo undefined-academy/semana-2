@@ -13,21 +13,21 @@
 <body>
 
     <header>
-        
+
         <nav class="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="/index.html" class="nav-link">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">CONTACTO</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACTO</a>
+                </li>
+            </ul>
         </nav>
-      
+
     </header>
 
 
@@ -35,7 +35,7 @@
 
         <h1>Formulario de Contacto</h1>
 
-        <form action="/server" method="get">
+        <form action="/server" method="get" id="formulario">
             <div class="form-group">
                 <label for="name">Nombre:</label>
                 <input id="name" name="name" type="text" placeholder="Ingrese su nombre">
@@ -50,7 +50,7 @@
             </div>
             <div class="form-group">
                 <label for="numberphone">Teléfono/Celular:</label>
-                <input id="numberphone" name="numberphone" type="number"  placeholder="Ingrese número de contacto">
+                <input id="numberphone" name="numberphone" type="number" placeholder="Ingrese número de contacto">
             </div>
             <div class="form-group">
                 <fieldset>
@@ -86,7 +86,7 @@
                     <br>
                     <input type="radio" name="gender" id="otro">
                     <label for="otro">Otro</label>
-                  </fieldset>
+                </fieldset>
             </div>
             <div class="form-group">
                 <label for="type">Tipos de Proyectos</label>
@@ -115,6 +115,18 @@
         </form>
 
     </main>
+    <script>
+
+        let formulario = document.getElementById('formulario');
+
+        formulario.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            console.log('Nombre: ' + formulario.elements['name'].value);
+            console.log('Apellido: ' + formulario.elements['surname'].value);
+            console.log('Email: ' + formulario.elements['email'].value);
+        });
+    </script>
 </body>
 
 </html>
