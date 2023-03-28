@@ -1,19 +1,26 @@
-body {
-    /* Centering the page. */
-    margin: 0 auto;
-
-    /* Setting the maximum width of the page to 50% of the screen. */
-    max-width: 50%;
-
-    font-family: sans-serif;
-
-    /* Setting the line height to 1.5 times the font size. */
-    line-height: 1.5;
-
-    color: #444;
+html {
+    box-sizing: border-box;
 }
 
-h1 {
+* {
+    box-sizing: inherit;
+}
+
+h1,
+h4,
+strong{
+    color:darkcyan;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50%;
+    font-family: sans-serif;
+    color: #444;
+    background-color: rgb(238, 238, 238);
+}
+
+header {
     max-width: 100%;
     background-image: url(header_img.jpeg);
     margin-top: 0em;
@@ -21,15 +28,64 @@ h1 {
     padding: 4em;
 }
 
-
-h4{
-    text-indent: 45%;
-    padding: 1em;
-    background-color:gainsboro;
+.form-group {
+    margin: 20px 0;
 }
 
-h1,
-h4,
-strong{
-    color:darkcyan;
+label, input:not([type="checkbox"]) {
+    vertical-align: middle;
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.aux{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+input, textarea {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 10px 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid darkslategray;
+    background: darkcyan;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px darkslategrey;
+}
+
+button:hover {
+    background: rgb(0, 163, 163);
+}
+
+button:active {
+    background: rgb(0, 116, 116);
+    box-shadow: -1px -1px 0px darkslategrey;
+}
+
+.form {
+    accent-color: darkcyan;
+}
+
+input:focus-visible, textarea:focus-visible {
+    border: 1px solid darkcyan;
+    outline: 0.5px solid darkcyan;
 }
