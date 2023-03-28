@@ -218,21 +218,21 @@ html {
   
   .html {
     padding: 0.3rem;
-    color: #EA610F;
+    color: #111111;
     background-color: #FAAF82;
     border-radius: 0.5rem;
   }
   
   .css {
     padding: 0.3rem;
-    color: #0B75C2;
+    color: #111111;
     background-color: #9EAEFF;
     border-radius: 0.5rem;
   }
   
   .js {
     padding: 0.3rem;
-    color: #ECDE00;
+    color: #111111;
     background-color: #F9F4A4;
     border-radius: 0.5rem;
   }
