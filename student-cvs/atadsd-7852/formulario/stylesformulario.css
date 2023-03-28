@@ -1,36 +1,68 @@
-html {
-    box-sizing: border-box;
+
+
+#logo {
+    width: 100%;
+    width: 350px;
+    height: 350px;
+    flex-wrap: wrap;
 }
 
-* {
-    box-sizing: inherit;
+nav {
+    width: 100%;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+    color: whitesmoke;
 }
+a:link, a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+    
+   }
+   
 
 #contact {
     font-weight: bold;
     margin: 15px;
-    color: rgb(0, 0, 0)
+    color: whitesmoke;
+    margin-left: 30%;
 
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 20%;
+    margin-right: 30%;
+    color: whitesmoke;
+}
+
 body {
-    background: rgb(77, 75, 75);
-    max-width: 800px;
-    margin: 100px auto;
-    padding: 0 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0)
+    margin: 0 auto;
+    background-color: #303031;
+
 }
 
 .form-group {
     margin: 15px;
     accent-color: #ff6600;
+    margin-left: 30%;
+
+
+
 }
 
 textarea {
     display: block;
     width: 100%;
     resize: vertical;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 label input:not([type="radio"], [type="checkbox"]) {
@@ -44,6 +76,8 @@ label {
     font-size: 15px;
     display: block;
     padding: 5px 0;
+    color: whitesmoke;
+
 }
 
 input[type="text"],
@@ -55,14 +89,22 @@ textarea {
 
 }
 
+#radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 input[type="radio"],
 input[type="checkbox"] {
     accent-color: #ff6600;
-    
-    
+
+
+
 }
 
-#radio{
+#radio {
     display: inline;
 }
 
@@ -76,14 +118,19 @@ button {
     font-size: medium;
     border-radius: 6px;
     border: 2px solid #1c1919;
+    margin-left: 30%;
 }
 
-fieldset{
+fieldset {
     border-radius: 4px;
     border: 1px solid #ff6600;
+    width: 50%;
+
 }
-select{
+
+select {
     border-radius: 4px;
     border: 1px solid #ff6600;
-    
+
 }
+
