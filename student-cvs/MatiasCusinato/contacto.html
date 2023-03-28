@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='#'>Acerca de mí</a></li>
+                <li><a href='contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <h1 class="title">Contáctame</h1>
+        <form method="post">
+            <fieldset>
+                <label for="first-name">Nombre: <input id="first-name" name="first-name" type="text" placeholder="Ingrese su nombre" required ></label>
+                <label for="last-name">Apellido: <input id="last-name" name="last-name" type="text" placeholder="Ingrese su apellido" required ></label>
+                <label for="email">Email: <input id="email" name="email" type="email" placeholder="Ingrese su email" required ></label>
+                <label for="mensaje">Mensaje:
+                    <textarea id="mensaje" name="mensaje" rows="3" cols="30"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <script>
+        const form = document.querySelector("#form");
+    
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          location.reload()
+        })
+    </script>
+
+</body>
+
+</html>
