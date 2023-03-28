@@ -82,6 +82,7 @@ form {
     background-color: rgb(255, 240, 245);
     border-radius: 4px;
     box-shadow: 3px 3px #d8d8d8;
+    accent-color: palevioletred;
 }
 
 .form-group {
@@ -136,6 +137,13 @@ button:hover {
 button:active {
     background: rgb(211, 98, 136);
     box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border: 1px solid palevioletred;
+    outline: 1px solid rgb(254, 132, 173);
 }
 
 footer {
