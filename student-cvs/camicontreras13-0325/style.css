@@ -1,0 +1,58 @@
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;
+    padding: 4em 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: navy;
+    border: 2px solid navy;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 4px;
+}
+
+a:hover {
+    background-color: white;
+    color: navy;
+    border: 2px solid navy;
+}
+
+#home {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #263d36;
+    background-image: url("https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvZGlnb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+}
+ #about-me {
+    color: #333;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+ 
+}
+
+#contact p a {
+    color: black;
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+}
+footer{
+    text-align: center;
+    color: #333;
+}
