@@ -71,3 +71,54 @@ h1, h2, strong {
 a {
     color: #e81c4f;
 }
+
+
+/* FORM STYLES */
+form {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 1em;
+    background: #eee;
+
+}
+
+form div {
+    display: grid;
+}
+
+form div label {
+    font-weight: 500;
+}
+
+form div input, select{
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+select {
+    color: #555;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+form button {
+    background: white;
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+}
+
+form button:hover {
+    border: 1px solid #e81c4f;
+    cursor: pointer;
+}
