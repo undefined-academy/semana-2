@@ -1,0 +1,94 @@
+body {
+    margin: 0 auto;
+    max-width: 80em;
+    line-height: 1.25;
+}
+
+ul {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-sheet {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#data {
+    margin: 1rem 1rem;
+    width: 400px;
+    border-right: 2px solid black;
+}
+
+.personal-data-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.personal-data-item>span {
+    font-weight: bold;
+    margin-right: 1rem;
+
+}
+
+.personal-data-item>p,
+.personal-data-item>a {
+    margin: 0.50rem 0;
+}
+
+#about-me {
+    margin: 1.5rem 1rem;
+    width: 400px;
+}
+
+#about-me>h3,
+#about-me>p {
+    margin: 0.5rem 1rem;
+}
+
+.body-data {
+    width: 800px;
+    margin: 1rem 1rem;
+
+}
+
+.article-title {
+        margin: 0.15rem 2rem;
+
+}
+
+.experience-data,
+.academy-data {
+    padding: 0;
+    margin: 1rem 3rem;
+}
+
+.experiencie-item>p,
+.academy-item>p {
+    text-align: justify;
+    margin: 0.25rem 6rem;
+    font-style: italic;
+    width: 800px;
+}
+
+.header-experience-item,
+.header-academy-item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 0.75rem;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#adicional-academy-data {
+    margin: 1rem 3rem;
+    font-size: 18px;
+
+}
