@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name='viewport'content='width=device-width, initialscale=1.0, maximum-scale=1.0' />
+    <meta name='viewport' content='width=device-width, initialscale=1.0, maximum-scale=1.0' />
     <title>Formularios HTML</title>
     <link rel="stylesheet"  href="./style.css" >
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.mjs"></script>
 
 </head>
 <body> 
-    <div class="container">
+    <div class="container" >
         <nav>
           <ul>
             <li><a href="./index.html"> Home</a> </li>
@@ -22,18 +22,18 @@
     </div>
     <main class="page">
         <h1>Contacto</h1>
-        <form action="/server" method="get" onsubmit="preventDefault(submit)">  
+        <form action="/server" method="get" onsubmit="event.preventDefault()">
             <div class="form-group">    
                 <label for="name">Nombre</label>
                 <input  id= "name" name="name" type="text"  placeholder="Escriba su nombre" required>
             </div>
             <div class ="form-group">
                 <label for="email">Email</label>
-                <input id= "email" name="email" type="email" placeholder="Escriba su email"required>
+                <input id= "email" name="email" type="email" placeholder="Escriba su email" required>
             </div>
             <div class ="form-group">
                 <label for="Telefono">Telefono</label>
-                <input id= "Telefono" name="Telefono"type="tel" placeholder="Escriba su telefono"required>
+                <input id= "Telefono" name="Telefono" type="tel" placeholder="Escriba su telefono" required>
             </div>
            
             <div class ="form-group">
