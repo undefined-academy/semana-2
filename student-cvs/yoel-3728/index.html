@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <style>
-        .page { 
+        .page {
             max-width: 700px;
             margin: 0 auto;
         }
 
         img {
-             width: 15%;
+            width: 15%;
         }
     </style>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="page">
             <h1>Hi there, I'm Yoel Lombana 👋</h1>
@@ -38,12 +40,13 @@
         <header>
             <h1> Curriculim Vitae </h1>
             <h3>
-                I'm a Telecommunications Engineer with Master Degree in Software Engineering and Computer Systems. From
-                Colombia living in Bogotá.
+                I'm a Telecommunications Engineer with Master Degree in Software Engineering and Computer Systems.
+                I'm from Colombia living in Bogotá.
             </h3>
         </header>
 
-        <h4> DevOps | Google Cloud Platform | Js | K8 | Docker | Docker Swarm | Linux | CI/CD | Telecommunications | IT
+        <h4> DevOps | Google Cloud Platform | Js | K8 | Docker | Docker Swarm | Linux | CI/CD | Telecommunications |
+            IT
             On premise | Development life cycle | Ansible | Jenkins | </h4>
         <p><a href="https://github.com/yolombana"> Perfil Git Yoel </a> </p>
         <picture>
@@ -90,12 +93,12 @@
             <div class="education">
                 <h4> Educación</h4>
                 <ol>
-                    <li>Universidad Internacional de la Rioja - UNIR
+                    <li>Universidad Internacional de la Rioja - UNIR.
                         Máster en Ingeniería de Software y Sistemas Informáticos.
                         Noviembre 2022.
                         Máster enfocado de manera teórica y práctica en Ingeniería de
                         Software, Desarrollo Web, Ciberseguridad.</li>
-                    <li>Universidad Cooperativa de Colombia
+                    <li>Universidad Cooperativa de Colombia.
                         Ingeniería de telecomunicaciones
                         Septiembre 2020
                         Pregrado enfocado de manera teórica y práctica en diseño,
@@ -110,7 +113,7 @@
             <div class="experience">
                 <h4> <strong>Experiencia laboral </strong></h4>
                 <ol>
-                    <li>| Diseño, configuración y administración de la infraestructura On-
+                    <li>Diseño, configuración y administración de la infraestructura On-
                         premise y Cloud de la compañía y los múltiples proyectos ejecutados.
                         Diseño, creación y administración de infraestructura en cumplimiento
                         de Alta disponibilidad y seguridad.
@@ -120,18 +123,91 @@
                         Monitoreo y optimización de costos Cloud.
                         Coordinación del área de infraestructura en cumplimiento de
                         requerimientos de soporte y cumplimiento del área.
-                        Scripting BASH. Conocimiento SQL básico. Linux. Cyberseguridad.|</li>
+                        Scripting BASH. Conocimiento SQL básico. Linux. Cyberseguridad.</li>
                 </ol>
                 <hr />
+                <section>
+                    <h1>
+                        Contacto profesional
+                    </h1>
+
+                    <main class="page">
+
+                        <form action="/server" method="get">
+
+                            <div class="form-group">
+                                <label for="text"> Nombre </label>
+                                <input type="text" id="text" placeholder="Ingrese su nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Ingrese su Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend> Presupuesto proyecto </legend>
+                                    <input name="budge" id="10000" type="radio" required>
+                                    <label for="10000" value="10000"> $10.000 USD</label>
+
+                                    <input name="budge" id="5000" type="radio" required>
+                                    <label for="5000" value="5000"> $5.000 USD</label>
+
+                                    <input name="budge" id="2500" type="radio" required>
+                                    <label for="2500" value="2500"> $2.500 USD</label>
+                                </fieldset>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="type"> Tipo de Proyecto</label>
+                                <select id="type" required>
+                                    <option disabled selected> Seleccione uno </option>
+                                    <option value="Docker"> Docker </option>
+                                    <option value="Kubernetes"> Kubernetes </option>
+                                    <option value="GCP"> GCP </option>
+                                    <option value="CI/CD"> CI/CD </option>
+                                    <option value="Ciberseguridad"> Ciberseguridad </option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description"> Descripción</label>
+                                <textarea id="description" required></textarea>
+                                <div class="help">Describe el proyecto del cual te gustaría tener mi ayuda en almenos
+                                    250
+                                    palabras
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label form="terms">
+                                    <input id="terms" name="terms" type="checkbox" required>
+                                    <span> Acepto téminos y condiciones</span>
+
+                                </label>
+                            </div>
+
+                            <button class="buttom">Enviar</button>
+
+                        </form>
+                        <hr>
+                    </main>
+                </section>
             </div>
-            <div class="footer">
-                <footer> Página personal. Publicado por Yoel Lombana</footer>
+
+
         </section>
     </article>
-    <footer>
-        <p>&copy; <time datetime='2023-03-23 '> Marzo 2023 </time></p>
-        <a href="mailto:yolombana@hotmail.com"> Mail Contacto </a>
-    </footer>
+
+    <div class="footer">
+        <footer> Página personal. Publicado por Yoel Lombana</footer>
+
+        <footer>
+            <p>&copy; <time datetime='2023-03-23 '> Marzo 2023 </time></p>
+            <a href="mailto:yolombana@hotmail.com"> Mail Contacto </a>
+        </footer>
+
     </div>
 
 </body>
