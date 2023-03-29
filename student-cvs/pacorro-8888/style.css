@@ -79,3 +79,64 @@ table {
     background: #eff6ff;
     border-radius: .5rem;
 }
+
+button {
+    border: none;
+    margin: .5rem 0 0;
+    background: #eff6ff;
+    color: #222;
+    padding: .4rem .8rem;
+    border-radius: 99px;
+    transition: all .4s cubic-bezier(0,.85,.4,1);
+}
+button:hover {
+    background: #ffffff;
+    color: #2563eb;
+    transform: scale(1.05);
+}
+button:active {
+    background: #2563eb;
+    color: white;
+    transform: scale(.95);
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(10px);
+    background: rgb(255 255 255 / .4);
+}
+dialog {
+    background: #bfdbfe;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 20px 60px -10px black;
+}
+
+dialog h1 {
+    color: #222;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 800;
+    margin: .5rem 0;
+    color: #222;
+    width: 100%;
+}
+
+input, textarea {
+    padding: .4rem;
+    border-radius: .5rem;
+    border: 2px solid #aaa;
+    width: 100%;
+}

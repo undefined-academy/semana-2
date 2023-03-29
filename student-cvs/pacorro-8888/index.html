@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#1e3a8a">
     <link rel="stylesheet" href="style.css">
     <title>Pacorro#8888</title>
 </head>
@@ -16,6 +17,8 @@
         modern technologies. Proficient in web development using React, Next.js, TailwindCSS, and Framer Motion. I have
         worked on successful projects both individually and as part of a team, and I am always seeking opportunities to
         improve and expand my skills.</p>
+
+    <button onclick="openModal()">📩 Contact me!</button>
 </header>
 
 <hr>
@@ -92,5 +95,47 @@
 
 <a href="https://github.com/pacorroX">► Click here to go to my GitHub Profile.</a>
 
+<dialog id="contact-modal">
+    <h1>Contacto</h1>
+
+    <form id="form">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" required>
+        <label for="mail">Correo</label>
+        <input type="email" name="mail" id="mail" required>
+        <label for="message">Mensaje</label>
+        <textarea id="message" required></textarea>
+
+        <button id="sendButton">Enviar</button>
+    </form>
+
+    <button onclick="closeModal()">Volver</button>
+</dialog>
+
+<script>
+    const $modal = document.getElementById("contact-modal")
+
+    function openModal() {
+        $modal.showModal()
+    }
+
+    function closeModal() {
+        $modal.close()
+    }
+
+    document.getElementById("sendButton").addEventListener("click", function(event) {
+        event.preventDefault()
+
+        const check = document.getElementById("form").checkValidity()
+        document.getElementById("form").reportValidity()
+
+        if (check) {
+            console.log("Enviando...")
+            $modal.close()
+        }
+    });
+</script>
+
 </body>
+
 </html>
