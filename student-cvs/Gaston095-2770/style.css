@@ -115,11 +115,16 @@ header a:hover {
         color: #5585b5;
         border: 1px solid #53a8b6;
         cursor: pointer;
+        box-shadow: -1.5px 1.5px 1.5px #333;
     }
 
     .button:hover {
-        box-shadow: -1px 1px 1px #333;
         font-size: 16px;
+    }
+
+    .button:active {
+        background-color: #eee;
+        box-shadow: none;
     }
 
 footer {
