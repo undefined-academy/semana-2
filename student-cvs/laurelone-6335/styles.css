@@ -1,0 +1,219 @@
+/* CSS principal*/
+html { /*width + padding + border;; por lo que debera de emplearse el border-box*/
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Indie Flower', cursive;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+.header_nav{
+    position: fixed;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header_name{
+    background-image: url("assets/image_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    line-height: 1.2;
+    padding: 150px 0em;
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    width: 100%;
+    height: 65vh;
+}
+
+.container{
+    padding: 10px 80px;
+    background-color: blanchedalmond;
+}
+
+#comandos{
+    padding: 10px 80px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0em;
+    text-align: left;
+    width: 60%;
+}
+
+td{
+    padding: 1px 10px;
+}
+
+.tableComandos th{
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 5px;
+}
+
+.thComandos{
+    width: 20%;
+}
+
+.tableComandos tr:nth-child(odd) {
+    background-color:#fff
+}
+
+.tableComandos tr:nth-child(even) {
+    background-color: #E7E9EB
+}
+
+.alias{
+    padding-bottom: 14px;
+}
+
+code{
+    background: #eee;
+    padding: 2px 4px;
+}
+
+address{
+    padding: 10px 80px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+#footer_{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+span{
+    padding: 10px;
+    align-content: center;
+    color: #fff;
+}
+span img{
+    width: 2%;
+    height: auto;
+}
+
+#span a{
+    color: #fff;
+}
+
+.navbar {
+    padding: 0;
+    background-color: #000;
+    text-transform: uppercase;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 20px;
+  color: #05b4df;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+#contacto{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.formContacto{
+    width: 100%;
+    padding: 10px 100px;
+    align-content: center;
+    vertical-align: middle;
+    /*border: 1px solid tomato;*/
+}
+
+.formGroup{
+    /*border: 1px solid tomato;*/
+    margin: 15px 0;
+}
+
+.formGroup label, input, select{
+    width: 100%;
+}
+
+.formGroup select{
+    height: 30px;
+}
+
+.formGroup label, input{
+    width: 100%;
+    vertical-align: middle; /*Solo funciona con elementos inline*/
+}
+
+.formGroup textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+.formGroup input[type="text"], input[type="email"], input[type="tel"], select, textarea{
+    background: whitesmoke;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    padding: 8px 10px;
+    margin-top: 2px;
+}
+
+.resaltar{
+    font-weight: bold;
+}
+
+.botonEnviar{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #05b4df;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.botonEnviar:hover{
+    background: #facc15;
+}
+
+.botonEnviar:active{
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
