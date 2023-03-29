@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cc6144716b.js" crossorigin="anonymous"></script>
     <title>Indira Franchi</title>
@@ -15,8 +15,8 @@
         <nav class="header-nav">
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="cv.html">Curriculum</a></li>
-                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="./cv.html">Curriculum</a></li>
+                <li><a href="./projects.html">Proyectos</a></li>
             </ul>
         </nav>
     </header>
@@ -26,18 +26,18 @@
             <fieldset>
                 <legend>Contáctame</legend>
                 <div class="form-group">
-                    <label for="name">Nombre</label>
+                    <label for="name">Nombre *</label>
                     <input id="name" name="name" type="text" minlength="2" maxlength="30" placeholder="Ingrese su nombre completo" required pattern="[A-Za-zñÑ ]+">
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                     <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="country">País</label>
-                    <select id="country" name="country" required>
+                    <label for="country">País *</label>
+                    <select id="country" name="country">
                         <option disabled selected value="">Seleccione uno</option>
                         <option value="AF">Afganistán</option>
                         <option value="AL">Albania</option>
@@ -277,7 +277,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="messagge">Mensaje</label>
+                    <label for="messagge">Mensaje *</label>
                     <textarea id="message" name="message" maxlength="200" rows="5" placeholder="Escribe un mensaje" required></textarea>
                 </div>
 
@@ -287,7 +287,6 @@
                         <span>Acepto los términos y condiciones</span>
                     </label>
                 </div>
-            
             </fieldset>
 
             <div>
@@ -302,7 +301,6 @@
         </a>
     </footer>
 
-    <script type="text/javascript" src="main.js"></script>
-
+    <script type="text/javascript" src="../validation.js"></script>
 </body>
 </html>
