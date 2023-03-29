@@ -10,47 +10,93 @@
 <body>
     <main>
         <header>
-            <h1 class="name">Facundo</h1>
+            <h1 class="name">Facundo Farias</h1>
+            <h2>Desarrollador Front-End Jr</h2>
         </header>
         <section>
-            <h2>Desarrollador Front-End Junior</h2>
             <article>
-                <h3>🧬 Sobre mi:</h3>
-                <p>Estudio <b>desarrollo web</b> con la motivacion de lograr impactar con sitios <b>originales</b>,<b>
+                <h3 class="sub-tittle">Bio</h3>
+                <p class="bio-cont"><b>Desarrollador web</b> con la premisa de lograr impacto con sitios
+                    <b>originales</b>,<b>
                         creativos</b>
-                    e<b> inmersivos</b>. Incialmente mi formacion esta centrada en el Diseño de <a
-                        href="https://vimeo.com/703323460" target="_blank">sonido</a>, musica y cine, areas que son
+                    e<b> inmersivos</b>. Incialmente me formé en Diseño de <a href="https://vimeo.com/703323460"
+                        target="_blank">sonido</a>, musica y cine, areas que hoy son
                     herramientas de
-                    inspiración para <b>crear</b> e <b>innovar</b> en futuros proyectos </p>
-
-                <h3>🧪 Conocimientos:</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SASS</li>
-                    <li>Bootstrap</li>
-                    <li>Javascript</li>
-                    <li>Vue</li>
-                    <li>Node.js</li>
-                    <li>Git & Github</li>
-                    <li>Figma</li>
-                </ul>
-                <h3>🌎 Idiomas:</h3>
-                <ul>
-                    <li>Español (Nativo)</li>
-                    <li>Ingles (Intermedio)</li>
-                </ul>
-
+                    inspiración para <b>crear</b> e <b>innovar</b> en futuros proyectos
+                </p>
+            </article>
+            <article>
+                <h3 class="sub-tittle">Skills</h3>
+                <div class="loop-container">
+                    <ul class="loop-text">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>Vue</li>
+                        <li>Node.js</li>
+                        <li>Git & Github</li>
+                        <li>Figma</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>Vue</li>
+                        <li>Node.js</li>
+                        <li>Git & Github</li>
+                        <li>Figma</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>Vue</li>
+                        <li>Node.js</li>
+                        <li>Git & Github</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
             </article>
         </section>
-        <section>
-            <h3>📫 Hablamos?</h3>
-                <ul>
-                    <li><a href=mailto:facundonahuelfarias@gmail.com>facundonahuelfarias@gmail.com</a></li>
-                    <li><a href="https://www.instagram.com/facundofarias_/?hl=es" target="_blank">Instagram</a>
-                    </li>
-                    <li><a href="https://github.com/FnFarias" target="_blank">Github</a></li>
-                </ul>
+
+        <section class="form-container">
+            <h3 class="sub-tittle">Contacto</h3>
+            <form action="" method="get">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="Ingrese su Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Tipo de Proyecto</label>
+                    <select name="type" id="type">
+                        <option value="" disabled selected>Seleccione Uno</option>
+                        <option value="Website" for="type">Website</option>
+                        <option value="WebApp" for="type">Web App</option>
+                        <option value="MobileApp" for="type">Mobile App</option>
+                        <option value="Design" for="type">Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripcion</label>
+                    <textarea name="description" id="description" cols="" rows="5" required></textarea>
+                    <div class="help">Escribe la descripcion de tu proyecto en al menos 500 palabras</div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>Acepto los terminos y condiciones</span>
+                    </label>
+                </div>
+                <button class="btn-send">Enviar</button>
+            </form>
         </section>
     </main>
+    <script src="script.js"></script>
+</body>
 </html>
