@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form-style.css">
+    <title>Contact Form📲</title>
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contact</h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter you email" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Budget</legend>
+
+                    <input type="radio" id="10000" name="budget">
+                    <label for="10000">$10.000</label>
+
+                    <input type="radio" id="5000" name="budget">
+                    <label for="5000">$5.000</label>
+
+                    <input type="radio" id="1000" name="budget">
+                    <label for="1000">$1.000</label>
+
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">Type Project</label>
+                <select  id="type" required>
+                    <option selected disabled>Select one</option>
+                    <option>Website</option>
+                    <option>WebApp</option>
+                    <option >Mobile App</option>
+                    <option >Design</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <br>
+                <textarea id="description" required cols="95" rows="10" "></textarea>
+                <div>
+                    Write a project description in 500 words.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>I accept the terms and conditions.</span>
+                </label>
+            </div>
+            <br>
+            <button>Send</button>
+        </form>
+        <br>
+        <a href="./index.html" >Go back ! 👋</a>
+    </main>
+</body>
+
+</html>
