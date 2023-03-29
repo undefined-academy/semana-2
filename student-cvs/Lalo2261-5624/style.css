@@ -18,7 +18,11 @@ main {
 }
 
 footer {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
+}
+
+footer h2 {
+    margin-top: auto;
 }
 
 h2 {
@@ -88,8 +92,66 @@ header a {
     transition: none 200ms ease-out;
     transition-property: color, background;
 }
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.formInput + .formInput {
+    margin-top: 2rem;
+}
   
 header a:hover {
     background:  #e81c4f;
     color: white;
+}
+
+label, input, textarea {
+    width: 100%;
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input, textarea {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #333;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+input {
+    border: 1px solid #aaa;
+}
+
+.submitButton {
+    margin-top: 2rem;
+    padding: 12px 36px;
+    color: #333;
+    font-size: medium;
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 3px black;
+}
+
+.submitButton:focus {
+    background-color: #aaa;
+    border: 1px solid black;
 }

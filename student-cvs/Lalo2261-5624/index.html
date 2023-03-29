@@ -112,6 +112,32 @@
                 </table>
             </article>
         </section>
+        <section>
+            <h2>Contact</h2>
+            <form action="" onsubmit="event.preventDefault();">
+                <div class="formInput">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="formInput">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="formInput">
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject">
+                        <option value="projectQuote">Project Quote</option>
+                        <option value="hiring">Hiring</option>
+                        <option value="anotherIssues">Another issues</option>
+                    </select>
+                </div>
+                <div class="formInput">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="8"></textarea>
+                </div>
+                <button type="submit" class="submitButton">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
         <h2>Profile Link</h2>
