@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css' />
+    <title>Contact Form aerr96</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <h1>Contact me</h1>
+            <div class="form-fields">
+                <label for="fname">Name</label>
+                <input id="fname" type="text" placeholder="Type your name" required>
+            </div>
+            <div class="form-fields">
+                <label for="flname">Last Name</label>
+                <input id="flname" type="text" placeholder="Type your last name" required>
+            </div>
+            <div class="form-fields">
+                <label for="femail">Email</label>
+                <input id="femail" type="email" placeholder="Type your email address" required>
+            </div>
+            <div class="form-fields">
+                <label for="fcompany">Company</label>
+                <input id="fcompany" type="text" placeholder="Type your company name" required>
+            </div>
+            <div class="form-fields">
+                <label for="fcel">Phone number</label>
+                <input id="fcel" type="tel" placeholder="Type your phone number" required>
+            </div>
+            <div class="form-fields">
+                <fieldset>
+                    <legend1>Budget</legend1>
+
+                    <input id="5000" name="subject" type="radio"><label for="5000">$5.000</label>
+
+                    <input id="1000" name="subject" type="radio"><label for="1000">$1.000</label>
+
+                    <input id="discuss" name="subject" type="radio"><label for="discuss">To be discussed</label>
+
+                </fieldset>
+            </div>
+            <div class="form-fields">
+                <label for="ftype">Project Type</label>
+                <select id="ftype" required>
+                    <option disabled selected value="">Select one</option>
+                    <option>AV or IT Contract</option>
+                    <option>IOT Development or Research</option>
+                    <option>Web Development Opportunity</option>
+                    <option>Academic Opportunity</option>
+                </select>
+            </div>
+            <div class="form-fields">
+                <label for="fdescription">Description</label>
+                <textarea id="fdescription" required></textarea>
+                <div>Type a description of the work project or issue in 100 minimum words. </div>
+            </div>
+            <div class="form-fields">
+                <h4>Appointment:</h4>
+                <p>Please add a tentative period for an appointment or interview</p>
+                <label for="fdateone">Sooner date</label>
+                <input id="fdateone" type="datetime-local">
+                <label for="fdatetwo">Later date</label>
+                <input id="fdatetwo" type="datetime-local">
+            </div>
+            <div class="form-fields">
+                <label for="fasap">
+                    <input id="fasap" type="checkbox">
+                    <span>Do you need an answer as soon as possible?.</span>
+                </label>
+            </div>
+            <div class="form-fields">
+                <label for="fterms">
+                    <input id="fterms" type="checkbox" required>
+                    <span>I agree with terms and conditions.</span>
+                </label>
+            </div>
+            <button type="button" onclick="document.getElementById('my-form').onsubmit(function(e) {e.preventDefault();
+            })">Send</button>
+            <!--Added exception to prevent default behavior on the summit of an HTML form-->
+        </form>
+
+    </main>
+
+</body>
+
+</html>

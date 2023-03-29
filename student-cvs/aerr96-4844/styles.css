@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+
 body {
     line-height: 1.5;
     color: #555;
@@ -8,6 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     max-width: 50em;
+    
 }
 
 header {
@@ -76,4 +78,42 @@ td {
 th {
 
     text-align: center;
+}
+.form-fields {
+    margin: 20px 0; /*this is a comment*/
+    box-sizing: border-box;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+label {
+    font-weight: bold;
+}
+textarea {
+    display: block;
+    width: 100%;
+    resize:vertical;
+}
+span {
+    text-align: left;
+}
+
+button {
+    padding: 12px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid blue;
+    background: skyblue;
+    color: #333;
+    /*text-shadow: -1px -1px 0 lightblue;*/
+    box-shadow: 1px 1px 3px darkblue;
+    cursor: pointer;
+}
+button:hover{
+    background: blue;
+}
+
+button:active{
+    background: darkblue;
 }
