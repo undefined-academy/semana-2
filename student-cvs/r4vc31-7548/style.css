@@ -40,6 +40,11 @@ a {
     color: lightseagreen;
 }
 
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
 .contact {
     width: 100%;
 }
