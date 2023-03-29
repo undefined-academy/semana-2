@@ -14,14 +14,14 @@
     </header>
     <main>
         <h1>Hola, mi nombre es <span class="name">Gaston Salas</span></h1>
-        <p>Soy de Argentina.</p>
+        <p>Soy de <span class="name">Argentina</span>.</p>
         <p>Actualmente estudio para ser <span>Desarrollador Web Full Stack.</span></p>
         <p>Estoy cursando el bootcamp de <a class="name" href="https://undefined.academy/">Undefined Academy</a></p>
         <p>Tambien estudio <span>Ing. en Sistemas de Informacion.</span></p>
     </main>
 
     <section class="skills">
-        <h2 class="skills__title">Habilidades</h2>
+        <h2 class="title">Habilidades</h2>
         <article class="skills__item">
             <i class="fa-brands fa-html5"></i>
             <span>HTML</span>
@@ -38,7 +38,28 @@
             <i class="fa-brands fa-github"></i>
             <span>GIT & GITHUB</span>
         </article>
+    </section>
 
+    <section class="contact">
+        <h2 class="title">Contactame</h2>
+        <form class="contact__form" action="" method="GET">
+            <label class="block" for="name">Nombre</label>
+            <input class="form__input" id="name" name="name" type="text" placeholder="Ingresa tu nombre" required>
+
+            <label class="block" for="lastname">Apellido</label>
+            <input class="form__input" id="lastname" name="lastname" type="text" placeholder="Ingresa tu apellido" required>
+
+            <label class="block" for="email">Correo</label>
+            <input class="form__input" id="email" name="email" type="email" placeholder="Ingresa tu correo" required>
+
+            <label class="block" for="phone">Telefono</label>
+            <input class="form__input" id="phone" name="phone" type="tel" placeholder="Ingresa tu numero" required>
+
+            <label class="block">Deja tu mensaje</label>
+            <textarea class="form__input" placeholder="Deja tu mensaje"></textarea>
+
+            <button class="button block">ENVIAR</button>
+        </form>
     </section>
     
     <footer>

@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,6 +22,11 @@ header {
     line-height: 1.2;
     padding: 10vw 2em;
     text-align: center;
+}
+
+main {
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 
 .name {
@@ -65,15 +71,62 @@ header a:hover {
     font-size: 25px;
 }
 
-    .skills__title {
+    .title {
         color: #53a8b6;
+        font-size: 35px;
+    }
+
+
+
+    .contact__form {
+        background: rgb(85,133,181);
+        background: linear-gradient(137deg, rgba(85,133,181,1) 0%, rgba(83,168,182,1) 78%, rgba(121,194,208,1) 100%);
+        width: 400px;
+        text-align: center;
+        padding: 30px;
+    }
+
+.block {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.form__input {
+    border-radius: 4px;
+    border: 1px solid #bbe4e9;
+    color: #555;
+    font-size: 15px;
+    padding: 7px;
+    width: 280px;
+}
+
+    .button {
+        font-size: 15px;
+        height: 40px;
+        padding: 10px;
+        margin: 15px auto 0 auto;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        color: #5585b5;
+        width: 135px;
+        background: #fff;
+        color: #5585b5;
+        border: 1px solid #53a8b6;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        box-shadow: -1px 1px 1px #333;
+        font-size: 16px;
     }
 
 footer {
     height: 50px;
     text-align: center;
-    background-color: #bbe4e9;
-    color: #444;
+    background-color: #53a8b6;
+    color: #f3f3f3;
 }
 
     .footer__p {
