@@ -101,7 +101,68 @@
         </section>
     </article>
     <footer>
-        <h2>Contactenos</h2>
+        <h2>Contacto</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Correo electronico</label>
+                <input id="email" type="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="5000" name="budge" type="radio">
+                    <label for="5000">$5.000USD</label>
+        
+                    <input id="10000" name="budge" type="radio">
+                    <label for="10000">$10.000USD</label>
+        
+                    <input id="15000" name="budge" type="radio">
+                    <label for="15000">$15.000USD</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select id="type" required>
+                    <option disabled selected>Seleccione uno</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Aplicación web</option>
+                    <option value="mobileApp">Mobile App</option>
+                    <option value="design">Diseño web</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label re>
+                <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+                <div class="help">Escribe una descripción del proyecto en 500 palabras</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <script>
+            const form = document.getElementById('myForm');
+        
+            form.addEventListener('submit', function (event) {
+                console.log(event);
+                
+                event.preventDefault();
+                alert("Se detecto el envio de información")
+                // Aquí puedes agregar el código para enviar la información del formulario a través de una petición AJAX
+            });
+        </script>
+        
+        <br>
         <address>
             Direccion de Github
             <a href="https://github.com/davidherrera0921">Link de GitHub</a>

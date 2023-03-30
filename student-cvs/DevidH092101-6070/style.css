@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -59,4 +67,69 @@ td {
 .comandos, .alias {
    margin-top: 1em;
     padding-top: 1em;
+}
+
+.form-group {
+    border: 1px solid #f2f2f2;
+    margin: 20px 0;
+
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+label, input[type="text"], input[type="email"]{
+    width: 100%;
+    
+}
+
+
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin: 10px;
+    color: gray;
+}
+
+button {
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #374151;
+    background: #9ca3af;
+    color: #333;
+    text-shadow: 1px -1px 0 rgba(255,255,255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f4f4f5;
+}
+button:active {
+    background: #52525b;
+    box-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 }
