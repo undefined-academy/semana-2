@@ -64,6 +64,7 @@ label, input:not([type="checkbox"]) {
 textarea {
 	display: block;
 	width: 100%;
+    min-height: 30px;
 	resize: vertical;
 }
 
@@ -94,7 +95,7 @@ button {
 	font-weight: bold;
 	border: 1px solid #713f12;
 	background: #eab308;
-	color: #333;
+	color: #3d3d3d;
 	text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
 	border-radius: 8px;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
