@@ -1,0 +1,111 @@
+/* Estilos Globales*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: rgb(235, 224, 201);
+    background: linear-gradient(0deg, rgba(235, 224, 201, 1) 0%, rgba(230, 216, 187, 1) 73%, rgba(252, 223, 164, 1) 100%);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p,
+li,
+table {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+th,
+td {
+    padding: 0 2rem;
+}
+
+th {
+    font-size: 2rem;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+/* Utilidades*/
+
+.centrar {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Contactos*/
+
+.contacto-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+address {
+    display: inline-block;
+}
+
+/* Estilos para la Tabla*/
+
+.tabla {
+    margin: auto;
+    border: black 1px solid;
+    margin-bottom: 2rem;
+}
+
+th,
+td {
+    border: black 1px solid;
+    border-style: double;
+}
+
+/*Footer*/
+
+.footer {
+    background: rgb(255, 224, 163);
+    background: linear-gradient(0deg, rgba(255, 224, 163, 1) 0%, rgba(247, 228, 191, 1) 35%, rgba(236, 222, 195, 1) 100%);
+    padding: 2rem;
+}
