@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto tedril</title>
+    <link rel="stylesheet" href="styles-contacto.css">
+
+</head>
+<body>
+    <main class="page">
+        <h1>Contacto </h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Introduzca su nombre completo" required>
+            </div>  
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Ingrese Email" required>
+            
+
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="5000" type="radio" name="Budget"> <label>5000</label>
+                    
+                    <input id="2500" type="radio" name="Budget"> <label>2500</label>
+
+                    <input id="1000" type="radio" name="Budget"> <label>1000</label>
+
+
+                </fieldset>
+
+            </div>
+            <div class="form-group">
+                <label>Tipo de proyecto</label>
+
+                <select id="type" required>
+
+                    <option selected disabled value="">
+                        Seleccione
+                    </option>
+                    <option>
+                        Webapp
+                    </option>
+                    <option>
+                        Webpage
+                    </option>
+                    <option>
+                        Mobileapp
+                    </option>
+                    <option>
+                        Diseño
+                    </option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="description">Descripcion</label>
+                <textarea id="description"required rows="10"></textarea>
+                <div>Escribe una descripcion de almenos 200 palabras</div>
+
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input  for="terms
+                    " type="checkbox" required>
+
+                    <span id="terms">Acepta los terminos y condiciones</span>
+
+                </label>
+
+            </div>
+            <button>Enviar</button>
+        </form>
+
+    </main>
+</body>
+</html>

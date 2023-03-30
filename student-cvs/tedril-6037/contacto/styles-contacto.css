@@ -1,0 +1,45 @@
+html{
+
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+
+}
+
+.page {
+
+    background: papayawhip;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 8 40px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.form-group{
+
+    border: 1px solid tomato;
+    margin: 20px 0;
+}
+
+label, input:not([type="radio"],[type="checkbox"]) {
+
+    width: 100%;
+    
+}
+
+textarea{
+
+    display: block;
+    width: 100%;
+    resize: none;
+}
+
+label{
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
