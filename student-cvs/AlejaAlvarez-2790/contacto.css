@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fafafa;
+
+}
+.page{
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: 'Inter', sans-serif;
+}
+.form-group {
+    margin: 20px 0;
+}
+label, input {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="radio"])  {
+    width: 100%;
+}
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+
+}
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea{
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(246, 8, 103, 0.133);
+    background: papayawhip;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(245, 217, 228);
+}
+button:active {
+    background: #fac2;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.back a{
+        color: #e81c4f;
+}
+form {
+    accent-color: #fac2;
+}
