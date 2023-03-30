@@ -21,3 +21,68 @@ h1,strong {
 a {
     color: #e81c4f;
 }
+
+input {
+    vertical-align: middle;
+}
+.form-group__names {
+    width: 100%;
+}
+
+.form-group__name{
+    display: inline-block;
+}
+
+.form-group__lastname {
+    display: inline-block;
+}
+
+.form-group input:not([type="checkbox"]), .form-group textarea, label {
+    display: block;
+    width: 100%;
+}
+
+
+input:not([type="checkbox"]),  textarea {
+    padding: 8px 16px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+/* input:not([type="checkbox"]) {
+    width: 100%;
+} */
+
+textarea {
+    resize: vertical;
+}
+
+label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #082f49;
+    background-color: #0ea5e9;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7dd3fc;
+}
+
+.btn:active {
+    background-color: #0891b2;
+}
+
+
+
+
+
