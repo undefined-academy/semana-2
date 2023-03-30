@@ -4,13 +4,29 @@ body {
   display: flex;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: max-content;
   line-height: 1.5;
-  padding: 4em 1em;
-  color: #566b78;
+  padding: 1em 1em;
   font-size: 12px;
   background-color: white;
   background-image: url("https://www.proydesa.org/portal/images/codigos.jpg");
+}
+
+.form-send {
+    display: flex;
+    align-items: center;
+}
+
+.form-mensaje {
+    display: grid;
+}
+
+.form-email {
+    display: grid;
+}
+
+.form-name {
+    display: grid;
 }
 
 #hdv {
@@ -20,12 +36,6 @@ body {
   background-color: white;
 }
 
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-
 article {
   display: flex;
   flex-direction: column;
@@ -33,13 +43,12 @@ article {
 }
 
 #info {
-  /* color: #f5f7f9; */
   display: flex;
-  /* font-size: medium; */
   display: contents;
 }
 
-#name {
+#myName {
+  margin: auto;
   display: flex;
   width: auto;
   height: 230px;
@@ -88,4 +97,47 @@ footer {
 
 a {
   color: royalblue;
+}
+
+ul,
+li,
+a {
+  text-decoration: dashed;
+  margin: auto;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  max-width: 489px;
+  min-width: 489px;
+  position: fixed;
+  z-index: 100;
+  margin: 0px;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+nav ul li:hover {
+  background: #000f41;
+}
+
+form {
+  display: grid;
+  justify-items: center;
 }
