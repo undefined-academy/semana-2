@@ -1,96 +1,182 @@
+html {
+  box-sizing: border-box;
+}
+
+/* We specify border.box for all elements */
+* {
+  box-sizing: inherit;
+
+}
+
+:root {
+  /* Defining CSS Variables*/
+  --primary-color: #212529;
+  --secondary-color: #6c757d;
+  --accent-color: #ffc107;
+  --background-color: mintcream;
+  --text-color: #333;
+}
+
 body {
-    margin: 0 auto;
-    max-width: 50em;
-    background-color: #699187;
-    font-family: "Georgia";
+  margin: 0 auto;
+  max-width: 50em;
+  background-color: var(--background-color);
+  font-family: "Georgia";
 }
 
 h2 {
-    margin-top: 1em;
-    padding-top: 1em;
+  margin-top: 1em;
+  padding-top: 1em;
 }
 
 .table {
-    border-bottom: 1px solid #d8dee9;
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 10;
-    margin-bottom: 20px;
-  }
-  
-  .table th, .table td {
-    padding: 10px;
-    border: 1px solid #555;
-    background-color: 699187;
-  }
-  
-  .table th {
-    background-color: hwb(129 26% 44% / 0.423);
-    font-weight: bold;
-    text-align: left;
-  } 
-  
-  .table tbody tr:nth-child(even) {
-    background-color: #699187;
-  }
+  border-bottom: 1px solid #d8dee9;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 10;
+  margin-bottom: 20px;
+}
 
-  .table th{
-    background-color: 699187;
-  }
-  
-  .table tbody td {
-    text-align: left;
-  }
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #555;
+  background-color: var(--background-color);
+}
 
-  a {
-    color: purple;
-  }
+.table th {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  text-align: left;
+}
 
-  ul {
-    background: #699187;
-    border-bottom: 1px solid #699187;
-    color: #333;
 
-  }
+.table tbody td {
+  text-align: left;
+}
 
-  header h1 {
-    color: white;
-    font-size: 2.5em;
-    font-weight: 300;
-  }
+ul {
+  background: var(--background-color);
+  border-bottom: 1px solid #699187;
+  color: #333;
 
-  header {
-    background-color: #263d36;
-    background-image: url("header.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 1.2;
-    padding: 2vw 1em;
-    text-align: center;
-  }
-  
-  header img {
-    display: inline-block;
-    height: 350px;
-    vertical-align: top;
-    width: 350px;
-  }
+}
 
-  header a {
-    border: 1px solid #e81c4f;
-    border-radius: 290px;
-    color: rgb(255, 255, 255);
-    font-size: 0.6em;
-    letter-spacing: 0.2em;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-  }
-  
-  header a:hover {
-    background:  #e81c4f;
-    color: white;
-  }
+header {
+  background-color: var(--secondary-color);
+  display:flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  background-color: var(--secondary-color);
+}
+
+header img {
+  display: inline-block;
+  height: 350px;
+  vertical-align: top;
+  width: 350px;
+}
+
+header #logo {
+  display: inline-block;
+  height: 350px;
+  vertical-align: top;
+  width: 350px;
+  background-color: var(--background-color);
+  background-image: url("/images/header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header a {
+  border: 1px solid var(--accent-color);
+  border-radius: 290px;
+  color: var(--accent-color);
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+a {
+  color: var(--accent-color)
+}
+
+.contact-form {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label,
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  color: var(--text-color);
+  padding: 8px 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: var(--accent-color);
+  border: 1px solid #713f12;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #e0a800;
+}
+
+.linked a {
+  color:#333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.linked a:hover {
+  color: var(--accent-color);
+  padding:2px;
+  border-radius: 4px;
+}

@@ -9,7 +9,8 @@
 
 <body>
     <header id="header">
-        <img id="logo" src="/images/header.jpg" alt="An image of an IDE with code">
+        <img id="logo" alt="An image of an IDE with code">
+
         <h1>Welcome to my profile</h1>
         <p>
             <a href="https://github.com/VicBocanegra25" target="blank">by Víctor Bocanegra</a>
@@ -19,8 +20,8 @@
 
     <section>
         <h2> About me: </h2>
-        <p>Born in: <img src="https://aux2.iconspalace.com/uploads/306663838.png" height="20" width="30"
-                alt="Mexican Flag"> Mexico City</p>
+        <p><strong>Born in:</strong> <img src="https://aux2.iconspalace.com/uploads/306663838.png" height="20"
+                width="30" alt="Mexican Flag"> Mexico City</p>
         <p><strong>Age:</strong>28</p>
         <p> I'm a <strong>Software Developer Jr.</strong> who's interested in <em>Machine Learning, AI and
                 Cybersecurity</em>.</p>
@@ -40,10 +41,10 @@
     </section>
 
     <section>
-        <h2>Here's a table of commands that we've discussed yesterday during our <time
+        <h2>Commands and aliases</h2>
+        <p>Here's a table of commands that we've discussed yesterday during our <time
                 datetime='2023-03-01 15:00-0800'>March 1st</time> class in the UndefinedShell
-            Full-Stack Bootcamp:</h2>
-
+            Full-Stack Bootcamp:</p>
         <h3><strong>Section 1: Useful commands</strong></h3>
         <table class="table">
             <tr>
@@ -108,13 +109,51 @@
     </section>
 
     <footer>
-
-        <h2>Find me on LinkedIn: </h2>
+        <div class="linked">
+            <h2>Find me on LinkedIn: </h2>
+        
 
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="35" height="35"> <a
             href="https://www.linkedin.com/in/victor-bocanegra-b516b6180/"> Víctor Bocanegra - LinkedIn</a>
         <p> </p>
-        <img src="/images/gato-singapura.jpg" height="60" width="70" alt="Image of a cat">
+        <img src="/images/gato-singapura.jpg" height="80" width="90" alt="Image of a cat">
+    </div>
+        <div class="contact-form">
+            <h2>Contact me if you're interested in us working together</h2>
+            <form action="/server" method="get">
+                <div>
+                    <label for="name">Name: </label>
+                    <input id="name" name="name" type="text" placeholder="Type your name" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Type your email" required>
+                </div>
+                <div>
+                    <label for="project">Project Type: </label>
+                    <select name="project" id="project" required>
+                        <option disabled selected value="">Choose one</option>
+                        <option value="web">Web Development</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="ml">Machine Learning</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="description">Add your project's description: </label>
+                    <textarea class="help-text" type="text" name="description" id="description" cols="30" rows="6"
+                        required placeholder="Write your project's description"></textarea>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="paid">Is this a paid collaboration?</label>
+                        <input type="radio" name="paid" id="yes" value="yes"><label for="yes">Yes</label>
+                        <input type="radio" name="paid" id="no" value="no"><label for="no">No</label>
+                    </fieldset>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
     </footer>
 </body>
 
