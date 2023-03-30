@@ -1,0 +1,13 @@
+html, body {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #bbb6fc;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
