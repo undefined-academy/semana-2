@@ -1,20 +1,21 @@
 body {
     margin: 0 auto;
-    background: whitesmoke;
+    background: papayawhip;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     align-content: center;
     max-width: max-content;
+    color: #333;
 }
 
 #contenido {
-    background-color: lightgrey;
+    background-color: honeydew;
     padding: 8px;
     backdrop-filter: blur(10px);
 }
 
 #titulos {
-    color: rgb(8, 18, 8);
+    color: #333;
 }
 
 .parrafo {
@@ -35,8 +36,8 @@ th {
 }
 
 .tabla1 th {
-    color: rgb(63, 62, 62);
-    background-color: papayawhip;
+    color: #333;
+    background-color: khaki;
 }
 
 .tabla1 td:nth-child(1) {
@@ -45,7 +46,7 @@ th {
 }
 
 .tabla1 td:nth-child(2) {
-    text-indent: 60px;
+    text-indent: 40px;
     font-style: italic;
 }
 
@@ -63,8 +64,8 @@ th {
 }
 
 .tabla2 th {
-    color: rgb(63, 62, 62);
-    background-color: papayawhip;
+    color: #333;
+    background-color: khaki;
 }
 
 .tabla2 td:nth-child(1) {
@@ -73,16 +74,18 @@ th {
 }
 
 .tabla2 td:nth-child(2) {
-    text-indent: 60px;
+    text-indent: 40px;
     font-style: italic;
 }
 
 .link {
     text-align: end;
     font-size: 14px;
+    margin: 0 auto;
 }
 
 .github-mark {
     width: 2%;
     height: 2%;
 }
+
