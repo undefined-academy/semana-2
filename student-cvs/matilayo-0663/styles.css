@@ -17,12 +17,19 @@ body {
     margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
+    max-width: 900px; 
 }
 
 main {
     max-width: 50em;
     margin: 0 auto;
     padding: 4em 1em;
+}
+
+h1 {
+    text-align: center;
+    margin-top: -30px;
+    font-size: 50px;
 }
 
 h3 {
@@ -34,6 +41,11 @@ h1 {
     text-align: center;
     margin-top: -30px;
     font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 article {
@@ -104,12 +116,66 @@ a {
     text-decoration: none;
 }
 
+.indication {
+    font-size: 16px;
+    margin-top: 25px;   
 
+}
+div.N-E, div.form-group, textarea {
+    display: block;
+    margin-top: 25px;
+}
 
-
-/* .prueba {
-    background-color: blue;
+textarea {
+    width: 60%;
     height: 100px;
-    width: 700px;
-    border-radius: 5px;
-} */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-top: 5px;   
+}
+
+div.select p {
+    display: inline;
+    margin-right: 15px;
+}
+
+div.N-E input {
+    display: inherit;
+    width: 60%;
+}
+
+div.N-E label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+form, article {
+    display:block;
+    margin: 0 auto;
+}
+
+select {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div {
+    margin-bottom: 14px;
+    
+}
+
+p.coment {
+    font-size: 17px;
+}
+
+label {
+    font-size: 1.2em;
+}
