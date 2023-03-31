@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">    
-    <title>Formulario html</title>
+    <title>Form html</title>
     <link rel="stylesheet" href="styles2.css">
+    <script
+    type="module" src="/index.mjs">
+    </script>   
 <body>
     <main class="page">
-        <h1> Contacto</h1>
+        <h1> Contact</h1>
         <form >
             <div class="form-grup">
-                <label for="name"> Nombre </label>
-                <input id="name" type="text" placeholder="Ingresa tu nombre" required>
+                <label for="name"> Name </label>
+                <input id="name" type="text" placeholder="Name" required>
             </div>
             <div class="from-grup">
                 <label for="email"> email </label>
@@ -18,7 +21,7 @@
             </div>
             <div class="form-grup">
                 <fieldset>
-                    <legend> presupuesto</legend>
+                    <legend> budget</legend>
                     <input id="10000" name="budget" type="radio">
                     <label for="10000">$10000</label>
 
@@ -30,9 +33,9 @@
                 </fieldset>
             </div>
             <div class="form-grup">
-                <label for="type"> tipo de proyecto</label>
+                <label for="type"> Project type</label>
                 <select name="type" id="type" required>
-                    <option disabled selected> Seleccione uno</option>
+                    <option disabled selected> Selection</option>
                     <option value="website"> website</option>
                     <option value="app"> app</option>
                     <option value="appmovil"> appmovil</option>
@@ -41,22 +44,22 @@
                 </select>
             </div>
             <div class="form-grup">
-                <label for="description"> Descripcion</label>
+                <label for="description"> description</label>
                 <textarea name="" id="description" cols="30" rows="10"></textarea>
-                <div class="help"> escribe la descripcion y fecha de la consulta</div>
+                <div class="help"> write the description and date of your appointment</div> 
                 
             </div>
             
             <div class="form-grup">
                 <label for="terms" >
                     <input id="terms" type="checkbox" required>
-                    <span> acepto terminos</span>
+                    <span> agree terms</span>
                 </label>
             </div>
-            <button> Enviar</button>
+            <button> Send</button>
             <script>
                 document.querySelector('form').addEventListener('submit', (event) => {
-                  event.preventDefault();
+                 event.preventDefault();
                 });
               </script>
         </form>  
