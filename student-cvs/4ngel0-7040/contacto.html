@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1 class="centrar">Información de Contacto</h1>
+        <form class="form">
+            <fieldset>
+                <legend>Información General</legend>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de Contacto</legend>
+
+                <p>Medio de Preferencia:</p>
+
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="radio" name="rd" value="email" id="correo" required>
+                    <label for="tel">Teléfono</label>
+                    <input type="radio" name="rd" value="telefono" id="tel" required>
+                </div>
+
+                <div id="contacto"></div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre el proyecto</legend>
+
+                <div class="form-group">
+                    <label for="proyecto">Tipo de proyecto</label>
+                    <select name="" id="proyecto" required>
+                        <option value="" selected disabled>--Elija una opción--</option>
+                        <option value="1">Sitio Web</option>
+                        <option value="2">Aplicaion Móvil</option>
+                        <option value="3">Aplicación Web</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="" id="descripcion"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="presupuesto">Presupuesto</label>
+                    <input type="number" id="presupuesto" min="1">
+                </div>
+            </fieldset>
+
+            <button class="boton" type="submit">Enviar</button>
+            <a href=".." class="boton">Regresar</a>
+        </form>
+    </div>
+
+    <footer class="footer centrar">
+        <p>Angelo Casapaico &copy; 2023</p>
+    </footer>
+</body>
+
+<script src="assets/js/main.js"></script>
+
+</html>

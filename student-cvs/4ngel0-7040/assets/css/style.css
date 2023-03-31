@@ -35,10 +35,18 @@ h3 {
     font-size: 2.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 p,
 li,
 table {
     font-family: 'Work Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+form {
     font-size: 1.8rem;
 }
 
@@ -77,11 +85,20 @@ img {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 /* Contactos*/
 
 .contacto-nav {
     display: flex;
     gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 address {
@@ -100,6 +117,55 @@ th,
 td {
     border: black 1px solid;
     border-style: double;
+}
+
+/*Form Contacto*/
+
+.form-group {
+    line-height: 1.8;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.4rem;
+    margin: 2rem 0 0 0;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #575757;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 20rem;
+}
+
+input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+.boton {
+    padding: 1.5rem 3.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #916540;
+    background: #ffc477;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: .5rem;
+    cursor: pointer;
 }
 
 /*Footer*/
