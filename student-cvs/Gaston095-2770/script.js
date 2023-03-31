@@ -1,4 +1,3 @@
-document.getElementById("button").addEventListener("click", function(event){
-    console.log("Presionaste enviar datos.");
+document.getElementById("button").addEventListener("submit", function(event){
     event.preventDefault();
 });
