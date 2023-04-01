@@ -113,3 +113,6 @@ box-shadow: none;
 form{
     accent-color: #999;
 }
+form:focus-visible, textarea:focus-visible{
+    outline: 1px solid #999;
+}
