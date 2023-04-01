@@ -10,8 +10,13 @@ body {
     background-color: #0d1117;
   }
 
+  header{
+    padding-right: 10%;
+    background-color: #0d1117;
+  }
+
   h1,h2,p,ul,table {
-    color: white;
+    color: #b8b6b6;
     margin-top: 1em;
     padding-top: 1em;
   }
@@ -19,3 +24,199 @@ body {
   a {
     color: skyblue;
   }
+
+  .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+    line-height: 80px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #b8b6b6;
+    font-weight: 400;
+  }
+  
+  
+  .nav-item:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .nav-item:hover .nav-link {
+    color: #d3d5d8 ;
+  }
+
+  /* Css para formulario */
+
+  form{
+    background-color: #0d1117;
+    border: 1px solid #b8b6b6;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #888888;
+}
+
+input:focus-visible, textarea:focus-visible{
+    border: 1px solid #7e22ce;
+    outline: 1px solid #a855f7;
+}
+.page{
+    max-width: 600px;
+    margin: 50px auto ;
+    padding: 0 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group{
+    
+    margin: 15px 0;
+  
+}
+
+input{
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]){
+    width: 100%;
+}
+
+label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #b8b6b6
+}
+textarea{
+    display: block;
+    width:100%;
+    resize: vertical;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea{
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help{
+    font-size: 12px;
+    margin-top: 8px;
+    color: gray;
+}
+
+
+
+select option {
+    background-color: #c6f0f8;
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+
+  button.Boton{
+    border: 0;
+    background-image: linear-gradient(
+    150deg,
+    #5cb8f6,
+    #0666ff,
+    #00e1ff
+    );
+    border-radius: 8px;
+    color: #000;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button.Boton span{
+    background-color: skyblue;
+    padding: 16px 32px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button.Boton:hover span{
+    background: none;
+}
+
+button.Boton:active{
+    transform: scale(0.9);
+}    
+
+
+.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: #cbe7fa;
+}
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #c7e6fb;
+	border-bottom:4px solid #c7e6fb;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+	margin-top: 3px;
+}
