@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <title>Victor Bocanegra CV</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+        window.onload = function(){ // Making sure that the code runs after the HTML document has been loaded
+        document.getElementById("formButton").addEventListener('click', function(event){
+            event.preventDefault(); // Prevents the default form submission
+            console.log('Button clicked, form not submitted');
+        });
+    };
+    </script>
 </head>
 
 <body>
@@ -150,7 +158,7 @@
                         <input type="radio" name="paid" id="no" value="no"><label for="no">No</label>
                     </fieldset>
                 </div>
-                <button type="submit">Submit</button>
+                <button id="formButton" type="submit">Submit</button>
             </form>
         </div>
 
