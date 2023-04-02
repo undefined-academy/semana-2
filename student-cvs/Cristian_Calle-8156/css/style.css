@@ -6,7 +6,7 @@ body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     padding: 4em 1em;
-    color: #566b78;
+    color: #333;
 }
 
 h2 {
@@ -21,7 +21,7 @@ h1, h2, strong {
 code, pre {
     background: #d8d8d8;
     border-bottom: 1px solid #d8dee9;
-    color: #e81c4f;
+    color: #6d28d9;
 }
 
 code {
@@ -35,11 +35,11 @@ code {
   }
 
   a {
-    color: #e21c4e;
+    color: #6d28d9;
   }
 
   a strong {
-    color: #e81c4f;
+    color: #6d28d9;
   }
 
 
@@ -68,7 +68,7 @@ code {
   }
   
   header a {
-    border: 1px solid #e81c4f;
+    border: 1px solid #6d28d9;
     border-radius: 290486px;
     color: white;
     font-size: 0.6em;
@@ -81,7 +81,11 @@ code {
   }
   
   header a:hover {
-    background:  #e81c4f;
+    background:  #6d28d9;
     color: white;
+  }
+
+  figure {
+    margin: 0;
   }
 

@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #6d28d9;
+    background-color: #f2f2f2
+}
+
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+    border: 1px solid #6d28d9;
+    border-radius: 290486px;
+    color: #333;
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+a:hover {
+    font-weight: bold;
+    background: #6d28d9;
+    color: white;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label,
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #6d28d9;
+    vertical-align: middle;
+}
+
+input[type="text"],
+[type="email"],
+textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    border: 1px solid #6d28d9;
+    border-radius: 290486px;
+    color: #333;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: bold;
+    background: #6d28d9;
+    color: white;
+}
+
+button:active {
+    font-weight: bold;
+    background: #4c1d95;
+    box-shadow: none;
+    color: white;
+}
