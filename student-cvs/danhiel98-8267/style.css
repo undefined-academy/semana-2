@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/* body {
+    color: #333;
+    background-color: #fefefe;
+} */
+
 body {
     background-color: beige;
     color: #555;
@@ -12,11 +25,18 @@ body {
 
 main {
     border-radius: 15px;
-    background-color: bisque;
+    background-color: #f9f9f9;
     margin-top: 25px;
     padding: 10px 20px;
-    box-shadow: -10px 10px #cdcdcd;
+    box-shadow: 0 0 10px 5px #dadada;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* .page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+} */
 
 h2 {
     margin-top: 1em;
@@ -30,3 +50,134 @@ h1, h2, strong {
 a {
     color: #17a250;
 }
+
+.contact {
+    display: block;
+    width: 100%;
+    max-width: 300px; /* Este valor puede ser ajustado según tus necesidades */
+    margin: 0 auto; /* Para centrar horizontalmente el botón */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contact:hover {
+    background-color: #0062cc;
+}
+
+a.button {
+    display: block;
+    max-width: 300px; /* Este valor puede ser ajustado según tus necesidades */
+    width: 100%;
+    margin: 0 auto; /* Para centrar horizontalmente el botón */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+  
+a.button:hover {
+    background-color: #0062cc;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+/* 
+    Para que ambos elementos queden alineados correctamente
+    se aplica la misma propiedad en los dos
+*/
+label  {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+    /* display: block; */
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 12px 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #0daa2f;
+    background: #08ea40;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #15fa20;
+}
+
+button:active {
+    background: #04ca3f;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-back {
+    /* display: inline-block; */
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .btn-back i {
+    margin-right: 10px;
+  }
+  

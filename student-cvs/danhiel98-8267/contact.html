@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="page">
+        <header>
+            <a href="/" class="btn-back">⬅️ Regresar</a>
+            <h1>Contacáctame</h1>
+        </header>
+        <form action="" method="GET" id="form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Ingrese su correo-e" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Profesión:</label>
+                <select name="type" id="type" required>
+                    <option value="">[Seleccione]</option>
+                    <option value="student">Estudiante</option>
+                    <option value="technician">Técnico</option>
+                    <option value="engineer">Ingeniero</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>¿Qué tipo de consulta tienes?</legend>
+
+                    <label>
+                        <input type="radio" name="consulta" value="general" required>
+                        Consulta general
+                    </label>
+
+                    <label>
+                        <input type="radio" name="consulta" value="soporte">
+                        Soporte técnico
+                    </label>
+
+                    <label>
+                        <input type="radio" name="consulta" value="ventas">
+                        Consulta de ventas
+                    </label>
+                </fieldset>
+                <div class="help">Elige la opción adecuada</div>
+            </div>
+            <div class="form-group">
+                <label for="description">Detalles de consulta</label>
+                <textarea name="description" id="description" rows="4" required></textarea>
+                <div class="help">Describe la consulta que tienes</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+
+<script>
+    const form = document.getElementById("form");
+    form.addEventListener("submit", function (ev) {
+        alert("Estás intentando enviar la info pero no se puede 😋");
+        ev.preventDefault();
+    })
+</script>
+
+</html>
