@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-poppins);
+}
+
+:root {
+    --color1: #2C3333;
+    --color2: #ECF2FF;
+
+    --f-poppins: 'Poppins', sans-serif;
+}
+
+.conteiner {
+    margin: 0 auto;
+    background-color: #f7faff;
+}
+
+.nav-container {
+    color: #f7faff;
+    padding: 10px;
+}
+
+.ul-container {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e4e4;
+    padding: 10px;
+}
+
+li {
+    margin-right: 20px;
+    padding: 0 10px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #575757;
+}
+
+.principal {
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.intro p{
+    padding-top: 20px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    font-size: 17px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.me {
+    height: 100vh;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+.img-principal {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 350px;
+    
+}
+
+.content-academy {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-academy p{
+    padding-top: 10px;
+}
+
+
+.content-academy ul {
+    font-size: 20px;
+    list-style: none;
+    margin: auto;
+    background-color: #c7c6c6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.422);
+}
+
+img {
+    width: 70px;
+}
+
+.cotent-t-img-logo {
+    padding-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.tech {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    padding: 20px 0;
+    color: white;
+    background-color: #2C3333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    align-self: flex-end;
+    padding: 5px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #f7faff;
+    border: none;
+    border-radius: 5px;
+}
