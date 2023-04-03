@@ -114,8 +114,8 @@ button {
     padding: 16px 60px;
     text-transform: uppercase;
     font-weight: bold;
-    border: 1px solid #713f12;
-    background: #eab308;
+    border: 1px solid #60a5fa;
+    background: #3b82f6;
     color: #333;
     text-shadow: -1px -1px 0 rgba(255,255,255,0.5);
     border-radius: 8px;
@@ -124,10 +124,10 @@ button {
 }
 
 button:hover {
-    background: #facc15;
+    background: #60a5fa;
 }
 
 button:active {
-    background: #ca8a04;
+    background: #38bdf8;
     box-shadow: none;
 }
