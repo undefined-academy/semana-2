@@ -53,9 +53,6 @@ input:not([type="checkbox"]),  textarea {
     width: 100%;
 } */
 
-textarea {
-    resize: vertical;
-}
 
 label {
     margin-top: 20px;
