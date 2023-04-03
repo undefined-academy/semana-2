@@ -10,12 +10,17 @@ html, body{
     height: 100%;
     box-sizing: border-box;
 }
-.grid-container{
-
-    border: 2px dashed peru;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px dashed rebeccapurple;
     height: 100%;
 }
-.grid-item{
+.item{
     background: papayawhip;
     border: 2px solid coral;
     height: 50px;
