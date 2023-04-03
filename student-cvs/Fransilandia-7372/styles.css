@@ -5,3 +5,96 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fafafa;
+}
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+        margin: 20px 0;
+}
+
+/*label, input[type="text"], input[type="email"] {
+    width: 100%;
+}*/
+
+label, input {
+    vertical-align: middle;
+}
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;    
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background-color: white;
+    border: 1px solid l#629bdd;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #629bdd;;
+    background: #7edeeb; 
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: lightblue ;
+}
+
+button:active {
+    background: lightblue;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+    accent-color: #7edeeb;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid #629bdd;
+    outline: 3px solid #62dde6 ;
+}
