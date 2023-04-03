@@ -10,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     padding: 4em 1em;
-    color: #555;
+    color: #1d1d1d;
 }
 
 .title  {
@@ -19,12 +19,10 @@ body {
 }
 
 .color {
-    background: #bcd6d6b0;
+    background: #a7e8e800;
     color: #000000;
 }
-.color {
-    border-left: 3px solid rgba(125, 172, 219, 0.753);
-}
+
 .textdt {
     margin: 10px 0px 0px 1px;
 }
