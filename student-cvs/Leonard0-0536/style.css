@@ -31,6 +31,8 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    background-color: #e8e4e4;
+    padding: 10px;
 }
 
 li {
@@ -44,7 +46,7 @@ a {
 }
 
 a:hover {
-    color: #c7c6c6;
+    color: #575757;
 }
 
 .principal {
@@ -60,6 +62,14 @@ a:hover {
 
 .intro p{
     padding-top: 20px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    font-size: 17px;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
 .me {
@@ -85,9 +95,19 @@ a:hover {
     flex-direction: column;
 }
 
-ul {
+.content-academy p{
+    padding-top: 10px;
+}
+
+
+.content-academy ul {
+    font-size: 20px;
     list-style: none;
     margin: auto;
+    background-color: #c7c6c6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.422);
 }
 
 img {
