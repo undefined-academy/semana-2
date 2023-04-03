@@ -103,6 +103,51 @@
   font-size: 0.87rem;
 }
 
+/* FORM STYLES */
+.form__label {
+  display: block;
+  color: #6a9589;;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+}
+
+.form__input {
+  border: #54546d 2px solid;
+  border-radius: 4px;
+  padding: 10px 8px;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  color: #f8f8ff;
+  font-size: 0.87rem;
+  width: 100%;
+}
+
+.form__input:focus-visible {
+  border: #98bb6c 2px solid;
+  outline: none;
+}
+
+.form__input--textarea {
+  resize: none;
+}
+
+.form__btn {
+  --color-effect-button: #6a958920;
+
+  width: 100%;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  border: 2px solid #6a9589;;
+  background-color: transparent;
+  color: #6a9589;;
+  padding: 1rem 0.5rem;
+  font-size: 0.87rem;
+}
+
+.form__btn:hover {
+  background-color: var(--color-effect-button);
+}
+
 /* FOOTER STYLES */
 .footer {
   padding: 1.5rem;
