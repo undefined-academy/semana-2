@@ -71,6 +71,10 @@ label {
     cursor: pointer;
 }
 
+textarea {
+    resize: none;
+}
+
 .btn:hover {
     background-color: #7dd3fc;
 }
