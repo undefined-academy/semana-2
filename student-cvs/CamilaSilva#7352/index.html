@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script async defer type="module" src="/main.js"></script>
+    <title>Camila Silva</title>
   </head>
   <body>
     <header class="hero">
@@ -16,7 +18,7 @@
       <hr>
       <article>
         <header>
-          <h2  class="title">I'm a Frontend developer and currently learning more about Fullstack Development<h2>
+          <h2 class="title"> I'm a Frontend developer and currently learning more about Fullstack Development </h2>
             <pre class="code">
               <span>const </span> <span class="codeName">camisilvita</span>  = { 
               <span class="codeName">   pronouns</span>: "She" | "Her", 
@@ -43,14 +45,38 @@
           </ul>
         </section>
         
-  
-          <a href="https://github.com/camilasilvab">
-            <button>
-              <p>GitHub profile</p> 
-            </button>
-          </a>
+        <a href="https://github.com/camilasilvab" class="button">
+          <span>GitHub profile</span> 
+        </a>        
+      </article>
+
+      <hr>
+
+      <section class="form">
+
+        <h2>SAY HELLO</h2>
+        <form action="" method="get" id="form">
+          <div class="input">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+          </div>
+          <br>
+          <div class="input">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+          </div>
+          <br>
+          <div class="input message">
+            <label for="message">Message</label>
+            <textarea  cols="30" rows="10" id="message" type="text"></textarea>
+          </div> 
+          <div class="subtmit">
+            <button type="submit">Send</button>      
+          </div> 
+        </form>
       </section>
-      
+
     </main>
+
   </body>
 </html>

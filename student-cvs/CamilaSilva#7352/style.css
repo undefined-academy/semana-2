@@ -53,16 +53,67 @@ main {
   font-weight: 800;
 }
 
-button {
-  padding: 0 10px;
+.button {
+  display: inline-block;
+  height: 20px;
+  padding: 10px 10px;
   font-family: monospace;
   background: #fa9c80;
   border-bottom: 1px solid #d8dee9;
   border-radius: 10px;
-  border: none
+  border: none;
+  text-decoration:none;
 }
 
-a button {
+.button span {
   color: white;
-  text-decoration:none;
+  
+}
+
+
+
+hr {
+  margin-top: 40px;
+}
+
+.form {
+  height: 420px;
+  width: auto;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  background-color:  #fa9c80;
+}
+
+.form input {
+  border: none;
+  height: 25px;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.message {
+  width: auto;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.subtmit button {
+  padding: 8px 25px;
+  background:white;
+  border-radius: 10px;
+  border: 3px solid #d7876e;
+}
+
+#message {
+  resize: vertical;
 }
