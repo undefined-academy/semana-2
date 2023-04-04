@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="mainHeader">
         <h1>Hola, soy Juan Manuel Mascaró Iglesias</h1>
     </header>
     <section>
@@ -95,6 +95,83 @@
             <p class="code">`alias cl="clear"`</p>
         </article>
     </section>
+
+    <section class="section-form">
+        <div>
+            <header class="header-form">
+                <ion-icon name="call-outline"></ion-icon>
+                <h2>Contacto</h2>
+            </header>
+            <!--  <div class="form-box"> -->
+            <div class="form-value">
+                <p>Completa el siguiente formulario para ponernos en contacto.</p>
+
+                <form class="form" action="/server" method="post">
+
+                    <div class="input-box">
+                        <ion-icon name="finger-print-outline"></ion-icon>
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">Nombre</label>
+                    </div>
+
+                    <div class="input-box">
+                        <ion-icon name="business-outline"></ion-icon>
+                        <input type="text" name="company" id="company" required>
+                        <label for="company">Empresa</label>
+                    </div>
+
+                    <div class="input-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="container">
+                        <fieldset>
+                            <legend>Asunto</legend>
+
+                            <div class="radiobutton">
+                                <input id="webDesign" name="topic" type="radio" value="webDesign">
+                                <label for="webDesign">Diseño Web</label>
+                            </div>
+                            <div class="radiobutton">
+                                <input id="restauration" name="topic" type="radio" value="restauration">
+                                <label for="restauration">Restaurar Aparato</label>
+                            </div>
+                            <div class="radiobutton">
+                                <input id="plants" name="topic" type="radio" value="plants">
+                                <label for="plants">Regar Plantas</label>
+                            </div>
+                            <div class="radiobutton">
+                                <input id="other" name="topic" type="radio" value="other" checked>
+                                <label for="other">Otro</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="container-menssage">
+                        <div class="menssageBox">
+                            <label for="description">Mensaje:</label>
+                            <textarea name="description" id="description" cols="30" rows="8" required></textarea>
+                        </div>
+
+                        <!-- <div class="terms">
+                            <label class="checkbox" for="terms">
+                                <input id="terms" type="checkbox" name="terms" required>
+                                <span>Acepto los terminos y condiciones</span>
+                            </label>
+                        </div>-->
+                    </div>
+
+                    <button>Enviar</button>
+
+                </form>
+            </div>
+            <!-- </div> -->
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
