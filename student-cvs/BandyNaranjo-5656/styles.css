@@ -1,8 +1,4 @@
-td, th {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    background-color: rgba(231, 159, 176, 0.285);
-}
+
 body {
     margin: 0 auto;
     max-width: 50em;
@@ -23,4 +19,71 @@ a {
 }
 img {
     max-width: 25%;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label, input[type='text'], input[type='email']{
+    width: 100%;
+}
+
+input, textarea{
+    padding: 8px 0;
+    background-color: #11111157;
+}
+
+input[type='text'], input[type='email'], textarea{
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+    width: 80%;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    resize: vertical;
+}
+
+input, label {
+    vertical-align: middle;
+}
+
+.form {
+    background-color: #11111157;
+    padding: 20px 20px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #131110;
+    background: rgba(63, 62, 59, 0.498);
+    color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+    text-shadow: -1px -1px 0 rgb(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5b5850;
+}
+
+button:active {
+    background: #11111157;
+    box-shadow: -1px -1px 0 rgb(0, 0, 0, 0.5);
+    color: #f9f9f9;
 }

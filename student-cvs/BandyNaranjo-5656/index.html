@@ -73,49 +73,39 @@
             </article>   
         </section>
         <section>
-            <h1>Terminal Commands</h1>
-            <table class="commands">
-                <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>cd</td>
-                    <td>Change working directory</td>         
-                </tr>
-                <tr>
-                    <td>cp</td>
-                    <td>Copy files</td>         
-                </tr>
-                <tr>
-                    <td>Date</td>
-                    <td>Display date and time </td>         
-                </tr>
-                <tr>
-                    <td>mkdir</td>
-                    <td>Make directories </td>         
-                </tr>
-                <tr>
-                    <td>mv</td>
-                    <td>Move or rename files </td>         
-                </tr>
-              </table>
-              <p></p>
-              <table class="alias">
-                <tr>
-                    <th>Alias</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>alias npms="npm start"</td>
-                    <td>Run npm start</td>         
-                </tr>
-                <tr>
-                    <td>alias cl="clear"</td>
-                    <td>Clear screen</td>         
-                </tr>
-              </table>
-            </section>
+            <div class="form">
+                <header>
+                    <h1>Contact me</h1></header>
+                <form class="contactMeForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id=name type="text" placeholder="Please enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Please enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" required rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="terms">
+                            <input id="terms" type="checkbox" required>
+                            <span>I agree to the terms and conditions</span>
+                        </label>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </article>
+    <script>
+        const form = document.getElementsByClassName("contactMeForm");
+        form[0].addEventListener("submit", function(event) {
+            event.preventDefault();
+        })
+    </script>
     </article>
 </body>
 </html>
