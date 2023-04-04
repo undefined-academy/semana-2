@@ -1,17 +1,26 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 50em;
+  max-width: 50rem;
   margin: 0 auto;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  padding: 4em 1em;
-  color: #566b78;
+  padding: 4rem 1rem;
+  color: #444;
+  background: #fafafa;
 }
 
 h2 {
-  margin-top: 1em;
-  padding-top: 1em;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 h1,
@@ -34,10 +43,16 @@ code {
 }
 
 pre {
-  padding: 1em;
+  padding: 1rem;
   border-left: 2px solid #69c;
 }
 
 a {
   color: #e81c4f;
+}
+
+.form__container {
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: tomato;
 }
