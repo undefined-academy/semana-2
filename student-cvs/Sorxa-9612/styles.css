@@ -1,4 +1,13 @@
+
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
 
 body {
     margin: 0 auto;
@@ -9,7 +18,7 @@ body {
     color: #555;
 }
 
-h3 {
+h3{
     margin-top: 1em;
     padding-top: 1em;
 }
@@ -21,11 +30,18 @@ strong {
     color: #333;
 }
 
-a {
+a{
     color: #2a1ce8;
 }
 
-header {
+.datetime{
+    color: white;
+    font-style:oblique;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+header{
     background-color: #2a33ad;
     background-image: url("header.jpg");
     background-position: bottom;
@@ -77,4 +93,68 @@ li{
     padding-right: 10px;
     display: inline-block;
     text-decoration: none;
+}
+
+.form-group{
+    margin: 20px 0;
+}
+
+label, input{
+    vertical-align: middle;
+}
+
+label, input[type="email"], [type="text"]{
+    width: 100%;
+}
+
+select{
+    display: block;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+input[type="text"], [type="email"], textarea{
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help{
+    font-size: 14px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #172554;
+    background: #2563eb;
+    color: white;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover{
+    background: #3d77f3;
+}
+
+button:active{
+    background: #1c4bce;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
