@@ -6,7 +6,7 @@ body{
     line-height: 1.5;
     padding: 1.cm;
 }
-h2{
+h1, h2{
     margin-top: 0.5cm;
     padding-top: 0.5cm;
 }
@@ -16,4 +16,7 @@ img{
 }
 a {
     color: blueviolet;
+}
+h1{
+    text-align: center;
 }
