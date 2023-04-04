@@ -2,10 +2,11 @@
 
 
 *{  
-    margin: 0 auto;
+    margin: 100 auto;
     max-width: 50em;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(231, 212, 255);
+    box-sizing: border-box;
 }
 
 
@@ -51,5 +52,58 @@ a {
   .pie{
     font-size: 12px;
     color: rgb(136, 136, 135);
-    text-align: center;
+    text-align: left;
+  }
+
+  .form-group{
+    margin: 20px 0;
+  }
+
+  label, input{
+    vertical-align: middle;
+  }
+
+  label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+  }
+
+  textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+  }
+
+  label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+  }
+
+  input[type="text"],input[type="email"], textarea{
+    background: rgb(238, 224, 255);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+  }
+
+  .help{
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(136, 136, 135);
+
+  }
+ 
+  button {
+    padding: 14px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: rgb(194, 149, 248);;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
   }

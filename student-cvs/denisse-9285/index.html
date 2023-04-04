@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    
     <article>
             <h1 class="title-presentation">Estudiante de Bootcamp Full-Stack</h1>
                 <p class="description">¡Hola! Mi nombre es Denisse, estudiante de desarrollo web Full Stack. 
@@ -19,9 +20,57 @@
         <h2 class="second-title">Puedes encontrar mis practicas en Github!</h2>
         <a href="https://github.com/DenisseMonster"><img src="github.png" alt=""> /DenisseMonster</a>
 </section>
+    <title>Formulario de consultas</title>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ingrese su correo" required>
+            </div>
+            
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input type="radio" name="budget" id="100"><label for="100">100</label>
+                    <input type="radio" name="budget" id="250"><label for="250">250</label>
+                    <input type="radio" name="budget" id="500"><label for="500">500</label>
+                </fieldset>
+                <div class="help">Este presupuesto es el maxino no el total</div>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de consulta</label>
+                <select name="type" id="type" required>
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="">Website</option>
+                    <option value="">Big data</option>
+                    <option value="">Diseño</option>
+                    <option value="">Database</option>
+                </select>
+            </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea name="description" id="description" cols="30" rows="5"></textarea>
+                    <div class="help">Escribe un resumen de tu consulta para contactarte</div>
+                    <label for="">
+                        <input type="checkbox" name="" id="terms" required>
+                        <span>Acepto terminos y condiciones</span>
+                    </label>
+                
+            </div>
+            <button>Enviar</button>
+        </form>
+
+    </main>
     <footer>
-        <p class="pie">Esta Pagina estra hecha por Denisse Safi</p>
+        <p class="pie">Esta Pagina esta hecha por Denisse Safi</p>
     </footer>
 </body>
 
 </html>
+
