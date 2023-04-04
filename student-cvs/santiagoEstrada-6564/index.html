@@ -3,6 +3,8 @@
 
 <head>
     <title>Mi perfil de MarkDown a HTML</title>
+    <!-- Esta meta evita que el usuario pueda hacer zoom: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
 </head>
@@ -13,245 +15,282 @@
             <ul class="navbar-nav">
                 <li class="nav-item"> <a href="#Home" class="nav-link">Home</a></li>
                 <li class="nav-item"> <a href="#intereses" class="nav-link">About me</a></li>
+                <li class="nav-item"> <a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"> <a href="#comandos" class="nav-link">Commands</a></li>
-                <li class="nav-item"> <a href="#contactProfessional" class="nav-link">Professional contact</a></li>
+                <li class="nav-item"> <a href="#contactProfessional" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="Home">
-        <h1>Hello, I'm Santiago Estrada 👋</h1>
-        <p>I am a <strong>engineering student</strong> passionate about the world of technology.
-            With extensive knowledge in development and design, I have done projects in various fields,
-            from <strong>enterprise software development </strong>to the creation of <strong>applications for education
-                and
-                entertainment.</strong></p>
-
-        <article>
-            <div id="intereses">
-                <h2>Interests</h2>
-                <ul>
-                    <li>Mobile development</li>
-                    <li>Programming</li>
-                    <li>Web development</li>
-                    <li>Interface design</li>
-                    <li>Constant study and learning</li>
-                </ul>
-            </div>
-        </article>
-
-
-    </section>
-
-
-    <section>
-        <article>
-            <div id="Contact">
-                <h2>Contact Information</h2>
-                <ul>
-                    <li>📧 Email: santiago01est@gmail.com </li>
-                    <li> <a href="https://www.linkedin.com/in/santiago-estrada-52793721a/">💼 LinkedIn </a> </li>
-                </ul>
-            </div>
-        </article>
-
-        <article>
-            <div id="tecnologias">
-                <h2>Languages</h2>
-                <ul>
-                    <li>JAVA</li>
-                    <li>C</li>
-                    <li>PYTHON</li>
-                    <li>DART</li>
-                    <li>GO</li>
-                </ul>
-                <h2>Tools</h2>
-                <ul>
-                    <li>ANDROID STUDIO</li>
-                    <li>VS CODE</li>
-                    <li>GIT HUB</li>
-                    <li>DOCKER</li>
-                    <li>ECLIPSE</li>
-                    <li>FIGMA</li>
-                    <li>LINUX</li>
-                    <li>SPRING</li>
-                </ul>
-
-                <h2>Databases</h2>
-                <ul>
-                    <li>FIREBASE</li>
-                    <li>MYSQL</li>
-                    <li>AWS</li>
-                    <li>SQLITE</li>
-                </ul>
-            </div>
-        </article>
-
-
-
-
-    </section>
-
-    <section>
-        <div id="comandos">
-            <h2>Ejemplo de los comandos y alias que estoy usando actualmente</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Comando</th>
-                        <th>Descripcion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <article>
-                        <tr>
-                            <td>ls</td>
-                            <td>listar el contenido de un directorio en la terminal</td>
-                        </tr>
-                    </article>
-                    <article>
-                        <tr>
-                            <td>cd</td>
-                            <td>cambiar el directorio actual de trabajo en la terminal</td>
-                        </tr>
-                    </article>
-                    <article>
-                        <tr>
-                            <td>clear</td>
-                            <td>limpiar la pantalla de la terminal y eliminar todo el contenido previo en la pantalla
-                            </td>
-                        </tr>
-                    </article>
-                    <article>
-                        <tr>
-                            <td>grep</td>
-                            <td>buscar patrones en un archivo o en una cadena de texto (búsqueda)</td>
-                        </tr>
-                    </article>
-                    <article>
-                        <tr>
-                            <td>cat</td>
-                            <td>mostrar el contenido de uno o varios archivos de texto en la pantalla de la terminal
-                            </td>
-                        </tr>
-                    </article>
-                    <article>
-                        <tr>
-                            <td>echo</td>
-                            <td>imprimir texto en la pantalla de la terminal desde un script y tambien sirve para la
-                                creación de
-                                archivos</td>
-                        </tr>
-                    </article>
-                    <article>
-                        <tr>
-                            <td>cl</td>
-                            <td>alias para el comando clear</td>
-                        </tr>
-                    </article>
-                    <article>
-                        <tr>
-                            <td>findd</td>
-                            <td>alias para: **ls ~/</td>
-                        </tr>
-                    </article>
-
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section>
-        <div id="contactProfessional">
-            <h2>Professional Contact</h2>
-            <form id="formulario" method="get" >
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Apellido:</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" type="email" placeholder="Ingrese su dirección de correo" required>
-                </div>
-                <div class="form-group">
-                    <label for="numberphone">Teléfono/Celular:</label>
-                    <input id="numberphone" name="numberphone" type="number" placeholder="Ingrese un número de contacto">
-                </div>
-                <div class="form-group">
-                    <fieldset>
-                        <legend>Presupuesto</legend>
-                        <input id="50000" type="radio" name="budget" value="50000" required>
-                        <label for="50000">$50.000</label>
-
-                        <input id="10000" type="radio" name="budget" value="10000" required>
-                        <label for="10000">$20.000</label>
-
-                        <input id="5000" type="radio" name="budget" value="5000">
-                        <label for="5000">$5.000</label>
-
-                        <input id="1000" type="radio" name="budget" value="1000">
-                        <label for="1000">$1.000</label>
-                    </fieldset>
-                    <div class="help">
-                        Este presupuesto es el precio base no el final.
-                    </div>
-                </div>
-                <div class="form-group">
-                    <fieldset>
-                        <legend>Sector Comercial:</legend>
-                        <input type="radio" id="Software" name="comercio" value="Software" required>
-                        <label for="Software">Software</label>
-                        <br>
-                        <span class="help">Seleccione esta opción si su negocio esta en el área del Software.</span>
-                        <br>
-                        <input type="radio" id="Marketing" name="comercio" value="Marketing" required>
-                        <label for="Marketing">Marketing</label>
-                        <br>
-                        <span class="help">Seleccione esta opción si su negocio esta en el área de la publicidad y relaciones.</span>
-                        <br>
-                        <input type="radio" id="Gobierno" name="comercio" value="Gobierno" required>
-                        <label for="Gobierno">Gobierno</label>
-                        <br>
-                        <span class="help">Seleccione esta opción si es una entidad Gubernamental.</span>
-                        <br>
-                        <input type="radio" name="comercio" id="otro">
-                        <label for="otro">Otro</label>
-                    </fieldset>
-                </div>
-                <div class="form-group,content-select">
-                    <label for="type">Tipos de Proyecto</label>
-                    <select name="type" id="type" required>
-                        <option value="" disabled selected>Seleccione uno</option>
-                        <option value="Website">Website</option>
-                        <option value="Webapp">Webapp</option>
-                        <option value="Movile">App Mobile</option>
-                        <option value="Diseño">Design</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="messege">Mensaje:</label>
-                    <textarea name="messege" id="messege" rows="6"
-                        placeholder="Háblame más sobre tu proyecto."></textarea>
-                    <div class="help">
-                        Escribe una descripción del proyecto en al menos 750 palabras
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="terms">
-                        <input id="terms" type="checkbox" name="terms" required>
-                        <span>Acepto todos los términos y condiciones</span>
-                    </label>
-                </div>
-                <button class="Boton" type="submit"><span>Enviar</span></button>
-            </form>
-        </div>
-    </section>
-
+    <main>
+        <section id="Home">
+            <h1>Hello, I'm Santiago Estrada 👋</h1>
+            <p>I am a <strong>engineering student</strong> passionate about the world of technology.
+                With extensive knowledge in development and design, I have done projects in various fields,
+                from <strong>enterprise software development </strong>to the creation of <strong>applications for education
+                    and
+                    entertainment.</strong></p>
     
+            <article>
+                <div id="intereses">
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Mobile development</li>
+                        <li>Programming</li>
+                        <li>Web development</li>
+                        <li>Interface design</li>
+                        <li>Constant study and learning</li>
+                    </ul>
+                </div>
+            </article>
+    
+    
+        </section>
+    
+    
+        <section>
+            <article>
+                <div id="Contact">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>📧 Email: santiago01est@gmail.com </li>
+                        <li> <a href="https://www.linkedin.com/in/santiago-estrada-52793721a/">💼 LinkedIn </a> </li>
+                    </ul>
+                </div>
+            </article>
+    
+            <article>
+                <div id="tecnologias">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>JAVA</li>
+                        <li>C</li>
+                        <li>PYTHON</li>
+                        <li>DART</li>
+                        <li>GO</li>
+                    </ul>
+                    <h2>Tools</h2>
+                    <ul>
+                        <li>ANDROID STUDIO</li>
+                        <li>VS CODE</li>
+                        <li>GIT HUB</li>
+                        <li>DOCKER</li>
+                        <li>ECLIPSE</li>
+                        <li>FIGMA</li>
+                        <li>LINUX</li>
+                        <li>SPRING</li>
+                    </ul>
+    
+                    <h2>Databases</h2>
+                    <ul>
+                        <li>FIREBASE</li>
+                        <li>MYSQL</li>
+                        <li>AWS</li>
+                        <li>SQLITE</li>
+                    </ul>
+                </div>
+            </article>
+    
+        </section>
+    
+        <section id="projects">
+            <h2>Projects 💻</h2>
+            <div class="container_projects">
+                
+                <div class="cards">
+                    <img src="https://source.unsplash.com/uppjafUWPj8">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus
+                        quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci.
+                        Molestiae distinctio vel harum enim?</p>
+                </div>
+                <div class="cards">
+                    <img src="https://source.unsplash.com/uppjafUWPj8">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus
+                        quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci.
+                        Molestiae distinctio vel harum enim?</p>
+                </div>
+                <div class="cards">
+                    <img src="https://source.unsplash.com/uppjafUWPj8">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus
+                        quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci.
+                        Molestiae distinctio vel harum enim?</p>
+                </div>
+                <div class="cards">
+                    <img src="https://source.unsplash.com/uppjafUWPj8">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus
+                        quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci.
+                        Molestiae distinctio vel harum enim?</p>
+                </div>
+            </div>
+    
+        </section>
+    
+        <section>
+            <div id="comandos">
+                <h2>Ejemplo de los comandos y alias que estoy usando actualmente</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <article>
+                            <tr>
+                                <td>ls</td>
+                                <td>listar el contenido de un directorio en la terminal</td>
+                            </tr>
+                        </article>
+                        <article>
+                            <tr>
+                                <td>cd</td>
+                                <td>cambiar el directorio actual de trabajo en la terminal</td>
+                            </tr>
+                        </article>
+                        <article>
+                            <tr>
+                                <td>clear</td>
+                                <td>limpiar la pantalla de la terminal y eliminar todo el contenido previo en la pantalla
+                                </td>
+                            </tr>
+                        </article>
+                        <article>
+                            <tr>
+                                <td>grep</td>
+                                <td>buscar patrones en un archivo o en una cadena de texto (búsqueda)</td>
+                            </tr>
+                        </article>
+                        <article>
+                            <tr>
+                                <td>cat</td>
+                                <td>mostrar el contenido de uno o varios archivos de texto en la pantalla de la terminal
+                                </td>
+                            </tr>
+                        </article>
+                        <article>
+                            <tr>
+                                <td>echo</td>
+                                <td>imprimir texto en la pantalla de la terminal desde un script y tambien sirve para la
+                                    creación de
+                                    archivos</td>
+                            </tr>
+                        </article>
+                        <article>
+                            <tr>
+                                <td>cl</td>
+                                <td>alias para el comando clear</td>
+                            </tr>
+                        </article>
+                        <article>
+                            <tr>
+                                <td>findd</td>
+                                <td>alias para: **ls ~/</td>
+                            </tr>
+                        </article>
+    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    
+        <section>
+            <div id="contactProfessional">
+                <h2>Professional Contact</h2>
+                <form id="formulario" method="get">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Apellido:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email" placeholder="Ingrese su dirección de correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numberphone">Teléfono/Celular:</label>
+                        <input id="numberphone" name="numberphone" type="number"
+                            placeholder="Ingrese un número de contacto">
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Presupuesto</legend>
+                            <input id="50000" type="radio" name="budget" value="50000" required>
+                            <label for="50000">$50.000</label>
+    
+                            <input id="10000" type="radio" name="budget" value="10000" required>
+                            <label for="10000">$20.000</label>
+    
+                            <input id="5000" type="radio" name="budget" value="5000">
+                            <label for="5000">$5.000</label>
+    
+                            <input id="1000" type="radio" name="budget" value="1000">
+                            <label for="1000">$1.000</label>
+                        </fieldset>
+                        <div class="help">
+                            Este presupuesto es el precio base no el final.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Sector Comercial:</legend>
+                            <input type="radio" id="Software" name="comercio" value="Software" required>
+                            <label for="Software">Software</label>
+                            <br>
+                            <span class="help">Seleccione esta opción si su negocio esta en el área del Software.</span>
+                            <br>
+                            <input type="radio" id="Marketing" name="comercio" value="Marketing" required>
+                            <label for="Marketing">Marketing</label>
+                            <br>
+                            <span class="help">Seleccione esta opción si su negocio esta en el área de la publicidad y
+                                relaciones.</span>
+                            <br>
+                            <input type="radio" id="Gobierno" name="comercio" value="Gobierno" required>
+                            <label for="Gobierno">Gobierno</label>
+                            <br>
+                            <span class="help">Seleccione esta opción si es una entidad Gubernamental.</span>
+                            <br>
+                            <input type="radio" name="comercio" id="otro">
+                            <label for="otro">Otro</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group,content-select">
+                        <label for="type">Tipos de Proyecto</label>
+                        <select name="type" id="type" required>
+                            <option value="" disabled selected>Seleccione uno</option>
+                            <option value="Website">Website</option>
+                            <option value="Webapp">Webapp</option>
+                            <option value="Movile">App Mobile</option>
+                            <option value="Diseño">Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="messege">Mensaje:</label>
+                        <textarea name="messege" id="messege" rows="6"
+                            placeholder="Háblame más sobre tu proyecto."></textarea>
+                        <div class="help">
+                            Escribe una descripción del proyecto en al menos 750 palabras
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="terms">
+                            <input id="terms" type="checkbox" name="terms" required>
+                            <span>Acepto todos los términos y condiciones</span>
+                        </label>
+                    </div>
+                    <button class="Boton" type="submit"><span>Enviar</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
     <footer>
         <br>
         <a href="https://github.com/santiago01est"> <strong>Perfil de github</strong></a>
