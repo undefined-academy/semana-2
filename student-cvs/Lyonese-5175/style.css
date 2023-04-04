@@ -1,0 +1,16 @@
+body{
+    background-color: #eee;
+    margin: auto;
+    max-width: 25cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    padding: 1.cm;
+}
+h2{
+    margin-top: 0.5cm;
+    padding-top: 0.5cm;
+}
+img{
+    width: 2%;
+    height: 2%;
+}
