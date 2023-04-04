@@ -1,79 +1,81 @@
-* {
-    margin: 0,
-        padding: 0,
-        box-sizing: border-box
-}
-
 body {
-    margin: 0 auto;
-    max-width: 50em;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    padding: 4em 1em;
-    color: #566b78;
-    background-color: whitesmoke;
-
+    color: #5c5f58;
 }
 
-h1,
-h2,
-h3 {
-    margin-top: 1em;
-    padding-top: 1em;
-    color: #333;
-
-}
-
-
-strong,
-em {
-    color: #2c2b2b;
-    font-weight: bold;
-}
-
-
-a {
-    color: blue;
-}
-
-#referencia {
-    font-size: 11px;
-}
-
-
-
-.social-icons {
+div {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-
+    flex-direction: column;
+    padding: 10px;
 }
 
-#github,
-#linkedin {
+img {
     margin: 0 10px;
-    border-radius: 50px;
+    
+    
+}
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+nav {
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 /4;
+    grid-row: 1/2;
+}
+
+.ul-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid gainsboro;
 
 }
 
-#github:hover,
-#linkedin:hover {
-    background: linear-gradient(to bottom, #b0d8da, #b0d8da);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+.item-a {
+    grid-column: 1 / 4;
+
+}
+
+.item-b {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+.item-f {
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border: none;
 
 }
 
 .fa-brands {
     font-size: 50px;
+
 }
 
-.fa-solid {
-    font-size: 50px;
+span {
+    margin: 0 10px
 }
 
-.fa-sharp {
-    font-size: 50px;
+h2, h3 {
+    display: flex;
+    justify-content: center;
 }
