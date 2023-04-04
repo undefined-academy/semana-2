@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Cristinacdm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link rel="stylesheet" href="/contact.css">
+</head>
+
+<body>
+    <div class="wallpaper"></div>
+    <main class="content">
+
+        <header>
+            <div class="header">
+                <h1 class="title">Contact me</h1>
+                <hr class="line">
+            </div>
+        </header>
+        <section>
+            <form action="/server" method="get" onsubmit="event.preventDefault();">
+
+                <div class="personal">
+                    <h2>Personal information</h2>
+                    <label for="name">Name: <input type="text" id="name" name="name" required
+                            placeholder="type your name"></label>
+                    <label for="lastname">Last name: <input type="text" id="lastname" name="lastname" required
+                            placeholder="type your last name"></label>
+                    <label for="email">Email: <input type="email" id="email" name="email" required
+                            placeholder="type your email"></label>
+                </div>
+
+
+                <div class="project">
+                    <h2>Project</h2>
+                    <p>Select your budget<span class="asterisco">*</span>:</p>
+                    <div class="budget">
+                        <label for="500"><input type="radio" name="price" id="500" value="500" required />
+                            500€</label>
+                        <label for="1000"><input type="radio" name="price" id="1000" value="1000" required />
+                            1.000€</label>
+                        <label for="1500"><input type="radio" name="price" id="1500" value="1500" required />
+                            1.500€</label>
+                    </div>
+                    <p class="footnotes">*It's a starting budget, not the final one.</p>
+
+                    <p>Select your entity:</p>
+                    <div class="entity">
+                        <label for="individual"><input type="radio" name="entity" id="individual" value="individual"
+                                required /> Individual</label>
+                        <label for="company"><input type="radio" name="entity" id="company" value="entity" required />
+                            Company</label>
+                    </div>
+                    <div class="projecttype">
+                        <label for="type">Select project type:</label>
+                        <select id="type" name="type" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="website">Website</option>
+                            <option value="webapp">Web App</option>
+                            <option value="mobileapp">Mobile App</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="description">
+                        <label for="description">Descrive your project<span class="asterisco">*</span>:</label>
+                        <textarea id="description" name="description" required
+                            placeholder="Project description, functionality, design, content..."></textarea>
+                        <p class="footnotes">*Use at least 500 words.</p>
+                    </div>
+
+                    <label for="terms"><input type="checkbox" required id="terms" name="terms" required /> I
+                        accept the terms and conditions</label>
+                </div>
+
+                <div class="home">
+                    <input class=button type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        <div class="home">
+            <a class="button" href="/index.html">home</a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -2,6 +2,7 @@
 /*Resets HTML style*/
 
 /*shared*/
+
 html {
     background-color: #5f45bb;
     background-image: linear-gradient(to bottom right, #180cac, #d054e4);
@@ -17,7 +18,8 @@ html {
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1)
 }
 
-a {
+a,
+.button {
     color: currentColor;
     cursor: pointer;
     text-decoration: none;
@@ -37,23 +39,12 @@ a {
     min-height: 100vh;
 }
 
-.side {
-    max-height: 25rem;
-    max-width: 25rem;
-}
+/*specific*/
 
 .header {
-    max-width: 35rem;
+    max-width: 40rem;
 }
 
-h2,
-.button {
-    font-family: "Montserrat", "Quicksand", sans-serif;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-}
-
-/*specific*/
 .title {
     font-size: 2.25rem;
     line-height: 1.125;
@@ -65,7 +56,7 @@ h2,
     border: none;
     content: "";
     height: 1px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     margin-top: 1.5rem;
     width: 5rem;
 }
@@ -74,18 +65,50 @@ h2 {
     color: #ffe479;
     font-size: 0.75rem;
     line-height: 1.125;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.footer {
-    display: flex;
+h2,
+.button {
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
 }
 
-.home, .formulari {
+form {
+    accent-color: #ff470f;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 0.10rem solid #ff470f;
+}
+
+.personal label {
+    display: block;
+    max-width: 25rem;
+}
+
+.personal input {
+    width: 100%;
+}
+
+.projecttype label {
+    display: inline-block;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.description textarea {
+    display: block;
+    width: 25rem;
+    resize: vertical;
+}
+
+.home {
     display: inline-block;
     margin-top: 1.5rem;
-    margin-right: 1.5rem;
     vertical-align: top;
 }
 
@@ -121,53 +144,24 @@ h2 {
     transform: scale(0.98) translateY(-2px);
 }
 
-.icons {
-    display: flex;
-    margin-top: 1rem;
+.footnotes {
+    color: #ff470f;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.75rem;
 }
 
-.icons li {
-    height: 2rem;
-    margin-right: 0.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    width: 2rem;
+.asterisco {
+    color: #ff470f;
 }
 
-.icons img,
-li {
-    align-items: center;
-    display: flex;
-    height: 4rem;
-    justify-content: center;
-    width: 4rem;
-}
-
-.status {
+.budget label,
+.entity label {
+    display: inline-block;
+    padding-right: 1.5rem;
     padding-top: 1rem;
 }
 
-.undefined,
-.freecode {
-    display: inline-block;
-    line-height: 1;
-    transition-property: transform;
-    user-select: none;
-    vertical-align: top;
-    will-change: transform;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.undefined:hover,
-.freecode:hover {
-    transform: scale(1.02) translateY(-4px);
-}
-
-.undefined:active,
-.freecode:active {
-    transform: scale(0.98) translateY(-2px);
-}
 
 .wallpaper {
     background-image: url("/images/background.jpg");
@@ -182,35 +176,14 @@ li {
     .content {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         padding: 5rem 3rem;
-    }
-
-    .side {
-        margin-bottom: 3rem;
-        width: 100%;
     }
 }
 
 @media screen and (min-width: 800px) {
     .content {
-        align-items: center;
-        justify-content: space-around;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: left;
         padding: 4rem;
-    }
-
-    .side {
-        flex-grow: 0;
-        flex-shrink: 0;
-        height: 25rem;
-        margin-left: 4rem;
-        order: 2;
-        width: 25rem;
-    }
-
-    .about {
-        flex-grow: 1;
-        flex-shrink: 1;
     }
 }
