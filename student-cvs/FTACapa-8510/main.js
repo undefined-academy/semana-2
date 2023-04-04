@@ -1,3 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  const btn = document.getElementById('');
+  const form = document.getElementById('form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+  });
 });
