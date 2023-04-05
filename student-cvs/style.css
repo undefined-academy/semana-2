@@ -1,0 +1,174 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 60em;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #566b78;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+h3,
+th,
+strong {
+  color: #333;
+}
+
+a {
+  color: #e81c4f;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 16px;
+}
+
+table {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-left: 2px solid #69c;
+}
+
+thead th:nth-child(1) {
+  width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 60%;
+}
+
+tbody td:nth-child(2) {
+  padding-left: 15%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
+}
+
+input,
+textarea {
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+input {
+  height: 32px;
+}
+
+textarea {
+  height: 140px;
+}
+
+.btn-submit {
+  margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+
+.btn-submit:hover {
+  background-color: #69c;
+  transition: 0.7s;
+}
+
+.btn-submit:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #0a0a23;
+  transition: 0.7s;
+}
+
+.btn-submit:active {
+  background-color: #a7adba;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-main {
+  padding: 16px;
+  border: 2px solid #d8dee9;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px rgba(3, 5, 5, 0.25);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'card-1 card-2 card-3'
+      'main main main';
+    height: 100%;
+    gap: 2%;
+  }
+
+  .card-1 {
+    grid-area: card-1;
+  }
+
+  .card-2 {
+    grid-area: card-2;
+  }
+
+  .card-3 {
+    grid-area: card-3;
+  }
+
+  .card-main {
+    grid-area: main;
+    display: grid;
+    place-items: center;
+    grid-template-columns: minmax(180px, 60%) 1fr;
+  }
+}
