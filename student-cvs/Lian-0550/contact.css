@@ -42,7 +42,7 @@ a,
 /*specific*/
 
 .header {
-    max-width: 40rem;
+    max-width: 35rem;
 }
 
 .title {
@@ -112,6 +112,12 @@ textarea:focus-visible {
     vertical-align: top;
 }
 
+.submit {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
 .button {
     background-color: #fff;
     border-radius: 290486px;
@@ -163,6 +169,7 @@ textarea:focus-visible {
 }
 
 
+
 .wallpaper {
     background-image: url("/images/background.jpg");
     background-position: center;
@@ -178,12 +185,18 @@ textarea:focus-visible {
         justify-content: center;
         padding: 5rem 3rem;
     }
+    .submit {
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (min-width: 800px) {
     .content {
         flex-direction: column;
-        justify-content: left;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         padding: 4rem;
     }
 }
