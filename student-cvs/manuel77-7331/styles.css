@@ -51,19 +51,10 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-code,
 pre {
   background: #f5f7f9;
   border-bottom: 1px solid #d8dee9;
   color: #43454b;
-}
-
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-}
-
-pre {
   padding: 1em;
   border-left: 2px solid #69c;
 }
@@ -72,11 +63,13 @@ pre {
   background-color: #144272;
   color: white;
   padding: 14px 25px;
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 15px;
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .btn:hover {
@@ -126,7 +119,7 @@ pre {
   width: 100%;
   resize: vertical;
 }
-.form-group input[type="text"],.form-group input[type="email"], .form-group textarea {
+.form-input {
   background: white;
   border: 1px solid lightgray;
   border-radius: 4px;
