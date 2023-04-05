@@ -1,12 +1,16 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+* {
+	margin: 0;
+	padding: 0;
+}
 
 body {
     margin: 0 auto;
+    padding-top: 0;
     max-width: 50em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
-    padding: 4em 1em;
     color: #555;
     background-color: #F2F3F4;
   }
@@ -16,17 +20,17 @@ body {
     font-weight: 300;
   }
 
-  h2 {
-    margin-top: 1em;
-    padding-top: 1em;
+  h2, h3 {
+    margin-top: 10px;
+    padding-top: 10px;
   }
 
-  h1,h2 {
+  h1,h2, h3 {
   color: #333;
 }
 
 img {
-    height: 200px;
+    height: 250px;
     width: 100%;
 }
 
@@ -39,6 +43,10 @@ a {
 a:hover {
     text-decoration: underline;
     color: #555;
+}
+
+li {
+  margin-left: 40px;
 }
 
 table { 
