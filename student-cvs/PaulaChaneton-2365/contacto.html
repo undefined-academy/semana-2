@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/media/imagen email.png" alt="Dibujo email">
+        <h1>Contacto</h1>
+    </header>
+
+    <section>
+        <form action="/serve" method="get">
+
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre aqui">
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="name" placeholder="Ingrese su email aqui">
+            </div>
+
+
+            <div class="form-group">
+                <label for="ubicación">Ubicación</label>
+                <input type="ubicacion" name="ubicacion" id="ubicacion" placeholder="Ingrese su país de residencia">
+            </div>
+
+
+            <div class="form-group">
+
+                <fieldset>
+                    <legend>¿Cuáles son tus intereses dentro de programación?</legend>
+
+                    <input type="radio" name="intereses" id="frontEnd">
+                    <label for="frontEnd">Front End</label>
+
+                    <input type="radio" name="intereses" id="backEnd">
+                    <label for="backEnd">Back End</label>
+
+                    <input type="radio" name="intereses" id="fullStack">
+                    <label for="fullStack">Full Stack
+
+                        <select name="" id="">
+                            <option disabled selected>Elegi una opción</option>
+                            <option value="JavaScript">Java Script</option>
+                            <option value="Java">Java</option>
+                            <option value="Phyton">Phyton</option>
+                        </select>
+                    </label>
+                </fieldset>
+            </div>
+
+
+            <div class="form-group">
+                <label for="justificacion">Justifica tu elección</label>
+                <textarea name="justificacion" id="justificacion" rows="5" disabled></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" name="terms" id="terms" requerid>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+
+
+            <button type="reset">Borrar datos</button>
+
+            <button type="submit">Enviar</button>
+
+        </section>
+
+    <footer>
+        <a href="/index.html">Volver a la página principal</a>
+    </footer>
+    </form>
+
+</body>
+
+</html>
