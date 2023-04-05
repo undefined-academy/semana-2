@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <p>Yilmer Ramiro Guativa Rincon</p>
+        <img src="https://avatars.githubusercontent.com/u/34513352?v=4" alt="avatar" width="80">
+    </header>
+
+    <article>
+        <h1>Formulario de contacto</h1>
+        <section>
+            <form>
+                <p>
+                    Si estás interesado en trabajar juntos en algún proyecto ponte en contacto conmigo rellenando el
+                    siguiente formulario.
+                </p>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                </div>
+                <div>
+                    <label for="emai">Email</label>
+                    <input type="email" id="emai" name="email" placeholder="Correo electronico" required>
+                </div>
+
+                <div>
+                    <label for="phone">Telefono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Telefono o celular" required>
+                </div>
+                <div>
+                    <label for="project">Proyecto</label>
+                    <textarea type="text" id="project" name="project" rows="4" placeholder="Descripción del proyecto"
+                        required></textarea>
+                </div>
+
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" required>
+                    <span>Acepto las condiciones y avisos legales</span>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </article>
+
+    <footer>
+        <time datetime='2023-03-31 15:00-0800'>Marzo 2023</time>
+    </footer>
+</body>
+
+</html>

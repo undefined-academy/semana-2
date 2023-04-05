@@ -33,7 +33,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.2;
-    padding: 10vw 2em;
+    padding: 5vw 2em;
     text-align: center;
     opacity: .9;
     max-height: 200px;
@@ -44,6 +44,7 @@ header img {
     height: 120px;
     vertical-align: top;
     width: 120px;
+    border-radius: 50%;
 }
 
 header p {

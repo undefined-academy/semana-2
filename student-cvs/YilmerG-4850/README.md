@@ -68,3 +68,10 @@ Actualizar el html de la página [index.html](./index.html) con etiquetas semant
 
 Utilizar el validaro de html  ✅
 ![Outlone index](outline_page.png)
+
+
+## Clase 4
+### Ejercicio 04:
+
+1) Cree un formulario con la estructura vista en clase.
+2) Encontre en Google una function que me deshabilita el boton por default
