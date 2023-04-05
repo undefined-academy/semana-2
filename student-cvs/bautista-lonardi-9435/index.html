@@ -154,6 +154,54 @@
                     </table>
                 </article>
             </section>
+
+            <section class="section-form">
+                <div class="form-container">
+                    <h2>Contact Me</h2>
+                    <form id="form" action="/server" method="get">
+                        <div class="form-group">
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                placeholder="Ingrese su nombre completo"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="Ingrese su correo electronico"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <input
+                                id="asunto"
+                                type="text"
+                                name="asunto"
+                                placeholder="Asunto"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <div class="description">
+                                <textarea
+                                    id="description"
+                                    name="description"
+                                    placeholder="Escribe el motivo de contacto. Gracias😬"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="button" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
