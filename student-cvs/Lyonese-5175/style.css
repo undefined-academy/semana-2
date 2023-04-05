@@ -1,5 +1,6 @@
 body{
     background-color: #eee;
+    color: #333;
     margin: auto;
     max-width: 25cm;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -19,4 +20,15 @@ a {
 }
 h1{
     text-align: center;
+}
+textarea{
+    width: 75%;
+    resize: none;
+}
+input{
+    width: 20%;
+}
+label{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
