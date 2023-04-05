@@ -11,11 +11,11 @@
         <form >
             <div class="form-group">
                 <label for="name">Nombre</label>
-                <input id="name" type="text" placeholder="Ingrse su nombre" required>
+                <input id="name" type="text" placeholder="Ingrese su nombre" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Ingrse su correo electronico" required>
+                <input id="email" type="email" placeholder="Ingrese su correo electronico" required>
             </div>
             
             <div class="form-group">
@@ -25,26 +25,27 @@
                     <input id="10000" name="budget" type="radio" value="10000" required><label for="10000">$10.000</label>
                     <input id="15000" name="budget" type="radio" value="15000" required><label for="15000">$15.000</label>
                </fieldset>
+               <div class="help">Este presupuesto es la base no el final.</div>
             </div>
             <div class="form-group">
                 <label for="type">Tipo de proyecto</label>
                 <select id="type" required>
                     <option value="" disabled selected>Seleccione uno</option>
-                    <option value="">Website</option>
-                    <option value="">Webapp</option>
-                    <option value="">Mobile app</option>
-                    <option value="">Diseño</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Webapp</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="design">Diseño</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="description">Descripcíon</label>
                 <textarea name="" id="description" cols="30" rows="10"></textarea>
-                <div>Escribe una descripcíon del proyecot en al menos 500 palabras</div>
+                <div class="help">Escribe una descripcíon del proyecto en al menos 500 palabras</div>
 
             </div>
             <div class="form-group">
                 <label for="terms">
-                    <input id="terms" type="checkbox" required>
+                    <input id="terms" name="terms" type="checkbox" required>
                     <span>Acepto los terminos y condiciones</span>
                 </label>
             </div>
