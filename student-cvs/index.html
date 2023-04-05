@@ -7,129 +7,180 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <article>
-      <header>
-        <h1>Hi! My name is Carlos</h1>
+    <div class="container">
+      <article>
+        <header>
+          <h1>Hi! My name is Carlos</h1>
 
-        <h2>Software Engineer</h2>
+          <h2>Software Engineer</h2>
+
+          <p>
+            I've been learning to code for since 2020, switching carrears from
+            Product Design where I started to learn HTML, CSS and Javascript to
+            build websites. I now focus in Software Development fulltime.
+          </p>
+        </header>
+
+        <section>
+          <h2>About Me</h2>
+          <ul>
+            <li>🌍  I'm based in México</li>
+            <li>
+              🖥️  See my portfolio at
+              <a href="http://bycarlosgamez.com">bycarlosgamez.com</a>
+            </li>
+            <li>✉️  You can contact me at carlos.gamez.glez@gmail.com</li>
+            <li>
+              🚀  I'm currently working on
+              <a href="http://github.com/bycarlosgamez/bugbust"
+                >BugBust (Bug tracking app)</a
+              >
+            </li>
+            <li>🧠  I'm learning Vue.js</li>
+            <li>🤝  I'm open to collaborating on interesting projects</li>
+            <li>⚡  I'm really into creative coding</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Terminal Commands</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>COMMAND</th>
+                <th>DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ls</td>
+                <td>shows a content list of current directory</td>
+              </tr>
+              <tr>
+                <td>pwd</td>
+                <td>print working directory shows you your current location</td>
+              </tr>
+              <tr>
+                <td>clear</td>
+                <td>clears terminal</td>
+              </tr>
+              <tr>
+                <td>cd DirName</td>
+                <td>change directory into DirName</td>
+              </tr>
+              <tr>
+                <td>cd ..</td>
+                <td>change directory into prev directory</td>
+              </tr>
+              <tr>
+                <td>mkdir DirName</td>
+                <td>creates a new folder named DirName</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h3>Alias Commands</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>COMMAND</th>
+                <th>DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>alias npmd</td>
+                <td>npm run dev -> to run den environment</td>
+              </tr>
+              <tr>
+                <td>alias cl</td>
+                <td>clear to -> clear terminal</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h3>Contact</h3>
+
+          <form id="form">
+            <div class="from-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="from-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="from-group">
+              <label for="msg">Mensajel</label>
+              <textarea name="msg" id="msg" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar</button>
+          </form>
+        </section>
+
+        <section>
+          <h3>Blog</h3>
+          <div class="grid-container">
+            <div class="card-1">
+              <img src="img/2022.11.20-18.41.22.png" />
+              <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi tenetur laboriosam temporibus quibusdam impedit
+                inventore enim? Alias placeat dolorum amet sint. Odit fugit sed
+                adipisci. Molestiae distinctio vel harum enim?
+              </p>
+            </div>
+            <div class="card-2">
+              <img src="img/2022.11.20-18.41.22.png" />
+              <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi tenetur laboriosam temporibus quibusdam impedit
+                inventore enim? Alias placeat dolorum amet sint. Odit fugit sed
+                adipisci. Molestiae distinctio vel harum enim?
+              </p>
+            </div>
+            <div class="card-3">
+              <img src="img/2022.11.20-18.41.22.png" />
+              <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi tenetur laboriosam temporibus quibusdam impedit
+                inventore enim? Alias placeat dolorum amet sint. Odit fugit sed
+                adipisci. Molestiae distinctio vel harum enim?
+              </p>
+            </div>
+            <div class="card-main">
+              <img src="img/2022.11.20-18.41.22.png" />
+              <div>
+                <h1>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Commodi tenetur laboriosam temporibus quibusdam impedit
+                  inventore enim? Alias placeat dolorum amet sint. Odit fugit
+                  sed adipisci. Molestiae distinctio vel harum enim?
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <p>
-          I've been learning to code for since 2020, switching carrears from
-          Product Design where I started to learn HTML, CSS and Javascript to
-          build websites. I now focus in Software Development fulltime.
+          Vistit my
+          <a href="http://github.com/bycarlosgamez/"
+            ><strong>GITHUB profile</strong></a
+          >
         </p>
-      </header>
-
-      <section>
-        <h2>About Me</h2>
-        <ul>
-          <li>🌍  I'm based in México</li>
-          <li>
-            🖥️  See my portfolio at
-            <a href="http://bycarlosgamez.com">bycarlosgamez.com</a>
-          </li>
-          <li>✉️  You can contact me at carlos.gamez.glez@gmail.com</li>
-          <li>
-            🚀  I'm currently working on
-            <a href="http://github.com/bycarlosgamez/bugbust"
-              >BugBust (Bug tracking app)</a
-            >
-          </li>
-          <li>🧠  I'm learning Vue.js</li>
-          <li>🤝  I'm open to collaborating on interesting projects</li>
-          <li>⚡  I'm really into creative coding</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Terminal Commands</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>COMMAND</th>
-              <th>DESCRIPTION</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>ls</td>
-              <td>shows a content list of current directory</td>
-            </tr>
-            <tr>
-              <td>pwd</td>
-              <td>print working directory shows you your current location</td>
-            </tr>
-            <tr>
-              <td>clear</td>
-              <td>clears terminal</td>
-            </tr>
-            <tr>
-              <td>cd DirName</td>
-              <td>change directory into DirName</td>
-            </tr>
-            <tr>
-              <td>cd ..</td>
-              <td>change directory into prev directory</td>
-            </tr>
-            <tr>
-              <td>mkdir DirName</td>
-              <td>creates a new folder named DirName</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h3>Alias Commands</h3>
-
-        <table>
-          <thead>
-            <tr>
-              <th>COMMAND</th>
-              <th>DESCRIPTION</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>alias npmd</td>
-              <td>npm run dev -> to run den environment</td>
-            </tr>
-            <tr>
-              <td>alias cl</td>
-              <td>clear to -> clear terminal</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h3>Contact</h3>
-
-        <form id="form">
-          <div class="from-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" required />
-          </div>
-          <div class="from-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="from-group">
-            <label for="msg">Mensajel</label>
-            <textarea name="msg" id="msg" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Enviar</button>
-        </form>
-      </section>
-
-      <p>
-        Vistit my
-        <a href="http://github.com/bycarlosgamez/"
-          ><strong>GITHUB profile</strong></a
-        >
-      </p>
-    </article>
-
+      </article>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
