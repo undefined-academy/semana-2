@@ -57,7 +57,6 @@ ul li {
   margin-bottom: 5px;
 }
 
-/* Estilos específicos */
 header h1::after {
   content: "\00a0👨‍💻";
 }
@@ -72,3 +71,89 @@ footer {
 footer p {
   margin: 0;
 }
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+#nombre-label,
+#email-label,
+#celular-label,
+#presupuesto-label,
+#proyecto-label,
+#descripcion-label,
+#acepto-label {
+  color: #007bff;
+}
+
+#presupuesto-label,
+#proyecto-label {
+  margin-top: 10px;
+}
+
+#proyecto-label {
+  margin-bottom: 5px;
+}
+
+#descripcion-label {
+  margin-top: 10px;
+}
+
+#acepto-label {
+  margin-top: 20px;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+input.error {
+  border-color: #dc3545;
+}
+
+label.error {
+  display: block;
+  margin-top: 5px;
+}
+

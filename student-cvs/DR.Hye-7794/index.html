@@ -77,6 +77,52 @@
         </ul>
       </section>
     </main>
+    <h1>Contacto</h1>
+    <form action="#" method="POST">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="celular">Número de celular:</label>
+      <input
+        type="tel"
+        id="celular"
+        name="celular"
+        pattern="[0-9]{10}"
+        required
+      />
+
+      <fieldset>
+        <legend>Presupuesto</legend>
+        <input type="radio" id="5000" name="presupuesto" value="5000" checked />
+        <label for="5000">$5000</label><br />
+
+        <input type="radio" id="10000" name="presupuesto" value="10000" />
+        <label for="10000">$10000</label><br />
+
+        <input type="radio" id="15000" name="presupuesto" value="15000" />
+        <label for="15000">$15000</label>
+      </fieldset>
+
+      <section>
+        <h2>Tipo de proyecto:</h2>
+        <select name="tipo_proyecto">
+          <option value="movil">Móvil</option>
+          <option value="web">Web</option>
+          <option value="otro">Otro</option>
+        </select>
+      </section>
+
+      <label for="descripcion">Descripción del proyecto:</label>
+      <textarea id="descripcion" name="descripcion"></textarea>
+
+      <input type="checkbox" id="terminos" name="terminos" required />
+      <label for="terminos">Acepto los términos y condiciones</label>
+
+      <button type="submit">Enviar</button>
+    </form>
 
     <footer>
       <p>© 2023 Camilo Sánchez Aguilera</p>
