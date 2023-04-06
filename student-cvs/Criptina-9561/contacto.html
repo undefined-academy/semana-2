@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+    <main class="page" >
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+            <div  class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div  class="form-group">
+                <label for="surname">Apellido</label>
+                <input id="surname" name="surname" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input id="email" name="email" type="email" placeholder="Dirección de correo" required>
+            </div>
+            <div>
+                <fieldset name="budget" id="budget" class="form-group" required>
+                    <legend>Presupuesto</legend>
+                    <input id="10000" name="budget" type="radio"><label for="10000">USD$ 10000</label>
+                    <input id="5000" name="budget" type="radio"><label for="5000">USD$ 5000</label>
+                    <input id="1000" name="budget" type="radio"><label for="1000">USD$ 1000</label>
+                </fieldset>
+            </div>
+            <div  class="form-group">
+                <label for="type">Tipo de Proyecto</label>
+                <select id="type" required>
+                    <option value="Web">Sitio web</option>
+                    <option value="Datos">Modelo de datos</option>
+                    <option value="Dataviz">Visualización de datos / informe gráfico</option>
+                    <option value="Asesoramiento">Asesoramiento</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div  class="form-group">
+                <label for="description">Descripción:</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <div class="help" >Escriba una descripción de las tareas requeridas.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>Acepto Términos y Condiciones</span>
+                </label>
+            </div>
+            <button id="send-form" >Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
