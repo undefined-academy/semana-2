@@ -9,7 +9,7 @@ html {
 body {
   color: #eceff1;
   /* background-color: #ECEFF1; */
-  background-image: url("assets/images/backgrounddeformado2.png");
+  background-image: url("/assets/images/backgrounddeformado2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -50,18 +50,6 @@ nav a {
   padding: 1px 20px; /* Añade un poco de espacio entre los enlaces */
 }
 
-.logo {
-  display: flex;
-  justify-content:flex-start; 
-  padding: 10px 10px;
-}
-
-.logo a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  user-select: none;
-}
 
 .menu {
   display: flex;
@@ -137,9 +125,9 @@ a {
 
 @media screen and (min-width: 992px) {
   
- 
+
   nav {
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px 40px;
   }
   nav a {
@@ -157,7 +145,7 @@ a {
   .menu{
     display: flex;
     justify-content: flex-end;
-    padding: 10px 40px;
+    padding: 10px 30px;
   }
   .skills-subtitle {
     font-size: 18px;
