@@ -55,6 +55,7 @@ nav a {
   display: flex;
   justify-content:flex-end;  
   padding: 10px 1px;
+  font-weight: bold;
 }
 
 .menu a:hover {

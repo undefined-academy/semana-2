@@ -81,6 +81,7 @@ nav a {
     display: flex;
     justify-content: flex-end;  
     padding: 10px 30px;
+    font-weight: bold;
   }
   
 .menu a:hover {
@@ -91,7 +92,7 @@ nav a {
 .page {
   max-width: 800px;
   margin: 100px auto;
-  padding: 1em 1em;
+  padding: 0em 1em;
   /* padding: 0 40px; */
   font-family: Arial, Helvetica, sans-serif;
 }
