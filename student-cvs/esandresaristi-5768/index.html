@@ -17,7 +17,7 @@
                   <li><a class="redes" href="#personal">INFORMACIÓN PROFESIONAL</a></li>
                   <li><a class="redes" href="#pasatiempos">MIS HOBBIES</a></li>
                   <li><a class="redes" href="#commands">COMANDOS Y ALIAS TERMINAL</a></li>
-                  <li><a class="redes" href="#informacion">INFORMACIÓN</a></li>
+                  <li><a class="redes" href="#informacion">¿Puedo ayudarte?</a></li>
                 </ul>
               </nav> 
             
@@ -99,11 +99,82 @@
     
 <footer>
     <a id="informacion"></a>
-    <p>Sitio actualizado el <time datetime="2023-03-29">29 de Marzo</time></p>
-    <aside><a href="https://www.instagram.com/latinoamericabar/"> Mi Bar</a></aside>
-    <address><a href="mailto:andresarioro@gmail.com">Envíame un correo</a></address>
-    <address><a href="tel:+573147503814">Llamame</a></address>
+    <h1>¿Cómo puedo ayudarte?</h1>
+    <form id="formulariohelp" action="server" method="get">
+        <div class="form-group">
+            <label for="name">Nombres y Apellidos</label>
+            <input id="name" type="text" placeholder="Ingrese aquí su nombre completo" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Ingrese su correo electrónico" required>
+        </div>
+        <div class="form-group">
+            <label for="type"></label>
+            <select id="type" required>
+                
+                <option value="">Seleccione una ciudad</option>
+                <option>Medellín</option>
+                <option>Cali</option>
+                <option>Bogotá</option>
+                <option>Cartagena</option>
+                <option>Otro (Indicar en Descripción)</option>
+            
 
+            </select>
+        </div>
+            
+        <div class="form-group">
+            <fieldset id="selección">
+            <legend>¿En qué área requieres mi ayuda</legend>
+            <input id="Robótica" name="área" type="radio"><label for="Robótica">Robótica</label>
+            <input id="Barismo" name="área" type="radio" ><label for="Barismo">Barismo</label>
+            <input id="MundoMotero" name="área" type="radio"><label for="MundoMotero">MundoMotero</label>
+            <input id="Programación" name="área" type="radio"><label for="Programación">Programación</label>
+            <input id="Otro" name="área" type="radio"><label for="Otro">Otro</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label for="description">Descripción</label>
+            <textarea id="description" required rows="8"></textarea>
+            <div>Escribe una descripción del viaje que de lo que requieres</div>
+        </div>
+        <div class="form-group">
+            <label for="terms">
+                <input id="terms" type="checkbox" required>
+                <span>Acepto los términos y condiciones</span>
+            </label>
+        </div>
+    <button onclick="validateRadioButtons()">Enviar</button>
+    </form>    
+    <div class="footer">
+        <address><a href="mailto:andresarioro@gmail.com">Envíame un correo</a></address>
+        <address><a href="tel:+573147503814">Llamame</a></address>
+        <aside><a href="https://www.instagram.com/latinoamericabar/"> Mi Bar</a></aside>
+        <p>Sitio actualizado el <time datetime="2023-03-29">04 de Abril</time></p>
+    </div>
+    
+<script>
+    const form = document.getElementById("formulariohelp");
+    console.log(form);
+    form.addEventListener("submit", function(event){
+    event.preventDefault();
+    console.log(event);
+    }
+    ) 
+</script>
+<script>
+    function validateRadioButtons(){
+        var radioButtons= document.getElementsByName("área");
+        for (var i=0; i<radioButtons.length;i++){
+            if(radioButtons[i].checked){
+                return true;
+            }else{
+                confirm("Diligencie todos los campos");
+            }
+        }
+    }
+</script>
 
 
 </footer>

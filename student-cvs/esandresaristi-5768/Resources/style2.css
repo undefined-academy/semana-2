@@ -138,6 +138,64 @@ a {
   }
   footer{
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
- 
+  div.form-group{
+   
+    margin: 20px 0;
+}
+label, input:not([type="radio"], [type="checkbox"]){
+  width: 100%;
+  
+}
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+label, legend{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size:  14px;
+  color: #444;
+  vertical-align: middle;
+}
+input {
+  vertical-align: middle;
+}
+input[type="text"], input[type="email"], input[type="textarea"] {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+textarea + div{
+  font-size: 12px;
+  margin-top: 10px 0 0 ;
+}
+
+button{
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #713f12;
+  background: #f0eee9;
+  border-radius: 8px;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fdfdfc;
+}
+
+button:active{
+  background: #ecebe9;
+  box-shadow: none;
+  box-shadow: -1px -1px 0 rgba(252, 249, 249, 0.5);
+}
+div.footer {
+  text-align: center;
+}
