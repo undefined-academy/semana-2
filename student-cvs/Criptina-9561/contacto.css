@@ -14,6 +14,7 @@ body {
     background-color: lightblue;
     margin: 0 auto;
     max-width: 30em;
+    padding-bottom: 2%;
 }
 
 .form-group {
