@@ -17,6 +17,10 @@ p,span {
     color: #334155;
 }
 
+ul{
+    padding: 0;
+}
+
 .caption{
     margin: 26px 0;
 }
