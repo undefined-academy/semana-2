@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+    background-color: #DDFFBB;
+
+}
+
+
+* {
+    box-sizing: inherit;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact {
+    margin: 5rem auto;
+    width: 800px;
+    height: 800px;
+    background: #C7E9B0;
+    box-shadow: -1px 1px 5px 11px #B3C99C;
+    padding: 0.25rem;
+    border-radius: 8px;
+
+}
+
+.contact-header,
+.form-button {
+    font-size: 30px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+
+.contact-main {
+    padding: 1rem;
+}
+
+.form-group {
+    display: block;
+    margin: 0.5rem 1rem;
+}
+
+.form-group>label {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0.25rem;
+}
+
+.form-group>input {
+    width: 100%;
+    padding: 0.75rem 0;
+    margin: 1rem;
+    font-size: 16px;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    background: lightyellow;
+}
+
+.form-group>input::placeholder {
+    font-size: 16px;
+    font-weight: bold;
+    color: #B3C99C;
+    text-align: center;
+
+}
+
+.form-group>textarea {
+    display: block;
+    width: 100%;
+    margin: 1rem;
+    font-size: 16px;
+    background: lightyellow;
+    resize: vertical;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+
+}
+
+
+#submit-button {
+    width: 40%;
+    padding: 0.5rem 0.75rem;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #DDFFBB;
+    margin: 0 auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contactFormStyle.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <article class="contact">
+      <header class="contact-header">
+        <h1>Formulario de contacto</h1>
+      </header>
+      <article class="contact-main">
+        <form class="contact-form" action="/Server" method="get">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Introduzca su nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduzca su email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Código del país y teléfono"
+            />
+          </div>
+          <div class="form-group">
+            <label for="proposal">Mótivo del Contacto</label>
+            <textarea
+              id="proposal"
+              name="proposal"
+              rows="5"
+              maxlength="500"
+            ></textarea>
+          </div>
+          <div class="form-button">
+            <button type="submit" id="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </article>
+    </article>
+    <script>
+      document
+        .getElementById("submit-button")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+        });
+    </script>
+  </body>
+</html>
