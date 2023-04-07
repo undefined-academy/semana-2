@@ -7,6 +7,38 @@ body{
     color: #555;
 }
 
+
+nav{
+    width: 100%;
+    position: relative;
+    margin-bottom: 8%;
+}
+
+nav li{
+    display: inline-block;   
+}
+
+nav li a{
+    color:black;
+    display: block;
+    font-size: 0.9em;
+    height: 50px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+}
+
+nav ul{
+    float:right;
+    list-style: none;
+    margin-top: -2px;   
+    text-align: right;
+    
+}
+
+h1{
+    font-size: 2.5em;
+}
 h2 {
     margin-top: 1em;
     padding-top: 1em;
