@@ -102,3 +102,13 @@ button:hover {
 .volver {
     border: none;
 }
+
+form {
+    accent-color:rgb(140, 176, 253) ;
+}
+
+input:focus-visible,
+textarea:focus-visible{
+    border: 1px solid rgb(140, 176, 253);
+    outline: 1px solid rgb(140, 176, 253);
+}
