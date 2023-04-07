@@ -14,6 +14,17 @@ h2 {
 	padding-top: 1em;
 }
 
+nav {
+	padding-top: 1em;
+}
+
+nav a {
+	text-decoration: none;
+	color: crimson;
+	padding: 0.5em 1em;
+	border: 1px solid;
+}
+
 strong {
 	color: crimson;
 }
@@ -24,6 +35,21 @@ table {
 
 thead {
 	font-family: 'Work Sans', sans-serif;
+}
+
+input,
+textarea {
+	width: 100%;
+}
+
+textarea {
+	height: 10em;
+}
+
+#submit {
+	cursor: pointer;
+	padding: 0.5em 1em;
+	width: inherit;
 }
 
 footer {

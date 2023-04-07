@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Work+Sans:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Contacto</title>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="contacto.html">Contacto</a>
+		</nav>
+
+		<header>
+			<h1>Contacto</h1>
+		</header>
+
+		<form action="GET" onsubmit="alert('Mensaje enviado!'); return false;">
+			<fieldset>
+				<label for="name">Nombre</label><br />
+				<input type="text" name="name" id="name" /><br />
+				<label for="email">Email</label><br />
+				<input type="email" name="email" id="email" /><br />
+				<label for="phone">Teléfono</label><br />
+				<input type="phone" name="phone" id="phone" /><br />
+				<label for="message">Su mensaje</label><br />
+				<textarea name="message" id="message"></textarea><br />
+				<input type="submit" value="Enviar" id="submit" />
+			</fieldset>
+		</form>
+
+		<hr />
+
+		<footer>
+			<p>&copy; Rodrigo Soberon - 2023</p>
+		</footer>
+
+		<script></script>
+	</body>
+</html>
