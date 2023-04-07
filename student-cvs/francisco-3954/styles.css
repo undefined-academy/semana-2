@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 2em;
+    background: rgb(226 232 240);
+}
+
+header div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.github-section{
+    display: flex;
+    align-items: center;
+}
+.github-section span {
+    padding-left: .5em;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 2em 1em;
+    color: rgb(55 65 81);
+}
+hr {
+    margin: 0;
+}
+
+h1,
+h2 {
+    color: rgb(17 24 39);
+}
+
+p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+table {
+    width: 100%;
+    margin: .5em;
+    border-collapse: collapse;
+}
+
+table,
+thead,
+th,
+td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+code {
+    padding: 0.5em;
+    background: rgb(226 232 240);
+    border-radius: .5em;
+}
+
+a {
+    color: rgb(13 148 136);
+}
+
+footer {
+    padding: 1em;
+    background: rgb(196, 210, 228);
+    display: flex;
+    justify-content: center;
+}
