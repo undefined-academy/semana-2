@@ -45,7 +45,7 @@ label {
   margin: 5px 40px 1px;
 }
 
-#name-label, #email-label, #select-label, #radio-input {
+#name-label, #email-label, #select-label, #radio1, #radio2, #radio3 {
   margin-left: 40px;
   margin-top: 10px;
 }

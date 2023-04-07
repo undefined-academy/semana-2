@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
   	<title>Formulario de contacto</title>
     <meta charset="utf-8">
@@ -11,16 +11,16 @@
     	<form id="form">
       		<div>
         		<label id="name-label" for="name">Nombre</label>
-        		<input id="name" name="text" type="text" placeholder=" Ingrese su nombre" required />
+        		<input id="name" name="text" type="text" placeholder=" Ingrese su nombre" required>
       		</div>
       		<div>
         		<label id="email-label" for="email">Email</label>
-        		<input id="email" type="email" placeholder=" Ingrese su Email" required />
+        		<input id="email" type="email" placeholder=" Ingrese su Email" required>
       		</div>
       		<div>
       			<label id="select-label">Tipo de proyecto</label>
       			<select id="dropdown" name="dropdown" required>
-        			<option>Seleccione el tipo</option>
+        			<option value="tipo">Seleccione el tipo</option>
         			<option value="website">Website</option>
         			<option value="webapp">Webapp</option>
         			<option value="mobile">Mobile app</option>
@@ -30,13 +30,13 @@
       		<div>
         		<p>Modalidad de trabajo</p>
         		<label>
-          			<input name="user-recommend" id="radio-input" type="radio" value="presencial" required /> Presencial
+          			<input name="user-recommend" id="radio1" type="radio" value="presencial" required> Presencial
         		</label>
         		<label>
-          			<input name="user-recommend" id="radio-input" type="radio" value="remoto" required /> Remoto
+          			<input name="user-recommend" id="radio2" type="radio" value="remoto" required> Remoto
         		</label>
 				<label>
-          			<input name="user-recommend" id="radio-input" type="radio" value="hibrido" required /> Híbrido
+          			<input name="user-recommend" id="radio3" type="radio" value="hibrido" required> Híbrido
         		</label>
       		</div>
       
@@ -45,9 +45,9 @@
           		<textarea id="comments" class="input-textarea" name="comment" placeholder=" Ingrese su comentario aquí..." required></textarea>
       		</div>
 		
-			<label class="input-check" required>
-          		<input id="check" name="prefer" value="¿Acepta los terminos y condiciones?" type="checkbox" class="input-checkbox" required /> ¿Acepta los terminos y condiciones?
-      		<label>
+			<label class="input-check">
+          		<input id="check" name="prefer" value="¿Acepta los terminos y condiciones?" type="checkbox" class="input-checkbox" required> ¿Acepta los terminos y condiciones?
+      		</label>
 		
       		<div class="wrapper">
           		<button type="button" id="submit" class="submit-button">Enviar</button>
