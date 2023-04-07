@@ -100,6 +100,61 @@
                 </p>
             </section>
         </article>
+
+        <section>
+            <h1>Formulario de contacto</h1>
+
+            <form id="contact-form">
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Número de telefono</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+
+                <div class="input-group">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <input type="radio" name="budget" id="1000">
+                        <label for="1000">1000</label>
+
+                        <input type="radio" name="budget" id="2000">
+                        <label for="2000">2000</label>
+
+                        <input type="radio" name="budget" id="5000">
+                        <label for="5000">5000</label>
+                        <input type="radio" name="budget" id="10000" checked>
+                        <label for="10000">10000</label>
+                    </fieldset>
+                </div>
+
+                <div class="input-group">
+                    <label for="work">Tipo de trabajo</label>
+                    <select name="work" id="work" required>
+                        <option value="">Seleccione una</option>
+                        <option value="web">Desarrollo Web</option>
+                        <option value="mobile">Desarrollo Móvil</option>
+                        <option value="consultancy">Asesoría</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">Acepto terminos y condiciones</label>
+                </div>
+
+                <div class="input-group">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <address>
@@ -107,6 +162,13 @@
             <a href="https://github.com/noe-mart" target="_blank" rel="noopener noreferrer">Github de Noé Martínez</a>
         </address>
     </footer>
+
+    <script>
+        const form = document.getElementById('contact-form')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+        })
+    </script>
 
 </body>
 

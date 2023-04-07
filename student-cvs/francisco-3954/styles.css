@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -13,10 +17,11 @@ header div {
     margin: 0 auto;
 }
 
-.github-section{
+.github-section {
     display: flex;
     align-items: center;
 }
+
 .github-section span {
     padding-left: .5em;
 }
@@ -28,6 +33,7 @@ main {
     padding: 2em 1em;
     color: rgb(55 65 81);
 }
+
 hr {
     margin: 0;
 }
@@ -71,4 +77,58 @@ footer {
     background: rgb(196, 210, 228);
     display: flex;
     justify-content: center;
+}
+
+
+form {
+    background-color: rgb(252, 252, 252);
+    border: 2px solid rgb(196, 196, 196);
+    padding: 1.5em;
+    border-radius: 6px;
+}
+
+
+
+.input-group {
+    margin-top: 20px;
+}
+
+input, label {
+    vertical-align: baseline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    
+}
+
+label,
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    text-transform: uppercase;
+}
+
+fieldset {
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(84, 163, 163);
+    color: white;
+}
+
+button:hover {
+    background-color: teal;
 }
