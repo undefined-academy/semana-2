@@ -8,17 +8,35 @@
     <title>My profile</title>
 </head>
 <body>
-    <h1>Hi there 👋</h1> 
-    <h2>I'm Matias Ojeda</h2>
-    <h3>I'm from <strong>Buenos Aires, Argentina</strong> and I am studying to be a system analyst, currently in my second year of the career.</h3> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href='#me'>Who am I</a></li>
+                <li><a href="#linux-commands">My Linux commands</a></li>
+                <li><a href="#linux-alias">My Linux alias</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+            <h1>Hi there 👋</h1> 
+            <h2 id="me">I'm Matias Ojeda</h2>
+            <h3>I'm from <strong>Buenos Aires, Argentina</strong> and I am studying to be a system analyst, currently in my second year of the career.</h3>
+            </article> 
+            <hr class="separator">
+            <article>
+            <h2>Some facts about me</h2> 
+            <ul>
+                <li>I am working as a service technician at my former school, almost for an entire year.</li>
+                <li>I'm currently learning full-stack technologies on a bootcamp.</li>
+                <li>How to reach me: @matiioj on every social. matiiojj@gmail.com via email.</li>
+            </ul> 
+            </article>
+        </section>
+    </header>
     <hr class="separator">
-    <h2>Some facts about me</h2> 
-    <ul>
-        <li>I am working as a service technician at my former school, almost for an entire year.</li>
-        <li>I'm currently learning full-stack technologies on a bootcamp.</li>
-        <li>How to reach me: @matiioj on every social. matiiojj@gmail.com via email.</li>
-    </ul> 
-    <hr class="separator">
+    
+    <section>
+    <article id ="linux-commands">
     <h2>My most used commands on Linux</h2>
     <table>
         <tr>
@@ -46,7 +64,9 @@
             <td>Creates an empty directory inside the current one</td>
         </tr>
     </table>
+    </article>
     <br>
+    <article id="linux-alias">
     <h2>My most useful alias commands on Linux</h2>
     <table>
         <tr>
@@ -66,10 +86,13 @@
             <td>npm run dev</td>
         </tr>
     </table>
-
- <h3 class="ending-text">Thank you for reading!</h3> 
- 
- <h4 class="ending-text">My Github profile link is <a href='https://github.com/matiioj'>https://github.com/matiioj</a></h4>
+    </article>
+    </section>
+ <footer class="ending-text">
+    <h3>Thank you for reading! This was updated last time on <time datetime="2023-04-07">April 7th</time></h3> 
+    <address><h4 class ="ending-text">Github profile link is <a href='https://github.com/matiioj'>https://github.com/matiioj</a></h4>
+    </address>
+ </footer>
     
 </body>
 </html>
