@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="#" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Ingrese su correo electronico" required>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+
+                    <input type="radio" name="budget" id="10000">
+                    <label for="10000">$10.000</label>
+
+                    <input type="radio" name="budget" id="5000">
+                    <label for="5000">$5.000</label>
+
+                    <input type="radio" name="budget" id="1000">
+                    <label for="1000">$1.000</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Tipo de Proyecto</label>
+                <select name="type" id="type">
+                    <option disabled selected>Seleccione uno</option>
+                    <option value="Website">Website</option>
+                    <option value="WebApp">WebApp</option>
+                    <option value="Mobile App">Mobile App</option>
+                    <option value="Diseno">Diseño</option>
+                </select>
+                <!--
+                datalist: con este tipo de lista o seleccionador el
+                usuario tendria la oportunida de filtra la lista en caso
+                de que esta contenga muchos datos y con solo escribir
+                dentro del input la opcion que desea, obtendra opciones similares
+
+                <input list="proyectos">
+                <datalist id="proyectos">
+                    <option disabled selected value="Seleccione uno"></option>
+                    <option value="Website"></option>
+                    <option value="WebApp"></option>
+                    <option value="Mobile App"></option>
+                    <option value="Diseño"></option>
+                </datalist>
+                -->
+            </div>
+
+            <div class="form-group">
+                <label for="description">Descripcion</label>
+                <textarea name="description" id="description" cols="30" rows="5" required></textarea>
+                <div>Descripcion sobre el proyecto</div>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <span>Acepto los terminos y condiciones</span>
+                    <span><a href="/index.html">Volver al Inicio</a></span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn" value="Enviar">Enviar</button>
+           
+        </form>
+    </main>
+</body>
+</html>
