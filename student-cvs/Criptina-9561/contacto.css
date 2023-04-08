@@ -21,6 +21,10 @@ body {
     margin: 20px 0;
 }
 
+form {
+    accent-color: navy;
+}
+
 label, input {
     vertical-align: middle;
 }
@@ -35,6 +39,10 @@ input[type="text"], input[type="email"], input[type="textarea"], select {
     border-radius: 4px;
     padding: 8px 10px;
     color: #333;
+}
+
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 2px solid navy;
 }
 
 .help {
