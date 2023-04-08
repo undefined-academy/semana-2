@@ -14,7 +14,8 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   padding: 4em 1em;
-  color: #566b78;
+  color: #333;
+  background: #fafafa;
 }
 
 h2 {
@@ -104,17 +105,33 @@ section table {
   margin: 0 auto;
 }
 
-.sec_table1 {
+.sec_table1, .sec_table2 {
   padding-bottom: 1.5em;
 }
 
+
+
+form{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-title{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
 .form-group {
-  border: 1px solid tomato;
   margin: 20px 0;
 }
 
 label, input:not([type="radio"], [type="checkbox"]) {
   width: 100%;
+}
+
+label, input{
+  vertical-align: baseline;
 }
 
 textarea{
@@ -123,6 +140,44 @@ textarea{
   resize: vertical;
 }
 
-label{
+label, legend{
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="text"], input[type="email"], textarea{
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help{
+  font-size: 12px;
+  margin: 10px 0 0;
+  color: grey;
+}
+
+button{
+  padding: 16px 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #713f12;
+  background: #eab308;
+  color: #333;
+  text-shadow: -1px -1px 0 rgba(255,255,255, 0.5);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+button:hover{
+  background: #facc15;
+}
+button:active{
+  background: #ca8a04;
+  box-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 }
