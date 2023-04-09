@@ -51,6 +51,23 @@ pre {
     padding: 10vw 2em;
     text-align: center;
   }
+ 
+  .form-group > * {
+    width: 100%;
+  }
+
+  input, textarea {
+    accent-color: #263d36;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    float: right;
+    padding: 5px;
+  }
 
   header img {
     display: inline-block;
