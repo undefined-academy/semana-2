@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <h1>ALFREDO MENDOZA</h1>
+    
     
       <div class="divrrss">
         <nav>
@@ -20,24 +20,40 @@
             <a href="https://github.com/dytalfredo"><img src="./github.png" height="40" width="40" alt="github"></a>
             <a href="https://www.linkedin.com/in/alfredo-mendoza-83148426b"><img src="./linkedin.png" height="40"
                 width="40" alt="linkedIn"></a>
+                <a href="https://cavermanpixel.itch.io/"><img src="./app-icon.svg" height="40"
+                  width="40" alt="linkedIn"></a>
           </address>
         </nav>
       </div>
+      <h1>ALFREDO MENDOZA <br> y <br> MAYRA CATUCUAGO</h1>
     
   </header>
   <main>
     <section>
       <div class="presentacion">
         <h2>Hola!👋🏼 Soy <strong>Alfredo Mendoza.</strong> </h2>
-        <p> Soy diseñador grafico y <strong>desarrollador de juegos indies</strong> con 2 años de experiencias en Unity,
+        <p> Soy diseñador grafico y <strong>desarrollador de juegos indies</strong> con 2 años de experiencias en Unity bajo el seudonimo de <a href="https://cavermanpixel.itch.io/">CavermanPixel</a> 
           soy Venezonalo y actualmente vivo en Ecuador, me encanta la tecnologia, y la mayoria de mis conocimientos en
           programación y diseño has sido adquiridos de forma autodidacta </p>
         <br>
         <p>Actualmente me estoy preparando como <strong>Full-Stack Javascript Development</strong>.</p>
       </div>
+   
     </section>
-
     <hr>
+    <Section>
+      <h2>Mis Juegos</h2>
+      <div class="misjuegos">
+        
+        <iframe frameborder="0" src="https://itch.io/embed-upload/4277202?color=333333" allowfullscreen="" width="480" height="310" class="ultimacura" ><a href="https://cavermanpixel.itch.io/la-ultima-cura">Play La Ultima Cura on itch.io</a></iframe>
+
+        <iframe frameborder="0" src="https://itch.io/embed/876676?border_width=0&amp;bg_color=241b3f&amp;fg_color=43376a&amp;link_color=eaf9ff&amp;border_color=da7386" width="206" height="165"><a href="https://tottori.itch.io/snacks-van">Snacks Van by Tottori, CavermanPixel</a></iframe>
+        <iframe frameborder="0" src="https://itch.io/embed/1152805?border_width=0&amp;bg_color=210201&amp;fg_color=b6abab&amp;link_color=f9f5bd&amp;border_color=000000" width="206" height="165"><a href="https://cavermanpixel.itch.io/la-ultima-cura">La Ultima Cura by CavermanPixel</a></iframe>
+        <iframe frameborder="0" src="https://itch.io/embed/1025330?border_width=0&amp;bg_color=0f1f50&amp;fg_color=eeeeee&amp;link_color=f4dfb9&amp;border_color=000000" width="206" height="165"><a href="https://cavermanpixel.itch.io/vaccinate-simulator">Vaccinate Simulator by CavermanPixel</a></iframe>
+      </div>
+    </Section>
+
+  
     <section>
       <div class="Habilidades"></div>
       <h2>Mis habilidades</h2>
@@ -77,8 +93,54 @@
         </ul>
       </div>
     </section>
+
+    <section>
+      <div class="formulario">
+        <h2>Contactame</h2>
+        <form action="/server" method="get">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input id="name" type="text" placeholder="Ingrese su nombre" required name="name">
+            
+
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" placeholder="Ingrese su correo electronico" id="email" required name="email">
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Quieres trabajar conmigo? Cotiza Ya!
+              </legend>
+                <input type="radio" name="budge" id="10000" required value="10000"><label for="10000">$10000</label>
+                <input type="radio" name="budge" id="15000" value="15000"><label for="15000">$15000</label>
+                <input type="radio" name="budge"      id="20000" value="20000"><label for="20000">$20000</label>
+              
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="type">Tipo de proyecto</label>
+            <select id="pro" required name="tipoPro">
+              <option value="" disabled selected>Selecciones Uno</option>
+              <option>Website</option>
+              <option>Gamedev</option>
+              <option>Diseño</option>
+              <option>Aplicacion</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Describe el proyecto</label>
+            <textarea name="proyectDes" id="descripcion" cols="30" rows="5" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
   </main>
 
+  
+  <div class="slideLeft"></div> 
   <footer>
     <address> <a class="git" href="https://github.com/dytalfredo">MY GITHUB</a></address>
     <p>Todos los derechos recervados</p>
