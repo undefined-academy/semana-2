@@ -1,13 +1,42 @@
 * {
-  max-width: 1900px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 10px;
+  max-width: 1500px;
 }
 
 body {
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 /*media sizing*/
+/* mobile*/
+@media screen and (max-width: 759px){
+
+  .navBar{
+    height: 80px;
+  }
+
+  .linksField, .logoTxt {
+    visibility: hidden;
+  }  
+  .logo {
+    visibility:  inherit;
+  }
+
+  .containerHome{
+    flex-direction: column;
+  }
+
+}
+
+/* Tablet */
+
+@media screen and (max-width: 960px){
+
+  .dropDown{
+    visibility: hidden;
+  }
+}
+
 
 /* Background mode*/
 
@@ -40,19 +69,25 @@ body {
 /* Size img */
 
 .logoTxt {
+  position: absolute;
   visibility: visible;
-  width: 50%;
+  width: 20%;
 }
 
 .logo {
+  position: absolute;
   visibility: hidden;
-  width: 20%;
+  width: 5%;
 }
 
 .profileImg {
   margin: 30px;
   width: 30%;
   height: 40%;
+}
+
+.menu{
+  width:30px;
 }
 
 /*tech img*/
@@ -75,27 +110,72 @@ body {
 .repo {
   width: 100px;
 }
+.containerScrollBtn{
+  position: fixed;
+}
 
+/* DropBox Menu */
+
+.dropDown{
+  visibility: inherit;
+  display: inline-block;
+  justify-content: right;
+  position: relative;
+  align-content: center;
+}
+.dropOptions{
+  visibility: hidden;
+  position: absolute;
+  color: rgba(2, 232, 232, 0.802);
+}
+.dropDown:hover .dropOptions{
+  visibility: visible;
+}
+
+.dropBtn{
+  background-color: #ffffff00;
+  border: none;
+}
 /* section style*/
 section,
 nav {
   border-color: #00000000 #00000000 rgba(2, 232, 232, 0.802) #00000000;
   border-style: solid;
 }
+
+/* Scroll btn */
+#btnScroll {
+  width: 50px;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #ffffff00;
+}
+
+.scroll {
+  width: 60px;
+  visibility: visible;
+  padding: 0;
+  border: 0;
+}
+
+
 /* nav */
 .navBar {
   background-color: #181818;
+  margin-right: 35px;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-between;
   align-items: center;
   width: 100%;
   height: 125px;
 }
 
 .logoField {
-  justify-content: space-around;
-  border-style: none;
-  width: 33%;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .buttonMode {
@@ -109,9 +189,16 @@ nav {
   margin-right: 10px;
   align-items: center;
 }
+.containerMenu{
+  width: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 .linksField {
-  justify-content: flex-end;
+  justify-content: right;
   width: 33%;
 }
 ul {
@@ -126,6 +213,7 @@ a {
   margin: 15px;
   display: flex;
   justify-content: flex-end;
+  font-size: 100%;
 }
 
 /* Home*/
@@ -159,6 +247,9 @@ a {
 .textAboutMe {
   font-size: 150%;
 }
+.textAboutMe>h3{
+  color: rgba(2, 232, 232, 0.802);
+}
 .tech {
   width: 80%;
   display: block;
@@ -174,8 +265,9 @@ a {
 }
 
 /* Projects*/
-.projects {
-  margin: 50px 10%;
+
+.projCont{
+  color: rgba(2, 232, 232, 0.802);
 }
 .containerProjects {
   display: flex;
@@ -202,6 +294,15 @@ a {
 }
 
 /* Contact */
+.containerContact{
+  display: block;
+  margin: 100px 10%;
+  justify-content: space-around;
+  align-content: center;
+}
+.containerContact>h2{
+  color:rgb(2, 232, 232);
+}
 .contactInfo {
   display: flex;
   justify-content: center;
@@ -233,9 +334,34 @@ input:focus {
   border: rgba(2, 232, 232, 0.189);
 }
 .describe {
-  display: flex;
+  display: block;
   margin-bottom: 10px;
+  padding: 2px;
 }
-textarea{
-  width: 84%;
+textarea {
+  width: 100%;
+}
+
+.btnSend{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(2, 232, 232);
+  color: #333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bolder;
+}
+
+.btnSend:hover{
+  background-color: darkcyan;
+  color: #faf4f4;
+}
+
+/* Footer */
+.footerBanner{
+  display: flex;
+  justify-content: center;
 }
