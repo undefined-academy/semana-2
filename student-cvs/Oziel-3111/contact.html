@@ -7,35 +7,28 @@
     <link rel="stylesheet" href="styles_contact.css" </head>
 
 <body>
+    <header>
     <main class="page">
-        <h1>Contacto</h1>
+        <h1><center>Contactame</center></h1>
+    </header>
         <form action="/server" method="get">  
             <div class="form-group">
                 <label for="name">Nombre:</label>
                 <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
+                <label for="email">E-mail:</label>
                 <input id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required>
             </div>
+            
             <div class="form-group">
-                <fieldset>
-                    <legend>Presupuesto</legend>
-                    <input id="10000" name="budget" type="radio" value="10000"><label for="10000">$10,000</label>
-                    <input id="5000" name="budget" type="radio" value="5000"><label for="5000">$5,000</label>
-                    <input id="1000" name="budget" type="radio" value="1000"><label for="1000">$1,000</label>
-                    
-                </fieldset>
-            <div class="help">Este presupuesto es la base, no el total.</div>
-            </div>
-            <div class="form-group">
-                <label for="type">Tipo de proyecto.</label>
+                <label for="type">Razon del contacto.</label>
                 <select id="type" name="type" required>
                     <option disabled selected value="">Seleccione uno</option>
-                    <option value="Website">Website</option>
-                    <option value="Webapp">Aplicacion Web</option>
-                    <option value="Mobile">Aplicacion Mobile</option>
-                    <option value="Diseño">Diseño</option>
+                    <option value="Website">Comentario</option>
+                    <option value="Webapp">Queja</option>
+                    <option value="Mobile">Sugerencia</option>
+                    <option value="Mobile">Proyecto</option>
                 </select>
             </div>
             <div class="form-group">
@@ -43,6 +36,7 @@
                 <textarea id="description" name="description" required rows="5"></textarea>
             </div>
             <div class="help">Escribe una descripcion en al menos 500 palabras.</div>
+            
             <div class="form-group">
                 <label for="terms">
                     <input id="terms" name="terms" type="checkbox" required>
@@ -52,6 +46,10 @@
             <button>Enviar</button>
             
         </form>
+
+        <a href="index.html">
+            <button>REGRESAR</button>
+        </a>
     </main>
 
 </body>

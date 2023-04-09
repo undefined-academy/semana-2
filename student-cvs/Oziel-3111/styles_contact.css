@@ -7,8 +7,8 @@ html {
 }
 
 body {
-    color: #333;
-    background-color: #fafafa;
+    color: rgb(36, 32, 32);
+    background-color: #fc9090;
 }
 
 .page {
@@ -17,6 +17,18 @@ body {
     padding: 0 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+    background-color: #263d36;
+    background-image: url("imagen/imagen.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 5vw 2em;
+    text-align: center;
+    font-size: 20px;
+  }
 
 .form-group {
     margin: 20px 0;
@@ -40,20 +52,20 @@ label, legend {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
-    color: #444;
+    color: rgb(36, 32, 32);
 }
 input[type="text"], input[type="email"], textarea {
     background: white;
     border: 1px solid lightgray;
     border-radius: 4px;
     padding: 8px 10px;
-    color:#333
+    color: rgb(36, 32, 32);
 }
 
 .help {
     font-size: 12px;
     margin-top: 10px;
-    color: gray;
+    color: black;
 }
 
 button {
