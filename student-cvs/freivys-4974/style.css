@@ -1,0 +1,150 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+/* Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #566b78;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 0 2em;
+  width: 100%;
+}
+
+/* Page Styles */
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  border-left: 2px solid #69c;
+  padding: 1em;
+}
+
+a {
+  color: #e81c4f;
+}
+
+table {
+  border: 1px solid #e81c4f;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #e81c4f;
+}
+
+/* Header */
+.Header {
+  background-image: url("./header2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 5vw 2em;
+  text-align: center;
+  max-width: 100%;
+}
+
+.Header-logo {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+.Header-title {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.Header-title strong {
+  color: white;
+}
+
+.Header-subtitle em {
+  color: white;
+}
+
+.Header-paragraph {
+  color: white;
+  margin: 30px 0;
+}
+
+.Header-github {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.Header-github:hover {
+  background: #e81c4f;
+  color: white;
+}
+
+.Subtitle {
+  margin: 1em 0 .5em;
+  padding: 1em 0 .5em;
+}
+
+/* Main */
+.Main,
+.Footer {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.Footer {
+  background-color: #10100F;
+  color: white;
+  margin: 40px auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.Footer-paragraph {
+  margin: 10px 0;
+}
+
+.Footer-anchor {
+  text-decoration: none;
+}
