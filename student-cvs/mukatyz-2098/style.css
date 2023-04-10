@@ -3,7 +3,7 @@ body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     margin: 0 auto;
     max-width: 50em;
-    background-color: aliceblue;
+    background-color: #fdcae1 transparent;
 }
 header{
 
@@ -27,10 +27,10 @@ strong {
   color: #333;
 }
 section>h3 {
-    color: #e81c4f;
+    color: #ff6565;
 }
 ul{
-    background-color: #e1dee7;
+    background-color: #f6ecf6;
 }
 
 tr>th, tr>td {
@@ -43,12 +43,52 @@ tr>th, tr>td {
 
 tr:nth-of-type(1)
 {
-    background-color: #e1dee7;
+    background-color: #f6ecf6;
 }
 tr {
     padding: 2px 4px;
 }
-footer{
+footer>h2{
     font-size: small;
+}
+.form-group{
+    margin: 20px 0;
+}
+
+
+textarea, input:not([type="radio"], [type="checkbox"]){
+    display: inline-block;
+    width: 98%;
+}
+button{
+  background-color: #EA4C89;
+  border-radius: 5px;
+  border-color: #EA4C89;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:focus {
+  background-color: #F082AC;
+}
+
+
+form{
+    margin: auto 50% auto auto;
+    background-color: #f6ecf6;
+    border: 1px solid #EA4C89;
+    padding: 10px;
 }
 

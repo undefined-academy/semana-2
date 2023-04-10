@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Katerine Munoz</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 
@@ -89,6 +89,48 @@
         </section>
     </article>
     <footer>
+        <Section><h3><hr>📧Contáctame</h3></Section>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="username">Nombre</label>
+                <input id="username" name="username" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="$1000" name="budget" type="radio">
+                    <label for="$1000">$1000</label>
+                    <input id="$5000" name="budget" type="radio">
+                    <label for="$1000">$5000</label>
+                    <input id="$10000" name="budget" type="radio">
+                    <label for="$10000">$10000</label> 
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select>
+                    <option>Diseño</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción del proyecto</label>
+                <textarea id="description"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="terms" id="terms" name="terms" type="checkbox" required>
+                <label for="terms">Aceptar términos y condiciones.</label>             
+            </div>
+            <div class="button" type="button">
+                <button>Enviar</button>
+            </div>
+        </form>
         <h2>📧<em><strong> mukatyz@gmail.com - 2023</strong></em></h2>
     </footer>
 </body>
