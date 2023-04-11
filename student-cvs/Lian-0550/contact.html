@@ -13,7 +13,7 @@
 
 <body>
     <div class="wallpaper"></div>
-    <main class="content">
+    <div class="content">
 
         <header>
             <div class="header">
@@ -21,7 +21,7 @@
                 <hr class="line">
             </div>
         </header>
-        <section>
+        <main>
             <form action="/server" method="get" onsubmit="event.preventDefault();">
 
                 <div class="personal">
@@ -80,12 +80,13 @@
                     <input class=button type="submit" value="Submit">
                 </div>
             </form>
-        </section>
-        <div class="home">
-            <a class="button" href="/index.html">home</a>
-        </div>
-
-    </main>
+        </main>
+        <nav>
+            <div class="home">
+                <a class="button" href="/index.html">home</a>
+            </div>
+        </nav>
+    </div>
 
 </body>
 
