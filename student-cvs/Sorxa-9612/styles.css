@@ -158,3 +158,12 @@ button:active{
     background: #1c4bce;
     box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
+
+form{
+    accent-color: #3d77f3;
+}
+
+input:focus-visible, textarea:focus-visible{
+    border: 1px solid #3d77f3;
+    outline: 1px solid #3d77f3;
+}
