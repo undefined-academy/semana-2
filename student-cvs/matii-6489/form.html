@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form-style.css"> 
+    <script type="text/javascript" defer src="handleForm.js"></script> 
     <title>Contact</title>
+    <link rel="stylesheet" href="form-style.css">
 </head>
 <body>
-    <main>
+    <main class="page">
         <section class="contact">
             <h1>Contact</h1>
-            <form action="" method="GET">
+            <form action="/server" id="form" method="get">
                 <div class="form-group">
                     <label for="name">Name: </label>
                     <input id="name" name="name" type="text" placeholder="Enter your full name" required>                
                 </div>
                 <div class="form-group">
                     <label for="email">Email: </label>
-                    <input id="email" name="email" type="email" placeholder="Enter your full name" required>                
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required>                
                 </div>
                 <div class="form-group">
                     <fieldset>
@@ -35,7 +36,7 @@
                 <div class="form-group">
                     <label for="type">Project type: </label>
                     <select name="type" id="type" required="required">
-                      <option value="" disabled="disabled" selected>Seleccione uno</option>
+                      <option value="" disabled="disabled" selected>Select one</option>
                       <option value="website">Website</option>
                       <option value="responsivewebsite">Responsive Website</option>
                     </select>
