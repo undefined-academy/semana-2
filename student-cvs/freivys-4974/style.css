@@ -50,20 +50,6 @@ pre {
   padding: 1em;
 }
 
-a {
-  color: #e81c4f;
-}
-
-table {
-  border: 1px solid #e81c4f;
-  width: 100%;
-}
-
-th,
-td {
-  border: 1px solid #e81c4f;
-}
-
 /* Header */
 .Header {
   background-image: url("./header2.jpg");
@@ -122,6 +108,7 @@ td {
 }
 
 .Subtitle {
+  text-transform: uppercase;
   margin: 1em 0 .5em;
   padding: 1em 0 .5em;
 }
