@@ -233,6 +233,10 @@ height:2.5em ;
     padding-left: 10%;
     padding-right: 20%;
    }
+   .opcion1 {
+  
+    top: 0px;
+}
    main{
     background-size:cover;
    }
@@ -247,12 +251,36 @@ height:2.5em ;
      padding-right: 0;
      max-width: 25%;
     }
+    ul{
+        justify-content: center;
+        gap: 25px;
+    }
     .flex-2{
         display:flex;
         padding: 10% 20px;
         min-width: 100%;
         flex-direction: row;
         justify-content: space-around;
+    }
+    h3.subTitulo{
+        position: relative;
+        transform: rotate(0);
+        top: -200px;
+        left: 0px;
+        text-align: center;
+
+    }
+    h1.Titulo{
+
+        position: relative;
+        text-align: center;
+        transform: rotate(0);
+        top:-100px;
+        left:0px;
+
+        
+        
+        
     }
     }
 
