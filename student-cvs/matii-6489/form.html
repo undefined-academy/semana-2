@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css"> 
+    <title>Contact</title>
+</head>
+<body>
+    <main>
+        <section class="contact">
+            <h1>Contact</h1>
+            <form action="" method="GET">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input id="name" name="name" type="text" placeholder="Enter your full name" required>                
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input id="email" name="email" type="email" placeholder="Enter your full name" required>                
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Budget</legend>
+                        <input id="500" name="budget" type="radio" value="500" required/>
+                        <label for="500"> $500</label>
+                        <input id="1000" name="budget" type="radio" value="1000" required/>
+                        <label for="1000"> $1.000</label>
+                        <input id="1500" name="budget" type="radio" value="1500" required/>
+                        <label for="1500"> $1.500</label>
+                      </fieldset>             
+                </div>
+                <div class="clarification">This budget is only the base, not the final price</div>
+                <div class="form-group">
+                    <label for="type">Project type: </label>
+                    <select name="type" id="type" required="required">
+                      <option value="" disabled="disabled" selected>Seleccione uno</option>
+                      <option value="website">Website</option>
+                      <option value="responsivewebsite">Responsive Website</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description: </label>
+                    <textarea id="description" name="description" rows="7" required></textarea>
+                </div>
+                <div class="clarification">Describe your project idea in at least 500 words</div>
+                <div class="form-group">
+                    <label for="termsandconditions">
+                        <input type="checkbox" name="termsandconditions" id="termsandconditions" required/>
+                        <span>I accept the terms and conditions</span>
+                    </label>
+                </div> 
+                <button id="submit">Submit</button>  
+            </form>
+        </section>
+    </main>    
+</body>
+</html>
