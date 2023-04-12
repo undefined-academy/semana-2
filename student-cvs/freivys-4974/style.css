@@ -1,5 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+/* Custom properties */
+:root {
+  --bgColor: #f5f7f9;
+  --textColor: #566b78;
+  --subtitleColor: #333;
+  --hoverColor: #e81c4f;
+  --whiteColor: #ffff;
+  --fontFamily: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
 /* Reset */
 *,
 *::after,
@@ -16,8 +26,9 @@ html {
 }
 
 body {
-  color: #566b78;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  font-family: var(--fontFamily);
   font-size: 100%;
   line-height: 1.5;
   margin: 0 auto;
@@ -27,28 +38,6 @@ body {
 }
 
 /* Page Styles */
-h1,
-h2,
-strong {
-  color: #333;
-}
-
-code,
-pre {
-  background: #f5f7f9;
-  border-bottom: 1px solid #d8dee9;
-  color: #a7adba;
-}
-
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-}
-
-pre {
-  border-left: 2px solid #69c;
-  padding: 1em;
-}
 
 /* Header */
 .Header {
@@ -56,6 +45,7 @@ pre {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--whiteColor);
   line-height: 1.2;
   padding: 5vw 2em;
   text-align: center;
@@ -70,29 +60,19 @@ pre {
 }
 
 .Header-title {
-  color: white;
   font-size: 2.5em;
   font-weight: 300;
   margin: 20px 0;
 }
 
-.Header-title strong {
-  color: white;
-}
-
-.Header-subtitle em {
-  color: white;
-}
-
 .Header-paragraph {
-  color: white;
   margin: 30px 0;
 }
 
 .Header-github {
-  border: 1px solid #e81c4f;
+  border: 1px solid var(--hoverColor);
   border-radius: 290486px;
-  color: white;
+  color: var(--whiteColor);
   font-size: 0.6em;
   letter-spacing: 0.2em;
   padding: 1em 2em;
@@ -103,11 +83,11 @@ pre {
 }
 
 .Header-github:hover {
-  background: #e81c4f;
-  color: white;
+  background: var(--hoverColor);
 }
 
 .Subtitle {
+  color: var(--subtitleColor);
   text-transform: uppercase;
   margin: 1em 0 .5em;
   padding: 1em 0 .5em;
@@ -120,18 +100,30 @@ pre {
   margin: 0 auto;
 }
 
+.About-paragraph {
+  line-height: 1.7;
+}
+
 .Footer {
-  background-color: #10100F;
-  color: white;
-  margin: 40px auto;
-  padding: 10px 0;
+  margin: 40px auto 10px;
+  padding: 5px 0;
   text-align: center;
 }
 
 .Footer-paragraph {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .Footer-anchor {
+  color: var(--subtitleColor);
+  padding: 5px;
   text-decoration: none;
+}
+
+.Footer-anchor:hover {
+  background: var(--hoverColor);
+  border-radius: 5px;
+  color: var(--whiteColor);
+  transition: none 200ms ease-out;
+  transition-property: color, background;
 }
