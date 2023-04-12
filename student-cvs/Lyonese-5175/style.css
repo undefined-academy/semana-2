@@ -1,7 +1,7 @@
 body{
-    background-color: #eee;
+    background-color: whitesmoke;
     color: #333;
-    margin: auto;
+    margin: 10px;
     max-width: 25cm;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
@@ -21,14 +21,30 @@ a {
 h1{
     text-align: center;
 }
-textarea{
+input, textarea{
     width: 75%;
-    resize: none;
-}
-input{
-    width: 20%;
+    border: 1px solid lightgray;
+    resize:none;
+    padding: 8px 10px;
 }
 label{
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 75%;
+}
+.form-group{
+    margin: 10px 0;
+}
+button{
+    border: 1px solid lightgray;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: gray;
+    border-radius: 8px;
+    display: block;
+    margin: 0 37%;
+}
+button:hover{
+    background-color: lightslategrey;
 }
