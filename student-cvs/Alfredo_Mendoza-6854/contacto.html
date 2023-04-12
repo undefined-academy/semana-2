@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o">
+  <title>This is my Profile</title>
+  <link rel="stylesheet" href="./style.css">
+ 
+</head>
+
+<body>
+  <div class="home"><a href="./index.html">°__°</a></div>
+  <header>
+    
+<div class="titulo">
+      <h1>ALFREDO MENDOZA</h1>
+      <h2>Desarrollador web Full-Stack</h2>
+    </div>
+    
+  </header>
+  <main>
+ 
+
+    <section>
+      <div class="formulario">
+        <h2>Contactame</h2>
+        <form action="/server" method="get">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input id="name" type="text" placeholder="Ingrese su nombre" required name="name">
+            
+
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" placeholder="Ingrese su correo electronico" id="email" required name="email">
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Quieres trabajar conmigo? Cotiza Ya!
+              </legend>
+                <input type="radio" name="budge" id="10000" required value="10000"><label for="10000">$10000</label>
+                <input type="radio" name="budge" id="15000" value="15000"><label for="15000">$15000</label>
+                <input type="radio" name="budge"      id="20000" value="20000"><label for="20000">$20000</label>
+              
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="type">Tipo de proyecto</label>
+            <select id="pro" required name="tipoPro">
+              <option value="" disabled selected>Selecciones Uno</option>
+              <option>Website</option>
+              <option>Gamedev</option>
+              <option>Diseño</option>
+              <option>Aplicacion</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Describe el proyecto</label>
+            <textarea name="proyectDes" id="descripcion" cols="30" rows="5" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="slideLeft"></div> 
+  <footer>
+    <address> <a class="git" href="https://github.com/dytalfredo">MY GITHUB</a></address>
+    <p>Todos los derechos recervados</p>
+  </footer>
+</body>
+
+</html>

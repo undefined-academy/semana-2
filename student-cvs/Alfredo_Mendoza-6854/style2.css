@@ -1,0 +1,267 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+@import 'https://fonts.googleapis.com/css?family=Alkatra:700';
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400;600;700&display=swap');
+
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: transparent;
+    height: auto;
+    
+    
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Cormorant Infant', serif;
+}
+
+header{
+    background:var(--color-secundario);
+
+    background:url('./Assets/fondoguitarrista.png');
+    
+    /* background: -moz-linear-gradient(135deg, hsla(180, 58%, 4%, 1) 0%, hsla(210, 1%, 28%, 1) 72%, hsla(240, 1%, 27%, 1) 100%); */
+    
+    /* background: -webkit-linear-gradient(135deg, hsla(180, 58%, 4%, 1) 0%, hsla(210, 1%, 28%, 1) 72%, hsla(240, 1%, 27%, 1) 100%); */
+    opacity: 1;
+    background-blend-mode: multiply;
+    background-size:cover;
+ min-height: 400px;
+        
+    
+
+    
+}
+main{
+    margin: 0 auto;
+    
+    line-height: 1.5;
+    position: relative;
+    top:-60px;
+    font-family: 'Cormorant Infant', serif;
+    z-index: -1;
+    background: url('./Assets/fondopaginaBWHOJAARRUGADA.jpg');
+
+    opacity: 1;
+    background-blend-mode: multiply;
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+ 
+   height: 350px;
+    color:var(--color-secundario);
+    
+    
+
+    
+
+  }
+
+  ul {
+ 
+    list-style: none;
+    margin: 0;
+    display: flex;
+   padding: 0;
+    justify-content:space-around;
+    text-align: end;
+    width: 100%;
+    font-weight: 400;
+    text-shadow:var(--color-primario) 0px 0px 2px ;
+  }
+
+  ul li:first-child{
+    color: #f8b116;
+  }
+
+  .opcion{
+    margin-top: 5px;
+  }
+  .opcion1{
+    position: relative;
+    top: 45px;
+  }
+
+
+h1.Titulo{
+    font-size: 2em;
+font-family: var(--texto-Relevante);
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-12deg);
+    top:120px;
+    left:10px;
+    margin: 0px;
+    color: var(--color-secundario);
+    
+    
+    
+}
+
+h3.subTitulo{
+
+
+    position: absolute;
+    z-index: 2;
+    font-size: 0.8em;
+    transform: rotate(-12deg);
+    top:95px;
+    left:100px;
+    margin: 0px;
+    color: var(--color-primario);
+    
+    
+    
+}
+
+/* strong{
+    font-family: 'Homemade Apple', cursive;
+} */
+
+.link-import{
+    font-family: var(--texto-Relevante);
+    font-weight: 800;
+    color: #f8b116;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.flex-1{
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    align-content: end;
+    padding: 0 20%;
+    padding-top: 2em;
+    height: 730px;
+    
+    
+}
+h2{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    color: var(--color-primario);
+    font-family: var(--texto-Relevante);
+    
+}
+
+.flex-2{
+    background-color: var(--color-texto);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+ 
+    padding: 0 15%;
+    padding-top: 2em;
+    
+}
+
+.flexbox{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+ 
+}
+
+.flexbox h2, .flexbox p{
+    color: var(--color-secundario);
+    margin-top: 10px;
+}
+
+.iconhabilidades{
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-primario);
+    border-radius: 50%;
+}
+
+.iconhabilidades >svg{
+    width: 100%;
+    height: 100%;
+    max-height: 4em;
+    fill: #f4f7f5;
+}
+
+.flex-3 {
+height:2.5em ;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 100%;grid-template-rows: 100%;
+   
+  align-items: center; /* centra el contenido verticalmente */
+  text-align: center;
+    background-color:var(--color-primario) ;
+    height: 110px;
+}
+
+.contacto-grid > a{
+    color: #f4f7f5;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 800;
+    text-shadow: 0 0 8px rgb(62, 10, 110);
+    
+}
+
+@media screen and (min-width: 768px) {
+   .flexbox{
+    padding-left: 10%;
+    padding-right: 20%;
+   }
+   main{
+    background-size:cover;
+   }
+   .flex-1{
+    height: 500px;
+   }
+   }
+
+@media screen and (min-width: 900px) {
+    .flexbox{
+     padding-left: 0;
+     padding-right: 0;
+     max-width: 25%;
+    }
+    .flex-2{
+        display:flex;
+        padding: 10% 20px;
+        min-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    }
+
+
+:root {
+    --color-texto: #09080c;
+    --color-primario: #6461dd;
+    --color-secundario:#f4f7f5;
+    --color-link-intest: white;
+    --texto-Relevante: font-family: 'Dancing Script', cursive;
+
+  }
