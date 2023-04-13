@@ -1,4 +1,17 @@
-
+header {
+    background-image: url(/fotos/fotofondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: whitesmoke;
+    line-height: 1.2;
+    padding: 5vw 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
 
 #logo {
     width: 100%;
@@ -134,3 +147,18 @@ select {
 
 }
 
+#redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    background-image: url(/fotos/Fondoredes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
