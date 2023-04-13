@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #333;
+  background-color: #fafafa;
+}
+
+header {
+  font-size: 1em;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  color: #ff0000;
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+
+.form-group {
+  margin: 20px 0px;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label, legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #333;
+}
+
+.help {
+  font-size: 14px;
+  margin-top: 10px;
+  color: gray;
+}
+
+button {
+  margin-top: 24px;
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1 solid #4338ca;
+  background-color: #6366f1;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a5b4fc;
+}
+
+button:active {
+  background-color: #1e1b4b;
+  color: #e0e7ff;
+}
