@@ -7,6 +7,7 @@
   --claro: #f5ebeb;
   --blanco: #fff;
   --negro: #000;
+  --opaco: #000000a8;
 }
 
 html {
@@ -22,7 +23,6 @@ body {
   margin: 0 auto;
   width: 100%;
   font-family: "Helvetica", sans-serif;
-  /*padding: 4rem 2rem;*/
   line-height: 1.25;
   background: var(--primario);
   background: linear-gradient(
@@ -61,11 +61,14 @@ ul {
   max-width: 25%;
   height: 100vh;
   background-color: var(--oscuro);
-  left: 0;
-  top: 0;
+  float: left;
   position: fixed;
   z-index: 100;
   margin: 0 auto;
+  box-shadow: 9px 0px 5px 0px rgba(0,0,0,0.12);
+  -webkit-box-shadow: 9px 0px 5px 0px rgba(0,0,0,0.12);
+  -moz-box-shadow: 9px 0px 5px 0px rgba(0,0,0,0.12);
+
 }
 
 .contenedor-aside {
@@ -133,3 +136,67 @@ ul {
   float: right;
   margin: 0 auto;
 }
+
+.contenedor-main{
+  max-width: 95%;
+  margin: 2rem 1rem;
+}
+
+/*secciones de informacion*/
+
+.informacion{
+
+  border-bottom: 1px solid var(--claro);
+  color: var(--opaco);
+  padding-bottom: 1rem;
+
+}
+
+.informacion:last-of-type{
+  border-bottom: none;
+}
+
+.informacion h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.informacion ul{
+  list-style: none;
+}
+
+.informacion ul li::marker{
+  content: "↠ ";
+  color: var(--oscuro);
+}
+
+.tecnologias, .informacion.idiomas ul{
+  text-align: center;
+}
+
+.tecnologias img{
+  max-width: 20%;
+  height: 2rem;
+}
+
+.informacion.idiomas ul{
+  width: 90%;
+}
+
+.informacion.idiomas li {
+  display: inline-block;
+  width: 45%;
+}
+
+.informacion.idiomas li:first-child {
+  margin-right: auto;
+}
+
+.informacion.idiomas li:last-child {
+  margin-left: auto;
+}
+
+.idiomas li span, .educacion li span, .experiencia li span{
+  font-weight: 700;
+}
+
