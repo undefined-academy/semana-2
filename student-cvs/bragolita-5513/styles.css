@@ -1,0 +1,76 @@
+/*body {
+    background: whitesmoke;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*
+p {
+    background-color: papayawhip;
+    color: #1778FF;
+}
+
+section {
+    background: mediumpurple;
+}
+
+div {
+    background: palegoldenrod;
+    padding: 16px 32px;
+    margin: 20px;
+    border: 8px solid orchid;
+}
+
+.abuelo {
+    border: 1px dotted black;
+}
+
+p + p {
+    color: tomato;
+}
+
+div.hermano > span {
+    color: green;
+}
+
+div > span {
+    font-weight: bold;
+}
+
+div ~ div {
+    color: teal
+}
+*/
+
+main {
+    width: 600px;
+}
+
+div {
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+.column {
+    display: inline-block;
+    width: calc(33.33% - 40px - 2px);
+}
+
+.Experiencia {
+    color: violet;
+}
+
+body {
+    max-width: 600px;
+    font-size: 14px;
+    margin: 0 auto;
+    border: 2px dashed tomato;
+    color: #333;    
+}
+
+p {
+    line-height: 1.1;
+}
+
+h1,h2 {
+    line-height: 1.5;
+}
