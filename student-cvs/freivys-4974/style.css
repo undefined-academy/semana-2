@@ -71,7 +71,7 @@ body {
 
 .Header-github {
   border: 1px solid var(--hoverColor);
-  border-radius: 290486px;
+  border-radius: 20px;
   color: var(--whiteColor);
   font-size: 0.6em;
   letter-spacing: 0.2em;
@@ -104,6 +104,95 @@ body {
   line-height: 1.7;
 }
 
+/* Form */
+.Form {
+  border: 2px solid var(--hoverColor);
+  border-radius: 10px;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.Form-group {
+  margin: 20px 0;
+}
+
+.Form-title,
+.Form-input,
+.Form-select,
+.Form-textarea {
+  color: var(--textColor);
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 8px 4px;
+  width: 100%;
+}
+
+.Form-title {
+  color: var(--subtitleColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Form-input:focus,
+.Form-select:focus,
+.Form-description:focus,
+.Form-textarea:focus {
+  border: 1px solid var(--hoverColor);
+  border-radius: 4px;
+  outline: 0 none;
+}
+
+.Form-select {
+  background: var(--whiteColor);
+}
+
+.Form-project {
+  font-size: 14px;
+}
+
+.Form-description {
+  display: block;
+  resize: vertical;
+  width: 100%;
+}
+
+.Form-textarea {
+  text-align: left;
+}
+
+.Form-help {
+  color: var(--textColor);
+  font-size: 10px;
+}
+
+.Form-btn {
+  text-align: center;
+}
+
+.Btn {
+  border: 1px solid var(--hoverColor);
+  border-radius: 8px;
+  background: none;
+  color: var(--subtitleColor);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 64px;
+}
+
+.Btn:hover {
+  background-color: var(--hoverColor);
+  color: var(--whiteColor);
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.Btn:active {
+  background-color: #9b0d31;
+}
+
+/* Footer */
 .Footer {
   margin: 40px auto 10px;
   padding: 5px 0;
