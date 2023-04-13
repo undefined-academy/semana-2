@@ -7,15 +7,6 @@ Versión: 1.0 - Actividad Semana 1 Clase 4
 */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
 
-html {
-    box-sizing: border-box;
-}
-
-* {
-    box-sizing: inherit;
-}
-
-
 body {
     margin: 0 auto;
     max-width: 50em;
@@ -26,6 +17,7 @@ body {
     padding: 0 4em 1em;
     background: #272626;
     color: #f5f5f5;
+    box-sizing: border-box;
 }
 
 h1,h2,h3 {
@@ -198,22 +190,3 @@ button:active {
     background-color: #ca8a04;
     box-shadow: -1px -1px 0 rgba (0,0,0,.5);
 }
-
-/* Propiedades CSS Nuevas 2023 */
-
-form {
-    accent-color: #930c0c;
-}
-
-/** Cambia el color del texto dentro del input al estar ENFOCADO */
-input:focus-within, 
-textarea::placeholder:focus-visible {
-    color: #f08f39;
-}
-
-input:focus-visible,
-textarea:focus-visible {
-    border: 1px solid #f08f39;
-    outline: 2px solid #f08f39;
-}
-
