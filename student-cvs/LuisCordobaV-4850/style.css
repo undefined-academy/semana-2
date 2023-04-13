@@ -1,8 +1,3 @@
-section {
-    
-
-}
-
 header {
     background-image: url("img/tecnology.jpg");
     background-position: center top;
@@ -12,12 +7,11 @@ header {
     padding: 3vw 1em;
     text-align: center;
 }
+
 header h1{
     color: lightgoldenrodyellow;
     font-size: 50px;
 }
-
-
 
 .texto-comando p {
     border: 1px solid black;
@@ -25,7 +19,7 @@ header h1{
     text-align: center;
     width: 100%;
     border-radius: 5px;
-    
+
 }
 
 body {
@@ -56,13 +50,19 @@ ol {
     
 }
 
-a {
+header a {
     color: lawngreen;
     text-decoration-line: none;
 }
-.about a {
+a {
     color: darkblue;
-    text-decoration-line: none;
+    
+}
+.contact{
+    box-sizing: border-box;
+    text-align: right;
+    
+
 }
 .imagenes{
     height: 250px;
@@ -81,12 +81,18 @@ a {
      
 }
 table{
-        text-align: left;
-        border-collapse: collapse;
+    
+    width: 100%;
+    text-align: center  ;
+    border-collapse: collapse;
+    
+       
 }
 div thead{
     background: palegoldenrod;
    font-weight: 900;
+   font-weight: bold;
+   color: black;
 }
 th, td{
     border: 1px black solid;
@@ -101,4 +107,54 @@ footer div p{
     border-top: 0;
     margin: 0;
 
+}
+.form-group,h1{
+    
+    box-sizing: border-box;
+    padding: 4px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+     
+}
+.form-group input:not( [type="radio"],[type="checkbox"]){
+width: 100%;
+}
+.form-group span{
+    font-size:x-small;
+
+}
+textarea{
+    display: block;
+    width: 100%;
+    border:1px solid #7e7b7b;
+    border-radius: 4px;
+}
+input{
+    padding: 8px;
+    border:1px solid #7e7b7b;
+    border-radius: 4px;
+}
+label, input{
+    vertical-align: middle;
+}
+button{
+   
+    padding: 16px 60px;
+    text-transform: uppercase;
+    border: 1px solid #713f12;
+    font-weight: bold;
+    background: #eab308;
+    border-radius: 8px;
+    text-shadow: -1px -1px 0 rgb(203, 234, 245);
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+button:hover{
+    background: #facc15;
+}
+button:active{
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 black;
 }
