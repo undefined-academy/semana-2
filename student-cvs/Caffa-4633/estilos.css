@@ -1,6 +1,8 @@
 /*
 Hoja de Estilos Perfil de GitHub
 
+Version: 3.0 - Responsive Semana 3, Clase 2.
+
 Version: 2.0 - Actividad Semana 2 Clase 4
 
 Versión: 1.0 - Actividad Semana 1 Clase 4
@@ -60,10 +62,11 @@ header {
     width: 100%;
     height:250px;
     background-size: cover;
+    display: flex;
 }
 
 header h1 {
-    padding: 190px 0 0 50px;
+    padding: 150px 0 0 50px;
     margin-bottom: 0px;
 }
 
@@ -167,6 +170,10 @@ textarea + div, .help, .cancel {
 
 .cancel a {
     color: #c0bebe;
+}
+
+.strike {
+    text-decoration: line-through;
 }
 
 button {
