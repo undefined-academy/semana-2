@@ -4,37 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
     <title>DivPanda</title>
-    <link rel="stylesheet" href="/semana-2/student-cvs/TeamPanda-5141/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1531/1531344.png" type="image/x-icon">
 </head>
 
-<body style="background-image: url(/semana-2/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg)">
+<body>
     <article id="hoja-de-vida">
         <header id="header">
-            <h1 style="background-image: url()">Hola 👋🏻, mi nombre es</h1>
+            <h1>Hola 👋🏻, mi nombre es</h1>
             <section class="mi-nombre">
-                <span style="--i:1">G</span>
-                <span style="--i:2">U</span>
-                <span style="--i:3">I</span>
-                <span style="--i:4">L</span>
-                <span style="--i:5">L</span>
-                <span style="--i:6">E</span>
-                <span style="--i:7">R</span>
-                <span style="--i:8">M</span>
-                <span style="--i:9">O</span>
-                <span style="--i:10"></span>
-                <!-- <br> -->
-                <span style="--i:11">B</span>
-                <span style="--i:12">E</span>
-                <span style="--i:13">L</span>
-                <span style="--i:14">L</span>
-                <span style="--i:15">O</span>
+                <p id="p-mi-nombre">
+                    <span style="--i:1">G</span>
+                    <span style="--i:2">U</span>
+                    <span style="--i:3">I</span>
+                    <span style="--i:4">L</span>
+                    <span style="--i:5">L</span>
+                    <span style="--i:6">E</span>
+                    <span style="--i:7">R</span>
+                    <span style="--i:8">M</span>
+                    <span style="--i:9">O</span>
+                    <span style="--i:10"></span>
+                    <br>
+                    <span style="--i:11">B</span>
+                    <span style="--i:12">E</span>
+                    <span style="--i:13">L</span>
+                    <span style="--i:14">L</span>
+                    <span style="--i:15">O</span>
+                </p>
+
             </section>
         </header>
         <hr>
-        <main id="prueba">
+        <main id="main-content">
             <section id="introduccion">
 
                 <header>
@@ -61,15 +64,15 @@
                 </header>
                 <p>Antes de este Bootcamp, estudié por mi cuenta y en plataformas como:</p>
                 <section class="botones">
-                    <div>
-                        <a id="boton-platzi" href="https://platzi.com/" title="https://platzi.com/"
-                            style="background-image: url(/semana-2/student-cvs/TeamPanda-5141/img/platzi-logo.png);">Platzi</a>
-                    </div>
+                    <div class="container-botones-article">
+                        <div>
+                            <a id="boton-platzi" href="https://platzi.com/" title="https://platzi.com/">Platzi</a>
+                        </div>
 
-                    <div>
-                        <a id="boton-freecodecamp" href="https://www.freecodecamp.org/"
-                            title="https://www.freecodecamp.org/"
-                            style="background-image: url(/semana-2/student-cvs/TeamPanda-5141/img/freecodecamp-logo.png);">Freecodecamp</a>
+                        <div>
+                            <a id="boton-freecodecamp" href="https://www.freecodecamp.org/"
+                                title="https://www.freecodecamp.org/">Freecodecamp</a>
+                        </div>
                     </div>
                 </section>
                 <p>Donde obtuve conocimientos en:</p>
@@ -107,17 +110,18 @@
             <hr>
             <section id="encuéntrame">
                 <h2>Encuéntrame 🔎</h2>
-                <div class="botones">
-                    <a id="boton-github" href="https://github.com/DivPanda" style="background-image: url(/semana-2/student-cvs/TeamPanda-5141/img/github-logo-dark.png)">Github</a>
-                </div>
-                <div class="botones">
-                    <a id="boton-contáctame" href="/semana-2/student-cvs/TeamPanda-5141/form-contact.html">Contáctame 📲</a>
+                <div class="container-botones-article">
+                    <div class="botones">
+                        <a id="boton-github" href="https://github.com/DivPanda">Github</a>
+                    </div>
+                    <div class="botones">
+                        <a id="boton-contáctame" href="/form-contact.html">Contáctame 📲</a>
+                    </div>
                 </div>
             </section>
-                <hr>
     </article>
     </main>
-    <footer>
+    <footer class="footer-body">
         <p>© 2023 Guillermo Bello</p>
     </footer>
 </body>

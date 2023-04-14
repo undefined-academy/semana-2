@@ -9,10 +9,23 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    min-width: 425px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
+    text-align: justify;
+}
+
 #header {
     border: 2px solid azure;
     border-radius: 7px;
-    background-image: url("/semana-2/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
+    text-align: center;
 }
 
 .mi-nombre {
@@ -20,6 +33,10 @@ html {
     -webkit-text-stroke: 1px #008b8b7d;
     padding: 0 20px;
     font-size: 33px;
+}
+
+#p-mi-nombre {
+    margin: 15px 0px;
 }
 
 .waviy {
@@ -59,34 +76,21 @@ code {
     vertical-align: text-bottom;
 }
 
-body {
-    margin: 0 auto;
-    max-width: 60em;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    padding: 2em 1em;
+
+
+ul {
+    padding-left: 30px;
 }
 
 #hoja-de-vida {
     background-color: rgba(53 51 51 / 0.36);
-    margin: 0 auto;
-    padding: 5px;
     border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Helvetica", "Arial", sans-serif;
-}
-
-h1 {
-    padding-left: 20px;
-    padding-right: 20px;
-    /* aquí puede meterse una fotish */
-    background-repeat: no-repeat;
-    background-position: 509px;
-    background-size: 75px;
+    text-align: center;
 }
 
 #introduccion,
@@ -95,18 +99,19 @@ h1 {
 #hobbies-intereses,
 #encuéntrame {
     border: 2px solid azure;
-    margin: 0 auto;
     padding: 13px;
     border-radius: 7px;
 }
 
 #resaltable {
     font-size: 18px;
-    background-image: url("/semana-2/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
     border-radius: 10px;
     display: flex;
     justify-content: center;
     border: 2px solid azure;
+    padding: 15px;
+    text-align: center;
 }
 
 .bold {
@@ -115,16 +120,24 @@ h1 {
 
 #encuéntrame {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    background-image: url("/semana-2/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
 }
 
 .botones {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.container-botones-article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 #boton-platzi {
     display: flex;
@@ -141,6 +154,7 @@ h1 {
     border: 2px solid azure;
     text-decoration: none;
     background-repeat: no-repeat;
+    background-image: url("/img/platzi-logo.png");
     background-position: 9px;
     background-size: 25px;
 }
@@ -162,6 +176,7 @@ h1 {
     background-color: transparent;
     border: 2px solid azure;
     text-decoration: none;
+    background-image: url("/img/freecodecamp-logo.png");
     background-repeat: no-repeat;
     background-position: 9px;
     background-size: 25px;
@@ -186,6 +201,7 @@ h1 {
     background-color: transparent;
     border: 2px solid azure;
     text-decoration: none;
+    background-image: url("/img/github-logo-dark.png");
     background-repeat: no-repeat;
     background-position: 9px;
     background-size: 25px;
@@ -213,19 +229,35 @@ h1 {
     background-color: #575353be;
 }
 
-#prueba {
-    padding-left: 30wv;
-    padding-right: 30wv;
-    padding-top: 50hv;
-    padding-bottom: 50wv;
+.footer-body {
+    text-align: center;
+    opacity: .9;
 }
 
-@media (width: 320px) {
-    #mi-nombre {
-        padding: 0px 8px;
-        font-size: 25px;
+@media screen and (min-width: 800px) {
+    body {
+        max-width: 1100px;
     }
+
+    br {
+        display: none;
+    }
+
+    #introduccion,
+    #experiencia-previa,
+    #hobbies-intereses,
+    #encuéntrame {
+        text-align: justify;
+        padding: 8px 2em 20px 2em;
+    }
+
+    #hobbies-intereses {
+        padding: 0 4em;
+    }
+
     #resaltable {
-        padding: 0 12px;
+        font-size: 20px;
+        padding: 0;
     }
+
 }
