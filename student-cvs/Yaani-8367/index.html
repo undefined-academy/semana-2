@@ -11,18 +11,22 @@
     <title>Yanina Unrein</title>
 </head>
 <body>
-    <head>
-        <nav>
-            <h1>Yanina Unrein</h1>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="#Studies">Estudios</a></li>
-                <li><a class="nav-link" href="#Technologies">Tecnologías</a></li>
-                <li><a class="nav-link" href="#Contact">Contáctame</a></li>
-            </ul>
-        
+    <header class="main-header" >
+        <h1><a class="main-logo" href="#" >Yanina Unrein </a></h1>
+        <nav id="nav" class="main-nav" >
+          <div class="nav-links" >
+            <a class="link-item" href="./index.html" >Home</a>
+            <a class="link-item" href="#studies" >Estudios</a>
+            <a class="link-item" href="#technologies" >Tecnologías</a>
+            <a class="link-item" href="./contacto.html" >Contáctame</a>
+          </div>
         </nav>
-    </head>
+        <button id="button-menu" class="button-menu" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </header>
     <main>
         <article>
             <section class="section-info">
@@ -33,7 +37,7 @@
                 </div>
                 
              </section>
-             <section id="Studies" class="section-studies">
+             <section id="studies" class="section-studies">
                 <div>
                     <h3 class="title-studies">📚 Estudios</h3>
                     <p class="description-studies">Me encuentro cursando segundo año de la Tecnicatura en Desarrollo Web y Aplicaciones Digitales en el Instituto Superior Politécnico de Córdoba y primer año en la Tecnicatura en Desarrollo Web en la Universidad de Entre Ríos, ambas a distancia.</p>
@@ -47,7 +51,7 @@
                     </ul>
                 </div>   
             </section>
-            <section id="Technologies" class="section-technologies">
+            <section id="technologies" class="section-technologies">
                 <h3 class="title-item">🚀 Tecnologías</h3>
             <ul>
                 <li><img class="icon-technologies" src="./assets/html-5.png" alt="HTML5"></li>
@@ -60,25 +64,34 @@
                 <li><img class="icon-technologies" src="./assets/wordpress.png" alt="wordpress"></li>
                 <li><img class="icon-technologies" src="./assets/git.png" alt="git"></li>
                 <li><img class="icon-technologies" src="./assets/github.png" alt="github"></li>
-
             </ul>
             </section>
         </article>
-    </main>
+    </main> 
+    <section id="contact" class="footer-form">  
+        <h2 class="section-header">CONTÁCTAME</h2>        
+        
+    </section>
     <footer>
-        <ul class="social-icon" id="Contact">
-            <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Yanina-Unrein">
-                <ion-icon name="logo-github"></ion-icon>
-              </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="mailto:unrein.syanina@gmail.com?">
-                <ion-icon name="mail-outline"></ion-icon>
-              </a></li>
-          </ul>
-          <p class="footer-text">&copy;2023 Yanina Unrein | All Rights Reserved</p>
+        <section class="icon-footer">
+            <div class="icon_link location">
+                <ion-icon name="location-outline"></ion-icon>
+                <span class="span-location">Buenos Aires, Argentina</span>
+            </div> 
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Yanina-Unrein">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="mailto:unrein.syanina@gmail.com?">
+                    <ion-icon name="logo-google"></ion-icon>
+                  </a></li>
+              </ul>
+        </section>     
+        <p class="footer-text">&copy;2023 Yanina Unrein | All Rights Reserved</p>
     </footer>
     
     
-   
+    <script src="./index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
