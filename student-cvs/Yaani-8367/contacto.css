@@ -162,3 +162,11 @@ form .form-row .textarea{
       width: 40%;
     }
 }
+
+@media (min-width: 1254px){
+    footer{
+        position:fixed;
+        left:0px;
+        bottom:0px;
+    }
+}
