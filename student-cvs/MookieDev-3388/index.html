@@ -60,20 +60,21 @@
         <section>
             <h1>Contact Me:</h1>
             <article>
+                <div>
                 <form action="">
-                    <div>
+                    <div class="input-form">
                         <label for="name">Complete name: </label>
                         <input type="text" name="name" id="name" required placeholder="enter your full name">
                     </div>
-                    <div>
+                    <div class="input-form">
                         <label for="email">Email: </label>
                         <input type="email" name="email" id="email" required placeholder="user123@outlook.com">
                     </div>
-                    <div>
+                    <div class="input-form">
                         <label for="phoneNumber">Phone number: </label>
                         <input type="number" name="phoneNumber" id="phoneNumber" required placeholder="3454780938">
                     </div>
-                    <div>
+                    <div class="input-form">
                         <label for="project">Project type: </label>
                         <select name="project" id="project">
                             <option value="0" selected disabled>Select one</option>
@@ -82,15 +83,20 @@
                             <option value="3">API</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="input-form">
                         <label for="description">Description: </label>
-                        <textarea name="description" id="description" cols="30" rows="10" required placeholder="Describe your idea over the project"></textarea>
+                        <textarea name="description" id="description" cols="50" rows="10" required placeholder="Describe your idea over the project"></textarea>
                     </div>
-                    <button>Send </button>
+                    <div class="input-form">
+                        <label for="terms">
+                        <input type="checkbox" name="terms" id="terms" required></input>
+                        <span>I accept the terms and conditions</span>
+                    </label>
+                    </div>
+                    <div class="buttons">
+                    <button>Send</button>
+                    </div>
                 </form>
-            </article>
-        </section>
-    </article>
 
 <footer>
     <section class="aboutMe">

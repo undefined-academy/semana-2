@@ -68,13 +68,55 @@ html{
    ul{
     text-align: center;
     font-size: 30px;
-     font-family: "Century Gothic", sans-serif;
-     margin-top: 0;
+    font-family: "Century Gothic", sans-serif;
+    margin-top: 0;
    }
 
    figcaption{
     font-family: "Century Gothic", sans-serif;
    }
+
+   label {
+    display: inline-block;
+    width: 30%;
+    padding-right: 10px;
+  }
+
+  input:not([type="checkbox"]) {
+    display: inline-block;
+    width: 65%;
+    height: 30px;
+    font-family: "Century Gothic", sans-serif;
+  }
+
+  input[type="number"]{
+    -moz-appearance: textfield; 
+    -webkit-appearance: textfield;
+    appearance: textfield;
+  }
+
+  select {
+    width: 50%;
+    height: 30px;
+  }
+
+  textarea{
+    resize: none;
+    width: 100%;
+  }
+
+  span{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 11px;
+  }
+
+  button{
+    width: 20%;
+    height: 30px;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bolder;
+    margin: auto;
+  }
    
    .image-div{
      display: flex;
@@ -104,4 +146,15 @@ html{
      text-align: center;
      font-size: 25px;
      font-weight:400px;
+   }
+
+   .input-form{
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 20px 0;
+   }
+
+   .buttons{
+    margin: 20px 0;
    }
