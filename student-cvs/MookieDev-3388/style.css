@@ -111,11 +111,27 @@ html{
   }
 
   button{
-    width: 20%;
-    height: 30px;
+   padding: 16px 80px;
+   text-transform: uppercase;
+   border: 1px solid #fde047;
+   background-color: #f59e0b;
+   color: #333;
+   text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+   border-radius: 15px;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-family: "Century Gothic", sans-serif;
     font-weight: bolder;
     margin: auto;
+  }
+
+  button:hover{
+    background: #facc15;
+  }
+
+  button:active{
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
   }
    
    .image-div{
@@ -157,4 +173,5 @@ html{
 
    .buttons{
     margin: 20px 0;
+    align-items: center;
    }
