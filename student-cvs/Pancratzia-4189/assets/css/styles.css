@@ -230,11 +230,13 @@ ul {
 	width: 45%;
 }
 
-input[type='text'], [type='email'],[type='tel'], textarea {
+
+.form-group input, .form-group textarea {
 	background: none;
   border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
+  font-family: inherit;
+	border-bottom: solid 2px var(--oscuro);
+	color: var(--oscuro);
 	font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1px;
