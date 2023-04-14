@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laura Ortega - Desarrolladora FullStack</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       <!--aside header-->
       <header class="aside-header">
         <h1>Laura Ortega <br> <span>Desarrolladora Full Stack</span></h1>
-        <img src="imgs/cvpic.jpg" alt="Foto de Perfil de Laura Ortega">
+        <img src="assets/imgs/cvpic.jpg" alt="Foto de Perfil de Laura Ortega">
       </header>
       <!--fin aside header-->
 
@@ -48,6 +48,7 @@
   </aside>
   <!--FIN ASIDE IZQUIERDO-->
 
+  <!--MAIN-->
   <main class="main">
 
     <div class="contenedor-main">
@@ -65,7 +66,6 @@
       <!--FIN SECCIÓN SOBRE MÍ-->
 
       <!--SECCIÓN EDUCACIÓN Y EXPERIENCIA-->
-
       <section class="informacion">
         <article class="educacion">
           <h2>Educacion</h2>
@@ -85,7 +85,6 @@
         </article>
 
       </section>
-
       <!--FIN SECCIÓN EDUCACIÓN Y EXPERIENCIA-->
 
 
@@ -140,7 +139,6 @@
       <!--FIN SECCIÓN TECNOLOGÍAS-->
 
       <!--SECCIÓN IDIOMAS-->
-
       <section class="informacion idiomas">
         <h2>Idiomas</h2>
         <ul>
@@ -148,16 +146,58 @@
           <li><span>Inglés</span>: Avanzado</li>
         </ul>
       </section>
-
       <!--FIN SECCIÓN IDIOMAS-->
 
+      <!--SECCIÓN FORM-->
+      <section class="informacion">
+
+        <div class="contenedor-formulario">
+
+          <h2>&bull; Contáctame &bull;</h2>
+          <div class="linea"></div>
+          
+          <form action="#" class="form">
+
+            <div class="form-group nombre">
+              <label for="nombre"></label>
+              <input type="text" placeholder="Nombre..." name="nombre" id="nombre" required>
+            </div>
+
+            <div class="form-group email">
+              <label for="email"></label>
+              <input type="email" placeholder="Correo..." name="email" id="email_input" required>
+            </div>
+
+            <div class="form-group telefono">
+              <label for="telefono"></label>
+              <input type="text" placeholder="Teléfono..." name="telefono" id="telefono" required>
+            </div>
+
+            <div class="form-group mensaje">
+              <label for="mensaje"></label>
+              <textarea name="mensaje" placeholder="Escribe tu mensaje..." id="mensaje" cols="30" rows="5" required></textarea>
+            </div>
+
+            <div class="botones">
+              <input type="reset" value="Limpiar" class="form-btn">
+              <input type="submit" value="Enviar" class="form-btn">
+            </div>
+
+          </form>
+
+        </div>
+
+      </section>
+      <!--FIN SECCIÓN FORM-->
 
     </div>
 
   </main>
+  <!--FIN DE MAIN-->
 
 
-  <!--FIN DE COMANDOS Y ALIAS-->
+  <script src="assets/js/scripts.js"></script>
+
 </body>
 
 </html>

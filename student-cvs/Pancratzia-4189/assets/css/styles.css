@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Helvetica);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --primario: #d5b4b4;
@@ -22,7 +22,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.25;
   background: var(--primario);
   background: linear-gradient(
@@ -54,6 +54,7 @@ a {
 ul {
   text-align: justify;
 }
+
 
 /*ASIDE*/
 
@@ -199,4 +200,104 @@ ul {
 .idiomas li span, .educacion li span, .experiencia li span{
   font-weight: 700;
 }
+
+/*Formulario*/
+
+.contenedor-formulario {
+  border: solid 3px var(--oscuro);
+  max-width: 90%;
+  margin: 30px auto;
+  position: relative;
+  padding: 30px;
+}
+
+.contenedor-formulario h2{
+  letter-spacing: .5rem;
+}
+
+.contenedor-formulario .linea{
+  border-bottom: solid 2px var(--oscuro);
+  margin: -0.5rem auto;
+  width: 6rem;
+}
+
+.form{
+  margin-top: 5rem;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+textarea{
+  resize: vertical;
+  min-height: 1.5rem;
+}
+
+.mensaje {
+	float: none;
+}
+
+.nombre {
+	float: left;
+	width: 45%;
+}
+
+.botones{
+  text-align: right;
+}
+
+.form-btn {
+  padding: 15px 25px;
+  background: none;
+  border: solid 2px var(--oscuro);
+  color: var(--oscuro);
+  cursor: pointer;
+  display: inline-block;
+  font-family:  inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+	transition: all 0.5s ease-in-out;
+  
+}
+
+.form-btn:hover {
+  background: var(--oscuro);
+  color: var(--blanco);
+}
+
+
 
