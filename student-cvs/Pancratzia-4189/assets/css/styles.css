@@ -230,7 +230,7 @@ ul {
 	width: 45%;
 }
 
-input[type='text'], [type='email'], textarea {
+input[type='text'], [type='email'],[type='tel'], textarea {
 	background: none;
   border: none;
 	border-bottom: solid 2px #474544;
@@ -254,7 +254,7 @@ input[type='text'], [type='email'], textarea {
 	transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
+input[type='text']:focus, [type='email']:focus, [type='tel']:focus, textarea:focus {
 	outline: none;
 	padding: 0 0 0.875em 0;
 }
