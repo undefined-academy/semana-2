@@ -11,14 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Hoja de vida</title>
   </head>
   <body>
     <main>
       <footer>
         <form class="ttal" action="/server" method="get">
           <h1>Contacto</h1>
-          <img src="/images/fantasma.png" alt="fantastma con grid" />
+          <img src="./images/fantasma.png" alt="fantastma con grid" />
           <section class="head">
             <label class="contact" for="name">
               Nombre
@@ -55,25 +55,28 @@
           <section class="range">
             <fieldset>
               <legend>Rango De Edad</legend>
-              <input type="radio" id="age_1_to_20" /><label
+              <input type="radio" id="age_1_to_20" name="edad" required /><label
                 for="age_1_to_20"
                 class="radio"
               >
                 1 A 20</label
               >
-              <input type="radio" id="age_20_to_30" /><label
-                for="age_20_to_30"
+              <input
+                type="radio"
+                id="age_20_to_30"
+                name="edad"
+                required
+              /><label for="age_20_to_30" class="radio"> 20 A 30</label>
+              <input
+                type="radio"
+                id="age_40_to_50"
+                name="edad"
+                required
+              /><label for="age_40_to_50" class="radio"> 40 A 50</label>
+              <input type="radio" id="rest" name="edad" required /><label
                 class="radio"
+                for="rest"
               >
-                20 A 30</label
-              >
-              <input type="radio" id="age_40_to_50" /><label
-                for="age_40_to_50"
-                class="radio"
-              >
-                40 A 50</label
-              >
-              <input type="radio" id="rest" /><label class="radio" for="rest">
                 50 En Adelante</label
               >
             </fieldset>
@@ -108,5 +111,6 @@
         </form>
       </footer>
     </main>
+    <script src="/main.mjs"></script>
   </body>
 </html>
