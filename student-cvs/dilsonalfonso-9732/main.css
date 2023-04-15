@@ -1,32 +1,35 @@
 body {
-    background:rgb(167, 242, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    color: #292929;
-    margin: 0 auto;
-    line-height: 1.5;
+  background:rgba(var(--color4),0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--color7));
+  margin: 0 auto;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
 }
 main {
-    margin: 0 auto;
-    max-width: 50em;
-    padding: 1em;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 1em;
 }
 h1, h2, h3, h4, h5, h6 {
-    color:rgb(255, 255, 255);
-    text-shadow:2px 2px 4px #000;
-    margin-top: 1em;
-    padding-top: 1em;
+  color:rgb(var(--color1));
+  text-shadow:1px 1px 2px rgb(var(--color7));
+  margin-top: 1em;
+  padding-top: 1em;
 }
 p{
-    text-align: justify;
+  text-align: justify;
 }
 .myCenter{
-    text-align: center;
+  text-align: center;
 }
-code,
-pre {
-    background: #f5f7f9;
-    border-bottom: 1px solid #d8dee9;
-    color: #a7adba;
+code, pre {
+  background: rgb(var(--color9));
+  border-bottom: 1px solid rgb(var(--color8));
+  color: rgb(var(--color8));
 }
 
 code {
@@ -36,27 +39,81 @@ code {
 
 pre {
   padding: 1em;
-  border-left: 2px solid #69c;
+  border-left: 2px solid rgb(0, 97, 194);
 }
 a{
-    color: #0074c2;
+  color: rgb(var(--color2));
 }
 .headerPal {
-    background-color: #263d36;
-    background-image: url("header.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 1.2;
-    padding: 10vw 2em;
-    text-align: center;
-  }
-  header img {
-    display: inline-block;
-    height: 120px;
-    vertical-align: top;
-    width: 120px;
-  }
-  footer p{
-    text-align: center;
+  background-color: #263d36;
+  background-image: url("header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+.form-block{
+  /*border: 1px solid rgb(var(--color5));*/
+}
+input, textarea, select{
+  padding: 5px;
+  border: 1px solid rgb(var(--color3));
+  border-radius: 5px;
+}
+label, fieldset{
+  font-weight: bold;
+}
+textarea{
+  resize: vertical;
+}
+label, input:not([type="checkbox"]), textarea, fieldset{
+  font-size: 14px;
+  display: block;
+  width: 100%;
+}
+button{
+  background: rgb(var(--color5));
+  padding: 12px 50px;
+  color: rgb(var(--color7));
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid rgb(var(--color6));
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  box-shadow: 2px 2px 3px rgb(var(--color7));
+  cursor: pointer;
+}
+button:hover{
+  background: rgba(var(--color5), 0.8);
+}
+button:active{
+  box-shadow: -1px -1px 3px rgb(var(--color7));
+  background: rgb(var(--color3));
+}
+footer p{
+  text-align: center;
+}
+:root {
+  --color1: 4, 109, 139;        --color1view: rgb(4, 109, 139);
+  --color2: 48, 146, 146;       --color2view: rgb(48, 146, 146);
+  --color3: 47, 184, 172;       --color3view: rgb(47, 184, 172);
+  --color4: 196, 228, 226;       --color4view: rgb(196, 228, 226);
+  --color5: 184, 210, 15;       --color5view: rgb(184, 210, 15);
+  --color6: 0, 0, 0;            --color6view: rgb(0, 0, 0);
+  --color7: 63, 63, 63;         --color7view: rgb(63, 63, 63);
+  --color8: 127, 127, 127;      --color8view: rgb(127, 127, 127);
+  --color9: 232, 232, 232;      --color9view: rgb(232, 232, 232);
+  --color10: 255, 255, 255;     --color10view: rgb(255, 255, 255);
+  --color11: 34, 169, 37;       --color11view: rgb(34, 169, 37);
+  --color12: 169, 42, 42;       --color12view: rgb(169, 42, 42);
 }

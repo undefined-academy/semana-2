@@ -60,12 +60,53 @@
                 <a href="https://github.com/dilsonalfonso/" target="_blank">GitHub</a>
             </footer>
         </article>
+        <section>
+            <h2>Contáctame</h2>
+            <form action="" method="get">
+                <div class="form-block">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="form-block">
+                    <label for="lastname">Apellido</label>
+                    <input id="lastname" name="lastname" type="text" placeholder="Escribe tu Apellido" required>
+                </div>
+                <div class="form-block">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="ejemplo@server.com" required>
+                </div>
+                <div class="form-block">
+                    <label for="phone">Teléfono</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Número telefónico" required>
+                </div>
+                <div class="form-block">
+                    <fieldset>
+                        <legend for="project">Tipo de Proyecto</legend>
+                        <select name="project" id="project" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="web">Web</option>
+                            <option value="webapp">WebApp</option>
+                            <option value="ecommerce">eCommerce</option>
+                            <option value="medida">Projecto a Medida</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="form-block">
+                    <label for="description">Descripción</label>
+                    <textarea id="description" name="description" placeholder="Descripción del proyecto" rows="7" required></textarea>
+                </div>
+                <div class="form-block">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>Acépto los términos y condiciones.</span>
+                    </label>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>Copyright &copy; DilsonAlfonso</p>
     </footer>
 </body>
 </html>
-
-
-
