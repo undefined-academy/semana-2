@@ -52,3 +52,51 @@ a {
   article {
     display: inline-block;
   }
+
+  .menu {
+    position: relative;
+  }
+  .menu li {
+    display: inline;
+  }
+
+  .menu li a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  .page-contact {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  .form-group input, fieldset, textarea {
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid #666666;
+    background-color: #ffffff;
+  }
+  .form-group input:not([type="radio"]):not([type="checkbox"]), textarea {
+    width: 96%;
+  }
+  ::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b3b3b3;
+  }
+  button {
+    text-transform: uppercase;
+    padding: 4px 8px;
+    font-weight: bold;
+    background-color: #2563eb;
+    color: #f2f2f2;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #1d4ed8;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #1d4ed8;
+  }
+
