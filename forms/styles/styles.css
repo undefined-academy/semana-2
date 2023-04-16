@@ -1,0 +1,115 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url(../assets/fondo.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+
+.page {
+    max-width: 50%;
+    margin: 100px auto;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: rgba( 0,0,0, 0.6);
+    box-shadow: 1px 1px 3px rgba( 0,0,0, 0.5);
+}
+
+.form-group{
+    margin: 20px 0;
+}
+
+h1 {
+    color: #fff;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+label, input[type="text"], input[type="email"] {
+    width: 100%;    
+}
+
+input[type="text"], input[type="email"]{
+    background-color: #fff;   
+    border: 1px solid lightslategray;
+    border-radius: 6px;
+    padding: 8px 10px;
+    width: 97%;
+}
+
+input{
+    vertical-align: middle;
+}
+
+textarea{
+    width: 99%;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+textarea + div {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px ;
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;    
+}
+
+legend{
+    color: #fff;
+}
+
+.button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: rgb(4, 48, 48);
+    text-shadow: -1px -1px 0 #8b8b8b;
+    color: white;
+    box-shadow: 1px 1px 3px rgba( 0,0,0, 0.5);
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.button:hover{
+    transition: 0.5s;
+    background-color: rgb(9, 110, 110);
+}
+
+.button:active {
+    background-color: rgb(4, 48, 48);
+    
+}
+
+.center{
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#type{
+    padding: 13px ;
+    border-radius: 6px;
+    width: 100%;
+}
