@@ -160,9 +160,10 @@ form {
 
 .botones {
     display: flex;
-    flex-direction: row;
-    gap: 12px;
+    flex-direction: column;
+    gap: 10px;
     justify-content: end;
+    margin: 40px 0 20px;
 }
 
 .form form .botones .enviar, .cancelar {
@@ -173,6 +174,7 @@ form {
     background-color: rgba(136,108,228, 0.8);
     color: #d1d1d1;
     box-shadow: 1px 1px 4px black;
+    width: 100%;
 }
 .form form .botones .cancelar {
     background-color: #424242;
