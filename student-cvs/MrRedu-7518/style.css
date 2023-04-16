@@ -154,6 +154,31 @@ tbody tr td:first-child {
 table a {
     text-decoration: none;
 }
+
+.contact {
+    /* border: 2px dashed tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/* .contact h4 {
+
+} */
+.contact h4 a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(49,49,49);
+    border-radius: 10px;
+    color: rgb(151, 151, 151);
+    box-shadow: 0 0 5px rgba(136,108,228, 0.3);
+
+}
+.contact h4:hover a {
+    color: #d1d1d1;
+    box-shadow: 0 0 5px rgba(136,108,228, 0.6);
+}
+
+
 .footer-container .banner-footer {
     width: 50em;
     height: 200px;
