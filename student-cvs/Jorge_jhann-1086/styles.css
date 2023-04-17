@@ -1,0 +1,85 @@
+body{
+  background-color: #e7eaf6;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+nav, footer{
+  background-color: #113f67;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul{
+  margin: 10px;
+  padding: 0;
+  list-style: none; /* quita las viñetas*/
+  text-align: end;
+}
+nav ul li{
+  display: inline-block; /* pone los elemntos en bloque (horizontalmente -) */
+  margin-right: 30px; /* margen entre cada elemento */
+  
+}
+nav ul li a{
+  color: #fff; /*Color del texto*/
+  text-decoration: none;
+  padding: 5px 10px;
+}
+h1{
+  font-size: 25px;
+}
+.hv{
+  background-color: #a2a8d3;
+  padding: 10px;
+}
+img{
+  border-radius: 50%; 
+  width: 200px;
+  height: 200px;
+
+}
+section {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333;
+}
+h1{
+  font-size: 32px;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+
+}
+
+h2{
+  font-size: 28px;
+  font-weight: bold;
+  
+  
+}
+h3{
+  font-size: 20px;
+  font-weight: lighter;
+  font-weight: bold;
+}
+footer ul{
+  margin: 0;
+  padding: 0;
+  list-style: none; /* quita las viñetas*/
+  text-align: center;
+}
+footer ul li{
+  display: inline-block; /* pone los elemntos en bloque (horizontalmente -) */
+  margin-right: 10px; /* margen entre cada elemento */
+  
+}
+footer ul li a{
+  color: #fff; /*Color del texto*/
+  text-decoration: none;
+  padding: 5px 10px;
+  
+}
+.derechos{
+  text-align: center;
+}
+
