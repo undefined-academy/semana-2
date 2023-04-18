@@ -12,7 +12,6 @@ header.main {
     background-image: url("img/header-page.jpg");
     image-rendering: pixelated;
     background-position: center top;
-    background-repeat: no-repeat;
     background-size: 100%;
     border-bottom-style: solid;
     border-bottom-width: 3px;
@@ -124,4 +123,8 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-weight: 18px;
+}
+
+@media screen and max {
+    
 }

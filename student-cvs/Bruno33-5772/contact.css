@@ -11,7 +11,6 @@ html {
 header.main {
     background-image: url("img/header-page.jpg");
     background-position: center top;
-    background-repeat: no-repeat;
     background-size: 100%;
     border-bottom-style: solid;
     border-bottom-width: 3px;
@@ -75,6 +74,16 @@ nav a {
 
 .work {
     display: none;
+}
+
+.work-item {
+    display: block;
+}
+
+@media screen and (min-width:992px) {
+    .work-item {
+        display: inline;
+    }
 }
 
 .form-group {
