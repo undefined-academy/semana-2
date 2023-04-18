@@ -116,6 +116,9 @@ form {
     color: rgb(144, 129, 194);
     text-shadow: 0 0 10px black;
 }
+.form-content input[type="radio"], input[type="checkbox"]{
+    accent-color: rgb(136,108,228);
+}
 .form-content .opciones .opcion input[type="radio"]:checked + label {
     color: rgb(136,108,228);
     text-shadow: 0 0 10px black;
