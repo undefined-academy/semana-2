@@ -14,15 +14,15 @@
         <h1>Mi perfil</h1>
         <nav>
             <ul>
-                <li><a href="#">Quien soy</a></li>
-                <li><a href="#">Hoja de vida</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#quien-soy">Quien soy</a></li>
+                <li><a href="#hoja-vida">Hoja de vida</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
 
         </nav>
     </header>
     <!---------------------------------------------------------->
-    <section>
+    <section id="quien-soy">
         <header>
             <h1>Quien soy</h1>
         </header>
@@ -44,7 +44,7 @@
 
     </section>
     <!---------------------------------------------------------->
-    <section>
+    <section id="hoja-vida">
 
         <article class="hv">
             <header>
@@ -122,20 +122,29 @@
 
     </section>
     <!---------------------------------------------------------->
-    <section>
-        <header>
-            <h1>Contacto</h1>
-        </header>
-        <address>
-            <p>¡Hola! Si estás interesado en colaborar conmigo en algún proyecto o simplemente quieres saludar, no dudes
-                en ponerte en contacto conmigo.</p>
-            <a href="mailto: ejemplo@outlook.com">Jorge Jhan Calderon R.</a>
-            <p>¡Gracias por tu interés! Espero tener noticias tuyas pronto.</p>
-
-        </address>
-
-
-    </section>
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+            ¡Hola! Si estás interesado en colaborar conmigo en algún proyecto o simplemente quieres saludar, no dudes en ponerte en contacto conmigo.
+        </p>
+        <form>
+          <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
+          </div>
+          <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo electronico" required>
+          </div>
+          <div>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required rows="7" placeholder="Ingrese su mensaje aqui"></textarea>
+          </div>
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
 
     <!---------------------------------------------------------->
     <footer>

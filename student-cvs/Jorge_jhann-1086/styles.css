@@ -1,7 +1,19 @@
+html{
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
 body{
   background-color: #e7eaf6;
   font-family: Arial, Helvetica, sans-serif;
 
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 nav, footer{
   background-color: #113f67;
@@ -29,7 +41,7 @@ h1{
   font-size: 25px;
 }
 .hv{
-  background-color: #a2a8d3;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
 }
 img{
@@ -39,6 +51,8 @@ img{
 
 }
 section {
+  max-width: 800px ;
+  margin: 40px auto;
   margin-bottom: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #333;
@@ -81,5 +95,48 @@ footer ul li a{
 }
 .derechos{
   text-align: center;
+}
+
+.contacto{
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+div{
+  
+  margin: 20px 0;
+}
+label, input{
+  width: 100%;
+  vertical-align: middle;
+}
+label{
+  font-weight: bold;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  resize: vertical;
+
+}
+input, textarea{
+  background: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+button{
+  border-radius: 8px;
+  padding: 16px 40px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #113f67;
+  color: #fff;
+
 }
 
