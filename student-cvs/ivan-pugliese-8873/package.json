@@ -1,8 +1,8 @@
 {
-  "name": "formularios-html",
+  "name": "ivan-pugliese-8873",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
