@@ -11,17 +11,31 @@ html, body{
     box-sizing: border-box;
 }
 .grid-container{
-
-    border: 2px dashed peru;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    border: 2px dashed teal;
     height: 100%;
+    grid-template-areas: "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
 }
-.grid-item{
+.grid-items{
     background: papayawhip;
     border: 2px solid coral;
-    height: 50px;
-    width: 160px;
+    height: auto;
+    width: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     color: coral;
+}
+.item-a{
+    grid-area: header;
+}
+.item-b{
+    grid-area: main;
+}
+.item-c{
+    grid-area: footer;
 }
