@@ -24,6 +24,49 @@
         <li>⚡ Fun fact: I'm weird 👽</li>
     </ul>
     <p>Go to my full profile here: <a href="https://github.com/LaraContigo">LaraContigo on GitHub</a></p>
+    <hr />
+    <h2>Contact me</h2>
+    <form action="/server" method="get">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Type your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Type your email" required>
+        </div>
+        <div class="form-group">
+            <fieldset required>
+                <legend>Budget</legend>
+                <input id="$500" name="budget" type="radio" value="500"><label for="500">$500</label>
+                <input id="$100" name="budget" type="radio" value="100"><label for="100">$100</label>
+                <input id="$50" name="budget" type="radio" value="50"><label for="50">$50</label>
+            </fieldset>
+            <div class="help">This is an estimated price.</div>
+        </div>
+        <div class="form-group">
+            <label for="type">Project Type</label>
+            <select id="type" name="type" required>
+                <option disabled selected value="">Select one</option>
+                <option value="Translation">Translation</option>
+                <option value="Transcription">Transcription</option>
+                <option value="Subtitles">Subtitles</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="description" name="description" required>Description</label>
+            <textarea id="description" required rows="5"></textarea>
+            <div class="help">Sent a message describing your request.</div>
+        </div>
+        <div class="form-group">
+            <label for="terms">
+                <input id="terms" name="terms" type="checkbox">
+                <span>I accept terms and conditions.</span>
+            </label>
+        </div>
+        <button>Sent</button>
+    </form>
+
     <hr /><!--Esto es una regla horizontal, es un void element-->
     <footer>
         <figure>
