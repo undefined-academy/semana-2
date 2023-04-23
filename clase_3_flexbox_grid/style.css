@@ -1,0 +1,11 @@
+
+.container{
+    display: flex;
+}
+
+.item{
+    border: 1px solid #0d0b0b;
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+}
