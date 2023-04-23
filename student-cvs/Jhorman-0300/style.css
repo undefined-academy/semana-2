@@ -1,3 +1,11 @@
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
 body{
     margin: 0 auto;
     max-width: 50em;
@@ -24,11 +32,11 @@ h1>a{
     color: black;
 }
 
-div{
-    background-color: rgb(249, 249, 249);
+.conte{
+    background-color: #fefefe;
     padding: 16px 32px;
-    margin: 20px;
-    border: 1px solid rgb(33, 32, 26);
+    margin: 10px;
+    
 }
 
 table{
@@ -55,4 +63,55 @@ th{
 nav,.footer{
     text-align: center;
     
+}
+
+.form-group{
+    margin: 15px ;
+}
+
+label, input:not([type="radio"], input[type="checkbox"]){
+    width: 100%;
+}
+
+input[type="text"],[type="email"], textarea{
+    background-color: #fefefe;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px; 
+}
+
+label, input{
+    vertical-align: middle;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label{
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+
+.text-help{
+    font-size: 12px;
+    margin-top: 4px;
+    color: gray;
+}
+
+button{
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #c1c1c1;
 }
