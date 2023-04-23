@@ -1,4 +1,3 @@
-<<<<<<< main
 # Semana-2
 
 ## Ejercicios Bootcamp Semana-2:
@@ -142,4 +141,3 @@ Ejemplo: `typeof arr === "object"`
 - En el mismo Pull Request de la semana-2, agregar para tu hoja de vida una sección o página nueva de contacto que haga uso de los formularios de HTML.
 
 - 🍎  Debemos prevenir el comportamiento por defecto del envío de la información al servidor.
->>>>>>> main
