@@ -1,0 +1,37 @@
+:root {
+  /* Global */
+  --web-font-family: Noto Sans, Segoe UI, San Francisco;
+  --color-1: #304ffe;
+  --color-2: #3d5afe;
+  --color-3: #536dfe;
+  --color-4: #8c9eff;
+  --color-5: #df47d7;
+
+  /* light mode */
+  --web-bg-color: #fffbfe;
+  --web-font-color: #1c1b1f;
+  --header-bg-color: transparent;
+  --nav-bg-color: rgba(201, 197, 202, 0.5);
+  --nav-font-color: #1c1b1f;
+  --table-hbg-color: #c9c5ca;
+  --table-thead-font-color: #1c1b1f;
+  --table-border-color: #1c1b1f;
+  --table-bg-color: #f4eff4;
+  --table-bg-font-color: #1c1b1f;
+  --footer-bg-color: #1c1b1f;
+  --footer-font-color: #e6e1e5;
+
+  /* dark mode */
+  --web-dm-bg-color: #1c1b1f;
+  --web-dm-font-color: #e6e1e5;
+  --header-dm-bg-color: transparent;
+  --nav-dm-bg-color: rgb(0, 0, 0, 0.5);
+  --nav-dm-font-color: #cac4d0;
+  --table-dm-hbg-color: #000;
+  --table-dm-thead-font-color: #e6e1e5;
+  --table-dm-border-color: #cac4d0;
+  --table-dm-bg-color: #313033;
+  --table-dm-bg-font-color: #cac4d0;
+  --footer-dm-bg-color: #000;
+  --footer-dm-font-color: #e6e1e5;
+}

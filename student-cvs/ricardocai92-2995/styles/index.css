@@ -1,0 +1,217 @@
+@import url(vars.css);
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--web-bg-color);
+  color: var(--web-font-color);
+  font-family: var(--web-font-family);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+}
+
+/* Separacion vertical entre secciones */
+.content-section {
+  margin: 2em 0;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  position: sticky;
+  top: 0;
+}
+
+.top-navbar {
+  background-color: var(--nav-bg-color);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.top-navbar li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.top-navbar li a {
+  color: var(--nav-font-color);
+}
+
+main {
+  max-width: 50em;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+main a:link {
+  color: var(--color-1);
+}
+
+main a:hover {
+  color: var(--color-2);
+  text-decoration: underline;
+}
+
+main a:active {
+  color: var(--color-3);
+}
+
+main a:visited {
+  color: var(--color-5);
+}
+
+#commands ol {
+  list-style: decimal inside none;
+}
+
+#aliases table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--table-bg-color);
+  color: var(--table-bg-font-color);
+}
+
+#aliases thead {
+  background-color: var(--table-hbg-color);
+  padding: 1em;
+  color: var(--table-thead-font-color);
+}
+
+#aliases thead th {
+  border: 1px solid var(--table-border-color);
+  padding: 0.3em;
+}
+
+#aliases tbody {
+  text-align: center;
+}
+
+#aliases tbody td {
+  border: 1px solid var(--table-border-color);
+  padding: 0.3em;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  width: 100%;
+  position: relative;
+}
+
+.footer-section {
+  padding: 1.25em 0;
+}
+
+footer p {
+  color: var(--footer-font-color);
+  text-align: center;
+  font-size: 0.95em;
+  font-family: monospace;
+}
+
+.footer-brand-icons {
+  text-align: center;
+}
+
+footer a {
+  font-size: 2em;
+  padding-top: 0.5em;
+  color: var(--footer-font-color);
+}
+
+/* ::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+} */
+
+/* ::-webkit-scrollbar:vertical{
+  display: none;
+} */
+
+/* ::-webkit-scrollbar:horizontal {
+  display: none;
+} */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--web-dm-bg-color);
+    color: var(--web-dm-font-color);
+  }
+
+  header {
+    background-color: var(--header-dm-bg-color);
+  }
+
+  .top-navbar {
+    background-color: var(--nav-dm-bg-color);
+  }
+
+  .top-navbar li a {
+    color: var(--nav-dm-font-color);
+  }
+
+  #aliases table {
+    background-color: var(--table-dm-bg-color);
+    color: var(--table-dm-bg-font-color);
+  }
+
+  #aliases thead {
+    background-color: var(--table-dm-hbg-color);
+    color: var(--table-dm-thead-font-color);
+  }
+
+  #aliases thead th {
+    border: 1px solid var(--table-dm-border-color);
+  }
+
+  #aliases tbody td {
+    border: 1px solid var(--table-dm-border-color);
+  }
+
+  footer {
+    background-color: var(--footer-dm-bg-color);
+  }
+
+  footer p {
+    color: var(--footer-dm-font-color);
+  }
+
+  footer a {
+    color: var(--footer-dm-font-color);
+  }
+}
