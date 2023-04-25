@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+html{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    background: rgb(4, 31, 54);
+    color: rgb(21, 202, 142);
+    line-height: 1.5;
+    margin: 0 auto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+h2{
+    text-align: center;
+}
+.header{
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') center /cover no-repeat;
+    max-width: none;
+    padding: 160px 320px;
+    text-align: center;
+    color: wheat;
+}
+.first-container, .programming-container, .commands-container{
+    text-align: center;
+    margin: 40px;
+}
+.img-code{
+    height: 80%;
+    border-radius: 12px;
+    margin: 12px;
+}
+section {
+    height: 48vh;
+}
+.header > img{
+    width: 130px;
+    height: 130px;
+    margin: 16px;
+}
+.header > h1{
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.header > p{
+    margin: 16px 0;
+}
+.link-github{
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+    color: rgb(21, 202, 142);
+    border-radius: 12px;
+    margin: 16px 0;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.programming-container > ul{
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.form-container{
+    width: 60%;
+    height: 100vh;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+fieldset{
+    padding: 8px;
+}
+fieldset > label{
+    margin-left: 24px;
+}
+.form-group{
+    margin: 8px;
+}
+label, input:not([type='radio'], [type='checkbox'] ){
+    width: 100%;
+}
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+label, legend, option{
+    font-weight: bold;
+    font-size: 14px;
+}
+input[type='text'], input[type='email'], textarea{
+    background: rgb(0, 251, 255);
+    border: 1px solid rgb(0, 255, 149);
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+.footer{
+    margin: 40px;
+    position: absolute;
+}
+.link-github-fixed{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+.help{
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+.btn-form{
+    width: 132px;
+    margin-left: calc(50% - 66px);
+    background: rgb(21, 202, 142);
+    color: rgb(4, 31, 54);
+    padding: 16px 40px;
+    font-weight: bold;
+    border: 1px solid rgb(21, 202, 142);
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px #000;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.btn-form:hover{
+    background: transparent;
+    color:rgb(21, 202, 142);
+}
