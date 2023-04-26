@@ -8,5 +8,86 @@ main {
     max-width: 50em;
     margin: 0 auto;
     padding-top: 3em;
-    padding-bottom: 5em;
+    padding-bottom: 1em;
+}
+
+/* Form styles */
+form {
+    background: #bbbdbf2b;
+    padding: 15px;
+}
+.form-group label,
+input {
+    vertical-align: middle;
+    padding: 5px;
+}
+.form-group label,
+input:not([type="checkbox"]) {
+    width: 100%;
+}
+.form-group textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+.form-group label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #080331;
+}
+
+.field {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #000;
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
+    transition: 0.3s;
+    text-indent: 10px;
+}
+.field:hover {
+    background-color: hsl(345deg 39.1% 43.02% / 13%);
+    color: #000;
+    outline: 1px solid #670039;
+    border: 1px solid #670039;
+}
+::placeholder {
+    color: black;
+    text-transform: capitalize;
+}
+.field:focus-visible {
+    border: 1px solid #670039;
+}
+
+.area {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.button {
+    width: 40%;
+    padding: 0.5rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #940253;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-shadow: -1px -1px 0 rgba(255 255 255 0.5);
+    box-shadow: 1px 1px 3px rgba(0 0 0 0.5);
+}
+
+.button:hover {
+    background-color: #c126549e;
+}
+.button:active {
+    background: #580031;
+}
+
+footer {
+    padding-top: 50px;
 }
