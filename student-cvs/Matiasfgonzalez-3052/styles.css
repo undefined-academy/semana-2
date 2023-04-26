@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #566b78;
+}
+main {
+    max-width: 50em;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
