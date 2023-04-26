@@ -83,7 +83,7 @@ form {
     cursor: pointer;
   }
   
-  input[type="submit"]:hover {
+  button[type="submit"]:hover {
     background-color: #3e8e41;
   }
   
