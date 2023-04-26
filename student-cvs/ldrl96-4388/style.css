@@ -3,6 +3,7 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
+
 }
 
 * {
@@ -11,6 +12,7 @@ html {
     padding: 0;
     box-sizing: inherit;
     font-family: 'Work Sans';
+
 }
 
 body {
@@ -26,6 +28,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 99;
+
 }
 
 .contenedor-header header {
@@ -155,15 +158,25 @@ header img {
 
 }
 
-table {
+.table-comando {
+    border-spacing: 0;
     border: 1px solid #000;
+    width: 95%;
+}
+
+.th-comando{
+    width: 20%;
 }
 
 th,
 td {
     text-align: left;
     border: 1px solid #000;
+    border-collapse: collapse;
     caption-side: bottom;
+    padding: 0.3em;
+
+
 }
 
 caption {

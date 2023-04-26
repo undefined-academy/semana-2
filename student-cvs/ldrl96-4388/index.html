@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi perfil LDRL</title>
     <link rel="stylesheet" href="style.css">
+   
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -60,10 +62,10 @@
                     <h2>Comandos</h2>
                     <p>Comandos que he utilizado ultimamente son los siguientes:</p>
 
-                    <table>
+                    <table class="table-comando">
                         <thead>
                             <tr>
-                                <th>Comandos</th>
+                                <th class="th-comando">Comandos</th>
                                 <th>Descripción</th>
                             </tr>
                         </thead>
@@ -80,10 +82,9 @@
                             <tr>
                                 <td><span>sudo</span></td>
                                 <td>Permite a los usuarios no root ejecutar otros comandos Linux que norlamente
-                                    requeririan
-                                    privilegios
-                                    de
-                                    superusuario.</td>
+                                    requeririan privilegios de
+                                    superusuario. 
+                                </td>
                             </tr>
                             <tr>
                                 <td><span>cd</span></td>
@@ -100,10 +101,10 @@
                 <div class="comando-aleas">
                     <h2>Listado de commandos alias</h2>
 
-                    <table>
+                    <table class="table-comando">
                         <thead>
                             <tr>
-                                <th>Comandos</th>
+                                <th class="th-comando">Comandos</th>
                                 <th>Descripción</th>
                             </tr>
                         </thead>
@@ -150,8 +151,8 @@
                   
                     <div>
                         <label for="proyect">Tipo de proyecto</label>
-                        <select name="proyect" id="proyect`" required>
-                            <option disabled selected value="" disabled>Seleccione un proyecto</option>
+                        <select name="proyect" id="proyect" required>
+                            <option disabled selected value="">Seleccione un proyecto</option>
                             <option value="app_m" required>App Movil</option>
                             <option value="app_w" required>App web</option>
                             <option value="app_e" required>App escritorio</option>
@@ -159,7 +160,7 @@
                     </div>
                     <div class="form-group">
                         <label for="description">Descripcion</label>
-                        <textarea name="description" id="" cols="5" rows="5" required></textarea>
+                        <textarea name="description" id="" cols="5" rows="5" requir></textarea>
                         <div class="help">Escribe una descripcion del proyecto en al menos 500 palabras</div>
 
                     </div>
@@ -181,6 +182,7 @@
     const contactForm = document.getElementById("form-post");
 
     contactForm.addEventListener("submit",(e) => {
+        console.log(document.contactForm);
         e.preventDefault();
     });
 
