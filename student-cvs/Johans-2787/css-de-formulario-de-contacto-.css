@@ -10,16 +10,30 @@ html {
     text-align: center;
 }
 .page {
-    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
     margin: 100px auto;
     padding: 0 40px;
+    border: 2px solid black;
+    outline-style: outset;
+    outline-color: grey;
+    border-radius: 4px;
+    background-color: #1e272e;
+    height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:white;
-    color: #333;
-    border-style: double;
+    background-color:mintcream;
+    max-width:auto;
+    background-image: url(https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+    background-repeat:repeat;
 }
 
 .group {
@@ -64,7 +78,7 @@ textarea {
     text-transform: uppercase;
     font-weight: bold;
 }
-button {
+button, a {
     margin: 12px;
     display: inline-block;
     padding: 8px 32px;
@@ -80,12 +94,19 @@ button {
     box-shadow: 0 9px #999;
 }
 
-button:hover {
-    background-color: #d1fae5;
+button:hover, a:hover {
+    color: white;
+    background-color: #2d3436
 }
 
-button:active {
-    background-color: #86efac;
+button:active, a:active {
+    color: white;
+    background-color: #2d3436;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }  
+
+a {
+    margin: -3px;
+}
+
