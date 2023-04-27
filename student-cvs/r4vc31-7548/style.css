@@ -37,7 +37,11 @@ strong {
 }
 
 a {
-    color: lightseagreen;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(lightgoldenrodyellow, lightskyblue);
+    border-radius: 5px;
+    padding: 0.25rem;
 }
 
 span {
@@ -52,6 +56,37 @@ span {
 .contact h2 {
     text-align: center;
     text-transform: uppercase;
+}
+
+#courses {
+    width: 100%;
+    text-align: center;
+}
+
+#courses h3{
+    text-align: left;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    border-spacing: 0;
+    min-width: 150px;
+}
+
+tr > td:first-child {
+    border-right: 1px solid lightseagreen;
+}
+
+td{
+    border-bottom: 1px solid lightseagreen;
+    padding: 0.5rem;
+}
+
+
+tbody tr:last-child td {
+    border-bottom: none;
 }
 
 form {
@@ -94,4 +129,9 @@ button {
 button:hover {
     background-color: lightgray;
     cursor: pointer;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
 }
