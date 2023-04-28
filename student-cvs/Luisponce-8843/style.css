@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
 
+*{
+  box-sizing: border-box;
+}
 
 body{
     margin: 0 auto;
@@ -63,8 +66,9 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.2;
-    padding: 10vw 2em;
+    padding: 3vw 6em;
     text-align: center;
+    width: 100%;
   }
   header img {
     display: inline-block;
@@ -80,12 +84,12 @@ a {
   }
   
   header a {
-    border: 3px solid #e81c4f;
+    border: 3px solid #fbbf24;
     border-radius: 290486px;
     color: rgb(255, 255, 59);
     font-size: 0.8em;
-    font-weight: 400;
-    letter-spacing: 0.2em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
     padding: 1em 2em;
     text-transform: uppercase;
     text-decoration: none;
@@ -94,6 +98,33 @@ a {
   }
   
   header a:hover {
-    background:  #e81c4f;
+    background:  #fbbf24;
+    color: rgb(0, 0, 0);
+  }
+ div{
+    background-color: #263d36;
+    background-image: url("imagenes/imagen2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    line-height: 1.2;
+    padding: 4vw 1em;
+    text-align: center;
+  }
+  div a{
+    border: 3px solid #fbbf24;
+    border-radius: 290486px;
+    color: rgb(255, 255, 59);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  div a:hover{
+    background:  #fbbf24;
     color: rgb(0, 0, 0);
   }
