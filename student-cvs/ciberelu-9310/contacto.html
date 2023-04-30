@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <main>
+
+        <header>
+            <h1>Ingresa tus datos</h1>
+        </header>
+
+        <form action="" id="form">
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="" required id="name">
+            </div>
+            <div>
+                <label for="email">Correo Electrónico</label>
+                <input type="text" name="" required id="email">
+            </div>
+            <div>
+                <label for="phoneNumber">Número de Celular</label>
+                <input type="tel" required >  
+            </div>
+
+            <fieldset>
+
+                <legend>Presupuesto para el proyecto</legend>
+
+                <input type="radio" required name="budger" id="10000">
+                <label class="budget" for="10000">$.10,000</label>
+
+                <input type="radio" required name="budger" id="5000">
+                <label class="budget" for="5000">$.5,000</label>
+
+                <input type="radio" required name="budger" id="3000">
+                <label class="budget" for="3000">$.3,000</label>
+
+                <input type="radio" required name="budger" id="1000">
+                <label  class="budget" for="1000">$.1,000</label>
+
+            </fieldset>
+
+            <div>
+                <label for="type">Tipo de Proyecto</label>
+
+                <select name="" required id="type">
+                    <option value="" disabled selected>Seleccione uno</option>
+                    <option value="">Website</option>
+                    <option value="">Web App</option>
+                    <option value="">App Mobile</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nacionality">Nacionalidad</label>
+
+                <select name="" required id="nacionality">
+                    <option value="" selected disabled>Selecciona un país</option>
+                    <option value="">Guatemala</option>
+                    <option value="">Estados Unidos</option>
+                    <option value="">España</option>
+                    <option value="">Suecia</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="url">Ingresa la URL de tu diseño en github</label>
+                <input type="url" required name="" id="url">
+            </div>
+
+            <div>
+                <label for="description">Descripción</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mi proyecto es sobre una app que......"></textarea>
+                <small>Describe tu proyecto en el espacio superior</small>
+            </div>
+            <div class="termsContainer">
+                <input type="checkbox" required name="" id="terms">
+                <label for="terms" class="terms">Acepto todos los términos y condiciones</label>
+            </div>
+
+            <input type="submit" value="Enviar propuesta" id="submit">
+        </form>
+    </main>
+
+    <!-- codigo JavaScript para prevenir el comportamiento por defecto del formulario -->
+    <script>
+
+        const submit = document.getElementById("submit")
+        submit.addEventListener("click", (e)=>{
+            e.preventDefault()
+            console.log(e);
+        })
+
+        
+    </script>
+</body>
+</html>
