@@ -42,7 +42,7 @@ body {
     width: 90%;
     text-align: center;
     border: none;
-   
+
 }
 
 @media (min-width: 768px) {
@@ -184,14 +184,14 @@ strong {
 .skill-mf span {
     color: #4e4e4e;
   }
-  
+
   .skill-mf .progress {
     background-color: #cde1f8;
     margin: 0.5rem 0 1.2rem 0;
     border-radius: 0;
     height: 0.7rem;
   }
-  
+
   .skill-mf .progress .progress-bar {
     height: 0.7rem;
     background-color: #0078ff;
@@ -211,7 +211,7 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .servicio h3 {
@@ -221,7 +221,7 @@ strong {
 
 .servicio p {
     line-height: 2;
-    
+
 }
 
 .servicio .iconos {
