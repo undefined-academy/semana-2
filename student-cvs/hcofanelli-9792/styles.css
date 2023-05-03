@@ -1,0 +1,96 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: antiquewhite;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #333;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+  }
+  h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+  a {
+    color: #e81c4f;
+  }
+  footer{
+    text-align: center;
+  }
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+ }
+ caption {
+    padding: 0.3em;
+    color: #fff;
+     background: #000;
+ }
+ th {
+    background: #eee;
+    text-align: center;
+ }
+ .formulario{
+ margin-top: 50px;
+padding: 20px;
+
+}
+.form-group{
+  display: flex;
+margin-bottom: 20px;
+justify-content: center;
+}
+input, textarea{
+  min-width: 350px;
+}
+
+button{
+  border-radius: 5px;
+  background-color: bisque;
+  padding: 10px;
+  width: 100px;
+}
+.button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+li{
+  list-style-type:none;
+  padding: 0;
+}
+.cont-form{
+  display: flex;
+ justify-content: center;
+ 
+ }
+ .form-group{
+  display: flex;
+  justify-content: space-between;
+  min-width: 450px;
+}
+
+@media screen and (max-width:480px) {
+
+  .form-group{
+    flex-direction: column;
+    min-width: 350px;
+  }
+ input, textarea{
+  max-width: 300px;
+ }
+
+}
