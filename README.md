@@ -29,7 +29,7 @@ let total = hugo + paco + luis;
 if (total === 85) {
     console.log("Hugo: " + hugo)
     console.log("Paco: " + paco)
-    onsole.log("Luis: " + luis)
+    console.log("Luis: " + luis)
 }
 ```
 
@@ -59,7 +59,6 @@ const human = {
 ¿Cómo puedo implementar una expresión para verificar si un valor es un array?
 
 Ejemplo: `typeof arr === "object"`
-
 
 ## 🏋Clase 3 [EJERCICIOS]
 
