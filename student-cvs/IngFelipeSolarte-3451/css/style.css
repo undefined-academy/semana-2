@@ -1,15 +1,17 @@
-body,html{
+body,
+html {
     margin: 0px;
     padding: 0px;
     margin-top: 2.25em;
-    
+    background-color: #FAFCF9;
+
 }
 
-*{
+* {
     box-sizing: inherit;
 }
 
-nav{
+nav {
     height: 2.25em;
     background-color: darkblue;
     display: flex;
@@ -23,75 +25,88 @@ nav{
     vertical-align: middle;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    
+
     width: 100%;
     padding: 0px 0px;
     margin: 10% 10%;
 
 }
-nav ul{
+
+nav ul {
     display: flex;
-    
+
 }
 
-nav ul li{
+nav ul li {
     padding-left: 10px;
     padding-right: 10px;
     list-style: none;
     color: white;
 }
 
-.flags{
+nav ul li a:hover {
+    color: white;
+}
+
+.image-40px {
     border-radius: 5px;
     max-height: 30px;
     height: 1.4em;
 }
 
-body{
+body {
     max-width: 70%;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: monospace;
     text-align: center;
-    text-transform:uppercase;
+    text-transform: capitalize;
     color: dodgerblue;
 }
 
-img.gatito{
-    margin: 0 auto;
-    text-align: center;
-    
-}
-p{
+h2 {
     text-align: justify;
 }
 
-#btn{
+img.gatito {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+p {
+    text-align: justify;
+}
+
+#btn {
     display: none;
 }
-#btn:checked + label > img {
+
+#btn:checked+label>img {
     width: 75px;
     height: 75px;
 }
 
-a{
+a {
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     color: dodgerblue;
     text-align: center;
 
 }
 
-div.center{
+div.center {
     text-align: center;
 }
 
@@ -99,25 +114,28 @@ div.center{
 /*CSS FOR FORM*/
 
 
-.form-group{
+.form-group {
     border-radius: 7px;
     margin: 20px 0;
 }
 
-label, input:not([type="radio"],[type="checkbox"]){
+label,
+input:not([type="radio"], [type="checkbox"]) {
     vertical-align: middle;
 }
 
-label, input:not([type="radio"],[type="checkbox"]){
+label,
+input:not([type="radio"], [type="checkbox"]) {
     margin: 0 auto;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-label{
+
+label {
     text-transform: uppercase;
     font-weight: bold;
 }
 
-button{
+button {
     cursor: pointer;
     background-color: dodgerblue;
     margin: 5px;
@@ -127,20 +145,21 @@ button{
     padding-bottom: 10px;
     font-weight: bold;
     border-radius: 10px;
-    
+
 }
-button:hover{
+
+button:hover {
     background-color: #facc15;
     color: white;
 }
 
-button:active{
+button:active {
     background-color: #ca8a04;
     box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
 
 }
 
-.page{
+.page {
     max-width: 800px;
     margin: 100px auto;
     padding: 0 40px;
@@ -148,33 +167,53 @@ button:active{
 }
 
 
-label, input:not([type="radio"],[type="checkbox"]){
+label,
+input:not([type="radio"], [type="checkbox"]) {
     vertical-align: middle;
     width: 100%;
-    
+
 }
 
-label, input:not([type="radio"],[type="checkbox"]){
+label,
+input:not([type="radio"], [type="checkbox"]) {
     width: 100%;
 }
-label{
+
+label {
     text-transform: uppercase;
     font-weight: bold;
 }
 
 
-form{
+form {
     accent-color: #eab308;
 }
 
-textarea{
+textarea {
     resize: vertical;
     width: 100%;
 }
 
-.vertical-middle{
+.vertical-middle {
     display: flex;
     vertical-align: middle;
     justify-items: flex-end;
     align-items: center;
+}
+
+label {
+    color: dodgerblue
+}
+
+article ul
+{
+    
+    padding-left: 5px;
+}
+article ul li {
+    text-align: justify;
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
