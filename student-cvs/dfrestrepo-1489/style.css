@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -115,6 +116,7 @@ body {
     background: transparent;
     cursor: pointer;
 }
+
 .btn:hover {
     opacity: .8;
 }
@@ -181,6 +183,19 @@ a:hover {
     color: var(--color-primary);
 }
 
+table{
+    width: 100%;
+}
+
+tr th {
+    text-align: left;
+    border-bottom: solid var(--color-primary);
+}
+
+tr th,
+tr td {
+    padding: .5rem;
+}
 
 /* Forms */
 form {
