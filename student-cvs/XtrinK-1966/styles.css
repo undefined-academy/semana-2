@@ -1,7 +1,71 @@
 body {
-    background-color: aliceblue;
+    background-color: #d1d5db;
     width: 80%;
     /* border: 1px solid blue; */
     margin: 0 auto;
     padding: 8px;
+}
+
+section {
+    background-color: #e5e7eb;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#s1,
+#s2,
+#s3 {
+    /* border: 1px solid tomato; */
+    width: 100%;
+    /* max-width: 80%; */
+    /* margin: 0 auto; */
+    box-sizing: border-box;
+}
+
+#trofeos {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+#me {
+    background-color: floralwhite;
+}
+
+#random {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+article {
+    border-radius: 15px;
+}
+
+#contactar {
+    /* margin-top: 10px; */
+    padding: 5px;
+    /* text-transform: uppercase; */
+    /*mayuscula*/
+    font-weight: bold;
+    /*negrilla*/
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: rgb(62, 61, 59);
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#contactar:hover {
+    background: #facc15;
+}
+
+#contactar:active {
+    /*active es para cuando se pulsa el boton*/
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }

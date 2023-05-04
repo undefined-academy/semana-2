@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formularios Html</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Contacto</h1>
+      <form action="/server" method="get">
+        <div class="form-group">
+          <label for="name">Nombre </label
+          ><input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ingrese su nombre completo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email </label
+          ><input
+            type="email"
+            placeholder="Ingrese su correo electronico"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Mensaje</label
+          ><textarea
+            name="description"
+            id="description"
+            placeholder="Escribe el mensaje que desea que sea enviado."
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button>Enviar Mensaje</button>
+      </form>
+      <hr />
+      <a href="index.html" id="volver">Volver</a>
+    </main>
+  </body>
+</html>

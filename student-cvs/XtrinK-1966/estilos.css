@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+body {
+    color: #333;
+    background-color: rgb(209, 222, 222);
+}
+
+.page {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+    /* border: 1px solid tomato;    */
+    margin: 20px 0;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+input,
+label,
+.terms {
+    vertical-align: middle;
+    /*alineación vertical en el medio*/
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    /*poner en mayusculas*/
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"],
+[type="email"],
+textarea {
+    background: rgb(254, 251, 247);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    /*mayuscula*/
+    font-weight: bold;
+    /*negrilla*/
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    /*cambiar de flecha a mano*/
+}
+
+button:hover {
+    background: #facc15;
+}
+
+button:active {
+    /*active es para cuando se pulsa el boton*/
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+    accent-color: #aeb308;
+    /*cambiar color controles de formularios*/
+}
+
+#volver {
+    padding: 5px;
+    /* text-transform: uppercase; */
+    /*mayuscula*/
+    font-weight: bold;
+    /*negrilla*/
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    /*cambiar de flecha a mano*/
+}
+
+#volver:hover {
+    background: #facc15;
+}
+
+#volver:active {
+    /*active es para cuando se pulsa el boton*/
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
