@@ -18,23 +18,78 @@ body {
 
 h1,
 h2,
-h3,
 strong {
     color: #333;
     text-align: center;
 }
 
-h4,
-strong {
-    color: #333;
-}
-
-.Links img {
-    display: block;
-    margin: 10px;
-}
-
 .Name img {
     float: left;
     margin-right: 10px;
+}
+
+
+.Info,
+.Experience {
+
+    display: inline-block;
+    text-align: justify;
+    margin: 10px;
+    width: 550px;
+    height: 100px;
+}
+
+
+
+.Links {
+    display: inline;
+    float: right;
+    margin: 10px;
+
+}
+
+.Contactform {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+label,
+input,
+select {
+    width: 50%;
+    display: block;
+}
+
+input,
+select {
+    vertical-align: middle;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 5px
+}
+
+button {
+    text-align: center;
+    padding: 14px 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background: lightgray;
+    color: rgb(73, 72, 72);
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
+}
+
+button:hover {
+    background: darkgrey;
+    color: lightgray;
+}
+
+button:active {
+    background-color: rgb(73, 72, 72);
+    box-shadow: none;
 }
