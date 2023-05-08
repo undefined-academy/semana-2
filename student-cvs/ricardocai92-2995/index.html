@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <header class="top-header">
+    <header>
         <nav class="top-navbar">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#commands">Commands</a></li>
                 <li><a href="#aliases">Aliases</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="#contact-form">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@
                     </a> </strong> with <a href="https://github.com/glrodasz" target="_blank">Guillermo Rodas</a>.
                 My
                 goal here is to be
-                able to enter the world of programming to improve my quality of life.<strong> I will do my best to
+                able to enter the world of programming to improve my quality of life. <strong>I will do my best to
                     achieve it! 💪</strong>
             </p>
         </div>
@@ -88,11 +88,51 @@
                 </tbody>
             </table>
         </section>
+        <!-- Form -->
+        <section id="contact-form" class="content-section">
+            <h2>Contact</h2>
+            <form action="/server" method="get">
+                <!-- Name -->
+                <div class="form-container">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-text-input" type="text" name="name" placeholder="Your name" required>
+                </div>
+                <!-- Email -->
+                <div class="form-container">
+                    <label for="email">Email</label>
+                    <input id="email" class="form-text-input" type="email" name="email" placeholder="Your email"
+                        required>
+                </div>
+                <!-- Phone -->
+                <div class="form-container">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-text-input" id="phone" name="phone" placeholder="Your phone number">
+                </div>
+                <!-- Subject -->
+                <div class="form-container">
+                    <label for="type">Subject</label>
+                    <select name="type" id="type" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="consult">Consult</option>
+                        <option value="colab">Collaboration</option>
+                        <option value="work">Job offer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Message -->
+                <div class="form-container">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-text-input" name="message" rows="5" placeholder="Your message"
+                        required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
     <footer id="footer">
         <div class="footer-section">
             <p>Made with ❤️ by <strong>Ricardo</strong></p>
-            <div class="footer-brand-icons">
+            <div class="footer-socials-icons">
                 <a href="https://github.com/gutierrezricardo92" class="fa-brands fa-github"></a>
             </div>
         </div>
