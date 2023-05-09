@@ -45,3 +45,57 @@ a {
     transition: none 200ms ease-out;
     transition-property: color,
   }
+
+  .formulario {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contacto {
+    text-align: center;
+    color: #8294C4;
+    padding: 10px;
+  }
+  
+  form {
+    background-color: #DBDFEA;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+      accent-color: #ACB1D6;
+      
+  }
+  
+  label:not(input[type="radio"]) {
+  
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+      outline: 2px solid #FFEAD2;
+  }
+  
+  input[type="submit"] {
+    background-color:  #ACB1D6;;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin : 10px;
+  }
+  
+  input[type="radio"] {
+      display: inline-block;
+      margin-right: 12px;
+  }

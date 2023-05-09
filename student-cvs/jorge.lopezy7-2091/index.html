@@ -125,6 +125,45 @@
         </table>
     </section>
 
+    <section class="formulario">
+
+        <h1 class="contacto">Contacto</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+            <label for="precio">
+                <fieldset>
+                    <legend>
+                        Presupuesto
+                    </legend>
+
+                    <input type="radio" value="1000" name="presupuesto">
+                    <label for="prusuesto">$1000</label>
+                    <input type="radio" value="5000" name="presupuesto">
+                    <label for="prusuesto">$5000</label>
+                    <input type="radio" value="10000" name="presupuesto">
+                    <label for="prusuesto">$10000</label>
+
+
+                </fieldset>
+            </label>
+
+            <fieldset for="mensaje">
+                <legend>Descripción:</legend>
+                <textarea id="mensaje" name="mensaje" rows="10" cols="40" required></textarea><br><br>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+
     <footer>
         <a href="https://github.com/j7programador">Mi Github</a>
     </footer>
