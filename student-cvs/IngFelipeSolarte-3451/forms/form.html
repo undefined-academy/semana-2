@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pipe's contact</title>
+</head>
+
+<body>
+    <main class="page">
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="/forms/form.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Resume</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    <h1>Contact form</h1>
+<form action="/server" method="post">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-group">
+        <label name="date" id="date" for="date">date</label>
+        <input type="datetime-local" name="" id="" required>
+    </div>
+
+    <div class="form-group">
+        <select name="" id=""> 
+            <option value="" disabled selected>Choose one</option>
+            <option value="">WebApp</option>
+            <option value="">Mobile App</option>
+            <option value="">HTML App</option>
+            <option value="">iOS App</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="name">Motive</label>
+        <textarea type="texta" name="descripcion" id="descripcion" rows="8"></textarea>
+    </div>
+    <div class="form-group vertical-middle">
+        <input type="checkbox" name="terminos" id="terminos" maxlength=4 required><p>I hereby accept the terms and conditions</p>
+    </div>
+    <button>Subtmit</button>
+</form>
+</main>
+</body>
+
+</html>

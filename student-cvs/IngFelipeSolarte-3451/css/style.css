@@ -1,0 +1,219 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 2.25em;
+    background-color: #FAFCF9;
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+nav {
+    height: 2.25em;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+    padding: 0px 0px;
+    margin: 10% 10%;
+
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.image-40px {
+    border-radius: 5px;
+    max-height: 30px;
+    height: 1.4em;
+}
+
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: monospace;
+    text-align: center;
+    text-transform: capitalize;
+    color: dodgerblue;
+}
+
+h2 {
+    text-align: justify;
+}
+
+img.gatito {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+p {
+    text-align: justify;
+}
+
+#btn {
+    display: none;
+}
+
+#btn:checked+label>img {
+    width: 75px;
+    height: 75px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: dodgerblue;
+    text-align: center;
+
+}
+
+div.center {
+    text-align: center;
+}
+
+
+/*CSS FOR FORM*/
+
+
+.form-group {
+    border-radius: 7px;
+    margin: 20px 0;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    vertical-align: middle;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    background-color: dodgerblue;
+    margin: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    background-color: #facc15;
+    color: white;
+}
+
+button:active {
+    background-color: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+form {
+    accent-color: #eab308;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+.vertical-middle {
+    display: flex;
+    vertical-align: middle;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+label {
+    color: dodgerblue
+}
+
+article ul
+{
+    
+    padding-left: 5px;
+}
+article ul li {
+    text-align: justify;
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
