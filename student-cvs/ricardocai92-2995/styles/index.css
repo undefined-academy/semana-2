@@ -169,10 +169,9 @@ button {
   border: none;
   background-color: var(--lm-color-1);
   border-radius: 4px;
-  padding: 0.8em;
+  padding: 0.5em 2em;
   font-size: 1rem;
   font-weight: bold;
-  text-align: center;
 }
 
 button:hover {
@@ -213,7 +212,7 @@ footer a {
   color: var(--lm-font-color-2);
 }
 
-/* --- SCROLLBAR --- */
+/* --- WEBKIT SCROLLBAR --- */
 
 ::-webkit-scrollbar {
   background-color: #fff;
