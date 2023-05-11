@@ -1,0 +1,49 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 50em;
+	font-family: "Victor Mono", "Arial", sans-serif;
+	line-height: 1.5;
+	color: #566b78;
+	min-height: 100%;
+}
+
+h2 {
+	margin-top: 1em;
+}
+
+h1,
+h2 {
+	color: #333;
+}
+
+a {
+	color: #e81c4f;
+}
+
+.nav {
+	background-color: transparent;
+	height: 40px;
+	padding: 8px 0;
+	background-color: rebeccapurple;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-menu li a {
+	color: #fff;
+	text-decoration: none;
+}

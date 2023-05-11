@@ -3,6 +3,10 @@ html {
 	margin: 0;
 }
 
+* {
+	box-sizing: inherit;
+}
+
 body {
 	margin: 0 auto;
 	max-width: 50em;
@@ -42,6 +46,7 @@ header {
 	line-height: 1.2;
 	padding: 10vw 2em;
 	text-align: center;
+	position: relative;
 }
 
 header h1 {
@@ -87,4 +92,22 @@ button:hover {
 	100% {
 		transform: scale(1, 1);
 	}
+}
+
+.nav {
+	background-color: transparent;
+	height: 40px;
+	padding: 8px 0;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-menu li a {
+	color: #fff;
+	text-decoration: none;
 }
