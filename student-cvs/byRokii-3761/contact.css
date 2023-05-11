@@ -31,9 +31,11 @@ a {
 
 .nav {
 	background-color: transparent;
-	height: 40px;
+	border-radius: 1rem;
+	height: 10vh;
 	padding: 8px 0;
-	background-color: rebeccapurple;
+	background-color: transparent;
+	box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
 }
 
 .nav-menu {
@@ -44,6 +46,71 @@ a {
 }
 
 .nav-menu li a {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
+}
+
+main {
+	height: 75vh;
+	width: 100%;
+}
+
+.container {
+	max-width: 30em;
+	margin: 1rem auto;
+	color: white;
+	padding: 1.5em 1.5em;
+	background-color: aqua;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 1em;
+	box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+	background-color: transparent;
+}
+
+.container input {
+	display: block;
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 1.2rem;
+	margin-top: 1.4rem;
+	font-size: 1rem;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+	color: #000;
+	border-radius: 1rem;
+	font-family: inherit;
+}
+
+.container textarea {
+	margin-top: 1.4rem;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	font-family: inherit;
+	padding: 1.2rem;
+	border-radius: 1rem;
+}
+
+.container input[type="submit"] {
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: all 300ms ease;
+	box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+	background: transparent;
+}
+
+footer {
+	margin: 5rem 0 1rem;
+	box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+	background: transparent;
+	padding: 1rem 0.5rem;
+	text-align: center;
+	border-radius: 1rem;
 }
