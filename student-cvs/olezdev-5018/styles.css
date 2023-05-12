@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+	padding: 0;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Helvetica, Georgia, Arial, sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-color: #fff8dc;
+    color: #808080;
+}
+
+h1,
+h2,
+h3 {
+    color: #a9a9a9;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+a {
+    color: #808080;
+}
+
+a:visited {
+    color: #808080;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.page {
+	max-width: 768px;
+	margin: 20px auto;
+	padding: 0 40px;
+}
+
+.form-group {
+	margin: 20px 0;
+}
+
+label, input {
+	vertical-align: middle;
+}
+
+label, input:not([type="checkbox"]) {
+	width: 100%;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+    min-height: 30px;
+	resize: vertical;
+}
+
+label {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+    color: #a9a9a9;
+}
+
+input[type="text"], input[type="email"], textarea {
+	background: white;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	padding: 8px 10px;
+	color: #333;
+}
+
+.help {
+	font-size: 12px;
+	margin-top: 10px;
+	color: gray;
+}
+
+button {
+	padding: 16px 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid #713f12;
+	background: #eab308;
+	color: #3d3d3d;
+	text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+button:hover {
+	background: #facc15;
+}
+
+button:active {
+	background: #ca8a04;
+	box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+	accent-color: #eab308;
+}
+
+input:focus-visible, textarea:focus-visible {
+	border: 1px solid #eab308;
+	outline: 2px solid #facc15;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
