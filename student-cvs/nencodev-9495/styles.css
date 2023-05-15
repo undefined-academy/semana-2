@@ -23,7 +23,7 @@ a {
   .cabecera {
   position: relative;
   background-color: #263d36;
-  background-image: url("/header.jpg");
+  background-image: url("./header.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
