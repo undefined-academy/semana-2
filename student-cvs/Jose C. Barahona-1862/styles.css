@@ -1,5 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0 auto;
   max-width: 50em;
@@ -7,6 +15,7 @@ body {
   line-height: 1.5;
   padding: 4em 1em;
   color: #566b78;
+  background-color: #fafafa;
 }
 
 h2 {
@@ -29,6 +38,39 @@ pre {
   border-left: 2px solid #69c;
   border-bottom: 1px solid #d8dee9;
   color: #5fb3b3;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+  border-right: 1px solid #566b78;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 12px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #263d36;
 }
 
 a {
@@ -93,4 +135,72 @@ td + td {
   width: 75%;
   padding-left: 1.5em;
   border-left: 1px solid;
+}
+
+.contact-form {
+  max-width: 100%;
+  margin: 100px auto;
+  padding: 0 40px;
+}
+
+.form-objects {
+  margin: 20px 0;
+}
+
+label,
+input[type='text'],
+input[type='email'] {
+  width: 100%;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #365314;
+  background: #15803d;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #14532d;
+}
+
+button:active {
+  background: #052e16;
+  box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
