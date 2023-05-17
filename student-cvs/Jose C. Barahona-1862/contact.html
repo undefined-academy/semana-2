@@ -14,7 +14,7 @@
     </nav>
     <header><h1>Contact</h1></header>
     <main class="contact-form">
-      <form action="/server" method="get">
+      <form id="contactForm" action="/server" method="get">
         <div class="form-objects">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" placeholder="Type your name" required />
@@ -28,7 +28,7 @@
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message" required></textarea>
           <div class="help">Send me a message and I'll get back to you as soon as possible.</div>
         </div>
-        <button>Send</button>
+        <button type="button">Send</button>
       </form>
     </main>
   </body>
