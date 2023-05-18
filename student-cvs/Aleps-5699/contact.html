@@ -17,7 +17,7 @@
             <section>
                 <h2 class="about">Información Personal</h2>
                 <hr>
-                <form action="/server" method="get">
+                <form id="contact-form" action="" method="post">
                     <div class="form-group">
                         <label for="name">Nombre:</label>
                         <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
@@ -66,11 +66,11 @@
                 </div>
                 <div class="form-group">
                     <label for="date">¿En qué fecha me contactas?</label>
-                    <input type="datetime-local" name="date" id="date" required>
+                    <input type="date" name="date" id="date" required>
                 </div>
                 <div class="form-group">
                     <label for="terms">Acepto los Términos y Condiciones</label>
-                    <input type="checkbox" name="terms" id="terms" re4>
+                    <input type="checkbox" name="terms" id="terms" required>
                 </div>
             </section>
             <footer>
@@ -82,6 +82,7 @@
         </article>
     </main>
 
+    <script type="text/javascript" src="validation.js"></script>
 </body>
 
 </html>
