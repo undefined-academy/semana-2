@@ -1,91 +1,141 @@
 /* Aca importamos fuentes de google */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 /* Reseteamos los estilos */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /* Configuramos el body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    /* padding: 1em 1em; */
-    width: 100%;
-    background-color: #e6edf0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  /* padding: 1em 1em; */
+  /* width: 100%; */
+  background-color: #e6edf0;
 }
 
 /* Damos estilos a la seccion Cabecera */
-.section__head{
-    background-image: url(danist-soh-bviex5lwf3s-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: center center;
-    background-color: #263d36;
-    line-height: 1.2;
-    padding: 5vw 2em;
-    text-align: center;
-    margin: 0 auto;
-    color: #ffffff;
-    box-shadow: 5px 5px 5px #0051ff;
-    width: 100vw;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
+.section__head {
+  background-image: url(danist-soh-bviex5lwf3s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: center center;
+  background-color: #263d36;
+  line-height: 1.2;
+  padding: 5vw 2em;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
+  box-shadow: 5px 5px 5px #0051ff;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
 }
 
-.section__head--subtitle{
-    margin-top: 1em;
-    padding-top: 1em;
-    font-weight: 900;
-    background-color: #1cb8e84c;
-    border-radius: 5px;
-    padding: 1em;
-    text-shadow: 5px 5px 5px black;
+.section__head--subtitle {
+  margin-top: 1em;
+  padding-top: 1em;
+  font-weight: 900;
+  background-color: #1cb8e84c;
+  border-radius: 5px;
+  padding: 1em;
+  text-shadow: 5px 5px 5px black;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article__main {
+  background-color: white;
+  margin: 2em 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #c4bbbb;
+  width: 50vw;
+  height: 50vh;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.paragraph {
+  color: #4f4747;
+  letter-spacing: 0.5px;
+  margin: 1em;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  line-height: 2em;
+}
+
+.paragraph__link:hover {
+  background-color: darkorange;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 0.1em;
+}
+
+.section_paragraph a {
+  text-decoration: none;
+}
+
+.article2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.skill__title {
+  position: relative;
+  bottom: .5em;
+}
+
+.section__skill{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.barra {
+  margin: .5em 0 auto;
+  height: 1.5em;
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progreso{
+    display: block;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #0051ff 50%, gray);
+}
+
+.progreso1{
+    width: 95%;
+    height: 100%;
+}
+
+.progreso2{
+    width: 70%;
+    height: 100%;
 }
 
 
-.container{
-    margin: 0 auto;
-    max-width: 50em;
+
+.footer {
+  margin-top: 1em;
+  padding: 1em;
 }
-
-.section_paragraph{
-    background-color: white;
-    margin: 2em 0;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px #c4bbbb;
-}
-
-.paragraph{
-    color: #4f4747;
-    letter-spacing: .5px;
-    margin: 1em;
-    font-size: 1.2em;
-    font-weight:400;
-    font-family: 'Outfit', sans-serif;
-    line-height: 2em;
-    
-}
-
-.paragraph__link:hover{
-    background-color: darkorange;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    border-radius: 5px;
-    padding: .1em;
-}
-
-.section_paragraph a{
-    text-decoration: none;
-}
-
-.footer{
-    margin-top: 1em;
-    padding: 1em;
-}
-
-
