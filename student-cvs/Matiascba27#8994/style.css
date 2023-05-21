@@ -1,0 +1,91 @@
+/* Aca importamos fuentes de google */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Reseteamos los estilos */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+/* Configuramos el body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    /* padding: 1em 1em; */
+    width: 100%;
+    background-color: #e6edf0;
+}
+
+/* Damos estilos a la seccion Cabecera */
+.section__head{
+    background-image: url(danist-soh-bviex5lwf3s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center center;
+    background-color: #263d36;
+    line-height: 1.2;
+    padding: 5vw 2em;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    box-shadow: 5px 5px 5px #0051ff;
+    width: 100vw;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+.section__head--subtitle{
+    margin-top: 1em;
+    padding-top: 1em;
+    font-weight: 900;
+    background-color: #1cb8e84c;
+    border-radius: 5px;
+    padding: 1em;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+.section_paragraph{
+    background-color: white;
+    margin: 2em 0;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #c4bbbb;
+}
+
+.paragraph{
+    color: #4f4747;
+    letter-spacing: .5px;
+    margin: 1em;
+    font-size: 1.2em;
+    font-weight:400;
+    font-family: 'Outfit', sans-serif;
+    line-height: 2em;
+    
+}
+
+.paragraph__link:hover{
+    background-color: darkorange;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding: .1em;
+}
+
+.section_paragraph a{
+    text-decoration: none;
+}
+
+.footer{
+    margin-top: 1em;
+    padding: 1em;
+}
+
+
