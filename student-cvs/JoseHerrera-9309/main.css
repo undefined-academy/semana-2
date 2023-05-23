@@ -1,67 +1,99 @@
-html{
+html {
     box-sizing: border-box;
 }
-*{
-    box-sizing: inherit;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+
 body {
-    background: rgb(233, 152, 233);
+    background: slategrey;
     font-size: 20px;
-    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 600px;
+
     color: #333;
 }
 
-p{
+header {
+    position: sticky;
+    top: 0px;
+    background-color: cadetblue;
+    padding: 0px 16px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: silver;
+}
+
+p {
     line-height: 1.1;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
 }
 
-h1, h2{
+h1,
+h2 {
     line-height: 1.5;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
-.form-group{
-    margin: 20px 0;
-} 
+/*Contacto*/
 
-label{
+.form-group {
+    margin: 20px 0;
+}
+
+label {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
     color: #444;
 }
 
-label, legend{
-    font-weight: bold; 
+label,
+legend {
+    font-weight: bold;
     font-size: 1.2rem;
     color: #444;
 }
-textarea{
+
+textarea {
     display: block;
     width: 100%;
     resize: vertical;
 }
-label,input{
+
+label,
+input {
     vertical-align: middle;
 }
-input[type="text"], input[type="email"], textarea{
+
+input[type="text"],
+input[type="email"],
+textarea {
     background: white;
     border: 1px solid lightblue;
     border-radius: 4px;
     padding: 8px 10px;
     color: #333;
 }
-textarea + div{
+
+textarea+div {
     font-size: 12px;
 }
 
-label, input:not([type="checkbox"]) {
+label,
+input:not([type="checkbox"]) {
     width: 100%;
 }
-button{
+
+button {
     padding: 16px 60px;
     text-transform: uppercase;
     font-weight: bold;
@@ -72,9 +104,58 @@ button{
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background: teal;
 }
-button:active{
+
+button:active {
     background: orange;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid chocolate;
+    padding: 20px;
+    margin: 20px;
+    width: 18rem;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+footer{
+    background-color: cadetblue;
+}
+.form{
+    margin: 0px auto;
+    max-width: 600px;
 }
