@@ -1,0 +1,83 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #b7b7ff;
+    color: #4d4d4d;
+}
+.page{
+    max-width: 800px;
+    margin: 100px auto;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.form-group{
+    margin: 20px 0;
+}
+label, input[type="text"], input[type="email"]{
+    width: 100%;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+input, textarea, option{
+background-color: #cdcdff;
+vertical-align: middle;
+border-radius: 4px;
+padding: 8px 10px;
+border: 1px solid lightgrey;
+
+}
+
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+button{
+    margin: 20px 0;
+    background: #eab308;
+    border: 1px solid #713f12;
+    border-radius: 8px;
+    border-color: aqua;
+    font-size: 16px;
+    padding: 6px 30px;
+    cursor: pointer;
+    font-weight: bold
+    ;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 50%);
+    text-shadow: -1px -1px 0 #fde047;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+button:hover{
+    background:#facc15
+}
+
+button:active{
+    background: #d19412;
+    box-shadow: none;
+}
+
+.help{
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+form{
+    accent-color:#facc15 ;
+}
+
+input:focus-visible, textarea:focus-visible {
+    border: 1px solid #eab308;
+    outline: 1px solid #facc15;
+}

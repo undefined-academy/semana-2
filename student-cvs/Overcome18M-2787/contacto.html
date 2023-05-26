@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleContact.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="page">
+      <h1>Contacto</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Ingrese su nombre completo"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Ingrese su corrreo electronico"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Presupuesto (en caso de corrresponder)</legend>
+            <input id="1000" name="budget" type="radio" />
+            <label for="1000">$1000</label>
+
+            <input id="5000" name="budget" type="radio" />
+            <label for="5000">$5000</label>
+
+            <input id="10000" name="budget" type="radio" />
+            <label for="10000">$10000</label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Tipo de consulta</label>
+          <select id="type" required>
+            <option  disabled selected value="">Seleccione uno</option>
+            <option>Entrevista</option>
+            <option>Mobile App</option>
+            <option>WebApp</option>
+            <option>Diseño Web</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description">Descripción</label>
+          <textarea name="" id="description" required rows="8" rows="10"></textarea>
+          <div class="help">Escribe una descripción de su contacto</div>
+        </div>
+
+   
+
+        <div class="for-group">
+          <label for="term">
+            <input id="term" type="checkbox" required />
+            <span>Acepto los terminos y condiciones</span>
+          </label>
+        </div>
+        <button>enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
