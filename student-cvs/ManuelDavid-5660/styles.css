@@ -1,0 +1,25 @@
+body{
+    background-color: navajowhite;
+    margin-left: 20px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.barranav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blueviolet;
+    border: 1px solid black;
+    border-radius: 5px;
+}
