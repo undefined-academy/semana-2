@@ -31,28 +31,27 @@
         </article>
         <article class="article__main article2">
             <h2 class="skill__title">
-                Mis habilidades son:
+                Mis habilidades:
             </h2>
             <section class="section__skill">
-                <section class="section__progress">
+                <div class="section__progress">
                     <h3 class="section__skill--title">
                         HTML
                     </h3>
                     <div class="barra">
                         <span class="progreso progreso1"></span>
                     </div>
-                </section>
-
-                <section class="section__progress">
+                </div>
+                
+                <div class="section__progress">
                     <h3 class="section__skill--title">
                         CSS
                     </h3>
-
                     <div class="barra">
                         <span class="progreso progreso2"></span>
                     </div>
 
-                </section>
+                </div>
 
                 <section class="section__progress">
                     <h3 class="section__skill--title">
@@ -63,6 +62,54 @@
 
         </article>
     </main>
+
+    <article class="page">
+        <h2>
+            Contacto
+        </h2>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Escribe tu nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ingrese su correo" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>
+                        Presupuesto
+                    </legend>
+                    <input type="radio" id="5000" name="budget" value="5000"><label for="5000">$5.000</label>
+                    <input type="radio" id="1000" name="budget" value="1000"><label for="1000">$1.000</label>
+                    <input type="radio" id="500" name="budget" value="500"><label for="5000">$500</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de Proyecto: </label>
+                <select id="type" name="type" required>
+                    <option value="" disabled selected>Seleccione una opcion</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">WebApp</option>
+                    <option value="mobileapp">MobileApp</option>
+                    <option value="design">Diseño</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripcion</label> <br>
+                <textarea id="description" name="description" rows="10"
+                    cols="50">Escribe un comentario(opcional)</textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <button type="submit" name="submit">Enviar</button>
+        </form>
+    </article>
 
     <footer class="footer">
 
