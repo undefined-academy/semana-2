@@ -49,3 +49,55 @@ th {
 footer {
   padding-top: 4rem;
 }
+
+/* FORM */
+
+form {
+  background-color: #9bacb3;
+  color: #f9f6f5;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 65%;
+}
+
+button,
+input,
+select,
+fieldset {
+  font-family: inherit;
+  font-size: 100%;
+  margin-bottom: 14px;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  border: 1px solid #566b78;
+  border-radius: 5px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+button[type='submit'] {
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+button[type='submit']:hover {
+  background-color: #a3becf;
+}
+
+.data input {
+  margin-left: 0.5rem;
+}
