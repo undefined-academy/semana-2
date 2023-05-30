@@ -14,7 +14,7 @@ body {
 header {
   background-image: url("/images/IMG_header.jpg");
   background-position: center top;
-  padding: 5% 25%;
+  padding: 5% 20%;
   background-size: cover;
   margin-bottom: 1.5em;
   text-align: center;
@@ -44,7 +44,7 @@ header h2 {
 }
 
 header h3 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 205, 139);
   line-height: 1.5em;
   font-style: italic;
   text-align: center;
