@@ -104,6 +104,90 @@
       </section>
     </article>
 
+    <section class="contact-form">
+      <h2>Fill out the following form to contact me:</h2>
+      <form>
+        <div class="data">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="enter your name"
+            required
+          />
+
+          <br />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="enter your email"
+            required
+          />
+        </div>
+
+        <fieldset>
+          <legend>What can I do for you?</legend>
+
+          <input
+            type="radio"
+            name="contact-type"
+            id="project"
+            value="project"
+            required
+          />
+          <label for="project">Project</label>
+
+          <input
+            type="radio"
+            name="contact-type"
+            id="job"
+            value="job"
+            required
+          />
+          <label for="job">Job</label>
+        </fieldset>
+
+        <label for="language">Language</label>
+        <select name="language" id="language" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="spanish">Spanish</option>
+          <option value="english">English</option>
+        </select>
+
+        <br />
+
+        <label for="description">Description</label>
+
+        <textarea
+          name="contact-description"
+          id="description"
+          rows="3"
+          required
+        ></textarea>
+
+        <br />
+
+        <label for="terms">
+          <input
+            type="checkbox"
+            name="terms"
+            id="terms"
+            value="termsAccepted"
+            required
+          />
+          I agree to the terms and conditions
+        </label>
+
+        <br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
     <footer>
       <p>&copy; 2023 Alexander Pinto - All rights reserved.</p>
     </footer>
