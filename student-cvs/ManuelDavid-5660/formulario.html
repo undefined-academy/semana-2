@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Juego MMORPG</title>
+</head>
+<body>
+    <main class="pagina">
+        <h3>Registrarse</h3>
+        <form action="" method="get ">
+            <div class="formu">
+                <label for="nombre">Nombre de usuario</label>
+                <input id="nombre" type="text" placeholder="Manuelosky" required>
+            </div>
+            <div  class="formu">
+                <label for="edad">Edad</label>
+                <input id="edad" type="number" placeholder="26" min="13" max="99" required>
+            </div>
+            <div class="formu">
+                <label for="clave">Ingrese su contraseña</label>
+                <input id="clave" type="password" placeholder="Minimo 8 caracteres" minlength="8" required>
+            </div>
+            <div class="formu">
+                <label for="confir">Confirme su contraseña</label>
+                <input id="confir" type="password" placeholder="Repita su contraseña" minlength="8" required>
+            </div>
+            <div class="formu">
+                <label for="correo">Correo Electronico</label>
+                <input id="correo" type="email" placeholder="manu@gmail.com" required>
+            </div>
+
+            <div class="formu">
+                <fieldset>
+                    <legend>Elige la raza de tu personaje</legend>
+
+                    <input type="radio" name="click" id="war" required>
+                    <label for="war">Guerrero</label>
+
+                    <input type="radio" name="click" id="hunt">
+                    <label for="hunt">Cazador</label>
+
+                    <input type="radio" name="click" id="mag">
+                    <label for="mag">Mago</label>
+
+                    <input type="radio" name="click" id="nig">
+                    <label for="nig">Nigromante</label>
+                </fieldset>
+            </div>
+
+            <div class="formu">
+                <label for="opcion">Elige un pack de inicio </label>
+                <select name="opcion" id="opcion">
+                    <option disabled selected >Selecciona una opcion</option>
+                    <option value="pvp">Pack PVP</option>
+                    <option value="recolector">Pack Recolector</option>
+                    <option value="explorador">Pack Explorador</option>
+                    <option value="viajero">Pack Viajero</option>
+                </select>
+            </div>
+
+            <div class="formu">
+                <label for="terminos">
+                    <input type="checkbox" id="terminos" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+
+            <div>
+                <label for="recibir">
+                    <input type="checkbox" id="recibir">
+                    <span>Quiero recibir informacion de actualizaciones</span>
+                </label>
+            </div>
+
+            <button class="boton" type="submit">ENVIAR</button>
+
+        </form>
+
+        
+</main>
+</body>
+</html>

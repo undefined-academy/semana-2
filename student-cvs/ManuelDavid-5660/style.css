@@ -1,0 +1,57 @@
+html{
+    box-sizing: border-box;
+    background-color: #716C6B;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+.pagina{
+    max-width: 800px;
+    padding: 20px 20px;
+    margin: 100px auto;
+    background-color: #61BFB1;
+    border-radius: 15px;
+}
+
+.formu{
+    margin: 20px 0;
+}
+
+label{
+    width: 100%;
+    font-weight: bold;
+    color: #2E4053;
+}
+
+button{
+    margin-top: 15px;
+    padding: 20px 40px;
+    background-color: #85C1E9;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 1px solid #A3E4D7;
+    box-shadow: 3px 3px rgba(0, 0, 0, 1);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #76D7C4;
+}
+
+button:active{
+    background-color: #B3B6B7;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 1);
+}
+
+label, input{
+    vertical-align: middle;
+}
+
+input{
+    border-radius:4px;
+    padding: 3px 5px;
+}
