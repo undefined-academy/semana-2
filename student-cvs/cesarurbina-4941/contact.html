@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesContact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="post" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Ej: Mykel" required />
+        </div>
+        <div class="form-group">
+          <label for="name">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Ej: mykel@gmail.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="request">Type of request</label>
+          <select name="type-of-request" id="request" required>
+            <option hidden disabled selected value="">
+              Click here for select
+            </option>
+            <option>Work</option>
+            <option>Question</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="about-request">Description</label>
+          <textarea
+            id="description"
+            placeholder="About your request"
+            required
+          ></textarea>
+        </div>
+        <div class="terms">
+          <label for="terms" class="terms-label">
+            <input id="terms" type="checkbox" required />
+            <span>I accept terms and conditions</span>
+          </label>
+        </div>
+        <button class="button" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
