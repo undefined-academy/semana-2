@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(rgb(13, 248, 228), rgb(8, 8, 226));
+  background-image: linear-gradient(#3186b2, #41d8bf);
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -38,27 +38,32 @@ td {
 }
 
 h1 {
-  color: #4d4d4d;
+  color:#1a2f8d;
   font-size: 50px;
   text-align: center;
 }
 
 p {
-  color: #1d1d1d;
+  color:#1a2f8d;
   font-size: 25px;
 }
 
 h2 {
   font-size: 30px;
-  color: #4f4f50;
+  color: #1a2f8d;
   margin-top: 1em;
   padding-top: 1em;
 }
 
 a {
   text-decoration: none;
-  color: #04911c;
+  color: #062a00;
+  font-weight: bold;
 }
 time{
   background-color: red;
+}
+footer{
+  margin: 0 auto;
+  max-width: 50em;
 }
