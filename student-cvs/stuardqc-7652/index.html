@@ -123,7 +123,8 @@
 
   <section class="section__contact">
     <h2>Find on me</h2>
-    <div class="contact__content">
+    <div class="contact__content--get">
+      <h3>Have you Any Question?</h3>
       <a href="https://mail.google.com/mail/u/1/#inbox" rel="noopener noreferrer nofollow" target="_blank">
         <img
           src="https://camo.githubusercontent.com/bc2d47c32aa045163874a9847255ece16c369beadc2f0d523de7509de31357eb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476d61696c2d737475617264716340676d61696c2e636f6d2d4544333833333f7374796c653d666f722d7468652d6261646765266c6f676f3d676d61696c266c6f676f436f6c6f723d454433383333266c6162656c436f6c6f723d663066306630"
@@ -139,6 +140,19 @@
           src="https://camo.githubusercontent.com/a18340598a110160acd753b8c4be8b529d71494a053c2945d7ebdf30f1eb93fc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f727461666f6c696f2d5374756172645f517569726f7a2d3342353939383f7374796c653d666f722d7468652d6261646765266c6f676f3d6164616672756974266c6f676f436f6c6f723d626c7565266c6162656c436f6c6f723d663066306630"
           alt="Portafolio" style="max-width: 100%">
       </a>
+    </div>
+    <div class="contact__content--send">
+      <h3>Send me an email</h3>
+      <form action="" method="POST" class="form__contact">
+        <div class="form__group">
+          <input name="firstName" type="text" placeholder="First Name" required>
+          <input name="lastName" type="text" placeholder="Last Name" required>
+        </div>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="subject" type="text" placeholder="Subject" required>
+        <textarea name="message" rows="10" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 </body>

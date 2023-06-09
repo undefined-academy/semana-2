@@ -15,7 +15,7 @@ body {
   background-color: #161b22;
   max-width: 60rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
   color: #fff;
 }
 
@@ -70,8 +70,74 @@ h2 {
   border-radius: 0.5rem;
 }
 
-.contact__content {
+.contact__content--get {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.contact__content--get > h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.contact__content--send > h3 {
+  text-align: center;
+}
+
+.form__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__contact input[type='text'],
+.form__contact input[type='email'],
+.form__contact textarea {
+  background-color: #273041;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.form__contact > textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+
+.form__group {
+  display: flex;
+  gap: 1rem;
+}
+
+.form__contact input:focus-visible,
+.form__contact textarea:focus-visible,
+.form__contact button:focus-visible {
+  outline: 2px solid rgba(74, 144, 226, 0.5); /* Agrega un outline personalizado */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Agrega un efecto de sombra */
+}
+
+.form__contact button[type='submit'] {
+  background-color: rgb(74, 144, 226, 0.4);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form__contact button[type='submit']:hover {
+  background-color: rgb(74, 144, 226, 0.3);
+}
+
+@media (max-width: 640px) {
+  .form__group {
+    flex-direction: column;
+  }
 }
