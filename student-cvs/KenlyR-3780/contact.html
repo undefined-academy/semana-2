@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Contáctame</h1>
+    </main>
+  <form>
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input id= "name" type="text" placeholder="Ingrese su nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Ingrese correo electrónico" required>
+    </div>
+    <div class="form-group">
+        <fieldset>
+            <legend>Presupuesto</legend>
+            <input id="5000" name="budget "type="radio" value="5000">
+            <label for="5000">5000</label>
+
+            <input id="3000" name="budget "type="radio" value="3000">
+            <label for="3000">3000</label>
+
+            <input id="1000" name="budget "type="radio" value="1000">
+            <label for="1000">1000</label>
+        </fieldset>
+    </div>
+    <div class="form-group">
+        <label for="type">Tipo de proyecto</label> 
+        <select id="type" required>
+            <option disabled selected value="">Seleccione una opción</option>
+            <option value="website">Website</option>
+            <option value="webapp">Webapp</option>
+            <option value="mobile">Mobile App</option>
+            <option value="desing">Diseño Web</option>
+        </select>
+    </div>
+    <div class="form-group">
+       <label for="description">Descripción</label>
+       <textarea id="description" name="description" required></textarea>
+       <div>Escribe algo interesante.</div>
+    </div>
+    <div class="form-group">
+        <label for="terms">
+            <input id="terms" name="terms" type="checkbox" required>
+            <span>Acepto terminos y condiciones</span>
+        </label>
+    </div>
+    <button>Enviar</button>
+  </form>  
+</body>
+</html>
