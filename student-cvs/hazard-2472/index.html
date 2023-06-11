@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Alvaro Rodriguez</title>
+</head>
+
+<body>
+    <main>
+        <section class="wrapper">
+            <div class="middle">
+                <header class="inline">
+                    <h1 class="name-landing">Hello! I'm </h1>
+                    <h1 class="name-landing2">Alvaro 👋🏻</h1>
+                </header>
+                <div class="description">
+                    <h2>Sobre mi 🧑🏼‍🚀</h2>
+                    <p>Soy estudiante en Ciencias de la Computación y recientemente empecé el Bootcamp Full-Stack de
+                        <a href="https://github.com/undefined-academy" target="_blank">Undefined Academy</a>, Tengo 23
+                        años y soy de Perú, pero
+                        resido actualmente en US. Me considero una persona autodidacta y me apasiona todo lo que
+                        relacionado a la tecnología.
+                    </p>
+                </div>
+                <div class="description">
+                    <h2>Mis Hobbies 👾</h2>
+                    <ul>
+                        <li>Videojuegos🎮
+                            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjBhOWM2MzJlNzVlNDViZDM4MGVhM2UwMDIwNDg2MGExNGU1NWJhNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/VwTkahUrtFwNMC9FRj/giphy.gif"
+                                alt="">
+                        </li>
+                        <li>Deportes 🏀🎾🏊🏼‍♂️
+                            <img src="https://media.giphy.com/media/3o7ZeA6AbQsdXnx7eU/giphy.gif" alt="">
+                        </li>
+                        <li>Ver Peliculas 🎬
+                            <img src="https://media.giphy.com/media/Sb7WSbjHFNIL6/giphy.gif" alt="">
+                        </li>
+                        <li>Programar 👨🏻‍💻
+                            <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="middle2">
+                <div class="tables">
+                    <h1 class="name-tables">Comandos de Linux 🐧</h1>
+                    <h2>Comandos de la terminal</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Comando</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>mkdir</td>
+                                <td>Creación de carpetas</td>
+                            </tr>
+                            <tr>
+                                <td>cd</td>
+                                <td>Navegación entre carpetas </td>
+                            </tr>
+                            <tr>
+                                <td>ls</td>
+                                <td>Listar archivos de la ubicación actual </td>
+                            </tr>
+                            <tr>
+                                <td>mv</td>
+                                <td>Mover archivos o carpetas y actualizar nombres</td>
+                            </tr>
+                            <tr>
+                                <td>pwd</td>
+                                <td>Ruta absoluta del directorio actual</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Alias</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Comando</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>cl</td>
+                                <td>alias cl="clear" </td>
+                            </tr>
+                            <tr>
+                                <td>npmd</td>
+                                <td>alias npmd="npm run dev"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="middle3">
+                <div class="contact">
+                    <h1 class="name-contact">Contacto</h1>
+                <form action="/server" method="get" id="form">
+
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Ingrese su correo electronico" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Tipo de proyecto</label>
+                        <select id="type" required>
+                            <option disabled selected value="">Seleccione uno</option>
+                            <option value="website">Website</option>
+                            <option value="webapp">Webapp</option>
+                            <option value="mobileapp">Mobile app</option>
+                            <option value="design">Diseño web</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Mensaje</label>
+                        <textarea id="description" rows="5"></textarea>
+                        <div class="help">Maximo 250 caracteres</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="terms">
+                            <input id="terms" type="checkbox" required>
+                            <span>Acepto los terminos y condiciones</span>
+                        </label>
+                    </div>
+
+                    <button>Enviar</button>
+                </form>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+
+<script> 
+const form = document.getElementById("form") 
+
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+} )
+
+</script>
+
+</html>
