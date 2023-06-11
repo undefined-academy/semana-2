@@ -109,58 +109,57 @@
             <div class="background">
                 <div class="contact">
                     <h1 class="name-contact">Contacto</h1>
-                <form action="/server" method="get" id="form">
+                    <form action="/server" method="get" id="form">
 
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Ingrese su correo electronico" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Ingrese su correo electronico" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="type">Tipo de proyecto</label>
-                        <select id="type" required>
-                            <option disabled selected value="">Seleccione uno</option>
-                            <option value="website">Website</option>
-                            <option value="webapp">Webapp</option>
-                            <option value="mobileapp">Mobile app</option>
-                            <option value="design">Diseño web</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="type">Tipo de proyecto</label>
+                            <select id="type" required>
+                                <option disabled selected value="">Seleccione uno</option>
+                                <option value="website">Website</option>
+                                <option value="webapp">Webapp</option>
+                                <option value="mobileapp">Mobile app</option>
+                                <option value="design">Diseño web</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="description">Mensaje</label>
-                        <textarea id="description" rows="5"></textarea>
-                        <div class="help">Maximo 250 caracteres</div>
-                    </div>
+                        <div class="form-group">
+                            <label for="description">Mensaje</label>
+                            <textarea id="description" rows="5"></textarea>
+                            <div class="help">Maximo 250 caracteres</div>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="terms">
-                            <input id="terms" type="checkbox" required>
-                            <span>Acepto los terminos y condiciones</span>
-                        </label>
-                    </div>
+                        <div class="form-group">
+                            <label for="terms">
+                                <input id="terms" type="checkbox" required>
+                                <span>Acepto los terminos y condiciones</span>
+                            </label>
+                        </div>
 
-                    <button>Enviar</button>
-                </form>
+                        <button>Enviar</button>
+                    </form>
                 </div>
-                
             </div>
         </section>
     </main>
 
 </body>
 
-<script> 
-const form = document.getElementById("form") 
+<script>
+    const form = document.getElementById("form")
 
-form.addEventListener("submit", function(event){
-    event.preventDefault()
-} )
+    form.addEventListener("submit", function (event) {
+        event.preventDefault()
+    })
 
 </script>
 
