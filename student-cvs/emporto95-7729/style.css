@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FFFFFF;
     color: #333333;
@@ -45,6 +49,41 @@ th, td {
 
 .menu li:hover {
     background-color: #eee;
+}
+
+.form-group {
+    margin: 32px 0;
+    width: 100%;
+}
+
+label, input {
+    width: 80%;   
+    margin: 4px 0 0 0;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+}
+
+textarea {
+    display: block;
+    margin: 4px 0;
+    resize: vertical;
+    width: 80%;
+}
+
+.main_section, .sobremi, .conocimientos {
+    margin: 0 44px;
+}
+
+.Primary {
+    background-color: rgb(75, 75, 255);
+    border-radius: 4px;    
+    color: #eee;
+    font-size: medium;
+    font-style: normal;
+    width: 15%;
 }
 
 .footer {
