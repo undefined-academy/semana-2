@@ -7,10 +7,61 @@
 
 body {
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 45em;
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: #f8fafc;
     padding: 1em 3em;
     color: #566b78;
     line-height: 1.5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 2rem 0 2rem 0;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu > a {
+    color: #a78bfa;
+}
+
+.nav-item {
+    display: inline;
+    list-style-type: none;
+    font-size: 1.125rem;
+    margin: 0 3rem 0 0;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color: #a78bfa;
+    text-decoration: underline;
+}
+
+.nav-item > a {
+    text-decoration: none;
+}
+
+.dark-mode-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+    color: #a78bfa;
+}
+
+.active-elements {
+    color: #a78bfa;
+}
+
+a:visited {
+    color: #a78bfa;
 }
