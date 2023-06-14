@@ -20,7 +20,8 @@ body {
 }
 
 hr {
-    color: #566b78;
+    color: rgb(209 213 219);
+    opacity: 0.4;
 }
 
 .header {
@@ -38,7 +39,7 @@ hr {
 }
 
 .nav-menu > a {
-    color: #a78bfa;
+    color: #8b5cf6;
 }
 
 .nav-item {
@@ -50,7 +51,7 @@ hr {
 }
 
 .nav-item:hover {
-    color: #a78bfa;
+    color: #8b5cf6;
     text-decoration: underline;
 }
 
@@ -63,7 +64,7 @@ hr {
     border: none;
     font-size: 1.125rem;
     cursor: pointer;
-    color: #a78bfa;
+    color: #8b5cf6;
 }
 
 .active-elements {
@@ -71,7 +72,7 @@ hr {
 }
 
 a:visited {
-    color: #a78bfa;
+    color: #8b5cf6;
 }
 
 .main-article {
@@ -84,7 +85,12 @@ a:visited {
 .main-article h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: #a78bfa;
+    color: #8b5cf6;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 .resume-btn {
@@ -100,7 +106,7 @@ a:visited {
 }
 
 .resume-btn > i {
-    margin-right: 0.6rem;
+    margin-right: 0.5rem;
 }
 
 
@@ -108,4 +114,16 @@ img {
     border-radius: 9999px;
     border: 2px dashed #566b78;
     margin-right: 2rem;
+}
+
+.pro-section {
+
+}
+
+.pro-article {
+    
+}
+
+.pro-article > h2 {
+    margin: 2rem 0 1rem 0;
 }
