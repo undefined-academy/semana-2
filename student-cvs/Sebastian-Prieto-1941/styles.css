@@ -15,6 +15,14 @@ body {
     line-height: 1.5;
 }
 
+.main-section {
+    margin-bottom: 2rem;
+}
+
+hr {
+    color: #566b78;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -59,9 +67,45 @@ body {
 }
 
 .active-elements {
-    color: #a78bfa;
+    font-weight: bold;
 }
 
 a:visited {
     color: #a78bfa;
+}
+
+.main-article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+.resume-btn {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #e0e7ff;
+    color: #6366f1;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin-top: 0.6rem;
+}
+
+.resume-btn > i {
+    margin-right: 0.6rem;
+}
+
+
+img {
+    border-radius: 9999px;
+    border: 2px dashed #566b78;
+    margin-right: 2rem;
 }
