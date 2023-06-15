@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Formulario HTML</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
@@ -24,13 +27,13 @@
         <fieldset>
             <legend>Presupuesto</legend>
             <input id="5000" name="budget "type="radio" value="5000">
-            <label for="5000">5000</label>
+            <label for="5000">$5000</label>
 
             <input id="3000" name="budget "type="radio" value="3000">
-            <label for="3000">3000</label>
+            <label for="3000">$3000</label>
 
             <input id="1000" name="budget "type="radio" value="1000">
-            <label for="1000">1000</label>
+            <label for="1000">$1000</label>
         </fieldset>
     </div>
     <div class="form-group">
@@ -40,13 +43,12 @@
             <option value="website">Website</option>
             <option value="webapp">Webapp</option>
             <option value="mobile">Mobile App</option>
-            <option value="desing">Diseño Web</option>
         </select>
     </div>
     <div class="form-group">
        <label for="description">Descripción</label>
-       <textarea id="description" name="description" required></textarea>
-       <div>Escribe algo interesante.</div>
+       <textarea id="description" name="description" required rows="3"></textarea>
+       <div>Escribe algo que requieras saber con lujo de detalles.</div>
     </div>
     <div class="form-group">
         <label for="terms">
