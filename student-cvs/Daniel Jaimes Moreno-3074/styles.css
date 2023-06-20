@@ -2,7 +2,7 @@
 
 body {
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 60em;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   padding: 4em 1em;
@@ -93,3 +93,48 @@ button:hover{
   color: white;
 }
 
+.habilidades {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skills{
+  text-align: left;
+}
+
+.contenedor-habilidades img {
+  padding: 1.25rem;
+  
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px #a17a69;
+  padding: 20px;
+  margin: 10px;  
+}
+
+footer {
+  background-color: #fcfcfc;
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+@media screen and (max-width: 790px) {
+  /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
+  .icon {
+    width: 8.875rem;
+    height: 8.25rem;
+  }
+
+}
