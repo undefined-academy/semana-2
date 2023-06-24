@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Istok+Web&display=swap');
 
+html, body {
+    box-sizing: border-box;
+}
 body {
     margin: 0 auto;
     width: 50em;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Istok Web', sans-serif;
     line-height: 1.5;
     padding: 4em 1em;
-    color : #555 ;
     color : #566b78 ;
-    background-color: #fac2;
+    background-color: white;
 }
 
 h2 {
@@ -28,4 +30,29 @@ p {
 header img{
     width: 120px;
     border-radius: 60px;
+}
+.container .item {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+}
+.item {
+    border: 1px solid #00bcd4;
+    
+}
+.item img {
+    width: 50px;
+}
+.item h3, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+@media screen and (max-width: 33%){
+    .item {
+        min-width: 900px;
+    }
 }
