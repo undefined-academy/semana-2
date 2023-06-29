@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link href="style-fondoopacidad.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script href="index.js"></script>
+</head>
+
+<body>
+    <header>Veysia<span class="punto">.</span>
+        <span class="titulito">Diseñadora gráfica, programadora y maestra.</span>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutme.html">About me</a></li>
+            <li><a href="Estudios.html">Estudios</a></li>
+            <li><a href="Aprendizajes.html">Aprendizajes</a></li>
+            <li><a href="Cheatsheets.html">Cheatsheets</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Formulario de contacto<span class="punto">.</span></h1>
+    <div class="formulario">
+        <form class="form">
+            <div class="form-control">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-control">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <label for="15000">15000€</label>
+                    <input type="radio" id="15000" name="budget">
+                    <label for="10000">10000€</label>
+                    <input type="radio" id="10000" name="budget">
+                    <label for="5000">5000€</label>
+                    <input type="radio" id="5000" name="budget">
+                    <label for="1000">1000€</label>
+                    <input type="radio" id="1000" name="budget">
+                </fieldset>
+            </div>
+            <div class="form-control">
+                <label>Servicios</label>
+                <select name="servicios">
+                    <option value="" selected>Elija una opción</option>
+                    <option value="website">Página web</option>
+                    <option value="APPmobile">App Movil</option>
+                    <option value="MarkDesign">Diseño de marca</option>
+                    <option value="MarketingDigital">Estrategia marketing digital</option>
+                </select>
+                <div class="help">En caso de haber seleccionado el diseño de marca indique cual prefiere:</div>
+                <select>
+                    <option value="" selected>Elija una opción</option>
+                    <option value="Logotipo">Logotipo</option>
+                    <option value="Flyers">Flyers Eventos</option>
+                    <option value="Campaign">Campaña publicitaria</option>
+                    <option value="Packaging">Diseño packaging</option>
+                    <option value="FullMark">Diseño de marca completo</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="file">Adjunte un pdf de su proyecto.</label>
+                <input type="file" name="file" if="file">
+            </div>
+            <div class="form-control">
+                <label for="cita">Cita previa</label>
+                <input type="datetime-local" name="cita" if="cita">
+                <div class="help">La cita será a través de videollamada y será confirmada por email.</div>
+            </div>
+            <div class="form-control">
+                <textarea cols="80" rows="15" name="description"></textarea>
+                <div class="help">Escriba si quiere añadir algúna información adicional.</div>
+            </div>
+            <div class="form-control">
+                <label for="checkbox"></label>
+                <input type="checkbox">
+                <span class="condiciones" id="checkbox" name="checkbox">Acepto las clausuras y condiciones.</span>
+            </div>
+            <button id="submit" class="boton">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/StudioMoonBun"><img src="images/github_neon.png" width="30px"></a>
+                </li>
+                <li><a href="https://discordapp.com/users/νєуѕια ⸸#8225"><img src="images/discord_neon.png"
+                            width="30px"></a>
+                </li>
+                <li><a href="https://ko-fi.com/veysia"><img src="images/kofi_neon.png" width="30px"></a></li>
+            </ul>
+            <span>@Veysia 2023.</span>
+        </nav>
+    </footer>
+</body>
+
+</html>
