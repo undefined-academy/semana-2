@@ -1,0 +1,38 @@
+header {
+    background-image: url("Header.jpg");
+    background-size: cover;
+    padding: 10vw 2em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+h2, .intro {
+    margin: 1em;
+    padding-top: 1em;
+}
+
+h1, h2, strong {
+    color: #333;
+}
+
+a {
+    color: #F1948A  ;
+}
+
+body {
+    background: #e2e8f0;
+    margin: 0 auto;
+    max-width: 800px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
