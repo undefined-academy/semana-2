@@ -1,0 +1,242 @@
+html /* body */ {
+    box-sizing: border-box;
+    height: 100%;
+} 
+* {
+    box-sizing: inherit;
+}
+
+.heading {
+    font-size:35px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    
+}
+
+body {
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    margin: 100px auto;
+    border: 2px solid #c9d1d9;
+    background-color: #181e2e;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #c9d1d9;
+}
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+h1,
+h2,
+strong {
+  color: #FFF;
+}
+
+
+#profile-photo {
+    border-radius: 50%;
+}
+.subheading {
+    color: #c9d1d9;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-left: 16px;
+
+}
+.icon {
+    color: #c9d1d9;
+    float: left;
+    padding-left: 16px;
+    padding-right: 10px;
+}
+.intro{
+    color: #c9d1d9;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.contactinfo{
+    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+.prof {
+    font-size:20px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    border-bottom: #c9d1d9 solid 1px;
+}
+
+body{
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif
+}
+.data {
+    font-size: 16px;
+    color: #c9d1d9;
+    font-weight: bold;
+    padding-left: 0;
+}
+.jobinfo .jobtitle {
+    font-weight: bold;
+    text-align: justify;
+    color: #c9d1d9;
+}
+.jobdesc , .date {
+    color: #c9d1d9;
+}
+.social {
+    padding-left: 16px;
+    margin-bottom: 50px;
+}
+.skills ul li {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -15px;
+    list-style-type: circle;
+    color: #c9d1d9;
+}
+.skills ul li .skill_prog {
+    width: 80%;
+    height: 5px;
+    position: relative;
+}
+.skills ul li .skill_prog span {
+    position: absolute;
+    height: 100%;
+    background: #c9d1d9;
+    padding-right: 50px;
+    margin-left: 40px;
+}
+.skill_name {
+    width: 4px;
+    color: #c9d1d9;
+}
+.skill_per {
+    margin-right: 15px;
+}
+
+code,
+pre {
+  background: #eee;
+}
+
+code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+  }
+  
+  pre {
+    padding: 1em;
+  }
+
+  a {
+    color: #e81c4f;
+  }
+
+  /* Formulario */
+
+.page {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+    background: #181e2e;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #e6e8ef;
+
+}
+
+.form-group {
+    /* border: 1px dotted gray; */
+    margin: 20px 0;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+label, legend {
+    font-weight: bold;
+    color: #e6e8ef;
+}
+
+textarea {
+    background-color: #303843;
+    display: block; 
+    width: 100%;
+    resize: vertical;
+    border: none;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 8px;
+}
+
+input {
+    background-color: #303843;
+    color: #717884;
+    border: none;
+    padding: 10px 8px;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.descriccion, legend {
+    color: #e6e8ef;
+    
+}
+
+button {
+    font-weight: bold;
+    background-color: #2493df;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button:hover {
+    background: #4aaced;
+    transform: scale(1.01);
+}
+button:active {
+    background: #1469a1;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+select {
+    background-color: #303843;
+    color: #717884;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.terms {
+    vertical-align: middle;
+}
+form {
+    accent-color: #2493df;
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: 1px solid #4aaced;
+    border: 1px solid #2493df;;
+}
