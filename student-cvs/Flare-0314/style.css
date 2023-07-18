@@ -1,3 +1,76 @@
+/* Estilos para el formulario de contacto */
+form {
+  margin-top: 1em;
+  padding: 2.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; 
+  background: #eee;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  text-align: left; 
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 8px 4px;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: left;
+  margin: 0.5 auto;
+}
+
+form textarea {
+  resize: vertical;  
+  margin: 0 auto;
+}
+
+form button[type="submit"] {
+  background-color: #555;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;  
+}
+
+form button[type="submit"]:hover {
+  background-color: #444;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 0.2em;  
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
 body{
     margin: 0 auto;
     max-width: 50em;

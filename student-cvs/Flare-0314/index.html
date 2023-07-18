@@ -13,7 +13,7 @@
     <section>
         <article>
             <header>
-                <h1>Estudiante de ingeniería de sistemas, Universidad de Nariño.</h1>
+                <h1>Systems Engineering Student, University of Nariño.</h1>
                 <hr>
 
                 <p>📚I am learning python and javascript. I learnt java at university. I am doing a bootcamp to learn
@@ -93,6 +93,59 @@
         </article>
 
     </section>
+
+    <section>
+        <article>
+            <h2>📝Contact Form</h2>
+
+            <form id="contact-form" action="" method="get" class="form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br>
+
+                <div class="radio-group">
+                    <fieldset>
+                        <legend>Subject</legend>
+                        <input type="radio" id="freelance" name="subject">
+                        <label for="freelance">Freelance</label>
+
+                        <input type="radio" id="contract" name="subject">
+                        <label for="contract">Contract</label>
+
+                        <input type="radio" id="other" name="subject">
+                        <label for="other">Other</label>
+                    </fieldset>
+                </div>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                <button type="submit" id="submit-btn">Send</button>
+            </form>
+        </article>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtaining references to the form and the submit button
+            const form = document.getElementById("contact-form");
+            const submitBtn = document.getElementById("submit-btn");
+
+            // Adding an event to the submit button
+            submitBtn.addEventListener("click", function (event) {
+                // Preventing the form from being submitted to the server
+                event.preventDefault();
+            });
+        });
+
+    </script>
 </body>
 
 </html>
