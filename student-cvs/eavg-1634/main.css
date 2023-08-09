@@ -1,0 +1,79 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 1rem 1rem;
+  color: #555;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  background-color: #263d36;
+  background-image: url("./images/header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+  gap: 15px;
+}
+
+header h1:hover {
+  /* background:  #e81c4f; */
+  color: cadetblue;
+}
+
+h1 {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 28ch;
+  animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+  overflow: hidden;
+  color: aliceblue;
+}
+
+@keyframes typing {
+  from { width: 0 }
+}
+
+@keyframes blink {
+  20% { border-color: transparent;}
+}
+
+h2 {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+h2,
+strong {
+  color: #333;
+}
+
+/* #projects {
+  display: flex;
+} */
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
