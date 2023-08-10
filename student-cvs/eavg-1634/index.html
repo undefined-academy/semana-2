@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>My Portfolio</title>
   </head>
   <body>
@@ -38,8 +38,6 @@
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               quod vitae laboriosam hic totam voluptates repellat sed laborum
-              amet molestias dolores laudantium quis earum in tempore minus
-              quasi enim dolor!
             </p>
           </article>
           <article class="card">
@@ -47,8 +45,6 @@
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               quod vitae laboriosam hic totam voluptates repellat sed laborum
-              amet molestias dolores laudantium quis earum in tempore minus
-              quasi enim dolor!
             </p>
           </article>
           <article class="card">
@@ -56,8 +52,6 @@
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               quod vitae laboriosam hic totam voluptates repellat sed laborum
-              amet molestias dolores laudantium quis earum in tempore minus
-              quasi enim dolor!
             </p>
           </article>
         </div>
@@ -89,13 +83,38 @@
 
       <section id="contact-me">
         <h2>Contact me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          tempora deserunt quo? Dignissimos assumenda corrupti, exercitationem
-          alias quos aliquid suscipit quis odio a natus harum blanditiis nam,
-          recusandae minus provident!
-        </p>
+        <form method="post">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Nombre"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
+          <button id="submit" type="submit">Enviar</button>
+        </form>
       </section>
     </main>
   </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("form").submit(function (e) {
+        e.preventDefault();
+        // o return false;
+      });
+    });
+  </script>
 </html>
