@@ -1,0 +1,130 @@
+ body {
+     background: linear-gradient(to right, #4776e6, #8e54e9);
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: white;
+     margin: 0 auto;
+     max-width: 50em;
+     line-height: 1.5;
+     padding: 4em 1em;
+
+ }
+
+ h1 {
+     padding: 25px;
+     background-color: black;
+     text-align: center;
+ }
+
+ h3 {
+     padding: 15px;
+     background-color: black;
+     color: rgb(255, 208, 0);
+     margin-top: 1em;
+     padding-top: 1em;
+ }
+
+ strong {
+     color: rgb(255, 208, 0);
+ }
+
+ em {
+     color: aqua;
+     font-weight: bold;
+ }
+
+ a {
+
+     color: orange;
+ }
+
+ .default {
+     background-color: black;
+     padding: 15px;
+ }
+
+ td {
+     border: aliceblue 1px solid;
+     padding: 5px;
+ }
+
+ p em {
+     color: orange;
+     font-weight: bold;
+ }
+
+ .naveg li {
+     list-style-type: none;
+     text-align: left;
+     display: inline;
+     color: rgb(255, 208, 0);
+     padding: 15px;
+     background-color: #000;
+     margin: 1%;
+     text-align: center;
+
+ }
+
+ /*Estilos form*/
+
+ form {
+     padding: 30px;
+ }
+
+ select,
+ input,
+ .area {
+     width: 100%;
+     background-color: rgb(236, 249, 212);
+ }
+
+
+ label,
+ legend {
+     font-weight: bold;
+     color: yellow;
+     padding: 5px;
+
+ }
+
+ textarea {
+     display: block;
+     width: 100%;
+     resize: vertical;
+ }
+
+ input [type="text"] [type="email"],
+ textarea {
+     background: white;
+     border: 1px solid lightgray;
+     border-radius: 4px;
+     padding: 8px 10px;
+     color: #333333
+ }
+
+ button {
+     padding: 16px 32px;
+     text-transform: uppercase;
+     font-weight: 1px solid;
+     border: black;
+     background: rgb(68, 177, 104);
+     font-weight: bold;
+     box-shadow: 1px 1px 3px;
+     cursor: pointer;
+
+ }
+
+ button:hover {
+     background: rgb(50, 121, 73);
+     box-shadow: -1px -1px -3px;
+ }
+
+ input,
+ textarea {
+     font-family: Arial, Helvetica, sans-serif
+ }
+
+ .otambien {
+     color: white;
+     text-align: center;
+ }
