@@ -1,5 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
 body {
   margin: 0 auto;
   max-width: 50em;
@@ -20,4 +26,39 @@ strong {
 }
 a {
     color: #e81c4f;
-  }
+}
+
+/* Form */
+.form{
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 10px 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #e81c4f;
+  border-radius: 5px;
+  color: wheat;
+}
+.form-group {
+  margin: 20px 0;
+}
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  display: block;
+  resize: vertical;
+  border-radius: 10px;
+  padding: 10px;
+}
+input {
+  border-radius: 5px;
+  padding: 10px;
+}
+label{
+  font-weight: bold;
+  color: wheat;
+}
+button {
+  padding: 10px;
+}
