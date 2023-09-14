@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form action="get">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" placeholder="Escribe nombres completos" required>
+        <label for="phone">No. Celular:</label>
+        <input type="text" id="phone" placeholder="Escribe tu número de contacto">
+        <label for="email" >Correo:</label>
+        <input type="email" id="email" placeholder="example@xyz.com" required>
+        <fieldset>
+            <legend>Motivo de contacto</legend>
+            <label for="motivo">Reclutar</label>
+            <input type="radio" name="motivo" id="motivo">
+            <label for="motivo">Información</label>
+            <input type="radio" name="motivo" id="motivo">
+            <label for="motivo">De visita</label>
+            <input type="radio" name="motivo" id="motivo">
+        </fieldset>
+
+        <label for="plataforma">De donde nos visitas?</label>
+        <select name="plataforma" id="plataforma" required>
+            <option value="computrabajo">Computrabajo</option>
+            <option value="el_empleo">El Empleo</option>
+            <option value="likendlin">Likendlin</option>
+        </select>
+        <label for="observations">Observaciones</label>
+        <textarea name="observations" id="observations" cols="30" rows="10" placeholder="Deja tus comentarios"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <footer><a href="/index.html">Atrás</a></footer>
+   
+</body>
+</html>

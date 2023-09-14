@@ -32,6 +32,8 @@ aside {
 
 a {
     color: #e81c4f;
+    text-decoration: none;
+    font-size: 18px;
   }
 
 header {
@@ -74,4 +76,22 @@ transition-property: color, background;
 header a:hover {
 background:  #e81c4f;
 color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 25px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
