@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Decode | Frontend Student</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="home" class="header wrapper">
+      <h1 class="header__logo">Miguel Decode</h1>
+
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#terminal">Terminal commands</a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="wrapper">
+      <section class="about" id="about">
+        <h2>About me</h2>
+
+        <p>
+          Hello!, I'm <span class="accent">Miguel</span> and I'd like to share a
+          little about myself.
+        </p>
+
+        <h2>Hobbies</h2>
+        <ul>
+          <li>
+            Read books, especially <span class="accent">fantasy</span> and
+            <span class="accent">science fiction</span>.
+          </li>
+          <li>
+            The Japanese world, <span class="accent">anime </span>and
+            <span class="accent">manga</span>.
+          </li>
+          <li>
+            Looking for new challenges that help me to continue learning every
+            day.
+          </li>
+        </ul>
+
+        <h2>Home</h2>
+        <p>
+          Living in the most beautifull place of the world and where the people
+          of the past think the
+          <span class="accent">earth finish</span>. In the northwest of Spain.
+        </p>
+
+        <h2>I work as</h2>
+        <ul>
+          <li>
+            <span class="accent">Electromechanical </span>in a car company.
+          </li>
+          <li>Student of <span class="accent">front-end </span>developer</li>
+        </ul>
+      </section>
+
+      <section class="terminal" id="terminal">
+        <h2>Terminal commands I use every day</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>cd</td>
+            <td>Change Directory</td>
+          </tr>
+          <tr>
+            <td>ls</td>
+            <td>List files</td>
+          </tr>
+          <tr>
+            <td>rm</td>
+            <td>Remove file or directory</td>
+          </tr>
+          <tr>
+            <td>mkdir</td>
+            <td>Create a directory</td>
+          </tr>
+          <tr>
+            <td>pwd</td>
+            <td>Show the path of the current directory</td>
+          </tr>
+        </table>
+
+        <h3>Alias you must know</h3>
+
+        <table>
+          <tr>
+            <td>alias l='ls -CF'</td>
+            <td>
+              alias mostused='history | awk '\''{print $2}'\'' | sort | uniq -c
+              |sort -nr | head -n 10'
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer wrapper">
+      <p>
+        &copy; Create with love by
+        <a href="https://github.com/MiguelDecode">Miguel Decode</a> 2023.
+      </p>
+    </footer>
+  </body>
+</html>

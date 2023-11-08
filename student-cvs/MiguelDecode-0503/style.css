@@ -1,0 +1,128 @@
+/* Root */
+:root {
+  --bg-clr: #242424;
+  --text-clr: #edf2f4;
+  --accent-clr: #3186ff;
+}
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Utilities */
+.wrapper {
+  width: min(90%, 60rem);
+  margin-inline: auto;
+}
+
+.accent {
+  color: var(--accent-clr);
+}
+
+table * {
+  outline: 1px solid var(--text-clr);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Styles */
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-clr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.header__logo {
+  color: var(--accent-clr);
+  font-size: 1.25rem;
+  border: 2px solid var(--accent-clr);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.header__nav {
+  & ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+
+    & a {
+      transition: color 0.3s ease-in-out;
+    }
+
+    & a:hover {
+      color: var(--accent-clr);
+    }
+  }
+}
+
+/* Sections */
+
+section {
+  margin-block: 12rem;
+}
+
+.about h2 {
+  color: var(--accent-clr);
+}
+
+.terminal h2,
+.terminal h3 {
+  color: var(--accent-clr);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+
+  & a {
+    font-weight: bold;
+  }
+
+  & a:hover {
+    color: var(--accent-clr);
+  }
+}
