@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <h1>Contact Form</h1>
+
+      <form id="form" class="form" action="./server" method="get">
+        <div class="form__group">
+          <label class="form__label" for="name">Name</label>
+          <input
+            class="form__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Insert your full name"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="email">Email</label>
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Insert your email"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <fieldset>
+            <legend class="form__legend">Budget</legend>
+            <input
+              type="radio"
+              name="budget"
+              id="10000"
+              value="10000"
+              required
+            />
+            <label for="10000">$10000</label>
+            <input type="radio" name="budget" id="5000" value="5000" required />
+            <label for="5000">$5000</label>
+            <input type="radio" name="budget" id="3000" value="3000" required />
+            <label for="3000">$3000</label>
+          </fieldset>
+          <p class="form__parragraph">
+            This budget is an approach, not the total amount.
+          </p>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="type">Type of project</label>
+          <select class="form__select" id="type" name="type" required>
+            <option value="Website" selected>Website</option>
+            <option value="WebApp">WebApp</option>
+            <option value="Mobile App">Mobile App</option>
+            <option value="Design">Design</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="description">Description</label>
+          <textarea
+            id="description"
+            name="comment"
+            placeholder="Write a description at least five hundred words about the project."
+            minlength="500"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form__group">
+          <label for="terms">
+            <input type="checkbox" name="terms" required id="terms" />
+            I accept the terms and conditions
+          </label>
+        </div>
+
+        <button class="form__submit" type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+
+  <script>
+    const form = document.getElementById("form");
+
+    document.addEventListener("submit", (event) => event.preventDefault());
+  </script>
+</html>
