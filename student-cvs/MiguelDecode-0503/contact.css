@@ -40,6 +40,14 @@ select {
   padding: 2rem;
   border-radius: 0.5rem;
   background-color: #fff;
+  accent-color: cornflowerblue;
+}
+
+.form__input:focus-visible,
+textarea:focus-visible,
+.form__select:focus-visible {
+  outline: 2px solid cornflowerblue;
+  border: none;
 }
 
 .form__group {
