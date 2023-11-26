@@ -47,3 +47,39 @@ th,
 td {
   padding-right: 40px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+  max-width: 280px;
+  height: 16px;
+}
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+textarea {
+  max-width: 280px;
+}
+
+button {
+  max-width: 280px;
+  padding: 10px;
+  font-size: large;
+  border-radius: 6px;
+  border: 2px solid tomato;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(31 41 55);
+  cursor: pointer;
+  font-size: large;
+  zoom: 1.02;
+  text-transform: uppercase;
+}
