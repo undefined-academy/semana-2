@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="form.html"><li>Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+            <div class="form-style">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-style">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Ingrese su e-mail" required>
+            </div>
+            <div class="form-style">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input type="radio" id="1000" name="budge"><label for="1000">$1000</label>
+                    <input type="radio" id="500" name="budge"><label for="500">$500</label>
+                    <input type="radio" id="100" name="budge"><label for="100">$100</label>
+                </fieldset>
+                <div class="div-text">Este es el presupuesto inicial no el total</div>
+            </div>
+            <div class="form-style">
+                <label for="type">Tipo de producto</label>
+                <select name="type" id="type" required>
+                    <option disabled selected value="">Seleccionar uno</option>
+                    <option value="">Website</option>
+                    <option value="">WebApp</option>
+                    <option value="">MobileApp</option>
+                    <option value="">Diseño</option>
+                </select>
+            </div>
+            <div class="form-style">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" required></textarea>
+                <div class="div-text">Da una descripción de máximo 500 palabras</div>
+            </div>
+            <div class="form-style">
+                <label for="temrs">
+                    <input type="checkbox" id="terms" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+            <div class="button-class">
+                <button>Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer><strong>Kevin Garcia</strong></footer>
+</body>
+</html>

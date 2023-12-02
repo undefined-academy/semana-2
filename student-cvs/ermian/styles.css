@@ -7,22 +7,42 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(230, 224, 235);
 }
-body h2, strong {
-    color: rgb(41, 41, 41);
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
-header,main{
+nav li {
+    list-style: none;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+}
+nav li:hover {
+    color: rgb(142, 128, 232);
+}
+h2, strong {
+    color: rgb(142, 128, 232);
+}
+h1, li {
+    color: rgb(67, 65, 65);
+}
+.div-1,main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-header img {
+/*.div-1 img {
     margin-top: 4em;
     border-radius: 1000px;
     width: 100px;
     height: 105px;
-}
+}*/
 .article-1, .article-2 {
-    background-color: rgb(219, 202, 219);
+    background-color: rgb(203, 196, 250);
     margin-bottom: 2em;
     padding: 40px;
     border-radius: 10px;
@@ -30,6 +50,65 @@ header img {
 
 footer {
     text-align: center;
-    background-color: rgb(219, 202, 219);
+    background-color: rgb(203, 196, 250);
     padding: 10px;
+}
+form {
+    max-width: 500px;
+}
+.form-style {
+    margin-bottom: 1em;
+}
+input, label {
+    vertical-align: middle;
+}
+input:not([type="radio"], [type="checkbox"]) {
+    display: block;
+}
+label,input[type="text"],[type="email"] {
+    width: 100%;
+}
+input[type="text"],[type="email"],textarea   {
+    border-radius: 4px;
+    border: solid lightgray 1.5px;
+    padding: 5px;
+    color: #333;
+}
+label,legend {
+    font-weight: bold;
+    color: rgb(49, 48, 48);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+textarea {
+    display: block;
+    width: 350px;
+    height: 100px;
+    resize: none;
+}
+.div-text {
+    font-size: 12px;
+    color: rgb(67, 65, 65);
+}
+.button-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-class button {
+    border-radius: 4px;
+    background-color: rgb(142, 128, 232);
+    border: solid rgb(142, 128, 232);
+    color: white;
+    padding: 5px 75px;
+    margin-bottom: 2em;
+}
+.button-class button:hover {
+    background-color: rgb(123, 111, 202);
+    border: solid rgb(123, 111, 202);
+}
+.button-class button:active {
+    background-color: rgb(95, 85, 159);
+    border: solid rgb(95, 85, 159);
 }
