@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <p class="logo">My portfolio</p>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <h1>Contacto</h1>
+
+            <form class="form" id="form">
+
+                <div class="form-grup">
+                    <label class="labels" for="name">Nombre:</label>
+                    <input class="text" id="name" name="name" type="text" required placeholder="Nombre Apellido">
+                </div>
+                <div class="form-grup">
+                    <label class="labels" for="email">Email:</label>
+                    <input class="text" type="email" name="email" id="email" required placeholder="qwerty@email">
+                </div>
+                <div class="form-grup">
+                    <label class="labels" for="phone">Telefono:</label>
+                    <input class="text" type="tel" name="phone" id="phone" required placeholder="xx xxxx xxxx">
+                </div>
+                <div class="form-grup">
+                    <label class="labels" for="type">Tipo de Proyecto:</label>
+                    <select name="type" id="type" required>
+                        <option disabled selected >Seleccione una opcion</option>
+                        <option value="webSite">Website</option>
+                        <option value="webApp">WebApp</option>
+                        <option value="mobileApp">Mobile</option>
+                    </select>
+                </div>
+                <div class="form-grup">
+                    <label class="labels" for="description">Descripcion:</label>
+                    <textarea class="text" name="description" id="description" cols="30" rows="5" required placeholder="Escribe tu consulta"></textarea>
+                    <div class="descripcion">Escribe una descripcion del proyecto de al menos 500 palabras</div>
+                </div>
+                <div class="form-grup">
+                    <fieldset>
+                        <legend class="labels">Contacto</legend>
+                        <span class="block"><input type="radio" name="contactPrefer" id="WhatsApp" value="WhatsApp" checked required><label class="labels" for="WhatsApp">WhatsApp</label></span>
+                        <span class="block"><input type="radio" name="contactPrefer" id="Email" value="Email"><label class="labels" for="Email">Email</label></span>
+                        <span class="block"><input type="radio" name="contactPrefer" id="PhoneCall" value="PhoneCall"><label class="labels" for="PhoneCall">PhoneCall</label></span>                       
+                    </fieldset>
+                    <div class="descripcion">Elige el metodo de contacto preferido</div>
+                </div>
+                <div class="form-grup">
+                    <label for="offers">
+                        <input type="checkbox" name="promotions" id="offers" >
+                        <span class="labels">Acepto recibir promociones y ofertas</span>
+                    </label>
+                </div>
+                <div class="form-grup">
+                    <label for="terms">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <span  class="labels">Acepto los terminos y condiciones</span>
+                    </label>
+                </div>
+
+                <button>Enviar</button>
+
+            </form>
+    </main>
+    <script>
+        let formulario = document.getElementById('form');
+        formulario.addEventListener('submit', event => {event.preventDefault();
+        alert("datos enviados o eso creo");
+    console.log(formulario)})
+    </script>
+</body>
+</html>
