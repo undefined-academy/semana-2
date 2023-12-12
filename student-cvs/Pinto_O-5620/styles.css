@@ -176,6 +176,13 @@ button:active{
     background-color: #36dae3;
     box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
+form{
+    accent-color: #12848c;
+}
+input:focus-visible, textarea:focus-visible{
+    border: 1px solid #0ccece;
+    outline: 3px solid #186972;
+}
 /*fOOTER*/
 footer {
     height: 50px;
