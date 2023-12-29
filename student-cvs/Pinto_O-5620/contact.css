@@ -1,0 +1,83 @@
+/*CONTACTO PAGE*/
+.contact-page {
+    margin: 100px auto;
+    padding: 0 60px;
+    color:#333;
+    background-color: #b7ecf3;
+}
+.form{
+    padding: 1em;
+    /* background-color: #bcdffe; */
+}
+
+.form-grup {
+    margin: 20px 0;
+}
+
+label, input{
+    vertical-align: middle;
+}
+select{
+    border: 1px solid steelblue;
+    border-radius: 4px;  
+    padding: 5px 10px;  
+    color: #333;
+}
+
+.text {
+    width: 100%;
+    border: 1px solid steelblue;
+    border-radius: 4px;  
+    padding: 8px 10px;  
+    color: #333;
+}
+textarea.text{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+.descripcion{
+    font-size: 12px;
+    margin-top: 10px;
+    color:gray
+}
+.labels{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+    vertical-align: middle;
+}
+fieldset {
+    padding: 0 .5rem .5rem;
+}
+fieldset .block{
+    display: inline-block;
+    padding: 0 .2rem;
+}
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #014c61;
+    background-color: #4fe0e7;
+    color: #333;
+    text-shadow: -1px -1px 0 #03383f;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+button:hover{
+    background-color: #76cfd3;
+}
+button:active{
+    background-color: #36dae3;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+form{
+    accent-color: #12848c;
+}
+input:focus-visible, textarea:focus-visible{
+    border: 1px solid #0ccece;
+    outline: 3px solid #186972;
+}
