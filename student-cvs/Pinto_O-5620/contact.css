@@ -1,7 +1,7 @@
 /*CONTACTO PAGE*/
 .contact-page {
     margin: 100px auto;
-    padding: 0 60px;
+    padding: 0 16px;
     color:#333;
     background-color: #b7ecf3;
 }
@@ -52,8 +52,11 @@ fieldset {
     padding: 0 .5rem .5rem;
 }
 fieldset .block{
-    display: inline-block;
-    padding: 0 .2rem;
+    display: block;
+    padding: .4em .2em;
+}
+.block label{
+    padding-left: 8px;
 }
 button{
     padding: 16px 60px;

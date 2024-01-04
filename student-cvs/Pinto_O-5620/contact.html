@@ -78,8 +78,7 @@ maximum-scale=1.0' />
     <script>
         let formulario = document.getElementById('form');
         formulario.addEventListener('submit', event => {event.preventDefault();
-        alert("datos enviados o eso creo");
-    console.log(formulario)})
+    console.log(event.target.elements["name"])})
     </script>
 </body>
 </html>
