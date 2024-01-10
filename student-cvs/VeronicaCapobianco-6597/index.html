@@ -31,6 +31,28 @@
                 <a href="https://portfolio-workertech.vercel.app/">Portfolio</a>
             </p>
         </section>
+        <section>
+            <h3>Dejame tu mensaje</h3>
+            <form id="contact_form">
+              <div class="row">
+                <label class="required" for="name">Nombre:</label>
+                <input id="name" class="input" name="name" type="text" />
+                <span id="name_validation" class="error_message"></span>
+              </div>
+              <div class="row">
+                <label class="required" for="email">Email:</label>
+                <input id="email" class="input" name="email" type="text" />
+                <span id="email_validation" class="error_message"></span>
+              </div>
+              <div class="row">
+                <label class="required" for="message">Mensaje:</label>
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea>
+                <span id="message_validation" class="error_message"></span>
+              </div>
+                
+                <input id="submit_button" type="submit" value="Enviar mensaje" class="btn" />
+            </form>
+        </section>
         <footer>
             <p>2024 - @veritocapito</p>
         </footer>
