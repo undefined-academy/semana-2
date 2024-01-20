@@ -1,0 +1,43 @@
+body {
+    color: #555;
+    background-color: whitesmoke;
+    line-height: 1.5;
+    padding: 4em 1em;
+    margin: 0 auto;
+    max-width: 50em;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    a {
+        color: #333
+    }
+
+
+    h1 {
+        color: #333;
+    }
+    
+    h4,
+    strong
+     {
+        color: #059669;
+    }
+
+    code,
+    pre {
+        background: #eee;
+    }
+
+    code {
+        padding: 2px 4px;
+        vertical-align: text-bottom;
+    }
+
+    pre {
+        padding: 1em;
+    }
+
+    
+
+
+}
