@@ -17,6 +17,10 @@ body {
   background-color: #dbdbdb;
 }
 
+em {
+  font-weight: 500;
+}
+
 h1 h2 h3 {
   margin-top: 1em;
   padding-top: 1em;
