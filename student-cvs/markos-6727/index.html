@@ -1,94 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mi Hoja de Vida</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="content_img_profile">
-        <div class="img_profile">
-          <img
-            src="/student-cvs/markos-6727/asset/20190810_214400.jpg"
-            alt="Mi foto de perfil"
-          />
-        </div>
-      </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Mi Hoja de Vida</title>
+</head>
 
-      <div>
-        <h1>Marcos Rosario</h1>
+<body>
 
-        <p>
-          <em
-            >"Somos afortunados de contar con el mejor setup del mundo, cinco
-            sentidos integrados y capacidad de almacenamiento ilimitada para
-            crear lo que imaginemos"</em
-          >
-        </p>
+	<!-- TARJETA DE PRESENTACION -->
 
-        <p><strong>Marcos R. 2024</strong></p>
-      </div>
-    </header>
+	<header>
+		<div class="content_img_profile">
+			<div class="img_profile">
+				<img src="/student-cvs/markos-6727/asset/20190810_214400.jpg" alt="Mi foto de perfil" />
+			</div>
+		</div>
 
-    <main>
-      <div class="about">
-        <h2>Acerca de mi:</h2>
+		<div>
+			<h1>Marcos Rosario</h1>
 
-        <p>
-          Me defino como una persona
-          <em>proactiva, autodidacta y polivalente</em>; lo que me ha llevado a
-          incursionar y destacarme en múltiples campos laborales, desempeñándome
-          y relacionándome con todas las escalas jerárquicas de las
-          organizaciones a las que he pertenecido a lo largo de mi vida
-          profesional.
-        </p>
+			<p>
+				<em>"Somos afortunados de contar con el mejor setup del mundo, cinco
+					sentidos integrados y capacidad de almacenamiento ilimitada para
+					crear lo que imaginemos"</em>
+			</p>
 
-        <p>
-          Mi proceso de desarrollo personal y profesional es un proyecto que se
-          mantiene en un ciclo permanente de adquisición de nuevo conocimiento,
-          aplicación y reforzamiento lo cual disfruto mucho. Dentro del set de
-          habilidades blandas que me caracterizan puedo destacar
-          <em>la empatía, la resiliencia, el pensamiento crítico y lógico</em>
-          en otras.
-        </p>
-      </div>
+			<p><strong>Marcos R. 2024</strong></p>
+		</div>
+	</header>
 
-      <h2>Estudios Formales:</h2>
+	<!-- FIN DE LA TARJETA DE PRESENTACION -->
 
-      <ul>
-        <li>
-          Técnico Superior Universitario en Higiene y Seguridad Indutrial.
-        </li>
-        <li>Histotecnólogo.</li>
-        <li>Técnico en Rescate y Emergencias Prehospitalarias TREPH.</li>
-      </ul>
+	<!-- CUERPO DE LA SISNTESIS CURRICULAR -->
 
-      <h2>Otros Estudios:</h2>
+	<main>
 
-      <ul>
-        <li>Diseño Grafico.</li>
-        <li>Marketing.</li>
-        <li>Programación.</li>
-      </ul>
+		<div class="about">
+			<h2>Acerca de mi:</h2>
 
-      <h2>Tecnologías:</h2>
+			<p>
+				Me defino como una persona
+				<em>proactiva, autodidacta y polivalente</em>; lo que me ha llevado a
+				incursionar y destacarme en múltiples campos laborales, desempeñándome
+				y relacionándome con todas las escalas jerárquicas de las
+				organizaciones a las que he pertenecido a lo largo de mi vida
+				profesional.
+			</p>
 
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-      </ul>
-    </main>
+			<p>
+				Mi proceso de desarrollo personal y profesional es un proyecto que se
+				mantiene en un ciclo permanente de adquisición de nuevo conocimiento,
+				aplicación y reforzamiento lo cual disfruto mucho. Dentro del set de
+				habilidades blandas que me caracterizan puedo destacar
+				<em>la empatía, la resiliencia, el pensamiento crítico y lógico</em>
+				en otras.
+			</p>
+		</div>
 
-    <div class="footer">
-      <footer>
-        <a href="https://github.com/mhrosariom">Mi perfil de Github</a>
-        <p>Creado por Marcos Rosario 2024</p>
-      </footer>
-    </div>
-  </body>
+		<h2>Estudios Formales:</h2>
+
+		<ul>
+			<li>
+				Técnico Superior Universitario en Higiene y Seguridad Indutrial.
+			</li>
+			<li>Histotecnólogo.</li>
+			<li>Técnico en Rescate y Emergencias Prehospitalarias TREPH.</li>
+		</ul>
+
+		<h2>Otros Estudios:</h2>
+
+		<ul>
+			<li>Diseño Grafico.</li>
+			<li>Marketing.</li>
+			<li>Programación.</li>
+		</ul>
+
+		<h2>Tecnologías:</h2>
+
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>Git</li>
+		</ul>
+	</main>
+
+	<!-- FIN DEL CUERPO DE LA SINTESIS -->
+
+	<!-- FORMULARIO DE CONTACTO -->
+
+	<form class="contac-form">
+
+		<div class="form-element">
+			<h2>Contactame:</h2>
+		</div>
+
+		<div>
+			<div class="form-element">
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" placeholder="Ingrese su Nombre" required>
+			</div>
+
+			<div class="form-element">
+				<label for="email">Email:</label>
+				<input type="text" id="email" placeholder="Ingese un email valido" required>
+			</div>
+
+			<div class="form-element">
+
+				<fieldset>
+
+					<legend>Tipo de Proyecto</legend>
+
+					<label for="website">Pagina Web</label>
+					<input type="checkbox" id="website" name="webside">
+
+					<label for="webapp">Aplicacion Web</label>
+					<input type="checkbox" id="webapp" name="webapp">
+
+					<label for="mobilapp">Aplicacion Movil</label>
+					<input type="checkbox" id="mobilapp" name="movilapp">
+
+					<label for="design">Diseño Grafico</label>
+					<input type="checkbox" id="design" name="desing">
+
+				</fieldset>
+
+			</div>
+
+
+			<div class="form-element">
+
+				<fieldset>
+
+					<legend>Presupuesto estimado</legend>
+
+					<input type="radio" id="1000" name="budget">
+					<label for="1000"> $ 1.000</label>
+
+					<input type="radio" id="3000" name="budget">
+					<label for="3000"> $ 3.000</label>
+
+					<input type="radio" id="6000" name="budget">
+					<label for="6000">$ 6.000</label>
+
+					<input type="radio" id="12000" name="budget">
+					<label for="12000">$ 12.000</label>
+
+				</fieldset>
+
+			</div>
+
+			<p class="help form-element">El presupuesto es una referencia de la base para la inversion lo cual no representa el total.</p>
+
+			<div class="form-element">
+				<label for="descrip">Descripcion del proyecto:</label>
+				<textarea name="descrip" id="descrip" rows="10"></textarea>
+			</div>
+
+			<p class="help form-element">Ingrese una descripción de proyecto lo mas detallada que concidere</p>
+
+			<div class="form-element">
+				<input type="checkbox" name="terms" id="term">
+				<label for="term">Acepto los terminos y condiciones</label>
+			</div>
+
+
+		</div>
+
+		<div class="form-element">
+			<button>Enviar</button>
+		</div>
+
+	</form>
+
+	<!-- FIN DEL FORMULARIO DE CONTACTO -->
+
+	<div class="footer">
+		<footer>
+			<a target="_blank" href="https://github.com/mhrosariom">Mi perfil de Github</a>
+			<p>Creado por Marcos Rosario 2024</p>
+		</footer>
+	</div>
+</body>
+
 </html>
