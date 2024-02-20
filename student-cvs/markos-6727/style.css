@@ -14,7 +14,7 @@ html {
 
 header {
 	display: flex;
-	background-image: url("/student-cvs/markos-6727/asset/gradiente.jpg");
+	background-image: url("/asset/gradiente.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -29,6 +29,18 @@ header {
 	padding: 1em 2em;
 	text-transform: uppercase;
 	margin-bottom: 4em;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content_img_profile {
+		justify-content: center;
+	}
+	
 }
 
 header h1 {
@@ -159,7 +171,7 @@ button:active {
 	padding: 2em;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-	background-image: url("/student-cvs/markos-6727/asset/gradiente.jpg");
+	background-image: url("/asset/gradiente.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
