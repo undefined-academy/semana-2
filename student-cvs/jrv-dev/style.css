@@ -1,0 +1,32 @@
+body {
+    max-width: 50%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: #E5E7EB;
+    color: #010101;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+h1,
+h2  {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+table,
+th,
+td {
+    text-align: left;
+    border: 1px solid #010101;
+    background: #E5E7EB;
+}
+
+p  a {
+    color: #ee00ff;
+}
+
+tr > td {
+    background: #E5E7;
+}
