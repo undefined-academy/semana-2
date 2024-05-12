@@ -10,7 +10,7 @@ body {
 }
 
 h1,
-h2  {
+h2 {
     font-size: 30px;
     margin-top: 40px;
 }
@@ -23,10 +23,43 @@ td {
     background: #E5E7EB;
 }
 
-p  a {
+p a {
     color: #ee00ff;
 }
 
-tr > td {
+tr>td {
     background: #E5E7;
+}
+
+.form-colun {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+fieldset {
+    max-width: 100%;
+}
+
+fieldset>input {
+    display: inherit;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+textarea::placeholder {
+    font-weight: bold;
+}
+
+input:last-child {
+    padding: 10px 40px 10px;
+    margin: 0 auto;
+    background: #E5E7EB;
 }
