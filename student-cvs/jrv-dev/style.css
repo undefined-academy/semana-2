@@ -1,13 +1,15 @@
+
 *{
     text-align: center;
     max-width: 90%;
     margin: 0 auto;
-    padding: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2.5;
+    line-height: 1.5;
     letter-spacing: 1.5px;
-    font-size: 14px;
-    
+    font-size: 12px;
+    background: #e2e8f0;
+    color: #030712;
 }
 
 .about-me, 
@@ -15,8 +17,63 @@
 .form-row,
 .head-title {
     
-    border: 1px solid tomato;
-    margin: 0 auto;
+    margin: 5px auto;
     max-width: 80%;
-    
+     
+}
+
+/*seccion de encabezados */
+
+.head-title h1  {
+    font-size: 30px;
+}
+
+.head-title h2 {
+    font-size: 20px;
+}
+
+.about-me h1  {
+    font-size: 40px;
+}
+
+/*seccion de parrafos */
+.about-me p {
+    font-size: 16px;
+}
+
+.about-me p > b {
+    color: #14951f;
+}
+
+.about-me p > em {
+    font-weight: bolder;
+}
+
+.about-me a {
+
+    text-decoration: none;
+    color: fuchsia;
+}
+
+/*seccion de comandos */
+
+.commands-row table,
+.commands-row th,
+.commands-row td {
+    border: 2px solid black;
+}
+
+/*seccion de contacto */
+
+.form-row input{
+    padding: 5px 50px 5px 50px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+[type="submit"] {
+    padding: 20px;
+    border-radius: 10px;
+    background: #14951f;
 }
