@@ -82,7 +82,7 @@
     </section>
     <section>
         <h1>Contactame</h1>
-        <form action="serve" method="get">
+        <form action="/" method="get">
             <div class="form-colun">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" placeholder="Johan" required>
@@ -97,9 +97,9 @@
             </div>
             <div class="form-colun">
                 <label for="type-proyect">Asunto</label>
-                <select id="type-proyect" required>
+                <select id="type-proyect">
                     <option selected>Seleccione un proyecto</option>
-                    <option value="mobile-app">Mobile app</option>
+                    <option value="mobile-app"  >Mobile app</option>
                     <option value="web-site">Web site</option>
                     <option value="web-app">Web app</option>
                 </select>
@@ -107,23 +107,31 @@
             <div class="form-colun">
                 <fieldset>
                     <legend>Presupuesto</legend>
-
-                    <label for="500">500$</label>
-                    <input type="radio" id="500" name="value">
-
-                    <label for="5000">5,000$</label>
-                    <input type="radio" id="5000" name="value">
-
-                    <label for="10000">10,000$</label>
-                    <input type="radio" id="10000" name="value">
+                    <div>
+                        <label for="500">500$</label>
+                        <input type="radio" id="500" name="value">
+                    </div>
+                    <div>
+                        <label for="5000">5,000$</label>
+                        <input type="radio" id="5000" name="value">
+                    </div>
+                    <div>
+                        <label for="10000">10,000$</label>
+                        <input type="radio" id="10000" name="value">
+                    </div>
                 </fieldset>
             </div>
             <div class="form-colun">
-                <textarea id="description" cols="50" rows="9" placeholder="Descripcion del proyecto"
-                    required></textarea>
+                <textarea 
+                    id="description" 
+                    cols="50" rows="9" 
+                    placeholder="Descripcion del proyecto"
+                    required>
+                </textarea>
             </div>
+            <input type="submit" value="Enviar datos">
         </form>
-        <input type="submit">
+
     </section>
 </body>
 
