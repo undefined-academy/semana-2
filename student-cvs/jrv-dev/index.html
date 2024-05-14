@@ -118,7 +118,10 @@
             </div>
             <div class="form-row">
                 <fieldset>
-                    <legend>Presupuesto</legend>
+                    <div class="head-title">
+                        <legend>Presupuesto</legend>
+                    </div>
+                    
                     <div class="input-money">
                         <label for="500">500$</label>
                         <input type="radio" id="500" name="money" required>
@@ -134,7 +137,9 @@
                 </fieldset>
             </div>
             <div class="form-row">
-                <label for="type-proyect">Asunto</label>
+                <div class="head-title">
+                    <label for="type-proyect">Asunto</label>
+                </div>
                 <select id="type-proyect" name="type-proyect" required>
                     <option disabled selected value="">Seleccione un proyecto</option>
                     <option value="mobile-app">Mobile app</option>
@@ -143,7 +148,9 @@
                 </select>
             </div>
             <div class="form-row">
-                <label for="description">Descripción</label>
+                <div class="head-title">
+                    <label for="description">Descripción</label>
+                </div>
                 <textarea id="description" name="description" required rows="8" cols="100%"></textarea>
             </div>
             <input type="submit" value="Enviar datos">
