@@ -1,162 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Johan Ramirez Vargas</title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"></script>
+    <title>Porfolio Web</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <article>
-        <div class="about-me">
-            <div class="head-title">
-                <header>
-                    <h1>Johan Ramirez vargas</h1>
-                    <p><b>Estudiante de ing en sistemas</b></p>
-                </header>
-            </div>
-
-            <p>
-                Soy un estudiante de <b>2do año</b> estudio en la universidad <b>UCATECI</b>, en la <em>Republica
-                    Dominicana</em>.
-            </p>
-
-            <p>
-                Actualmente me encuentro estudiando <b>programacion web "full-stack con js"</b>, en el <em>bootcamp</em>
-                de
-                <a href="https://undefined.academy">Guillermo Rodaz</a>
-            </p>
-        </div>
-
-
-    </article>
-    <section>
-        <div class="head-title">
+    <main>
+        <section class="about-me">
             <header>
-                <h1>Comandos</h1>
+                <figure>
+                    <img src="img/yo.png" alt="foto de perfil de Johan Ramirez Vargas" class="logo-perfil">
+                </figure>
+                <h1>¡Hola a todos! 👋</h1>
+                <p><em>¡Bienvenidos a mi perfil de GitHub!</em></p>
             </header>
-        </div>
-        <article>
-            <div class="commands-row">
-                <div class="head-title">
-                    <header>
-                        <h2>5 comandos aprendidos:</h2>
-                    </header>
-                </div>
-                <table>
-                    <tr>
-                        <th>Comando</th>
-                        <th>Uso</th>
-                    </tr>
-                    <tr>
-                        <th>ls</th>
-                        <td>Listar directorios</td>
-                    </tr>
-                    <tr>
-                        <th>touch</th>
-                        <td>Crear archivo</td>
-                    </tr>
-                    <tr>
-                        <th>mkdir</th>
-                        <td>Crear directorio</td>
-                    </tr>
-                    <tr>
-                        <th>mv</th>
-                        <td>Mover directorios</td>
-                    </tr>
-                    <tr>
-                        <th>cd</th>
-                        <td>Moverse entre directorios</td>
-                    </tr>
-                </table>
-            </div>
+            <article class="about-me-article">
+                <h2>Soy Johan Ramirez Vargas</h2>
+                <p>Un apasionado por las tecnologías y el desarrollo de software. Actualmente tengo <em>20 años</em>, vivo en la <strong>Republica Dominicana</strong> y estoy cursando el 2do año de <strong>Ingeniería en Sistemas</strong> en la <a href="https://www.ucateci.edu.do/" target="_blank">Universidad Católica del Cibao</a>.</p>
+            </article>
+            <article class="about-me-article">
+                <h2>Sobre mi</h2>
+                <p>Me considero una persona bastante <strong>adaptable</strong> a las diferentes situaciones que se me presentan. En mi tiempo libre, disfruto de <em>jugar baloncesto y videojuegos y ver series animadas y leer comics</em> y siempre estoy emocionado por <strong>aprender algo nuevo</strong>.</p>
+                <nav>
+                    <a href="https://github.com/jrv-dev" target="_blank">🔭 Explora mis proyectos en GitHub:</a>
+                </nav>
+            </article>
+        </section>
+        <section class="learning">
+            <article class="learning-article">
+                <h2>Habilidades por Aprender</h2>
+                <figure>
+                    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="ogo-html">
+                    <p>HTML5</p>
 
-        </article>
-        <article>
-            <div class="commands-row">
-                <div class="head-title">
-                    <header>
-                        <h2>2 comandos alias utiles:</h2>
-                    </header>
-                </div>
+                    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="logo-css">
+                    <p>CSS3</p>
 
-                <table>
-                    <tr>
-                        <th>Comando</th>
-                        <th>Uso</th>
-                    </tr>
-                    <tr>
-                        <th>rm</th>
-                        <td>Eliminar directorios forzados</td>
-                    </tr>
-                    <tr>
-                        <th>cls</th>
-                        <td>Limpiar consola</td>
-                    </tr>
-                </table>
-            </div>
-        </article>
-    </section>
-    <section>
-        <div class="head-title">
-            <header>
-                <h1>Contactame</h1>
-            </header>
-        </div>
+                    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="logo-javaScript">
+                    <p>JavaScript</p>
 
-        <form id="contact-form" action="/" method="get">
-            <div class="form-row">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" placeholder="Johan Ramirez" required>
-            </div>
-            <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="jr20@gmail.com" required>
-            </div>
-            <div class="form-row">
-                <fieldset>
-                    <div class="head-title">
-                        <legend>Presupuesto</legend>
-                    </div>
-                    
-                    <div class="input-money">
-                        <label for="500">500$</label>
-                        <input type="radio" id="500" name="money" required>
-                    </div>
-                    <div class="input-money">
-                        <label for="5000">5,000$</label>
-                        <input type="radio" id="5000" name="money" required>
-                    </div>
-                    <div class="input-money">
-                        <label for="10000">10,000$</label>
-                        <input type="radio" id="10000" name="money" required>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="form-row">
-                <div class="head-title">
-                    <label for="type-proyect">Asunto</label>
-                </div>
-                <select id="type-proyect" name="type-proyect" required>
-                    <option disabled selected value="">Seleccione un proyecto</option>
-                    <option value="mobile-app">Mobile app</option>
-                    <option value="web-site">Web site</option>
-                    <option value="web-app">Web app</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <div class="head-title">
-                    <label for="description">Descripción</label>
-                </div>
-                <textarea id="description" name="description" required rows="8" cols="100%"></textarea>
-            </div>
-            <input type="submit" value="Enviar datos">
-        </form>
+                    <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="logo-git">
+                    <p>Git</p>
 
-    </section>
+                    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="logo-GitHub">
+                    <p>GitHub</p>
+                </figure>
+            </article>
+            <article class="learning-article">
+                <h2>Aprendizaje Actual</h2>
+                <p>Estoy enfocado en aprender <strong>desarrollo web full stack con JavaScript</strong>. Actualmente estoy explorando diversos recursos en línea, practicando en proyectos prácticos. Principalmente estoy siguiendo un <a href="https://undefined.academy/" target="_blank">bootcamp de js de Guillermo Rodaz</a>.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>¡No dudes en conectarte conmigo! Estoy emocionado por aprender, colaborar y crecer en la comunidad de desarrollo de software.</p>
+    </footer>
 </body>
-
 </html>
+
+

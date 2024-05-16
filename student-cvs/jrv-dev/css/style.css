@@ -1,0 +1,46 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    background: #F3F4F6;
+    color: #000000;
+}
+
+.about-me,
+.learning,
+footer {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.about-me h1 {
+    font-size: 40px;
+}
+
+.about-me-article h2,
+.learning-article h2 {
+    font-size: 30px;
+}
+
+.logo-perfil {
+    width: 150px;
+    border-radius: 50%;
+}
+
+a {
+    color: #D97706;
+    text-decoration: none;
+}
+
+a:active {
+    color: #EC4899;
+    
+}
+
+footer p {
+    font-size: 14px;
+}
