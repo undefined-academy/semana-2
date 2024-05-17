@@ -1,0 +1,101 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    background: #F3F4F6;
+    color: #000000;
+}
+
+.about-me,
+.learning,
+footer {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.about-me h1 {
+    font-size: 40px;
+}
+
+.about-me-article h2,
+.learning-article h2 {
+    font-size: 30px;
+}
+
+.logo-perfil {
+    width: 150px;
+    border-radius: 50%;
+}
+
+a {
+    color: #D97706;
+    text-decoration: none;
+}
+
+a:active {
+    color: #EC4899;
+    
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* estilos de contacto */
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+input[type="text"], input[type="email"], textarea{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #D97706;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
