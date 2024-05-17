@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/script/main.js"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <main>
+        <h1>Formulario de contacto</h1>
+        <form id="contact" action="/" method="get">
+            <!--sobre el-->
+            <div class="about-for">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="about-for">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!--Presupuesto-->
+            <fieldset>
+                <legend>¿Cuál es tu presupuesto?</legend>
+                <div class="input-money">
+                    <label for="500">500$</label>
+                    <input type="radio" id="500" name="money" required>
+                </div>
+                <div class="input-money">
+                    <label for="5000">5,000$</label>
+                    <input type="radio" id="5000" name="money" required>
+                </div>
+                <div class="input-money">
+                    <label for="10000">10,000$</label>
+                    <input type="radio" id="10000" name="money" required>
+                </div>
+            </fieldset>
+            <!--proyecto-->
+            <div class="form-row">
+                <div class="head-title">
+                    <label for="type-proyect">Asunto</label>
+                </div>
+                <select id="type-proyect" name="type-proyect" required>
+                    <option disabled selected value="">Seleccione un proyecto</option>
+                    <option value="mobile-app">Mobile app</option>
+                    <option value="web-site">Web site</option>
+                    <option value="web-app">Web app</option>
+                </select>
+            </div>
+            <!--descripcion-->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>

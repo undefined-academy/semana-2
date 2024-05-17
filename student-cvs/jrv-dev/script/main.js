@@ -1,5 +1,5 @@
 
-const form = document.getElementById("contact-form");
+const form = document.getElementById("contact");
 
 function hideShipment(event) {
 	event.preventDefault()
