@@ -1,0 +1,79 @@
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fafafa;
+}
+
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input[type="text"], [type="email"]{
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+label, input {
+    vertical-align: middle ;
+}
+
+label, legend {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #444;
+
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+}
+
+button {
+    margin: 0 350px;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 7px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #facc15;
+}
+
+button:active {
+    background: #ca8a04;
+}

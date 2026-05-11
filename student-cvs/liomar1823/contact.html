@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <main class="page">
+
+        <header>
+            <h1>Contacto</h1>
+        </header>
+            <form id="miFormulario">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Ingrese su correo electrónico" id="email" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <input type="radio" id="5000" name="budget" value="5000">
+                        <label for="5000">5,000</label>
+                        <input type="radio" id="15000" name="budget" value="15000" required>
+                        <label for="15000">15,000</label>
+                        <input type="radio"  id="25000" name="budget" value="25000">
+                        <label for="25000">25,000</label>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select name="value" id="type" required>
+                        <option value="" disabled selected>Seleccione uno</option>
+                        <option value="website">Website</option>   
+                        <option value="webapp">WebApp</option>
+                        <option value="mobileapp">MobileApp</option>
+                        <option value="design">Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea name="description" id="description" rows="8" required></textarea>
+                    <div class="help">Escribe una Descripción del proyecto en al menos 500 palabras.</div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>Acepto los terminos y condiciones.</span>
+                    </label>
+                </div>
+                <button type="submit">Enviar</button>
+            </main>
+
+
+            <script>
+
+                const formulario = document.getElementById('miFormulario');
+        
+                formulario.addEventListener('submit', function(evento) {
+
+                    //console.log("Formulario enviado (preventDefault activado)");
+                    evento.preventDefault();
+        
+
+                    const nombre = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    
+                    console.log('Nombre:', nombre);
+                    console.log('Email:', email);
+                });
+            </script>
+
+            </body>
+</html>
+                
+                
