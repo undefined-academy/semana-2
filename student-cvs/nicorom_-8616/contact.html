@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <header><h1>Contact</h1></header>
+    <section class="container-form">
+      <form action="/sever" method="get" onsubmit="return false">
+        <div class="form-group">
+          <label for="name">Name </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="your Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend>Services</legend>
+            <input id="front" name="service" value="front" type="radio" />
+            <label for="front">Frontend</label>
+            <input id="back" name="service" value="back" type="radio" />
+            <label for="back">Backend</label>
+            <input id="db" name="service" value="db" type="radio" />
+            <label for="db">Database</label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label for="country">country</label>
+          <select id="country" name="country" required>
+            <option>China</option>
+            <option>Argentina</option>
+            <option>Russia</option>
+            <option>Spain</option>
+            <option>USA</option>
+            <option>Others</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="msj">Enter your message</label>
+          <textarea id="msj" name="msj"></textarea>
+        </div>
+        <button>Envar</button>
+      </form>
+    </section>
+  </body>
+</html>

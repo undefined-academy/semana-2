@@ -1,0 +1,139 @@
+body {
+    background: floralwhite;
+}
+
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+    border         : 1px solid;
+    padding        : 0.5rem;
+    background     : rgb(240, 227, 202);
+    text-align     : center;
+}
+
+h1,
+h2,
+h3 {
+    margin        : .2rem;
+    padding       : .2rem;
+    word-spacing  : 0.1rem;
+    letter-spacing: .01rem;
+    text-align    : center;
+}
+
+a {
+    text-decoration: none;
+    color          : brown;
+}
+
+a:active {
+    text-decoration: none;
+    color          : rgb(231, 64, 64);
+}
+
+a:hover {
+    color      : rgb(247, 0, 255);
+    font-weight: bold;
+}
+
+p {
+    font-family   : Arial, Helvetica, sans-serif;
+    font-size     : 1rem;
+    word-spacing  : 0.1rem;
+    letter-spacing: .03rem;
+    margin-top    : 0.5px;
+    margin-bottom : 0.5px;
+}
+
+.phirst-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    margin         : 1.5rem;
+}
+
+.paragaph-container {
+    margin         : 0.5rem 10rem;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+.bolt {
+    text-transform: uppercase;
+    font-weight   : bold;
+}
+
+.hiden {
+    display: none;
+}
+
+/* Formulario */
+
+.form-group {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    width          : 60%;
+}
+
+Form {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    gap            : 0.5rem;
+    border         : 1px solid black;
+    border-radius  : 15px;
+    width          : 60%;
+
+    background: #ffe6e6;
+}
+
+textarea {
+    resize: vertical;
+    width : 80%;
+}
+
+.container-form {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background   : rgb(255, 213, 255);
+    border       : none;
+    border-radius: 5px;
+}
+
+button {
+    padding       : .5rem 5rem;
+    margin        : .5rem;
+    text-transform: uppercase;
+    font-weight   : bold;
+    border        : #fcdddd 1.5px solid;
+    border-radius : 5px;
+    background    : #f8dcdc;
+    box-shadow    : 1px 1px 3px rgb(0, 0, 0, 0.5);
+    text-shadow   : -1px -1px 0 rgba(255, 255, 255, 0.5);
+    cursor        : pointer;
+}
+
+button:hover {
+    background: #fdcaca;
+}
+
+button:active {
+    background: #f8abab;
+    box-shadow: none;
+    /* box-shadow: -1px -1px 0 rgba(0,0,0, 0.5); Para que parezca mas undido */
+}
