@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/contact.css">
+</head>
+
+<body>
+  <main class="page"></main>
+  <h1>Contacto</h1>
+  <form action="/server" method="post">
+    <div class="form-group">
+      <label for="name">Nombre completo</label>
+      <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email " placeholder="Ingrese su correo electrónico" required>
+    </div>
+    <div class="form-group">
+      <label for="question">Pregunta o comentario</label>
+      <textarea id="question" name="question" rows="5" required></textarea>
+      <div class="help">Escribe tu pregunta o comentario.</div>
+    </div>
+    <button type="submit" value="Enviar">Enviar</button>
+    <hr>
+    <a href="index.html">Página inicial</a>
+  </form>
+  </main>
+</body>
+
+</html>
